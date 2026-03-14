@@ -1,0 +1,49 @@
+# Joern MCP Server – All Tools
+
+After code changes: run `npm run build`, then reload MCP in Cursor (or restart Cursor) so the client sees these tools.
+
+1. joern_run_script
+   - script, cpgPath?, params?
+   - Run any Joern Scala script (full CPG API).
+
+2. joern_find_calls
+   - cpgPath, methodFullNameRegex?, callNameRegex?, whereArgumentIndex?, whereArgumentCodeRegex?
+   - Find call nodes (e.g. Log calls where arg 1 matches .*pass.*).
+
+3. joern_list_call_names
+   - cpgPath, methodFullNameRegex?
+   - List distinct call names.
+
+4. joern_methods
+   - cpgPath, nameRegex?, fullNameRegex?
+   - List methods (name, fullName, filename).
+
+5. joern_import_code
+   - inputPath, language?
+   - Import source/binary and build CPG.
+
+6. joern_query_flows
+   - cpgPath, sourceCallName, sinkCallNamePattern
+   - sourceMatch?, sinkMatch?, sourceMethodFullNameRegex?, sinkMethodFullNameRegex?
+   - sourceArgIndex?, sinkArgIndex?, methodRegex?, fileRegex?
+   - Data flows source → sink.
+
+7. joern_list_methods
+   - cpgPath
+   - List all method names.
+
+8. joern_dump_graphs
+   - cpgPath, sourceCallName, sinkCallNamePattern
+   - outputDir?, graphTypes?, sourceMatch?, sinkMatch?, sourceArgIndex?, sinkArgIndex?
+   - methodRegex?, fileRegex?, dumpFlowDot?, flowDotDir?
+   - Dump AST/CFG/PDG .dot for methods in flows.
+
+9. joern_full_flow_graph
+   - cpgPath, sourceCallName, sinkCallNamePattern
+   - outputDir?, emitSVG?, sourceMatch?, sinkMatch?, sourceArgIndex?, sinkArgIndex?
+   - methodRegex?, fileRegex?
+   - One merged DOT + SVG for all flows.
+
+10. joern_scan
+    - inputPath, language?, overwrite?
+    - Run joern-scan on a path.

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "joern": {
+      "command": "node",
+      "args": ["/Users/effortlessdevsec/temp11/joern/joern-mcp-server/dist/index.js"],
+      "env": {
+        "JOERN_HOME": "/opt/joern"
+      }
+    }
+  }
+}

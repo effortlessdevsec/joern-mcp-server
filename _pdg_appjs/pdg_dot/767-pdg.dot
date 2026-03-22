@@ -1,0 +1,15 @@
+digraph "require" {  
+node [shape="rect"];  
+"107374183167" [label = <METHOD, 62<BR/>require> ]
+"124554052349" [label = <METHOD_RETURN, 62<BR/>__ecma.Object> ]
+"111669151207" [label = <PARAM, 62<BR/>this> ]
+"141733921336" [label = <RETURN, 62<BR/>transform> ]
+"68719489149" [label = <IDENTIFIER, 62<BR/>transform> ]
+  "141733921336" -> "124554052349"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151207" -> "124554052349"  [ label = "DDG: this"] 
+  "107374183167" -> "111669151207"  [ label = "DDG: "] 
+  "68719489149" -> "141733921336"  [ label = "DDG: transform"] 
+  "107374183167" -> "141733921336"  [ label = "DDG: "] 
+  "30064783581" -> "68719489149"  [ label = "DDG: transform"] 
+  "107374183167" -> "68719489149"  [ label = "DDG: "] 
+}

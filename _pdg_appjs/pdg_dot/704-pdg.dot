@@ -1,0 +1,134 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183104" [label = <METHOD, 29<BR/>getDefaultOptions> ]
+"124554052287" [label = <METHOD_RETURN, 29<BR/>{ module: __ecma.Boolean; next: __ecma.Boolean; ranges: __ecma.Boolean; webcompat: __ecma.Boolean; loc: __ecma.Boolean; raw: __ecma.Boolean; directives: __ecma.Boolean; globalReturn: __ecma.Boolean; impliedStrict: __ecma.Boolean; preserveParens: __ecma.Boolean; lexical: __ecma.Boolean; source: __ecma.Boolean; identifierPattern: __ecma.Boolean; jsx: __ecma.Boolean; specDeviation: __ecma.Boolean; uniqueKeyInPattern: __ecma.Boolean; }> ]
+"111669151075" [label = <PARAM, 29<BR/>this> ]
+"141733921291" [label = <RETURN, 30<BR/>return { // The flag to allow module code...> ]
+"25769805703" [label = <BLOCK, 30<BR/>{ // The flag to allow module code ...> ]
+"30064782388" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_3.module = false> ]
+"30064782390" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_3.next = false> ]
+"30064782392" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_3.ranges = false> ]
+"30064782394" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_3.webcompat = true> ]
+"30064782396" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_3.loc = false> ]
+"30064782398" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_3.raw = false> ]
+"30064782400" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_3.directives = false> ]
+"30064782402" [label = <&lt;operator&gt;.assignment, 53<BR/>_tmp_3.globalReturn = false> ]
+"30064782404" [label = <&lt;operator&gt;.assignment, 56<BR/>_tmp_3.impliedStrict = false> ]
+"30064782406" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_3.preserveParens = false> ]
+"30064782408" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_3.lexical = true> ]
+"30064782410" [label = <&lt;operator&gt;.assignment, 65<BR/>_tmp_3.source = false> ]
+"30064782412" [label = <&lt;operator&gt;.assignment, 68<BR/>_tmp_3.identifierPattern = false> ]
+"30064782414" [label = <&lt;operator&gt;.assignment, 71<BR/>_tmp_3.jsx = false> ]
+"30064782416" [label = <&lt;operator&gt;.assignment, 74<BR/>_tmp_3.specDeviation = false> ]
+"30064782418" [label = <&lt;operator&gt;.assignment, 83<BR/>_tmp_3.uniqueKeyInPattern = false> ]
+"68719488085" [label = <IDENTIFIER, 30<BR/>_tmp_3<BR/>{ // The flag to allow module code ...> ]
+  "141733921291" -> "124554052287"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151075" -> "124554052287"  [ label = "DDG: this"] 
+  "30064782388" -> "124554052287"  [ label = "DDG: _tmp_3.module"] 
+  "30064782388" -> "124554052287"  [ label = "DDG: _tmp_3.module = false"] 
+  "30064782390" -> "124554052287"  [ label = "DDG: _tmp_3.next"] 
+  "30064782390" -> "124554052287"  [ label = "DDG: _tmp_3.next = false"] 
+  "30064782392" -> "124554052287"  [ label = "DDG: _tmp_3.ranges"] 
+  "30064782392" -> "124554052287"  [ label = "DDG: _tmp_3.ranges = false"] 
+  "30064782394" -> "124554052287"  [ label = "DDG: _tmp_3.webcompat"] 
+  "30064782394" -> "124554052287"  [ label = "DDG: _tmp_3.webcompat = true"] 
+  "30064782396" -> "124554052287"  [ label = "DDG: _tmp_3.loc"] 
+  "30064782396" -> "124554052287"  [ label = "DDG: _tmp_3.loc = false"] 
+  "30064782398" -> "124554052287"  [ label = "DDG: _tmp_3.raw"] 
+  "30064782398" -> "124554052287"  [ label = "DDG: _tmp_3.raw = false"] 
+  "30064782400" -> "124554052287"  [ label = "DDG: _tmp_3.directives"] 
+  "30064782400" -> "124554052287"  [ label = "DDG: _tmp_3.directives = false"] 
+  "30064782402" -> "124554052287"  [ label = "DDG: _tmp_3.globalReturn"] 
+  "30064782402" -> "124554052287"  [ label = "DDG: _tmp_3.globalReturn = false"] 
+  "30064782404" -> "124554052287"  [ label = "DDG: _tmp_3.impliedStrict"] 
+  "30064782404" -> "124554052287"  [ label = "DDG: _tmp_3.impliedStrict = false"] 
+  "30064782406" -> "124554052287"  [ label = "DDG: _tmp_3.preserveParens"] 
+  "30064782406" -> "124554052287"  [ label = "DDG: _tmp_3.preserveParens = false"] 
+  "30064782408" -> "124554052287"  [ label = "DDG: _tmp_3.lexical"] 
+  "30064782408" -> "124554052287"  [ label = "DDG: _tmp_3.lexical = true"] 
+  "30064782410" -> "124554052287"  [ label = "DDG: _tmp_3.source"] 
+  "30064782410" -> "124554052287"  [ label = "DDG: _tmp_3.source = false"] 
+  "30064782412" -> "124554052287"  [ label = "DDG: _tmp_3.identifierPattern"] 
+  "30064782412" -> "124554052287"  [ label = "DDG: _tmp_3.identifierPattern = false"] 
+  "30064782414" -> "124554052287"  [ label = "DDG: _tmp_3.jsx"] 
+  "30064782414" -> "124554052287"  [ label = "DDG: _tmp_3.jsx = false"] 
+  "30064782416" -> "124554052287"  [ label = "DDG: _tmp_3.specDeviation"] 
+  "30064782416" -> "124554052287"  [ label = "DDG: _tmp_3.specDeviation = false"] 
+  "30064782418" -> "124554052287"  [ label = "DDG: _tmp_3.uniqueKeyInPattern"] 
+  "30064782418" -> "124554052287"  [ label = "DDG: _tmp_3.uniqueKeyInPattern = false"] 
+  "107374183104" -> "111669151075"  [ label = "DDG: "] 
+  "25769805703" -> "141733921291"  [ label = "DDG: "] 
+  "25769805703" -> "141733921291"  [ label = "DDG: {
+      // The flag to allow module code
+      module: false,
+
+      // The flag to enable stage 3 support (ESNext)
+      next: false,
+
+      // The flag to enable start and end offsets to each node
+      ranges: false,
+
+      // Enable web compability
+      webcompat: true,
+
+      // The flag to enable line/column location information to each node
+      loc: false,
+
+      // The flag to attach raw property to each literal and identifier node
+      raw: false,
+
+      // Enabled directives
+      directives: false,
+
+      // The flag to allow return in the global scope
+      globalReturn: false,
+
+      // The flag to enable implied strict mode
+      impliedStrict: false,
+
+      // Enable non-standard parenthesized expression node
+      preserveParens: false,
+
+      // Enable lexical binding and scope tracking
+      lexical: true,
+
+      // Adds a source attribute in every node&rsquo;s loc object when the locations option is `true`
+      source: false,
+
+      // Distinguish Identifier from I..."] 
+  "107374183104" -> "141733921291"  [ label = "DDG: "] 
+  "30064782388" -> "25769805703"  [ label = "DDG: _tmp_3.module"] 
+  "30064782390" -> "25769805703"  [ label = "DDG: _tmp_3.next"] 
+  "30064782392" -> "25769805703"  [ label = "DDG: _tmp_3.ranges"] 
+  "30064782394" -> "25769805703"  [ label = "DDG: _tmp_3.webcompat"] 
+  "30064782396" -> "25769805703"  [ label = "DDG: _tmp_3.loc"] 
+  "30064782398" -> "25769805703"  [ label = "DDG: _tmp_3.raw"] 
+  "30064782400" -> "25769805703"  [ label = "DDG: _tmp_3.directives"] 
+  "30064782402" -> "25769805703"  [ label = "DDG: _tmp_3.globalReturn"] 
+  "30064782404" -> "25769805703"  [ label = "DDG: _tmp_3.impliedStrict"] 
+  "30064782406" -> "25769805703"  [ label = "DDG: _tmp_3.preserveParens"] 
+  "30064782408" -> "25769805703"  [ label = "DDG: _tmp_3.lexical"] 
+  "30064782410" -> "25769805703"  [ label = "DDG: _tmp_3.source"] 
+  "30064782412" -> "25769805703"  [ label = "DDG: _tmp_3.identifierPattern"] 
+  "30064782414" -> "25769805703"  [ label = "DDG: _tmp_3.jsx"] 
+  "30064782416" -> "25769805703"  [ label = "DDG: _tmp_3.specDeviation"] 
+  "30064782418" -> "25769805703"  [ label = "DDG: _tmp_3.uniqueKeyInPattern"] 
+  "107374183104" -> "25769805703"  [ label = "DDG: "] 
+  "107374183104" -> "30064782388"  [ label = "DDG: "] 
+  "107374183104" -> "30064782390"  [ label = "DDG: "] 
+  "107374183104" -> "30064782392"  [ label = "DDG: "] 
+  "107374183104" -> "30064782394"  [ label = "DDG: "] 
+  "107374183104" -> "30064782396"  [ label = "DDG: "] 
+  "107374183104" -> "30064782398"  [ label = "DDG: "] 
+  "107374183104" -> "30064782400"  [ label = "DDG: "] 
+  "107374183104" -> "30064782402"  [ label = "DDG: "] 
+  "107374183104" -> "30064782404"  [ label = "DDG: "] 
+  "107374183104" -> "30064782406"  [ label = "DDG: "] 
+  "107374183104" -> "30064782408"  [ label = "DDG: "] 
+  "107374183104" -> "30064782410"  [ label = "DDG: "] 
+  "107374183104" -> "30064782412"  [ label = "DDG: "] 
+  "107374183104" -> "30064782414"  [ label = "DDG: "] 
+  "107374183104" -> "30064782416"  [ label = "DDG: "] 
+  "107374183104" -> "30064782418"  [ label = "DDG: "] 
+  "107374183104" -> "68719488085"  [ label = "DDG: "] 
+}

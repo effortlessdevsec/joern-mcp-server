@@ -1,0 +1,70 @@
+digraph "wrapParesr" {  
+node [shape="rect"];  
+"107374182879" [label = <METHOD, 6<BR/>wrapParesr> ]
+"124554052066" [label = <METHOD_RETURN, 6<BR/>astexplorer/website/src/parsers/html/angular-eslint.js::program:callback:&lt;returnValue&gt;> ]
+"111669150614" [label = <PARAM, 6<BR/>this> ]
+"111669150615" [label = <PARAM, 6<BR/>callback> ]
+"111669150616" [label = <PARAM, 6<BR/>{ parseForESLint }> ]
+"30064778483" [label = <&lt;operator&gt;.assignment, 6<BR/>parseForESLint = param2_0.parseForESLint> ]
+"30064778485" [label = <&lt;operator&gt;.assignment, 7<BR/>const parse = (code, options) =&gt; { const { ...> ]
+"141733921123" [label = <RETURN, 63<BR/>return callback({ parse })> ]
+"30064778486" [label = <callback, 63<BR/>callback({ parse })> ]
+"68719484260" [label = <IDENTIFIER, 63<BR/>callback<BR/>callback({ parse })> ]
+"30064778487" [label = <&lt;operator&gt;.assignment, 63<BR/>_tmp_9.parse = parse> ]
+"68719484264" [label = <IDENTIFIER, 63<BR/>_tmp_9<BR/>{ parse }> ]
+  "141733921123" -> "124554052066"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150615" -> "124554052066"  [ label = "DDG: callback"] 
+  "111669150616" -> "124554052066"  [ label = "DDG: param2_0"] 
+  "30064778483" -> "124554052066"  [ label = "DDG: parseForESLint"] 
+  "30064778483" -> "124554052066"  [ label = "DDG: param2_0.parseForESLint"] 
+  "30064778483" -> "124554052066"  [ label = "DDG: parseForESLint = param2_0.parseForESLint"] 
+  "30064778485" -> "124554052066"  [ label = "DDG: const parse = (code, options) =&gt; {
+    const {
+      ast,
+      visitorKeys,
+      services: { convertNodeSourceSpanToLoc },
+    } = parseForESLint(code, options);
+
+    // Traverse AST in order to add `loc` and `range` for each child
+    const addLocation = node =&gt; {
+      if (!node.startSourceSpan || !node.endSourceSpan) {
+        if (!node.sourceSpan) return node;
+        const range = node.range || [
+          node.sourceSpan.start.offset,
+          node.sourceSpan.end.offset,
+        ];
+        const loc = node.loc || convertNodeSourceSpanToLoc(node.sourceSpan);
+        return {
+          ...node,
+          range,
+          loc,
+        };
+      } else {
+        const range = node.range || [
+          node.startSourceSpan.start.offset,
+          node.endSourceSpan.end.offset,
+        ];
+        const loc = node.loc || { 
+          start: convertNodeSourceSpanToLoc(node.startSourceSpan).start,
+          end: convertNodeSourceSpanToLoc(node.endSourceSpan).end,
+        };
+        return ..."] 
+  "30064778486" -> "124554052066"  [ label = "DDG: this"] 
+  "30064778487" -> "124554052066"  [ label = "DDG: _tmp_9.parse"] 
+  "30064778487" -> "124554052066"  [ label = "DDG: parse"] 
+  "30064778487" -> "124554052066"  [ label = "DDG: _tmp_9.parse = parse"] 
+  "30064778486" -> "124554052066"  [ label = "DDG: callback({ parse })"] 
+  "107374182879" -> "111669150614"  [ label = "DDG: "] 
+  "107374182879" -> "111669150615"  [ label = "DDG: "] 
+  "107374182879" -> "111669150616"  [ label = "DDG: "] 
+  "111669150616" -> "30064778483"  [ label = "DDG: param2_0"] 
+  "107374182879" -> "30064778485"  [ label = "DDG: "] 
+  "30064778486" -> "141733921123"  [ label = "DDG: callback({ parse })"] 
+  "107374182879" -> "68719484260"  [ label = "DDG: "] 
+  "111669150614" -> "30064778486"  [ label = "DDG: this"] 
+  "107374182879" -> "30064778486"  [ label = "DDG: "] 
+  "30064778487" -> "30064778486"  [ label = "DDG: _tmp_9.parse"] 
+  "30064778485" -> "30064778487"  [ label = "DDG: parse"] 
+  "107374182879" -> "30064778487"  [ label = "DDG: "] 
+  "107374182879" -> "68719484264"  [ label = "DDG: "] 
+}

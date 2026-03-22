@@ -1,0 +1,24 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183416" [label = <METHOD, 43<BR/>getDefaultOptions> ]
+"124554052599" [label = <METHOD_RETURN, 43<BR/>{ captureLocations: __ecma.Boolean; }> ]
+"111669151766" [label = <PARAM, 43<BR/>this> ]
+"141733921511" [label = <RETURN, 44<BR/>return { captureLocations: true, }> ]
+"25769806603" [label = <BLOCK, 44<BR/>{ captureLocations: true, }> ]
+"30064787586" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_7.captureLocations = true> ]
+"68719493170" [label = <IDENTIFIER, 44<BR/>_tmp_7<BR/>{ captureLocations: true, }> ]
+  "141733921511" -> "124554052599"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151766" -> "124554052599"  [ label = "DDG: this"] 
+  "30064787586" -> "124554052599"  [ label = "DDG: _tmp_7.captureLocations"] 
+  "30064787586" -> "124554052599"  [ label = "DDG: _tmp_7.captureLocations = true"] 
+  "107374183416" -> "111669151766"  [ label = "DDG: "] 
+  "25769806603" -> "141733921511"  [ label = "DDG: "] 
+  "25769806603" -> "141733921511"  [ label = "DDG: {
+      captureLocations: true,
+    }"] 
+  "107374183416" -> "141733921511"  [ label = "DDG: "] 
+  "30064787586" -> "25769806603"  [ label = "DDG: _tmp_7.captureLocations"] 
+  "107374183416" -> "25769806603"  [ label = "DDG: "] 
+  "107374183416" -> "30064787586"  [ label = "DDG: "] 
+  "107374183416" -> "68719493170"  [ label = "DDG: "] 
+}

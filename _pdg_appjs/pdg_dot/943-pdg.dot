@@ -1,0 +1,16 @@
+digraph "&lt;lambda&gt;4" {  
+node [shape="rect"];  
+"107374183343" [label = <METHOD, 32<BR/>&lt;lambda&gt;4> ]
+"124554052525" [label = <METHOD_RETURN, 32<BR/>void> ]
+"111669151605" [label = <PARAM, 32<BR/>this> ]
+"111669151606" [label = <PARAM, 32<BR/>tree> ]
+"30064786518" [label = <&lt;operator&gt;.assignment, 33<BR/>result = tree> ]
+  "111669151605" -> "124554052525"  [ label = "DDG: this"] 
+  "30064786518" -> "124554052525"  [ label = "DDG: result"] 
+  "30064786518" -> "124554052525"  [ label = "DDG: tree"] 
+  "30064786518" -> "124554052525"  [ label = "DDG: result = tree"] 
+  "107374183343" -> "111669151605"  [ label = "DDG: "] 
+  "107374183343" -> "111669151606"  [ label = "DDG: "] 
+  "111669151606" -> "30064786518"  [ label = "DDG: tree"] 
+  "107374183343" -> "30064786518"  [ label = "DDG: "] 
+}

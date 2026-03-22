@@ -1,0 +1,14 @@
+digraph "getDefaultLibFileName" {  
+node [shape="rect"];  
+"107374183254" [label = <METHOD, 44<BR/>getDefaultLibFileName> ]
+"124554052436" [label = <METHOD_RETURN, 44<BR/>__ecma.String> ]
+"111669151417" [label = <PARAM, 44<BR/>this> ]
+"141733921391" [label = <RETURN, 44<BR/>'lib.d.ts'> ]
+"90194316240" [label = <LITERAL, 44<BR/>&quot;lib.d.ts&quot;<BR/>'lib.d.ts'> ]
+  "141733921391" -> "124554052436"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151417" -> "124554052436"  [ label = "DDG: this"] 
+  "107374183254" -> "111669151417"  [ label = "DDG: "] 
+  "90194316240" -> "141733921391"  [ label = "DDG: &quot;lib.d.ts&quot;"] 
+  "107374183254" -> "141733921391"  [ label = "DDG: "] 
+  "107374183254" -> "90194316240"  [ label = "DDG: "] 
+}

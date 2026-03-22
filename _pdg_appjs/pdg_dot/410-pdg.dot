@@ -1,0 +1,107 @@
+digraph "pushContext" {  
+node [shape="rect"];  
+"107374182810" [label = <METHOD, 103<BR/>pushContext> ]
+"124554051992" [label = <METHOD_RETURN, 103<BR/>astexplorer/website/src/parsers/glsl/codemirror-mode/glsl.js::program:&lt;lambda&gt;0:Context> ]
+"111669150452" [label = <PARAM, 103<BR/>this> ]
+"111669150453" [label = <PARAM, 103<BR/>state> ]
+"111669150454" [label = <PARAM, 103<BR/>col> ]
+"111669150455" [label = <PARAM, 103<BR/>type> ]
+"30064777266" [label = <&lt;operator&gt;.assignment, 104<BR/>var indent = state.indented> ]
+"141733921070" [label = <RETURN, 107<BR/>return (state.context = new Context( inde...> ]
+"30064777268" [label = <&lt;operator&gt;.logicalAnd, 105<BR/>state.context &amp;&amp; state.context.type == 'statement'> ]
+"30064777273" [label = <&lt;operator&gt;.assignment, 106<BR/>indent = state.context.indented> ]
+"30064777276" [label = <&lt;operator&gt;.assignment, 107<BR/>state.context = new Context( indent, ...> ]
+"30064777270" [label = <&lt;operator&gt;.equals, 105<BR/>state.context.type == 'statement'> ]
+"30064777278" [label = <&lt;operator&gt;.assignment, 107<BR/>_tmp_5 = .alloc> ]
+"30064777280" [label = <&lt;operator&gt;.new, 107<BR/>new Context( indent, col, typ...> ]
+"68719483089" [label = <IDENTIFIER, 107<BR/>_tmp_5<BR/>new Context( indent, col, typ...> ]
+"68719483083" [label = <IDENTIFIER, 107<BR/>Context<BR/>new Context( indent, col, typ...> ]
+"30064777269" [label = <&lt;operator&gt;.fieldAccess, 105<BR/>state.context> ]
+"30064777274" [label = <&lt;operator&gt;.fieldAccess, 106<BR/>state.context.indented> ]
+"30064777271" [label = <&lt;operator&gt;.fieldAccess, 105<BR/>state.context.type> ]
+"30064777275" [label = <&lt;operator&gt;.fieldAccess, 106<BR/>state.context> ]
+"55834577231" [label = <FIELD_IDENTIFIER, 106<BR/>indented> ]
+"30064777272" [label = <&lt;operator&gt;.fieldAccess, 105<BR/>state.context> ]
+"55834577229" [label = <FIELD_IDENTIFIER, 105<BR/>type> ]
+"55834577230" [label = <FIELD_IDENTIFIER, 106<BR/>context> ]
+"55834577228" [label = <FIELD_IDENTIFIER, 105<BR/>context> ]
+  "141733921070" -> "124554051992"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150452" -> "124554051992"  [ label = "DDG: this"] 
+  "111669150453" -> "124554051992"  [ label = "DDG: state"] 
+  "30064777266" -> "124554051992"  [ label = "DDG: state.indented"] 
+  "30064777266" -> "124554051992"  [ label = "DDG: var indent = state.indented"] 
+  "30064777270" -> "124554051992"  [ label = "DDG: state.context.type"] 
+  "30064777268" -> "124554051992"  [ label = "DDG: state.context.type == 'statement'"] 
+  "30064777268" -> "124554051992"  [ label = "DDG: state.context &amp;&amp; state.context.type == 'statement'"] 
+  "30064777273" -> "124554051992"  [ label = "DDG: state.context.indented"] 
+  "30064777273" -> "124554051992"  [ label = "DDG: indent = state.context.indented"] 
+  "30064777276" -> "124554051992"  [ label = "DDG: state.context"] 
+  "30064777278" -> "124554051992"  [ label = "DDG: .alloc"] 
+  "30064777278" -> "124554051992"  [ label = "DDG: _tmp_5 = .alloc"] 
+  "30064777280" -> "124554051992"  [ label = "DDG: _tmp_5"] 
+  "30064777280" -> "124554051992"  [ label = "DDG: indent"] 
+  "30064777280" -> "124554051992"  [ label = "DDG: col"] 
+  "30064777280" -> "124554051992"  [ label = "DDG: type"] 
+  "30064777280" -> "124554051992"  [ label = "DDG: new Context(
+      indent,
+      col,
+      type,
+      null,
+      state.context,
+    )"] 
+  "30064777276" -> "124554051992"  [ label = "DDG: state.context = new Context(
+      indent,
+      col,
+      type,
+      null,
+      state.context,
+    )"] 
+  "107374182810" -> "111669150452"  [ label = "DDG: "] 
+  "107374182810" -> "111669150453"  [ label = "DDG: "] 
+  "107374182810" -> "111669150454"  [ label = "DDG: "] 
+  "107374182810" -> "111669150455"  [ label = "DDG: "] 
+  "111669150453" -> "30064777266"  [ label = "DDG: state"] 
+  "30064777276" -> "141733921070"  [ label = "DDG: state.context = new Context(
+      indent,
+      col,
+      type,
+      null,
+      state.context,
+    )"] 
+  "30064777280" -> "30064777276"  [ label = "DDG: new Context(
+      indent,
+      col,
+      type,
+      null,
+      state.context,
+    )"] 
+  "30064777280" -> "30064777276"  [ label = "DDG: _tmp_5"] 
+  "107374182810" -> "30064777276"  [ label = "DDG: "] 
+  "111669150453" -> "30064777268"  [ label = "DDG: state"] 
+  "30064777270" -> "30064777268"  [ label = "DDG: state.context.type"] 
+  "30064777270" -> "30064777268"  [ label = "DDG: &quot;statement&quot;"] 
+  "107374182810" -> "30064777270"  [ label = "DDG: "] 
+  "107374182810" -> "30064777278"  [ label = "DDG: "] 
+  "107374182810" -> "68719483089"  [ label = "DDG: "] 
+  "30064777442" -> "68719483083"  [ label = "DDG: Context"] 
+  "107374182810" -> "68719483083"  [ label = "DDG: "] 
+  "30064777278" -> "30064777280"  [ label = "DDG: _tmp_5"] 
+  "107374182810" -> "30064777280"  [ label = "DDG: "] 
+  "30064777266" -> "30064777280"  [ label = "DDG: indent"] 
+  "30064777273" -> "30064777280"  [ label = "DDG: indent"] 
+  "111669150454" -> "30064777280"  [ label = "DDG: col"] 
+  "111669150455" -> "30064777280"  [ label = "DDG: type"] 
+  "111669150453" -> "30064777280"  [ label = "DDG: state"] 
+  "30064777268" -> "30064777280"  [ label = "DDG: state.context"] 
+  "30064777270" -> "30064777280"  [ label = "DDG: state.context.type"] 
+  "30064777268" -> "55834577230"  [ label = "CDG: "] 
+  "30064777268" -> "55834577231"  [ label = "CDG: "] 
+  "30064777268" -> "30064777274"  [ label = "CDG: "] 
+  "30064777268" -> "30064777273"  [ label = "CDG: "] 
+  "30064777268" -> "30064777275"  [ label = "CDG: "] 
+  "30064777269" -> "55834577228"  [ label = "CDG: "] 
+  "30064777269" -> "55834577229"  [ label = "CDG: "] 
+  "30064777269" -> "30064777270"  [ label = "CDG: "] 
+  "30064777269" -> "30064777272"  [ label = "CDG: "] 
+  "30064777269" -> "30064777271"  [ label = "CDG: "] 
+}

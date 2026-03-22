@@ -1,0 +1,78 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183677" [label = <METHOD, 4<BR/>parse> ]
+"124554052860" [label = <METHOD_RETURN, 4<BR/>__ecma.Promise:then:&lt;returnValue&gt;> ]
+"111669152241" [label = <PARAM, 4<BR/>this> ]
+"111669152242" [label = <PARAM, 4<BR/>parser> ]
+"111669152243" [label = <PARAM, 4<BR/>code> ]
+"111669152244" [label = <PARAM, 4<BR/>parserSettings> ]
+"141733921727" [label = <RETURN, 8<BR/>return parser._promise.then( realParser =&gt; ...> ]
+"30064790642" [label = <&lt;operator&gt;.logicalNot, 5<BR/>!parser._promise> ]
+"30064790650" [label = <then, 8<BR/>parser._promise.then( realParser =&gt; parser....> ]
+"30064790644" [label = <&lt;operator&gt;.assignment, 6<BR/>parser._promise = new Promise(parser.loadParser)> ]
+"30064790646" [label = <&lt;operator&gt;.assignment, 6<BR/>_tmp_0 = .alloc> ]
+"30064790648" [label = <&lt;operator&gt;.new, 6<BR/>new Promise(parser.loadParser)> ]
+"68719496192" [label = <IDENTIFIER, 6<BR/>_tmp_0<BR/>new Promise(parser.loadParser)> ]
+"30064790652" [label = <&lt;operator&gt;.assignment, 8<BR/>(_tmp_1 = parser._promise)> ]
+"68719496189" [label = <IDENTIFIER, 6<BR/>Promise<BR/>new Promise(parser.loadParser)> ]
+"30064790645" [label = <&lt;operator&gt;.fieldAccess, 6<BR/>parser._promise> ]
+"55834581865" [label = <FIELD_IDENTIFIER, 6<BR/>_promise> ]
+"30064790647" [label = <&lt;operator&gt;.alloc, 6<BR/>.alloc> ]
+"30064790649" [label = <&lt;operator&gt;.fieldAccess, 6<BR/>parser.loadParser> ]
+"55834581866" [label = <FIELD_IDENTIFIER, 6<BR/>loadParser> ]
+  "141733921727" -> "124554052860"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152241" -> "124554052860"  [ label = "DDG: this"] 
+  "111669152242" -> "124554052860"  [ label = "DDG: parser"] 
+  "111669152243" -> "124554052860"  [ label = "DDG: code"] 
+  "111669152244" -> "124554052860"  [ label = "DDG: parserSettings"] 
+  "30064790642" -> "124554052860"  [ label = "DDG: !parser._promise"] 
+  "30064790646" -> "124554052860"  [ label = "DDG: .alloc"] 
+  "30064790646" -> "124554052860"  [ label = "DDG: _tmp_0 = .alloc"] 
+  "30064790648" -> "124554052860"  [ label = "DDG: _tmp_0"] 
+  "30064790648" -> "124554052860"  [ label = "DDG: parser.loadParser"] 
+  "30064790648" -> "124554052860"  [ label = "DDG: new Promise(parser.loadParser)"] 
+  "30064790644" -> "124554052860"  [ label = "DDG: parser._promise = new Promise(parser.loadParser)"] 
+  "30064790652" -> "124554052860"  [ label = "DDG: parser._promise"] 
+  "30064790650" -> "124554052860"  [ label = "DDG: _tmp_1"] 
+  "30064790650" -> "124554052860"  [ label = "DDG: parser._promise.then(
+    realParser =&gt; parser.parse(
+      realParser,
+      code,
+      parserSettings || parser.getDefaultOptions(),
+    ),
+  )"] 
+  "107374183677" -> "111669152241"  [ label = "DDG: "] 
+  "107374183677" -> "111669152242"  [ label = "DDG: "] 
+  "107374183677" -> "111669152243"  [ label = "DDG: "] 
+  "107374183677" -> "111669152244"  [ label = "DDG: "] 
+  "30064790650" -> "141733921727"  [ label = "DDG: parser._promise.then(
+    realParser =&gt; parser.parse(
+      realParser,
+      code,
+      parserSettings || parser.getDefaultOptions(),
+    ),
+  )"] 
+  "111669152242" -> "30064790642"  [ label = "DDG: parser"] 
+  "30064790648" -> "30064790644"  [ label = "DDG: new Promise(parser.loadParser)"] 
+  "30064790648" -> "30064790644"  [ label = "DDG: _tmp_0"] 
+  "107374183677" -> "30064790644"  [ label = "DDG: "] 
+  "30064790652" -> "30064790650"  [ label = "DDG: _tmp_1"] 
+  "107374183677" -> "30064790650"  [ label = "DDG: "] 
+  "107374183677" -> "30064790646"  [ label = "DDG: "] 
+  "107374183677" -> "68719496192"  [ label = "DDG: "] 
+  "111669152242" -> "30064790652"  [ label = "DDG: parser"] 
+  "30064790642" -> "30064790652"  [ label = "DDG: parser._promise"] 
+  "30064790644" -> "30064790652"  [ label = "DDG: parser._promise"] 
+  "107374183677" -> "68719496189"  [ label = "DDG: "] 
+  "30064790646" -> "30064790648"  [ label = "DDG: _tmp_0"] 
+  "107374183677" -> "30064790648"  [ label = "DDG: "] 
+  "111669152242" -> "30064790648"  [ label = "DDG: parser"] 
+  "30064790642" -> "30064790644"  [ label = "CDG: "] 
+  "30064790642" -> "30064790646"  [ label = "CDG: "] 
+  "30064790642" -> "30064790645"  [ label = "CDG: "] 
+  "30064790642" -> "30064790648"  [ label = "CDG: "] 
+  "30064790642" -> "30064790647"  [ label = "CDG: "] 
+  "30064790642" -> "30064790649"  [ label = "CDG: "] 
+  "30064790642" -> "55834581866"  [ label = "CDG: "] 
+  "30064790642" -> "55834581865"  [ label = "CDG: "] 
+}

@@ -1,0 +1,18 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182661" [label = <METHOD, 114<BR/>&lt;lambda&gt;1> ]
+"124554051844" [label = <METHOD_RETURN, 114<BR/>void> ]
+"111669150151" [label = <PARAM, 114<BR/>this> ]
+"30064775130" [label = <&lt;operator&gt;.assignment, 115<BR/>previousComputedOpenState.current = computedOpe...> ]
+  "111669150151" -> "124554051844"  [ label = "DDG: this"] 
+  "30064775130" -> "124554051844"  [ label = "DDG: previousComputedOpenState.current"] 
+  "30064775130" -> "124554051844"  [ label = "DDG: computedOpenState"] 
+  "30064775130" -> "124554051844"  [ label = "DDG: previousComputedOpenState.current = computedOpenState"] 
+  "107374182661" -> "111669150151"  [ label = "DDG: "] 
+  "30064775149" -> "30064775130"  [ label = "DDG: computedOpenState"] 
+  "30064775152" -> "30064775130"  [ label = "DDG: computedOpenState"] 
+  "30064775178" -> "30064775130"  [ label = "DDG: computedOpenState"] 
+  "30064775154" -> "30064775130"  [ label = "DDG: computedOpenState"] 
+  "30064775171" -> "30064775130"  [ label = "DDG: computedOpenState"] 
+  "107374182661" -> "30064775130"  [ label = "DDG: "] 
+}

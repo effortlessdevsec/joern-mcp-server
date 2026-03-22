@@ -1,0 +1,191 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183621" [label = <METHOD, 1<BR/>:program> ]
+"124554052829" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152194" [label = <PARAM, 1<BR/>this> ]
+"30064790337" [label = <&lt;operator&gt;.assignment, 1<BR/>var React = require(&quot;react&quot;)> ]
+"30064790338" [label = <&lt;operator&gt;.assignment, 2<BR/>var api = require(&quot;./api&quot;)> ]
+"25769807184" [label = <BLOCK, 3<BR/>import {getTransformerByID, getParserByID} from...> ]
+"30064790343" [label = <&lt;operator&gt;.assignment, 5<BR/>function getIDAndRevisionFromHash = function ge...> ]
+"30064790344" [label = <&lt;operator&gt;.assignment, 16<BR/>function fetchSnippet = function fetchSnippet(s...> ]
+"25769807185" [label = <BLOCK, 32<BR/>export function owns(snippet) { return snippe...> ]
+"25769807186" [label = <BLOCK, 36<BR/>export function matchesURL() { return getIDAn...> ]
+"25769807187" [label = <BLOCK, 40<BR/>export function updateHash(revision) { const ...> ]
+"25769807188" [label = <BLOCK, 46<BR/>export function fetchFromURL() { const urlPar...> ]
+"25769807189" [label = <BLOCK, 57<BR/>export function create() { return Promise.rej...> ]
+"25769807190" [label = <BLOCK, 66<BR/>export function update() { return Promise.rej...> ]
+"25769807191" [label = <BLOCK, 75<BR/>export function fork() { return Promise.rejec...> ]
+"25769807192" [label = <BLOCK, 81<BR/>&lt;empty&gt;> ]
+"30064790339" [label = <&lt;operator&gt;.assignment, 3<BR/>var getTransformerByID = require(&quot;../parsers&quot;)....> ]
+"30064790341" [label = <&lt;operator&gt;.assignment, 3<BR/>var getParserByID = require(&quot;../parsers&quot;).getPa...> ]
+"30064790345" [label = <&lt;operator&gt;.assignment, 32<BR/>function owns = function owns(snippet) { retu...> ]
+"30064790346" [label = <&lt;operator&gt;.assignment, 32<BR/>exports.owns = owns> ]
+"30064790348" [label = <&lt;operator&gt;.assignment, 36<BR/>function matchesURL = function matchesURL() { ...> ]
+"30064790349" [label = <&lt;operator&gt;.assignment, 36<BR/>exports.matchesURL = matchesURL> ]
+"30064790351" [label = <&lt;operator&gt;.assignment, 40<BR/>function updateHash = function updateHash(revis...> ]
+"30064790352" [label = <&lt;operator&gt;.assignment, 40<BR/>exports.updateHash = updateHash> ]
+"30064790354" [label = <&lt;operator&gt;.assignment, 46<BR/>function fetchFromURL = function fetchFromURL()...> ]
+"30064790355" [label = <&lt;operator&gt;.assignment, 46<BR/>exports.fetchFromURL = fetchFromURL> ]
+"30064790357" [label = <&lt;operator&gt;.assignment, 57<BR/>function create = function create() { return ...> ]
+"30064790358" [label = <&lt;operator&gt;.assignment, 57<BR/>exports.create = create> ]
+"30064790360" [label = <&lt;operator&gt;.assignment, 66<BR/>function update = function update() { return ...> ]
+"30064790361" [label = <&lt;operator&gt;.assignment, 66<BR/>exports.update = update> ]
+"30064790363" [label = <&lt;operator&gt;.assignment, 75<BR/>function fork = function fork() { return Prom...> ]
+"30064790364" [label = <&lt;operator&gt;.assignment, 75<BR/>exports.fork = fork> ]
+"176093659158" [label = <TYPE_REF, 81<BR/>class Revision> ]
+"30064790366" [label = <&lt;operator&gt;.assignment, 81<BR/>Revision = astexplorer/website/src/storage/pars...> ]
+"68719495853" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064790179" [label = <require, 1<BR/>require(&quot;react&quot;)> ]
+"68719495856" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;./api&quot;)> ]
+"30064790180" [label = <require, 2<BR/>require(&quot;./api&quot;)> ]
+"68719495859" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../parsers&quot;)> ]
+"30064790181" [label = <require, 3<BR/>require(&quot;../parsers&quot;)> ]
+"68719495862" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../parsers&quot;)> ]
+"30064790182" [label = <require, 3<BR/>require(&quot;../parsers&quot;)> ]
+  "30064790337" -> "124554052829"  [ label = "DDG: React"] 
+  "30064790337" -> "124554052829"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064790337" -> "124554052829"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064790338" -> "124554052829"  [ label = "DDG: api"] 
+  "30064790338" -> "124554052829"  [ label = "DDG: require(&quot;./api&quot;)"] 
+  "30064790338" -> "124554052829"  [ label = "DDG: var api = require(&quot;./api&quot;)"] 
+  "30064790339" -> "124554052829"  [ label = "DDG: getTransformerByID"] 
+  "30064790339" -> "124554052829"  [ label = "DDG: var getTransformerByID = require(&quot;../parsers&quot;).getTransformerByID"] 
+  "30064790341" -> "124554052829"  [ label = "DDG: getParserByID"] 
+  "30064790182" -> "124554052829"  [ label = "DDG: this"] 
+  "30064790341" -> "124554052829"  [ label = "DDG: require(&quot;../parsers&quot;).getParserByID"] 
+  "30064790341" -> "124554052829"  [ label = "DDG: var getParserByID = require(&quot;../parsers&quot;).getParserByID"] 
+  "30064790343" -> "124554052829"  [ label = "DDG: getIDAndRevisionFromHash"] 
+  "30064790343" -> "124554052829"  [ label = "DDG: function getIDAndRevisionFromHash = function getIDAndRevisionFromHash() {
+  let match = global.location.hash.match(/^#\/(?!gist\/)([^/]+)(?:\/(latest|\d*))?/);
+  if (match) {
+    return {
+      id: match[1],
+      rev: match[2] || 0,
+    };
+  }
+  return null;
+}"] 
+  "30064790344" -> "124554052829"  [ label = "DDG: fetchSnippet"] 
+  "30064790344" -> "124554052829"  [ label = "DDG: function fetchSnippet = function fetchSnippet(snippetID, revisionID='latest') {
+  return api(`/parse/${snippetID}/${revisionID}`)
+    .then(response =&gt; {
+      if (response.ok) {
+        return response.json();
+      }
+      switch (response.status) {
+        case 404:
+          throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+        default:
+          throw new Error('Unknown error.');
+      }
+    })
+    .then(response =&gt; new Revision(response));
+}"] 
+  "30064790345" -> "124554052829"  [ label = "DDG: function owns = function owns(snippet) {
+  return snippet instanceof Revision;
+}"] 
+  "30064790346" -> "124554052829"  [ label = "DDG: exports.owns"] 
+  "30064790346" -> "124554052829"  [ label = "DDG: owns"] 
+  "30064790346" -> "124554052829"  [ label = "DDG: exports.owns = owns"] 
+  "30064790348" -> "124554052829"  [ label = "DDG: function matchesURL = function matchesURL() {
+  return getIDAndRevisionFromHash() !== null;
+}"] 
+  "30064790349" -> "124554052829"  [ label = "DDG: exports.matchesURL"] 
+  "30064790349" -> "124554052829"  [ label = "DDG: matchesURL"] 
+  "30064790349" -> "124554052829"  [ label = "DDG: exports.matchesURL = matchesURL"] 
+  "30064790351" -> "124554052829"  [ label = "DDG: function updateHash = function updateHash(revision) {
+  const rev = revision.getRevisionID();
+  const newHash = '/' + revision.getSnippetID() + (rev &amp;&amp; rev !== 0 ? '/' + rev : '');
+  global.location.hash = newHash;
+}"] 
+  "30064790352" -> "124554052829"  [ label = "DDG: exports.updateHash"] 
+  "30064790352" -> "124554052829"  [ label = "DDG: updateHash"] 
+  "30064790352" -> "124554052829"  [ label = "DDG: exports.updateHash = updateHash"] 
+  "30064790354" -> "124554052829"  [ label = "DDG: function fetchFromURL = function fetchFromURL() {
+  const urlParameters = getIDAndRevisionFromHash();
+  if (urlParameters) {
+    return fetchSnippet(urlParameters.id, urlParameters.rev);
+  }
+  return Promise.resolve(null);
+}"] 
+  "30064790355" -> "124554052829"  [ label = "DDG: exports.fetchFromURL"] 
+  "30064790355" -> "124554052829"  [ label = "DDG: fetchFromURL"] 
+  "30064790355" -> "124554052829"  [ label = "DDG: exports.fetchFromURL = fetchFromURL"] 
+  "30064790357" -> "124554052829"  [ label = "DDG: function create = function create() {
+  return Promise.reject(
+    new Error('Saving Parse snippets is not supported anymore.'),
+  );
+}"] 
+  "30064790358" -> "124554052829"  [ label = "DDG: exports.create"] 
+  "30064790358" -> "124554052829"  [ label = "DDG: create"] 
+  "30064790358" -> "124554052829"  [ label = "DDG: exports.create = create"] 
+  "30064790360" -> "124554052829"  [ label = "DDG: function update = function update() {
+  return Promise.reject(
+    new Error('Saving Parse snippets is not supported anymore.'),
+  );
+}"] 
+  "30064790361" -> "124554052829"  [ label = "DDG: exports.update"] 
+  "30064790361" -> "124554052829"  [ label = "DDG: update"] 
+  "30064790361" -> "124554052829"  [ label = "DDG: exports.update = update"] 
+  "30064790363" -> "124554052829"  [ label = "DDG: function fork = function fork() {
+  return Promise.reject(
+    new Error('Saving Parse snippets is not supported anymore.'),
+  );
+}"] 
+  "30064790364" -> "124554052829"  [ label = "DDG: exports.fork"] 
+  "30064790364" -> "124554052829"  [ label = "DDG: fork"] 
+  "30064790364" -> "124554052829"  [ label = "DDG: exports.fork = fork"] 
+  "30064790366" -> "124554052829"  [ label = "DDG: Revision"] 
+  "30064790366" -> "124554052829"  [ label = "DDG: Revision = astexplorer/website/src/storage/parse.js::program:Revision:&lt;init&gt;"] 
+  "107374183621" -> "111669152194"  [ label = "DDG: "] 
+  "30064790179" -> "30064790337"  [ label = "DDG: this"] 
+  "30064790179" -> "30064790337"  [ label = "DDG: &quot;react&quot;"] 
+  "30064790180" -> "30064790338"  [ label = "DDG: this"] 
+  "30064790180" -> "30064790338"  [ label = "DDG: &quot;./api&quot;"] 
+  "107374183621" -> "25769807184"  [ label = "DDG: "] 
+  "107374183621" -> "30064790343"  [ label = "DDG: "] 
+  "107374183621" -> "30064790344"  [ label = "DDG: "] 
+  "107374183621" -> "25769807185"  [ label = "DDG: "] 
+  "107374183621" -> "25769807186"  [ label = "DDG: "] 
+  "107374183621" -> "25769807187"  [ label = "DDG: "] 
+  "107374183621" -> "25769807188"  [ label = "DDG: "] 
+  "107374183621" -> "25769807189"  [ label = "DDG: "] 
+  "107374183621" -> "25769807190"  [ label = "DDG: "] 
+  "107374183621" -> "25769807191"  [ label = "DDG: "] 
+  "107374183621" -> "25769807192"  [ label = "DDG: "] 
+  "107374183621" -> "30064790345"  [ label = "DDG: "] 
+  "30064790345" -> "30064790346"  [ label = "DDG: owns"] 
+  "107374183621" -> "30064790346"  [ label = "DDG: "] 
+  "107374183621" -> "30064790348"  [ label = "DDG: "] 
+  "30064790348" -> "30064790349"  [ label = "DDG: matchesURL"] 
+  "107374183621" -> "30064790349"  [ label = "DDG: "] 
+  "107374183621" -> "30064790351"  [ label = "DDG: "] 
+  "30064790351" -> "30064790352"  [ label = "DDG: updateHash"] 
+  "107374183621" -> "30064790352"  [ label = "DDG: "] 
+  "107374183621" -> "30064790354"  [ label = "DDG: "] 
+  "30064790354" -> "30064790355"  [ label = "DDG: fetchFromURL"] 
+  "107374183621" -> "30064790355"  [ label = "DDG: "] 
+  "107374183621" -> "30064790357"  [ label = "DDG: "] 
+  "30064790357" -> "30064790358"  [ label = "DDG: create"] 
+  "107374183621" -> "30064790358"  [ label = "DDG: "] 
+  "107374183621" -> "30064790360"  [ label = "DDG: "] 
+  "30064790360" -> "30064790361"  [ label = "DDG: update"] 
+  "107374183621" -> "30064790361"  [ label = "DDG: "] 
+  "107374183621" -> "30064790363"  [ label = "DDG: "] 
+  "30064790363" -> "30064790364"  [ label = "DDG: fork"] 
+  "107374183621" -> "30064790364"  [ label = "DDG: "] 
+  "107374183621" -> "176093659158"  [ label = "DDG: "] 
+  "107374183621" -> "30064790366"  [ label = "DDG: "] 
+  "107374183621" -> "68719495853"  [ label = "DDG: "] 
+  "111669152194" -> "30064790179"  [ label = "DDG: this"] 
+  "107374183621" -> "30064790179"  [ label = "DDG: "] 
+  "107374183621" -> "68719495856"  [ label = "DDG: "] 
+  "30064790179" -> "30064790180"  [ label = "DDG: this"] 
+  "107374183621" -> "30064790180"  [ label = "DDG: "] 
+  "107374183621" -> "68719495859"  [ label = "DDG: "] 
+  "30064790180" -> "30064790181"  [ label = "DDG: this"] 
+  "107374183621" -> "30064790181"  [ label = "DDG: "] 
+  "107374183621" -> "68719495862"  [ label = "DDG: "] 
+  "30064790181" -> "30064790182"  [ label = "DDG: this"] 
+  "107374183621" -> "30064790182"  [ label = "DDG: "] 
+}

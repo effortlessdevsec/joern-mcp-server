@@ -1,0 +1,4 @@
+digraph "write" {  
+node [shape="rect"];  
+
+}

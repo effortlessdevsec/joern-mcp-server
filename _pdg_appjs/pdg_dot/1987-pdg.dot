@@ -1,0 +1,4 @@
+digraph "lex" {  
+node [shape="rect"];  
+
+}

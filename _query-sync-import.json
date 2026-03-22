@@ -1,0 +1,3 @@
+{
+  "query": "importCode.jssrc(\"/Users/effortlessdevsec/personal_blog/code_review_basic\")\nrun.ossdataflow\nval projPath = workspace.getActiveProject.map(_.path.toAbsolutePath.toString).getOrElse(\"\")\nimport java.nio.file.{Files, Paths}\nFiles.writeString(Paths.get(\"/tmp/joern-mcp/import-http-try.txt\"), projPath)\nprintln(\"PROJECT_PATH:\" + projPath)"
+}

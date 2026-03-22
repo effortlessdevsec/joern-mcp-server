@@ -1,0 +1,17 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183751" [label = <METHOD, 33<BR/>&lt;lambda&gt;1> ]
+"124554052934" [label = <METHOD_RETURN, 33<BR/>(action: ANY) =&gt; Promise&lt;void&gt;> ]
+"111669152420" [label = <PARAM, 33<BR/>this> ]
+"111669152421" [label = <PARAM, 33<BR/>next> ]
+"141733921841" [label = <RETURN, 33<BR/>async (action) =&gt; { const oldState = store.ge...> ]
+"120259085319" [label = <METHOD_REF, 33<BR/>&lt;lambda&gt;2<BR/>async (action) =&gt; { const oldState = store.ge...> ]
+  "141733921841" -> "124554052934"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152420" -> "124554052934"  [ label = "DDG: this"] 
+  "111669152421" -> "124554052934"  [ label = "DDG: next"] 
+  "107374183751" -> "111669152420"  [ label = "DDG: "] 
+  "107374183751" -> "111669152421"  [ label = "DDG: "] 
+  "120259085319" -> "141733921841"  [ label = "DDG: &lt;lambda&gt;2"] 
+  "107374183751" -> "141733921841"  [ label = "DDG: "] 
+  "107374183751" -> "120259085319"  [ label = "DDG: "] 
+}

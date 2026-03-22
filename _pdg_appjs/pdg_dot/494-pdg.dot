@@ -1,0 +1,48 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374182894" [label = <METHOD, 137<BR/>&lt;lambda&gt;2> ]
+"124554052077" [label = <METHOD_RETURN, 137<BR/>void> ]
+"111669150641" [label = <PARAM, 137<BR/>this> ]
+"111669150642" [label = <PARAM, 137<BR/>node> ]
+"111669150643" [label = <PARAM, 137<BR/>parent> ]
+"30064778635" [label = <&lt;operator&gt;.assignment, 138<BR/>const baseStart = getBaseStart(parent)> ]
+"30064778637" [label = <visitTarget, 139<BR/>visitTarget( node, value =&gt; val...> ]
+"68719484433" [label = <IDENTIFIER, 139<BR/>visitTarget<BR/>visitTarget( node, value =&gt; val...> ]
+"68719484430" [label = <IDENTIFIER, 138<BR/>getBaseStart<BR/>getBaseStart(parent)> ]
+"30064778636" [label = <getBaseStart, 138<BR/>getBaseStart(parent)> ]
+  "30064778635" -> "124554052077"  [ label = "DDG: baseStart"] 
+  "30064778636" -> "124554052077"  [ label = "DDG: parent"] 
+  "30064778635" -> "124554052077"  [ label = "DDG: getBaseStart(parent)"] 
+  "30064778635" -> "124554052077"  [ label = "DDG: const baseStart = getBaseStart(parent)"] 
+  "30064778637" -> "124554052077"  [ label = "DDG: this"] 
+  "30064778637" -> "124554052077"  [ label = "DDG: node"] 
+  "30064778637" -> "124554052077"  [ label = "DDG: visitTarget(
+        node,
+        value =&gt; value.span,
+        node =&gt; {
+          if (!fixed.has(node)) {
+            node.span.start += baseStart;
+            node.span.end += baseStart;
+            fixed.add(node);
+          }
+
+          return KEEP_VISIT;
+        },
+      )"] 
+  "107374182894" -> "111669150641"  [ label = "DDG: "] 
+  "107374182894" -> "111669150642"  [ label = "DDG: "] 
+  "107374182894" -> "111669150643"  [ label = "DDG: "] 
+  "30064778636" -> "30064778635"  [ label = "DDG: this"] 
+  "30064778636" -> "30064778635"  [ label = "DDG: parent"] 
+  "30064778638" -> "68719484433"  [ label = "DDG: visitTarget"] 
+  "68719484444" -> "68719484433"  [ label = "DDG: visitTarget"] 
+  "107374182894" -> "68719484433"  [ label = "DDG: "] 
+  "30064778636" -> "30064778637"  [ label = "DDG: this"] 
+  "107374182894" -> "30064778637"  [ label = "DDG: "] 
+  "111669150642" -> "30064778637"  [ label = "DDG: node"] 
+  "30064778639" -> "68719484430"  [ label = "DDG: getBaseStart"] 
+  "107374182894" -> "68719484430"  [ label = "DDG: "] 
+  "111669150641" -> "30064778636"  [ label = "DDG: this"] 
+  "107374182894" -> "30064778636"  [ label = "DDG: "] 
+  "111669150643" -> "30064778636"  [ label = "DDG: parent"] 
+}

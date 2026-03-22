@@ -1,0 +1,21 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374182441" [label = <METHOD, 53<BR/>&lt;lambda&gt;2> ]
+"124554051624" [label = <METHOD_RETURN, 53<BR/>ANY> ]
+"111669149784" [label = <PARAM, 53<BR/>this> ]
+"111669149785" [label = <PARAM, 53<BR/>response> ]
+"141733920821" [label = <RETURN, 53<BR/>res.json(response.data)> ]
+"30064771919" [label = <json, 53<BR/>res.json(response.data)> ]
+  "141733920821" -> "124554051624"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149784" -> "124554051624"  [ label = "DDG: this"] 
+  "111669149785" -> "124554051624"  [ label = "DDG: response"] 
+  "30064771919" -> "124554051624"  [ label = "DDG: res"] 
+  "30064771919" -> "124554051624"  [ label = "DDG: response.data"] 
+  "30064771919" -> "124554051624"  [ label = "DDG: res.json(response.data)"] 
+  "107374182441" -> "111669149784"  [ label = "DDG: "] 
+  "107374182441" -> "111669149785"  [ label = "DDG: "] 
+  "30064771919" -> "141733920821"  [ label = "DDG: res.json(response.data)"] 
+  "111669149788" -> "30064771919"  [ label = "DDG: res"] 
+  "107374182441" -> "30064771919"  [ label = "DDG: "] 
+  "111669149785" -> "30064771919"  [ label = "DDG: response"] 
+}

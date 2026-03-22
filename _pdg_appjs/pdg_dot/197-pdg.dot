@@ -1,0 +1,47 @@
+digraph "SaveButton" {  
+node [shape="rect"];  
+"107374182597" [label = <METHOD, 4<BR/>SaveButton> ]
+"124554051780" [label = <METHOD_RETURN, 4<BR/>ANY> ]
+"111669150046" [label = <PARAM, 4<BR/>this> ]
+"111669150047" [label = <PARAM, 4<BR/>{saving, forking, onNew}> ]
+"30064774203" [label = <&lt;operator&gt;.assignment, 4<BR/>saving = param1_0.saving> ]
+"30064774205" [label = <&lt;operator&gt;.assignment, 4<BR/>forking = param1_0.forking> ]
+"30064774207" [label = <&lt;operator&gt;.assignment, 4<BR/>onNew = param1_0.onNew> ]
+"141733920900" [label = <RETURN, 5<BR/>return ( &lt;button type=&quot;button&quot; ...> ]
+"154618823225" [label = <TEMPLATE_DOM, 6<BR/>&lt;button type=&quot;button&quot; disabled={sav...> ]
+"90194313921" [label = <LITERAL, 7<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064774209" [label = <&lt;operator&gt;.logicalOr, 8<BR/>saving || forking> ]
+"68719479861" [label = <IDENTIFIER, 9<BR/>onNew<BR/>{onNew}> ]
+"90194313922" [label = <LITERAL, 10<BR/>&quot;fa fa-file-o fa-fw&quot;<BR/>className=&quot;fa fa-file-o fa-fw&quot;> ]
+  "141733920900" -> "124554051780"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150046" -> "124554051780"  [ label = "DDG: this"] 
+  "111669150047" -> "124554051780"  [ label = "DDG: param1_0"] 
+  "30064774203" -> "124554051780"  [ label = "DDG: param1_0.saving"] 
+  "30064774203" -> "124554051780"  [ label = "DDG: saving = param1_0.saving"] 
+  "30064774205" -> "124554051780"  [ label = "DDG: param1_0.forking"] 
+  "30064774205" -> "124554051780"  [ label = "DDG: forking = param1_0.forking"] 
+  "30064774207" -> "124554051780"  [ label = "DDG: onNew"] 
+  "30064774207" -> "124554051780"  [ label = "DDG: param1_0.onNew"] 
+  "30064774207" -> "124554051780"  [ label = "DDG: onNew = param1_0.onNew"] 
+  "30064774209" -> "124554051780"  [ label = "DDG: saving"] 
+  "30064774209" -> "124554051780"  [ label = "DDG: forking"] 
+  "30064774209" -> "124554051780"  [ label = "DDG: saving || forking"] 
+  "107374182597" -> "111669150046"  [ label = "DDG: "] 
+  "107374182597" -> "111669150047"  [ label = "DDG: "] 
+  "111669150047" -> "30064774203"  [ label = "DDG: param1_0"] 
+  "111669150047" -> "30064774205"  [ label = "DDG: param1_0"] 
+  "111669150047" -> "30064774207"  [ label = "DDG: param1_0"] 
+  "154618823225" -> "141733920900"  [ label = "DDG: &lt;button
+      type=&quot;button&quot;
+      disabled={saving || forking}
+      onClick={onNew}&gt;
+      &lt;i className=&quot;fa fa-file-o fa-fw&quot; /&gt;&amp;nbsp;New
+    &lt;/button&gt;"] 
+  "107374182597" -> "141733920900"  [ label = "DDG: "] 
+  "107374182597" -> "90194313921"  [ label = "DDG: "] 
+  "107374182597" -> "68719479861"  [ label = "DDG: "] 
+  "107374182597" -> "90194313922"  [ label = "DDG: "] 
+  "30064774203" -> "30064774209"  [ label = "DDG: saving"] 
+  "107374182597" -> "30064774209"  [ label = "DDG: "] 
+  "30064774205" -> "30064774209"  [ label = "DDG: forking"] 
+}

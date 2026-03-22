@@ -1,0 +1,27 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183510" [label = <METHOD, 1<BR/>:program> ]
+"124554052694" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151955" [label = <PARAM, 1<BR/>this> ]
+"25769806860" [label = <BLOCK, 1<BR/>export default function compileModule(code, glo...> ]
+"30064788906" [label = <&lt;operator&gt;.assignment, 1<BR/>function compileModule = function compileModule...> ]
+"30064788907" [label = <&lt;operator&gt;.assignment, 1<BR/>exports[&quot;default&quot;] = compileModule> ]
+  "111669151955" -> "124554052694"  [ label = "DDG: this"] 
+  "30064788906" -> "124554052694"  [ label = "DDG: function compileModule = function compileModule(code, globals = {}) {
+  let exports = {};
+  let module = { exports };
+  let globalNames = Object.keys(globals);
+  let keys = ['module', 'exports', ...globalNames];
+  let values = [module, exports, ...globalNames.map(key =&gt; globals[key])];
+  new Function(keys.join(), code).apply(exports, values);
+  return module.exports;
+}"] 
+  "30064788907" -> "124554052694"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064788907" -> "124554052694"  [ label = "DDG: compileModule"] 
+  "30064788907" -> "124554052694"  [ label = "DDG: exports[&quot;default&quot;] = compileModule"] 
+  "107374183510" -> "111669151955"  [ label = "DDG: "] 
+  "107374183510" -> "25769806860"  [ label = "DDG: "] 
+  "107374183510" -> "30064788906"  [ label = "DDG: "] 
+  "30064788906" -> "30064788907"  [ label = "DDG: compileModule"] 
+  "107374183510" -> "30064788907"  [ label = "DDG: "] 
+}

@@ -1,0 +1,13 @@
+digraph "showSettingsDialog" {  
+node [shape="rect"];  
+"107374183714" [label = <METHOD, 30<BR/>showSettingsDialog> ]
+"124554052897" [label = <METHOD_RETURN, 30<BR/>ANY> ]
+"111669152335" [label = <PARAM, 30<BR/>this> ]
+"111669152336" [label = <PARAM, 30<BR/>state> ]
+"141733921803" [label = <RETURN, 31<BR/>return state.showSettingsDialog> ]
+  "141733921803" -> "124554052897"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152335" -> "124554052897"  [ label = "DDG: this"] 
+  "111669152336" -> "124554052897"  [ label = "DDG: state"] 
+  "107374183714" -> "111669152335"  [ label = "DDG: "] 
+  "107374183714" -> "111669152336"  [ label = "DDG: "] 
+}

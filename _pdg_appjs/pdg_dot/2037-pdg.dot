@@ -1,0 +1,4 @@
+digraph "settingsConfiguration.values || getValuesFromSettings" {  
+node [shape="rect"];  
+
+}

@@ -1,0 +1,4 @@
+digraph "reject" {  
+node [shape="rect"];  
+
+}

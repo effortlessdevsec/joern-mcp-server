@@ -1,0 +1,11 @@
+digraph "getSnippetID" {  
+node [shape="rect"];  
+"107374183601" [label = <METHOD, 145<BR/>getSnippetID> ]
+"124554052784" [label = <METHOD_RETURN, 145<BR/>ANY> ]
+"111669152129" [label = <PARAM, 145<BR/>this> ]
+"141733921649" [label = <RETURN, 146<BR/>return this._gist.id> ]
+  "141733921649" -> "124554052784"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152129" -> "124554052784"  [ label = "DDG: this"] 
+  "107374183601" -> "111669152129"  [ label = "DDG: "] 
+  "107374183601" -> "141733921649"  [ label = "DDG: "] 
+}

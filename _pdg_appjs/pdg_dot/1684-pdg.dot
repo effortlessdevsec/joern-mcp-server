@@ -1,0 +1,4 @@
+digraph "memo" {  
+node [shape="rect"];  
+
+}

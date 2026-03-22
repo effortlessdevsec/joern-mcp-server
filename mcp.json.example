@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "MongoDB": {
+      "command": "npx",
+      "args": ["-y", "mongodb-mcp-server@latest", "--readOnly"],
+      "env": {
+        "MDB_MCP_CONNECTION_STRING": "mongodb://localhost:27017/your-database"
+      }
+    },
+    "joern": {
+      "command": "node",
+      "args": ["/Users/effortlessdevsec/temp11/joern/joern-mcp-server/dist/index.js"],
+      "env": {
+        "JOERN_HOME": "/opt/joern",
+        "JOERN_SERVER_URL": "http://127.0.0.1:8080",
+        "JOERN_MCP_HTTP_ONLY": "1"
+      }
+    }
+  }
+}

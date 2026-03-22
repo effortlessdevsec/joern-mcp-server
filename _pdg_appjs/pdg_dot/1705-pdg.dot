@@ -1,0 +1,7 @@
+digraph "connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)" {  
+node [shape="rect"];  
+
+}

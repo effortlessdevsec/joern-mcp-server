@@ -1,0 +1,14 @@
+digraph "readFile" {  
+node [shape="rect"];  
+"107374183236" [label = <METHOD, 53<BR/>readFile> ]
+"124554052418" [label = <METHOD_RETURN, 53<BR/>__ecma.Null> ]
+"111669151385" [label = <PARAM, 53<BR/>this> ]
+"141733921378" [label = <RETURN, 53<BR/>null> ]
+"90194316175" [label = <LITERAL, 53<BR/>null> ]
+  "141733921378" -> "124554052418"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151385" -> "124554052418"  [ label = "DDG: this"] 
+  "107374183236" -> "111669151385"  [ label = "DDG: "] 
+  "90194316175" -> "141733921378"  [ label = "DDG: null"] 
+  "107374183236" -> "141733921378"  [ label = "DDG: "] 
+  "107374183236" -> "90194316175"  [ label = "DDG: "] 
+}

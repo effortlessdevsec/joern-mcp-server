@@ -1,0 +1,16 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183081" [label = <METHOD, 47<BR/>getDefaultOptions> ]
+"124554052264" [label = <METHOD_RETURN, 47<BR/>{ enums: __ecma.Boolean; esproposal_class_instance_fields: __ecma.Boolean; esproposal_class_static_fields: __ecma.Boolean; esproposal_decorators: __ecma.Boolean; esproposal_export_star_as: __ecma.Boolean; esproposal_optional_chaining: __ecma.Boolean; esproposal_nullish_coalescing: __ecma.Boolean; tokens: __ecma.Boolean; types: __ecma.Boolean; }> ]
+"111669151033" [label = <PARAM, 47<BR/>this> ]
+"141733921278" [label = <RETURN, 48<BR/>return defaultOptions> ]
+"68719487668" [label = <IDENTIFIER, 48<BR/>defaultOptions<BR/>return defaultOptions> ]
+  "141733921278" -> "124554052264"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151033" -> "124554052264"  [ label = "DDG: this"] 
+  "107374183081" -> "111669151033"  [ label = "DDG: "] 
+  "68719487668" -> "141733921278"  [ label = "DDG: defaultOptions"] 
+  "107374183081" -> "141733921278"  [ label = "DDG: "] 
+  "30064781986" -> "68719487668"  [ label = "DDG: defaultOptions"] 
+  "107374183081" -> "68719487668"  [ label = "DDG: "] 
+  "107374183078" -> "68719487668"  [ label = "DDG: "] 
+}

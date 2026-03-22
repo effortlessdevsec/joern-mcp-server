@@ -1,0 +1,44 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183269" [label = <METHOD, 17<BR/>loadParser> ]
+"124554052452" [label = <METHOD_RETURN, 17<BR/>void> ]
+"111669151446" [label = <PARAM, 17<BR/>this> ]
+"111669151447" [label = <PARAM, 17<BR/>callback> ]
+"30064785404" [label = <require, 18<BR/>require([ 'raw-loader?esModule=false!ugli...> ]
+"68719490989" [label = <IDENTIFIER, 18<BR/>require<BR/>require([ 'raw-loader?esModule=false!ugli...> ]
+"30064785405" [label = <&lt;operator&gt;.assignment, 18<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064785407" [label = <, 19<BR/>_tmp_5.push(&quot;raw-loader?esModule=false!uglify-e...> ]
+"30064785409" [label = <, 20<BR/>_tmp_5.push(&quot;raw-loader?esModule=false!uglify-e...> ]
+"30064785411" [label = <, 21<BR/>_tmp_5.push(&quot;raw-loader?esModule=false!uglify-e...> ]
+"68719490998" [label = <IDENTIFIER, 18<BR/>_tmp_5<BR/>[ 'raw-loader?esModule=false!uglify-es/li...> ]
+  "111669151447" -> "124554052452"  [ label = "DDG: callback"] 
+  "30064785404" -> "124554052452"  [ label = "DDG: this"] 
+  "30064785405" -> "124554052452"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064785405" -> "124554052452"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064785407" -> "124554052452"  [ label = "DDG: _tmp_5.push(&quot;raw-loader?esModule=false!uglify-es/lib/utils.js&quot;)"] 
+  "30064785409" -> "124554052452"  [ label = "DDG: _tmp_5.push(&quot;raw-loader?esModule=false!uglify-es/lib/ast.js&quot;)"] 
+  "30064785411" -> "124554052452"  [ label = "DDG: _tmp_5"] 
+  "30064785411" -> "124554052452"  [ label = "DDG: _tmp_5.push(&quot;raw-loader?esModule=false!uglify-es/lib/parse.js&quot;)"] 
+  "30064785404" -> "124554052452"  [ label = "DDG: require([
+      'raw-loader?esModule=false!uglify-es/lib/utils.js',
+      'raw-loader?esModule=false!uglify-es/lib/ast.js',
+      'raw-loader?esModule=false!uglify-es/lib/parse.js',
+    ], (...contents) =&gt; {
+      contents.push('exports.parse = parse;');
+      callback(compileModule(contents.join('\n\n')));
+    })"] 
+  "107374183269" -> "111669151446"  [ label = "DDG: "] 
+  "107374183269" -> "111669151447"  [ label = "DDG: "] 
+  "107374183269" -> "68719490989"  [ label = "DDG: "] 
+  "111669151446" -> "30064785404"  [ label = "DDG: this"] 
+  "107374183269" -> "30064785404"  [ label = "DDG: "] 
+  "30064785411" -> "30064785404"  [ label = "DDG: _tmp_5"] 
+  "107374183269" -> "30064785405"  [ label = "DDG: "] 
+  "107374183269" -> "68719490998"  [ label = "DDG: "] 
+  "30064785405" -> "30064785407"  [ label = "DDG: _tmp_5"] 
+  "107374183269" -> "30064785407"  [ label = "DDG: "] 
+  "30064785407" -> "30064785409"  [ label = "DDG: _tmp_5"] 
+  "107374183269" -> "30064785409"  [ label = "DDG: "] 
+  "30064785409" -> "30064785411"  [ label = "DDG: _tmp_5"] 
+  "107374183269" -> "30064785411"  [ label = "DDG: "] 
+}

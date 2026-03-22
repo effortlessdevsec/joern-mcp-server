@@ -1,0 +1,22 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183481" [label = <METHOD, 1<BR/>:program> ]
+"124554052665" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151895" [label = <PARAM, 1<BR/>this> ]
+"25769806787" [label = <BLOCK, 1<BR/>export { default } from '../html/svelte';> ]
+"30064788564" [label = <&lt;operator&gt;.assignment, 1<BR/>var _svelte = require(&quot;../html/svelte&quot;)> ]
+"30064788566" [label = <&lt;operator&gt;.assignment, 1<BR/>exports[&quot;default&quot;] = _svelte.default> ]
+"30064788565" [label = <require, 1<BR/>require(&quot;../html/svelte&quot;)> ]
+  "111669151895" -> "124554052665"  [ label = "DDG: this"] 
+  "30064788564" -> "124554052665"  [ label = "DDG: _svelte"] 
+  "30064788564" -> "124554052665"  [ label = "DDG: require(&quot;../html/svelte&quot;)"] 
+  "30064788564" -> "124554052665"  [ label = "DDG: var _svelte = require(&quot;../html/svelte&quot;)"] 
+  "30064788566" -> "124554052665"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064788566" -> "124554052665"  [ label = "DDG: _svelte.default"] 
+  "30064788566" -> "124554052665"  [ label = "DDG: exports[&quot;default&quot;] = _svelte.default"] 
+  "107374183481" -> "111669151895"  [ label = "DDG: "] 
+  "107374183481" -> "25769806787"  [ label = "DDG: "] 
+  "30064788565" -> "30064788564"  [ label = "DDG: &quot;../html/svelte&quot;"] 
+  "30064788564" -> "30064788566"  [ label = "DDG: _svelte"] 
+  "107374183481" -> "30064788565"  [ label = "DDG: "] 
+}

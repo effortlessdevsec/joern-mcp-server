@@ -1,0 +1,8 @@
+digraph "require" {  
+node [shape="rect"];  
+"107374183796" [label = <METHOD<BR/>require> ]
+"124554052980" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152503" [label = <PARAM<BR/>p1> ]
+  "111669152503" -> "124554052980"  [ label = "DDG: p1"] 
+  "107374183796" -> "111669152503"  [ label = "DDG: "] 
+}

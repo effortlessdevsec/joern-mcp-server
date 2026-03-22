@@ -1,0 +1,4 @@
+digraph "getConfigurableFilters" {  
+node [shape="rect"];  
+
+}

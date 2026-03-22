@@ -1,0 +1,33 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374182950" [label = <METHOD, 14<BR/>loadTransformer> ]
+"124554052133" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669150764" [label = <PARAM, 14<BR/>this> ]
+"111669150765" [label = <PARAM, 14<BR/>callback> ]
+"30064779545" [label = <require, 15<BR/>require( ['svelte/compiler'], callb...> ]
+"68719485312" [label = <IDENTIFIER, 15<BR/>require<BR/>require( ['svelte/compiler'], callb...> ]
+"30064779546" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064779548" [label = <, 16<BR/>_tmp_1.push(&quot;svelte/compiler&quot;)> ]
+"68719485317" [label = <IDENTIFIER, 16<BR/>_tmp_1<BR/>['svelte/compiler']> ]
+  "30064779545" -> "124554052133"  [ label = "DDG: this"] 
+  "30064779546" -> "124554052133"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064779546" -> "124554052133"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064779548" -> "124554052133"  [ label = "DDG: _tmp_1"] 
+  "30064779548" -> "124554052133"  [ label = "DDG: _tmp_1.push(&quot;svelte/compiler&quot;)"] 
+  "30064779545" -> "124554052133"  [ label = "DDG: callback"] 
+  "30064779545" -> "124554052133"  [ label = "DDG: require(
+      ['svelte/compiler'],
+      callback,
+    )"] 
+  "107374182950" -> "111669150764"  [ label = "DDG: "] 
+  "107374182950" -> "111669150765"  [ label = "DDG: "] 
+  "107374182950" -> "68719485312"  [ label = "DDG: "] 
+  "111669150764" -> "30064779545"  [ label = "DDG: this"] 
+  "107374182950" -> "30064779545"  [ label = "DDG: "] 
+  "30064779548" -> "30064779545"  [ label = "DDG: _tmp_1"] 
+  "111669150765" -> "30064779545"  [ label = "DDG: callback"] 
+  "107374182950" -> "30064779546"  [ label = "DDG: "] 
+  "107374182950" -> "68719485317"  [ label = "DDG: "] 
+  "30064779546" -> "30064779548"  [ label = "DDG: _tmp_1"] 
+  "107374182950" -> "30064779548"  [ label = "DDG: "] 
+}

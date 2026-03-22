@@ -1,0 +1,117 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183130" [label = <METHOD, 37<BR/>opensByDefault> ]
+"124554052313" [label = <METHOD_RETURN, 37<BR/>__ecma.Boolean> ]
+"111669151134" [label = <PARAM, 37<BR/>this> ]
+"111669151135" [label = <PARAM, 37<BR/>node> ]
+"111669151136" [label = <PARAM, 37<BR/>key> ]
+"141733921311" [label = <RETURN, 38<BR/>return ( key === 'items' || key ===...> ]
+"30064782867" [label = <&lt;operator&gt;.logicalOr, 39<BR/>key === 'items' || key === 'declaration' ...> ]
+"30064782868" [label = <&lt;operator&gt;.logicalOr, 39<BR/>key === 'items' || key === 'declaration' ...> ]
+"30064782877" [label = <&lt;operator&gt;.equals, 44<BR/>key === 'body'> ]
+"30064782869" [label = <&lt;operator&gt;.logicalOr, 39<BR/>key === 'items' || key === 'declaration' ...> ]
+"30064782876" [label = <&lt;operator&gt;.equals, 43<BR/>key === 'expression'> ]
+"30064782870" [label = <&lt;operator&gt;.logicalOr, 39<BR/>key === 'items' || key === 'declaration' ...> ]
+"30064782875" [label = <&lt;operator&gt;.equals, 42<BR/>key === 'statements'> ]
+"30064782871" [label = <&lt;operator&gt;.logicalOr, 39<BR/>key === 'items' || key === 'declaration'> ]
+"30064782874" [label = <&lt;operator&gt;.equals, 41<BR/>key === 'declarators'> ]
+"30064782872" [label = <&lt;operator&gt;.equals, 39<BR/>key === 'items'> ]
+"30064782873" [label = <&lt;operator&gt;.equals, 40<BR/>key === 'declaration'> ]
+  "141733921311" -> "124554052313"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151134" -> "124554052313"  [ label = "DDG: this"] 
+  "111669151135" -> "124554052313"  [ label = "DDG: node"] 
+  "30064782872" -> "124554052313"  [ label = "DDG: key"] 
+  "30064782871" -> "124554052313"  [ label = "DDG: key === 'items'"] 
+  "30064782873" -> "124554052313"  [ label = "DDG: key"] 
+  "30064782871" -> "124554052313"  [ label = "DDG: key === 'declaration'"] 
+  "30064782870" -> "124554052313"  [ label = "DDG: key === 'items' ||
+      key === 'declaration'"] 
+  "30064782874" -> "124554052313"  [ label = "DDG: key"] 
+  "30064782870" -> "124554052313"  [ label = "DDG: key === 'declarators'"] 
+  "30064782869" -> "124554052313"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators'"] 
+  "30064782875" -> "124554052313"  [ label = "DDG: key"] 
+  "30064782869" -> "124554052313"  [ label = "DDG: key === 'statements'"] 
+  "30064782868" -> "124554052313"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators' ||
+      key === 'statements'"] 
+  "30064782876" -> "124554052313"  [ label = "DDG: key"] 
+  "30064782868" -> "124554052313"  [ label = "DDG: key === 'expression'"] 
+  "30064782867" -> "124554052313"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators' ||
+      key === 'statements' ||
+      key === 'expression'"] 
+  "30064782877" -> "124554052313"  [ label = "DDG: key"] 
+  "30064782867" -> "124554052313"  [ label = "DDG: key === 'body'"] 
+  "30064782867" -> "124554052313"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators' ||
+      key === 'statements' ||
+      key === 'expression' ||
+      key === 'body'"] 
+  "107374183130" -> "111669151134"  [ label = "DDG: "] 
+  "107374183130" -> "111669151135"  [ label = "DDG: "] 
+  "107374183130" -> "111669151136"  [ label = "DDG: "] 
+  "30064782867" -> "141733921311"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators' ||
+      key === 'statements' ||
+      key === 'expression' ||
+      key === 'body'"] 
+  "30064782868" -> "30064782867"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators' ||
+      key === 'statements'"] 
+  "30064782868" -> "30064782867"  [ label = "DDG: key === 'expression'"] 
+  "30064782877" -> "30064782867"  [ label = "DDG: key"] 
+  "30064782877" -> "30064782867"  [ label = "DDG: &quot;body&quot;"] 
+  "30064782869" -> "30064782868"  [ label = "DDG: key === 'items' ||
+      key === 'declaration' ||
+      key === 'declarators'"] 
+  "30064782869" -> "30064782868"  [ label = "DDG: key === 'statements'"] 
+  "30064782876" -> "30064782868"  [ label = "DDG: key"] 
+  "30064782876" -> "30064782868"  [ label = "DDG: &quot;expression&quot;"] 
+  "30064782872" -> "30064782877"  [ label = "DDG: key"] 
+  "30064782873" -> "30064782877"  [ label = "DDG: key"] 
+  "30064782874" -> "30064782877"  [ label = "DDG: key"] 
+  "30064782875" -> "30064782877"  [ label = "DDG: key"] 
+  "30064782876" -> "30064782877"  [ label = "DDG: key"] 
+  "107374183130" -> "30064782877"  [ label = "DDG: "] 
+  "30064782870" -> "30064782869"  [ label = "DDG: key === 'items' ||
+      key === 'declaration'"] 
+  "30064782870" -> "30064782869"  [ label = "DDG: key === 'declarators'"] 
+  "30064782875" -> "30064782869"  [ label = "DDG: key"] 
+  "30064782875" -> "30064782869"  [ label = "DDG: &quot;statements&quot;"] 
+  "30064782872" -> "30064782876"  [ label = "DDG: key"] 
+  "30064782873" -> "30064782876"  [ label = "DDG: key"] 
+  "30064782874" -> "30064782876"  [ label = "DDG: key"] 
+  "30064782875" -> "30064782876"  [ label = "DDG: key"] 
+  "107374183130" -> "30064782876"  [ label = "DDG: "] 
+  "30064782871" -> "30064782870"  [ label = "DDG: key === 'items'"] 
+  "30064782871" -> "30064782870"  [ label = "DDG: key === 'declaration'"] 
+  "30064782874" -> "30064782870"  [ label = "DDG: key"] 
+  "30064782874" -> "30064782870"  [ label = "DDG: &quot;declarators&quot;"] 
+  "30064782872" -> "30064782875"  [ label = "DDG: key"] 
+  "30064782873" -> "30064782875"  [ label = "DDG: key"] 
+  "30064782874" -> "30064782875"  [ label = "DDG: key"] 
+  "107374183130" -> "30064782875"  [ label = "DDG: "] 
+  "30064782872" -> "30064782871"  [ label = "DDG: key"] 
+  "30064782872" -> "30064782871"  [ label = "DDG: &quot;items&quot;"] 
+  "30064782873" -> "30064782871"  [ label = "DDG: key"] 
+  "30064782873" -> "30064782871"  [ label = "DDG: &quot;declaration&quot;"] 
+  "30064782872" -> "30064782874"  [ label = "DDG: key"] 
+  "30064782873" -> "30064782874"  [ label = "DDG: key"] 
+  "107374183130" -> "30064782874"  [ label = "DDG: "] 
+  "111669151136" -> "30064782872"  [ label = "DDG: key"] 
+  "107374183130" -> "30064782872"  [ label = "DDG: "] 
+  "30064782872" -> "30064782873"  [ label = "DDG: key"] 
+  "107374183130" -> "30064782873"  [ label = "DDG: "] 
+  "30064782868" -> "30064782877"  [ label = "CDG: "] 
+  "30064782869" -> "30064782876"  [ label = "CDG: "] 
+  "30064782870" -> "30064782875"  [ label = "CDG: "] 
+  "30064782871" -> "30064782874"  [ label = "CDG: "] 
+  "30064782872" -> "30064782873"  [ label = "CDG: "] 
+}

@@ -1,0 +1,54 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183537" [label = <METHOD, 41<BR/>getDefaultOptions> ]
+"124554052720" [label = <METHOD_RETURN, 41<BR/>{ ecmaVersion: __ecma.Number; sourceType: __ecma.String; vueFeatures: { filter: __ecma.Boolean; interpolationAsNonHTML: __ecma.Boolean; }; }> ]
+"111669152008" [label = <PARAM, 41<BR/>this> ]
+"141733921596" [label = <RETURN, 42<BR/>return { ecmaVersion: 10, sourceTyp...> ]
+"25769806931" [label = <BLOCK, 42<BR/>{ ecmaVersion: 10, sourceType: 'mod...> ]
+"30064789192" [label = <&lt;operator&gt;.assignment, 43<BR/>_tmp_6.ecmaVersion = 10> ]
+"30064789194" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_6.sourceType = &quot;module&quot;> ]
+"30064789196" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_6.vueFeatures = { filter: true, ...> ]
+"68719494794" [label = <IDENTIFIER, 42<BR/>_tmp_6<BR/>{ ecmaVersion: 10, sourceType: 'mod...> ]
+"30064789198" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_7.filter = true> ]
+"30064789200" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_7.interpolationAsNonHTML = false> ]
+"68719494793" [label = <IDENTIFIER, 45<BR/>_tmp_7<BR/>{ filter: true, interpolationAs...> ]
+  "141733921596" -> "124554052720"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152008" -> "124554052720"  [ label = "DDG: this"] 
+  "30064789192" -> "124554052720"  [ label = "DDG: _tmp_6.ecmaVersion"] 
+  "30064789192" -> "124554052720"  [ label = "DDG: _tmp_6.ecmaVersion = 10"] 
+  "30064789194" -> "124554052720"  [ label = "DDG: _tmp_6.sourceType"] 
+  "30064789194" -> "124554052720"  [ label = "DDG: _tmp_6.sourceType = &quot;module&quot;"] 
+  "30064789196" -> "124554052720"  [ label = "DDG: _tmp_6.vueFeatures"] 
+  "30064789198" -> "124554052720"  [ label = "DDG: _tmp_7.filter"] 
+  "30064789198" -> "124554052720"  [ label = "DDG: _tmp_7.filter = true"] 
+  "30064789200" -> "124554052720"  [ label = "DDG: _tmp_7.interpolationAsNonHTML"] 
+  "30064789200" -> "124554052720"  [ label = "DDG: _tmp_7.interpolationAsNonHTML = false"] 
+  "30064789196" -> "124554052720"  [ label = "DDG: _tmp_6.vueFeatures = {
+        filter: true,
+        interpolationAsNonHTML: false,
+      }"] 
+  "107374183537" -> "111669152008"  [ label = "DDG: "] 
+  "25769806931" -> "141733921596"  [ label = "DDG: "] 
+  "25769806931" -> "141733921596"  [ label = "DDG: {
+      ecmaVersion: 10,
+      sourceType: 'module',
+      vueFeatures: {
+        filter: true,
+        interpolationAsNonHTML: false,
+      },
+    }"] 
+  "107374183537" -> "141733921596"  [ label = "DDG: "] 
+  "30064789192" -> "25769806931"  [ label = "DDG: _tmp_6.ecmaVersion"] 
+  "30064789194" -> "25769806931"  [ label = "DDG: _tmp_6.sourceType"] 
+  "30064789196" -> "25769806931"  [ label = "DDG: _tmp_6.vueFeatures"] 
+  "107374183537" -> "25769806931"  [ label = "DDG: "] 
+  "107374183537" -> "30064789192"  [ label = "DDG: "] 
+  "107374183537" -> "30064789194"  [ label = "DDG: "] 
+  "30064789198" -> "30064789196"  [ label = "DDG: _tmp_7.filter"] 
+  "30064789200" -> "30064789196"  [ label = "DDG: _tmp_7.interpolationAsNonHTML"] 
+  "107374183537" -> "30064789196"  [ label = "DDG: "] 
+  "107374183537" -> "68719494794"  [ label = "DDG: "] 
+  "107374183537" -> "30064789198"  [ label = "DDG: "] 
+  "107374183537" -> "30064789200"  [ label = "DDG: "] 
+  "107374183537" -> "68719494793"  [ label = "DDG: "] 
+}

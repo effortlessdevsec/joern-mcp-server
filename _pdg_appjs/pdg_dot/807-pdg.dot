@@ -1,0 +1,84 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183207" [label = <METHOD, 39<BR/>&lt;lambda&gt;1> ]
+"124554052391" [label = <METHOD_RETURN, 39<BR/>void> ]
+"111669151317" [label = <PARAM, 39<BR/>this> ]
+"111669151318" [label = <PARAM, 39<BR/>transpile> ]
+"111669151319" [label = <PARAM, 39<BR/>jscodeshift> ]
+"25769806001" [label = <BLOCK, 40<BR/>const { registerMethods } = jscodeshift> ]
+"30064784410" [label = <registerMethods, 44<BR/>jscodeshift.registerMethods({ hasOwnP...> ]
+"30064784414" [label = <&lt;operator&gt;.assignment, 55<BR/>jscodeshift.registerMethods = function (methods...> ]
+"30064784416" [label = <callback, 62<BR/>callback({ transpile: transpile.default, jscode...> ]
+"30064784407" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_5 = jscodeshift> ]
+"30064784408" [label = <&lt;operator&gt;.assignment, 40<BR/>registerMethods = _tmp_5.registerMethods> ]
+"68719490016" [label = <IDENTIFIER, 40<BR/>_tmp_5<BR/>const { registerMethods } = jscodeshift> ]
+"68719490022" [label = <IDENTIFIER, 62<BR/>callback<BR/>callback({ transpile: transpile.default, jscode...> ]
+"30064784412" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_6.hasOwnProperty = hasOwnProperty> ]
+"68719490020" [label = <IDENTIFIER, 44<BR/>_tmp_6<BR/>{ hasOwnProperty(name) { ...> ]
+"30064784417" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_8.transpile = transpile.default> ]
+"30064784420" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_8.jscodeshift = jscodeshift> ]
+"68719490028" [label = <IDENTIFIER, 62<BR/>_tmp_8<BR/>{ transpile: transpile.default, jscodeshift }> ]
+  "111669151318" -> "124554052391"  [ label = "DDG: transpile"] 
+  "30064784407" -> "124554052391"  [ label = "DDG: _tmp_5"] 
+  "30064784407" -> "124554052391"  [ label = "DDG: _tmp_5 = jscodeshift"] 
+  "30064784408" -> "124554052391"  [ label = "DDG: registerMethods"] 
+  "30064784408" -> "124554052391"  [ label = "DDG: _tmp_5.registerMethods"] 
+  "30064784408" -> "124554052391"  [ label = "DDG: registerMethods = _tmp_5.registerMethods"] 
+  "30064784412" -> "124554052391"  [ label = "DDG: _tmp_6.hasOwnProperty"] 
+  "30064784412" -> "124554052391"  [ label = "DDG: _tmp_6.hasOwnProperty = hasOwnProperty"] 
+  "30064784410" -> "124554052391"  [ label = "DDG: jscodeshift.registerMethods({
+          hasOwnProperty(name) {
+            // compare only against current-session &amp; very original methods
+            if (!origMethods) {
+              origMethods = new Set(Object.getOwnPropertyNames(this));
+            }
+            return origMethods.has(name) || sessionMethods.has(name);
+          },
+        })"] 
+  "30064784414" -> "124554052391"  [ label = "DDG: jscodeshift.registerMethods = function (methods) {
+          registerMethods.apply(this, arguments);
+          for (let name in methods) {
+            sessionMethods.add(name);
+          }
+        }"] 
+  "30064784416" -> "124554052391"  [ label = "DDG: this"] 
+  "30064784417" -> "124554052391"  [ label = "DDG: _tmp_8.transpile"] 
+  "30064784417" -> "124554052391"  [ label = "DDG: transpile.default"] 
+  "30064784417" -> "124554052391"  [ label = "DDG: _tmp_8.transpile = transpile.default"] 
+  "30064784420" -> "124554052391"  [ label = "DDG: _tmp_8.jscodeshift"] 
+  "30064784420" -> "124554052391"  [ label = "DDG: jscodeshift"] 
+  "30064784420" -> "124554052391"  [ label = "DDG: _tmp_8.jscodeshift = jscodeshift"] 
+  "30064784416" -> "124554052391"  [ label = "DDG: callback({ transpile: transpile.default, jscodeshift })"] 
+  "107374183207" -> "111669151317"  [ label = "DDG: "] 
+  "107374183207" -> "111669151318"  [ label = "DDG: "] 
+  "107374183207" -> "111669151319"  [ label = "DDG: "] 
+  "107374183207" -> "25769806001"  [ label = "DDG: "] 
+  "107374183207" -> "30064784414"  [ label = "DDG: "] 
+  "111669151319" -> "30064784407"  [ label = "DDG: jscodeshift"] 
+  "111669151321" -> "30064784407"  [ label = "DDG: callback"] 
+  "107374183207" -> "30064784407"  [ label = "DDG: "] 
+  "30064784407" -> "30064784408"  [ label = "DDG: _tmp_5"] 
+  "111669151321" -> "68719490016"  [ label = "DDG: callback"] 
+  "107374183207" -> "68719490016"  [ label = "DDG: "] 
+  "111669151321" -> "30064784410"  [ label = "DDG: callback"] 
+  "107374183207" -> "30064784410"  [ label = "DDG: "] 
+  "111669151319" -> "30064784410"  [ label = "DDG: jscodeshift"] 
+  "30064784412" -> "30064784410"  [ label = "DDG: _tmp_6.hasOwnProperty"] 
+  "111669151321" -> "68719490022"  [ label = "DDG: callback"] 
+  "107374183207" -> "68719490022"  [ label = "DDG: "] 
+  "111669151317" -> "30064784416"  [ label = "DDG: this"] 
+  "111669151321" -> "30064784416"  [ label = "DDG: callback"] 
+  "107374183207" -> "30064784416"  [ label = "DDG: "] 
+  "30064784417" -> "30064784416"  [ label = "DDG: _tmp_8.transpile"] 
+  "30064784420" -> "30064784416"  [ label = "DDG: _tmp_8.jscodeshift"] 
+  "107374183207" -> "30064784412"  [ label = "DDG: "] 
+  "111669151321" -> "68719490020"  [ label = "DDG: callback"] 
+  "107374183207" -> "68719490020"  [ label = "DDG: "] 
+  "111669151318" -> "30064784417"  [ label = "DDG: transpile"] 
+  "30064784410" -> "30064784420"  [ label = "DDG: jscodeshift"] 
+  "30064784414" -> "30064784420"  [ label = "DDG: jscodeshift.registerMethods"] 
+  "111669151321" -> "30064784420"  [ label = "DDG: callback"] 
+  "107374183207" -> "30064784420"  [ label = "DDG: "] 
+  "111669151321" -> "68719490028"  [ label = "DDG: callback"] 
+  "107374183207" -> "68719490028"  [ label = "DDG: "] 
+}

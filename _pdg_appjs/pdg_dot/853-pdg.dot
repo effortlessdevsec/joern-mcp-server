@@ -1,0 +1,14 @@
+digraph "getCurrentDirectory" {  
+node [shape="rect"];  
+"107374183253" [label = <METHOD, 43<BR/>getCurrentDirectory> ]
+"124554052435" [label = <METHOD_RETURN, 43<BR/>__ecma.String> ]
+"111669151416" [label = <PARAM, 43<BR/>this> ]
+"141733921390" [label = <RETURN, 43<BR/>''> ]
+"90194316239" [label = <LITERAL, 43<BR/>&quot;&quot;<BR/>''> ]
+  "141733921390" -> "124554052435"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151416" -> "124554052435"  [ label = "DDG: this"] 
+  "107374183253" -> "111669151416"  [ label = "DDG: "] 
+  "90194316239" -> "141733921390"  [ label = "DDG: &quot;&quot;"] 
+  "107374183253" -> "141733921390"  [ label = "DDG: "] 
+  "107374183253" -> "90194316239"  [ label = "DDG: "] 
+}

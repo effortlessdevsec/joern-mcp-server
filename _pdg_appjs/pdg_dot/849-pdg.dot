@@ -1,0 +1,39 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183249" [label = <METHOD, 25<BR/>loadParser> ]
+"124554052432" [label = <METHOD_RETURN, 25<BR/>void> ]
+"111669151411" [label = <PARAM, 25<BR/>this> ]
+"111669151412" [label = <PARAM, 25<BR/>callback> ]
+"30064785131" [label = <require, 26<BR/>require(['typescript'], _ts =&gt; { // wor...> ]
+"68719490746" [label = <IDENTIFIER, 26<BR/>require<BR/>require(['typescript'], _ts =&gt; { // wor...> ]
+"30064785132" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_7 = __ecma.Array.factory()> ]
+"30064785134" [label = <, 26<BR/>_tmp_7.push(&quot;typescript&quot;)> ]
+"68719490751" [label = <IDENTIFIER, 26<BR/>_tmp_7<BR/>['typescript']> ]
+  "111669151412" -> "124554052432"  [ label = "DDG: callback"] 
+  "30064785131" -> "124554052432"  [ label = "DDG: this"] 
+  "30064785132" -> "124554052432"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064785132" -> "124554052432"  [ label = "DDG: _tmp_7 = __ecma.Array.factory()"] 
+  "30064785134" -> "124554052432"  [ label = "DDG: _tmp_7"] 
+  "30064785134" -> "124554052432"  [ label = "DDG: _tmp_7.push(&quot;typescript&quot;)"] 
+  "30064785131" -> "124554052432"  [ label = "DDG: require(['typescript'], _ts =&gt; {
+        // workarounds issue described at https://github.com/Microsoft/TypeScript/issues/18062
+        for (const name of Object.keys(_ts.SyntaxKind).filter(x =&gt; isNaN(parseInt(x)))) {
+            const value = _ts.SyntaxKind[name];
+            if (!syntaxKind[value]) {
+                syntaxKind[value] = name;
+            }
+        }
+
+        callback(_ts);
+    })"] 
+  "107374183249" -> "111669151411"  [ label = "DDG: "] 
+  "107374183249" -> "111669151412"  [ label = "DDG: "] 
+  "107374183249" -> "68719490746"  [ label = "DDG: "] 
+  "111669151411" -> "30064785131"  [ label = "DDG: this"] 
+  "107374183249" -> "30064785131"  [ label = "DDG: "] 
+  "30064785134" -> "30064785131"  [ label = "DDG: _tmp_7"] 
+  "107374183249" -> "30064785132"  [ label = "DDG: "] 
+  "107374183249" -> "68719490751"  [ label = "DDG: "] 
+  "30064785132" -> "30064785134"  [ label = "DDG: _tmp_7"] 
+  "107374183249" -> "30064785134"  [ label = "DDG: "] 
+}

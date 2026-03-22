@@ -1,0 +1,66 @@
+digraph "visit" {  
+node [shape="rect"];  
+"107374182883" [label = <METHOD, 45<BR/>visit> ]
+"124554052064" [label = <METHOD_RETURN, 45<BR/>astexplorer/website/src/parsers/html/angular-eslint.js::program:wrapParesr:&lt;lambda&gt;0:addLocation:&lt;returnValue&gt;> ]
+"111669150609" [label = <PARAM, 45<BR/>this> ]
+"111669150610" [label = <PARAM, 45<BR/>node> ]
+"30064778463" [label = <&lt;operator&gt;.assignment, 46<BR/>const keys = visitorKeys[node.type] || []> ]
+"30064778468" [label = <&lt;operator&gt;.assignment, 47<BR/>const newNode = keys.reduce((acc, key) =&gt; { ...> ]
+"141733921121" [label = <RETURN, 58<BR/>return addLocation(newNode)> ]
+"30064778471" [label = <addLocation, 58<BR/>addLocation(newNode)> ]
+"30064778464" [label = <&lt;operator&gt;.logicalOr, 46<BR/>visitorKeys[node.type] || []> ]
+"30064778469" [label = <reduce, 47<BR/>keys.reduce((acc, key) =&gt; { const child...> ]
+"68719484236" [label = <IDENTIFIER, 58<BR/>addLocation<BR/>addLocation(newNode)> ]
+"30064778465" [label = <&lt;operator&gt;.indexAccess, 46<BR/>visitorKeys[node.type]> ]
+"30064778467" [label = <__ecma.Array.factory, 46<BR/>__ecma.Array.factory()> ]
+  "141733921121" -> "124554052064"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064778464" -> "124554052064"  [ label = "DDG: visitorKeys[node.type]"] 
+  "30064778464" -> "124554052064"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064778463" -> "124554052064"  [ label = "DDG: visitorKeys[node.type] || []"] 
+  "30064778463" -> "124554052064"  [ label = "DDG: const keys = visitorKeys[node.type] || []"] 
+  "30064778469" -> "124554052064"  [ label = "DDG: keys"] 
+  "30064778469" -> "124554052064"  [ label = "DDG: node"] 
+  "30064778468" -> "124554052064"  [ label = "DDG: keys.reduce((acc, key) =&gt; {
+        const child = node[key];
+        if (Array.isArray(child)) {
+          const children = child;
+          return { ...acc, [key]: children.map(visit) };
+        } else if (child != null) {
+          return { ...acc, [key]: visit(child) };
+        } else {
+          return acc;
+        }
+      }, node)"] 
+  "30064778468" -> "124554052064"  [ label = "DDG: const newNode = keys.reduce((acc, key) =&gt; {
+        const child = node[key];
+        if (Array.isArray(child)) {
+          const children = child;
+          return { ...acc, [key]: children.map(visit) };
+        } else if (child != null) {
+          return { ...acc, [key]: visit(child) };
+        } else {
+          return acc;
+        }
+      }, node)"] 
+  "30064778471" -> "124554052064"  [ label = "DDG: this"] 
+  "30064778471" -> "124554052064"  [ label = "DDG: newNode"] 
+  "30064778471" -> "124554052064"  [ label = "DDG: addLocation(newNode)"] 
+  "107374182883" -> "111669150609"  [ label = "DDG: "] 
+  "107374182883" -> "111669150610"  [ label = "DDG: "] 
+  "30064778464" -> "30064778463"  [ label = "DDG: visitorKeys[node.type]"] 
+  "30064778464" -> "30064778463"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064778469" -> "30064778468"  [ label = "DDG: keys"] 
+  "30064778469" -> "30064778468"  [ label = "DDG: &lt;lambda&gt;3"] 
+  "30064778469" -> "30064778468"  [ label = "DDG: node"] 
+  "30064778471" -> "141733921121"  [ label = "DDG: addLocation(newNode)"] 
+  "107374182883" -> "30064778464"  [ label = "DDG: "] 
+  "30064778463" -> "30064778469"  [ label = "DDG: keys"] 
+  "107374182883" -> "30064778469"  [ label = "DDG: "] 
+  "111669150610" -> "30064778469"  [ label = "DDG: node"] 
+  "30064778480" -> "68719484236"  [ label = "DDG: addLocation"] 
+  "107374182883" -> "68719484236"  [ label = "DDG: "] 
+  "111669150609" -> "30064778471"  [ label = "DDG: this"] 
+  "107374182883" -> "30064778471"  [ label = "DDG: "] 
+  "30064778468" -> "30064778471"  [ label = "DDG: newNode"] 
+  "30064778465" -> "30064778467"  [ label = "CDG: "] 
+}

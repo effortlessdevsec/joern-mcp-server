@@ -1,0 +1,14 @@
+digraph "getInitialCode" {  
+node [shape="rect"];  
+"107374183724" [label = <METHOD, 73<BR/>getInitialCode> ]
+"124554052907" [label = <METHOD_RETURN, 73<BR/>ANY> ]
+"111669152355" [label = <PARAM, 73<BR/>this> ]
+"111669152356" [label = <PARAM, 73<BR/>state> ]
+"141733921813" [label = <RETURN, 74<BR/>return state.workbench.initialCode> ]
+  "141733921813" -> "124554052907"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152355" -> "124554052907"  [ label = "DDG: this"] 
+  "111669152356" -> "124554052907"  [ label = "DDG: state"] 
+  "107374183724" -> "111669152355"  [ label = "DDG: "] 
+  "107374183724" -> "111669152356"  [ label = "DDG: "] 
+  "107374183724" -> "141733921813"  [ label = "DDG: "] 
+}

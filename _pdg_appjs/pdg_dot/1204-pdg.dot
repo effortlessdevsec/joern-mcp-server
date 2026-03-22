@@ -1,0 +1,20 @@
+digraph "getTransformCode" {  
+node [shape="rect"];  
+"107374183604" [label = <METHOD, 156<BR/>getTransformCode> ]
+"124554052787" [label = <METHOD_RETURN, 156<BR/>ANY> ]
+"111669152132" [label = <PARAM, 156<BR/>this> ]
+"30064790047" [label = <&lt;operator&gt;.assignment, 157<BR/>const transformFile = this._gist.files['transfo...> ]
+"141733921652" [label = <RETURN, 158<BR/>return transformFile ? transformFile.content : ''> ]
+"30064790051" [label = <&lt;operator&gt;.conditional, 158<BR/>transformFile ? transformFile.content : &quot;&quot;> ]
+  "141733921652" -> "124554052787"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152132" -> "124554052787"  [ label = "DDG: this"] 
+  "30064790047" -> "124554052787"  [ label = "DDG: this._gist.files[&quot;transform.js&quot;]"] 
+  "30064790047" -> "124554052787"  [ label = "DDG: const transformFile = this._gist.files['transform.js']"] 
+  "30064790051" -> "124554052787"  [ label = "DDG: transformFile"] 
+  "30064790051" -> "124554052787"  [ label = "DDG: transformFile.content"] 
+  "30064790051" -> "124554052787"  [ label = "DDG: transformFile ? transformFile.content : &quot;&quot;"] 
+  "107374183604" -> "111669152132"  [ label = "DDG: "] 
+  "30064790051" -> "141733921652"  [ label = "DDG: transformFile ? transformFile.content : &quot;&quot;"] 
+  "30064790047" -> "30064790051"  [ label = "DDG: transformFile"] 
+  "107374183604" -> "30064790051"  [ label = "DDG: "] 
+}

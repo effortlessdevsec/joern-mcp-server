@@ -1,0 +1,127 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182512" [label = <METHOD, 48<BR/>&lt;lambda&gt;1> ]
+"124554051695" [label = <METHOD_RETURN, 48<BR/>void> ]
+"111669149906" [label = <PARAM, 48<BR/>this> ]
+"111669149907" [label = <PARAM, 48<BR/>tern> ]
+"111669149908" [label = <PARAM, 48<BR/>_> ]
+"111669149909" [label = <PARAM, 48<BR/>infer> ]
+"111669149910" [label = <PARAM, 48<BR/>jscs_def> ]
+"111669149911" [label = <PARAM, 48<BR/>ecmascript> ]
+"30064773002" [label = <&lt;operator&gt;.assignment, 49<BR/>global.tern = tern> ]
+"30064773004" [label = <registerPlugin, 50<BR/>tern.registerPlugin('transformer', server =&gt; { ...> ]
+"30064773006" [label = <&lt;operator&gt;.assignment, 69<BR/>server = new CodeMirror.TernServer({ ...> ]
+"30064773007" [label = <&lt;operator&gt;.assignment, 69<BR/>_tmp_4 = .alloc> ]
+"30064773009" [label = <&lt;operator&gt;.new, 69<BR/>new CodeMirror.TernServer({ defs: [...> ]
+"68719478686" [label = <IDENTIFIER, 69<BR/>_tmp_4<BR/>new CodeMirror.TernServer({ defs: [...> ]
+"30064773011" [label = <&lt;operator&gt;.assignment, 70<BR/>_tmp_5.defs = [jscs_def, ecmascript]> ]
+"30064773019" [label = <&lt;operator&gt;.assignment, 71<BR/>_tmp_5.plugins = { transformer: {...> ]
+"68719478685" [label = <IDENTIFIER, 69<BR/>_tmp_5<BR/>{ defs: [jscs_def, ecmascript], ...> ]
+"30064773013" [label = <&lt;operator&gt;.assignment, 70<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064773015" [label = <, 70<BR/>_tmp_6.push(jscs_def)> ]
+"30064773017" [label = <, 70<BR/>_tmp_6.push(ecmascript)> ]
+"68719478679" [label = <IDENTIFIER, 70<BR/>_tmp_6<BR/>[jscs_def, ecmascript]> ]
+"30064773021" [label = <&lt;operator&gt;.assignment, 72<BR/>_tmp_7.transformer = {strong: true}> ]
+"68719478684" [label = <IDENTIFIER, 71<BR/>_tmp_7<BR/>{ transformer: {strong: true}, ...> ]
+"30064773023" [label = <&lt;operator&gt;.assignment, 72<BR/>_tmp_8.strong = true> ]
+"68719478683" [label = <IDENTIFIER, 72<BR/>_tmp_8<BR/>{strong: true}> ]
+  "111669149906" -> "124554051695"  [ label = "DDG: this"] 
+  "111669149908" -> "124554051695"  [ label = "DDG: _"] 
+  "111669149909" -> "124554051695"  [ label = "DDG: infer"] 
+  "30064773002" -> "124554051695"  [ label = "DDG: global.tern"] 
+  "30064773002" -> "124554051695"  [ label = "DDG: global.tern = tern"] 
+  "30064773004" -> "124554051695"  [ label = "DDG: tern"] 
+  "30064773004" -> "124554051695"  [ label = "DDG: tern.registerPlugin('transformer', server =&gt; {
+            server.on('afterLoad', file =&gt; {
+              const fnVal = file.scope.props.transformer;
+              if (fnVal) {
+                const fnType = fnVal.getFunctionType();
+                const cx = infer.cx();
+                fnType.propagate(new infer.IsCallee(
+                  infer.cx().topScope,
+                  [
+                    cx.definitions.jscodeshift.file,
+                    cx.definitions.jscodeshift.apiObject,
+                  ],
+                  null,
+                  infer.ANull,
+                ));
+              }
+            });
+          })"] 
+  "30064773006" -> "124554051695"  [ label = "DDG: server"] 
+  "30064773007" -> "124554051695"  [ label = "DDG: .alloc"] 
+  "30064773007" -> "124554051695"  [ label = "DDG: _tmp_4 = .alloc"] 
+  "30064773009" -> "124554051695"  [ label = "DDG: _tmp_4"] 
+  "30064773011" -> "124554051695"  [ label = "DDG: _tmp_5.defs"] 
+  "30064773013" -> "124554051695"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773013" -> "124554051695"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064773015" -> "124554051695"  [ label = "DDG: jscs_def"] 
+  "30064773015" -> "124554051695"  [ label = "DDG: _tmp_6.push(jscs_def)"] 
+  "30064773017" -> "124554051695"  [ label = "DDG: _tmp_6"] 
+  "30064773017" -> "124554051695"  [ label = "DDG: ecmascript"] 
+  "30064773017" -> "124554051695"  [ label = "DDG: _tmp_6.push(ecmascript)"] 
+  "30064773011" -> "124554051695"  [ label = "DDG: _tmp_5.defs = [jscs_def, ecmascript]"] 
+  "30064773019" -> "124554051695"  [ label = "DDG: _tmp_5.plugins"] 
+  "30064773021" -> "124554051695"  [ label = "DDG: _tmp_7.transformer"] 
+  "30064773023" -> "124554051695"  [ label = "DDG: _tmp_8.strong"] 
+  "30064773023" -> "124554051695"  [ label = "DDG: _tmp_8.strong = true"] 
+  "30064773021" -> "124554051695"  [ label = "DDG: _tmp_7.transformer = {strong: true}"] 
+  "30064773019" -> "124554051695"  [ label = "DDG: _tmp_5.plugins = {
+              transformer: {strong: true},
+            }"] 
+  "30064773009" -> "124554051695"  [ label = "DDG: new CodeMirror.TernServer({
+            defs: [jscs_def, ecmascript],
+            plugins: {
+              transformer: {strong: true},
+            },
+          })"] 
+  "30064773006" -> "124554051695"  [ label = "DDG: server = new CodeMirror.TernServer({
+            defs: [jscs_def, ecmascript],
+            plugins: {
+              transformer: {strong: true},
+            },
+          })"] 
+  "107374182512" -> "111669149906"  [ label = "DDG: "] 
+  "107374182512" -> "111669149907"  [ label = "DDG: "] 
+  "107374182512" -> "111669149908"  [ label = "DDG: "] 
+  "107374182512" -> "111669149909"  [ label = "DDG: "] 
+  "107374182512" -> "111669149910"  [ label = "DDG: "] 
+  "107374182512" -> "111669149911"  [ label = "DDG: "] 
+  "111669149907" -> "30064773002"  [ label = "DDG: tern"] 
+  "107374182512" -> "30064773002"  [ label = "DDG: "] 
+  "30064773009" -> "30064773006"  [ label = "DDG: new CodeMirror.TernServer({
+            defs: [jscs_def, ecmascript],
+            plugins: {
+              transformer: {strong: true},
+            },
+          })"] 
+  "30064773009" -> "30064773006"  [ label = "DDG: _tmp_4"] 
+  "107374182512" -> "30064773006"  [ label = "DDG: "] 
+  "107374182512" -> "30064773004"  [ label = "DDG: "] 
+  "111669149907" -> "30064773004"  [ label = "DDG: tern"] 
+  "107374182512" -> "30064773007"  [ label = "DDG: "] 
+  "107374182512" -> "68719478686"  [ label = "DDG: "] 
+  "30064773007" -> "30064773009"  [ label = "DDG: _tmp_4"] 
+  "107374182512" -> "30064773009"  [ label = "DDG: "] 
+  "30064773011" -> "30064773009"  [ label = "DDG: _tmp_5.defs"] 
+  "30064773019" -> "30064773009"  [ label = "DDG: _tmp_5.plugins"] 
+  "30064773017" -> "30064773011"  [ label = "DDG: _tmp_6"] 
+  "107374182512" -> "30064773011"  [ label = "DDG: "] 
+  "30064773021" -> "30064773019"  [ label = "DDG: _tmp_7.transformer"] 
+  "107374182512" -> "30064773019"  [ label = "DDG: "] 
+  "107374182512" -> "68719478685"  [ label = "DDG: "] 
+  "107374182512" -> "30064773013"  [ label = "DDG: "] 
+  "107374182512" -> "68719478679"  [ label = "DDG: "] 
+  "30064773023" -> "30064773021"  [ label = "DDG: _tmp_8.strong"] 
+  "107374182512" -> "30064773021"  [ label = "DDG: "] 
+  "107374182512" -> "68719478684"  [ label = "DDG: "] 
+  "30064773013" -> "30064773015"  [ label = "DDG: _tmp_6"] 
+  "107374182512" -> "30064773015"  [ label = "DDG: "] 
+  "111669149910" -> "30064773015"  [ label = "DDG: jscs_def"] 
+  "30064773015" -> "30064773017"  [ label = "DDG: _tmp_6"] 
+  "107374182512" -> "30064773017"  [ label = "DDG: "] 
+  "111669149911" -> "30064773017"  [ label = "DDG: ecmascript"] 
+  "107374182512" -> "30064773023"  [ label = "DDG: "] 
+  "107374182512" -> "68719478683"  [ label = "DDG: "] 
+}

@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;5" {  
+node [shape="rect"];  
+"107374183504" [label = <METHOD, 95<BR/>&lt;lambda&gt;5> ]
+"124554052686" [label = <METHOD_RETURN, 95<BR/>ANY> ]
+"111669151939" [label = <PARAM, 95<BR/>this> ]
+"111669151940" [label = <PARAM, 95<BR/>o> ]
+"141733921567" [label = <RETURN, 95<BR/>&lt;option key={o} value={o}&gt;{o}&lt;/option&gt;> ]
+"154618824089" [label = <TEMPLATE_DOM, 95<BR/>&lt;option key={o} value={o}&gt;{o}&lt;/option&gt;> ]
+"68719494330" [label = <IDENTIFIER, 95<BR/>o<BR/>{o}> ]
+"68719494328" [label = <IDENTIFIER, 95<BR/>o<BR/>{o}> ]
+"68719494329" [label = <IDENTIFIER, 95<BR/>o<BR/>{o}> ]
+  "141733921567" -> "124554052686"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151939" -> "124554052686"  [ label = "DDG: this"] 
+  "111669151940" -> "124554052686"  [ label = "DDG: o"] 
+  "107374183504" -> "111669151939"  [ label = "DDG: "] 
+  "107374183504" -> "111669151940"  [ label = "DDG: "] 
+  "154618824089" -> "141733921567"  [ label = "DDG: &lt;option key={o} value={o}&gt;{o}&lt;/option&gt;"] 
+  "107374183504" -> "141733921567"  [ label = "DDG: "] 
+  "107374183504" -> "68719494330"  [ label = "DDG: "] 
+  "107374183504" -> "68719494328"  [ label = "DDG: "] 
+  "107374183504" -> "68719494329"  [ label = "DDG: "] 
+}

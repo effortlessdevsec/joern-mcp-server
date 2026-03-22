@@ -1,0 +1,18 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374183538" [label = <METHOD, 57<BR/>&lt;lambda&gt;0> ]
+"124554052721" [label = <METHOD_RETURN, 57<BR/>__ecma.Number> ]
+"111669152009" [label = <PARAM, 57<BR/>this> ]
+"111669152010" [label = <PARAM, 57<BR/>value> ]
+"141733921597" [label = <RETURN, 57<BR/>Number(value)> ]
+"30064789202" [label = <Number, 57<BR/>Number(value)> ]
+  "141733921597" -> "124554052721"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152009" -> "124554052721"  [ label = "DDG: this"] 
+  "30064789202" -> "124554052721"  [ label = "DDG: value"] 
+  "30064789202" -> "124554052721"  [ label = "DDG: Number(value)"] 
+  "107374183538" -> "111669152009"  [ label = "DDG: "] 
+  "107374183538" -> "111669152010"  [ label = "DDG: "] 
+  "30064789202" -> "141733921597"  [ label = "DDG: Number(value)"] 
+  "111669152010" -> "30064789202"  [ label = "DDG: value"] 
+  "107374183538" -> "30064789202"  [ label = "DDG: "] 
+}

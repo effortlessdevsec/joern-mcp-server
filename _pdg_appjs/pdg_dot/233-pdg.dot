@@ -1,0 +1,70 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182633" [label = <METHOD, 1<BR/>:program> ]
+"124554051820" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150109" [label = <PARAM, 1<BR/>this> ]
+"30064774791" [label = <&lt;operator&gt;.assignment, 1<BR/>var React = require(&quot;react&quot;)> ]
+"30064774792" [label = <&lt;operator&gt;.assignment, 5<BR/>function useSelectedNode = function useSelected...> ]
+"30064774793" [label = <&lt;operator&gt;.assignment, 15<BR/>function setSelectedNode = function setSelected...> ]
+"30064774794" [label = <&lt;operator&gt;.assignment, 28<BR/>function SelectedNodeProvider = function Select...> ]
+"30064774795" [label = <&lt;operator&gt;.assignment, 3<BR/>const SelectedNodeContext = React.createContext()> ]
+"25769804366" [label = <BLOCK, 32<BR/>export {SelectedNodeProvider, useSelectedNode};> ]
+"30064774798" [label = <&lt;operator&gt;.assignment, 32<BR/>exports.SelectedNodeProvider = SelectedNodeProv...> ]
+"30064774800" [label = <&lt;operator&gt;.assignment, 32<BR/>exports.useSelectedNode = useSelectedNode> ]
+"68719480378" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064774775" [label = <require, 1<BR/>require(&quot;react&quot;)> ]
+"30064774796" [label = <createContext, 3<BR/>React.createContext()> ]
+  "30064774775" -> "124554051820"  [ label = "DDG: this"] 
+  "30064774791" -> "124554051820"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064774791" -> "124554051820"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064774792" -> "124554051820"  [ label = "DDG: function useSelectedNode = function useSelectedNode() {
+  const context = React.useContext(SelectedNodeContext);
+  if (!context) {
+    throw new Error('useSelectedNode must be used within a SelectedNodeContext');
+  }
+  return context;
+}"] 
+  "30064774793" -> "124554051820"  [ label = "DDG: setSelectedNode"] 
+  "30064774793" -> "124554051820"  [ label = "DDG: function setSelectedNode = function setSelectedNode(node, cb) {
+  if (unselectCallback) {
+    unselectCallback();
+  }
+  if (node) {
+    global.$node = node;
+    unselectCallback = cb;
+  } else {
+    unselectCallback = null;
+    delete global.$node;
+  }
+}"] 
+  "30064774794" -> "124554051820"  [ label = "DDG: function SelectedNodeProvider = function SelectedNodeProvider(props) {
+  return &lt;SelectedNodeContext.Provider value={setSelectedNode} {...props} /&gt;;
+}"] 
+  "30064774795" -> "124554051820"  [ label = "DDG: SelectedNodeContext"] 
+  "30064774796" -> "124554051820"  [ label = "DDG: React"] 
+  "30064774795" -> "124554051820"  [ label = "DDG: React.createContext()"] 
+  "30064774795" -> "124554051820"  [ label = "DDG: const SelectedNodeContext = React.createContext()"] 
+  "30064774798" -> "124554051820"  [ label = "DDG: exports.SelectedNodeProvider"] 
+  "30064774798" -> "124554051820"  [ label = "DDG: SelectedNodeProvider"] 
+  "30064774798" -> "124554051820"  [ label = "DDG: exports.SelectedNodeProvider = SelectedNodeProvider"] 
+  "30064774800" -> "124554051820"  [ label = "DDG: exports.useSelectedNode"] 
+  "30064774800" -> "124554051820"  [ label = "DDG: useSelectedNode"] 
+  "30064774800" -> "124554051820"  [ label = "DDG: exports.useSelectedNode = useSelectedNode"] 
+  "107374182633" -> "111669150109"  [ label = "DDG: "] 
+  "30064774775" -> "30064774791"  [ label = "DDG: this"] 
+  "30064774775" -> "30064774791"  [ label = "DDG: &quot;react&quot;"] 
+  "107374182633" -> "30064774792"  [ label = "DDG: "] 
+  "107374182633" -> "30064774793"  [ label = "DDG: "] 
+  "107374182633" -> "30064774794"  [ label = "DDG: "] 
+  "30064774796" -> "30064774795"  [ label = "DDG: React"] 
+  "107374182633" -> "25769804366"  [ label = "DDG: "] 
+  "30064774794" -> "30064774798"  [ label = "DDG: SelectedNodeProvider"] 
+  "107374182633" -> "30064774798"  [ label = "DDG: "] 
+  "30064774792" -> "30064774800"  [ label = "DDG: useSelectedNode"] 
+  "107374182633" -> "30064774800"  [ label = "DDG: "] 
+  "107374182633" -> "68719480378"  [ label = "DDG: "] 
+  "111669150109" -> "30064774775"  [ label = "DDG: this"] 
+  "107374182633" -> "30064774775"  [ label = "DDG: "] 
+  "30064774791" -> "30064774796"  [ label = "DDG: React"] 
+  "107374182633" -> "30064774796"  [ label = "DDG: "] 
+}

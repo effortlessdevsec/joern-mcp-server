@@ -1,0 +1,48 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374182775" [label = <METHOD, 36<BR/>getDefaultOptions> ]
+"124554051958" [label = <METHOD_RETURN, 36<BR/>{ context: __ecma.String; parseValue: __ecma.Boolean; parseRulePrelude: __ecma.Boolean; parseAtrulePrelude: __ecma.Boolean; parseCustomProperty: __ecma.Boolean; }> ]
+"111669150374" [label = <PARAM, 36<BR/>this> ]
+"141733921037" [label = <RETURN, 37<BR/>return { context: 'stylesheet', par...> ]
+"25769804720" [label = <BLOCK, 37<BR/>{ context: 'stylesheet', parseValue...> ]
+"30064776667" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_6.context = &quot;stylesheet&quot;> ]
+"30064776669" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_6.parseValue = true> ]
+"30064776671" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_6.parseRulePrelude = true> ]
+"30064776673" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_6.parseAtrulePrelude = true> ]
+"30064776675" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_6.parseCustomProperty = false> ]
+"68719482467" [label = <IDENTIFIER, 37<BR/>_tmp_6<BR/>{ context: 'stylesheet', parseValue...> ]
+  "141733921037" -> "124554051958"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150374" -> "124554051958"  [ label = "DDG: this"] 
+  "30064776667" -> "124554051958"  [ label = "DDG: _tmp_6.context"] 
+  "30064776667" -> "124554051958"  [ label = "DDG: _tmp_6.context = &quot;stylesheet&quot;"] 
+  "30064776669" -> "124554051958"  [ label = "DDG: _tmp_6.parseValue"] 
+  "30064776669" -> "124554051958"  [ label = "DDG: _tmp_6.parseValue = true"] 
+  "30064776671" -> "124554051958"  [ label = "DDG: _tmp_6.parseRulePrelude"] 
+  "30064776671" -> "124554051958"  [ label = "DDG: _tmp_6.parseRulePrelude = true"] 
+  "30064776673" -> "124554051958"  [ label = "DDG: _tmp_6.parseAtrulePrelude"] 
+  "30064776673" -> "124554051958"  [ label = "DDG: _tmp_6.parseAtrulePrelude = true"] 
+  "30064776675" -> "124554051958"  [ label = "DDG: _tmp_6.parseCustomProperty"] 
+  "30064776675" -> "124554051958"  [ label = "DDG: _tmp_6.parseCustomProperty = false"] 
+  "107374182775" -> "111669150374"  [ label = "DDG: "] 
+  "25769804720" -> "141733921037"  [ label = "DDG: "] 
+  "25769804720" -> "141733921037"  [ label = "DDG: {
+      context: 'stylesheet',
+      parseValue: true,
+      parseRulePrelude: true,
+      parseAtrulePrelude: true,
+      parseCustomProperty: false,
+    }"] 
+  "107374182775" -> "141733921037"  [ label = "DDG: "] 
+  "30064776667" -> "25769804720"  [ label = "DDG: _tmp_6.context"] 
+  "30064776669" -> "25769804720"  [ label = "DDG: _tmp_6.parseValue"] 
+  "30064776671" -> "25769804720"  [ label = "DDG: _tmp_6.parseRulePrelude"] 
+  "30064776673" -> "25769804720"  [ label = "DDG: _tmp_6.parseAtrulePrelude"] 
+  "30064776675" -> "25769804720"  [ label = "DDG: _tmp_6.parseCustomProperty"] 
+  "107374182775" -> "25769804720"  [ label = "DDG: "] 
+  "107374182775" -> "30064776667"  [ label = "DDG: "] 
+  "107374182775" -> "30064776669"  [ label = "DDG: "] 
+  "107374182775" -> "30064776671"  [ label = "DDG: "] 
+  "107374182775" -> "30064776673"  [ label = "DDG: "] 
+  "107374182775" -> "30064776675"  [ label = "DDG: "] 
+  "107374182775" -> "68719482467"  [ label = "DDG: "] 
+}

@@ -1,0 +1,14 @@
+digraph "openByDefault" {  
+node [shape="rect"];  
+"107374182747" [label = <METHOD, 136<BR/>openByDefault> ]
+"124554051930" [label = <METHOD_RETURN, 136<BR/>__ecma.Boolean> ]
+"111669150314" [label = <PARAM, 136<BR/>this> ]
+"141733921012" [label = <RETURN, 136<BR/>false> ]
+"90194314293" [label = <LITERAL, 136<BR/>false> ]
+  "141733921012" -> "124554051930"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150314" -> "124554051930"  [ label = "DDG: this"] 
+  "107374182747" -> "111669150314"  [ label = "DDG: "] 
+  "90194314293" -> "141733921012"  [ label = "DDG: false"] 
+  "107374182747" -> "141733921012"  [ label = "DDG: "] 
+  "107374182747" -> "90194314293"  [ label = "DDG: "] 
+}

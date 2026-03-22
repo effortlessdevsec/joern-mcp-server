@@ -1,0 +1,85 @@
+digraph "update" {  
+node [shape="rect"];  
+"107374183594" [label = <METHOD, 79<BR/>update> ]
+"124554052777" [label = <METHOD_RETURN, 79<BR/>Promise&lt;Revision&gt;:then:&lt;returnValue&gt;> ]
+"111669152115" [label = <PARAM, 79<BR/>this> ]
+"111669152116" [label = <PARAM, 79<BR/>revision> ]
+"111669152117" [label = <PARAM, 79<BR/>data> ]
+"141733921643" [label = <RETURN, 81<BR/>return fetchSnippet(revision.getSnippetID()) ...> ]
+"30064789989" [label = <then, 81<BR/>fetchSnippet(revision.getSnippetID()) .then...> ]
+"30064789991" [label = <&lt;operator&gt;.assignment, 81<BR/>(_tmp_14 = fetchSnippet(revision.getSnippetID()))> ]
+"68719495543" [label = <IDENTIFIER, 81<BR/>fetchSnippet<BR/>fetchSnippet(revision.getSnippetID())> ]
+"30064789992" [label = <fetchSnippet, 81<BR/>fetchSnippet(revision.getSnippetID())> ]
+"30064789993" [label = <getSnippetID, 81<BR/>revision.getSnippetID()> ]
+  "141733921643" -> "124554052777"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152117" -> "124554052777"  [ label = "DDG: data"] 
+  "30064789992" -> "124554052777"  [ label = "DDG: this"] 
+  "30064789993" -> "124554052777"  [ label = "DDG: revision"] 
+  "30064789992" -> "124554052777"  [ label = "DDG: revision.getSnippetID()"] 
+  "30064789991" -> "124554052777"  [ label = "DDG: fetchSnippet(revision.getSnippetID())"] 
+  "30064789989" -> "124554052777"  [ label = "DDG: _tmp_14"] 
+  "30064789989" -> "124554052777"  [ label = "DDG: fetchSnippet(revision.getSnippetID())
+    .then(latestRevision =&gt; {
+      if (latestRevision.getTransformerID() &amp;&amp; !data.toolID) {
+        // Revision was updated to *remove* the transformer, hence we have
+        // to signal the server to delete the transform.js file
+        data.transform = null;
+      }
+      return api(
+        `/gist/${revision.getSnippetID()}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        },
+      )
+      .then(response =&gt; {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Unable to update snippet.');
+      })
+      .then(data =&gt; new Revision(data));
+    })"] 
+  "107374183594" -> "111669152115"  [ label = "DDG: "] 
+  "107374183594" -> "111669152116"  [ label = "DDG: "] 
+  "107374183594" -> "111669152117"  [ label = "DDG: "] 
+  "30064789989" -> "141733921643"  [ label = "DDG: fetchSnippet(revision.getSnippetID())
+    .then(latestRevision =&gt; {
+      if (latestRevision.getTransformerID() &amp;&amp; !data.toolID) {
+        // Revision was updated to *remove* the transformer, hence we have
+        // to signal the server to delete the transform.js file
+        data.transform = null;
+      }
+      return api(
+        `/gist/${revision.getSnippetID()}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        },
+      )
+      .then(response =&gt; {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Unable to update snippet.');
+      })
+      .then(data =&gt; new Revision(data));
+    })"] 
+  "30064789991" -> "30064789989"  [ label = "DDG: _tmp_14"] 
+  "107374183594" -> "30064789989"  [ label = "DDG: "] 
+  "30064789992" -> "30064789991"  [ label = "DDG: this"] 
+  "30064789992" -> "30064789991"  [ label = "DDG: revision.getSnippetID()"] 
+  "30064790095" -> "68719495543"  [ label = "DDG: fetchSnippet"] 
+  "107374183594" -> "68719495543"  [ label = "DDG: "] 
+  "111669152115" -> "30064789992"  [ label = "DDG: this"] 
+  "107374183594" -> "30064789992"  [ label = "DDG: "] 
+  "30064789993" -> "30064789992"  [ label = "DDG: revision"] 
+  "111669152116" -> "30064789993"  [ label = "DDG: revision"] 
+  "107374183594" -> "30064789993"  [ label = "DDG: "] 
+}

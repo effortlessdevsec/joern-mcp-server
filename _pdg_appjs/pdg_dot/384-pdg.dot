@@ -1,0 +1,24 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374182784" [label = <METHOD, 48<BR/>getDefaultOptions> ]
+"124554051967" [label = <METHOD_RETURN, 48<BR/>{ parser: __ecma.String; }> ]
+"111669150394" [label = <PARAM, 48<BR/>this> ]
+"141733921043" [label = <RETURN, 49<BR/>return { parser: 'built-in', }> ]
+"25769804748" [label = <BLOCK, 49<BR/>{ parser: 'built-in', }> ]
+"30064776836" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_9.parser = &quot;built-in&quot;> ]
+"68719482624" [label = <IDENTIFIER, 49<BR/>_tmp_9<BR/>{ parser: 'built-in', }> ]
+  "141733921043" -> "124554051967"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150394" -> "124554051967"  [ label = "DDG: this"] 
+  "30064776836" -> "124554051967"  [ label = "DDG: _tmp_9.parser"] 
+  "30064776836" -> "124554051967"  [ label = "DDG: _tmp_9.parser = &quot;built-in&quot;"] 
+  "107374182784" -> "111669150394"  [ label = "DDG: "] 
+  "25769804748" -> "141733921043"  [ label = "DDG: "] 
+  "25769804748" -> "141733921043"  [ label = "DDG: {
+      parser: 'built-in',
+    }"] 
+  "107374182784" -> "141733921043"  [ label = "DDG: "] 
+  "30064776836" -> "25769804748"  [ label = "DDG: _tmp_9.parser"] 
+  "107374182784" -> "25769804748"  [ label = "DDG: "] 
+  "107374182784" -> "30064776836"  [ label = "DDG: "] 
+  "107374182784" -> "68719482624"  [ label = "DDG: "] 
+}

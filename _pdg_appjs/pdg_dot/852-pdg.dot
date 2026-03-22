@@ -1,0 +1,17 @@
+digraph "getCanonicalFileName" {  
+node [shape="rect"];  
+"107374183252" [label = <METHOD, 42<BR/>getCanonicalFileName> ]
+"124554052434" [label = <METHOD_RETURN, 42<BR/>__ecma.String> ]
+"111669151414" [label = <PARAM, 42<BR/>this> ]
+"111669151415" [label = <PARAM, 42<BR/>filename> ]
+"141733921389" [label = <RETURN, 42<BR/>filename> ]
+"68719490752" [label = <IDENTIFIER, 42<BR/>filename> ]
+  "141733921389" -> "124554052434"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151414" -> "124554052434"  [ label = "DDG: this"] 
+  "111669151415" -> "124554052434"  [ label = "DDG: filename"] 
+  "107374183252" -> "111669151414"  [ label = "DDG: "] 
+  "107374183252" -> "111669151415"  [ label = "DDG: "] 
+  "68719490752" -> "141733921389"  [ label = "DDG: filename"] 
+  "111669151415" -> "68719490752"  [ label = "DDG: filename"] 
+  "107374183252" -> "68719490752"  [ label = "DDG: "] 
+}

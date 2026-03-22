@@ -1,0 +1,31 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183771" [label = <METHOD, 1<BR/>:program> ]
+"124554052955" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152456" [label = <PARAM, 1<BR/>this> ]
+"30064792051" [label = <&lt;operator&gt;.assignment, 1<BR/>function demo = function demo() { const par...> ]
+"30064792052" [label = <demo, 16<BR/>demo()> ]
+"68719497653" [label = <IDENTIFIER, 16<BR/>demo<BR/>demo()> ]
+  "30064792051" -> "124554052955"  [ label = "DDG: demo"] 
+  "30064792051" -> "124554052955"  [ label = "DDG: function demo = function demo() {
+    const params = new URLSearchParams(window.location.search);
+    const a = Number(params.get(&quot;a&quot;));
+    const b = params.get(&quot;b&quot;);   // user-controlled input
+  
+    let x;
+    if (a &gt; 0) {
+      x = &quot;safe&quot;;
+    } else {
+      x = b;
+    }
+  
+    eval(x);   // vulnerable sink
+  }"] 
+  "30064792052" -> "124554052955"  [ label = "DDG: this"] 
+  "30064792052" -> "124554052955"  [ label = "DDG: demo()"] 
+  "107374183771" -> "111669152456"  [ label = "DDG: "] 
+  "107374183771" -> "30064792051"  [ label = "DDG: "] 
+  "107374183771" -> "68719497653"  [ label = "DDG: "] 
+  "111669152456" -> "30064792052"  [ label = "DDG: this"] 
+  "107374183771" -> "30064792052"  [ label = "DDG: "] 
+}

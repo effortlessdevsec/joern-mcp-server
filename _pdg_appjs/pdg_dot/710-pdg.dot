@@ -1,0 +1,22 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183110" [label = <METHOD, 50<BR/>parse> ]
+"124554052292" [label = <METHOD_RETURN, 50<BR/>{ id: __ecma.String; displayName: __ecma.String; version: ANY; homepage: ANY; locationProps: Set&lt;string&gt;; loadParser(callback: ANY): ANY; parse(flowParser: ANY, code: ANY, options: ANY): ANY; getDefaultOptions(): { enums: __ecma.Boolean; esproposal_class_instance_fields: __ecma.Boolean; esproposal_class_static_fields: __ecma.Boolean; esproposal_decorators: __ecma.Boolean; esproposal_export_star_as: __ecma.Boolean; esproposal_optional_chaining: __ecma.Boolean; esproposal_nullish_coalescing: __ecma.Boolean; tokens: __ecma.Boolean; types: __ecma.Boolean; }; _getSettingsConfiguration(): { fields: __ecma.String[]; }; opensByDefault(node: ANY, key: ANY): __ecma.Boolean; showInMenu: __ecma.Boolean; _ignoredProperties: Set&lt;any&gt;; typeProps: Set&lt;string&gt;; nodeToRange(node: ANY): ANY; getNodeName(node: ANY): ANY; forEachProperty(node: ANY): Generator&lt;{ value: ANY; key: __ecma.String; computed: __ecma.Boolean; }, ANY, ANY&gt;; hasSettings(): __ecma.Boolean; _mergeDefaultOptions(currentOptions: ANY, defaultOptions: ANY): ANY; renderSettings(settings: ANY, onChange: ANY): ANY; }:parse:&lt;returnValue&gt;> ]
+"111669151089" [label = <PARAM, 50<BR/>this> ]
+"111669151090" [label = <PARAM, 50<BR/>code> ]
+"141733921293" [label = <RETURN, 51<BR/>return flowParser.parse(parsers.flow, code, flo...> ]
+"30064782498" [label = <parse, 51<BR/>flowParser.parse(parsers.flow, code, flowOptions)> ]
+  "141733921293" -> "124554052292"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151089" -> "124554052292"  [ label = "DDG: this"] 
+  "30064782498" -> "124554052292"  [ label = "DDG: flowParser"] 
+  "30064782498" -> "124554052292"  [ label = "DDG: parsers.flow"] 
+  "30064782498" -> "124554052292"  [ label = "DDG: code"] 
+  "30064782498" -> "124554052292"  [ label = "DDG: flowOptions"] 
+  "30064782498" -> "124554052292"  [ label = "DDG: flowParser.parse(parsers.flow, code, flowOptions)"] 
+  "107374183110" -> "111669151089"  [ label = "DDG: "] 
+  "107374183110" -> "111669151090"  [ label = "DDG: "] 
+  "30064782498" -> "141733921293"  [ label = "DDG: flowParser.parse(parsers.flow, code, flowOptions)"] 
+  "107374183110" -> "30064782498"  [ label = "DDG: "] 
+  "111669151090" -> "30064782498"  [ label = "DDG: code"] 
+  "30064782513" -> "30064782498"  [ label = "DDG: flowOptions"] 
+}

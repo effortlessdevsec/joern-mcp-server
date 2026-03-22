@@ -1,0 +1,67 @@
+digraph "getShareInfo" {  
+node [shape="rect"];  
+"107374183644" [label = <METHOD, 148<BR/>getShareInfo> ]
+"124554052828" [label = <METHOD_RETURN, 148<BR/>ANY> ]
+"111669152193" [label = <PARAM, 148<BR/>this> ]
+"30064790329" [label = <&lt;operator&gt;.assignment, 149<BR/>const snippetID = this.getSnippetID()> ]
+"30064790332" [label = <&lt;operator&gt;.assignment, 150<BR/>const revisionID = this.getRevisionID()> ]
+"141733921697" [label = <RETURN, 151<BR/>return ( &lt;div className=&quot;shareInfo&quot;&gt; ...> ]
+"154618824257" [label = <TEMPLATE_DOM, 152<BR/>&lt;div className=&quot;shareInfo&quot;&gt; &lt;dl&gt; ...> ]
+"30064790330" [label = <getSnippetID, 149<BR/>this.getSnippetID()> ]
+"30064790333" [label = <getRevisionID, 150<BR/>this.getRevisionID()> ]
+"90194317418" [label = <LITERAL, 152<BR/>&quot;shareInfo&quot;<BR/>className=&quot;shareInfo&quot;> ]
+"90194317419" [label = <LITERAL, 157<BR/>true<BR/>{true}> ]
+"120259085210" [label = <METHOD_REF, 158<BR/>&lt;lambda&gt;2<BR/>{e =&gt; e.target.select()}> ]
+"30064790335" [label = <&lt;operator&gt;.formatString, 159<BR/>&lt;operator&gt;.formatString(&quot;https://astexplorer.ne...> ]
+"90194317423" [label = <LITERAL, 165<BR/>true<BR/>{true}> ]
+"120259085211" [label = <METHOD_REF, 166<BR/>&lt;lambda&gt;3<BR/>{e =&gt; e.target.select()}> ]
+"30064790336" [label = <&lt;operator&gt;.formatString, 167<BR/>&lt;operator&gt;.formatString(&quot;https://astexplorer.ne...> ]
+  "141733921697" -> "124554052828"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064790329" -> "124554052828"  [ label = "DDG: this.getSnippetID()"] 
+  "30064790329" -> "124554052828"  [ label = "DDG: const snippetID = this.getSnippetID()"] 
+  "30064790333" -> "124554052828"  [ label = "DDG: this"] 
+  "30064790332" -> "124554052828"  [ label = "DDG: this.getRevisionID()"] 
+  "30064790332" -> "124554052828"  [ label = "DDG: const revisionID = this.getRevisionID()"] 
+  "30064790335" -> "124554052828"  [ label = "DDG: revisionID"] 
+  "30064790335" -> "124554052828"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;https://astexplorer.net/#/gist/&quot;, snippetID, &quot;/&quot;, revisionID, &quot;&quot;)"] 
+  "30064790336" -> "124554052828"  [ label = "DDG: snippetID"] 
+  "30064790336" -> "124554052828"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;https://astexplorer.net/#/gist/&quot;, snippetID, &quot;/latest&quot;)"] 
+  "107374183644" -> "111669152193"  [ label = "DDG: "] 
+  "30064790330" -> "30064790329"  [ label = "DDG: this"] 
+  "30064790333" -> "30064790332"  [ label = "DDG: this"] 
+  "154618824257" -> "141733921697"  [ label = "DDG: &lt;div className=&quot;shareInfo&quot;&gt;
+        &lt;dl&gt;
+          &lt;dt&gt;Current Revision&lt;/dt&gt;
+          &lt;dd&gt;
+            &lt;input
+              readOnly={true}
+              onFocus={e =&gt; e.target.select()}
+              value={`https://astexplorer.net/#/gist/${snippetID}/${revisionID}`}
+            /&gt;
+          &lt;/dd&gt;
+          &lt;dt&gt;Latest Revision&lt;/dt&gt;
+          &lt;dd&gt;
+            &lt;input
+              readOnly={true}
+              onFocus={e =&gt; e.target.select()}
+              value={`https://astexplorer.net/#/gist/${snippetID}/latest`}
+            /&gt;
+          &lt;/dd&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;"] 
+  "107374183644" -> "141733921697"  [ label = "DDG: "] 
+  "111669152193" -> "30064790330"  [ label = "DDG: this"] 
+  "107374183644" -> "30064790330"  [ label = "DDG: "] 
+  "30064790330" -> "30064790333"  [ label = "DDG: this"] 
+  "107374183644" -> "30064790333"  [ label = "DDG: "] 
+  "107374183644" -> "90194317418"  [ label = "DDG: "] 
+  "107374183644" -> "90194317419"  [ label = "DDG: "] 
+  "107374183644" -> "120259085210"  [ label = "DDG: "] 
+  "107374183644" -> "90194317423"  [ label = "DDG: "] 
+  "107374183644" -> "120259085211"  [ label = "DDG: "] 
+  "107374183644" -> "30064790335"  [ label = "DDG: "] 
+  "30064790329" -> "30064790335"  [ label = "DDG: snippetID"] 
+  "30064790332" -> "30064790335"  [ label = "DDG: revisionID"] 
+  "107374183644" -> "30064790336"  [ label = "DDG: "] 
+  "30064790335" -> "30064790336"  [ label = "DDG: snippetID"] 
+}

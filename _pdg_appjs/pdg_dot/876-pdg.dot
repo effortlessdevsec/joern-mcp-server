@@ -1,0 +1,140 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183276" [label = <METHOD, 1<BR/>:program> ]
+"124554052467" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151482" [label = <PARAM, 1<BR/>this> ]
+"30064785617" [label = <&lt;operator&gt;.assignment, 1<BR/>var compileModule = require(&quot;../../utils/compil...> ]
+"30064785618" [label = <&lt;operator&gt;.assignment, 2<BR/>var transpile = require(&quot;../../transpilers/babel&quot;)> ]
+"30064785619" [label = <&lt;operator&gt;.assignment, 3<BR/>var parseNoPatch = require(&quot;babel-eslint&quot;).pars...> ]
+"30064785621" [label = <&lt;operator&gt;.assignment, 22<BR/>function getSourceFromResult = function getSour...> ]
+"25769806208" [label = <BLOCK, 5<BR/>export function formatResults(results, code) { ...> ]
+"25769806209" [label = <BLOCK, 14<BR/>export function formatResult(result, code) { ...> ]
+"25769806210" [label = <BLOCK, 29<BR/>export function defineRule(eslint, code) { //...> ]
+"25769806211" [label = <BLOCK, 37<BR/>export function runRule(code, eslint) { // Ru...> ]
+"30064785622" [label = <&lt;operator&gt;.assignment, 5<BR/>function formatResults = function formatResults...> ]
+"30064785623" [label = <&lt;operator&gt;.assignment, 5<BR/>exports.formatResults = formatResults> ]
+"30064785625" [label = <&lt;operator&gt;.assignment, 14<BR/>function formatResult = function formatResult(r...> ]
+"30064785626" [label = <&lt;operator&gt;.assignment, 14<BR/>exports.formatResult = formatResult> ]
+"30064785628" [label = <&lt;operator&gt;.assignment, 29<BR/>function defineRule = function defineRule(eslin...> ]
+"30064785629" [label = <&lt;operator&gt;.assignment, 29<BR/>exports.defineRule = defineRule> ]
+"30064785631" [label = <&lt;operator&gt;.assignment, 37<BR/>function runRule = function runRule(code, eslin...> ]
+"30064785632" [label = <&lt;operator&gt;.assignment, 37<BR/>exports.runRule = runRule> ]
+"68719491201" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;../../utils/compileModule&quot;)> ]
+"30064785534" [label = <require, 1<BR/>require(&quot;../../utils/compileModule&quot;)> ]
+"68719491204" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../../transpilers/babel&quot;)> ]
+"30064785535" [label = <require, 2<BR/>require(&quot;../../transpilers/babel&quot;)> ]
+"68719491207" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;babel-eslint&quot;)> ]
+"30064785536" [label = <require, 3<BR/>require(&quot;babel-eslint&quot;)> ]
+  "30064785617" -> "124554052467"  [ label = "DDG: compileModule"] 
+  "30064785617" -> "124554052467"  [ label = "DDG: require(&quot;../../utils/compileModule&quot;)"] 
+  "30064785617" -> "124554052467"  [ label = "DDG: var compileModule = require(&quot;../../utils/compileModule&quot;)"] 
+  "30064785618" -> "124554052467"  [ label = "DDG: transpile"] 
+  "30064785618" -> "124554052467"  [ label = "DDG: require(&quot;../../transpilers/babel&quot;)"] 
+  "30064785618" -> "124554052467"  [ label = "DDG: var transpile = require(&quot;../../transpilers/babel&quot;)"] 
+  "30064785619" -> "124554052467"  [ label = "DDG: parseNoPatch"] 
+  "30064785536" -> "124554052467"  [ label = "DDG: this"] 
+  "30064785619" -> "124554052467"  [ label = "DDG: require(&quot;babel-eslint&quot;).parseNoPatch"] 
+  "30064785619" -> "124554052467"  [ label = "DDG: var parseNoPatch = require(&quot;babel-eslint&quot;).parseNoPatch"] 
+  "30064785621" -> "124554052467"  [ label = "DDG: getSourceFromResult"] 
+  "30064785621" -> "124554052467"  [ label = "DDG: function getSourceFromResult = function getSourceFromResult(result, code) {
+  if (result.source) {
+    return result.source;
+  }
+  let linesOfCode = code.split('\n');
+  return linesOfCode[result.line - 1];
+}"] 
+  "30064785622" -> "124554052467"  [ label = "DDG: function formatResults = function formatResults(results, code) {
+  return results.length === 0
+    ? '// Lint rule not fired.'
+    : results
+        .map((result) =&gt; formatResult(result, code))
+        .join('')
+        .trim();
+}"] 
+  "30064785623" -> "124554052467"  [ label = "DDG: exports.formatResults"] 
+  "30064785623" -> "124554052467"  [ label = "DDG: formatResults"] 
+  "30064785623" -> "124554052467"  [ label = "DDG: exports.formatResults = formatResults"] 
+  "30064785625" -> "124554052467"  [ label = "DDG: function formatResult = function formatResult(result, code) {
+  var pointer = '-'.repeat(result.column - 1) + '^';
+  return `
+// ${result.message} (at ${result.line}:${result.column})
+   ${getSourceFromResult(result, code)}
+// ${pointer}
+`;
+}"] 
+  "30064785626" -> "124554052467"  [ label = "DDG: exports.formatResult"] 
+  "30064785626" -> "124554052467"  [ label = "DDG: formatResult"] 
+  "30064785626" -> "124554052467"  [ label = "DDG: exports.formatResult = formatResult"] 
+  "30064785628" -> "124554052467"  [ label = "DDG: function defineRule = function defineRule(eslint, code) {
+  // Compile the transform code and install it as an ESLint rule. The rule
+  // name doesn't really matter here, so we'll just use a hard-coded name.
+  code = transpile(code);
+  const rule = compileModule(code);
+  eslint.defineRule('astExplorerRule', rule.default || rule);
+}"] 
+  "30064785629" -> "124554052467"  [ label = "DDG: exports.defineRule"] 
+  "30064785629" -> "124554052467"  [ label = "DDG: defineRule"] 
+  "30064785629" -> "124554052467"  [ label = "DDG: exports.defineRule = defineRule"] 
+  "30064785631" -> "124554052467"  [ label = "DDG: function runRule = function runRule(code, eslint) {
+  // Run the ESLint rule on the AST of the provided code.
+  // Reference: http://eslint.org/docs/developer-guide/nodejs-api
+  eslint.defineParser('babel-eslint', {
+    parse(code) {
+      return parseNoPatch(code, { sourceType: 'module' });
+    },
+  });
+  const results = eslint.verifyAndFix(code, {
+    env: { es6: true },
+    parser: 'babel-eslint',
+    parserOptions: {
+      ecmaVersion: 8,
+      sourceType: 'module',
+      ecmaFeatures: { experimentalObjectRestSpread: true },
+    },
+    rules: {
+      astExplorerRule: 2,
+    },
+  });
+  let output = formatResults(results.messages, code);
+  output += `
+
+// Fixed output follows:
+// ${'-'.repeat(80)}
+`;
+  return output + results.output;
+}"] 
+  "30064785632" -> "124554052467"  [ label = "DDG: exports.runRule"] 
+  "30064785632" -> "124554052467"  [ label = "DDG: runRule"] 
+  "30064785632" -> "124554052467"  [ label = "DDG: exports.runRule = runRule"] 
+  "107374183276" -> "111669151482"  [ label = "DDG: "] 
+  "30064785534" -> "30064785617"  [ label = "DDG: this"] 
+  "30064785534" -> "30064785617"  [ label = "DDG: &quot;../../utils/compileModule&quot;"] 
+  "30064785535" -> "30064785618"  [ label = "DDG: this"] 
+  "30064785535" -> "30064785618"  [ label = "DDG: &quot;../../transpilers/babel&quot;"] 
+  "107374183276" -> "30064785621"  [ label = "DDG: "] 
+  "107374183276" -> "25769806208"  [ label = "DDG: "] 
+  "107374183276" -> "25769806209"  [ label = "DDG: "] 
+  "107374183276" -> "25769806210"  [ label = "DDG: "] 
+  "107374183276" -> "25769806211"  [ label = "DDG: "] 
+  "107374183276" -> "30064785622"  [ label = "DDG: "] 
+  "30064785622" -> "30064785623"  [ label = "DDG: formatResults"] 
+  "107374183276" -> "30064785623"  [ label = "DDG: "] 
+  "107374183276" -> "30064785625"  [ label = "DDG: "] 
+  "30064785625" -> "30064785626"  [ label = "DDG: formatResult"] 
+  "107374183276" -> "30064785626"  [ label = "DDG: "] 
+  "107374183276" -> "30064785628"  [ label = "DDG: "] 
+  "30064785628" -> "30064785629"  [ label = "DDG: defineRule"] 
+  "107374183276" -> "30064785629"  [ label = "DDG: "] 
+  "107374183276" -> "30064785631"  [ label = "DDG: "] 
+  "30064785631" -> "30064785632"  [ label = "DDG: runRule"] 
+  "107374183276" -> "30064785632"  [ label = "DDG: "] 
+  "107374183276" -> "68719491201"  [ label = "DDG: "] 
+  "111669151482" -> "30064785534"  [ label = "DDG: this"] 
+  "107374183276" -> "30064785534"  [ label = "DDG: "] 
+  "107374183276" -> "68719491204"  [ label = "DDG: "] 
+  "30064785534" -> "30064785535"  [ label = "DDG: this"] 
+  "107374183276" -> "30064785535"  [ label = "DDG: "] 
+  "107374183276" -> "68719491207"  [ label = "DDG: "] 
+  "30064785535" -> "30064785536"  [ label = "DDG: this"] 
+  "107374183276" -> "30064785536"  [ label = "DDG: "] 
+}

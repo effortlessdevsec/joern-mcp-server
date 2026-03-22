@@ -1,0 +1,21 @@
+digraph "&lt;lambda&gt;10" {  
+node [shape="rect"];  
+"107374182550" [label = <METHOD, 93<BR/>&lt;lambda&gt;10> ]
+"124554051732" [label = <METHOD_RETURN, 93<BR/>string | ArrayBuffer> ]
+"111669149972" [label = <PARAM, 93<BR/>this> ]
+"111669149973" [label = <PARAM, 93<BR/>text> ]
+"30064773351" [label = <&lt;operator&gt;.assignment, 94<BR/>categoryId = 'javascript'> ]
+"141733920872" [label = <RETURN, 95<BR/>return text> ]
+"68719479011" [label = <IDENTIFIER, 95<BR/>text<BR/>return text> ]
+  "141733920872" -> "124554051732"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149972" -> "124554051732"  [ label = "DDG: this"] 
+  "111669149973" -> "124554051732"  [ label = "DDG: text"] 
+  "30064773351" -> "124554051732"  [ label = "DDG: categoryId"] 
+  "30064773351" -> "124554051732"  [ label = "DDG: categoryId = 'javascript'"] 
+  "107374182550" -> "111669149972"  [ label = "DDG: "] 
+  "107374182550" -> "111669149973"  [ label = "DDG: "] 
+  "107374182550" -> "30064773351"  [ label = "DDG: "] 
+  "68719479011" -> "141733920872"  [ label = "DDG: text"] 
+  "111669149973" -> "68719479011"  [ label = "DDG: text"] 
+  "107374182550" -> "68719479011"  [ label = "DDG: "] 
+}

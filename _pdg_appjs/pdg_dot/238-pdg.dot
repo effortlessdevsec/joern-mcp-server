@@ -1,0 +1,71 @@
+digraph "initSettings" {  
+node [shape="rect"];  
+"107374182638" [label = <METHOD, 15<BR/>initSettings> ]
+"124554051821" [label = <METHOD_RETURN, 15<BR/>ANY> ]
+"111669150110" [label = <PARAM, 15<BR/>this> ]
+"30064774810" [label = <&lt;operator&gt;.assignment, 16<BR/>const storedSettings = global.localStorage.getI...> ]
+"141733920918" [label = <RETURN, 17<BR/>return storedSettings ? JSON.parse(storedSe...> ]
+"30064774815" [label = <&lt;operator&gt;.conditional, 17<BR/>storedSettings ? JSON.parse(storedSettings) : {...> ]
+"30064774811" [label = <getItem, 16<BR/>global.localStorage.getItem(STORAGE_KEY)> ]
+"30064774816" [label = <parse, 18<BR/>JSON.parse(storedSettings)> ]
+"30064774817" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_1.autofocus = true> ]
+"30064774819" [label = <&lt;operator&gt;.assignment, 21<BR/>_tmp_1.hideFunctions = true> ]
+"30064774821" [label = <&lt;operator&gt;.assignment, 22<BR/>_tmp_1.hideEmptyKeys = false> ]
+"30064774823" [label = <&lt;operator&gt;.assignment, 23<BR/>_tmp_1.hideLocationData = false> ]
+"30064774825" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_1.hideTypeKeys = false> ]
+"68719480402" [label = <IDENTIFIER, 19<BR/>_tmp_1<BR/>{ autofocus: true, hideFunctions: t...> ]
+"30064774813" [label = <&lt;operator&gt;.assignment, 16<BR/>(_tmp_0 = global.localStorage)> ]
+  "141733920918" -> "124554051821"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150110" -> "124554051821"  [ label = "DDG: this"] 
+  "30064774813" -> "124554051821"  [ label = "DDG: global.localStorage"] 
+  "30064774811" -> "124554051821"  [ label = "DDG: _tmp_0"] 
+  "30064774811" -> "124554051821"  [ label = "DDG: STORAGE_KEY"] 
+  "30064774810" -> "124554051821"  [ label = "DDG: global.localStorage.getItem(STORAGE_KEY)"] 
+  "30064774810" -> "124554051821"  [ label = "DDG: const storedSettings = global.localStorage.getItem(STORAGE_KEY)"] 
+  "30064774815" -> "124554051821"  [ label = "DDG: storedSettings"] 
+  "30064774817" -> "124554051821"  [ label = "DDG: _tmp_1.autofocus"] 
+  "30064774817" -> "124554051821"  [ label = "DDG: _tmp_1.autofocus = true"] 
+  "30064774819" -> "124554051821"  [ label = "DDG: _tmp_1.hideFunctions"] 
+  "30064774819" -> "124554051821"  [ label = "DDG: _tmp_1.hideFunctions = true"] 
+  "30064774821" -> "124554051821"  [ label = "DDG: _tmp_1.hideEmptyKeys"] 
+  "30064774821" -> "124554051821"  [ label = "DDG: _tmp_1.hideEmptyKeys = false"] 
+  "30064774823" -> "124554051821"  [ label = "DDG: _tmp_1.hideLocationData"] 
+  "30064774823" -> "124554051821"  [ label = "DDG: _tmp_1.hideLocationData = false"] 
+  "30064774825" -> "124554051821"  [ label = "DDG: _tmp_1.hideTypeKeys"] 
+  "30064774825" -> "124554051821"  [ label = "DDG: _tmp_1.hideTypeKeys = false"] 
+  "30064774815" -> "124554051821"  [ label = "DDG: JSON.parse(storedSettings)"] 
+  "30064774815" -> "124554051821"  [ label = "DDG: storedSettings ? JSON.parse(storedSettings) : {
+      autofocus: true,
+      hideFunctions: true,
+      hideEmptyKeys: false,
+      hideLocationData: false,
+      hideTypeKeys: false,
+    }"] 
+  "107374182638" -> "111669150110"  [ label = "DDG: "] 
+  "30064774811" -> "30064774810"  [ label = "DDG: _tmp_0"] 
+  "30064774811" -> "30064774810"  [ label = "DDG: STORAGE_KEY"] 
+  "30064774815" -> "141733920918"  [ label = "DDG: storedSettings ? JSON.parse(storedSettings) : {
+      autofocus: true,
+      hideFunctions: true,
+      hideEmptyKeys: false,
+      hideLocationData: false,
+      hideTypeKeys: false,
+    }"] 
+  "30064774816" -> "30064774815"  [ label = "DDG: storedSettings"] 
+  "30064774817" -> "30064774815"  [ label = "DDG: _tmp_1.autofocus"] 
+  "30064774819" -> "30064774815"  [ label = "DDG: _tmp_1.hideFunctions"] 
+  "30064774821" -> "30064774815"  [ label = "DDG: _tmp_1.hideEmptyKeys"] 
+  "30064774823" -> "30064774815"  [ label = "DDG: _tmp_1.hideLocationData"] 
+  "30064774825" -> "30064774815"  [ label = "DDG: _tmp_1.hideTypeKeys"] 
+  "30064774813" -> "30064774811"  [ label = "DDG: _tmp_0"] 
+  "107374182638" -> "30064774811"  [ label = "DDG: "] 
+  "30064774902" -> "30064774811"  [ label = "DDG: STORAGE_KEY"] 
+  "30064774810" -> "30064774816"  [ label = "DDG: storedSettings"] 
+  "107374182638" -> "30064774816"  [ label = "DDG: "] 
+  "107374182638" -> "30064774817"  [ label = "DDG: "] 
+  "107374182638" -> "30064774819"  [ label = "DDG: "] 
+  "107374182638" -> "30064774821"  [ label = "DDG: "] 
+  "107374182638" -> "30064774823"  [ label = "DDG: "] 
+  "107374182638" -> "30064774825"  [ label = "DDG: "] 
+  "107374182638" -> "68719480402"  [ label = "DDG: "] 
+}

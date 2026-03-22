@@ -1,0 +1,17 @@
+digraph "tokenNestedComment" {  
+node [shape="rect"];  
+"107374183392" [label = <METHOD, 111<BR/>tokenNestedComment> ]
+"124554052575" [label = <METHOD_RETURN, 111<BR/>(stream: ANY, state: ANY) =&gt; ANY> ]
+"111669151711" [label = <PARAM, 111<BR/>this> ]
+"111669151712" [label = <PARAM, 111<BR/>depth> ]
+"141733921492" [label = <RETURN, 112<BR/>return function(stream, state) { let ch; ...> ]
+"120259085036" [label = <METHOD_REF, 112<BR/>&lt;lambda&gt;1<BR/>return function(stream, state) { let ch; ...> ]
+  "141733921492" -> "124554052575"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151711" -> "124554052575"  [ label = "DDG: this"] 
+  "111669151712" -> "124554052575"  [ label = "DDG: depth"] 
+  "107374183392" -> "111669151711"  [ label = "DDG: "] 
+  "107374183392" -> "111669151712"  [ label = "DDG: "] 
+  "120259085036" -> "141733921492"  [ label = "DDG: &lt;lambda&gt;1"] 
+  "107374183392" -> "141733921492"  [ label = "DDG: "] 
+  "107374183392" -> "120259085036"  [ label = "DDG: "] 
+}

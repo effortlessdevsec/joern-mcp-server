@@ -1,0 +1,53 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183326" [label = <METHOD, 14<BR/>loadTransformer> ]
+"124554052509" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669151574" [label = <PARAM, 14<BR/>this> ]
+"111669151575" [label = <PARAM, 14<BR/>callback> ]
+"30064786330" [label = <require, 15<BR/>require([ 'remark', 'unist-util-is'...> ]
+"68719491909" [label = <IDENTIFIER, 15<BR/>require<BR/>require([ 'remark', 'unist-util-is'...> ]
+"30064786331" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064786333" [label = <, 16<BR/>_tmp_1.push(&quot;remark&quot;)> ]
+"30064786335" [label = <, 17<BR/>_tmp_1.push(&quot;unist-util-is&quot;)> ]
+"30064786337" [label = <, 18<BR/>_tmp_1.push(&quot;unist-util-visit&quot;)> ]
+"30064786339" [label = <, 19<BR/>_tmp_1.push(&quot;unist-util-visit-parents&quot;)> ]
+"68719491920" [label = <IDENTIFIER, 15<BR/>_tmp_1<BR/>[ 'remark', 'unist-util-is', ...> ]
+  "111669151575" -> "124554052509"  [ label = "DDG: callback"] 
+  "30064786330" -> "124554052509"  [ label = "DDG: this"] 
+  "30064786331" -> "124554052509"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064786331" -> "124554052509"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064786333" -> "124554052509"  [ label = "DDG: _tmp_1.push(&quot;remark&quot;)"] 
+  "30064786335" -> "124554052509"  [ label = "DDG: _tmp_1.push(&quot;unist-util-is&quot;)"] 
+  "30064786337" -> "124554052509"  [ label = "DDG: _tmp_1.push(&quot;unist-util-visit&quot;)"] 
+  "30064786339" -> "124554052509"  [ label = "DDG: _tmp_1"] 
+  "30064786339" -> "124554052509"  [ label = "DDG: _tmp_1.push(&quot;unist-util-visit-parents&quot;)"] 
+  "30064786330" -> "124554052509"  [ label = "DDG: require([
+      'remark',
+      'unist-util-is',
+      'unist-util-visit',
+      'unist-util-visit-parents',
+    ], ({ remark }, { is }, { visit }, { visitParents }) =&gt; {
+      callback({
+        remark,
+        'unist-util-is': is,
+        'unist-util-visit': visit,
+        'unist-util-visit-parents': visitParents,
+      });
+    })"] 
+  "107374183326" -> "111669151574"  [ label = "DDG: "] 
+  "107374183326" -> "111669151575"  [ label = "DDG: "] 
+  "107374183326" -> "68719491909"  [ label = "DDG: "] 
+  "111669151574" -> "30064786330"  [ label = "DDG: this"] 
+  "107374183326" -> "30064786330"  [ label = "DDG: "] 
+  "30064786339" -> "30064786330"  [ label = "DDG: _tmp_1"] 
+  "107374183326" -> "30064786331"  [ label = "DDG: "] 
+  "107374183326" -> "68719491920"  [ label = "DDG: "] 
+  "30064786331" -> "30064786333"  [ label = "DDG: _tmp_1"] 
+  "107374183326" -> "30064786333"  [ label = "DDG: "] 
+  "30064786333" -> "30064786335"  [ label = "DDG: _tmp_1"] 
+  "107374183326" -> "30064786335"  [ label = "DDG: "] 
+  "30064786335" -> "30064786337"  [ label = "DDG: _tmp_1"] 
+  "107374183326" -> "30064786337"  [ label = "DDG: "] 
+  "30064786337" -> "30064786339"  [ label = "DDG: _tmp_1"] 
+  "107374183326" -> "30064786339"  [ label = "DDG: "] 
+}

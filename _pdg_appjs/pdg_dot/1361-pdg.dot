@@ -1,0 +1,20 @@
+digraph "call" {  
+node [shape="rect"];  
+"107374183761" [label = <METHOD, 32<BR/>call> ]
+"124554052945" [label = <METHOD_RETURN, 32<BR/>astexplorer/website/src/utils/pubsub.js::program:f:&lt;returnValue&gt;> ]
+"111669152439" [label = <PARAM, 32<BR/>this> ]
+"111669152440" [label = <PARAM, 32<BR/>f> ]
+"141733921848" [label = <RETURN, 33<BR/>return f()> ]
+"30064791976" [label = <f, 33<BR/>f()> ]
+"68719497569" [label = <IDENTIFIER, 33<BR/>f<BR/>f()> ]
+  "141733921848" -> "124554052945"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152440" -> "124554052945"  [ label = "DDG: f"] 
+  "30064791976" -> "124554052945"  [ label = "DDG: this"] 
+  "30064791976" -> "124554052945"  [ label = "DDG: f()"] 
+  "107374183761" -> "111669152439"  [ label = "DDG: "] 
+  "107374183761" -> "111669152440"  [ label = "DDG: "] 
+  "30064791976" -> "141733921848"  [ label = "DDG: f()"] 
+  "107374183761" -> "68719497569"  [ label = "DDG: "] 
+  "111669152439" -> "30064791976"  [ label = "DDG: this"] 
+  "107374183761" -> "30064791976"  [ label = "DDG: "] 
+}

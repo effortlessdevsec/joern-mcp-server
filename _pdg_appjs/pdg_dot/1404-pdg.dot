@@ -1,0 +1,11 @@
+digraph "&lt;operator&gt;.lessThan" {  
+node [shape="rect"];  
+"107374183804" [label = <METHOD<BR/>&lt;operator&gt;.lessThan> ]
+"124554052988" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152514" [label = <PARAM<BR/>p1> ]
+"111669152515" [label = <PARAM<BR/>p2> ]
+  "111669152514" -> "124554052988"  [ label = "DDG: p1"] 
+  "111669152515" -> "124554052988"  [ label = "DDG: p2"] 
+  "107374183804" -> "111669152514"  [ label = "DDG: "] 
+  "107374183804" -> "111669152515"  [ label = "DDG: "] 
+}

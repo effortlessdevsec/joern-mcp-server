@@ -1,0 +1,38 @@
+digraph "printCFG" {  
+node [shape="rect"];  
+"107374182425" [label = <METHOD, 281<BR/>printCFG> ]
+"124554051609" [label = <METHOD_RETURN, 281<BR/>void> ]
+"111669149753" [label = <PARAM, 281<BR/>this> ]
+"111669149754" [label = <PARAM, 281<BR/>cfg> ]
+"30064771552" [label = <log, 282<BR/>console.log(&quot;Nodes:&quot;)> ]
+"30064771554" [label = <forEach, 283<BR/>cfg.nodes.forEach((n) =&gt; { const loc = n.lo...> ]
+"30064771558" [label = <log, 287<BR/>console.log(&quot;\nEdges (from -&gt; to):&quot;)> ]
+"30064771560" [label = <forEach, 288<BR/>cfg.edges.forEach((e) =&gt; console.log(` ${e.fro...> ]
+"30064771556" [label = <&lt;operator&gt;.assignment, 283<BR/>(_tmp_14 = cfg.nodes)> ]
+"30064771562" [label = <&lt;operator&gt;.assignment, 288<BR/>(_tmp_15 = cfg.edges)> ]
+  "111669149753" -> "124554051609"  [ label = "DDG: this"] 
+  "111669149754" -> "124554051609"  [ label = "DDG: cfg"] 
+  "30064771552" -> "124554051609"  [ label = "DDG: console.log(&quot;Nodes:&quot;)"] 
+  "30064771556" -> "124554051609"  [ label = "DDG: cfg.nodes"] 
+  "30064771554" -> "124554051609"  [ label = "DDG: _tmp_14"] 
+  "30064771554" -> "124554051609"  [ label = "DDG: cfg.nodes.forEach((n) =&gt; {
+    const loc = n.loc ? ` @ ${n.loc.line}:${n.loc.column}` : &quot;&quot;;
+    console.log(`  ${n.id}: ${n.label} [${n.type}]${loc}`);
+  })"] 
+  "30064771558" -> "124554051609"  [ label = "DDG: console"] 
+  "30064771558" -> "124554051609"  [ label = "DDG: console.log(&quot;\nEdges (from -&gt; to):&quot;)"] 
+  "30064771562" -> "124554051609"  [ label = "DDG: cfg.edges"] 
+  "30064771560" -> "124554051609"  [ label = "DDG: _tmp_15"] 
+  "30064771560" -> "124554051609"  [ label = "DDG: cfg.edges.forEach((e) =&gt; console.log(`  ${e.from} -&gt; ${e.to}`))"] 
+  "107374182425" -> "111669149753"  [ label = "DDG: "] 
+  "107374182425" -> "111669149754"  [ label = "DDG: "] 
+  "107374182425" -> "30064771552"  [ label = "DDG: "] 
+  "30064771556" -> "30064771554"  [ label = "DDG: _tmp_14"] 
+  "107374182425" -> "30064771554"  [ label = "DDG: "] 
+  "30064771552" -> "30064771558"  [ label = "DDG: console"] 
+  "107374182425" -> "30064771558"  [ label = "DDG: "] 
+  "30064771562" -> "30064771560"  [ label = "DDG: _tmp_15"] 
+  "107374182425" -> "30064771560"  [ label = "DDG: "] 
+  "111669149754" -> "30064771556"  [ label = "DDG: cfg"] 
+  "111669149754" -> "30064771562"  [ label = "DDG: cfg"] 
+}

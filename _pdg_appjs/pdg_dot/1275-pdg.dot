@@ -1,0 +1,134 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183675" [label = <METHOD, 1<BR/>:program> ]
+"124554052867" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152256" [label = <PARAM, 1<BR/>this> ]
+"25769807329" [label = <BLOCK, 1<BR/>import {getParser, getParserSettings, getCode} ...> ]
+"25769807330" [label = <BLOCK, 2<BR/>import {ignoreKeysFilter, locationInformationFi...> ]
+"30064790804" [label = <&lt;operator&gt;.assignment, 4<BR/>function parse = function parse(parser, code, p...> ]
+"25769807331" [label = <BLOCK, 17<BR/>export default store =&gt; next =&gt; action =&gt; { c...> ]
+"30064790788" [label = <&lt;operator&gt;.assignment, 1<BR/>var getParser = require(&quot;./selectors&quot;).getParser> ]
+"30064790790" [label = <&lt;operator&gt;.assignment, 1<BR/>var getParserSettings = require(&quot;./selectors&quot;)....> ]
+"30064790792" [label = <&lt;operator&gt;.assignment, 1<BR/>var getCode = require(&quot;./selectors&quot;).getCode> ]
+"30064790794" [label = <&lt;operator&gt;.assignment, 2<BR/>var ignoreKeysFilter = require(&quot;../core/TreeAda...> ]
+"30064790796" [label = <&lt;operator&gt;.assignment, 2<BR/>var locationInformationFilter = require(&quot;../cor...> ]
+"30064790798" [label = <&lt;operator&gt;.assignment, 2<BR/>var functionFilter = require(&quot;../core/TreeAdapt...> ]
+"30064790800" [label = <&lt;operator&gt;.assignment, 2<BR/>var emptyKeysFilter = require(&quot;../core/TreeAdap...> ]
+"30064790802" [label = <&lt;operator&gt;.assignment, 2<BR/>var typeKeysFilter = require(&quot;../core/TreeAdapt...> ]
+"30064790805" [label = <&lt;operator&gt;.assignment, 17<BR/>function &lt;lambda&gt;1 = store =&gt; next =&gt; action =&gt;...> ]
+"30064790806" [label = <&lt;operator&gt;.assignment, 17<BR/>exports[&quot;default&quot;] = &lt;lambda&gt;1> ]
+"68719496340" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064790629" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+"68719496343" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064790630" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+"68719496346" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064790631" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+"68719496349" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"30064790632" [label = <require, 2<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"68719496352" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"30064790633" [label = <require, 2<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"68719496355" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"30064790634" [label = <require, 2<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"68719496358" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"30064790635" [label = <require, 2<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"68719496361" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+"30064790636" [label = <require, 2<BR/>require(&quot;../core/TreeAdapter.js&quot;)> ]
+  "30064790788" -> "124554052867"  [ label = "DDG: getParser"] 
+  "30064790788" -> "124554052867"  [ label = "DDG: var getParser = require(&quot;./selectors&quot;).getParser"] 
+  "30064790790" -> "124554052867"  [ label = "DDG: getParserSettings"] 
+  "30064790790" -> "124554052867"  [ label = "DDG: var getParserSettings = require(&quot;./selectors&quot;).getParserSettings"] 
+  "30064790792" -> "124554052867"  [ label = "DDG: getCode"] 
+  "30064790792" -> "124554052867"  [ label = "DDG: var getCode = require(&quot;./selectors&quot;).getCode"] 
+  "30064790794" -> "124554052867"  [ label = "DDG: ignoreKeysFilter"] 
+  "30064790794" -> "124554052867"  [ label = "DDG: var ignoreKeysFilter = require(&quot;../core/TreeAdapter.js&quot;).ignoreKeysFilter"] 
+  "30064790796" -> "124554052867"  [ label = "DDG: locationInformationFilter"] 
+  "30064790796" -> "124554052867"  [ label = "DDG: var locationInformationFilter = require(&quot;../core/TreeAdapter.js&quot;).locationInformationFilter"] 
+  "30064790798" -> "124554052867"  [ label = "DDG: functionFilter"] 
+  "30064790798" -> "124554052867"  [ label = "DDG: var functionFilter = require(&quot;../core/TreeAdapter.js&quot;).functionFilter"] 
+  "30064790800" -> "124554052867"  [ label = "DDG: emptyKeysFilter"] 
+  "30064790800" -> "124554052867"  [ label = "DDG: var emptyKeysFilter = require(&quot;../core/TreeAdapter.js&quot;).emptyKeysFilter"] 
+  "30064790802" -> "124554052867"  [ label = "DDG: typeKeysFilter"] 
+  "30064790636" -> "124554052867"  [ label = "DDG: this"] 
+  "30064790802" -> "124554052867"  [ label = "DDG: require(&quot;../core/TreeAdapter.js&quot;).typeKeysFilter"] 
+  "30064790802" -> "124554052867"  [ label = "DDG: var typeKeysFilter = require(&quot;../core/TreeAdapter.js&quot;).typeKeysFilter"] 
+  "30064790804" -> "124554052867"  [ label = "DDG: parse"] 
+  "30064790804" -> "124554052867"  [ label = "DDG: function parse = function parse(parser, code, parserSettings) {
+  if (!parser._promise) {
+    parser._promise = new Promise(parser.loadParser);
+  }
+  return parser._promise.then(
+    realParser =&gt; parser.parse(
+      realParser,
+      code,
+      parserSettings || parser.getDefaultOptions(),
+    ),
+  );
+}"] 
+  "30064790805" -> "124554052867"  [ label = "DDG: function &lt;lambda&gt;1 = store =&gt; next =&gt; action =&gt; {
+  const oldState = store.getState();
+  next(action);
+  const newState = store.getState();
+
+  const newParser = getParser(newState);
+  const newParserSettings = getParserSettings(newState);
+  const newCode = getCode(newState);
+
+  if (
+    action.type === 'INIT' ||
+    getParser(oldState) !== newParser ||
+    getParserSettings(oldState) !== newParserSettings ||
+    getCode(oldState) !== newCode
+  ) {
+    if (!newParser || newCode == null) {
+      return;
+    }
+    const start = Date.now();
+    return parse(newParser, newCode, newParserSettings).then(
+      ast =&gt; {
+        // Did anything change in the meantime?
+        if (
+          newParser !== getParser(store.getState()) ||
+          newParserSettings !== getParserSettings(store.getState()) ||
+          newCode !== getCode(store.getState())
+        ) {
+          return;
+        }
+        // Temporary adapter for parsers that haven't been migrated yet.
+        const treeAdapter = {
+          type: 'def..."] 
+  "30064790806" -> "124554052867"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064790806" -> "124554052867"  [ label = "DDG: &lt;lambda&gt;1"] 
+  "30064790806" -> "124554052867"  [ label = "DDG: exports[&quot;default&quot;] = &lt;lambda&gt;1"] 
+  "107374183675" -> "111669152256"  [ label = "DDG: "] 
+  "107374183675" -> "25769807329"  [ label = "DDG: "] 
+  "107374183675" -> "25769807330"  [ label = "DDG: "] 
+  "107374183675" -> "30064790804"  [ label = "DDG: "] 
+  "107374183675" -> "25769807331"  [ label = "DDG: "] 
+  "107374183675" -> "30064790805"  [ label = "DDG: "] 
+  "30064790805" -> "30064790806"  [ label = "DDG: &lt;lambda&gt;1"] 
+  "107374183675" -> "30064790806"  [ label = "DDG: "] 
+  "107374183675" -> "68719496340"  [ label = "DDG: "] 
+  "111669152256" -> "30064790629"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790629"  [ label = "DDG: "] 
+  "107374183675" -> "68719496343"  [ label = "DDG: "] 
+  "30064790629" -> "30064790630"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790630"  [ label = "DDG: "] 
+  "107374183675" -> "68719496346"  [ label = "DDG: "] 
+  "30064790630" -> "30064790631"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790631"  [ label = "DDG: "] 
+  "107374183675" -> "68719496349"  [ label = "DDG: "] 
+  "30064790631" -> "30064790632"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790632"  [ label = "DDG: "] 
+  "107374183675" -> "68719496352"  [ label = "DDG: "] 
+  "30064790632" -> "30064790633"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790633"  [ label = "DDG: "] 
+  "107374183675" -> "68719496355"  [ label = "DDG: "] 
+  "30064790633" -> "30064790634"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790634"  [ label = "DDG: "] 
+  "107374183675" -> "68719496358"  [ label = "DDG: "] 
+  "30064790634" -> "30064790635"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790635"  [ label = "DDG: "] 
+  "107374183675" -> "68719496361"  [ label = "DDG: "] 
+  "30064790635" -> "30064790636"  [ label = "DDG: this"] 
+  "107374183675" -> "30064790636"  [ label = "DDG: "] 
+}

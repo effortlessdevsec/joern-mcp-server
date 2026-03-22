@@ -1,0 +1,48 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183303" [label = <METHOD, 24<BR/>getDefaultOptions> ]
+"124554052486" [label = <METHOD_RETURN, 24<BR/>{ ranges: __ecma.Boolean; locations: __ecma.Boolean; comments: __ecma.Boolean; scope: __ecma.Boolean; luaVersion: __ecma.String; }> ]
+"111669151521" [label = <PARAM, 24<BR/>this> ]
+"141733921430" [label = <RETURN, 25<BR/>return { ranges: true, locations: f...> ]
+"25769806273" [label = <BLOCK, 25<BR/>{ ranges: true, locations: false, ...> ]
+"30064785894" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_5.ranges = true> ]
+"30064785896" [label = <&lt;operator&gt;.assignment, 27<BR/>_tmp_5.locations = false> ]
+"30064785898" [label = <&lt;operator&gt;.assignment, 28<BR/>_tmp_5.comments = true> ]
+"30064785900" [label = <&lt;operator&gt;.assignment, 29<BR/>_tmp_5.scope = false> ]
+"30064785902" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_5.luaVersion = &quot;5.1&quot;> ]
+"68719491492" [label = <IDENTIFIER, 25<BR/>_tmp_5<BR/>{ ranges: true, locations: false, ...> ]
+  "141733921430" -> "124554052486"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151521" -> "124554052486"  [ label = "DDG: this"] 
+  "30064785894" -> "124554052486"  [ label = "DDG: _tmp_5.ranges"] 
+  "30064785894" -> "124554052486"  [ label = "DDG: _tmp_5.ranges = true"] 
+  "30064785896" -> "124554052486"  [ label = "DDG: _tmp_5.locations"] 
+  "30064785896" -> "124554052486"  [ label = "DDG: _tmp_5.locations = false"] 
+  "30064785898" -> "124554052486"  [ label = "DDG: _tmp_5.comments"] 
+  "30064785898" -> "124554052486"  [ label = "DDG: _tmp_5.comments = true"] 
+  "30064785900" -> "124554052486"  [ label = "DDG: _tmp_5.scope"] 
+  "30064785900" -> "124554052486"  [ label = "DDG: _tmp_5.scope = false"] 
+  "30064785902" -> "124554052486"  [ label = "DDG: _tmp_5.luaVersion"] 
+  "30064785902" -> "124554052486"  [ label = "DDG: _tmp_5.luaVersion = &quot;5.1&quot;"] 
+  "107374183303" -> "111669151521"  [ label = "DDG: "] 
+  "25769806273" -> "141733921430"  [ label = "DDG: "] 
+  "25769806273" -> "141733921430"  [ label = "DDG: {
+      ranges: true,
+      locations: false,
+      comments: true,
+      scope: false,
+      luaVersion: '5.1',
+    }"] 
+  "107374183303" -> "141733921430"  [ label = "DDG: "] 
+  "30064785894" -> "25769806273"  [ label = "DDG: _tmp_5.ranges"] 
+  "30064785896" -> "25769806273"  [ label = "DDG: _tmp_5.locations"] 
+  "30064785898" -> "25769806273"  [ label = "DDG: _tmp_5.comments"] 
+  "30064785900" -> "25769806273"  [ label = "DDG: _tmp_5.scope"] 
+  "30064785902" -> "25769806273"  [ label = "DDG: _tmp_5.luaVersion"] 
+  "107374183303" -> "25769806273"  [ label = "DDG: "] 
+  "107374183303" -> "30064785894"  [ label = "DDG: "] 
+  "107374183303" -> "30064785896"  [ label = "DDG: "] 
+  "107374183303" -> "30064785898"  [ label = "DDG: "] 
+  "107374183303" -> "30064785900"  [ label = "DDG: "] 
+  "107374183303" -> "30064785902"  [ label = "DDG: "] 
+  "107374183303" -> "68719491492"  [ label = "DDG: "] 
+}

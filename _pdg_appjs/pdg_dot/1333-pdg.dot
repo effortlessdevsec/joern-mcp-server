@@ -1,0 +1,21 @@
+digraph "&lt;lambda&gt;4" {  
+node [shape="rect"];  
+"107374183733" [label = <METHOD, 116<BR/>&lt;lambda&gt;4> ]
+"124554052916" [label = <METHOD_RETURN, 116<BR/>__ecma.Boolean> ]
+"111669152375" [label = <PARAM, 116<BR/>this> ]
+"111669152376" [label = <PARAM, 116<BR/>revision> ]
+"141733921822" [label = <RETURN, 116<BR/>!!revision> ]
+"30064791499" [label = <&lt;operator&gt;.logicalNot, 116<BR/>!!revision> ]
+"30064791500" [label = <&lt;operator&gt;.logicalNot, 116<BR/>!revision> ]
+  "141733921822" -> "124554052916"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152375" -> "124554052916"  [ label = "DDG: this"] 
+  "30064791500" -> "124554052916"  [ label = "DDG: revision"] 
+  "30064791499" -> "124554052916"  [ label = "DDG: !revision"] 
+  "30064791499" -> "124554052916"  [ label = "DDG: !!revision"] 
+  "107374183733" -> "111669152375"  [ label = "DDG: "] 
+  "107374183733" -> "111669152376"  [ label = "DDG: "] 
+  "30064791499" -> "141733921822"  [ label = "DDG: !!revision"] 
+  "30064791500" -> "30064791499"  [ label = "DDG: revision"] 
+  "111669152376" -> "30064791500"  [ label = "DDG: revision"] 
+  "107374183733" -> "30064791500"  [ label = "DDG: "] 
+}

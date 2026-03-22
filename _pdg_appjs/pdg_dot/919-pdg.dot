@@ -1,0 +1,18 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183319" [label = <METHOD, 45<BR/>&lt;lambda&gt;1> ]
+"124554052501" [label = <METHOD_RETURN, 45<BR/>__ecma.Boolean> ]
+"111669151553" [label = <PARAM, 45<BR/>this> ]
+"111669151554" [label = <PARAM, 45<BR/>plugin> ]
+"141733921440" [label = <RETURN, 45<BR/>plugin !== false> ]
+"30064786180" [label = <&lt;operator&gt;.notEquals, 45<BR/>plugin !== false> ]
+  "141733921440" -> "124554052501"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151553" -> "124554052501"  [ label = "DDG: this"] 
+  "30064786180" -> "124554052501"  [ label = "DDG: plugin"] 
+  "30064786180" -> "124554052501"  [ label = "DDG: plugin !== false"] 
+  "107374183319" -> "111669151553"  [ label = "DDG: "] 
+  "107374183319" -> "111669151554"  [ label = "DDG: "] 
+  "30064786180" -> "141733921440"  [ label = "DDG: plugin !== false"] 
+  "111669151554" -> "30064786180"  [ label = "DDG: plugin"] 
+  "107374183319" -> "30064786180"  [ label = "DDG: "] 
+}

@@ -1,0 +1,18 @@
+digraph "catFiles" {  
+node [shape="rect"];  
+"107374182974" [label = <METHOD, 35<BR/>catFiles> ]
+"124554052156" [label = <METHOD_RETURN, 35<BR/>ANY> ]
+"111669150814" [label = <PARAM, 35<BR/>this> ]
+"111669150815" [label = <PARAM, 35<BR/>name> ]
+"141733921194" [label = <RETURN, 35<BR/>name.slice(1)> ]
+"30064779768" [label = <slice, 35<BR/>name.slice(1)> ]
+  "141733921194" -> "124554052156"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150814" -> "124554052156"  [ label = "DDG: this"] 
+  "30064779768" -> "124554052156"  [ label = "DDG: name"] 
+  "30064779768" -> "124554052156"  [ label = "DDG: name.slice(1)"] 
+  "107374182974" -> "111669150814"  [ label = "DDG: "] 
+  "107374182974" -> "111669150815"  [ label = "DDG: "] 
+  "30064779768" -> "141733921194"  [ label = "DDG: name.slice(1)"] 
+  "111669150815" -> "30064779768"  [ label = "DDG: name"] 
+  "107374182974" -> "30064779768"  [ label = "DDG: "] 
+}

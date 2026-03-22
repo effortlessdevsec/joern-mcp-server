@@ -1,0 +1,14 @@
+digraph "getParserSettings" {  
+node [shape="rect"];  
+"107374183720" [label = <METHOD, 56<BR/>getParserSettings> ]
+"124554052903" [label = <METHOD_RETURN, 56<BR/>ANY> ]
+"111669152347" [label = <PARAM, 56<BR/>this> ]
+"111669152348" [label = <PARAM, 56<BR/>state> ]
+"141733921809" [label = <RETURN, 57<BR/>return state.workbench.parserSettings> ]
+  "141733921809" -> "124554052903"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152347" -> "124554052903"  [ label = "DDG: this"] 
+  "111669152348" -> "124554052903"  [ label = "DDG: state"] 
+  "107374183720" -> "111669152347"  [ label = "DDG: "] 
+  "107374183720" -> "111669152348"  [ label = "DDG: "] 
+  "107374183720" -> "141733921809"  [ label = "DDG: "] 
+}

@@ -1,0 +1,17 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183186" [label = <METHOD, 1<BR/>:program> ]
+"124554052370" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151260" [label = <PARAM, 1<BR/>this> ]
+"30064784113" [label = <&lt;operator&gt;.assignment, 1<BR/>module.exports = function loadRules(/*rulesDir*...> ]
+  "111669151260" -> "124554052370"  [ label = "DDG: this"] 
+  "30064784113" -> "124554052370"  [ label = "DDG: module.exports"] 
+  "30064784113" -> "124554052370"  [ label = "DDG: module.exports = function loadRules(/*rulesDir*/) {
+  // By default, ESLint tries to load all available rules by looking for every
+  // file in its &quot;rules&quot; directory. Since we don't care about any of the bundled
+  // rules, just completely ignore them.
+  return [];
+}"] 
+  "107374183186" -> "111669151260"  [ label = "DDG: "] 
+  "107374183186" -> "30064784113"  [ label = "DDG: "] 
+}

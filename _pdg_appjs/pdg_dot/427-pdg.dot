@@ -1,0 +1,32 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182827" [label = <METHOD, 15<BR/>loadParser> ]
+"124554052010" [label = <METHOD_RETURN, 15<BR/>Promise&lt;void&gt;> ]
+"111669150496" [label = <PARAM, 15<BR/>this> ]
+"111669150497" [label = <PARAM, 15<BR/>callback> ]
+"30064777713" [label = <require, 16<BR/>require(['astexplorer-go'], async parser =&gt; { ...> ]
+"68719483464" [label = <IDENTIFIER, 16<BR/>require<BR/>require(['astexplorer-go'], async parser =&gt; { ...> ]
+"30064777714" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064777716" [label = <, 16<BR/>_tmp_5.push(&quot;astexplorer-go&quot;)> ]
+"68719483469" [label = <IDENTIFIER, 16<BR/>_tmp_5<BR/>['astexplorer-go']> ]
+  "111669150497" -> "124554052010"  [ label = "DDG: callback"] 
+  "30064777713" -> "124554052010"  [ label = "DDG: this"] 
+  "30064777714" -> "124554052010"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064777714" -> "124554052010"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064777716" -> "124554052010"  [ label = "DDG: _tmp_5"] 
+  "30064777716" -> "124554052010"  [ label = "DDG: _tmp_5.push(&quot;astexplorer-go&quot;)"] 
+  "30064777713" -> "124554052010"  [ label = "DDG: require(['astexplorer-go'], async parser =&gt; {
+      await parser.init()
+      callback(parser)
+    })"] 
+  "107374182827" -> "111669150496"  [ label = "DDG: "] 
+  "107374182827" -> "111669150497"  [ label = "DDG: "] 
+  "107374182827" -> "68719483464"  [ label = "DDG: "] 
+  "111669150496" -> "30064777713"  [ label = "DDG: this"] 
+  "107374182827" -> "30064777713"  [ label = "DDG: "] 
+  "30064777716" -> "30064777713"  [ label = "DDG: _tmp_5"] 
+  "107374182827" -> "30064777714"  [ label = "DDG: "] 
+  "107374182827" -> "68719483469"  [ label = "DDG: "] 
+  "30064777714" -> "30064777716"  [ label = "DDG: _tmp_5"] 
+  "107374182827" -> "30064777716"  [ label = "DDG: "] 
+}

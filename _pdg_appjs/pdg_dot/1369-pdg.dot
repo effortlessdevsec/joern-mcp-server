@@ -1,0 +1,33 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183769" [label = <METHOD, 1<BR/>:program> ]
+"124554052953" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152454" [label = <PARAM, 1<BR/>this> ]
+"25769807573" [label = <BLOCK, 4<BR/>export default function stringify(value) { sw...> ]
+"30064792031" [label = <&lt;operator&gt;.assignment, 4<BR/>function stringify = function stringify(value) ...> ]
+"30064792032" [label = <&lt;operator&gt;.assignment, 4<BR/>exports[&quot;default&quot;] = stringify> ]
+  "111669152454" -> "124554052953"  [ label = "DDG: this"] 
+  "30064792031" -> "124554052953"  [ label = "DDG: function stringify = function stringify(value) {
+  switch (typeof value) {
+    case 'function':
+      return value.toString().match(/function[^(]*\([^)]*\)/)[0];
+    case 'object':
+      return value ? JSON.stringify(value, stringify) : 'null';
+    case 'undefined':
+      return 'undefined';
+    case 'number':
+    case 'bigint':
+      return Number.isNaN(value) ? 'NaN' : String(value);
+    default:
+      return JSON.stringify(value);
+  }
+}"] 
+  "30064792032" -> "124554052953"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064792032" -> "124554052953"  [ label = "DDG: stringify"] 
+  "30064792032" -> "124554052953"  [ label = "DDG: exports[&quot;default&quot;] = stringify"] 
+  "107374183769" -> "111669152454"  [ label = "DDG: "] 
+  "107374183769" -> "25769807573"  [ label = "DDG: "] 
+  "107374183769" -> "30064792031"  [ label = "DDG: "] 
+  "30064792031" -> "30064792032"  [ label = "DDG: stringify"] 
+  "107374183769" -> "30064792032"  [ label = "DDG: "] 
+}

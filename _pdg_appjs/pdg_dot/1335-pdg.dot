@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;6" {  
+node [shape="rect"];  
+"107374183735" [label = <METHOD, 129<BR/>&lt;lambda&gt;6> ]
+"124554052918" [label = <METHOD_RETURN, 129<BR/>astexplorer/website/src/store/selectors.js::program:showTransformer:&lt;operator&gt;.logicalAnd:&lt;returnValue&gt;> ]
+"111669152380" [label = <PARAM, 129<BR/>this> ]
+"111669152381" [label = <PARAM, 129<BR/>showTransformer> ]
+"111669152382" [label = <PARAM, 129<BR/>dirty> ]
+"141733921824" [label = <RETURN, 129<BR/>showTransformer &amp;&amp; dirty> ]
+"30064791503" [label = <&lt;operator&gt;.logicalAnd, 129<BR/>showTransformer &amp;&amp; dirty> ]
+  "141733921824" -> "124554052918"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152380" -> "124554052918"  [ label = "DDG: this"] 
+  "30064791503" -> "124554052918"  [ label = "DDG: showTransformer"] 
+  "30064791503" -> "124554052918"  [ label = "DDG: dirty"] 
+  "30064791503" -> "124554052918"  [ label = "DDG: showTransformer &amp;&amp; dirty"] 
+  "107374183735" -> "111669152380"  [ label = "DDG: "] 
+  "107374183735" -> "111669152381"  [ label = "DDG: "] 
+  "107374183735" -> "111669152382"  [ label = "DDG: "] 
+  "30064791503" -> "141733921824"  [ label = "DDG: showTransformer &amp;&amp; dirty"] 
+  "111669152381" -> "30064791503"  [ label = "DDG: showTransformer"] 
+  "107374183735" -> "30064791503"  [ label = "DDG: "] 
+  "111669152382" -> "30064791503"  [ label = "DDG: dirty"] 
+}

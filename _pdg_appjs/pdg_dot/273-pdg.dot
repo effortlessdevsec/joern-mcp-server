@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;10" {  
+node [shape="rect"];  
+"107374182673" [label = <METHOD, 286<BR/>&lt;lambda&gt;10> ]
+"124554051855" [label = <METHOD_RETURN, 286<BR/>ANY> ]
+"111669150175" [label = <PARAM, 286<BR/>this> ]
+"111669150176" [label = <PARAM, 286<BR/>{key}> ]
+"30064775247" [label = <&lt;operator&gt;.assignment, 286<BR/>key = param1_4.key> ]
+"141733920950" [label = <RETURN, 286<BR/>key> ]
+"68719480908" [label = <IDENTIFIER, 286<BR/>key> ]
+  "141733920950" -> "124554051855"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150175" -> "124554051855"  [ label = "DDG: this"] 
+  "111669150176" -> "124554051855"  [ label = "DDG: param1_4"] 
+  "30064775247" -> "124554051855"  [ label = "DDG: key"] 
+  "30064775247" -> "124554051855"  [ label = "DDG: param1_4.key"] 
+  "30064775247" -> "124554051855"  [ label = "DDG: key = param1_4.key"] 
+  "107374182673" -> "111669150175"  [ label = "DDG: "] 
+  "107374182673" -> "111669150176"  [ label = "DDG: "] 
+  "111669150176" -> "30064775247"  [ label = "DDG: param1_4"] 
+  "68719480908" -> "141733920950"  [ label = "DDG: key"] 
+  "30064775247" -> "68719480908"  [ label = "DDG: key"] 
+  "107374182673" -> "68719480908"  [ label = "DDG: "] 
+}

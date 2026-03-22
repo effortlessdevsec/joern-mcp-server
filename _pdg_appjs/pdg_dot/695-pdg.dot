@@ -1,0 +1,62 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183095" [label = <METHOD, 1<BR/>:program> ]
+"124554052282" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151065" [label = <PARAM, 1<BR/>this> ]
+"30064782344" [label = <&lt;operator&gt;.assignment, 6<BR/>var hermesParser = require(&quot;hermes-parser&quot;)> ]
+"30064782345" [label = <&lt;operator&gt;.assignment, 8<BR/>const handlers = { parse(code, options) { ...> ]
+"30064782348" [label = <&lt;operator&gt;.assignment, 14<BR/>onmessage = async function(e) { const {type, ...> ]
+"68719488024" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;hermes-parser&quot;)> ]
+"30064782285" [label = <require, 6<BR/>require(&quot;hermes-parser&quot;)> ]
+"30064782346" [label = <&lt;operator&gt;.assignment, 9<BR/>_tmp_0.parse = parse> ]
+"68719488028" [label = <IDENTIFIER, 8<BR/>_tmp_0<BR/>{ parse(code, options) { return hermesPar...> ]
+  "30064782344" -> "124554052282"  [ label = "DDG: hermesParser"] 
+  "30064782285" -> "124554052282"  [ label = "DDG: this"] 
+  "30064782344" -> "124554052282"  [ label = "DDG: require(&quot;hermes-parser&quot;)"] 
+  "30064782344" -> "124554052282"  [ label = "DDG: var hermesParser = require(&quot;hermes-parser&quot;)"] 
+  "30064782345" -> "124554052282"  [ label = "DDG: handlers"] 
+  "30064782346" -> "124554052282"  [ label = "DDG: _tmp_0.parse"] 
+  "30064782346" -> "124554052282"  [ label = "DDG: _tmp_0.parse = parse"] 
+  "30064782345" -> "124554052282"  [ label = "DDG: const handlers = {
+  parse(code, options) {
+    return hermesParser.parse(code, options);
+  },
+}"] 
+  "30064782348" -> "124554052282"  [ label = "DDG: onmessage"] 
+  "30064782348" -> "124554052282"  [ label = "DDG: onmessage = async function(e) {
+  const {type, requestId, args = []} = e.data;
+  let handler = () =&gt; {
+    throw new Error('No handler in Hermes worker for message type: ' + type);
+  };
+  if (Object.hasOwnProperty.call(handlers, type)) {
+    handler = handlers[type];
+  }
+  let value;
+  try {
+    value = handler(...args);
+  } catch (e) {
+    postMessage({
+      type,
+      requestId,
+      action: 'reject',
+      // Errors don't survive the structured clone algorithm very well across
+      // browsers - they're either not allowed or lose some of their properties.
+      // Send a plain-object copy to be reconstituted by the client.
+      value: {name: e.name, stack: e.stack, message: e.message, ...e},
+    });
+    return;
+  }
+  postMessage({type, requestId, action: 'resolve', value});
+}"] 
+  "107374183095" -> "111669151065"  [ label = "DDG: "] 
+  "30064782285" -> "30064782344"  [ label = "DDG: this"] 
+  "30064782285" -> "30064782344"  [ label = "DDG: &quot;hermes-parser&quot;"] 
+  "30064782346" -> "30064782345"  [ label = "DDG: _tmp_0.parse"] 
+  "107374183095" -> "30064782345"  [ label = "DDG: "] 
+  "107374183095" -> "30064782348"  [ label = "DDG: "] 
+  "107374183095" -> "68719488024"  [ label = "DDG: "] 
+  "111669151065" -> "30064782285"  [ label = "DDG: this"] 
+  "107374183095" -> "30064782285"  [ label = "DDG: "] 
+  "107374183095" -> "30064782346"  [ label = "DDG: "] 
+  "107374183095" -> "68719488028"  [ label = "DDG: "] 
+}

@@ -1,0 +1,77 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183341" [label = <METHOD, 26<BR/>parse> ]
+"124554052527" [label = <METHOD_RETURN, 26<BR/>undefined> ]
+"111669151608" [label = <PARAM, 26<BR/>this> ]
+"111669151609" [label = <PARAM, 26<BR/>{mdx, mdxAstToMdxHast}> ]
+"111669151610" [label = <PARAM, 26<BR/>code> ]
+"30064786519" [label = <&lt;operator&gt;.assignment, 26<BR/>mdx = param1_0.mdx> ]
+"30064786521" [label = <&lt;operator&gt;.assignment, 26<BR/>mdxAstToMdxHast = param1_0.mdxAstToMdxHast> ]
+"30064786523" [label = <sync, 28<BR/>mdx.sync(code, { hastPlugins: [ m...> ]
+"141733921455" [label = <RETURN, 38<BR/>return result> ]
+"68719492121" [label = <IDENTIFIER, 38<BR/>result<BR/>return result> ]
+"30064786525" [label = <&lt;operator&gt;.assignment, 29<BR/>_tmp_7.hastPlugins = [ mdxAstToMdxHast,...> ]
+"68719492120" [label = <IDENTIFIER, 28<BR/>_tmp_7<BR/>{ hastPlugins: [ mdxAstToMdxHast,...> ]
+"30064786527" [label = <&lt;operator&gt;.assignment, 29<BR/>_tmp_8 = __ecma.Array.factory()> ]
+"30064786529" [label = <, 30<BR/>_tmp_8.push(mdxAstToMdxHast)> ]
+"30064786531" [label = <, 31<BR/>_tmp_8.push(&lt;lambda&gt;2)> ]
+"30064786533" [label = <, 32<BR/>_tmp_8.push(&lt;lambda&gt;3)> ]
+"68719492119" [label = <IDENTIFIER, 29<BR/>_tmp_8<BR/>[ mdxAstToMdxHast, () =&gt; remove...> ]
+  "141733921455" -> "124554052527"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151608" -> "124554052527"  [ label = "DDG: this"] 
+  "111669151609" -> "124554052527"  [ label = "DDG: param1_0"] 
+  "30064786519" -> "124554052527"  [ label = "DDG: param1_0.mdx"] 
+  "30064786519" -> "124554052527"  [ label = "DDG: mdx = param1_0.mdx"] 
+  "30064786521" -> "124554052527"  [ label = "DDG: param1_0.mdxAstToMdxHast"] 
+  "30064786521" -> "124554052527"  [ label = "DDG: mdxAstToMdxHast = param1_0.mdxAstToMdxHast"] 
+  "30064786523" -> "124554052527"  [ label = "DDG: mdx"] 
+  "30064786523" -> "124554052527"  [ label = "DDG: code"] 
+  "30064786525" -> "124554052527"  [ label = "DDG: _tmp_7.hastPlugins"] 
+  "30064786527" -> "124554052527"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064786527" -> "124554052527"  [ label = "DDG: _tmp_8 = __ecma.Array.factory()"] 
+  "30064786529" -> "124554052527"  [ label = "DDG: mdxAstToMdxHast"] 
+  "30064786529" -> "124554052527"  [ label = "DDG: _tmp_8.push(mdxAstToMdxHast)"] 
+  "30064786531" -> "124554052527"  [ label = "DDG: _tmp_8.push(&lt;lambda&gt;2)"] 
+  "30064786533" -> "124554052527"  [ label = "DDG: _tmp_8"] 
+  "30064786533" -> "124554052527"  [ label = "DDG: _tmp_8.push(&lt;lambda&gt;3)"] 
+  "30064786525" -> "124554052527"  [ label = "DDG: _tmp_7.hastPlugins = [
+        mdxAstToMdxHast,
+        () =&gt; removeNewlines,
+        () =&gt; tree =&gt; {
+          result = tree;
+        },
+      ]"] 
+  "30064786523" -> "124554052527"  [ label = "DDG: mdx.sync(code, {
+      hastPlugins: [
+        mdxAstToMdxHast,
+        () =&gt; removeNewlines,
+        () =&gt; tree =&gt; {
+          result = tree;
+        },
+      ],
+    })"] 
+  "107374183341" -> "111669151608"  [ label = "DDG: "] 
+  "107374183341" -> "111669151609"  [ label = "DDG: "] 
+  "107374183341" -> "111669151610"  [ label = "DDG: "] 
+  "111669151609" -> "30064786519"  [ label = "DDG: param1_0"] 
+  "111669151609" -> "30064786521"  [ label = "DDG: param1_0"] 
+  "68719492121" -> "141733921455"  [ label = "DDG: result"] 
+  "107374183341" -> "141733921455"  [ label = "DDG: "] 
+  "30064786519" -> "30064786523"  [ label = "DDG: mdx"] 
+  "107374183341" -> "30064786523"  [ label = "DDG: "] 
+  "111669151610" -> "30064786523"  [ label = "DDG: code"] 
+  "30064786525" -> "30064786523"  [ label = "DDG: _tmp_7.hastPlugins"] 
+  "107374183341" -> "68719492121"  [ label = "DDG: "] 
+  "30064786533" -> "30064786525"  [ label = "DDG: _tmp_8"] 
+  "107374183341" -> "30064786525"  [ label = "DDG: "] 
+  "107374183341" -> "68719492120"  [ label = "DDG: "] 
+  "107374183341" -> "30064786527"  [ label = "DDG: "] 
+  "107374183341" -> "68719492119"  [ label = "DDG: "] 
+  "30064786527" -> "30064786529"  [ label = "DDG: _tmp_8"] 
+  "107374183341" -> "30064786529"  [ label = "DDG: "] 
+  "30064786521" -> "30064786529"  [ label = "DDG: mdxAstToMdxHast"] 
+  "30064786529" -> "30064786531"  [ label = "DDG: _tmp_8"] 
+  "107374183341" -> "30064786531"  [ label = "DDG: "] 
+  "30064786531" -> "30064786533"  [ label = "DDG: _tmp_8"] 
+  "107374183341" -> "30064786533"  [ label = "DDG: "] 
+}

@@ -1,0 +1,48 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182780" [label = <METHOD, 15<BR/>loadParser> ]
+"124554051963" [label = <METHOD_RETURN, 15<BR/>void> ]
+"111669150383" [label = <PARAM, 15<BR/>this> ]
+"111669150384" [label = <PARAM, 15<BR/>callback> ]
+"30064776799" [label = <require, 16<BR/>require(['postcss/lib/parse', 'postcss-scss/lib...> ]
+"68719482587" [label = <IDENTIFIER, 16<BR/>require<BR/>require(['postcss/lib/parse', 'postcss-scss/lib...> ]
+"30064776800" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064776802" [label = <, 16<BR/>_tmp_3.push(&quot;postcss/lib/parse&quot;)> ]
+"30064776804" [label = <, 16<BR/>_tmp_3.push(&quot;postcss-scss/lib/scss-parse&quot;)> ]
+"30064776806" [label = <, 16<BR/>_tmp_3.push(&quot;postcss-less/lib/&quot;)> ]
+"30064776808" [label = <, 16<BR/>_tmp_3.push(&quot;postcss-safe-parser&quot;)> ]
+"68719482598" [label = <IDENTIFIER, 16<BR/>_tmp_3<BR/>['postcss/lib/parse', 'postcss-scss/lib/scss-pa...> ]
+  "111669150384" -> "124554051963"  [ label = "DDG: callback"] 
+  "30064776799" -> "124554051963"  [ label = "DDG: this"] 
+  "30064776800" -> "124554051963"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064776800" -> "124554051963"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064776802" -> "124554051963"  [ label = "DDG: _tmp_3.push(&quot;postcss/lib/parse&quot;)"] 
+  "30064776804" -> "124554051963"  [ label = "DDG: _tmp_3.push(&quot;postcss-scss/lib/scss-parse&quot;)"] 
+  "30064776806" -> "124554051963"  [ label = "DDG: _tmp_3.push(&quot;postcss-less/lib/&quot;)"] 
+  "30064776808" -> "124554051963"  [ label = "DDG: _tmp_3"] 
+  "30064776808" -> "124554051963"  [ label = "DDG: _tmp_3.push(&quot;postcss-safe-parser&quot;)"] 
+  "30064776799" -> "124554051963"  [ label = "DDG: require(['postcss/lib/parse', 'postcss-scss/lib/scss-parse', 'postcss-less/lib/', 'postcss-safe-parser'], (builtIn, scss, less, safe) =&gt; {
+      callback({
+        'built-in': builtIn,
+        scss,
+        less: less.parse,
+        'safe-parser': safe,
+      });
+    })"] 
+  "107374182780" -> "111669150383"  [ label = "DDG: "] 
+  "107374182780" -> "111669150384"  [ label = "DDG: "] 
+  "107374182780" -> "68719482587"  [ label = "DDG: "] 
+  "111669150383" -> "30064776799"  [ label = "DDG: this"] 
+  "107374182780" -> "30064776799"  [ label = "DDG: "] 
+  "30064776808" -> "30064776799"  [ label = "DDG: _tmp_3"] 
+  "107374182780" -> "30064776800"  [ label = "DDG: "] 
+  "107374182780" -> "68719482598"  [ label = "DDG: "] 
+  "30064776800" -> "30064776802"  [ label = "DDG: _tmp_3"] 
+  "107374182780" -> "30064776802"  [ label = "DDG: "] 
+  "30064776802" -> "30064776804"  [ label = "DDG: _tmp_3"] 
+  "107374182780" -> "30064776804"  [ label = "DDG: "] 
+  "30064776804" -> "30064776806"  [ label = "DDG: _tmp_3"] 
+  "107374182780" -> "30064776806"  [ label = "DDG: "] 
+  "30064776806" -> "30064776808"  [ label = "DDG: _tmp_3"] 
+  "107374182780" -> "30064776808"  [ label = "DDG: "] 
+}

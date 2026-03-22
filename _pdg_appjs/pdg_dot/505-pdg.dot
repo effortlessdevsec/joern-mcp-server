@@ -1,0 +1,49 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182905" [label = <METHOD, 16<BR/>loadParser> ]
+"124554052088" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150666" [label = <PARAM, 16<BR/>this> ]
+"111669150667" [label = <PARAM, 16<BR/>callback> ]
+"30064778799" [label = <require, 17<BR/>require(['htmlparser2/lib/Parser', 'domhandler'...> ]
+"68719484593" [label = <IDENTIFIER, 17<BR/>require<BR/>require(['htmlparser2/lib/Parser', 'domhandler'...> ]
+"30064778800" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064778802" [label = <, 17<BR/>_tmp_5.push(&quot;htmlparser2/lib/Parser&quot;)> ]
+"30064778804" [label = <, 17<BR/>_tmp_5.push(&quot;domhandler&quot;)> ]
+"68719484600" [label = <IDENTIFIER, 17<BR/>_tmp_5<BR/>['htmlparser2/lib/Parser', 'domhandler']> ]
+  "111669150667" -> "124554052088"  [ label = "DDG: callback"] 
+  "30064778799" -> "124554052088"  [ label = "DDG: this"] 
+  "30064778800" -> "124554052088"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064778800" -> "124554052088"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064778802" -> "124554052088"  [ label = "DDG: _tmp_5.push(&quot;htmlparser2/lib/Parser&quot;)"] 
+  "30064778804" -> "124554052088"  [ label = "DDG: _tmp_5"] 
+  "30064778804" -> "124554052088"  [ label = "DDG: _tmp_5.push(&quot;domhandler&quot;)"] 
+  "30064778799" -> "124554052088"  [ label = "DDG: require(['htmlparser2/lib/Parser', 'domhandler'], (Parser, {DomHandler}) =&gt; {
+      class Handler extends DomHandler {
+        constructor() {
+          super({ withStartIndices: true, withEndIndices: true });
+        }
+
+        // It appears that htmlparser2 doesn't correctly process
+        // ProcessingInstructions. Their &quot;endIndex&quot; isn't set properly.
+        onprocessinginstruction(name, data) {
+          this.parser.endIndex = this.parser.tokenizer._index;
+          super.onprocessinginstruction(name, data);
+        }
+
+      }
+
+      callback({ Parser, Handler });
+    })"] 
+  "107374182905" -> "111669150666"  [ label = "DDG: "] 
+  "107374182905" -> "111669150667"  [ label = "DDG: "] 
+  "107374182905" -> "68719484593"  [ label = "DDG: "] 
+  "111669150666" -> "30064778799"  [ label = "DDG: this"] 
+  "107374182905" -> "30064778799"  [ label = "DDG: "] 
+  "30064778804" -> "30064778799"  [ label = "DDG: _tmp_5"] 
+  "107374182905" -> "30064778800"  [ label = "DDG: "] 
+  "107374182905" -> "68719484600"  [ label = "DDG: "] 
+  "30064778800" -> "30064778802"  [ label = "DDG: _tmp_5"] 
+  "107374182905" -> "30064778802"  [ label = "DDG: "] 
+  "30064778802" -> "30064778804"  [ label = "DDG: _tmp_5"] 
+  "107374182905" -> "30064778804"  [ label = "DDG: "] 
+}

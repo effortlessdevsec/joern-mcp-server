@@ -1,0 +1,265 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183159" [label = <METHOD, 93<BR/>opensByDefault> ]
+"124554052342" [label = <METHOD_RETURN, 93<BR/>__ecma.Boolean> ]
+"111669151191" [label = <PARAM, 93<BR/>this> ]
+"111669151192" [label = <PARAM, 93<BR/>node> ]
+"111669151193" [label = <PARAM, 93<BR/>key> ]
+"141733921331" [label = <RETURN, 94<BR/>return ( key === 'scriptItemList' || ...> ]
+"30064783393" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783394" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783414" [label = <&lt;operator&gt;.equals, 104<BR/>key === 'identifierToken'> ]
+"30064783395" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783413" [label = <&lt;operator&gt;.equals, 103<BR/>key === 'literalToken'> ]
+"30064783396" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783412" [label = <&lt;operator&gt;.equals, 102<BR/>key === 'expressions'> ]
+"30064783397" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783411" [label = <&lt;operator&gt;.equals, 101<BR/>key === 'expression'> ]
+"30064783398" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783410" [label = <&lt;operator&gt;.equals, 100<BR/>key === 'binding'> ]
+"30064783399" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783406" [label = <&lt;operator&gt;.logicalAnd, 99<BR/>Array.isArray(node) &amp;&amp; key === 'args'> ]
+"30064783400" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783405" [label = <&lt;operator&gt;.equals, 98<BR/>key === 'parameters'> ]
+"30064783407" [label = <isArray, 99<BR/>Array.isArray(node)> ]
+"30064783409" [label = <&lt;operator&gt;.equals, 99<BR/>key === 'args'> ]
+"30064783401" [label = <&lt;operator&gt;.logicalOr, 95<BR/>key === 'scriptItemList' || key === 'decl...> ]
+"30064783404" [label = <&lt;operator&gt;.equals, 97<BR/>key === 'statements'> ]
+"30064783402" [label = <&lt;operator&gt;.equals, 95<BR/>key === 'scriptItemList'> ]
+"30064783403" [label = <&lt;operator&gt;.equals, 96<BR/>key === 'declarations'> ]
+"30064783408" [label = <&lt;operator&gt;.fieldAccess, 99<BR/>Array.isArray> ]
+"55834579416" [label = <FIELD_IDENTIFIER, 99<BR/>isArray> ]
+  "141733921331" -> "124554052342"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151191" -> "124554052342"  [ label = "DDG: this"] 
+  "111669151192" -> "124554052342"  [ label = "DDG: node"] 
+  "30064783402" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783401" -> "124554052342"  [ label = "DDG: key === 'scriptItemList'"] 
+  "30064783403" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783401" -> "124554052342"  [ label = "DDG: key === 'declarations'"] 
+  "30064783400" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations'"] 
+  "30064783404" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783400" -> "124554052342"  [ label = "DDG: key === 'statements'"] 
+  "30064783399" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements'"] 
+  "30064783405" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783399" -> "124554052342"  [ label = "DDG: key === 'parameters'"] 
+  "30064783398" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters'"] 
+  "30064783407" -> "124554052342"  [ label = "DDG: Array"] 
+  "30064783407" -> "124554052342"  [ label = "DDG: node"] 
+  "30064783406" -> "124554052342"  [ label = "DDG: Array.isArray(node)"] 
+  "30064783409" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783406" -> "124554052342"  [ label = "DDG: key === 'args'"] 
+  "30064783398" -> "124554052342"  [ label = "DDG: Array.isArray(node) &amp;&amp; key === 'args'"] 
+  "30064783397" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args'"] 
+  "30064783410" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783397" -> "124554052342"  [ label = "DDG: key === 'binding'"] 
+  "30064783396" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding'"] 
+  "30064783411" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783396" -> "124554052342"  [ label = "DDG: key === 'expression'"] 
+  "30064783395" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression'"] 
+  "30064783412" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783395" -> "124554052342"  [ label = "DDG: key === 'expressions'"] 
+  "30064783394" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression' ||
+      key === 'expressions'"] 
+  "30064783413" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783394" -> "124554052342"  [ label = "DDG: key === 'literalToken'"] 
+  "30064783393" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression' ||
+      key === 'expressions' ||
+      key === 'literalToken'"] 
+  "30064783414" -> "124554052342"  [ label = "DDG: key"] 
+  "30064783393" -> "124554052342"  [ label = "DDG: key === 'identifierToken'"] 
+  "30064783393" -> "124554052342"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression' ||
+      key === 'expressions' ||
+      key === 'literalToken' ||
+      key === 'identifierToken'"] 
+  "107374183159" -> "111669151191"  [ label = "DDG: "] 
+  "107374183159" -> "111669151192"  [ label = "DDG: "] 
+  "107374183159" -> "111669151193"  [ label = "DDG: "] 
+  "30064783393" -> "141733921331"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression' ||
+      key === 'expressions' ||
+      key === 'literalToken' ||
+      key === 'identifierToken'"] 
+  "30064783394" -> "30064783393"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression' ||
+      key === 'expressions'"] 
+  "30064783394" -> "30064783393"  [ label = "DDG: key === 'literalToken'"] 
+  "30064783414" -> "30064783393"  [ label = "DDG: key"] 
+  "30064783414" -> "30064783393"  [ label = "DDG: &quot;identifierToken&quot;"] 
+  "30064783395" -> "30064783394"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding' ||
+      key === 'expression'"] 
+  "30064783395" -> "30064783394"  [ label = "DDG: key === 'expressions'"] 
+  "30064783413" -> "30064783394"  [ label = "DDG: key"] 
+  "30064783413" -> "30064783394"  [ label = "DDG: &quot;literalToken&quot;"] 
+  "30064783402" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783409" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783410" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783411" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783412" -> "30064783414"  [ label = "DDG: key"] 
+  "30064783413" -> "30064783414"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783414"  [ label = "DDG: "] 
+  "30064783396" -> "30064783395"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args' ||
+      key === 'binding'"] 
+  "30064783396" -> "30064783395"  [ label = "DDG: key === 'expression'"] 
+  "30064783412" -> "30064783395"  [ label = "DDG: key"] 
+  "30064783412" -> "30064783395"  [ label = "DDG: &quot;expressions&quot;"] 
+  "30064783402" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783409" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783410" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783411" -> "30064783413"  [ label = "DDG: key"] 
+  "30064783412" -> "30064783413"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783413"  [ label = "DDG: "] 
+  "30064783397" -> "30064783396"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters' ||
+      Array.isArray(node) &amp;&amp; key === 'args'"] 
+  "30064783397" -> "30064783396"  [ label = "DDG: key === 'binding'"] 
+  "30064783411" -> "30064783396"  [ label = "DDG: key"] 
+  "30064783411" -> "30064783396"  [ label = "DDG: &quot;expression&quot;"] 
+  "30064783402" -> "30064783412"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783412"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783412"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783412"  [ label = "DDG: key"] 
+  "30064783409" -> "30064783412"  [ label = "DDG: key"] 
+  "30064783410" -> "30064783412"  [ label = "DDG: key"] 
+  "30064783411" -> "30064783412"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783412"  [ label = "DDG: "] 
+  "30064783398" -> "30064783397"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements' ||
+      key === 'parameters'"] 
+  "30064783398" -> "30064783397"  [ label = "DDG: Array.isArray(node) &amp;&amp; key === 'args'"] 
+  "30064783410" -> "30064783397"  [ label = "DDG: key"] 
+  "30064783410" -> "30064783397"  [ label = "DDG: &quot;binding&quot;"] 
+  "30064783402" -> "30064783411"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783411"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783411"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783411"  [ label = "DDG: key"] 
+  "30064783409" -> "30064783411"  [ label = "DDG: key"] 
+  "30064783410" -> "30064783411"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783411"  [ label = "DDG: "] 
+  "30064783399" -> "30064783398"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations' ||
+      key === 'statements'"] 
+  "30064783399" -> "30064783398"  [ label = "DDG: key === 'parameters'"] 
+  "30064783406" -> "30064783398"  [ label = "DDG: Array.isArray(node)"] 
+  "30064783406" -> "30064783398"  [ label = "DDG: key === 'args'"] 
+  "30064783402" -> "30064783410"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783410"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783410"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783410"  [ label = "DDG: key"] 
+  "30064783409" -> "30064783410"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783410"  [ label = "DDG: "] 
+  "30064783400" -> "30064783399"  [ label = "DDG: key === 'scriptItemList' ||
+      key === 'declarations'"] 
+  "30064783400" -> "30064783399"  [ label = "DDG: key === 'statements'"] 
+  "30064783405" -> "30064783399"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783399"  [ label = "DDG: &quot;parameters&quot;"] 
+  "30064783407" -> "30064783406"  [ label = "DDG: Array"] 
+  "30064783407" -> "30064783406"  [ label = "DDG: node"] 
+  "30064783409" -> "30064783406"  [ label = "DDG: key"] 
+  "30064783409" -> "30064783406"  [ label = "DDG: &quot;args&quot;"] 
+  "30064783401" -> "30064783400"  [ label = "DDG: key === 'scriptItemList'"] 
+  "30064783401" -> "30064783400"  [ label = "DDG: key === 'declarations'"] 
+  "30064783404" -> "30064783400"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783400"  [ label = "DDG: &quot;statements&quot;"] 
+  "30064783402" -> "30064783405"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783405"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783405"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783405"  [ label = "DDG: "] 
+  "107374183159" -> "30064783407"  [ label = "DDG: "] 
+  "111669151192" -> "30064783407"  [ label = "DDG: node"] 
+  "30064783402" -> "30064783409"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783409"  [ label = "DDG: key"] 
+  "30064783404" -> "30064783409"  [ label = "DDG: key"] 
+  "30064783405" -> "30064783409"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783409"  [ label = "DDG: "] 
+  "30064783402" -> "30064783401"  [ label = "DDG: key"] 
+  "30064783402" -> "30064783401"  [ label = "DDG: &quot;scriptItemList&quot;"] 
+  "30064783403" -> "30064783401"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783401"  [ label = "DDG: &quot;declarations&quot;"] 
+  "30064783402" -> "30064783404"  [ label = "DDG: key"] 
+  "30064783403" -> "30064783404"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783404"  [ label = "DDG: "] 
+  "111669151193" -> "30064783402"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783402"  [ label = "DDG: "] 
+  "30064783402" -> "30064783403"  [ label = "DDG: key"] 
+  "107374183159" -> "30064783403"  [ label = "DDG: "] 
+  "30064783394" -> "30064783414"  [ label = "CDG: "] 
+  "30064783395" -> "30064783413"  [ label = "CDG: "] 
+  "30064783396" -> "30064783412"  [ label = "CDG: "] 
+  "30064783397" -> "30064783411"  [ label = "CDG: "] 
+  "30064783398" -> "30064783410"  [ label = "CDG: "] 
+  "30064783399" -> "30064783406"  [ label = "CDG: "] 
+  "30064783399" -> "30064783408"  [ label = "CDG: "] 
+  "30064783399" -> "30064783407"  [ label = "CDG: "] 
+  "30064783399" -> "55834579416"  [ label = "CDG: "] 
+  "30064783400" -> "30064783405"  [ label = "CDG: "] 
+  "30064783407" -> "30064783409"  [ label = "CDG: "] 
+  "30064783401" -> "30064783404"  [ label = "CDG: "] 
+  "30064783402" -> "30064783403"  [ label = "CDG: "] 
+}

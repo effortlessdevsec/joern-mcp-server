@@ -1,0 +1,218 @@
+digraph "SettingsRenderer" {  
+node [shape="rect"];  
+"107374183507" [label = <METHOD, 44<BR/>SettingsRenderer> ]
+"124554052690" [label = <METHOD_RETURN, 44<BR/>ANY> ]
+"111669151947" [label = <PARAM, 44<BR/>this> ]
+"111669151948" [label = <PARAM, 44<BR/>props> ]
+"25769806834" [label = <BLOCK, 45<BR/>const {settingsConfiguration, parserSettings, o...> ]
+"25769806835" [label = <BLOCK, 46<BR/>const { title, fields, required = n...> ]
+"30064788823" [label = <&lt;operator&gt;.assignment, 52<BR/>const values = (settingsConfiguration.value...> ]
+"141733921573" [label = <RETURN, 55<BR/>return ( &lt;div&gt; {title ? &lt;h4&gt;{title}&lt;/...> ]
+"30064788795" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_3 = props> ]
+"30064788796" [label = <&lt;operator&gt;.assignment, 45<BR/>settingsConfiguration = _tmp_3.settingsConfigur...> ]
+"30064788798" [label = <&lt;operator&gt;.assignment, 45<BR/>parserSettings = _tmp_3.parserSettings> ]
+"30064788800" [label = <&lt;operator&gt;.assignment, 45<BR/>onChange = _tmp_3.onChange> ]
+"68719494395" [label = <IDENTIFIER, 45<BR/>_tmp_3<BR/>const {settingsConfiguration, parserSettings, o...> ]
+"30064788802" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_4 = settingsConfiguration> ]
+"30064788803" [label = <&lt;operator&gt;.assignment, 47<BR/>title = _tmp_4.title> ]
+"30064788805" [label = <&lt;operator&gt;.assignment, 48<BR/>fields = _tmp_4.fields> ]
+"30064788807" [label = <&lt;operator&gt;.assignment, 49<BR/>required = _tmp_4.required === void 0 ? new Set...> ]
+"30064788816" [label = <&lt;operator&gt;.assignment, 50<BR/>update = _tmp_4.update === void 0 ? getUpdateSt...> ]
+"68719494415" [label = <IDENTIFIER, 46<BR/>_tmp_4<BR/>const { title, fields, required = n...> ]
+"154618824164" [label = <TEMPLATE_DOM, 56<BR/>&lt;div&gt; {title ? &lt;h4&gt;{title}&lt;/h4&gt; : null} ...> ]
+"30064788825" [label = <&lt;operator&gt;.logicalOr, 53<BR/>settingsConfiguration.values || getValuesFromSe...> ]
+"30064788824" [label = <settingsConfiguration.values || getValuesFromSettings, 53<BR/>(settingsConfiguration.values || getValuesFromS...> ]
+"30064788808" [label = <&lt;operator&gt;.conditional, 49<BR/>_tmp_4.required === void 0 ? new Set() : _tmp_4...> ]
+"30064788817" [label = <&lt;operator&gt;.conditional, 50<BR/>_tmp_4.update === void 0 ? getUpdateStrategy(pa...> ]
+"30064788827" [label = <&lt;operator&gt;.conditional, 57<BR/>title ? &lt;h4&gt;{title}&lt;/h4&gt; : null> ]
+"30064788809" [label = <&lt;operator&gt;.equals, 49<BR/>_tmp_4.required === void 0> ]
+"30064788812" [label = <&lt;operator&gt;.assignment, 49<BR/>_tmp_5 = .alloc> ]
+"30064788814" [label = <&lt;operator&gt;.new, 49<BR/>new Set()> ]
+"68719494407" [label = <IDENTIFIER, 49<BR/>_tmp_5<BR/>new Set()> ]
+"30064788818" [label = <&lt;operator&gt;.equals, 50<BR/>_tmp_4.update === void 0> ]
+"68719494411" [label = <IDENTIFIER, 50<BR/>getUpdateStrategy<BR/>getUpdateStrategy(parserSettings)> ]
+"30064788821" [label = <getUpdateStrategy, 50<BR/>getUpdateStrategy(parserSettings)> ]
+"30064788828" [label = <map, 59<BR/>fields.map(setting =&gt; { if (typeof se...> ]
+"68719494405" [label = <IDENTIFIER, 49<BR/>Set<BR/>new Set()> ]
+"90194317108" [label = <LITERAL, 58<BR/>&quot;settings&quot;<BR/>className=&quot;settings&quot;> ]
+"68719494422" [label = <IDENTIFIER, 57<BR/>title<BR/>{title}> ]
+"30064788815" [label = <&lt;operator&gt;.fieldAccess, 49<BR/>_tmp_4.required> ]
+"30064788822" [label = <&lt;operator&gt;.fieldAccess, 50<BR/>_tmp_4.update> ]
+"55834581237" [label = <FIELD_IDENTIFIER, 49<BR/>required> ]
+"55834581239" [label = <FIELD_IDENTIFIER, 50<BR/>update> ]
+"30064788813" [label = <&lt;operator&gt;.alloc, 49<BR/>.alloc> ]
+  "141733921573" -> "124554052690"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064788795" -> "124554052690"  [ label = "DDG: _tmp_3"] 
+  "30064788795" -> "124554052690"  [ label = "DDG: props"] 
+  "30064788795" -> "124554052690"  [ label = "DDG: _tmp_3 = props"] 
+  "30064788796" -> "124554052690"  [ label = "DDG: _tmp_3.settingsConfiguration"] 
+  "30064788796" -> "124554052690"  [ label = "DDG: settingsConfiguration = _tmp_3.settingsConfiguration"] 
+  "30064788798" -> "124554052690"  [ label = "DDG: _tmp_3.parserSettings"] 
+  "30064788798" -> "124554052690"  [ label = "DDG: parserSettings = _tmp_3.parserSettings"] 
+  "30064788800" -> "124554052690"  [ label = "DDG: onChange"] 
+  "30064788800" -> "124554052690"  [ label = "DDG: _tmp_3.onChange"] 
+  "30064788800" -> "124554052690"  [ label = "DDG: onChange = _tmp_3.onChange"] 
+  "30064788802" -> "124554052690"  [ label = "DDG: _tmp_4"] 
+  "30064788802" -> "124554052690"  [ label = "DDG: settingsConfiguration"] 
+  "30064788802" -> "124554052690"  [ label = "DDG: _tmp_4 = settingsConfiguration"] 
+  "30064788803" -> "124554052690"  [ label = "DDG: _tmp_4.title"] 
+  "30064788803" -> "124554052690"  [ label = "DDG: title = _tmp_4.title"] 
+  "30064788805" -> "124554052690"  [ label = "DDG: _tmp_4.fields"] 
+  "30064788805" -> "124554052690"  [ label = "DDG: fields = _tmp_4.fields"] 
+  "30064788807" -> "124554052690"  [ label = "DDG: required"] 
+  "30064788808" -> "124554052690"  [ label = "DDG: _tmp_4.required === void 0"] 
+  "30064788808" -> "124554052690"  [ label = "DDG: _tmp_4.required"] 
+  "30064788812" -> "124554052690"  [ label = "DDG: .alloc"] 
+  "30064788812" -> "124554052690"  [ label = "DDG: _tmp_5 = .alloc"] 
+  "30064788814" -> "124554052690"  [ label = "DDG: _tmp_5"] 
+  "30064788814" -> "124554052690"  [ label = "DDG: new Set()"] 
+  "30064788807" -> "124554052690"  [ label = "DDG: _tmp_4.required === void 0 ? new Set() : _tmp_4.required"] 
+  "30064788807" -> "124554052690"  [ label = "DDG: required = _tmp_4.required === void 0 ? new Set() : _tmp_4.required"] 
+  "30064788816" -> "124554052690"  [ label = "DDG: update"] 
+  "30064788818" -> "124554052690"  [ label = "DDG: void 0"] 
+  "30064788817" -> "124554052690"  [ label = "DDG: _tmp_4.update === void 0"] 
+  "30064788817" -> "124554052690"  [ label = "DDG: _tmp_4.update"] 
+  "30064788817" -> "124554052690"  [ label = "DDG: getUpdateStrategy(parserSettings)"] 
+  "30064788816" -> "124554052690"  [ label = "DDG: _tmp_4.update === void 0 ? getUpdateStrategy(parserSettings) : _tmp_4.update"] 
+  "30064788816" -> "124554052690"  [ label = "DDG: update = _tmp_4.update === void 0 ? getUpdateStrategy(parserSettings) : _tmp_4.update"] 
+  "30064788823" -> "124554052690"  [ label = "DDG: values"] 
+  "30064788825" -> "124554052690"  [ label = "DDG: settingsConfiguration.values"] 
+  "30064788825" -> "124554052690"  [ label = "DDG: getValuesFromSettings"] 
+  "30064788825" -> "124554052690"  [ label = "DDG: settingsConfiguration.values || getValuesFromSettings"] 
+  "30064788824" -> "124554052690"  [ label = "DDG: this"] 
+  "30064788824" -> "124554052690"  [ label = "DDG: parserSettings"] 
+  "30064788823" -> "124554052690"  [ label = "DDG: (settingsConfiguration.values || getValuesFromSettings)(parserSettings)"] 
+  "30064788823" -> "124554052690"  [ label = "DDG: const values =
+    (settingsConfiguration.values || getValuesFromSettings)(parserSettings)"] 
+  "30064788827" -> "124554052690"  [ label = "DDG: title"] 
+  "30064788827" -> "124554052690"  [ label = "DDG: title ? &lt;h4&gt;{title}&lt;/h4&gt; : null"] 
+  "30064788828" -> "124554052690"  [ label = "DDG: fields"] 
+  "30064788828" -> "124554052690"  [ label = "DDG: fields.map(setting =&gt; {
+          if (typeof setting === 'string') {
+            return (
+              &lt;li key={setting}&gt;
+                &lt;label&gt;
+                  &lt;input
+                    type=&quot;checkbox&quot;
+                    readOnly={required.has(setting)}
+                    disabled={required.has(setting)}
+                    checked={values[setting]}
+                    onChange={
+                      ({target}) =&gt; onChange(
+                        update(parserSettings, setting, target.checked),
+                      )
+                    }
+                  /&gt;
+                  &amp;nbsp;{setting}
+                &lt;/label&gt;
+              &lt;/li&gt;
+            );
+          } else if(Array.isArray(setting)) {
+            const [fieldName, options, converter=identity] = setting;
+            return (
+              &lt;li key={fieldName}&gt;
+                &lt;label&gt;
+                  {fieldName}:&amp;nbsp;
+                  &lt;select
+                    onChange={
+                      ({target}) =&gt; ..."] 
+  "107374183507" -> "111669151947"  [ label = "DDG: "] 
+  "107374183507" -> "111669151948"  [ label = "DDG: "] 
+  "107374183507" -> "25769806834"  [ label = "DDG: "] 
+  "107374183507" -> "25769806835"  [ label = "DDG: "] 
+  "30064788824" -> "30064788823"  [ label = "DDG: this"] 
+  "30064788824" -> "30064788823"  [ label = "DDG: parserSettings"] 
+  "154618824164" -> "141733921573"  [ label = "DDG: &lt;div&gt;
+      {title ? &lt;h4&gt;{title}&lt;/h4&gt; : null}
+      &lt;ul className=&quot;settings&quot;&gt;
+        {fields.map(setting =&gt; {
+          if (typeof setting === 'string') {
+            return (
+              &lt;li key={setting}&gt;
+                &lt;label&gt;
+                  &lt;input
+                    type=&quot;checkbox&quot;
+                    readOnly={required.has(setting)}
+                    disabled={required.has(setting)}
+                    checked={values[setting]}
+                    onChange={
+                      ({target}) =&gt; onChange(
+                        update(parserSettings, setting, target.checked),
+                      )
+                    }
+                  /&gt;
+                  &amp;nbsp;{setting}
+                &lt;/label&gt;
+              &lt;/li&gt;
+            );
+          } else if(Array.isArray(setting)) {
+            const [fieldName, options, converter=identity] = setting;
+            return (
+              &lt;li key={fieldName}&gt;
+                &lt;label&gt;
+                  {fieldName}:&amp;nbsp;
+      ..."] 
+  "107374183507" -> "141733921573"  [ label = "DDG: "] 
+  "111669151948" -> "30064788795"  [ label = "DDG: props"] 
+  "107374183507" -> "30064788795"  [ label = "DDG: "] 
+  "30064788795" -> "30064788796"  [ label = "DDG: _tmp_3"] 
+  "30064788795" -> "30064788798"  [ label = "DDG: _tmp_3"] 
+  "30064788795" -> "30064788800"  [ label = "DDG: _tmp_3"] 
+  "107374183507" -> "68719494395"  [ label = "DDG: "] 
+  "30064788796" -> "30064788802"  [ label = "DDG: settingsConfiguration"] 
+  "107374183507" -> "30064788802"  [ label = "DDG: "] 
+  "30064788802" -> "30064788803"  [ label = "DDG: _tmp_4"] 
+  "30064788802" -> "30064788805"  [ label = "DDG: _tmp_4"] 
+  "30064788814" -> "30064788807"  [ label = "DDG: new Set()"] 
+  "30064788814" -> "30064788807"  [ label = "DDG: _tmp_5"] 
+  "30064788802" -> "30064788807"  [ label = "DDG: _tmp_4"] 
+  "30064788809" -> "30064788807"  [ label = "DDG: _tmp_4.required"] 
+  "30064788821" -> "30064788816"  [ label = "DDG: this"] 
+  "30064788821" -> "30064788816"  [ label = "DDG: parserSettings"] 
+  "30064788802" -> "30064788816"  [ label = "DDG: _tmp_4"] 
+  "30064788818" -> "30064788816"  [ label = "DDG: _tmp_4.update"] 
+  "107374183507" -> "68719494415"  [ label = "DDG: "] 
+  "111669151947" -> "30064788824"  [ label = "DDG: this"] 
+  "30064788821" -> "30064788824"  [ label = "DDG: this"] 
+  "107374183507" -> "30064788824"  [ label = "DDG: "] 
+  "30064788798" -> "30064788824"  [ label = "DDG: parserSettings"] 
+  "30064788821" -> "30064788824"  [ label = "DDG: parserSettings"] 
+  "30064788814" -> "30064788808"  [ label = "DDG: new Set()"] 
+  "30064788814" -> "30064788808"  [ label = "DDG: _tmp_5"] 
+  "30064788802" -> "30064788808"  [ label = "DDG: _tmp_4"] 
+  "30064788809" -> "30064788808"  [ label = "DDG: _tmp_4.required"] 
+  "30064788821" -> "30064788817"  [ label = "DDG: this"] 
+  "30064788821" -> "30064788817"  [ label = "DDG: parserSettings"] 
+  "30064788802" -> "30064788817"  [ label = "DDG: _tmp_4"] 
+  "30064788818" -> "30064788817"  [ label = "DDG: _tmp_4.update"] 
+  "30064788796" -> "30064788825"  [ label = "DDG: settingsConfiguration"] 
+  "107374183507" -> "30064788825"  [ label = "DDG: "] 
+  "30064788833" -> "30064788825"  [ label = "DDG: getValuesFromSettings"] 
+  "107374183507" -> "30064788827"  [ label = "DDG: "] 
+  "30064788802" -> "30064788809"  [ label = "DDG: _tmp_4"] 
+  "107374183507" -> "30064788809"  [ label = "DDG: "] 
+  "107374183507" -> "30064788812"  [ label = "DDG: "] 
+  "107374183507" -> "68719494407"  [ label = "DDG: "] 
+  "30064788802" -> "30064788818"  [ label = "DDG: _tmp_4"] 
+  "107374183507" -> "30064788818"  [ label = "DDG: "] 
+  "30064788836" -> "68719494411"  [ label = "DDG: getUpdateStrategy"] 
+  "107374183507" -> "68719494411"  [ label = "DDG: "] 
+  "111669151947" -> "30064788821"  [ label = "DDG: this"] 
+  "107374183507" -> "30064788821"  [ label = "DDG: "] 
+  "30064788798" -> "30064788821"  [ label = "DDG: parserSettings"] 
+  "107374183507" -> "68719494405"  [ label = "DDG: "] 
+  "30064788812" -> "30064788814"  [ label = "DDG: _tmp_5"] 
+  "107374183507" -> "30064788814"  [ label = "DDG: "] 
+  "107374183507" -> "90194317108"  [ label = "DDG: "] 
+  "30064788805" -> "30064788828"  [ label = "DDG: fields"] 
+  "107374183507" -> "30064788828"  [ label = "DDG: "] 
+  "107374183507" -> "68719494422"  [ label = "DDG: "] 
+  "30064788809" -> "30064788812"  [ label = "CDG: "] 
+  "30064788809" -> "30064788814"  [ label = "CDG: "] 
+  "30064788809" -> "30064788813"  [ label = "CDG: "] 
+  "30064788809" -> "55834581237"  [ label = "CDG: "] 
+  "30064788809" -> "30064788815"  [ label = "CDG: "] 
+  "30064788818" -> "55834581239"  [ label = "CDG: "] 
+  "30064788818" -> "30064788822"  [ label = "CDG: "] 
+  "30064788818" -> "30064788821"  [ label = "CDG: "] 
+}

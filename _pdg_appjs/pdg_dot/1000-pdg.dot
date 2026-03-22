@@ -1,0 +1,40 @@
+digraph "&lt;lambda&gt;8" {  
+node [shape="rect"];  
+"107374183400" [label = <METHOD, 152<BR/>&lt;lambda&gt;8> ]
+"124554052583" [label = <METHOD_RETURN, 152<BR/>Object.assign:&lt;returnValue&gt;> ]
+"111669151734" [label = <PARAM, 152<BR/>this> ]
+"111669151735" [label = <PARAM, 152<BR/>conf> ]
+"141733921503" [label = <RETURN, 153<BR/>return Object.assign(CodeMirror.getMode(conf, '...> ]
+"30064787323" [label = <assign, 153<BR/>Object.assign(CodeMirror.getMode(conf, 'applica...> ]
+"30064787324" [label = <getMode, 153<BR/>CodeMirror.getMode(conf, 'application/reason')> ]
+"30064787326" [label = <&lt;operator&gt;.assignment, 154<BR/>_tmp_9.lineComment = undefined> ]
+"68719492918" [label = <IDENTIFIER, 153<BR/>_tmp_9<BR/>{ lineComment: undefined, // reason doe...> ]
+  "141733921503" -> "124554052583"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151734" -> "124554052583"  [ label = "DDG: this"] 
+  "30064787324" -> "124554052583"  [ label = "DDG: CodeMirror"] 
+  "30064787324" -> "124554052583"  [ label = "DDG: conf"] 
+  "30064787323" -> "124554052583"  [ label = "DDG: CodeMirror.getMode(conf, 'application/reason')"] 
+  "30064787326" -> "124554052583"  [ label = "DDG: _tmp_9.lineComment"] 
+  "30064787326" -> "124554052583"  [ label = "DDG: undefined"] 
+  "30064787326" -> "124554052583"  [ label = "DDG: _tmp_9.lineComment = undefined"] 
+  "30064787323" -> "124554052583"  [ label = "DDG: Object.assign(CodeMirror.getMode(conf, 'application/reason'), {
+        lineComment: undefined, // reason doesn't have line comments
+      })"] 
+  "107374183400" -> "111669151734"  [ label = "DDG: "] 
+  "107374183400" -> "111669151735"  [ label = "DDG: "] 
+  "30064787323" -> "141733921503"  [ label = "DDG: Object.assign(CodeMirror.getMode(conf, 'application/reason'), {
+        lineComment: undefined, // reason doesn't have line comments
+      })"] 
+  "30064787324" -> "30064787323"  [ label = "DDG: CodeMirror"] 
+  "30064787324" -> "30064787323"  [ label = "DDG: conf"] 
+  "30064787324" -> "30064787323"  [ label = "DDG: &quot;application/reason&quot;"] 
+  "30064787326" -> "30064787323"  [ label = "DDG: _tmp_9.lineComment"] 
+  "107374183400" -> "30064787323"  [ label = "DDG: "] 
+  "111669151737" -> "30064787324"  [ label = "DDG: CodeMirror"] 
+  "107374183400" -> "30064787324"  [ label = "DDG: "] 
+  "111669151735" -> "30064787324"  [ label = "DDG: conf"] 
+  "111669151737" -> "30064787326"  [ label = "DDG: CodeMirror"] 
+  "107374183400" -> "30064787326"  [ label = "DDG: "] 
+  "111669151737" -> "68719492918"  [ label = "DDG: CodeMirror"] 
+  "107374183400" -> "68719492918"  [ label = "DDG: "] 
+}

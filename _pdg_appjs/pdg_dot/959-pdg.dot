@@ -1,0 +1,22 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183359" [label = <METHOD, 8<BR/>parse> ]
+"124554052542" [label = <METHOD_RETURN, 8<BR/>ANY> ]
+"111669151641" [label = <PARAM, 8<BR/>this> ]
+"111669151642" [label = <PARAM, 8<BR/>parser> ]
+"111669151643" [label = <PARAM, 8<BR/>code> ]
+"141733921463" [label = <RETURN, 9<BR/>return parser.parseOcaml(code)> ]
+"30064786782" [label = <parseOcaml, 9<BR/>parser.parseOcaml(code)> ]
+  "141733921463" -> "124554052542"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151641" -> "124554052542"  [ label = "DDG: this"] 
+  "30064786782" -> "124554052542"  [ label = "DDG: parser"] 
+  "30064786782" -> "124554052542"  [ label = "DDG: code"] 
+  "30064786782" -> "124554052542"  [ label = "DDG: parser.parseOcaml(code)"] 
+  "107374183359" -> "111669151641"  [ label = "DDG: "] 
+  "107374183359" -> "111669151642"  [ label = "DDG: "] 
+  "107374183359" -> "111669151643"  [ label = "DDG: "] 
+  "30064786782" -> "141733921463"  [ label = "DDG: parser.parseOcaml(code)"] 
+  "111669151642" -> "30064786782"  [ label = "DDG: parser"] 
+  "107374183359" -> "30064786782"  [ label = "DDG: "] 
+  "111669151643" -> "30064786782"  [ label = "DDG: code"] 
+}

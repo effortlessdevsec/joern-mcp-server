@@ -1,0 +1,18 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374182541" [label = <METHOD, 15<BR/>&lt;lambda&gt;2> ]
+"124554051723" [label = <METHOD_RETURN, 15<BR/>void> ]
+"111669149952" [label = <PARAM, 15<BR/>this> ]
+"111669149953" [label = <PARAM, 15<BR/>mimeType> ]
+"30064773283" [label = <set, 16<BR/>acceptedFileTypes.set(mimeType, id)> ]
+  "111669149952" -> "124554051723"  [ label = "DDG: this"] 
+  "30064773283" -> "124554051723"  [ label = "DDG: acceptedFileTypes"] 
+  "30064773283" -> "124554051723"  [ label = "DDG: mimeType"] 
+  "30064773283" -> "124554051723"  [ label = "DDG: id"] 
+  "30064773283" -> "124554051723"  [ label = "DDG: acceptedFileTypes.set(mimeType, id)"] 
+  "107374182541" -> "111669149952"  [ label = "DDG: "] 
+  "107374182541" -> "111669149953"  [ label = "DDG: "] 
+  "107374182541" -> "30064773283"  [ label = "DDG: "] 
+  "111669149953" -> "30064773283"  [ label = "DDG: mimeType"] 
+  "30064773285" -> "30064773283"  [ label = "DDG: id"] 
+}

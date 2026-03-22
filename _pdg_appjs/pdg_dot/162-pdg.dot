@@ -1,0 +1,19 @@
+digraph "&lt;lambda&gt;17" {  
+node [shape="rect"];  
+"107374182562" [label = <METHOD, 159<BR/>&lt;lambda&gt;17> ]
+"124554051745" [label = <METHOD_RETURN, 159<BR/>ANY> ]
+"111669149996" [label = <PARAM, 159<BR/>this> ]
+"111669149997" [label = <PARAM, 159<BR/>c> ]
+"141733920880" [label = <RETURN, 159<BR/>this.container = c> ]
+"30064773474" [label = <&lt;operator&gt;.assignment, 159<BR/>this.container = c> ]
+  "141733920880" -> "124554051745"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149996" -> "124554051745"  [ label = "DDG: this"] 
+  "30064773474" -> "124554051745"  [ label = "DDG: this.container"] 
+  "30064773474" -> "124554051745"  [ label = "DDG: c"] 
+  "30064773474" -> "124554051745"  [ label = "DDG: this.container = c"] 
+  "107374182562" -> "111669149996"  [ label = "DDG: "] 
+  "107374182562" -> "111669149997"  [ label = "DDG: "] 
+  "30064773474" -> "141733920880"  [ label = "DDG: this.container = c"] 
+  "111669149997" -> "30064773474"  [ label = "DDG: c"] 
+  "107374182562" -> "30064773474"  [ label = "DDG: "] 
+}

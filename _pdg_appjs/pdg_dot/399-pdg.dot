@@ -1,0 +1,525 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182799" [label = <METHOD, 1<BR/>:program> ]
+"124554051998" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150469" [label = <PARAM, 1<BR/>this> ]
+"30064777489" [label = <&lt;operator&gt;.assignment, 7<BR/>var CodeMirror = require(&quot;codemirror&quot;)> ]
+"30064777490" [label = <&lt;operator&gt;.assignment, 195<BR/>function words = function words(str) { var ob...> ]
+"30064777491" [label = <&lt;operator&gt;.assignment, 202<BR/>function cppHook = function cppHook(stream, sta...> ]
+"30064777492" [label = <&lt;operator&gt;.assignment, 220<BR/>function def = function def(mimes, mode) { if...> ]
+"30064777493" [label = <defineMode, 8<BR/>CodeMirror.defineMode('clike', function(config,...> ]
+"30064777495" [label = <def, 240<BR/>def(['x-shader/x-vertex', 'x-shader/x-fragment'...> ]
+"68719483276" [label = <IDENTIFIER, 240<BR/>def<BR/>def(['x-shader/x-vertex', 'x-shader/x-fragment'...> ]
+"68719483269" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;codemirror&quot;)> ]
+"30064777099" [label = <require, 7<BR/>require(&quot;codemirror&quot;)> ]
+"30064777496" [label = <&lt;operator&gt;.assignment, 240<BR/>_tmp_14 = __ecma.Array.factory()> ]
+"30064777498" [label = <, 240<BR/>_tmp_14.push(&quot;x-shader/x-vertex&quot;)> ]
+"30064777500" [label = <, 240<BR/>_tmp_14.push(&quot;x-shader/x-fragment&quot;)> ]
+"68719483283" [label = <IDENTIFIER, 240<BR/>_tmp_14<BR/>['x-shader/x-vertex', 'x-shader/x-fragment']> ]
+"30064777502" [label = <&lt;operator&gt;.assignment, 241<BR/>_tmp_15.name = &quot;clike&quot;> ]
+"30064777504" [label = <&lt;operator&gt;.assignment, 242<BR/>_tmp_15.keywords = words( 'float int bool v...> ]
+"30064777514" [label = <&lt;operator&gt;.assignment, 252<BR/>_tmp_15.blockKeywords = words('for while do if ...> ]
+"30064777517" [label = <&lt;operator&gt;.assignment, 253<BR/>_tmp_15.builtin = words( 'radians degrees s...> ]
+"30064777528" [label = <&lt;operator&gt;.assignment, 264<BR/>_tmp_15.atoms = words( 'true false ' + ...> ]
+"30064777541" [label = <&lt;operator&gt;.assignment, 277<BR/>_tmp_15.hooks = { '#': cppHook }> ]
+"30064777545" [label = <&lt;operator&gt;.assignment, 278<BR/>_tmp_15.modeProps = { fold: ['brace', 'include'] }> ]
+"68719483310" [label = <IDENTIFIER, 240<BR/>_tmp_15<BR/>{ name: 'clike', keywords: words( 'floa...> ]
+"68719483286" [label = <IDENTIFIER, 242<BR/>words<BR/>words( 'float int bool void ' + 'vec2...> ]
+"30064777506" [label = <words, 242<BR/>words( 'float int bool void ' + 'vec2...> ]
+"68719483289" [label = <IDENTIFIER, 252<BR/>words<BR/>words('for while do if else struct')> ]
+"30064777516" [label = <words, 252<BR/>words('for while do if else struct')> ]
+"68719483292" [label = <IDENTIFIER, 253<BR/>words<BR/>words( 'radians degrees sin cos tan asin ac...> ]
+"30064777519" [label = <words, 253<BR/>words( 'radians degrees sin cos tan asin ac...> ]
+"68719483295" [label = <IDENTIFIER, 264<BR/>words<BR/>words( 'true false ' + 'gl_FragColor ...> ]
+"30064777530" [label = <words, 264<BR/>words( 'true false ' + 'gl_FragColor ...> ]
+"30064777543" [label = <&lt;operator&gt;.assignment, 277<BR/>_tmp_16.# = cppHook> ]
+"68719483300" [label = <IDENTIFIER, 277<BR/>_tmp_16<BR/>{ '#': cppHook }> ]
+"30064777547" [label = <&lt;operator&gt;.assignment, 278<BR/>_tmp_17.fold = ['brace', 'include']> ]
+"68719483309" [label = <IDENTIFIER, 278<BR/>_tmp_17<BR/>{ fold: ['brace', 'include'] }> ]
+"30064777507" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777520" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777531" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777508" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777521" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777532" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777549" [label = <&lt;operator&gt;.assignment, 278<BR/>_tmp_18 = __ecma.Array.factory()> ]
+"30064777551" [label = <, 278<BR/>_tmp_18.push(&quot;brace&quot;)> ]
+"30064777553" [label = <, 278<BR/>_tmp_18.push(&quot;include&quot;)> ]
+"68719483308" [label = <IDENTIFIER, 278<BR/>_tmp_18<BR/>['brace', 'include']> ]
+"30064777509" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777522" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777533" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777510" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777523" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777534" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777511" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777524" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777535" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777512" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777525" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777536" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777513" [label = <&lt;operator&gt;.addition, 243<BR/>'float int bool void ' + 'vec2 vec3 vec4 ...> ]
+"30064777526" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777537" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777527" [label = <&lt;operator&gt;.addition, 254<BR/>'radians degrees sin cos tan asin acos atan ' +...> ]
+"30064777538" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777539" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor ' + '...> ]
+"30064777540" [label = <&lt;operator&gt;.addition, 265<BR/>'true false ' + 'gl_FragColor '> ]
+  "30064777489" -> "124554051998"  [ label = "DDG: require(&quot;codemirror&quot;)"] 
+  "30064777489" -> "124554051998"  [ label = "DDG: var CodeMirror = require(&quot;codemirror&quot;)"] 
+  "30064777490" -> "124554051998"  [ label = "DDG: words"] 
+  "30064777490" -> "124554051998"  [ label = "DDG: function words = function words(str) {
+  var obj = {}, words = str.split(' ');
+  for (var i = 0; i &lt; words.length; ++i)
+    obj[words[i]] = true;
+  return obj;
+}"] 
+  "30064777491" -> "124554051998"  [ label = "DDG: function cppHook = function cppHook(stream, state) {
+  if (!state.startOfLine) return false;
+  for (;;) {
+    if (stream.skipTo('\\')) {
+      stream.next();
+      if (stream.eol()) {
+        state.tokenize = cppHook;
+        break;
+      }
+    } else {
+      stream.skipToEnd();
+      state.tokenize = null;
+      break;
+    }
+  }
+  return 'meta';
+}"] 
+  "30064777492" -> "124554051998"  [ label = "DDG: def"] 
+  "30064777492" -> "124554051998"  [ label = "DDG: function def = function def(mimes, mode) {
+  if (typeof mimes == 'string') mimes = [mimes];
+  var words = [];
+  function add(obj) {
+    if (obj)
+      for (var prop in obj)
+        if (Object.prototype.hasOwnProperty.call(obj, prop)) words.push(prop);
+  }
+  add(mode.keywords);
+  add(mode.builtin);
+  add(mode.atoms);
+  if (words.length) {
+    mode.helperType = mimes[0];
+    CodeMirror.registerHelper('hintWords', mimes[0], words);
+  }
+
+  for (var i = 0; i &lt; mimes.length; ++i)
+    CodeMirror.defineMIME(mimes[i], mode);
+}"] 
+  "30064777493" -> "124554051998"  [ label = "DDG: CodeMirror"] 
+  "30064777493" -> "124554051998"  [ label = "DDG: CodeMirror.defineMode('clike', function(config, parserConfig) {
+  var indentUnit = config.indentUnit,
+    statementIndentUnit = parserConfig.statementIndentUnit || indentUnit,
+    dontAlignCalls = parserConfig.dontAlignCalls,
+    keywords = parserConfig.keywords || {},
+    builtin = parserConfig.builtin || {},
+    blockKeywords = parserConfig.blockKeywords || {},
+    atoms = parserConfig.atoms || {},
+    hooks = parserConfig.hooks || {},
+    multiLineStrings = parserConfig.multiLineStrings,
+    indentStatements = parserConfig.indentStatements !== false;
+  var isOperatorChar = /[+\-*&amp;%=&lt;&gt;!?|\/]/;
+
+  var curPunc;
+
+  function tokenBase(stream, state) {
+    var ch = stream.next();
+    if (hooks[ch]) {
+      var result = hooks[ch](stream, state);
+      if (result !== false) return result;
+    }
+    if (ch == '&quot;' || ch == &quot;'&quot;) {
+      state.tokenize = tokenString(ch);
+      return state.tokenize(stream, state);
+    }
+    if (/[\[\]{}\(\),;\:\.]/.test(ch)) {
+      curPunc = ch;
+      retur..."] 
+  "30064777495" -> "124554051998"  [ label = "DDG: this"] 
+  "30064777496" -> "124554051998"  [ label = "DDG: _tmp_14 = __ecma.Array.factory()"] 
+  "30064777498" -> "124554051998"  [ label = "DDG: _tmp_14.push(&quot;x-shader/x-vertex&quot;)"] 
+  "30064777500" -> "124554051998"  [ label = "DDG: _tmp_14"] 
+  "30064777500" -> "124554051998"  [ label = "DDG: _tmp_14.push(&quot;x-shader/x-fragment&quot;)"] 
+  "30064777502" -> "124554051998"  [ label = "DDG: _tmp_15.name"] 
+  "30064777502" -> "124554051998"  [ label = "DDG: _tmp_15.name = &quot;clike&quot;"] 
+  "30064777504" -> "124554051998"  [ label = "DDG: _tmp_15.keywords"] 
+  "30064777512" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 '"] 
+  "30064777511" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 '"] 
+  "30064777510" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube '"] 
+  "30064777509" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying '"] 
+  "30064777508" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return '"] 
+  "30064777507" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return ' +
+      'for while do if else struct '"] 
+  "30064777506" -> "124554051998"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return ' +
+      'for while do if else struct ' +
+      'in out inout'"] 
+  "30064777504" -> "124554051998"  [ label = "DDG: words(
+    'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return ' +
+      'for while do if else struct ' +
+      'in out inout',
+  )"] 
+  "30064777504" -> "124554051998"  [ label = "DDG: _tmp_15.keywords = words(
+    'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return ' +
+      'for while do if else struct ' +
+      'in out inout',
+  )"] 
+  "30064777514" -> "124554051998"  [ label = "DDG: _tmp_15.blockKeywords"] 
+  "30064777514" -> "124554051998"  [ label = "DDG: words('for while do if else struct')"] 
+  "30064777514" -> "124554051998"  [ label = "DDG: _tmp_15.blockKeywords = words('for while do if else struct')"] 
+  "30064777517" -> "124554051998"  [ label = "DDG: _tmp_15.builtin"] 
+  "30064777526" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt '"] 
+  "30064777525" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep '"] 
+  "30064777524" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward '"] 
+  "30064777523" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult '"] 
+  "30064777522" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual '"] 
+  "30064777521" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not '"] 
+  "30064777520" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not ' +
+      'texture2D texture2DLod texture2DProjLod '"] 
+  "30064777519" -> "124554051998"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not ' +
+      'texture2D texture2DLod texture2DProjLod ' +
+      'textureCube textureCubeLod '"] 
+  "30064777517" -> "124554051998"  [ label = "DDG: words(
+    'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not ' +
+      'texture2D texture2DLod texture2DProjLod ' +
+      'textureCube textureCubeLod ',
+  )"] 
+  "30064777517" -> "124554051998"  [ label = "DDG: _tmp_15.builtin = words(
+    'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not ' +
+      'texture2D texture2DLod texture2DProjLod ' +
+      'textureCube textureCubeLod ',
+  )"] 
+  "30064777528" -> "124554051998"  [ label = "DDG: _tmp_15.atoms"] 
+  "30064777539" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor '"] 
+  "30064777538" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord '"] 
+  "30064777537" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize '"] 
+  "30064777536" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing '"] 
+  "30064777535" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData '"] 
+  "30064777534" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters '"] 
+  "30064777533" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors'"] 
+  "30064777532" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors' +
+      'gl_MaxVertexTextureImageUnits gl_MaxTextureImageUnits '"] 
+  "30064777531" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors' +
+      'gl_MaxVertexTextureImageUnits gl_MaxTextureImageUnits ' +
+      'gl_MaxFragmentUniformVectors '"] 
+  "30064777530" -> "124554051998"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors' +
+      'gl_MaxVertexTextureImageUnits gl_MaxTextureImageUnits ' +
+      'gl_MaxFragmentUniformVectors ' +
+      'gl_MaxDrawBuffers'"] 
+  "30064777528" -> "124554051998"  [ label = "DDG: words(
+    'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors' +
+      'gl_MaxVertexTextureImageUnits gl_MaxTextureImageUnits ' +
+      'gl_MaxFragmentUniformVectors ' +
+      'gl_MaxDrawBuffers',
+  )"] 
+  "30064777528" -> "124554051998"  [ label = "DDG: _tmp_15.atoms = words(
+    'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors' +
+      'gl_MaxVertexTextureImageUnits gl_MaxTextureImageUnits ' +
+      'gl_MaxFragmentUniformVectors ' +
+      'gl_MaxDrawBuffers',
+  )"] 
+  "30064777541" -> "124554051998"  [ label = "DDG: _tmp_15.hooks"] 
+  "30064777543" -> "124554051998"  [ label = "DDG: _tmp_16.#"] 
+  "30064777543" -> "124554051998"  [ label = "DDG: cppHook"] 
+  "30064777543" -> "124554051998"  [ label = "DDG: _tmp_16.# = cppHook"] 
+  "30064777541" -> "124554051998"  [ label = "DDG: _tmp_15.hooks = { '#': cppHook }"] 
+  "30064777545" -> "124554051998"  [ label = "DDG: _tmp_15.modeProps"] 
+  "30064777547" -> "124554051998"  [ label = "DDG: _tmp_17.fold"] 
+  "30064777549" -> "124554051998"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064777549" -> "124554051998"  [ label = "DDG: _tmp_18 = __ecma.Array.factory()"] 
+  "30064777551" -> "124554051998"  [ label = "DDG: _tmp_18.push(&quot;brace&quot;)"] 
+  "30064777553" -> "124554051998"  [ label = "DDG: _tmp_18"] 
+  "30064777553" -> "124554051998"  [ label = "DDG: _tmp_18.push(&quot;include&quot;)"] 
+  "30064777547" -> "124554051998"  [ label = "DDG: _tmp_17.fold = ['brace', 'include']"] 
+  "30064777545" -> "124554051998"  [ label = "DDG: _tmp_15.modeProps = { fold: ['brace', 'include'] }"] 
+  "30064777495" -> "124554051998"  [ label = "DDG: def(['x-shader/x-vertex', 'x-shader/x-fragment'], {
+  name: 'clike',
+  keywords: words(
+    'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return ' +
+      'for while do if else struct ' +
+      'in out inout',
+  ),
+  blockKeywords: words('for while do if else struct'),
+  builtin: words(
+    'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not ' +
+      'texture2D texture2DLod texture2DProjLod ' +
+      'textureCube textureCubeLod ',
+  ),
+  atoms: words(
+    'true false ' +
+      'gl_FragColor ' +..."] 
+  "107374182799" -> "111669150469"  [ label = "DDG: "] 
+  "30064777099" -> "30064777489"  [ label = "DDG: this"] 
+  "30064777099" -> "30064777489"  [ label = "DDG: &quot;codemirror&quot;"] 
+  "107374182799" -> "30064777490"  [ label = "DDG: "] 
+  "107374182799" -> "30064777491"  [ label = "DDG: "] 
+  "107374182799" -> "30064777492"  [ label = "DDG: "] 
+  "30064777489" -> "30064777493"  [ label = "DDG: CodeMirror"] 
+  "107374182799" -> "30064777493"  [ label = "DDG: "] 
+  "107374182799" -> "68719483276"  [ label = "DDG: "] 
+  "30064777530" -> "30064777495"  [ label = "DDG: this"] 
+  "107374182799" -> "30064777495"  [ label = "DDG: "] 
+  "30064777500" -> "30064777495"  [ label = "DDG: _tmp_14"] 
+  "30064777502" -> "30064777495"  [ label = "DDG: _tmp_15.name"] 
+  "30064777504" -> "30064777495"  [ label = "DDG: _tmp_15.keywords"] 
+  "30064777514" -> "30064777495"  [ label = "DDG: _tmp_15.blockKeywords"] 
+  "30064777517" -> "30064777495"  [ label = "DDG: _tmp_15.builtin"] 
+  "30064777528" -> "30064777495"  [ label = "DDG: _tmp_15.atoms"] 
+  "30064777541" -> "30064777495"  [ label = "DDG: _tmp_15.hooks"] 
+  "30064777545" -> "30064777495"  [ label = "DDG: _tmp_15.modeProps"] 
+  "107374182799" -> "68719483269"  [ label = "DDG: "] 
+  "111669150469" -> "30064777099"  [ label = "DDG: this"] 
+  "107374182799" -> "30064777099"  [ label = "DDG: "] 
+  "107374182799" -> "30064777496"  [ label = "DDG: "] 
+  "107374182799" -> "68719483283"  [ label = "DDG: "] 
+  "107374182799" -> "30064777502"  [ label = "DDG: "] 
+  "30064777506" -> "30064777504"  [ label = "DDG: this"] 
+  "30064777506" -> "30064777504"  [ label = "DDG: 'float int bool void ' +
+      'vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 ' +
+      'mat2 mat3 mat4 ' +
+      'sampler2D sampler3D samplerCube ' +
+      'const attribute uniform varying ' +
+      'break continue discard return ' +
+      'for while do if else struct ' +
+      'in out inout'"] 
+  "30064777516" -> "30064777514"  [ label = "DDG: this"] 
+  "30064777516" -> "30064777514"  [ label = "DDG: &quot;for while do if else struct&quot;"] 
+  "30064777519" -> "30064777517"  [ label = "DDG: this"] 
+  "30064777519" -> "30064777517"  [ label = "DDG: 'radians degrees sin cos tan asin acos atan ' +
+      'pow exp log exp2 sqrt inversesqrt ' +
+      'abs sign floor ceil fract mod min max clamp mix step smoothstep ' +
+      'length distance dot cross normalize faceforward ' +
+      'reflect refract matrixCompMult ' +
+      'lessThan lessThanEqual greaterThan greaterThanEqual ' +
+      'equal notEqual any all not ' +
+      'texture2D texture2DLod texture2DProjLod ' +
+      'textureCube textureCubeLod '"] 
+  "30064777530" -> "30064777528"  [ label = "DDG: this"] 
+  "30064777530" -> "30064777528"  [ label = "DDG: 'true false ' +
+      'gl_FragColor ' +
+      'gl_PointCoord ' +
+      'gl_Position gl_PointSize ' +
+      'gl_FragCoord gl_FrontFacing ' +
+      'gl_FragData ' +
+      'gl_DepthRangeParameters ' +
+      'gl_MaxVertexAttribs gl_MaxVaryingVectors gl_MaxVertexUniformVectors' +
+      'gl_MaxVertexTextureImageUnits gl_MaxTextureImageUnits ' +
+      'gl_MaxFragmentUniformVectors ' +
+      'gl_MaxDrawBuffers'"] 
+  "30064777543" -> "30064777541"  [ label = "DDG: _tmp_16.#"] 
+  "107374182799" -> "30064777541"  [ label = "DDG: "] 
+  "30064777547" -> "30064777545"  [ label = "DDG: _tmp_17.fold"] 
+  "107374182799" -> "30064777545"  [ label = "DDG: "] 
+  "107374182799" -> "68719483310"  [ label = "DDG: "] 
+  "30064777496" -> "30064777498"  [ label = "DDG: _tmp_14"] 
+  "107374182799" -> "30064777498"  [ label = "DDG: "] 
+  "30064777498" -> "30064777500"  [ label = "DDG: _tmp_14"] 
+  "107374182799" -> "30064777500"  [ label = "DDG: "] 
+  "107374182799" -> "68719483286"  [ label = "DDG: "] 
+  "30064777099" -> "30064777506"  [ label = "DDG: this"] 
+  "107374182799" -> "30064777506"  [ label = "DDG: "] 
+  "107374182799" -> "68719483289"  [ label = "DDG: "] 
+  "30064777506" -> "30064777516"  [ label = "DDG: this"] 
+  "107374182799" -> "30064777516"  [ label = "DDG: "] 
+  "107374182799" -> "68719483292"  [ label = "DDG: "] 
+  "30064777516" -> "30064777519"  [ label = "DDG: this"] 
+  "107374182799" -> "30064777519"  [ label = "DDG: "] 
+  "107374182799" -> "68719483295"  [ label = "DDG: "] 
+  "30064777519" -> "30064777530"  [ label = "DDG: this"] 
+  "107374182799" -> "30064777530"  [ label = "DDG: "] 
+  "30064777491" -> "30064777543"  [ label = "DDG: cppHook"] 
+  "107374182799" -> "30064777543"  [ label = "DDG: "] 
+  "107374182799" -> "68719483300"  [ label = "DDG: "] 
+  "30064777553" -> "30064777547"  [ label = "DDG: _tmp_18"] 
+  "107374182799" -> "30064777547"  [ label = "DDG: "] 
+  "107374182799" -> "68719483309"  [ label = "DDG: "] 
+  "107374182799" -> "30064777507"  [ label = "DDG: "] 
+  "107374182799" -> "30064777520"  [ label = "DDG: "] 
+  "107374182799" -> "30064777531"  [ label = "DDG: "] 
+  "107374182799" -> "30064777508"  [ label = "DDG: "] 
+  "107374182799" -> "30064777521"  [ label = "DDG: "] 
+  "107374182799" -> "30064777532"  [ label = "DDG: "] 
+  "107374182799" -> "30064777549"  [ label = "DDG: "] 
+  "107374182799" -> "68719483308"  [ label = "DDG: "] 
+  "107374182799" -> "30064777509"  [ label = "DDG: "] 
+  "107374182799" -> "30064777522"  [ label = "DDG: "] 
+  "107374182799" -> "30064777533"  [ label = "DDG: "] 
+  "30064777549" -> "30064777551"  [ label = "DDG: _tmp_18"] 
+  "107374182799" -> "30064777551"  [ label = "DDG: "] 
+  "30064777551" -> "30064777553"  [ label = "DDG: _tmp_18"] 
+  "107374182799" -> "30064777553"  [ label = "DDG: "] 
+  "107374182799" -> "30064777510"  [ label = "DDG: "] 
+  "107374182799" -> "30064777523"  [ label = "DDG: "] 
+  "107374182799" -> "30064777534"  [ label = "DDG: "] 
+  "107374182799" -> "30064777511"  [ label = "DDG: "] 
+  "107374182799" -> "30064777524"  [ label = "DDG: "] 
+  "107374182799" -> "30064777535"  [ label = "DDG: "] 
+  "107374182799" -> "30064777512"  [ label = "DDG: "] 
+  "107374182799" -> "30064777525"  [ label = "DDG: "] 
+  "107374182799" -> "30064777536"  [ label = "DDG: "] 
+  "107374182799" -> "30064777513"  [ label = "DDG: "] 
+  "107374182799" -> "30064777526"  [ label = "DDG: "] 
+  "107374182799" -> "30064777537"  [ label = "DDG: "] 
+  "107374182799" -> "30064777527"  [ label = "DDG: "] 
+  "107374182799" -> "30064777538"  [ label = "DDG: "] 
+  "107374182799" -> "30064777539"  [ label = "DDG: "] 
+  "107374182799" -> "30064777540"  [ label = "DDG: "] 
+}

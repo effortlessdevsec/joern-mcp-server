@@ -1,0 +1,111 @@
+digraph "revive" {  
+node [shape="rect"];  
+"107374183704" [label = <METHOD, 66<BR/>revive> ]
+"124554052887" [label = <METHOD_RETURN, 66<BR/>ANY> ]
+"111669152314" [label = <PARAM, 66<BR/>this> ]
+"111669152315" [label = <PARAM, 66<BR/>state=initialState> ]
+"30064791269" [label = <&lt;operator&gt;.assignment, 66<BR/>state = state === void 0 ? initialState : state> ]
+"141733921794" [label = <RETURN, 67<BR/>return { ...state, workbench: { ....> ]
+"25769807411" [label = <BLOCK, 67<BR/>{ ...state, workbench: { ...state...> ]
+"30064791270" [label = <&lt;operator&gt;.conditional, 66<BR/>state === void 0 ? initialState : state> ]
+"30064791273" [label = <&lt;operator&gt;.spread, 68<BR/>...state> ]
+"30064791274" [label = <&lt;operator&gt;.assignment, 69<BR/>_tmp_37.workbench = { ...state.workbench,...> ]
+"68719496821" [label = <IDENTIFIER, 67<BR/>_tmp_37<BR/>{ ...state, workbench: { ...state...> ]
+"30064791271" [label = <&lt;operator&gt;.equals, 66<BR/>state === void 0> ]
+"30064791276" [label = <&lt;operator&gt;.spread, 70<BR/>...state.workbench> ]
+"30064791278" [label = <&lt;operator&gt;.assignment, 71<BR/>_tmp_38.initialCode = state.workbench.code> ]
+"30064791282" [label = <&lt;operator&gt;.assignment, 72<BR/>_tmp_38.parserSettings = state.parserSettings[s...> ]
+"30064791289" [label = <&lt;operator&gt;.assignment, 73<BR/>_tmp_38.transform = { ...state.workbenc...> ]
+"68719496820" [label = <IDENTIFIER, 69<BR/>_tmp_38<BR/>{ ...state.workbench, initialCode: ...> ]
+"30064791284" [label = <&lt;operator&gt;.logicalOr, 72<BR/>state.parserSettings[state.workbench.parser] ||...> ]
+"30064791291" [label = <&lt;operator&gt;.spread, 74<BR/>...state.workbench.transform> ]
+"30064791294" [label = <&lt;operator&gt;.assignment, 75<BR/>_tmp_39.initialCode = state.workbench.transform...> ]
+"68719496819" [label = <IDENTIFIER, 73<BR/>_tmp_39<BR/>{ ...state.workbench.transform, ...> ]
+  "141733921794" -> "124554052887"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152314" -> "124554052887"  [ label = "DDG: this"] 
+  "30064791271" -> "124554052887"  [ label = "DDG: void 0"] 
+  "30064791270" -> "124554052887"  [ label = "DDG: state === void 0"] 
+  "30064791270" -> "124554052887"  [ label = "DDG: initialState"] 
+  "30064791269" -> "124554052887"  [ label = "DDG: state === void 0 ? initialState : state"] 
+  "30064791269" -> "124554052887"  [ label = "DDG: state = state === void 0 ? initialState : state"] 
+  "30064791273" -> "124554052887"  [ label = "DDG: _tmp_37"] 
+  "30064791273" -> "124554052887"  [ label = "DDG: state"] 
+  "30064791273" -> "124554052887"  [ label = "DDG: ...state"] 
+  "30064791274" -> "124554052887"  [ label = "DDG: _tmp_37.workbench"] 
+  "30064791276" -> "124554052887"  [ label = "DDG: _tmp_38"] 
+  "30064791276" -> "124554052887"  [ label = "DDG: state.workbench"] 
+  "30064791276" -> "124554052887"  [ label = "DDG: ...state.workbench"] 
+  "30064791278" -> "124554052887"  [ label = "DDG: _tmp_38.initialCode"] 
+  "30064791278" -> "124554052887"  [ label = "DDG: state.workbench.code"] 
+  "30064791278" -> "124554052887"  [ label = "DDG: _tmp_38.initialCode = state.workbench.code"] 
+  "30064791282" -> "124554052887"  [ label = "DDG: _tmp_38.parserSettings"] 
+  "30064791284" -> "124554052887"  [ label = "DDG: state.parserSettings[state.workbench.parser]"] 
+  "30064791282" -> "124554052887"  [ label = "DDG: state.parserSettings[state.workbench.parser] || null"] 
+  "30064791282" -> "124554052887"  [ label = "DDG: _tmp_38.parserSettings = state.parserSettings[state.workbench.parser] || null"] 
+  "30064791289" -> "124554052887"  [ label = "DDG: _tmp_38.transform"] 
+  "30064791291" -> "124554052887"  [ label = "DDG: _tmp_39"] 
+  "30064791291" -> "124554052887"  [ label = "DDG: state.workbench.transform"] 
+  "30064791291" -> "124554052887"  [ label = "DDG: ...state.workbench.transform"] 
+  "30064791294" -> "124554052887"  [ label = "DDG: _tmp_39.initialCode"] 
+  "30064791294" -> "124554052887"  [ label = "DDG: state.workbench.transform.code"] 
+  "30064791294" -> "124554052887"  [ label = "DDG: _tmp_39.initialCode = state.workbench.transform.code"] 
+  "30064791289" -> "124554052887"  [ label = "DDG: _tmp_38.transform = {
+        ...state.workbench.transform,
+        initialCode: state.workbench.transform.code,
+      }"] 
+  "30064791274" -> "124554052887"  [ label = "DDG: _tmp_37.workbench = {
+      ...state.workbench,
+      initialCode: state.workbench.code,
+      parserSettings: state.parserSettings[state.workbench.parser] || null,
+      transform: {
+        ...state.workbench.transform,
+        initialCode: state.workbench.transform.code,
+      },
+    }"] 
+  "107374183704" -> "111669152314"  [ label = "DDG: "] 
+  "107374183704" -> "111669152315"  [ label = "DDG: "] 
+  "30064791387" -> "30064791269"  [ label = "DDG: initialState"] 
+  "107374183704" -> "30064791269"  [ label = "DDG: "] 
+  "30064791271" -> "30064791269"  [ label = "DDG: state"] 
+  "25769807411" -> "141733921794"  [ label = "DDG: "] 
+  "25769807411" -> "141733921794"  [ label = "DDG: {
+    ...state,
+    workbench: {
+      ...state.workbench,
+      initialCode: state.workbench.code,
+      parserSettings: state.parserSettings[state.workbench.parser] || null,
+      transform: {
+        ...state.workbench.transform,
+        initialCode: state.workbench.transform.code,
+      },
+    },
+  }"] 
+  "107374183704" -> "141733921794"  [ label = "DDG: "] 
+  "30064791273" -> "25769807411"  [ label = "DDG: _tmp_37"] 
+  "30064791274" -> "25769807411"  [ label = "DDG: _tmp_37.workbench"] 
+  "107374183704" -> "25769807411"  [ label = "DDG: "] 
+  "30064791387" -> "30064791270"  [ label = "DDG: initialState"] 
+  "107374183704" -> "30064791270"  [ label = "DDG: "] 
+  "30064791271" -> "30064791270"  [ label = "DDG: state"] 
+  "30064791276" -> "30064791274"  [ label = "DDG: _tmp_38"] 
+  "30064791278" -> "30064791274"  [ label = "DDG: _tmp_38.initialCode"] 
+  "30064791282" -> "30064791274"  [ label = "DDG: _tmp_38.parserSettings"] 
+  "30064791289" -> "30064791274"  [ label = "DDG: _tmp_38.transform"] 
+  "107374183704" -> "30064791274"  [ label = "DDG: "] 
+  "107374183704" -> "68719496821"  [ label = "DDG: "] 
+  "111669152315" -> "30064791271"  [ label = "DDG: state"] 
+  "107374183704" -> "30064791271"  [ label = "DDG: "] 
+  "107374183704" -> "30064791273"  [ label = "DDG: "] 
+  "30064791269" -> "30064791273"  [ label = "DDG: state"] 
+  "30064791284" -> "30064791282"  [ label = "DDG: state.parserSettings[state.workbench.parser]"] 
+  "30064791284" -> "30064791282"  [ label = "DDG: null"] 
+  "30064791291" -> "30064791289"  [ label = "DDG: _tmp_39"] 
+  "30064791294" -> "30064791289"  [ label = "DDG: _tmp_39.initialCode"] 
+  "107374183704" -> "30064791289"  [ label = "DDG: "] 
+  "107374183704" -> "68719496820"  [ label = "DDG: "] 
+  "107374183704" -> "30064791276"  [ label = "DDG: "] 
+  "30064791273" -> "30064791276"  [ label = "DDG: state"] 
+  "107374183704" -> "30064791284"  [ label = "DDG: "] 
+  "107374183704" -> "68719496819"  [ label = "DDG: "] 
+  "107374183704" -> "30064791291"  [ label = "DDG: "] 
+}

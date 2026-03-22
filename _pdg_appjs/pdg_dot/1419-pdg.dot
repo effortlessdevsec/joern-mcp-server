@@ -1,0 +1,8 @@
+digraph "&lt;operator&gt;.iterator" {  
+node [shape="rect"];  
+"107374183819" [label = <METHOD<BR/>&lt;operator&gt;.iterator> ]
+"124554053003" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152540" [label = <PARAM<BR/>p1> ]
+  "111669152540" -> "124554053003"  [ label = "DDG: p1"] 
+  "107374183819" -> "111669152540"  [ label = "DDG: "] 
+}

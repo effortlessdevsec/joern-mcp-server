@@ -1,0 +1,21 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374182855" [label = <METHOD, 18<BR/>opensByDefault> ]
+"124554052038" [label = <METHOD_RETURN, 18<BR/>__ecma.Boolean> ]
+"111669150551" [label = <PARAM, 18<BR/>this> ]
+"111669150552" [label = <PARAM, 18<BR/>node> ]
+"111669150553" [label = <PARAM, 18<BR/>key> ]
+"141733921101" [label = <RETURN, 19<BR/>return key === 'body'> ]
+"30064778033" [label = <&lt;operator&gt;.equals, 19<BR/>key === 'body'> ]
+  "141733921101" -> "124554052038"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150551" -> "124554052038"  [ label = "DDG: this"] 
+  "111669150552" -> "124554052038"  [ label = "DDG: node"] 
+  "30064778033" -> "124554052038"  [ label = "DDG: key"] 
+  "30064778033" -> "124554052038"  [ label = "DDG: key === 'body'"] 
+  "107374182855" -> "111669150551"  [ label = "DDG: "] 
+  "107374182855" -> "111669150552"  [ label = "DDG: "] 
+  "107374182855" -> "111669150553"  [ label = "DDG: "] 
+  "30064778033" -> "141733921101"  [ label = "DDG: key === 'body'"] 
+  "111669150553" -> "30064778033"  [ label = "DDG: key"] 
+  "107374182855" -> "30064778033"  [ label = "DDG: "] 
+}

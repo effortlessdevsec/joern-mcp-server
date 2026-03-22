@@ -1,0 +1,220 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182637" [label = <METHOD, 1<BR/>:program> ]
+"124554051830" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150127" [label = <PARAM, 1<BR/>this> ]
+"30064774879" [label = <&lt;operator&gt;.assignment, 1<BR/>var Element = require(&quot;./tree/Element&quot;)> ]
+"30064774880" [label = <&lt;operator&gt;.assignment, 2<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064774881" [label = <&lt;operator&gt;.assignment, 3<BR/>var React = require(&quot;react&quot;)> ]
+"30064774882" [label = <&lt;operator&gt;.assignment, 4<BR/>var publish = require(&quot;../../utils/pubsub.js&quot;)....> ]
+"30064774884" [label = <&lt;operator&gt;.assignment, 5<BR/>var treeAdapterFromParseResult = require(&quot;../.....> ]
+"30064774886" [label = <&lt;operator&gt;.assignment, 6<BR/>var SelectedNodeProvider = require(&quot;./SelectedN...> ]
+"30064774888" [label = <&lt;operator&gt;.assignment, 7<BR/>var focusNodes = require(&quot;./focusNodes.js&quot;)> ]
+"30064774889" [label = <&lt;operator&gt;.assignment, 9<BR/>var ./css/tree.css = require(&quot;./css/tree.css&quot;)> ]
+"30064774890" [label = <&lt;operator&gt;.assignment, 15<BR/>function initSettings = function initSettings()...> ]
+"30064774891" [label = <&lt;operator&gt;.assignment, 28<BR/>function reducer = function reducer(state, elem...> ]
+"30064774892" [label = <&lt;operator&gt;.assignment, 35<BR/>function makeCheckbox = function makeCheckbox(n...> ]
+"25769804374" [label = <BLOCK, 11<BR/>const {useReducer, useMemo, useRef, useLayoutEf...> ]
+"30064774902" [label = <&lt;operator&gt;.assignment, 13<BR/>const STORAGE_KEY = 'tree_settings'> ]
+"25769804383" [label = <BLOCK, 46<BR/>export default function Tree({parseResult, posi...> ]
+"30064774906" [label = <&lt;operator&gt;.assignment, 92<BR/>Tree.propTypes = { parseResult: PropTypes.obj...> ]
+"30064774893" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_4 = React> ]
+"30064774894" [label = <&lt;operator&gt;.assignment, 11<BR/>useReducer = _tmp_4.useReducer> ]
+"30064774896" [label = <&lt;operator&gt;.assignment, 11<BR/>useMemo = _tmp_4.useMemo> ]
+"30064774898" [label = <&lt;operator&gt;.assignment, 11<BR/>useRef = _tmp_4.useRef> ]
+"30064774900" [label = <&lt;operator&gt;.assignment, 11<BR/>useLayoutEffect = _tmp_4.useLayoutEffect> ]
+"68719480520" [label = <IDENTIFIER, 11<BR/>_tmp_4<BR/>const {useReducer, useMemo, useRef, useLayoutEf...> ]
+"30064774903" [label = <&lt;operator&gt;.assignment, 46<BR/>function Tree = function Tree({parseResult, pos...> ]
+"30064774904" [label = <&lt;operator&gt;.assignment, 46<BR/>exports[&quot;default&quot;] = Tree> ]
+"68719480484" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./tree/Element&quot;)> ]
+"30064774802" [label = <require, 1<BR/>require(&quot;./tree/Element&quot;)> ]
+"68719480487" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064774803" [label = <require, 2<BR/>require(&quot;prop-types&quot;)> ]
+"68719480490" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064774804" [label = <require, 3<BR/>require(&quot;react&quot;)> ]
+"68719480502" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;./focusNodes.js&quot;)> ]
+"30064774808" [label = <require, 7<BR/>require(&quot;./focusNodes.js&quot;)> ]
+"68719480505" [label = <IDENTIFIER, 9<BR/>require<BR/>require(&quot;./css/tree.css&quot;)> ]
+"30064774809" [label = <require, 9<BR/>require(&quot;./css/tree.css&quot;)> ]
+"30064774908" [label = <&lt;operator&gt;.assignment, 93<BR/>_tmp_8.parseResult = PropTypes.object> ]
+"30064774911" [label = <&lt;operator&gt;.assignment, 94<BR/>_tmp_8.position = PropTypes.number> ]
+"68719480530" [label = <IDENTIFIER, 92<BR/>_tmp_8<BR/>{ parseResult: PropTypes.object, position: ...> ]
+"68719480493" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;../../utils/pubsub.js&quot;)> ]
+"30064774805" [label = <require, 4<BR/>require(&quot;../../utils/pubsub.js&quot;)> ]
+"68719480496" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;../../core/TreeAdapter.js&quot;)> ]
+"30064774806" [label = <require, 5<BR/>require(&quot;../../core/TreeAdapter.js&quot;)> ]
+"68719480499" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;./SelectedNodeContext.js&quot;)> ]
+"30064774807" [label = <require, 6<BR/>require(&quot;./SelectedNodeContext.js&quot;)> ]
+  "30064774879" -> "124554051830"  [ label = "DDG: Element"] 
+  "30064774879" -> "124554051830"  [ label = "DDG: require(&quot;./tree/Element&quot;)"] 
+  "30064774879" -> "124554051830"  [ label = "DDG: var Element = require(&quot;./tree/Element&quot;)"] 
+  "30064774880" -> "124554051830"  [ label = "DDG: PropTypes"] 
+  "30064774880" -> "124554051830"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064774880" -> "124554051830"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064774881" -> "124554051830"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064774881" -> "124554051830"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064774882" -> "124554051830"  [ label = "DDG: publish"] 
+  "30064774882" -> "124554051830"  [ label = "DDG: var publish = require(&quot;../../utils/pubsub.js&quot;).publish"] 
+  "30064774884" -> "124554051830"  [ label = "DDG: treeAdapterFromParseResult"] 
+  "30064774884" -> "124554051830"  [ label = "DDG: var treeAdapterFromParseResult = require(&quot;../../core/TreeAdapter.js&quot;).treeAdapterFromParseResult"] 
+  "30064774886" -> "124554051830"  [ label = "DDG: SelectedNodeProvider"] 
+  "30064774886" -> "124554051830"  [ label = "DDG: var SelectedNodeProvider = require(&quot;./SelectedNodeContext.js&quot;).SelectedNodeProvider"] 
+  "30064774888" -> "124554051830"  [ label = "DDG: focusNodes"] 
+  "30064774888" -> "124554051830"  [ label = "DDG: require(&quot;./focusNodes.js&quot;)"] 
+  "30064774888" -> "124554051830"  [ label = "DDG: var focusNodes = require(&quot;./focusNodes.js&quot;)"] 
+  "30064774889" -> "124554051830"  [ label = "DDG: ./css/tree.css"] 
+  "30064774809" -> "124554051830"  [ label = "DDG: this"] 
+  "30064774889" -> "124554051830"  [ label = "DDG: require(&quot;./css/tree.css&quot;)"] 
+  "30064774889" -> "124554051830"  [ label = "DDG: var ./css/tree.css = require(&quot;./css/tree.css&quot;)"] 
+  "30064774890" -> "124554051830"  [ label = "DDG: initSettings"] 
+  "30064774890" -> "124554051830"  [ label = "DDG: function initSettings = function initSettings() {
+  const storedSettings = global.localStorage.getItem(STORAGE_KEY);
+  return storedSettings ?
+    JSON.parse(storedSettings) :
+    {
+      autofocus: true,
+      hideFunctions: true,
+      hideEmptyKeys: false,
+      hideLocationData: false,
+      hideTypeKeys: false,
+    };
+}"] 
+  "30064774891" -> "124554051830"  [ label = "DDG: reducer"] 
+  "30064774891" -> "124554051830"  [ label = "DDG: function reducer = function reducer(state, element) {
+  const newState = {...state, [element.name]: element.checked};
+
+  global.localStorage.setItem(STORAGE_KEY, JSON.stringify(newState));
+  return newState;
+}"] 
+  "30064774892" -> "124554051830"  [ label = "DDG: makeCheckbox"] 
+  "30064774892" -> "124554051830"  [ label = "DDG: function makeCheckbox = function makeCheckbox(name, settings, updateSettings) {
+  return (
+    &lt;input
+      type=&quot;checkbox&quot;
+      name={name}
+      checked={settings[name]}
+      onChange={event =&gt; updateSettings(event.target)}
+    /&gt;
+  );
+}"] 
+  "30064774893" -> "124554051830"  [ label = "DDG: _tmp_4"] 
+  "30064774893" -> "124554051830"  [ label = "DDG: React"] 
+  "30064774893" -> "124554051830"  [ label = "DDG: _tmp_4 = React"] 
+  "30064774894" -> "124554051830"  [ label = "DDG: useReducer"] 
+  "30064774894" -> "124554051830"  [ label = "DDG: _tmp_4.useReducer"] 
+  "30064774894" -> "124554051830"  [ label = "DDG: useReducer = _tmp_4.useReducer"] 
+  "30064774896" -> "124554051830"  [ label = "DDG: useMemo"] 
+  "30064774896" -> "124554051830"  [ label = "DDG: _tmp_4.useMemo"] 
+  "30064774896" -> "124554051830"  [ label = "DDG: useMemo = _tmp_4.useMemo"] 
+  "30064774898" -> "124554051830"  [ label = "DDG: useRef"] 
+  "30064774898" -> "124554051830"  [ label = "DDG: _tmp_4.useRef"] 
+  "30064774898" -> "124554051830"  [ label = "DDG: useRef = _tmp_4.useRef"] 
+  "30064774900" -> "124554051830"  [ label = "DDG: useLayoutEffect"] 
+  "30064774900" -> "124554051830"  [ label = "DDG: _tmp_4.useLayoutEffect"] 
+  "30064774900" -> "124554051830"  [ label = "DDG: useLayoutEffect = _tmp_4.useLayoutEffect"] 
+  "30064774902" -> "124554051830"  [ label = "DDG: STORAGE_KEY"] 
+  "30064774902" -> "124554051830"  [ label = "DDG: const STORAGE_KEY = 'tree_settings'"] 
+  "30064774903" -> "124554051830"  [ label = "DDG: function Tree = function Tree({parseResult, position}) {
+  const [settings, updateSettings] = useReducer(reducer, null, initSettings);
+  const treeAdapter = useMemo(
+    () =&gt; treeAdapterFromParseResult(parseResult, settings),
+    [parseResult.treeAdapter, settings],
+  );
+  const rootElement = useRef();
+
+  focusNodes('init');
+  useLayoutEffect(() =&gt; {
+    focusNodes('focus', rootElement);
+  });
+
+  return (
+    &lt;div className=&quot;tree-visualization container&quot;&gt;
+      &lt;div className=&quot;toolbar&quot;&gt;
+        &lt;label title=&quot;Auto open the node at the cursor in the source code&quot;&gt;
+          {makeCheckbox('autofocus', settings, updateSettings)}
+          Autofocus
+        &lt;/label&gt;
+        &amp;#8203;
+        {treeAdapter.getConfigurableFilters().map(filter =&gt; (
+          &lt;span key={filter.key}&gt;
+            &lt;label&gt;
+              {makeCheckbox(filter.key, settings, updateSettings)}
+              {filter.label}
+            &lt;/label&gt;
+            &amp;#8203;
+          &lt;/span&gt;
+        ))}
+      &lt;/div&gt;
+      &lt;ul ref={rootElement} onM..."] 
+  "30064774904" -> "124554051830"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064774904" -> "124554051830"  [ label = "DDG: Tree"] 
+  "30064774904" -> "124554051830"  [ label = "DDG: exports[&quot;default&quot;] = Tree"] 
+  "30064774906" -> "124554051830"  [ label = "DDG: Tree.propTypes"] 
+  "30064774908" -> "124554051830"  [ label = "DDG: _tmp_8.parseResult"] 
+  "30064774908" -> "124554051830"  [ label = "DDG: PropTypes.object"] 
+  "30064774908" -> "124554051830"  [ label = "DDG: _tmp_8.parseResult = PropTypes.object"] 
+  "30064774911" -> "124554051830"  [ label = "DDG: _tmp_8.position"] 
+  "30064774911" -> "124554051830"  [ label = "DDG: PropTypes.number"] 
+  "30064774911" -> "124554051830"  [ label = "DDG: _tmp_8.position = PropTypes.number"] 
+  "30064774906" -> "124554051830"  [ label = "DDG: Tree.propTypes = {
+  parseResult: PropTypes.object,
+  position: PropTypes.number,
+}"] 
+  "107374182637" -> "111669150127"  [ label = "DDG: "] 
+  "30064774802" -> "30064774879"  [ label = "DDG: this"] 
+  "30064774802" -> "30064774879"  [ label = "DDG: &quot;./tree/Element&quot;"] 
+  "30064774803" -> "30064774880"  [ label = "DDG: this"] 
+  "30064774803" -> "30064774880"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064774804" -> "30064774881"  [ label = "DDG: this"] 
+  "30064774804" -> "30064774881"  [ label = "DDG: &quot;react&quot;"] 
+  "30064774808" -> "30064774888"  [ label = "DDG: this"] 
+  "30064774808" -> "30064774888"  [ label = "DDG: &quot;./focusNodes.js&quot;"] 
+  "30064774809" -> "30064774889"  [ label = "DDG: this"] 
+  "30064774809" -> "30064774889"  [ label = "DDG: &quot;./css/tree.css&quot;"] 
+  "107374182637" -> "30064774890"  [ label = "DDG: "] 
+  "107374182637" -> "30064774891"  [ label = "DDG: "] 
+  "107374182637" -> "30064774892"  [ label = "DDG: "] 
+  "107374182637" -> "25769804374"  [ label = "DDG: "] 
+  "107374182637" -> "30064774902"  [ label = "DDG: "] 
+  "107374182637" -> "25769804383"  [ label = "DDG: "] 
+  "30064774908" -> "30064774906"  [ label = "DDG: _tmp_8.parseResult"] 
+  "30064774911" -> "30064774906"  [ label = "DDG: _tmp_8.position"] 
+  "107374182637" -> "30064774906"  [ label = "DDG: "] 
+  "30064774881" -> "30064774893"  [ label = "DDG: React"] 
+  "107374182637" -> "30064774893"  [ label = "DDG: "] 
+  "30064774893" -> "30064774894"  [ label = "DDG: _tmp_4"] 
+  "30064774893" -> "30064774896"  [ label = "DDG: _tmp_4"] 
+  "30064774893" -> "30064774898"  [ label = "DDG: _tmp_4"] 
+  "30064774893" -> "30064774900"  [ label = "DDG: _tmp_4"] 
+  "107374182637" -> "68719480520"  [ label = "DDG: "] 
+  "107374182637" -> "30064774903"  [ label = "DDG: "] 
+  "30064774903" -> "30064774904"  [ label = "DDG: Tree"] 
+  "107374182637" -> "30064774904"  [ label = "DDG: "] 
+  "107374182637" -> "68719480484"  [ label = "DDG: "] 
+  "111669150127" -> "30064774802"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774802"  [ label = "DDG: "] 
+  "107374182637" -> "68719480487"  [ label = "DDG: "] 
+  "30064774802" -> "30064774803"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774803"  [ label = "DDG: "] 
+  "107374182637" -> "68719480490"  [ label = "DDG: "] 
+  "30064774803" -> "30064774804"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774804"  [ label = "DDG: "] 
+  "107374182637" -> "68719480502"  [ label = "DDG: "] 
+  "30064774807" -> "30064774808"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774808"  [ label = "DDG: "] 
+  "107374182637" -> "68719480505"  [ label = "DDG: "] 
+  "30064774808" -> "30064774809"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774809"  [ label = "DDG: "] 
+  "30064774880" -> "30064774908"  [ label = "DDG: PropTypes"] 
+  "30064774880" -> "30064774911"  [ label = "DDG: PropTypes"] 
+  "107374182637" -> "68719480530"  [ label = "DDG: "] 
+  "107374182637" -> "68719480493"  [ label = "DDG: "] 
+  "30064774804" -> "30064774805"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774805"  [ label = "DDG: "] 
+  "107374182637" -> "68719480496"  [ label = "DDG: "] 
+  "30064774805" -> "30064774806"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774806"  [ label = "DDG: "] 
+  "107374182637" -> "68719480499"  [ label = "DDG: "] 
+  "30064774806" -> "30064774807"  [ label = "DDG: this"] 
+  "107374182637" -> "30064774807"  [ label = "DDG: "] 
+}

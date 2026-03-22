@@ -1,0 +1,21 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183757" [label = <METHOD, 12<BR/>&lt;lambda&gt;1> ]
+"124554052941" [label = <METHOD_RETURN, 12<BR/>void> ]
+"111669152432" [label = <PARAM, 12<BR/>this> ]
+"30064791962" [label = <&lt;operator&gt;.assignment, 13<BR/>timer = null> ]
+"30064791963" [label = <apply, 14<BR/>f.apply(lastThis, lastArgs)> ]
+  "111669152432" -> "124554052941"  [ label = "DDG: this"] 
+  "30064791962" -> "124554052941"  [ label = "DDG: timer"] 
+  "30064791962" -> "124554052941"  [ label = "DDG: timer = null"] 
+  "30064791963" -> "124554052941"  [ label = "DDG: f"] 
+  "30064791963" -> "124554052941"  [ label = "DDG: lastThis"] 
+  "30064791963" -> "124554052941"  [ label = "DDG: lastArgs"] 
+  "30064791963" -> "124554052941"  [ label = "DDG: f.apply(lastThis, lastArgs)"] 
+  "107374183757" -> "111669152432"  [ label = "DDG: "] 
+  "107374183757" -> "30064791962"  [ label = "DDG: "] 
+  "111669152436" -> "30064791963"  [ label = "DDG: f"] 
+  "107374183757" -> "30064791963"  [ label = "DDG: "] 
+  "30064791965" -> "30064791963"  [ label = "DDG: lastThis"] 
+  "30064791966" -> "30064791963"  [ label = "DDG: lastArgs"] 
+}

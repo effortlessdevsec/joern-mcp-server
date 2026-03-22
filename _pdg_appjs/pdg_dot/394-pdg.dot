@@ -1,0 +1,127 @@
+digraph "transform" {  
+node [shape="rect"];  
+"107374182794" [label = <METHOD, 20<BR/>transform> ]
+"124554051978" [label = <METHOD_RETURN, 20<BR/>ANY> ]
+"111669150414" [label = <PARAM, 20<BR/>this> ]
+"111669150415" [label = <PARAM, 20<BR/>{ transpile, postcss }> ]
+"111669150416" [label = <PARAM, 20<BR/>transformCode> ]
+"111669150417" [label = <PARAM, 20<BR/>code> ]
+"30064777017" [label = <&lt;operator&gt;.assignment, 20<BR/>transpile = param1_0.transpile> ]
+"30064777019" [label = <&lt;operator&gt;.assignment, 20<BR/>postcss = param1_0.postcss> ]
+"30064777021" [label = <&lt;operator&gt;.assignment, 21<BR/>transformCode = transpile( transformCode)> ]
+"30064777023" [label = <&lt;operator&gt;.assignment, 22<BR/>let transform = compileModule( // eslint-disabl...> ]
+"141733921050" [label = <RETURN, 33<BR/>return postcss([ (transform.default || transfor...> ]
+"68719482809" [label = <IDENTIFIER, 21<BR/>transpile<BR/>transpile( transformCode)> ]
+"30064777022" [label = <transpile, 21<BR/>transpile( transformCode)> ]
+"68719482813" [label = <IDENTIFIER, 22<BR/>compileModule<BR/>compileModule( // eslint-disable-line no-shadow...> ]
+"30064777024" [label = <compileModule, 22<BR/>compileModule( // eslint-disable-line no-shadow...> ]
+"30064777025" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_3.require = require> ]
+"68719482817" [label = <IDENTIFIER, 24<BR/>_tmp_3<BR/>{ require(name) { switch (nam...> ]
+"30064777028" [label = <process, 33<BR/>postcss([ (transform.default || transform)() ])...> ]
+"30064777030" [label = <&lt;operator&gt;.assignment, 33<BR/>(_tmp_5 = postcss([ (transform.default || trans...> ]
+"68719482819" [label = <IDENTIFIER, 33<BR/>postcss<BR/>postcss([ (transform.default || transform)() ])> ]
+"30064777031" [label = <postcss, 33<BR/>postcss([ (transform.default || transform)() ])> ]
+"30064777032" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064777034" [label = <, 33<BR/>_tmp_6.push((transform.default || transform)())> ]
+"68719482827" [label = <IDENTIFIER, 33<BR/>_tmp_6<BR/>[ (transform.default || transform)() ]> ]
+"30064777037" [label = <&lt;operator&gt;.logicalOr, 33<BR/>transform.default || transform> ]
+"30064777036" [label = <transform.default || transform, 33<BR/>(transform.default || transform)()> ]
+  "141733921050" -> "124554051978"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150415" -> "124554051978"  [ label = "DDG: param1_0"] 
+  "30064777017" -> "124554051978"  [ label = "DDG: transpile"] 
+  "30064777017" -> "124554051978"  [ label = "DDG: param1_0.transpile"] 
+  "30064777017" -> "124554051978"  [ label = "DDG: transpile = param1_0.transpile"] 
+  "30064777019" -> "124554051978"  [ label = "DDG: postcss"] 
+  "30064777019" -> "124554051978"  [ label = "DDG: param1_0.postcss"] 
+  "30064777019" -> "124554051978"  [ label = "DDG: postcss = param1_0.postcss"] 
+  "30064777021" -> "124554051978"  [ label = "DDG: transpile( transformCode)"] 
+  "30064777021" -> "124554051978"  [ label = "DDG: transformCode = transpile( transformCode)"] 
+  "30064777024" -> "124554051978"  [ label = "DDG: transformCode"] 
+  "30064777025" -> "124554051978"  [ label = "DDG: _tmp_3.require"] 
+  "30064777025" -> "124554051978"  [ label = "DDG: _tmp_3.require = require"] 
+  "30064777023" -> "124554051978"  [ label = "DDG: compileModule( // eslint-disable-line no-shadow
+      transformCode,
+      {
+        require(name) {
+          switch (name) {
+            case 'postcss': return postcss;
+            default: throw new Error(`Cannot find module '${name}'`);
+          }
+        },
+      },
+    )"] 
+  "30064777023" -> "124554051978"  [ label = "DDG: let transform = compileModule( // eslint-disable-line no-shadow
+      transformCode,
+      {
+        require(name) {
+          switch (name) {
+            case 'postcss': return postcss;
+            default: throw new Error(`Cannot find module '${name}'`);
+          }
+        },
+      },
+    )"] 
+  "30064777031" -> "124554051978"  [ label = "DDG: this"] 
+  "30064777032" -> "124554051978"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064777032" -> "124554051978"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064777034" -> "124554051978"  [ label = "DDG: _tmp_6"] 
+  "30064777037" -> "124554051978"  [ label = "DDG: transform.default"] 
+  "30064777037" -> "124554051978"  [ label = "DDG: transform"] 
+  "30064777037" -> "124554051978"  [ label = "DDG: transform.default || transform"] 
+  "30064777034" -> "124554051978"  [ label = "DDG: (transform.default || transform)()"] 
+  "30064777034" -> "124554051978"  [ label = "DDG: _tmp_6.push((transform.default || transform)())"] 
+  "30064777030" -> "124554051978"  [ label = "DDG: postcss([ (transform.default || transform)() ])"] 
+  "30064777028" -> "124554051978"  [ label = "DDG: _tmp_5"] 
+  "30064777028" -> "124554051978"  [ label = "DDG: code"] 
+  "107374182794" -> "111669150414"  [ label = "DDG: "] 
+  "107374182794" -> "111669150415"  [ label = "DDG: "] 
+  "107374182794" -> "111669150416"  [ label = "DDG: "] 
+  "107374182794" -> "111669150417"  [ label = "DDG: "] 
+  "111669150415" -> "30064777017"  [ label = "DDG: param1_0"] 
+  "111669150415" -> "30064777019"  [ label = "DDG: param1_0"] 
+  "30064777022" -> "30064777021"  [ label = "DDG: this"] 
+  "30064777022" -> "30064777021"  [ label = "DDG: transformCode"] 
+  "30064777024" -> "30064777023"  [ label = "DDG: this"] 
+  "30064777024" -> "30064777023"  [ label = "DDG: transformCode"] 
+  "30064777024" -> "30064777023"  [ label = "DDG: {
+        require(name) {
+          switch (name) {
+            case 'postcss': return postcss;
+            default: throw new Error(`Cannot find module '${name}'`);
+          }
+        },
+      }"] 
+  "30064777024" -> "30064777023"  [ label = "DDG: "] 
+  "107374182794" -> "141733921050"  [ label = "DDG: "] 
+  "107374182794" -> "68719482809"  [ label = "DDG: "] 
+  "111669150414" -> "30064777022"  [ label = "DDG: this"] 
+  "107374182794" -> "30064777022"  [ label = "DDG: "] 
+  "111669150416" -> "30064777022"  [ label = "DDG: transformCode"] 
+  "30064777039" -> "68719482813"  [ label = "DDG: compileModule"] 
+  "107374182794" -> "68719482813"  [ label = "DDG: "] 
+  "30064777022" -> "30064777024"  [ label = "DDG: this"] 
+  "107374182794" -> "30064777024"  [ label = "DDG: "] 
+  "30064777021" -> "30064777024"  [ label = "DDG: transformCode"] 
+  "30064777025" -> "30064777024"  [ label = "DDG: _tmp_3.require"] 
+  "107374182794" -> "30064777025"  [ label = "DDG: "] 
+  "107374182794" -> "68719482817"  [ label = "DDG: "] 
+  "30064777030" -> "30064777028"  [ label = "DDG: _tmp_5"] 
+  "107374182794" -> "30064777028"  [ label = "DDG: "] 
+  "111669150417" -> "30064777028"  [ label = "DDG: code"] 
+  "30064777031" -> "30064777030"  [ label = "DDG: this"] 
+  "30064777031" -> "30064777030"  [ label = "DDG: [ (transform.default || transform)() ]"] 
+  "30064777031" -> "30064777030"  [ label = "DDG: "] 
+  "107374182794" -> "68719482819"  [ label = "DDG: "] 
+  "30064777036" -> "30064777031"  [ label = "DDG: this"] 
+  "107374182794" -> "30064777031"  [ label = "DDG: "] 
+  "30064777034" -> "30064777031"  [ label = "DDG: _tmp_6"] 
+  "107374182794" -> "30064777032"  [ label = "DDG: "] 
+  "107374182794" -> "68719482827"  [ label = "DDG: "] 
+  "30064777032" -> "30064777034"  [ label = "DDG: _tmp_6"] 
+  "107374182794" -> "30064777034"  [ label = "DDG: "] 
+  "30064777036" -> "30064777034"  [ label = "DDG: this"] 
+  "30064777024" -> "30064777036"  [ label = "DDG: this"] 
+  "107374182794" -> "30064777036"  [ label = "DDG: "] 
+  "30064777023" -> "30064777037"  [ label = "DDG: transform"] 
+  "107374182794" -> "30064777037"  [ label = "DDG: "] 
+}

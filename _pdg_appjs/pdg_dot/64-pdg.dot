@@ -1,0 +1,175 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182464" [label = <METHOD, 1<BR/>:program> ]
+"124554051655" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149846" [label = <PARAM, 1<BR/>this> ]
+"30064772395" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064772396" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"30064772397" [label = <&lt;operator&gt;.assignment, 3<BR/>var cx = require(&quot;../utils/classnames.js&quot;)> ]
+"30064772398" [label = <&lt;operator&gt;.assignment, 4<BR/>var visualizations = require(&quot;./visualization&quot;)> ]
+"30064772399" [label = <&lt;operator&gt;.assignment, 8<BR/>function formatTime = function formatTime(time)...> ]
+"25769803947" [label = <BLOCK, 6<BR/>const {useState} = React> ]
+"25769803967" [label = <BLOCK, 18<BR/>export default function ASTOutput({parseResult=...> ]
+"30064772406" [label = <&lt;operator&gt;.assignment, 71<BR/>ASTOutput.propTypes = { parseResult: PropType...> ]
+"25769803968" [label = <BLOCK, 76<BR/>&lt;empty&gt;> ]
+"30064772415" [label = <&lt;operator&gt;.assignment, 102<BR/>ErrorBoundary.propTypes = { children: PropTyp...> ]
+"30064772400" [label = <&lt;operator&gt;.assignment, 6<BR/>_tmp_1 = React> ]
+"30064772401" [label = <&lt;operator&gt;.assignment, 6<BR/>useState = _tmp_1.useState> ]
+"68719478157" [label = <IDENTIFIER, 6<BR/>_tmp_1<BR/>const {useState} = React> ]
+"30064772403" [label = <&lt;operator&gt;.assignment, 18<BR/>function ASTOutput = function ASTOutput({parseR...> ]
+"30064772404" [label = <&lt;operator&gt;.assignment, 18<BR/>exports[&quot;default&quot;] = ASTOutput> ]
+"176093659136" [label = <TYPE_REF, 76<BR/>class ErrorBoundary> ]
+"30064772414" [label = <&lt;operator&gt;.assignment, 76<BR/>ErrorBoundary = astexplorer/website/src/compone...> ]
+"68719478141" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064772322" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719478144" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064772323" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"68719478147" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../utils/classnames.js&quot;)> ]
+"30064772324" [label = <require, 3<BR/>require(&quot;../utils/classnames.js&quot;)> ]
+"68719478150" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;./visualization&quot;)> ]
+"30064772325" [label = <require, 4<BR/>require(&quot;./visualization&quot;)> ]
+"30064772408" [label = <&lt;operator&gt;.assignment, 72<BR/>_tmp_7.parseResult = PropTypes.object> ]
+"30064772411" [label = <&lt;operator&gt;.assignment, 73<BR/>_tmp_7.position = PropTypes.number> ]
+"68719478166" [label = <IDENTIFIER, 71<BR/>_tmp_7<BR/>{ parseResult: PropTypes.object, position: ...> ]
+"30064772417" [label = <&lt;operator&gt;.assignment, 103<BR/>_tmp_11.children = PropTypes.node> ]
+"68719478171" [label = <IDENTIFIER, 102<BR/>_tmp_11<BR/>{ children: PropTypes.node, }> ]
+  "30064772395" -> "124554051655"  [ label = "DDG: PropTypes"] 
+  "30064772395" -> "124554051655"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064772395" -> "124554051655"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064772396" -> "124554051655"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064772396" -> "124554051655"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064772397" -> "124554051655"  [ label = "DDG: cx"] 
+  "30064772397" -> "124554051655"  [ label = "DDG: require(&quot;../utils/classnames.js&quot;)"] 
+  "30064772397" -> "124554051655"  [ label = "DDG: var cx = require(&quot;../utils/classnames.js&quot;)"] 
+  "30064772398" -> "124554051655"  [ label = "DDG: visualizations"] 
+  "30064772325" -> "124554051655"  [ label = "DDG: this"] 
+  "30064772398" -> "124554051655"  [ label = "DDG: require(&quot;./visualization&quot;)"] 
+  "30064772398" -> "124554051655"  [ label = "DDG: var visualizations = require(&quot;./visualization&quot;)"] 
+  "30064772399" -> "124554051655"  [ label = "DDG: formatTime"] 
+  "30064772399" -> "124554051655"  [ label = "DDG: function formatTime = function formatTime(time) {
+  if (!time) {
+    return null;
+  }
+  if (time &lt; 1000) {
+    return `${time}ms`;
+  }
+  return `${(time / 1000).toFixed(2)}s`;
+}"] 
+  "30064772400" -> "124554051655"  [ label = "DDG: _tmp_1"] 
+  "30064772400" -> "124554051655"  [ label = "DDG: React"] 
+  "30064772400" -> "124554051655"  [ label = "DDG: _tmp_1 = React"] 
+  "30064772401" -> "124554051655"  [ label = "DDG: useState"] 
+  "30064772401" -> "124554051655"  [ label = "DDG: _tmp_1.useState"] 
+  "30064772401" -> "124554051655"  [ label = "DDG: useState = _tmp_1.useState"] 
+  "30064772403" -> "124554051655"  [ label = "DDG: function ASTOutput = function ASTOutput({parseResult={}, position=null}) {
+  const [selectedOutput, setSelectedOutput] = useState(0);
+  const {ast=null} = parseResult;
+  let output;
+
+  if (parseResult.error) {
+    output =
+      &lt;div style={{
+        padding: 20,
+        whiteSpace: 'pre-wrap',
+        fontFamily: 'monospace',
+      }}&gt;
+        {parseResult.error.message}
+      &lt;/div&gt;;
+  } else if (ast) {
+    output = (
+      &lt;ErrorBoundary&gt;
+        {
+          React.createElement(
+            visualizations[selectedOutput],
+            {parseResult, position},
+          )
+        }
+      &lt;/ErrorBoundary&gt;
+    )
+  }
+
+  let buttons = visualizations.map(
+    (cls, index) =&gt;
+      &lt;button
+        key={index}
+        value={index}
+        onClick={event =&gt; setSelectedOutput(event.target.value)}
+        className={cx({
+          active: selectedOutput == index,
+        })}&gt;
+        {cls.name}
+      &lt;/button&gt;,
+  );
+
+  return (
+    &lt;div className=&quot;output highlight&quot;&gt;
+      &lt;div className=&quot;toolbar&quot;&gt;
+        {butt..."] 
+  "30064772404" -> "124554051655"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064772404" -> "124554051655"  [ label = "DDG: ASTOutput"] 
+  "30064772404" -> "124554051655"  [ label = "DDG: exports[&quot;default&quot;] = ASTOutput"] 
+  "30064772406" -> "124554051655"  [ label = "DDG: ASTOutput.propTypes"] 
+  "30064772408" -> "124554051655"  [ label = "DDG: _tmp_7.parseResult"] 
+  "30064772408" -> "124554051655"  [ label = "DDG: PropTypes.object"] 
+  "30064772408" -> "124554051655"  [ label = "DDG: _tmp_7.parseResult = PropTypes.object"] 
+  "30064772411" -> "124554051655"  [ label = "DDG: _tmp_7.position"] 
+  "30064772411" -> "124554051655"  [ label = "DDG: PropTypes.number"] 
+  "30064772411" -> "124554051655"  [ label = "DDG: _tmp_7.position = PropTypes.number"] 
+  "30064772406" -> "124554051655"  [ label = "DDG: ASTOutput.propTypes = {
+  parseResult: PropTypes.object,
+  position: PropTypes.number,
+}"] 
+  "30064772414" -> "124554051655"  [ label = "DDG: ErrorBoundary"] 
+  "30064772414" -> "124554051655"  [ label = "DDG: ErrorBoundary = astexplorer/website/src/components/ASTOutput.js::program:ErrorBoundary:&lt;init&gt;"] 
+  "30064772415" -> "124554051655"  [ label = "DDG: ErrorBoundary.propTypes"] 
+  "30064772417" -> "124554051655"  [ label = "DDG: _tmp_11.children"] 
+  "30064772417" -> "124554051655"  [ label = "DDG: PropTypes.node"] 
+  "30064772417" -> "124554051655"  [ label = "DDG: _tmp_11.children = PropTypes.node"] 
+  "30064772415" -> "124554051655"  [ label = "DDG: ErrorBoundary.propTypes = {
+  children: PropTypes.node,
+}"] 
+  "107374182464" -> "111669149846"  [ label = "DDG: "] 
+  "30064772322" -> "30064772395"  [ label = "DDG: this"] 
+  "30064772322" -> "30064772395"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064772323" -> "30064772396"  [ label = "DDG: this"] 
+  "30064772323" -> "30064772396"  [ label = "DDG: &quot;react&quot;"] 
+  "30064772324" -> "30064772397"  [ label = "DDG: this"] 
+  "30064772324" -> "30064772397"  [ label = "DDG: &quot;../utils/classnames.js&quot;"] 
+  "30064772325" -> "30064772398"  [ label = "DDG: this"] 
+  "30064772325" -> "30064772398"  [ label = "DDG: &quot;./visualization&quot;"] 
+  "107374182464" -> "30064772399"  [ label = "DDG: "] 
+  "107374182464" -> "25769803947"  [ label = "DDG: "] 
+  "107374182464" -> "25769803967"  [ label = "DDG: "] 
+  "30064772408" -> "30064772406"  [ label = "DDG: _tmp_7.parseResult"] 
+  "30064772411" -> "30064772406"  [ label = "DDG: _tmp_7.position"] 
+  "107374182464" -> "30064772406"  [ label = "DDG: "] 
+  "107374182464" -> "25769803968"  [ label = "DDG: "] 
+  "30064772417" -> "30064772415"  [ label = "DDG: _tmp_11.children"] 
+  "107374182464" -> "30064772415"  [ label = "DDG: "] 
+  "30064772396" -> "30064772400"  [ label = "DDG: React"] 
+  "107374182464" -> "30064772400"  [ label = "DDG: "] 
+  "30064772400" -> "30064772401"  [ label = "DDG: _tmp_1"] 
+  "107374182464" -> "68719478157"  [ label = "DDG: "] 
+  "107374182464" -> "30064772403"  [ label = "DDG: "] 
+  "30064772403" -> "30064772404"  [ label = "DDG: ASTOutput"] 
+  "107374182464" -> "30064772404"  [ label = "DDG: "] 
+  "107374182464" -> "176093659136"  [ label = "DDG: "] 
+  "107374182464" -> "30064772414"  [ label = "DDG: "] 
+  "107374182464" -> "68719478141"  [ label = "DDG: "] 
+  "111669149846" -> "30064772322"  [ label = "DDG: this"] 
+  "107374182464" -> "30064772322"  [ label = "DDG: "] 
+  "107374182464" -> "68719478144"  [ label = "DDG: "] 
+  "30064772322" -> "30064772323"  [ label = "DDG: this"] 
+  "107374182464" -> "30064772323"  [ label = "DDG: "] 
+  "107374182464" -> "68719478147"  [ label = "DDG: "] 
+  "30064772323" -> "30064772324"  [ label = "DDG: this"] 
+  "107374182464" -> "30064772324"  [ label = "DDG: "] 
+  "107374182464" -> "68719478150"  [ label = "DDG: "] 
+  "30064772324" -> "30064772325"  [ label = "DDG: this"] 
+  "107374182464" -> "30064772325"  [ label = "DDG: "] 
+  "30064772395" -> "30064772408"  [ label = "DDG: PropTypes"] 
+  "30064772395" -> "30064772411"  [ label = "DDG: PropTypes"] 
+  "107374182464" -> "68719478166"  [ label = "DDG: "] 
+  "30064772395" -> "30064772417"  [ label = "DDG: PropTypes"] 
+  "107374182464" -> "68719478171"  [ label = "DDG: "] 
+}

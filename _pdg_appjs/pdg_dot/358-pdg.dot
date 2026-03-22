@@ -1,0 +1,22 @@
+digraph "test" {  
+node [shape="rect"];  
+"107374182758" [label = <METHOD, 213<BR/>test> ]
+"124554051941" [label = <METHOD_RETURN, 213<BR/>__ecma.Boolean> ]
+"111669150336" [label = <PARAM, 213<BR/>this> ]
+"111669150337" [label = <PARAM, 213<BR/>value> ]
+"141733921024" [label = <RETURN, 213<BR/>return typeof value === 'function'> ]
+"30064776414" [label = <&lt;operator&gt;.equals, 213<BR/>typeof value === 'function'> ]
+"30064776415" [label = <&lt;operator&gt;.instanceOf, 213<BR/>typeof value> ]
+  "141733921024" -> "124554051941"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150336" -> "124554051941"  [ label = "DDG: this"] 
+  "30064776415" -> "124554051941"  [ label = "DDG: value"] 
+  "30064776414" -> "124554051941"  [ label = "DDG: typeof value"] 
+  "30064776414" -> "124554051941"  [ label = "DDG: typeof value === 'function'"] 
+  "107374182758" -> "111669150336"  [ label = "DDG: "] 
+  "107374182758" -> "111669150337"  [ label = "DDG: "] 
+  "30064776414" -> "141733921024"  [ label = "DDG: typeof value === 'function'"] 
+  "30064776415" -> "30064776414"  [ label = "DDG: value"] 
+  "107374182758" -> "30064776414"  [ label = "DDG: "] 
+  "111669150337" -> "30064776415"  [ label = "DDG: value"] 
+  "107374182758" -> "30064776415"  [ label = "DDG: "] 
+}

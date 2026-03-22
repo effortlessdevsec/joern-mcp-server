@@ -1,0 +1,19 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182971" [label = <METHOD, 24<BR/>&lt;lambda&gt;1> ]
+"124554052154" [label = <METHOD_RETURN, 24<BR/>__ecma.Boolean> ]
+"111669150810" [label = <PARAM, 24<BR/>this> ]
+"111669150811" [label = <PARAM, 24<BR/>name> ]
+"141733921192" [label = <RETURN, 24<BR/>name[1] === 'index.js'> ]
+"30064779763" [label = <&lt;operator&gt;.equals, 24<BR/>name[1] === 'index.js'> ]
+  "141733921192" -> "124554052154"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150810" -> "124554052154"  [ label = "DDG: this"] 
+  "111669150811" -> "124554052154"  [ label = "DDG: name"] 
+  "30064779763" -> "124554052154"  [ label = "DDG: name[1]"] 
+  "30064779763" -> "124554052154"  [ label = "DDG: name[1] === 'index.js'"] 
+  "107374182971" -> "111669150810"  [ label = "DDG: "] 
+  "107374182971" -> "111669150811"  [ label = "DDG: "] 
+  "30064779763" -> "141733921192"  [ label = "DDG: name[1] === 'index.js'"] 
+  "111669150811" -> "30064779763"  [ label = "DDG: name"] 
+  "107374182971" -> "30064779763"  [ label = "DDG: "] 
+}

@@ -1,0 +1,133 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183748" [label = <METHOD, 1<BR/>:program> ]
+"124554052936" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152424" [label = <PARAM, 1<BR/>this> ]
+"25769807541" [label = <BLOCK, 1<BR/>import {getTransformer, getTransformCode, getCo...> ]
+"30064791937" [label = <&lt;operator&gt;.assignment, 2<BR/>var SourceMapConsumer = require(&quot;source-map/lib...> ]
+"30064791939" [label = <&lt;operator&gt;.assignment, 4<BR/>function transform = async function transform(t...> ]
+"25769807542" [label = <BLOCK, 33<BR/>export default store =&gt; next =&gt; async (action) ...> ]
+"30064791929" [label = <&lt;operator&gt;.assignment, 1<BR/>var getTransformer = require(&quot;./selectors&quot;).get...> ]
+"30064791931" [label = <&lt;operator&gt;.assignment, 1<BR/>var getTransformCode = require(&quot;./selectors&quot;).g...> ]
+"30064791933" [label = <&lt;operator&gt;.assignment, 1<BR/>var getCode = require(&quot;./selectors&quot;).getCode> ]
+"30064791935" [label = <&lt;operator&gt;.assignment, 1<BR/>var showTransformer = require(&quot;./selectors&quot;).sh...> ]
+"30064791940" [label = <&lt;operator&gt;.assignment, 33<BR/>function &lt;lambda&gt;0 = store =&gt; next =&gt; async (ac...> ]
+"30064791941" [label = <&lt;operator&gt;.assignment, 33<BR/>exports[&quot;default&quot;] = &lt;lambda&gt;0> ]
+"68719497527" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;source-map/lib/source-map-consumer&quot;)> ]
+"30064791818" [label = <require, 2<BR/>require(&quot;source-map/lib/source-map-consumer&quot;)> ]
+"68719497515" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064791814" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+"68719497518" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064791815" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+"68719497521" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064791816" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+"68719497524" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors&quot;)> ]
+"30064791817" [label = <require, 1<BR/>require(&quot;./selectors&quot;)> ]
+  "30064791929" -> "124554052936"  [ label = "DDG: getTransformer"] 
+  "30064791929" -> "124554052936"  [ label = "DDG: var getTransformer = require(&quot;./selectors&quot;).getTransformer"] 
+  "30064791931" -> "124554052936"  [ label = "DDG: getTransformCode"] 
+  "30064791931" -> "124554052936"  [ label = "DDG: var getTransformCode = require(&quot;./selectors&quot;).getTransformCode"] 
+  "30064791933" -> "124554052936"  [ label = "DDG: getCode"] 
+  "30064791933" -> "124554052936"  [ label = "DDG: var getCode = require(&quot;./selectors&quot;).getCode"] 
+  "30064791935" -> "124554052936"  [ label = "DDG: showTransformer"] 
+  "30064791935" -> "124554052936"  [ label = "DDG: var showTransformer = require(&quot;./selectors&quot;).showTransformer"] 
+  "30064791937" -> "124554052936"  [ label = "DDG: SourceMapConsumer"] 
+  "30064791818" -> "124554052936"  [ label = "DDG: this"] 
+  "30064791937" -> "124554052936"  [ label = "DDG: require(&quot;source-map/lib/source-map-consumer&quot;).SourceMapConsumer"] 
+  "30064791937" -> "124554052936"  [ label = "DDG: var SourceMapConsumer = require(&quot;source-map/lib/source-map-consumer&quot;).SourceMapConsumer"] 
+  "30064791939" -> "124554052936"  [ label = "DDG: transform"] 
+  "30064791939" -> "124554052936"  [ label = "DDG: function transform = async function transform(transformer, transformCode, code) {
+  // Transforms may make use of Node's __filename global. See GitHub issue #420.
+  // So we define a dummy one.
+  if (!global.__filename) {
+    global.__filename = 'transform.js';
+  }
+  if (!transformer._promise) {
+    transformer._promise = new Promise(transformer.loadTransformer);
+  }
+  let realTransformer;
+  try {
+    realTransformer = await transformer._promise;
+    let result = await transformer.transform(realTransformer, transformCode, code);
+    let map = null;
+    if (typeof result !== 'string') {
+      if (result.map) {
+        map = new SourceMapConsumer(result.map);
+      }
+      result = result.code;
+    }
+    return { result, map, version: realTransformer.version, error: null };
+  } catch(error) {
+    return {
+      error,
+      version: realTransformer ? realTransformer.version : '',
+    };
+  }
+}"] 
+  "30064791940" -> "124554052936"  [ label = "DDG: function &lt;lambda&gt;0 = store =&gt; next =&gt; async (action) =&gt; {
+  const oldState = store.getState();
+  next(action);
+  const newState = store.getState();
+
+  const show = showTransformer(newState);
+
+  if (!show) {
+    return
+  }
+
+  const newTransformer = getTransformer(newState);
+  const newTransformCode = getTransformCode(newState);
+  const newCode = getCode(newState);
+
+  if (
+    action.type === 'INIT' ||
+    show != showTransformer(oldState) ||
+    getTransformer(oldState) !== newTransformer ||
+    getTransformCode(oldState) !== newTransformCode ||
+    getCode(oldState) !== newCode
+  ) {
+    if (!newTransformer || newCode == null) {
+      return;
+    }
+
+    if (console.clear) {
+      console.clear();
+    }
+
+    let result;
+    try  {
+      result = await transform(newTransformer, newTransformCode, newCode);
+    } catch (error) {
+      result = {error}
+    }
+
+    // Did anything change in the meantime?
+    if (
+      newTransformer !== getTransformer(store.getState()) ||
+      newTransformCode !== getTransfo..."] 
+  "30064791941" -> "124554052936"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064791941" -> "124554052936"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064791941" -> "124554052936"  [ label = "DDG: exports[&quot;default&quot;] = &lt;lambda&gt;0"] 
+  "107374183748" -> "111669152424"  [ label = "DDG: "] 
+  "107374183748" -> "25769807541"  [ label = "DDG: "] 
+  "107374183748" -> "30064791939"  [ label = "DDG: "] 
+  "107374183748" -> "25769807542"  [ label = "DDG: "] 
+  "107374183748" -> "30064791940"  [ label = "DDG: "] 
+  "30064791940" -> "30064791941"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "107374183748" -> "30064791941"  [ label = "DDG: "] 
+  "107374183748" -> "68719497527"  [ label = "DDG: "] 
+  "30064791817" -> "30064791818"  [ label = "DDG: this"] 
+  "107374183748" -> "30064791818"  [ label = "DDG: "] 
+  "107374183748" -> "68719497515"  [ label = "DDG: "] 
+  "111669152424" -> "30064791814"  [ label = "DDG: this"] 
+  "107374183748" -> "30064791814"  [ label = "DDG: "] 
+  "107374183748" -> "68719497518"  [ label = "DDG: "] 
+  "30064791814" -> "30064791815"  [ label = "DDG: this"] 
+  "107374183748" -> "30064791815"  [ label = "DDG: "] 
+  "107374183748" -> "68719497521"  [ label = "DDG: "] 
+  "30064791815" -> "30064791816"  [ label = "DDG: this"] 
+  "107374183748" -> "30064791816"  [ label = "DDG: "] 
+  "107374183748" -> "68719497524"  [ label = "DDG: "] 
+  "30064791816" -> "30064791817"  [ label = "DDG: this"] 
+  "107374183748" -> "30064791817"  [ label = "DDG: "] 
+}

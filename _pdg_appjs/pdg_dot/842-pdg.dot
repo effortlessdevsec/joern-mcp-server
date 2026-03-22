@@ -1,0 +1,78 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183242" [label = <METHOD, 23<BR/>getDefaultOptions> ]
+"124554052425" [label = <METHOD_RETURN, 23<BR/>{ range: __ecma.Boolean; loc: __ecma.Boolean; tokens: __ecma.Boolean; comment: __ecma.Boolean; useJSXTextNode: __ecma.Boolean; ecmaVersion: __ecma.Number; sourceType: __ecma.String; ecmaFeatures: { jsx: __ecma.Boolean; }; }> ]
+"111669151399" [label = <PARAM, 23<BR/>this> ]
+"141733921383" [label = <RETURN, 24<BR/>return { range: true, loc: false, ...> ]
+"25769806091" [label = <BLOCK, 24<BR/>{ range: true, loc: false, to...> ]
+"30064784961" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_4.range = true> ]
+"30064784963" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_4.loc = false> ]
+"30064784965" [label = <&lt;operator&gt;.assignment, 27<BR/>_tmp_4.tokens = false> ]
+"30064784967" [label = <&lt;operator&gt;.assignment, 28<BR/>_tmp_4.comment = false> ]
+"30064784969" [label = <&lt;operator&gt;.assignment, 29<BR/>_tmp_4.useJSXTextNode = false> ]
+"30064784971" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_4.ecmaVersion = 6> ]
+"30064784973" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_4.sourceType = &quot;module&quot;> ]
+"30064784975" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_4.ecmaFeatures = { jsx: true, }> ]
+"68719490601" [label = <IDENTIFIER, 24<BR/>_tmp_4<BR/>{ range: true, loc: false, to...> ]
+"30064784977" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_5.jsx = true> ]
+"68719490600" [label = <IDENTIFIER, 33<BR/>_tmp_5<BR/>{ jsx: true, }> ]
+  "141733921383" -> "124554052425"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151399" -> "124554052425"  [ label = "DDG: this"] 
+  "30064784961" -> "124554052425"  [ label = "DDG: _tmp_4.range"] 
+  "30064784961" -> "124554052425"  [ label = "DDG: _tmp_4.range = true"] 
+  "30064784963" -> "124554052425"  [ label = "DDG: _tmp_4.loc"] 
+  "30064784963" -> "124554052425"  [ label = "DDG: _tmp_4.loc = false"] 
+  "30064784965" -> "124554052425"  [ label = "DDG: _tmp_4.tokens"] 
+  "30064784965" -> "124554052425"  [ label = "DDG: _tmp_4.tokens = false"] 
+  "30064784967" -> "124554052425"  [ label = "DDG: _tmp_4.comment"] 
+  "30064784967" -> "124554052425"  [ label = "DDG: _tmp_4.comment = false"] 
+  "30064784969" -> "124554052425"  [ label = "DDG: _tmp_4.useJSXTextNode"] 
+  "30064784969" -> "124554052425"  [ label = "DDG: _tmp_4.useJSXTextNode = false"] 
+  "30064784971" -> "124554052425"  [ label = "DDG: _tmp_4.ecmaVersion"] 
+  "30064784971" -> "124554052425"  [ label = "DDG: _tmp_4.ecmaVersion = 6"] 
+  "30064784973" -> "124554052425"  [ label = "DDG: _tmp_4.sourceType"] 
+  "30064784973" -> "124554052425"  [ label = "DDG: _tmp_4.sourceType = &quot;module&quot;"] 
+  "30064784975" -> "124554052425"  [ label = "DDG: _tmp_4.ecmaFeatures"] 
+  "30064784977" -> "124554052425"  [ label = "DDG: _tmp_5.jsx"] 
+  "30064784977" -> "124554052425"  [ label = "DDG: _tmp_5.jsx = true"] 
+  "30064784975" -> "124554052425"  [ label = "DDG: _tmp_4.ecmaFeatures = {
+        jsx: true,
+      }"] 
+  "107374183242" -> "111669151399"  [ label = "DDG: "] 
+  "25769806091" -> "141733921383"  [ label = "DDG: "] 
+  "25769806091" -> "141733921383"  [ label = "DDG: {
+      range: true,
+      loc: false,
+      tokens: false,
+      comment: false,
+      useJSXTextNode: false,
+      ecmaVersion: 6,
+      sourceType: 'module',
+
+      ecmaFeatures: {
+        jsx: true,
+      },
+    }"] 
+  "107374183242" -> "141733921383"  [ label = "DDG: "] 
+  "30064784961" -> "25769806091"  [ label = "DDG: _tmp_4.range"] 
+  "30064784963" -> "25769806091"  [ label = "DDG: _tmp_4.loc"] 
+  "30064784965" -> "25769806091"  [ label = "DDG: _tmp_4.tokens"] 
+  "30064784967" -> "25769806091"  [ label = "DDG: _tmp_4.comment"] 
+  "30064784969" -> "25769806091"  [ label = "DDG: _tmp_4.useJSXTextNode"] 
+  "30064784971" -> "25769806091"  [ label = "DDG: _tmp_4.ecmaVersion"] 
+  "30064784973" -> "25769806091"  [ label = "DDG: _tmp_4.sourceType"] 
+  "30064784975" -> "25769806091"  [ label = "DDG: _tmp_4.ecmaFeatures"] 
+  "107374183242" -> "25769806091"  [ label = "DDG: "] 
+  "107374183242" -> "30064784961"  [ label = "DDG: "] 
+  "107374183242" -> "30064784963"  [ label = "DDG: "] 
+  "107374183242" -> "30064784965"  [ label = "DDG: "] 
+  "107374183242" -> "30064784967"  [ label = "DDG: "] 
+  "107374183242" -> "30064784969"  [ label = "DDG: "] 
+  "107374183242" -> "30064784971"  [ label = "DDG: "] 
+  "107374183242" -> "30064784973"  [ label = "DDG: "] 
+  "30064784977" -> "30064784975"  [ label = "DDG: _tmp_5.jsx"] 
+  "107374183242" -> "30064784975"  [ label = "DDG: "] 
+  "107374183242" -> "68719490601"  [ label = "DDG: "] 
+  "107374183242" -> "30064784977"  [ label = "DDG: "] 
+  "107374183242" -> "68719490600"  [ label = "DDG: "] 
+}

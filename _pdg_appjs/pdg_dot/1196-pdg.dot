@@ -1,0 +1,152 @@
+digraph "fork" {  
+node [shape="rect"];  
+"107374183596" [label = <METHOD, 111<BR/>fork> ]
+"124554052780" [label = <METHOD_RETURN, 111<BR/>ANY> ]
+"111669152122" [label = <PARAM, 111<BR/>this> ]
+"111669152123" [label = <PARAM, 111<BR/>revision> ]
+"111669152124" [label = <PARAM, 111<BR/>data> ]
+"141733921646" [label = <RETURN, 112<BR/>return api( `/gist/${revision.getSnippetID(...> ]
+"30064790005" [label = <then, 112<BR/>api( `/gist/${revision.getSnippetID()}/${re...> ]
+"30064790007" [label = <&lt;operator&gt;.assignment, 112<BR/>(_tmp_21 = api( `/gist/${revision.getSnippe...> ]
+"30064790008" [label = <then, 112<BR/>api( `/gist/${revision.getSnippetID()}/${re...> ]
+"30064790010" [label = <&lt;operator&gt;.assignment, 112<BR/>(_tmp_22 = api( `/gist/${revision.getSnippe...> ]
+"68719495562" [label = <IDENTIFIER, 112<BR/>api<BR/>api( `/gist/${revision.getSnippetID()}/${re...> ]
+"30064790011" [label = <api, 112<BR/>api( `/gist/${revision.getSnippetID()}/${re...> ]
+"30064790012" [label = <&lt;operator&gt;.formatString, 113<BR/>&lt;operator&gt;.formatString(&quot;/gist/&quot;, revision.getS...> ]
+"30064790017" [label = <&lt;operator&gt;.assignment, 115<BR/>_tmp_23.method = &quot;POST&quot;> ]
+"30064790019" [label = <&lt;operator&gt;.assignment, 116<BR/>_tmp_23.headers = { 'Content-Type': 'ap...> ]
+"30064790023" [label = <&lt;operator&gt;.assignment, 119<BR/>_tmp_23.body = JSON.stringify(data)> ]
+"68719495574" [label = <IDENTIFIER, 114<BR/>_tmp_23<BR/>{ method: 'POST', headers: { ...> ]
+"30064790013" [label = <getSnippetID, 113<BR/>revision.getSnippetID()> ]
+"30064790015" [label = <getRevisionID, 113<BR/>revision.getRevisionID()> ]
+"30064790021" [label = <&lt;operator&gt;.assignment, 117<BR/>_tmp_24.Content-Type = &quot;application/json&quot;> ]
+"68719495571" [label = <IDENTIFIER, 116<BR/>_tmp_24<BR/>{ 'Content-Type': 'application/json', ...> ]
+"30064790025" [label = <stringify, 119<BR/>JSON.stringify(data)> ]
+  "141733921646" -> "124554052780"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064790011" -> "124554052780"  [ label = "DDG: this"] 
+  "30064790012" -> "124554052780"  [ label = "DDG: revision.getSnippetID()"] 
+  "30064790015" -> "124554052780"  [ label = "DDG: revision"] 
+  "30064790012" -> "124554052780"  [ label = "DDG: revision.getRevisionID()"] 
+  "30064790011" -> "124554052780"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/gist/&quot;, revision.getSnippetID(), &quot;/&quot;, revision.getRevisionID(), &quot;&quot;)"] 
+  "30064790017" -> "124554052780"  [ label = "DDG: _tmp_23.method"] 
+  "30064790017" -> "124554052780"  [ label = "DDG: _tmp_23.method = &quot;POST&quot;"] 
+  "30064790019" -> "124554052780"  [ label = "DDG: _tmp_23.headers"] 
+  "30064790021" -> "124554052780"  [ label = "DDG: _tmp_24.Content-Type"] 
+  "30064790021" -> "124554052780"  [ label = "DDG: _tmp_24.Content-Type = &quot;application/json&quot;"] 
+  "30064790019" -> "124554052780"  [ label = "DDG: _tmp_23.headers = {
+        'Content-Type': 'application/json',
+      }"] 
+  "30064790023" -> "124554052780"  [ label = "DDG: _tmp_23.body"] 
+  "30064790025" -> "124554052780"  [ label = "DDG: data"] 
+  "30064790023" -> "124554052780"  [ label = "DDG: JSON.stringify(data)"] 
+  "30064790023" -> "124554052780"  [ label = "DDG: _tmp_23.body = JSON.stringify(data)"] 
+  "30064790010" -> "124554052780"  [ label = "DDG: api(
+    `/gist/${revision.getSnippetID()}/${revision.getRevisionID()}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )"] 
+  "30064790008" -> "124554052780"  [ label = "DDG: _tmp_22"] 
+  "30064790007" -> "124554052780"  [ label = "DDG: api(
+    `/gist/${revision.getSnippetID()}/${revision.getRevisionID()}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Unable to fork snippet.');
+  })"] 
+  "30064790005" -> "124554052780"  [ label = "DDG: _tmp_21"] 
+  "30064790005" -> "124554052780"  [ label = "DDG: api(
+    `/gist/${revision.getSnippetID()}/${revision.getRevisionID()}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Unable to fork snippet.');
+  })
+  .then(data =&gt; new Revision(data))"] 
+  "107374183596" -> "111669152122"  [ label = "DDG: "] 
+  "107374183596" -> "111669152123"  [ label = "DDG: "] 
+  "107374183596" -> "111669152124"  [ label = "DDG: "] 
+  "30064790005" -> "141733921646"  [ label = "DDG: api(
+    `/gist/${revision.getSnippetID()}/${revision.getRevisionID()}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Unable to fork snippet.');
+  })
+  .then(data =&gt; new Revision(data))"] 
+  "30064790007" -> "30064790005"  [ label = "DDG: _tmp_21"] 
+  "107374183596" -> "30064790005"  [ label = "DDG: "] 
+  "30064790008" -> "30064790007"  [ label = "DDG: _tmp_22"] 
+  "30064790008" -> "30064790007"  [ label = "DDG: &lt;lambda&gt;7"] 
+  "30064790010" -> "30064790008"  [ label = "DDG: _tmp_22"] 
+  "107374183596" -> "30064790008"  [ label = "DDG: "] 
+  "30064790011" -> "30064790010"  [ label = "DDG: this"] 
+  "30064790011" -> "30064790010"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/gist/&quot;, revision.getSnippetID(), &quot;/&quot;, revision.getRevisionID(), &quot;&quot;)"] 
+  "30064790011" -> "30064790010"  [ label = "DDG: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }"] 
+  "30064790011" -> "30064790010"  [ label = "DDG: "] 
+  "30064790091" -> "68719495562"  [ label = "DDG: api"] 
+  "107374183596" -> "68719495562"  [ label = "DDG: "] 
+  "111669152122" -> "30064790011"  [ label = "DDG: this"] 
+  "107374183596" -> "30064790011"  [ label = "DDG: "] 
+  "30064790012" -> "30064790011"  [ label = "DDG: &quot;/gist/&quot;"] 
+  "30064790012" -> "30064790011"  [ label = "DDG: revision.getRevisionID()"] 
+  "30064790012" -> "30064790011"  [ label = "DDG: &quot;/&quot;"] 
+  "30064790012" -> "30064790011"  [ label = "DDG: &quot;&quot;"] 
+  "30064790012" -> "30064790011"  [ label = "DDG: revision.getSnippetID()"] 
+  "30064790017" -> "30064790011"  [ label = "DDG: _tmp_23.method"] 
+  "30064790019" -> "30064790011"  [ label = "DDG: _tmp_23.headers"] 
+  "30064790023" -> "30064790011"  [ label = "DDG: _tmp_23.body"] 
+  "107374183596" -> "30064790012"  [ label = "DDG: "] 
+  "30064790013" -> "30064790012"  [ label = "DDG: revision"] 
+  "30064790015" -> "30064790012"  [ label = "DDG: revision"] 
+  "107374183596" -> "30064790017"  [ label = "DDG: "] 
+  "30064790021" -> "30064790019"  [ label = "DDG: _tmp_24.Content-Type"] 
+  "107374183596" -> "30064790019"  [ label = "DDG: "] 
+  "30064790025" -> "30064790023"  [ label = "DDG: data"] 
+  "107374183596" -> "68719495574"  [ label = "DDG: "] 
+  "111669152123" -> "30064790013"  [ label = "DDG: revision"] 
+  "107374183596" -> "30064790013"  [ label = "DDG: "] 
+  "30064790013" -> "30064790015"  [ label = "DDG: revision"] 
+  "107374183596" -> "30064790015"  [ label = "DDG: "] 
+  "107374183596" -> "30064790021"  [ label = "DDG: "] 
+  "107374183596" -> "68719495571"  [ label = "DDG: "] 
+  "111669152124" -> "30064790025"  [ label = "DDG: data"] 
+  "107374183596" -> "30064790025"  [ label = "DDG: "] 
+}

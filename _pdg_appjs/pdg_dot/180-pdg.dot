@@ -1,0 +1,203 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182580" [label = <METHOD, 1<BR/>:program> ]
+"124554051766" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150028" [label = <PARAM, 1<BR/>this> ]
+"30064773960" [label = <&lt;operator&gt;.assignment, 1<BR/>var Editor = require(&quot;./Editor&quot;)> ]
+"30064773961" [label = <&lt;operator&gt;.assignment, 2<BR/>var JSCodeshiftEditor = require(&quot;./JSCodeshiftE...> ]
+"30064773962" [label = <&lt;operator&gt;.assignment, 3<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064773963" [label = <&lt;operator&gt;.assignment, 4<BR/>var publish = require(&quot;../utils/pubsub.js&quot;).pub...> ]
+"30064773965" [label = <&lt;operator&gt;.assignment, 5<BR/>var React = require(&quot;react&quot;)> ]
+"30064773966" [label = <&lt;operator&gt;.assignment, 6<BR/>var SplitPane = require(&quot;./SplitPane&quot;)> ]
+"30064773967" [label = <&lt;operator&gt;.assignment, 7<BR/>var TransformOutput = require(&quot;./TransformOutput&quot;)> ]
+"30064773968" [label = <&lt;operator&gt;.assignment, 8<BR/>var PrettierButton = require(&quot;./buttons/Prettie...> ]
+"30064773969" [label = <&lt;operator&gt;.assignment, 10<BR/>function resize = function resize() { publish...> ]
+"25769804242" [label = <BLOCK, 14<BR/>export default function Transformer(props) { ...> ]
+"30064773973" [label = <&lt;operator&gt;.assignment, 44<BR/>Transformer.propTypes = { defaultTransformCod...> ]
+"30064773970" [label = <&lt;operator&gt;.assignment, 14<BR/>function Transformer = function Transformer(pro...> ]
+"30064773971" [label = <&lt;operator&gt;.assignment, 14<BR/>exports[&quot;default&quot;] = Transformer> ]
+"68719479625" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./Editor&quot;)> ]
+"30064773915" [label = <require, 1<BR/>require(&quot;./Editor&quot;)> ]
+"68719479628" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;./JSCodeshiftEditor&quot;)> ]
+"30064773916" [label = <require, 2<BR/>require(&quot;./JSCodeshiftEditor&quot;)> ]
+"68719479631" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064773917" [label = <require, 3<BR/>require(&quot;prop-types&quot;)> ]
+"68719479637" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064773919" [label = <require, 5<BR/>require(&quot;react&quot;)> ]
+"68719479640" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;./SplitPane&quot;)> ]
+"30064773920" [label = <require, 6<BR/>require(&quot;./SplitPane&quot;)> ]
+"68719479643" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;./TransformOutput&quot;)> ]
+"30064773921" [label = <require, 7<BR/>require(&quot;./TransformOutput&quot;)> ]
+"68719479646" [label = <IDENTIFIER, 8<BR/>require<BR/>require(&quot;./buttons/PrettierButton&quot;)> ]
+"30064773922" [label = <require, 8<BR/>require(&quot;./buttons/PrettierButton&quot;)> ]
+"30064773975" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_2.defaultTransformCode = PropTypes.string> ]
+"30064773978" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_2.transformCode = PropTypes.string> ]
+"30064773981" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_2.transformer = PropTypes.object> ]
+"30064773984" [label = <&lt;operator&gt;.assignment, 48<BR/>_tmp_2.mode = PropTypes.string> ]
+"30064773987" [label = <&lt;operator&gt;.assignment, 49<BR/>_tmp_2.keyMap = PropTypes.string> ]
+"30064773990" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_2.onContentChange = PropTypes.func> ]
+"30064773993" [label = <&lt;operator&gt;.assignment, 51<BR/>_tmp_2.toggleFormatting = PropTypes.func> ]
+"30064773996" [label = <&lt;operator&gt;.assignment, 52<BR/>_tmp_2.enableFormatting = PropTypes.bool> ]
+"30064773999" [label = <&lt;operator&gt;.assignment, 53<BR/>_tmp_2.transformResult = PropTypes.object> ]
+"68719479671" [label = <IDENTIFIER, 44<BR/>_tmp_2<BR/>{ defaultTransformCode: PropTypes.string, t...> ]
+"68719479634" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;../utils/pubsub.js&quot;)> ]
+"30064773918" [label = <require, 4<BR/>require(&quot;../utils/pubsub.js&quot;)> ]
+  "30064773960" -> "124554051766"  [ label = "DDG: Editor"] 
+  "30064773960" -> "124554051766"  [ label = "DDG: require(&quot;./Editor&quot;)"] 
+  "30064773960" -> "124554051766"  [ label = "DDG: var Editor = require(&quot;./Editor&quot;)"] 
+  "30064773961" -> "124554051766"  [ label = "DDG: JSCodeshiftEditor"] 
+  "30064773961" -> "124554051766"  [ label = "DDG: require(&quot;./JSCodeshiftEditor&quot;)"] 
+  "30064773961" -> "124554051766"  [ label = "DDG: var JSCodeshiftEditor = require(&quot;./JSCodeshiftEditor&quot;)"] 
+  "30064773962" -> "124554051766"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "124554051766"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064773962" -> "124554051766"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064773963" -> "124554051766"  [ label = "DDG: publish"] 
+  "30064773963" -> "124554051766"  [ label = "DDG: var publish = require(&quot;../utils/pubsub.js&quot;).publish"] 
+  "30064773965" -> "124554051766"  [ label = "DDG: React"] 
+  "30064773965" -> "124554051766"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064773965" -> "124554051766"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064773966" -> "124554051766"  [ label = "DDG: SplitPane"] 
+  "30064773966" -> "124554051766"  [ label = "DDG: require(&quot;./SplitPane&quot;)"] 
+  "30064773966" -> "124554051766"  [ label = "DDG: var SplitPane = require(&quot;./SplitPane&quot;)"] 
+  "30064773967" -> "124554051766"  [ label = "DDG: TransformOutput"] 
+  "30064773967" -> "124554051766"  [ label = "DDG: require(&quot;./TransformOutput&quot;)"] 
+  "30064773967" -> "124554051766"  [ label = "DDG: var TransformOutput = require(&quot;./TransformOutput&quot;)"] 
+  "30064773968" -> "124554051766"  [ label = "DDG: PrettierButton"] 
+  "30064773922" -> "124554051766"  [ label = "DDG: this"] 
+  "30064773968" -> "124554051766"  [ label = "DDG: require(&quot;./buttons/PrettierButton&quot;)"] 
+  "30064773968" -> "124554051766"  [ label = "DDG: var PrettierButton = require(&quot;./buttons/PrettierButton&quot;)"] 
+  "30064773969" -> "124554051766"  [ label = "DDG: resize"] 
+  "30064773969" -> "124554051766"  [ label = "DDG: function resize = function resize() {
+  publish('PANEL_RESIZE');
+}"] 
+  "30064773970" -> "124554051766"  [ label = "DDG: function Transformer = function Transformer(props) {
+  const plainEditor = React.createElement(
+    props.transformer.id === 'jscodeshift' ? JSCodeshiftEditor : Editor,
+    {
+      highlight: false,
+      value: props.transformCode,
+      onContentChange: props.onContentChange,
+      enableFormatting: props.enableFormatting,
+      keyMap: props.keyMap,
+    },
+  );
+
+  const formattingEditor = (&lt;div style={{flex: 1, minHeight: 0, minWidth: 0, position: 'relative', display: 'flex'}}&gt;
+    &lt;PrettierButton toggleFormatting={props.toggleFormatting} enableFormatting={props.enableFormatting}/&gt;
+    {plainEditor}
+  &lt;/div&gt;)
+
+  return (
+    &lt;SplitPane
+      className=&quot;splitpane&quot;
+      onResize={resize}&gt;
+      {formattingEditor}
+      &lt;TransformOutput
+        transformResult={props.transformResult}
+        mode={props.mode}
+      /&gt;
+    &lt;/SplitPane&gt;
+  );
+}"] 
+  "30064773971" -> "124554051766"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064773971" -> "124554051766"  [ label = "DDG: Transformer"] 
+  "30064773971" -> "124554051766"  [ label = "DDG: exports[&quot;default&quot;] = Transformer"] 
+  "30064773973" -> "124554051766"  [ label = "DDG: Transformer.propTypes"] 
+  "30064773975" -> "124554051766"  [ label = "DDG: _tmp_2.defaultTransformCode"] 
+  "30064773975" -> "124554051766"  [ label = "DDG: _tmp_2.defaultTransformCode = PropTypes.string"] 
+  "30064773978" -> "124554051766"  [ label = "DDG: _tmp_2.transformCode"] 
+  "30064773978" -> "124554051766"  [ label = "DDG: _tmp_2.transformCode = PropTypes.string"] 
+  "30064773981" -> "124554051766"  [ label = "DDG: _tmp_2.transformer"] 
+  "30064773981" -> "124554051766"  [ label = "DDG: _tmp_2.transformer = PropTypes.object"] 
+  "30064773984" -> "124554051766"  [ label = "DDG: _tmp_2.mode"] 
+  "30064773984" -> "124554051766"  [ label = "DDG: _tmp_2.mode = PropTypes.string"] 
+  "30064773987" -> "124554051766"  [ label = "DDG: _tmp_2.keyMap"] 
+  "30064773987" -> "124554051766"  [ label = "DDG: PropTypes.string"] 
+  "30064773987" -> "124554051766"  [ label = "DDG: _tmp_2.keyMap = PropTypes.string"] 
+  "30064773990" -> "124554051766"  [ label = "DDG: _tmp_2.onContentChange"] 
+  "30064773990" -> "124554051766"  [ label = "DDG: _tmp_2.onContentChange = PropTypes.func"] 
+  "30064773993" -> "124554051766"  [ label = "DDG: _tmp_2.toggleFormatting"] 
+  "30064773993" -> "124554051766"  [ label = "DDG: PropTypes.func"] 
+  "30064773993" -> "124554051766"  [ label = "DDG: _tmp_2.toggleFormatting = PropTypes.func"] 
+  "30064773996" -> "124554051766"  [ label = "DDG: _tmp_2.enableFormatting"] 
+  "30064773996" -> "124554051766"  [ label = "DDG: PropTypes.bool"] 
+  "30064773996" -> "124554051766"  [ label = "DDG: _tmp_2.enableFormatting = PropTypes.bool"] 
+  "30064773999" -> "124554051766"  [ label = "DDG: _tmp_2.transformResult"] 
+  "30064773999" -> "124554051766"  [ label = "DDG: PropTypes.object"] 
+  "30064773999" -> "124554051766"  [ label = "DDG: _tmp_2.transformResult = PropTypes.object"] 
+  "30064773973" -> "124554051766"  [ label = "DDG: Transformer.propTypes = {
+  defaultTransformCode: PropTypes.string,
+  transformCode: PropTypes.string,
+  transformer: PropTypes.object,
+  mode: PropTypes.string,
+  keyMap: PropTypes.string,
+  onContentChange: PropTypes.func,
+  toggleFormatting: PropTypes.func,
+  enableFormatting: PropTypes.bool,
+  transformResult: PropTypes.object,
+}"] 
+  "107374182580" -> "111669150028"  [ label = "DDG: "] 
+  "30064773915" -> "30064773960"  [ label = "DDG: this"] 
+  "30064773915" -> "30064773960"  [ label = "DDG: &quot;./Editor&quot;"] 
+  "30064773916" -> "30064773961"  [ label = "DDG: this"] 
+  "30064773916" -> "30064773961"  [ label = "DDG: &quot;./JSCodeshiftEditor&quot;"] 
+  "30064773917" -> "30064773962"  [ label = "DDG: this"] 
+  "30064773917" -> "30064773962"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064773919" -> "30064773965"  [ label = "DDG: this"] 
+  "30064773919" -> "30064773965"  [ label = "DDG: &quot;react&quot;"] 
+  "30064773920" -> "30064773966"  [ label = "DDG: this"] 
+  "30064773920" -> "30064773966"  [ label = "DDG: &quot;./SplitPane&quot;"] 
+  "30064773921" -> "30064773967"  [ label = "DDG: this"] 
+  "30064773921" -> "30064773967"  [ label = "DDG: &quot;./TransformOutput&quot;"] 
+  "30064773922" -> "30064773968"  [ label = "DDG: this"] 
+  "30064773922" -> "30064773968"  [ label = "DDG: &quot;./buttons/PrettierButton&quot;"] 
+  "107374182580" -> "30064773969"  [ label = "DDG: "] 
+  "107374182580" -> "25769804242"  [ label = "DDG: "] 
+  "30064773975" -> "30064773973"  [ label = "DDG: _tmp_2.defaultTransformCode"] 
+  "30064773978" -> "30064773973"  [ label = "DDG: _tmp_2.transformCode"] 
+  "30064773981" -> "30064773973"  [ label = "DDG: _tmp_2.transformer"] 
+  "30064773984" -> "30064773973"  [ label = "DDG: _tmp_2.mode"] 
+  "30064773987" -> "30064773973"  [ label = "DDG: _tmp_2.keyMap"] 
+  "30064773990" -> "30064773973"  [ label = "DDG: _tmp_2.onContentChange"] 
+  "30064773993" -> "30064773973"  [ label = "DDG: _tmp_2.toggleFormatting"] 
+  "30064773996" -> "30064773973"  [ label = "DDG: _tmp_2.enableFormatting"] 
+  "30064773999" -> "30064773973"  [ label = "DDG: _tmp_2.transformResult"] 
+  "107374182580" -> "30064773973"  [ label = "DDG: "] 
+  "107374182580" -> "30064773970"  [ label = "DDG: "] 
+  "30064773970" -> "30064773971"  [ label = "DDG: Transformer"] 
+  "107374182580" -> "30064773971"  [ label = "DDG: "] 
+  "107374182580" -> "68719479625"  [ label = "DDG: "] 
+  "111669150028" -> "30064773915"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773915"  [ label = "DDG: "] 
+  "107374182580" -> "68719479628"  [ label = "DDG: "] 
+  "30064773915" -> "30064773916"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773916"  [ label = "DDG: "] 
+  "107374182580" -> "68719479631"  [ label = "DDG: "] 
+  "30064773916" -> "30064773917"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773917"  [ label = "DDG: "] 
+  "107374182580" -> "68719479637"  [ label = "DDG: "] 
+  "30064773918" -> "30064773919"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773919"  [ label = "DDG: "] 
+  "107374182580" -> "68719479640"  [ label = "DDG: "] 
+  "30064773919" -> "30064773920"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773920"  [ label = "DDG: "] 
+  "107374182580" -> "68719479643"  [ label = "DDG: "] 
+  "30064773920" -> "30064773921"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773921"  [ label = "DDG: "] 
+  "107374182580" -> "68719479646"  [ label = "DDG: "] 
+  "30064773921" -> "30064773922"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773922"  [ label = "DDG: "] 
+  "30064773962" -> "30064773975"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773978"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773981"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773984"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773987"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773990"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773993"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773996"  [ label = "DDG: PropTypes"] 
+  "30064773962" -> "30064773999"  [ label = "DDG: PropTypes"] 
+  "107374182580" -> "68719479671"  [ label = "DDG: "] 
+  "107374182580" -> "68719479634"  [ label = "DDG: "] 
+  "30064773917" -> "30064773918"  [ label = "DDG: this"] 
+  "107374182580" -> "30064773918"  [ label = "DDG: "] 
+}

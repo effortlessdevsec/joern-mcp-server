@@ -1,0 +1,14 @@
+digraph "writeFile" {  
+node [shape="rect"];  
+"107374183259" [label = <METHOD, 51<BR/>writeFile> ]
+"124554052441" [label = <METHOD_RETURN, 51<BR/>__ecma.Null> ]
+"111669151423" [label = <PARAM, 51<BR/>this> ]
+"141733921396" [label = <RETURN, 51<BR/>null> ]
+"90194316245" [label = <LITERAL, 51<BR/>null> ]
+  "141733921396" -> "124554052441"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151423" -> "124554052441"  [ label = "DDG: this"] 
+  "107374183259" -> "111669151423"  [ label = "DDG: "] 
+  "90194316245" -> "141733921396"  [ label = "DDG: null"] 
+  "107374183259" -> "141733921396"  [ label = "DDG: "] 
+  "107374183259" -> "90194316245"  [ label = "DDG: "] 
+}

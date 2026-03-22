@@ -1,0 +1,30 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183140" [label = <METHOD, 45<BR/>getDefaultOptions> ]
+"124554052323" [label = <METHOD_RETURN, 45<BR/>{ syntax: __ecma.String; jsx: __ecma.Boolean; }> ]
+"111669151153" [label = <PARAM, 45<BR/>this> ]
+"141733921317" [label = <RETURN, 46<BR/>return { syntax: &quot;ecmascript&quot;, jsx:...> ]
+"25769805806" [label = <BLOCK, 46<BR/>{ syntax: &quot;ecmascript&quot;, jsx: false ...> ]
+"30064782994" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_9.syntax = &quot;ecmascript&quot;> ]
+"30064782996" [label = <&lt;operator&gt;.assignment, 48<BR/>_tmp_9.jsx = false> ]
+"68719488636" [label = <IDENTIFIER, 46<BR/>_tmp_9<BR/>{ syntax: &quot;ecmascript&quot;, jsx: false ...> ]
+  "141733921317" -> "124554052323"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151153" -> "124554052323"  [ label = "DDG: this"] 
+  "30064782994" -> "124554052323"  [ label = "DDG: _tmp_9.syntax"] 
+  "30064782994" -> "124554052323"  [ label = "DDG: _tmp_9.syntax = &quot;ecmascript&quot;"] 
+  "30064782996" -> "124554052323"  [ label = "DDG: _tmp_9.jsx"] 
+  "30064782996" -> "124554052323"  [ label = "DDG: _tmp_9.jsx = false"] 
+  "107374183140" -> "111669151153"  [ label = "DDG: "] 
+  "25769805806" -> "141733921317"  [ label = "DDG: "] 
+  "25769805806" -> "141733921317"  [ label = "DDG: {
+      syntax: &quot;ecmascript&quot;,
+      jsx: false
+    }"] 
+  "107374183140" -> "141733921317"  [ label = "DDG: "] 
+  "30064782994" -> "25769805806"  [ label = "DDG: _tmp_9.syntax"] 
+  "30064782996" -> "25769805806"  [ label = "DDG: _tmp_9.jsx"] 
+  "107374183140" -> "25769805806"  [ label = "DDG: "] 
+  "107374183140" -> "30064782994"  [ label = "DDG: "] 
+  "107374183140" -> "30064782996"  [ label = "DDG: "] 
+  "107374183140" -> "68719488636"  [ label = "DDG: "] 
+}

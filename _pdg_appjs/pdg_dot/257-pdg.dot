@@ -1,0 +1,721 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182657" [label = <METHOD, 1<BR/>:program> ]
+"124554051865" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150195" [label = <PARAM, 1<BR/>this> ]
+"30064775571" [label = <&lt;operator&gt;.assignment, 1<BR/>var CompactArrayView = require(&quot;./CompactArrayV...> ]
+"30064775572" [label = <&lt;operator&gt;.assignment, 2<BR/>var CompactObjectView = require(&quot;./CompactObjec...> ]
+"30064775573" [label = <&lt;operator&gt;.assignment, 3<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064775574" [label = <&lt;operator&gt;.assignment, 4<BR/>var publish = require(&quot;../../../utils/pubsub.js...> ]
+"30064775576" [label = <&lt;operator&gt;.assignment, 5<BR/>var React = require(&quot;react&quot;)> ]
+"30064775577" [label = <&lt;operator&gt;.assignment, 6<BR/>var useSelectedNode = require(&quot;../SelectedNodeC...> ]
+"30064775579" [label = <&lt;operator&gt;.assignment, 7<BR/>var focusNodes = require(&quot;../focusNodes.js&quot;)> ]
+"30064775580" [label = <&lt;operator&gt;.assignment, 9<BR/>var cx = require(&quot;../../../utils/classnames.js&quot;)> ]
+"30064775581" [label = <&lt;operator&gt;.assignment, 10<BR/>var stringify = require(&quot;../../../utils/stringi...> ]
+"30064775582" [label = <&lt;operator&gt;.assignment, 14<BR/>function usePrevious = function usePrevious(val...> ]
+"30064775583" [label = <&lt;operator&gt;.assignment, 49<BR/>function transition = function transition(curre...> ]
+"30064775584" [label = <&lt;operator&gt;.assignment, 89<BR/>function useOpenState = function useOpenState(o...> ]
+"25769804438" [label = <BLOCK, 12<BR/>const {useState, useRef, useMemo, useCallback, ...> ]
+"30064775596" [label = <&lt;operator&gt;.assignment, 33<BR/>const OPEN_STATES = { DEFAULT: 0, OPEN: 1, ...> ]
+"30064775607" [label = <&lt;operator&gt;.assignment, 41<BR/>const EVENTS = { CLICK_SELF: 0, CLICK_DESCE...> ]
+"30064775618" [label = <&lt;operator&gt;.assignment, 121<BR/>const Element = React.memo(function Element({ ...> ]
+"30064775621" [label = <&lt;operator&gt;.assignment, 338<BR/>Element.propTypes = { name: PropTypes.string,...> ]
+"30064775657" [label = <&lt;operator&gt;.assignment, 352<BR/>const NOT_COMPUTED = {}> ]
+"30064775658" [label = <&lt;operator&gt;.assignment, 354<BR/>const FunctionElement = React.memo(function Fun...> ]
+"30064775661" [label = <&lt;operator&gt;.assignment, 412<BR/>FunctionElement.propTypes = Element.propTypes> ]
+"30064775664" [label = <&lt;operator&gt;.assignment, 414<BR/>const PrimitiveElement = React.memo(function Pr...> ]
+"30064775667" [label = <&lt;operator&gt;.assignment, 429<BR/>PrimitiveElement.propTypes = { name: PropType...> ]
+"30064775678" [label = <&lt;operator&gt;.assignment, 435<BR/>const PropertyName = React.memo(function Proper...> ]
+"30064775681" [label = <&lt;operator&gt;.assignment, 446<BR/>PropertyName.propTypes = { name: PropTypes.st...> ]
+"25769804500" [label = <BLOCK, 452<BR/>export default function ElementContainer(props)...> ]
+"30064775695" [label = <&lt;operator&gt;.assignment, 487<BR/>ElementContainer.propTypes = Element.propTypes> ]
+"30064775585" [label = <&lt;operator&gt;.assignment, 12<BR/>_tmp_2 = React> ]
+"30064775586" [label = <&lt;operator&gt;.assignment, 12<BR/>useState = _tmp_2.useState> ]
+"30064775588" [label = <&lt;operator&gt;.assignment, 12<BR/>useRef = _tmp_2.useRef> ]
+"30064775590" [label = <&lt;operator&gt;.assignment, 12<BR/>useMemo = _tmp_2.useMemo> ]
+"30064775592" [label = <&lt;operator&gt;.assignment, 12<BR/>useCallback = _tmp_2.useCallback> ]
+"30064775594" [label = <&lt;operator&gt;.assignment, 12<BR/>useEffect = _tmp_2.useEffect> ]
+"68719481322" [label = <IDENTIFIER, 12<BR/>_tmp_2<BR/>const {useState, useRef, useMemo, useCallback, ...> ]
+"30064775692" [label = <&lt;operator&gt;.assignment, 452<BR/>function ElementContainer = function ElementCon...> ]
+"30064775693" [label = <&lt;operator&gt;.assignment, 452<BR/>exports[&quot;default&quot;] = ElementContainer> ]
+"68719481281" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./CompactArrayView&quot;)> ]
+"30064775093" [label = <require, 1<BR/>require(&quot;./CompactArrayView&quot;)> ]
+"68719481284" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;./CompactObjectView&quot;)> ]
+"30064775094" [label = <require, 2<BR/>require(&quot;./CompactObjectView&quot;)> ]
+"68719481287" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064775095" [label = <require, 3<BR/>require(&quot;prop-types&quot;)> ]
+"68719481293" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064775097" [label = <require, 5<BR/>require(&quot;react&quot;)> ]
+"68719481299" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;../focusNodes.js&quot;)> ]
+"30064775099" [label = <require, 7<BR/>require(&quot;../focusNodes.js&quot;)> ]
+"68719481302" [label = <IDENTIFIER, 9<BR/>require<BR/>require(&quot;../../../utils/classnames.js&quot;)> ]
+"30064775100" [label = <require, 9<BR/>require(&quot;../../../utils/classnames.js&quot;)> ]
+"68719481305" [label = <IDENTIFIER, 10<BR/>require<BR/>require(&quot;../../../utils/stringify&quot;)> ]
+"30064775101" [label = <require, 10<BR/>require(&quot;../../../utils/stringify&quot;)> ]
+"30064775597" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_3.DEFAULT = 0> ]
+"30064775599" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_3.OPEN = 1> ]
+"30064775601" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_3.DEEP_OPEN = 2> ]
+"30064775603" [label = <&lt;operator&gt;.assignment, 37<BR/>_tmp_3.FOCUS_OPEN = 3> ]
+"30064775605" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_3.CLOSED = 4> ]
+"68719481329" [label = <IDENTIFIER, 33<BR/>_tmp_3<BR/>{ DEFAULT: 0, OPEN: 1, DEEP_OPEN: 2, FO...> ]
+"30064775608" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_4.CLICK_SELF = 0> ]
+"30064775610" [label = <&lt;operator&gt;.assignment, 43<BR/>_tmp_4.CLICK_DESCENDANT = 1> ]
+"30064775612" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_4.GAIN_FOCUS = 2> ]
+"30064775614" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_4.LOOSE_FOCUS = 3> ]
+"30064775616" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_4.DEEP_OPEN = 4> ]
+"68719481336" [label = <IDENTIFIER, 41<BR/>_tmp_4<BR/>{ CLICK_SELF: 0, CLICK_DESCENDANT: 1, GAI...> ]
+"30064775619" [label = <memo, 121<BR/>React.memo(function Element({ name, value, ...> ]
+"30064775623" [label = <&lt;operator&gt;.assignment, 339<BR/>_tmp_16.name = PropTypes.string> ]
+"30064775626" [label = <&lt;operator&gt;.assignment, 340<BR/>_tmp_16.value = PropTypes.any> ]
+"30064775629" [label = <&lt;operator&gt;.assignment, 341<BR/>_tmp_16.computed = PropTypes.bool> ]
+"30064775632" [label = <&lt;operator&gt;.assignment, 342<BR/>_tmp_16.open = PropTypes.bool> ]
+"30064775635" [label = <&lt;operator&gt;.assignment, 343<BR/>_tmp_16.level = PropTypes.number> ]
+"30064775638" [label = <&lt;operator&gt;.assignment, 344<BR/>_tmp_16.treeAdapter = PropTypes.object.isRequired> ]
+"30064775642" [label = <&lt;operator&gt;.assignment, 345<BR/>_tmp_16.autofocus = PropTypes.bool> ]
+"30064775645" [label = <&lt;operator&gt;.assignment, 346<BR/>_tmp_16.parent = PropTypes.oneOfType([ Prop...> ]
+"68719481366" [label = <IDENTIFIER, 338<BR/>_tmp_16<BR/>{ name: PropTypes.string, value: PropTypes....> ]
+"68719481368" [label = <IDENTIFIER, 352<BR/>_tmp_18<BR/>{}> ]
+"30064775659" [label = <memo, 354<BR/>React.memo(function FunctionElement(props) { ...> ]
+"30064775665" [label = <memo, 414<BR/>React.memo(function PrimitiveElement({ name, ...> ]
+"30064775669" [label = <&lt;operator&gt;.assignment, 430<BR/>_tmp_22.name = PropTypes.string> ]
+"30064775672" [label = <&lt;operator&gt;.assignment, 431<BR/>_tmp_22.value = PropTypes.any> ]
+"30064775675" [label = <&lt;operator&gt;.assignment, 432<BR/>_tmp_22.computed = PropTypes.bool> ]
+"68719481384" [label = <IDENTIFIER, 429<BR/>_tmp_22<BR/>{ name: PropTypes.string, value: PropTypes....> ]
+"30064775679" [label = <memo, 435<BR/>React.memo(function PropertyName({name, compute...> ]
+"30064775683" [label = <&lt;operator&gt;.assignment, 447<BR/>_tmp_23.name = PropTypes.string> ]
+"30064775686" [label = <&lt;operator&gt;.assignment, 448<BR/>_tmp_23.computed = PropTypes.bool> ]
+"30064775689" [label = <&lt;operator&gt;.assignment, 449<BR/>_tmp_23.onClick = PropTypes.func> ]
+"68719481395" [label = <IDENTIFIER, 446<BR/>_tmp_23<BR/>{ name: PropTypes.string, computed: PropTyp...> ]
+"68719481290" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;../../../utils/pubsub.js&quot;)> ]
+"30064775096" [label = <require, 4<BR/>require(&quot;../../../utils/pubsub.js&quot;)> ]
+"68719481296" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;../SelectedNodeContext.js&quot;)> ]
+"30064775098" [label = <require, 6<BR/>require(&quot;../SelectedNodeContext.js&quot;)> ]
+"30064775647" [label = <oneOfType, 346<BR/>PropTypes.oneOfType([ PropTypes.object, ...> ]
+"30064775649" [label = <&lt;operator&gt;.assignment, 346<BR/>_tmp_17 = __ecma.Array.factory()> ]
+"30064775651" [label = <, 347<BR/>_tmp_17.push(PropTypes.object)> ]
+"30064775654" [label = <, 348<BR/>_tmp_17.push(PropTypes.array)> ]
+"68719481365" [label = <IDENTIFIER, 346<BR/>_tmp_17<BR/>[ PropTypes.object, PropTypes.array, ]> ]
+  "30064775571" -> "124554051865"  [ label = "DDG: CompactArrayView"] 
+  "30064775571" -> "124554051865"  [ label = "DDG: require(&quot;./CompactArrayView&quot;)"] 
+  "30064775571" -> "124554051865"  [ label = "DDG: var CompactArrayView = require(&quot;./CompactArrayView&quot;)"] 
+  "30064775572" -> "124554051865"  [ label = "DDG: CompactObjectView"] 
+  "30064775572" -> "124554051865"  [ label = "DDG: require(&quot;./CompactObjectView&quot;)"] 
+  "30064775572" -> "124554051865"  [ label = "DDG: var CompactObjectView = require(&quot;./CompactObjectView&quot;)"] 
+  "30064775573" -> "124554051865"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064775573" -> "124554051865"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064775574" -> "124554051865"  [ label = "DDG: publish"] 
+  "30064775574" -> "124554051865"  [ label = "DDG: var publish = require(&quot;../../../utils/pubsub.js&quot;).publish"] 
+  "30064775576" -> "124554051865"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064775576" -> "124554051865"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064775577" -> "124554051865"  [ label = "DDG: useSelectedNode"] 
+  "30064775577" -> "124554051865"  [ label = "DDG: var useSelectedNode = require(&quot;../SelectedNodeContext.js&quot;).useSelectedNode"] 
+  "30064775579" -> "124554051865"  [ label = "DDG: focusNodes"] 
+  "30064775579" -> "124554051865"  [ label = "DDG: require(&quot;../focusNodes.js&quot;)"] 
+  "30064775579" -> "124554051865"  [ label = "DDG: var focusNodes = require(&quot;../focusNodes.js&quot;)"] 
+  "30064775580" -> "124554051865"  [ label = "DDG: cx"] 
+  "30064775580" -> "124554051865"  [ label = "DDG: require(&quot;../../../utils/classnames.js&quot;)"] 
+  "30064775580" -> "124554051865"  [ label = "DDG: var cx = require(&quot;../../../utils/classnames.js&quot;)"] 
+  "30064775581" -> "124554051865"  [ label = "DDG: stringify"] 
+  "30064775101" -> "124554051865"  [ label = "DDG: this"] 
+  "30064775581" -> "124554051865"  [ label = "DDG: require(&quot;../../../utils/stringify&quot;)"] 
+  "30064775581" -> "124554051865"  [ label = "DDG: var stringify = require(&quot;../../../utils/stringify&quot;)"] 
+  "30064775582" -> "124554051865"  [ label = "DDG: usePrevious"] 
+  "30064775582" -> "124554051865"  [ label = "DDG: function usePrevious = function usePrevious(value, initialValue) {
+  const ref = useRef(initialValue);
+  useEffect(() =&gt; {
+    ref.current = value;
+  });
+  return ref.current;
+}"] 
+  "30064775583" -> "124554051865"  [ label = "DDG: transition"] 
+  "30064775583" -> "124554051865"  [ label = "DDG: function transition = function transition(currentState, event) {
+  switch (currentState) {
+    case OPEN_STATES.DEFAULT:
+    case OPEN_STATES.CLOSED:
+      switch (event) {
+        case EVENTS.DEEP_OPEN:
+          return OPEN_STATES.DEEP_OPEN;
+        case EVENTS.GAIN_FOCUS:
+          return OPEN_STATES.FOCUS_OPEN;
+        case EVENTS.LOOSE_FOCUS:
+          return OPEN_STATES.DEFAULT;
+      }
+      break;
+
+    case OPEN_STATES.OPEN:
+      switch (event) {
+        case EVENTS.DEEP_OPEN:
+          return OPEN_STATES.DEEP_OPEN;
+        case EVENTS.GAIN_FOCUS:
+        case EVENTS.LOOSE_FOCUS:
+          return currentState;
+      }
+      break;
+
+    case OPEN_STATES.DEEP_OPEN:
+      return OPEN_STATES.DEEP_OPEN;
+
+    case OPEN_STATES.FOCUS_OPEN:
+      switch (event) {
+        case EVENTS.GAIN_FOCUS:
+          return OPEN_STATES.FOCUS_OPEN;
+        case EVENTS.LOOSE_FOCUS:
+          return OPEN_STATES.DEFAULT;
+        case EVENTS.DEEP_OPEN:
+          return OPEN_STATES.DEEP_OPEN;
+      }
+      break;
+  }
+}"] 
+  "30064775584" -> "124554051865"  [ label = "DDG: useOpenState"] 
+  "30064775584" -> "124554051865"  [ label = "DDG: function useOpenState = function useOpenState(openFromParent, isInRange) {
+  const previousOpenFromParent = usePrevious(openFromParent, false);
+  const wasInRange = usePrevious(isInRange, false);
+  const [ownOpenState, setOwnOpenState] = useState(OPEN_STATES.DEFAULT);
+  const previousOwnOpenState = usePrevious(ownOpenState, OPEN_STATES.DEFAULT);
+  const previousComputedOpenState = useRef(OPEN_STATES.DEFAULT);
+  let computedOpenState = previousComputedOpenState.current;
+
+  if(ownOpenState !== previousOwnOpenState) {
+    computedOpenState = ownOpenState;
+  } else if (wasInRange !== isInRange) {
+    computedOpenState = transition(
+      previousComputedOpenState.current,
+      isInRange &amp;&amp; !wasInRange ? EVENTS.GAIN_FOCUS : EVENTS.LOOSE_FOCUS,
+    );
+    if (!isInRange &amp;&amp; wasInRange &amp;&amp; ownOpenState === OPEN_STATES.CLOSED) {
+      setOwnOpenState(OPEN_STATES.DEFAULT);
+    }
+  } else if (openFromParent &amp;&amp; !previousOpenFromParent) {
+    computedOpenState = transition(
+      previousComputedOpenState.current,
+    ..."] 
+  "30064775585" -> "124554051865"  [ label = "DDG: _tmp_2"] 
+  "30064775585" -> "124554051865"  [ label = "DDG: _tmp_2 = React"] 
+  "30064775586" -> "124554051865"  [ label = "DDG: useState"] 
+  "30064775586" -> "124554051865"  [ label = "DDG: _tmp_2.useState"] 
+  "30064775586" -> "124554051865"  [ label = "DDG: useState = _tmp_2.useState"] 
+  "30064775588" -> "124554051865"  [ label = "DDG: useRef"] 
+  "30064775588" -> "124554051865"  [ label = "DDG: _tmp_2.useRef"] 
+  "30064775588" -> "124554051865"  [ label = "DDG: useRef = _tmp_2.useRef"] 
+  "30064775590" -> "124554051865"  [ label = "DDG: useMemo"] 
+  "30064775590" -> "124554051865"  [ label = "DDG: _tmp_2.useMemo"] 
+  "30064775590" -> "124554051865"  [ label = "DDG: useMemo = _tmp_2.useMemo"] 
+  "30064775592" -> "124554051865"  [ label = "DDG: useCallback"] 
+  "30064775592" -> "124554051865"  [ label = "DDG: _tmp_2.useCallback"] 
+  "30064775592" -> "124554051865"  [ label = "DDG: useCallback = _tmp_2.useCallback"] 
+  "30064775594" -> "124554051865"  [ label = "DDG: useEffect"] 
+  "30064775594" -> "124554051865"  [ label = "DDG: _tmp_2.useEffect"] 
+  "30064775594" -> "124554051865"  [ label = "DDG: useEffect = _tmp_2.useEffect"] 
+  "30064775596" -> "124554051865"  [ label = "DDG: OPEN_STATES"] 
+  "30064775597" -> "124554051865"  [ label = "DDG: _tmp_3.DEFAULT"] 
+  "30064775597" -> "124554051865"  [ label = "DDG: _tmp_3.DEFAULT = 0"] 
+  "30064775599" -> "124554051865"  [ label = "DDG: _tmp_3.OPEN"] 
+  "30064775599" -> "124554051865"  [ label = "DDG: _tmp_3.OPEN = 1"] 
+  "30064775601" -> "124554051865"  [ label = "DDG: _tmp_3.DEEP_OPEN"] 
+  "30064775601" -> "124554051865"  [ label = "DDG: _tmp_3.DEEP_OPEN = 2"] 
+  "30064775603" -> "124554051865"  [ label = "DDG: _tmp_3.FOCUS_OPEN"] 
+  "30064775603" -> "124554051865"  [ label = "DDG: _tmp_3.FOCUS_OPEN = 3"] 
+  "30064775605" -> "124554051865"  [ label = "DDG: _tmp_3.CLOSED"] 
+  "30064775605" -> "124554051865"  [ label = "DDG: _tmp_3.CLOSED = 4"] 
+  "30064775596" -> "124554051865"  [ label = "DDG: const OPEN_STATES = {
+  DEFAULT: 0,
+  OPEN: 1,
+  DEEP_OPEN: 2,
+  FOCUS_OPEN: 3,
+  CLOSED: 4,
+}"] 
+  "30064775607" -> "124554051865"  [ label = "DDG: EVENTS"] 
+  "30064775608" -> "124554051865"  [ label = "DDG: _tmp_4.CLICK_SELF"] 
+  "30064775608" -> "124554051865"  [ label = "DDG: _tmp_4.CLICK_SELF = 0"] 
+  "30064775610" -> "124554051865"  [ label = "DDG: _tmp_4.CLICK_DESCENDANT"] 
+  "30064775610" -> "124554051865"  [ label = "DDG: _tmp_4.CLICK_DESCENDANT = 1"] 
+  "30064775612" -> "124554051865"  [ label = "DDG: _tmp_4.GAIN_FOCUS"] 
+  "30064775612" -> "124554051865"  [ label = "DDG: _tmp_4.GAIN_FOCUS = 2"] 
+  "30064775614" -> "124554051865"  [ label = "DDG: _tmp_4.LOOSE_FOCUS"] 
+  "30064775614" -> "124554051865"  [ label = "DDG: _tmp_4.LOOSE_FOCUS = 3"] 
+  "30064775616" -> "124554051865"  [ label = "DDG: _tmp_4.DEEP_OPEN"] 
+  "30064775616" -> "124554051865"  [ label = "DDG: _tmp_4.DEEP_OPEN = 4"] 
+  "30064775607" -> "124554051865"  [ label = "DDG: const EVENTS = {
+  CLICK_SELF: 0,
+  CLICK_DESCENDANT: 1,
+  GAIN_FOCUS: 2,
+  LOOSE_FOCUS: 3,
+  DEEP_OPEN: 4,
+}"] 
+  "30064775618" -> "124554051865"  [ label = "DDG: Element"] 
+  "30064775618" -> "124554051865"  [ label = "DDG: React.memo(function Element({
+  name,
+  value,
+  computed,
+  open,
+  level,
+  treeAdapter,
+  autofocus,
+  isInRange,
+  hasChildrenInRange,
+  selected,
+  onClick,
+  position,
+}) {
+  const opensByDefault = useMemo(
+    () =&gt; treeAdapter.opensByDefault(value, name),
+    [treeAdapter, value, name],
+  ) || level === 0;
+  const [openState, setOpenState] = useOpenState(
+    open,
+    autofocus &amp;&amp; (isInRange || hasChildrenInRange),
+  );
+  const element = useRef();
+  if (autofocus &amp;&amp; isInRange &amp;&amp; !hasChildrenInRange) {
+    focusNodes('add', element);
+  }
+
+  const isOpen = openState === OPEN_STATES.DEFAULT ?
+    opensByDefault :
+    openState !== OPEN_STATES.CLOSED;
+
+  const onToggleClick = useCallback(
+    event =&gt; {
+      const shiftKey = event.shiftKey;
+      const newOpenState = shiftKey ? OPEN_STATES.DEEP_OPEN : (isOpen ? OPEN_STATES.CLOSED : OPEN_STATES.OPEN);
+      if (onClick) {
+        onClick(newOpenState, true);
+      }
+      setOpenState(newOpenState);
+    },
+    [onClick, isOpen]..."] 
+  "30064775618" -> "124554051865"  [ label = "DDG: const Element = React.memo(function Element({
+  name,
+  value,
+  computed,
+  open,
+  level,
+  treeAdapter,
+  autofocus,
+  isInRange,
+  hasChildrenInRange,
+  selected,
+  onClick,
+  position,
+}) {
+  const opensByDefault = useMemo(
+    () =&gt; treeAdapter.opensByDefault(value, name),
+    [treeAdapter, value, name],
+  ) || level === 0;
+  const [openState, setOpenState] = useOpenState(
+    open,
+    autofocus &amp;&amp; (isInRange || hasChildrenInRange),
+  );
+  const element = useRef();
+  if (autofocus &amp;&amp; isInRange &amp;&amp; !hasChildrenInRange) {
+    focusNodes('add', element);
+  }
+
+  const isOpen = openState === OPEN_STATES.DEFAULT ?
+    opensByDefault :
+    openState !== OPEN_STATES.CLOSED;
+
+  const onToggleClick = useCallback(
+    event =&gt; {
+      const shiftKey = event.shiftKey;
+      const newOpenState = shiftKey ? OPEN_STATES.DEEP_OPEN : (isOpen ? OPEN_STATES.CLOSED : OPEN_STATES.OPEN);
+      if (onClick) {
+        onClick(newOpenState, true);
+      }
+      setOpenState(newOpenState);
+    },
+    [onClic..."] 
+  "30064775623" -> "124554051865"  [ label = "DDG: _tmp_16.name"] 
+  "30064775623" -> "124554051865"  [ label = "DDG: _tmp_16.name = PropTypes.string"] 
+  "30064775626" -> "124554051865"  [ label = "DDG: _tmp_16.value"] 
+  "30064775626" -> "124554051865"  [ label = "DDG: _tmp_16.value = PropTypes.any"] 
+  "30064775629" -> "124554051865"  [ label = "DDG: _tmp_16.computed"] 
+  "30064775629" -> "124554051865"  [ label = "DDG: _tmp_16.computed = PropTypes.bool"] 
+  "30064775632" -> "124554051865"  [ label = "DDG: _tmp_16.open"] 
+  "30064775632" -> "124554051865"  [ label = "DDG: _tmp_16.open = PropTypes.bool"] 
+  "30064775635" -> "124554051865"  [ label = "DDG: _tmp_16.level"] 
+  "30064775635" -> "124554051865"  [ label = "DDG: _tmp_16.level = PropTypes.number"] 
+  "30064775638" -> "124554051865"  [ label = "DDG: _tmp_16.treeAdapter"] 
+  "30064775638" -> "124554051865"  [ label = "DDG: _tmp_16.treeAdapter = PropTypes.object.isRequired"] 
+  "30064775642" -> "124554051865"  [ label = "DDG: _tmp_16.autofocus"] 
+  "30064775642" -> "124554051865"  [ label = "DDG: _tmp_16.autofocus = PropTypes.bool"] 
+  "30064775645" -> "124554051865"  [ label = "DDG: _tmp_16.parent"] 
+  "30064775647" -> "124554051865"  [ label = "DDG: PropTypes"] 
+  "30064775649" -> "124554051865"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064775649" -> "124554051865"  [ label = "DDG: _tmp_17 = __ecma.Array.factory()"] 
+  "30064775651" -> "124554051865"  [ label = "DDG: _tmp_17.push(PropTypes.object)"] 
+  "30064775654" -> "124554051865"  [ label = "DDG: _tmp_17"] 
+  "30064775654" -> "124554051865"  [ label = "DDG: _tmp_17.push(PropTypes.array)"] 
+  "30064775645" -> "124554051865"  [ label = "DDG: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ])"] 
+  "30064775645" -> "124554051865"  [ label = "DDG: _tmp_16.parent = PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ])"] 
+  "30064775621" -> "124554051865"  [ label = "DDG: Element.propTypes = {
+  name: PropTypes.string,
+  value: PropTypes.any,
+  computed: PropTypes.bool,
+  open: PropTypes.bool,
+  level: PropTypes.number,
+  treeAdapter: PropTypes.object.isRequired,
+  autofocus: PropTypes.bool,
+  parent: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]),
+}"] 
+  "30064775657" -> "124554051865"  [ label = "DDG: NOT_COMPUTED"] 
+  "30064775657" -> "124554051865"  [ label = "DDG: const NOT_COMPUTED = {}"] 
+  "30064775658" -> "124554051865"  [ label = "DDG: FunctionElement"] 
+  "30064775658" -> "124554051865"  [ label = "DDG: React.memo(function FunctionElement(props) {
+  const [computedValue, setComputedValue] = useState(NOT_COMPUTED);
+  const [error, setError] = useState(null);
+  const {name, value, parent, computed, treeAdapter} = props;
+
+  if (computedValue !== NOT_COMPUTED) {
+    if (treeAdapter.isArray(computedValue) || treeAdapter.isObject(computedValue)) {
+      return (
+        &lt;ElementContainer
+          {...props}
+          value={computedValue}
+          level={props.level + 1}
+        /&gt;
+      );
+    }
+    return (
+      &lt;PrimitiveElement
+        name={name}
+        value={computedValue}
+        computed={computed}
+      /&gt;
+    );
+  }
+
+  return (
+    &lt;li className=&quot;entry&quot;&gt;
+      {name ? &lt;PropertyName name={name} computed={computed} /&gt; : null}
+      &lt;span className=&quot;value&quot;&gt;
+        &lt;span
+          className=&quot;ge invokeable&quot;
+          title=&quot;Click to invoke function&quot;
+          onClick={() =&gt; {
+            try {
+              const computedValue = value.call(parent);
+              console.log(co..."] 
+  "30064775658" -> "124554051865"  [ label = "DDG: const FunctionElement = React.memo(function FunctionElement(props) {
+  const [computedValue, setComputedValue] = useState(NOT_COMPUTED);
+  const [error, setError] = useState(null);
+  const {name, value, parent, computed, treeAdapter} = props;
+
+  if (computedValue !== NOT_COMPUTED) {
+    if (treeAdapter.isArray(computedValue) || treeAdapter.isObject(computedValue)) {
+      return (
+        &lt;ElementContainer
+          {...props}
+          value={computedValue}
+          level={props.level + 1}
+        /&gt;
+      );
+    }
+    return (
+      &lt;PrimitiveElement
+        name={name}
+        value={computedValue}
+        computed={computed}
+      /&gt;
+    );
+  }
+
+  return (
+    &lt;li className=&quot;entry&quot;&gt;
+      {name ? &lt;PropertyName name={name} computed={computed} /&gt; : null}
+      &lt;span className=&quot;value&quot;&gt;
+        &lt;span
+          className=&quot;ge invokeable&quot;
+          title=&quot;Click to invoke function&quot;
+          onClick={() =&gt; {
+            try {
+              const computedValue = value.call(parent);
+          ..."] 
+  "30064775661" -> "124554051865"  [ label = "DDG: FunctionElement.propTypes"] 
+  "30064775661" -> "124554051865"  [ label = "DDG: FunctionElement.propTypes = Element.propTypes"] 
+  "30064775664" -> "124554051865"  [ label = "DDG: PrimitiveElement"] 
+  "30064775664" -> "124554051865"  [ label = "DDG: React.memo(function PrimitiveElement({
+  name,
+  value,
+  computed,
+}) {
+  return (
+    &lt;li className=&quot;entry&quot;&gt;
+      {name ? &lt;PropertyName name={name} computed={computed} /&gt; : null}
+      &lt;span className=&quot;value&quot;&gt;
+        &lt;span className=&quot;s&quot;&gt;{stringify(value)}&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  );
+})"] 
+  "30064775664" -> "124554051865"  [ label = "DDG: const PrimitiveElement = React.memo(function PrimitiveElement({
+  name,
+  value,
+  computed,
+}) {
+  return (
+    &lt;li className=&quot;entry&quot;&gt;
+      {name ? &lt;PropertyName name={name} computed={computed} /&gt; : null}
+      &lt;span className=&quot;value&quot;&gt;
+        &lt;span className=&quot;s&quot;&gt;{stringify(value)}&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  );
+})"] 
+  "30064775667" -> "124554051865"  [ label = "DDG: PrimitiveElement.propTypes"] 
+  "30064775669" -> "124554051865"  [ label = "DDG: _tmp_22.name"] 
+  "30064775669" -> "124554051865"  [ label = "DDG: _tmp_22.name = PropTypes.string"] 
+  "30064775672" -> "124554051865"  [ label = "DDG: _tmp_22.value"] 
+  "30064775672" -> "124554051865"  [ label = "DDG: PropTypes.any"] 
+  "30064775672" -> "124554051865"  [ label = "DDG: _tmp_22.value = PropTypes.any"] 
+  "30064775675" -> "124554051865"  [ label = "DDG: _tmp_22.computed"] 
+  "30064775675" -> "124554051865"  [ label = "DDG: _tmp_22.computed = PropTypes.bool"] 
+  "30064775667" -> "124554051865"  [ label = "DDG: PrimitiveElement.propTypes = {
+  name: PropTypes.string,
+  value: PropTypes.any,
+  computed: PropTypes.bool,
+}"] 
+  "30064775678" -> "124554051865"  [ label = "DDG: PropertyName"] 
+  "30064775679" -> "124554051865"  [ label = "DDG: React"] 
+  "30064775678" -> "124554051865"  [ label = "DDG: React.memo(function PropertyName({name, computed, onClick}) {
+  return (
+    &lt;span className=&quot;key&quot;&gt;
+      &lt;span className=&quot;name nb&quot; onClick={onClick}&gt;
+        {computed ? &lt;span title=&quot;computed&quot;&gt;*{name}&lt;/span&gt; : name }
+      &lt;/span&gt;
+      &lt;span className=&quot;p&quot;&gt;:&amp;nbsp;&lt;/span&gt;
+    &lt;/span&gt;
+  );
+})"] 
+  "30064775678" -> "124554051865"  [ label = "DDG: const PropertyName = React.memo(function PropertyName({name, computed, onClick}) {
+  return (
+    &lt;span className=&quot;key&quot;&gt;
+      &lt;span className=&quot;name nb&quot; onClick={onClick}&gt;
+        {computed ? &lt;span title=&quot;computed&quot;&gt;*{name}&lt;/span&gt; : name }
+      &lt;/span&gt;
+      &lt;span className=&quot;p&quot;&gt;:&amp;nbsp;&lt;/span&gt;
+    &lt;/span&gt;
+  );
+})"] 
+  "30064775681" -> "124554051865"  [ label = "DDG: PropertyName.propTypes"] 
+  "30064775683" -> "124554051865"  [ label = "DDG: _tmp_23.name"] 
+  "30064775683" -> "124554051865"  [ label = "DDG: PropTypes.string"] 
+  "30064775683" -> "124554051865"  [ label = "DDG: _tmp_23.name = PropTypes.string"] 
+  "30064775686" -> "124554051865"  [ label = "DDG: _tmp_23.computed"] 
+  "30064775686" -> "124554051865"  [ label = "DDG: PropTypes.bool"] 
+  "30064775686" -> "124554051865"  [ label = "DDG: _tmp_23.computed = PropTypes.bool"] 
+  "30064775689" -> "124554051865"  [ label = "DDG: _tmp_23.onClick"] 
+  "30064775689" -> "124554051865"  [ label = "DDG: PropTypes.func"] 
+  "30064775689" -> "124554051865"  [ label = "DDG: _tmp_23.onClick = PropTypes.func"] 
+  "30064775681" -> "124554051865"  [ label = "DDG: PropertyName.propTypes = {
+  name: PropTypes.string,
+  computed: PropTypes.bool,
+  onClick: PropTypes.func,
+}"] 
+  "30064775692" -> "124554051865"  [ label = "DDG: function ElementContainer = function ElementContainer(props) {
+  const [selected, setSelected] = useState(false);
+  const setSelectedNode = useSelectedNode();
+  const isInRange = props.treeAdapter.isInRange(props.value, props.name, props.position);
+  const onClick = useCallback(
+    (state, own) =&gt; {
+      if (own) {
+        if (state === OPEN_STATES.CLOSED) {
+          setSelectedNode(null);
+          setSelected(false);
+        } else {
+          setSelectedNode(props.value, () =&gt; setSelected(false));
+          setSelected(true);
+        }
+      }
+      if (props.onClick) {
+        props.onClick(state);
+      }
+    },
+    [props.value, props.onClick],
+  );
+
+  return (
+    &lt;Element
+      {...props}
+      selected={selected}
+      hasChildrenInRange={
+        props.treeAdapter.hasChildrenInRange(props.value, props.name, props.position)
+      }
+      isInRange={isInRange}
+      onClick={onClick}
+    /&gt;
+  );
+}"] 
+  "30064775693" -> "124554051865"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064775693" -> "124554051865"  [ label = "DDG: ElementContainer"] 
+  "30064775693" -> "124554051865"  [ label = "DDG: exports[&quot;default&quot;] = ElementContainer"] 
+  "30064775695" -> "124554051865"  [ label = "DDG: ElementContainer.propTypes"] 
+  "30064775695" -> "124554051865"  [ label = "DDG: Element.propTypes"] 
+  "30064775695" -> "124554051865"  [ label = "DDG: ElementContainer.propTypes = Element.propTypes"] 
+  "107374182657" -> "111669150195"  [ label = "DDG: "] 
+  "30064775093" -> "30064775571"  [ label = "DDG: this"] 
+  "30064775093" -> "30064775571"  [ label = "DDG: &quot;./CompactArrayView&quot;"] 
+  "30064775094" -> "30064775572"  [ label = "DDG: this"] 
+  "30064775094" -> "30064775572"  [ label = "DDG: &quot;./CompactObjectView&quot;"] 
+  "30064775095" -> "30064775573"  [ label = "DDG: this"] 
+  "30064775095" -> "30064775573"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064775097" -> "30064775576"  [ label = "DDG: this"] 
+  "30064775097" -> "30064775576"  [ label = "DDG: &quot;react&quot;"] 
+  "30064775099" -> "30064775579"  [ label = "DDG: this"] 
+  "30064775099" -> "30064775579"  [ label = "DDG: &quot;../focusNodes.js&quot;"] 
+  "30064775100" -> "30064775580"  [ label = "DDG: this"] 
+  "30064775100" -> "30064775580"  [ label = "DDG: &quot;../../../utils/classnames.js&quot;"] 
+  "30064775101" -> "30064775581"  [ label = "DDG: this"] 
+  "30064775101" -> "30064775581"  [ label = "DDG: &quot;../../../utils/stringify&quot;"] 
+  "107374182657" -> "30064775582"  [ label = "DDG: "] 
+  "107374182657" -> "30064775583"  [ label = "DDG: "] 
+  "107374182657" -> "30064775584"  [ label = "DDG: "] 
+  "107374182657" -> "25769804438"  [ label = "DDG: "] 
+  "30064775597" -> "30064775596"  [ label = "DDG: _tmp_3.DEFAULT"] 
+  "30064775599" -> "30064775596"  [ label = "DDG: _tmp_3.OPEN"] 
+  "30064775601" -> "30064775596"  [ label = "DDG: _tmp_3.DEEP_OPEN"] 
+  "30064775603" -> "30064775596"  [ label = "DDG: _tmp_3.FOCUS_OPEN"] 
+  "30064775605" -> "30064775596"  [ label = "DDG: _tmp_3.CLOSED"] 
+  "107374182657" -> "30064775596"  [ label = "DDG: "] 
+  "30064775608" -> "30064775607"  [ label = "DDG: _tmp_4.CLICK_SELF"] 
+  "30064775610" -> "30064775607"  [ label = "DDG: _tmp_4.CLICK_DESCENDANT"] 
+  "30064775612" -> "30064775607"  [ label = "DDG: _tmp_4.GAIN_FOCUS"] 
+  "30064775614" -> "30064775607"  [ label = "DDG: _tmp_4.LOOSE_FOCUS"] 
+  "30064775616" -> "30064775607"  [ label = "DDG: _tmp_4.DEEP_OPEN"] 
+  "107374182657" -> "30064775607"  [ label = "DDG: "] 
+  "30064775619" -> "30064775618"  [ label = "DDG: React"] 
+  "30064775619" -> "30064775618"  [ label = "DDG: Element"] 
+  "30064775619" -> "30064775618"  [ label = "DDG: &lt;lambda&gt;11"] 
+  "30064775623" -> "30064775621"  [ label = "DDG: _tmp_16.name"] 
+  "30064775626" -> "30064775621"  [ label = "DDG: _tmp_16.value"] 
+  "30064775629" -> "30064775621"  [ label = "DDG: _tmp_16.computed"] 
+  "30064775632" -> "30064775621"  [ label = "DDG: _tmp_16.open"] 
+  "30064775635" -> "30064775621"  [ label = "DDG: _tmp_16.level"] 
+  "30064775638" -> "30064775621"  [ label = "DDG: _tmp_16.treeAdapter"] 
+  "30064775642" -> "30064775621"  [ label = "DDG: _tmp_16.autofocus"] 
+  "30064775645" -> "30064775621"  [ label = "DDG: _tmp_16.parent"] 
+  "107374182657" -> "30064775621"  [ label = "DDG: "] 
+  "107374182657" -> "30064775657"  [ label = "DDG: "] 
+  "30064775659" -> "30064775658"  [ label = "DDG: React"] 
+  "30064775659" -> "30064775658"  [ label = "DDG: FunctionElement"] 
+  "30064775618" -> "30064775661"  [ label = "DDG: Element"] 
+  "30064775621" -> "30064775661"  [ label = "DDG: Element.propTypes"] 
+  "30064775665" -> "30064775664"  [ label = "DDG: React"] 
+  "30064775665" -> "30064775664"  [ label = "DDG: PrimitiveElement"] 
+  "30064775669" -> "30064775667"  [ label = "DDG: _tmp_22.name"] 
+  "30064775672" -> "30064775667"  [ label = "DDG: _tmp_22.value"] 
+  "30064775675" -> "30064775667"  [ label = "DDG: _tmp_22.computed"] 
+  "107374182657" -> "30064775667"  [ label = "DDG: "] 
+  "30064775679" -> "30064775678"  [ label = "DDG: React"] 
+  "30064775679" -> "30064775678"  [ label = "DDG: PropertyName"] 
+  "30064775683" -> "30064775681"  [ label = "DDG: _tmp_23.name"] 
+  "30064775686" -> "30064775681"  [ label = "DDG: _tmp_23.computed"] 
+  "30064775689" -> "30064775681"  [ label = "DDG: _tmp_23.onClick"] 
+  "107374182657" -> "30064775681"  [ label = "DDG: "] 
+  "107374182657" -> "25769804500"  [ label = "DDG: "] 
+  "30064775618" -> "30064775695"  [ label = "DDG: Element"] 
+  "30064775621" -> "30064775695"  [ label = "DDG: Element.propTypes"] 
+  "30064775576" -> "30064775585"  [ label = "DDG: React"] 
+  "107374182657" -> "30064775585"  [ label = "DDG: "] 
+  "30064775585" -> "30064775586"  [ label = "DDG: _tmp_2"] 
+  "30064775585" -> "30064775588"  [ label = "DDG: _tmp_2"] 
+  "30064775585" -> "30064775590"  [ label = "DDG: _tmp_2"] 
+  "30064775585" -> "30064775592"  [ label = "DDG: _tmp_2"] 
+  "30064775585" -> "30064775594"  [ label = "DDG: _tmp_2"] 
+  "107374182657" -> "68719481322"  [ label = "DDG: "] 
+  "107374182657" -> "30064775692"  [ label = "DDG: "] 
+  "30064775692" -> "30064775693"  [ label = "DDG: ElementContainer"] 
+  "107374182657" -> "30064775693"  [ label = "DDG: "] 
+  "107374182657" -> "68719481281"  [ label = "DDG: "] 
+  "111669150195" -> "30064775093"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775093"  [ label = "DDG: "] 
+  "107374182657" -> "68719481284"  [ label = "DDG: "] 
+  "30064775093" -> "30064775094"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775094"  [ label = "DDG: "] 
+  "107374182657" -> "68719481287"  [ label = "DDG: "] 
+  "30064775094" -> "30064775095"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775095"  [ label = "DDG: "] 
+  "107374182657" -> "68719481293"  [ label = "DDG: "] 
+  "30064775096" -> "30064775097"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775097"  [ label = "DDG: "] 
+  "107374182657" -> "68719481299"  [ label = "DDG: "] 
+  "30064775098" -> "30064775099"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775099"  [ label = "DDG: "] 
+  "107374182657" -> "68719481302"  [ label = "DDG: "] 
+  "30064775099" -> "30064775100"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775100"  [ label = "DDG: "] 
+  "107374182657" -> "68719481305"  [ label = "DDG: "] 
+  "30064775100" -> "30064775101"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775101"  [ label = "DDG: "] 
+  "107374182657" -> "30064775597"  [ label = "DDG: "] 
+  "107374182657" -> "30064775599"  [ label = "DDG: "] 
+  "107374182657" -> "30064775601"  [ label = "DDG: "] 
+  "107374182657" -> "30064775603"  [ label = "DDG: "] 
+  "107374182657" -> "30064775605"  [ label = "DDG: "] 
+  "107374182657" -> "68719481329"  [ label = "DDG: "] 
+  "107374182657" -> "30064775608"  [ label = "DDG: "] 
+  "107374182657" -> "30064775610"  [ label = "DDG: "] 
+  "107374182657" -> "30064775612"  [ label = "DDG: "] 
+  "107374182657" -> "30064775614"  [ label = "DDG: "] 
+  "107374182657" -> "30064775616"  [ label = "DDG: "] 
+  "107374182657" -> "68719481336"  [ label = "DDG: "] 
+  "107374182657" -> "30064775619"  [ label = "DDG: "] 
+  "30064775576" -> "30064775619"  [ label = "DDG: React"] 
+  "30064775573" -> "30064775623"  [ label = "DDG: PropTypes"] 
+  "30064775573" -> "30064775626"  [ label = "DDG: PropTypes"] 
+  "30064775573" -> "30064775629"  [ label = "DDG: PropTypes"] 
+  "30064775573" -> "30064775632"  [ label = "DDG: PropTypes"] 
+  "30064775573" -> "30064775635"  [ label = "DDG: PropTypes"] 
+  "30064775573" -> "30064775642"  [ label = "DDG: PropTypes"] 
+  "30064775647" -> "30064775645"  [ label = "DDG: PropTypes"] 
+  "30064775647" -> "30064775645"  [ label = "DDG: [
+    PropTypes.object,
+    PropTypes.array,
+  ]"] 
+  "30064775647" -> "30064775645"  [ label = "DDG: "] 
+  "107374182657" -> "68719481366"  [ label = "DDG: "] 
+  "107374182657" -> "68719481368"  [ label = "DDG: "] 
+  "30064775619" -> "30064775659"  [ label = "DDG: React"] 
+  "107374182657" -> "30064775659"  [ label = "DDG: "] 
+  "30064775659" -> "30064775665"  [ label = "DDG: React"] 
+  "107374182657" -> "30064775665"  [ label = "DDG: "] 
+  "30064775647" -> "30064775669"  [ label = "DDG: PropTypes"] 
+  "30064775647" -> "30064775672"  [ label = "DDG: PropTypes"] 
+  "30064775647" -> "30064775675"  [ label = "DDG: PropTypes"] 
+  "107374182657" -> "68719481384"  [ label = "DDG: "] 
+  "30064775665" -> "30064775679"  [ label = "DDG: React"] 
+  "107374182657" -> "30064775679"  [ label = "DDG: "] 
+  "30064775647" -> "30064775683"  [ label = "DDG: PropTypes"] 
+  "30064775647" -> "30064775686"  [ label = "DDG: PropTypes"] 
+  "30064775647" -> "30064775689"  [ label = "DDG: PropTypes"] 
+  "107374182657" -> "68719481395"  [ label = "DDG: "] 
+  "107374182657" -> "68719481290"  [ label = "DDG: "] 
+  "30064775095" -> "30064775096"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775096"  [ label = "DDG: "] 
+  "107374182657" -> "68719481296"  [ label = "DDG: "] 
+  "30064775097" -> "30064775098"  [ label = "DDG: this"] 
+  "107374182657" -> "30064775098"  [ label = "DDG: "] 
+  "30064775573" -> "30064775647"  [ label = "DDG: PropTypes"] 
+  "30064775651" -> "30064775647"  [ label = "DDG: PropTypes.object"] 
+  "30064775654" -> "30064775647"  [ label = "DDG: PropTypes.array"] 
+  "107374182657" -> "30064775647"  [ label = "DDG: "] 
+  "30064775654" -> "30064775647"  [ label = "DDG: _tmp_17"] 
+  "107374182657" -> "30064775649"  [ label = "DDG: "] 
+  "107374182657" -> "68719481365"  [ label = "DDG: "] 
+  "30064775649" -> "30064775651"  [ label = "DDG: _tmp_17"] 
+  "107374182657" -> "30064775651"  [ label = "DDG: "] 
+  "30064775573" -> "30064775651"  [ label = "DDG: PropTypes"] 
+  "30064775651" -> "30064775654"  [ label = "DDG: _tmp_17"] 
+  "107374182657" -> "30064775654"  [ label = "DDG: "] 
+  "30064775573" -> "30064775654"  [ label = "DDG: PropTypes"] 
+}

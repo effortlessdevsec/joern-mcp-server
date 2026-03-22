@@ -1,0 +1,52 @@
+digraph "renderSettings" {  
+node [shape="rect"];  
+"107374183071" [label = <METHOD, 73<BR/>renderSettings> ]
+"124554052254" [label = <METHOD_RETURN, 73<BR/>ANY> ]
+"111669151012" [label = <PARAM, 73<BR/>this> ]
+"111669151013" [label = <PARAM, 73<BR/>parserSettings> ]
+"111669151014" [label = <PARAM, 73<BR/>onChange> ]
+"141733921272" [label = <RETURN, 74<BR/>return ( &lt;div&gt; &lt;p&gt; &lt;a ...> ]
+"154618823971" [label = <TEMPLATE_DOM, 75<BR/>&lt;div&gt; &lt;p&gt; &lt;a href...> ]
+"30064781785" [label = <call, 83<BR/>defaultParserInterface.renderSettings.call( ...> ]
+"90194315479" [label = <LITERAL, 78<BR/>&quot;https://github.com/eslint/espree#usage&quot;<BR/>href=&quot;https://github.com/eslint/espree#usage&quot;> ]
+"90194315480" [label = <LITERAL, 79<BR/>&quot;_blank&quot;<BR/>target=&quot;_blank&quot;> ]
+"90194315481" [label = <LITERAL, 79<BR/>&quot;noopener noreferrer&quot;<BR/>rel=&quot;noopener noreferrer&quot;> ]
+"30064781787" [label = <&lt;operator&gt;.assignment, 83<BR/>(_tmp_15 = defaultParserInterface.renderSettings)> ]
+  "141733921272" -> "124554052254"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064781787" -> "124554052254"  [ label = "DDG: defaultParserInterface.renderSettings"] 
+  "30064781785" -> "124554052254"  [ label = "DDG: _tmp_15"] 
+  "30064781785" -> "124554052254"  [ label = "DDG: this"] 
+  "30064781785" -> "124554052254"  [ label = "DDG: parserSettings"] 
+  "30064781785" -> "124554052254"  [ label = "DDG: onChange"] 
+  "30064781785" -> "124554052254"  [ label = "DDG: defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )"] 
+  "107374183071" -> "111669151012"  [ label = "DDG: "] 
+  "107374183071" -> "111669151013"  [ label = "DDG: "] 
+  "107374183071" -> "111669151014"  [ label = "DDG: "] 
+  "154618823971" -> "141733921272"  [ label = "DDG: &lt;div&gt;
+        &lt;p&gt;
+          &lt;a
+            href=&quot;https://github.com/eslint/espree#usage&quot;
+            target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+            Option descriptions
+          &lt;/a&gt;
+        &lt;/p&gt;
+        {defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )}
+      &lt;/div&gt;"] 
+  "107374183071" -> "141733921272"  [ label = "DDG: "] 
+  "30064781787" -> "30064781785"  [ label = "DDG: _tmp_15"] 
+  "107374183071" -> "30064781785"  [ label = "DDG: "] 
+  "111669151012" -> "30064781785"  [ label = "DDG: this"] 
+  "111669151013" -> "30064781785"  [ label = "DDG: parserSettings"] 
+  "111669151014" -> "30064781785"  [ label = "DDG: onChange"] 
+  "107374183071" -> "90194315479"  [ label = "DDG: "] 
+  "107374183071" -> "90194315480"  [ label = "DDG: "] 
+  "107374183071" -> "90194315481"  [ label = "DDG: "] 
+}

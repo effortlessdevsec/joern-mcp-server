@@ -1,0 +1,33 @@
+digraph "mapDispatchToProps" {  
+node [shape="rect"];  
+"107374182702" [label = <METHOD, 14<BR/>mapDispatchToProps> ]
+"124554051886" [label = <METHOD_RETURN, 14<BR/>{ onSave: (parser: ANY, newSettings: ANY) =&gt; ANY; onWantToClose: () =&gt; ANY; }> ]
+"111669150233" [label = <PARAM, 14<BR/>this> ]
+"111669150234" [label = <PARAM, 14<BR/>dispatch> ]
+"141733920973" [label = <RETURN, 15<BR/>return { onSave: (parser, newSettings) =&gt; d...> ]
+"25769804538" [label = <BLOCK, 15<BR/>{ onSave: (parser, newSettings) =&gt; dispatch...> ]
+"30064775867" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_1.onSave = &lt;lambda&gt;0> ]
+"30064775869" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_1.onWantToClose = &lt;lambda&gt;1> ]
+"68719481616" [label = <IDENTIFIER, 15<BR/>_tmp_1<BR/>{ onSave: (parser, newSettings) =&gt; dispatch...> ]
+  "141733920973" -> "124554051886"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150233" -> "124554051886"  [ label = "DDG: this"] 
+  "111669150234" -> "124554051886"  [ label = "DDG: dispatch"] 
+  "30064775867" -> "124554051886"  [ label = "DDG: _tmp_1.onSave"] 
+  "30064775867" -> "124554051886"  [ label = "DDG: _tmp_1.onSave = &lt;lambda&gt;0"] 
+  "30064775869" -> "124554051886"  [ label = "DDG: _tmp_1.onWantToClose"] 
+  "30064775869" -> "124554051886"  [ label = "DDG: _tmp_1.onWantToClose = &lt;lambda&gt;1"] 
+  "107374182702" -> "111669150233"  [ label = "DDG: "] 
+  "107374182702" -> "111669150234"  [ label = "DDG: "] 
+  "25769804538" -> "141733920973"  [ label = "DDG: "] 
+  "25769804538" -> "141733920973"  [ label = "DDG: {
+    onSave: (parser, newSettings) =&gt; dispatch(setParserSettings(newSettings)),
+    onWantToClose: () =&gt; dispatch(closeSettingsDialog()),
+  }"] 
+  "107374182702" -> "141733920973"  [ label = "DDG: "] 
+  "30064775867" -> "25769804538"  [ label = "DDG: _tmp_1.onSave"] 
+  "30064775869" -> "25769804538"  [ label = "DDG: _tmp_1.onWantToClose"] 
+  "107374182702" -> "25769804538"  [ label = "DDG: "] 
+  "107374182702" -> "30064775867"  [ label = "DDG: "] 
+  "107374182702" -> "30064775869"  [ label = "DDG: "] 
+  "107374182702" -> "68719481616"  [ label = "DDG: "] 
+}

@@ -1,0 +1,4 @@
+digraph "showType" {  
+node [shape="rect"];  
+
+}

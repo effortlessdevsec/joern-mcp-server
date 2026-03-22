@@ -1,0 +1,14 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182658" [label = <METHOD, 16<BR/>&lt;lambda&gt;0> ]
+"124554051841" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150144" [label = <PARAM, 16<BR/>this> ]
+"30064775102" [label = <&lt;operator&gt;.assignment, 17<BR/>ref.current = value> ]
+  "111669150144" -> "124554051841"  [ label = "DDG: this"] 
+  "30064775102" -> "124554051841"  [ label = "DDG: ref.current"] 
+  "30064775102" -> "124554051841"  [ label = "DDG: value"] 
+  "30064775102" -> "124554051841"  [ label = "DDG: ref.current = value"] 
+  "107374182658" -> "111669150144"  [ label = "DDG: "] 
+  "111669150146" -> "30064775102"  [ label = "DDG: value"] 
+  "107374182658" -> "30064775102"  [ label = "DDG: "] 
+}

@@ -1,0 +1,20 @@
+digraph "createSelector" {  
+node [shape="rect"];  
+"107374183709" [label = <METHOD, 6<BR/>createSelector> ]
+"124554052892" [label = <METHOD_RETURN, 6<BR/>(state: ANY) =&gt; ANY> ]
+"111669152324" [label = <PARAM, 6<BR/>this> ]
+"111669152325" [label = <PARAM, 6<BR/>deps> ]
+"111669152326" [label = <PARAM, 6<BR/>f> ]
+"141733921798" [label = <RETURN, 7<BR/>return function(state) { return f.apply(thi...> ]
+"120259085280" [label = <METHOD_REF, 7<BR/>&lt;lambda&gt;0<BR/>return function(state) { return f.apply(thi...> ]
+  "141733921798" -> "124554052892"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152324" -> "124554052892"  [ label = "DDG: this"] 
+  "111669152325" -> "124554052892"  [ label = "DDG: deps"] 
+  "111669152326" -> "124554052892"  [ label = "DDG: f"] 
+  "107374183709" -> "111669152324"  [ label = "DDG: "] 
+  "107374183709" -> "111669152325"  [ label = "DDG: "] 
+  "107374183709" -> "111669152326"  [ label = "DDG: "] 
+  "120259085280" -> "141733921798"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "107374183709" -> "141733921798"  [ label = "DDG: "] 
+  "107374183709" -> "120259085280"  [ label = "DDG: "] 
+}

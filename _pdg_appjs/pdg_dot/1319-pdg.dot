@@ -1,0 +1,22 @@
+digraph "getParser" {  
+node [shape="rect"];  
+"107374183719" [label = <METHOD, 52<BR/>getParser> ]
+"124554052902" [label = <METHOD_RETURN, 52<BR/>astexplorer/website/src/parsers/index.js::program:getParserByID:&lt;returnValue&gt;> ]
+"111669152345" [label = <PARAM, 52<BR/>this> ]
+"111669152346" [label = <PARAM, 52<BR/>state> ]
+"141733921808" [label = <RETURN, 53<BR/>return getParserByID(state.workbench.parser)> ]
+"30064791469" [label = <getParserByID, 53<BR/>getParserByID(state.workbench.parser)> ]
+"68719496996" [label = <IDENTIFIER, 53<BR/>getParserByID<BR/>getParserByID(state.workbench.parser)> ]
+  "141733921808" -> "124554052902"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152346" -> "124554052902"  [ label = "DDG: state"] 
+  "30064791469" -> "124554052902"  [ label = "DDG: this"] 
+  "30064791469" -> "124554052902"  [ label = "DDG: state.workbench.parser"] 
+  "30064791469" -> "124554052902"  [ label = "DDG: getParserByID(state.workbench.parser)"] 
+  "107374183719" -> "111669152345"  [ label = "DDG: "] 
+  "107374183719" -> "111669152346"  [ label = "DDG: "] 
+  "30064791469" -> "141733921808"  [ label = "DDG: getParserByID(state.workbench.parser)"] 
+  "30064791529" -> "68719496996"  [ label = "DDG: getParserByID"] 
+  "107374183719" -> "68719496996"  [ label = "DDG: "] 
+  "111669152345" -> "30064791469"  [ label = "DDG: this"] 
+  "107374183719" -> "30064791469"  [ label = "DDG: "] 
+}

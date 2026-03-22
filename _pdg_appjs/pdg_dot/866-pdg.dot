@@ -1,0 +1,30 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183266" [label = <METHOD, 146<BR/>getDefaultOptions> ]
+"124554052449" [label = <METHOD_RETURN, 146<BR/>{ experimentalDecorators: __ecma.Boolean; jsx: __ecma.Boolean; }> ]
+"111669151442" [label = <PARAM, 146<BR/>this> ]
+"141733921406" [label = <RETURN, 147<BR/>return { experimentalDecorators: true, ...> ]
+"25769806162" [label = <BLOCK, 147<BR/>{ experimentalDecorators: true, jsx...> ]
+"30064785312" [label = <&lt;operator&gt;.assignment, 148<BR/>_tmp_21.experimentalDecorators = true> ]
+"30064785314" [label = <&lt;operator&gt;.assignment, 149<BR/>_tmp_21.jsx = true> ]
+"68719490904" [label = <IDENTIFIER, 147<BR/>_tmp_21<BR/>{ experimentalDecorators: true, jsx...> ]
+  "141733921406" -> "124554052449"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151442" -> "124554052449"  [ label = "DDG: this"] 
+  "30064785312" -> "124554052449"  [ label = "DDG: _tmp_21.experimentalDecorators"] 
+  "30064785312" -> "124554052449"  [ label = "DDG: _tmp_21.experimentalDecorators = true"] 
+  "30064785314" -> "124554052449"  [ label = "DDG: _tmp_21.jsx"] 
+  "30064785314" -> "124554052449"  [ label = "DDG: _tmp_21.jsx = true"] 
+  "107374183266" -> "111669151442"  [ label = "DDG: "] 
+  "25769806162" -> "141733921406"  [ label = "DDG: "] 
+  "25769806162" -> "141733921406"  [ label = "DDG: {
+      experimentalDecorators: true,
+      jsx: true,
+    }"] 
+  "107374183266" -> "141733921406"  [ label = "DDG: "] 
+  "30064785312" -> "25769806162"  [ label = "DDG: _tmp_21.experimentalDecorators"] 
+  "30064785314" -> "25769806162"  [ label = "DDG: _tmp_21.jsx"] 
+  "107374183266" -> "25769806162"  [ label = "DDG: "] 
+  "107374183266" -> "30064785312"  [ label = "DDG: "] 
+  "107374183266" -> "30064785314"  [ label = "DDG: "] 
+  "107374183266" -> "68719490904"  [ label = "DDG: "] 
+}

@@ -1,0 +1,56 @@
+digraph "buttons" {  
+node [shape="rect"];  
+"107374182468" [label = <METHOD, 46<BR/>buttons> ]
+"124554051650" [label = <METHOD_RETURN, 46<BR/>ANY> ]
+"111669149837" [label = <PARAM, 46<BR/>this> ]
+"111669149838" [label = <PARAM, 46<BR/>cls> ]
+"111669149839" [label = <PARAM, 46<BR/>index> ]
+"141733920837" [label = <RETURN, 47<BR/>&lt;button key={index} value={inde...> ]
+"154618822721" [label = <TEMPLATE_DOM, 47<BR/>&lt;button key={index} value={inde...> ]
+"68719478075" [label = <IDENTIFIER, 48<BR/>index<BR/>{index}> ]
+"68719478076" [label = <IDENTIFIER, 49<BR/>index<BR/>{index}> ]
+"120259084338" [label = <METHOD_REF, 50<BR/>&lt;lambda&gt;1<BR/>{event =&gt; setSelectedOutput(event.target.value)}> ]
+"30064772337" [label = <cx, 51<BR/>cx({ active: selectedOutput == index,...> ]
+"68719478077" [label = <IDENTIFIER, 51<BR/>cx<BR/>cx({ active: selectedOutput == index,...> ]
+"30064772338" [label = <&lt;operator&gt;.assignment, 52<BR/>_tmp_6.active = selectedOutput == index> ]
+"68719478082" [label = <IDENTIFIER, 51<BR/>_tmp_6<BR/>{ active: selectedOutput == index, ...> ]
+"30064772340" [label = <&lt;operator&gt;.equals, 52<BR/>selectedOutput == index> ]
+  "141733920837" -> "124554051650"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149838" -> "124554051650"  [ label = "DDG: cls"] 
+  "30064772337" -> "124554051650"  [ label = "DDG: this"] 
+  "30064772338" -> "124554051650"  [ label = "DDG: _tmp_6.active"] 
+  "30064772340" -> "124554051650"  [ label = "DDG: selectedOutput"] 
+  "30064772340" -> "124554051650"  [ label = "DDG: index"] 
+  "30064772338" -> "124554051650"  [ label = "DDG: selectedOutput == index"] 
+  "30064772338" -> "124554051650"  [ label = "DDG: _tmp_6.active = selectedOutput == index"] 
+  "30064772337" -> "124554051650"  [ label = "DDG: cx({
+          active: selectedOutput == index,
+        })"] 
+  "107374182468" -> "111669149837"  [ label = "DDG: "] 
+  "107374182468" -> "111669149838"  [ label = "DDG: "] 
+  "107374182468" -> "111669149839"  [ label = "DDG: "] 
+  "154618822721" -> "141733920837"  [ label = "DDG: &lt;button
+        key={index}
+        value={index}
+        onClick={event =&gt; setSelectedOutput(event.target.value)}
+        className={cx({
+          active: selectedOutput == index,
+        })}&gt;
+        {cls.name}
+      &lt;/button&gt;"] 
+  "107374182468" -> "141733920837"  [ label = "DDG: "] 
+  "107374182468" -> "68719478075"  [ label = "DDG: "] 
+  "107374182468" -> "68719478076"  [ label = "DDG: "] 
+  "107374182468" -> "120259084338"  [ label = "DDG: "] 
+  "30064772397" -> "68719478077"  [ label = "DDG: cx"] 
+  "107374182468" -> "68719478077"  [ label = "DDG: "] 
+  "111669149837" -> "30064772337"  [ label = "DDG: this"] 
+  "107374182468" -> "30064772337"  [ label = "DDG: "] 
+  "30064772338" -> "30064772337"  [ label = "DDG: _tmp_6.active"] 
+  "30064772340" -> "30064772338"  [ label = "DDG: selectedOutput"] 
+  "30064772340" -> "30064772338"  [ label = "DDG: index"] 
+  "107374182468" -> "68719478082"  [ label = "DDG: "] 
+  "30064772348" -> "30064772340"  [ label = "DDG: selectedOutput"] 
+  "107374182468" -> "30064772340"  [ label = "DDG: "] 
+  "111669149839" -> "30064772340"  [ label = "DDG: index"] 
+}

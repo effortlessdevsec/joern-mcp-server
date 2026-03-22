@@ -1,0 +1,36 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183171" [label = <METHOD, 15<BR/>loadTransformer> ]
+"124554052354" [label = <METHOD_RETURN, 15<BR/>void> ]
+"111669151218" [label = <PARAM, 15<BR/>this> ]
+"111669151219" [label = <PARAM, 15<BR/>callback> ]
+"30064783719" [label = <require, 16<BR/>require( ['../../../transpilers/babel', '...> ]
+"68719489299" [label = <IDENTIFIER, 16<BR/>require<BR/>require( ['../../../transpilers/babel', '...> ]
+"30064783720" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064783722" [label = <, 17<BR/>_tmp_1.push(&quot;../../../transpilers/babel&quot;)> ]
+"30064783724" [label = <, 17<BR/>_tmp_1.push(&quot;babel5&quot;)> ]
+"68719489306" [label = <IDENTIFIER, 17<BR/>_tmp_1<BR/>['../../../transpilers/babel', 'babel5']> ]
+  "111669151219" -> "124554052354"  [ label = "DDG: callback"] 
+  "30064783719" -> "124554052354"  [ label = "DDG: this"] 
+  "30064783720" -> "124554052354"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064783720" -> "124554052354"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064783722" -> "124554052354"  [ label = "DDG: _tmp_1.push(&quot;../../../transpilers/babel&quot;)"] 
+  "30064783724" -> "124554052354"  [ label = "DDG: _tmp_1"] 
+  "30064783724" -> "124554052354"  [ label = "DDG: _tmp_1.push(&quot;babel5&quot;)"] 
+  "30064783719" -> "124554052354"  [ label = "DDG: require(
+      ['../../../transpilers/babel', 'babel5'],
+      (transpile, babel) =&gt; callback({ transpile: transpile.default, babel: babel }),
+    )"] 
+  "107374183171" -> "111669151218"  [ label = "DDG: "] 
+  "107374183171" -> "111669151219"  [ label = "DDG: "] 
+  "107374183171" -> "68719489299"  [ label = "DDG: "] 
+  "111669151218" -> "30064783719"  [ label = "DDG: this"] 
+  "107374183171" -> "30064783719"  [ label = "DDG: "] 
+  "30064783724" -> "30064783719"  [ label = "DDG: _tmp_1"] 
+  "107374183171" -> "30064783720"  [ label = "DDG: "] 
+  "107374183171" -> "68719489306"  [ label = "DDG: "] 
+  "30064783720" -> "30064783722"  [ label = "DDG: _tmp_1"] 
+  "107374183171" -> "30064783722"  [ label = "DDG: "] 
+  "30064783722" -> "30064783724"  [ label = "DDG: _tmp_1"] 
+  "107374183171" -> "30064783724"  [ label = "DDG: "] 
+}

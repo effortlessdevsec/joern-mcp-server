@@ -1,0 +1,22 @@
+digraph "getNodeName" {  
+node [shape="rect"];  
+"107374182990" [label = <METHOD, 37<BR/>getNodeName> ]
+"124554052173" [label = <METHOD_RETURN, 37<BR/>ANY> ]
+"111669150845" [label = <PARAM, 37<BR/>this> ]
+"111669150846" [label = <PARAM, 37<BR/>{ name }> ]
+"30064779937" [label = <&lt;operator&gt;.assignment, 37<BR/>name = param1_0.name> ]
+"141733921208" [label = <RETURN, 38<BR/>return name> ]
+"68719485727" [label = <IDENTIFIER, 38<BR/>name<BR/>return name> ]
+  "141733921208" -> "124554052173"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150845" -> "124554052173"  [ label = "DDG: this"] 
+  "111669150846" -> "124554052173"  [ label = "DDG: param1_0"] 
+  "30064779937" -> "124554052173"  [ label = "DDG: name"] 
+  "30064779937" -> "124554052173"  [ label = "DDG: param1_0.name"] 
+  "30064779937" -> "124554052173"  [ label = "DDG: name = param1_0.name"] 
+  "107374182990" -> "111669150845"  [ label = "DDG: "] 
+  "107374182990" -> "111669150846"  [ label = "DDG: "] 
+  "111669150846" -> "30064779937"  [ label = "DDG: param1_0"] 
+  "68719485727" -> "141733921208"  [ label = "DDG: name"] 
+  "30064779937" -> "68719485727"  [ label = "DDG: name"] 
+  "107374182990" -> "68719485727"  [ label = "DDG: "] 
+}

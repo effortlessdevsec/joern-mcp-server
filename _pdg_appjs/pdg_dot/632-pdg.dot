@@ -1,0 +1,34 @@
+digraph "values" {  
+node [shape="rect"];  
+"107374183032" [label = <METHOD, 81<BR/>values> ]
+"124554052214" [label = <METHOD_RETURN, 81<BR/>__ecma.Object> ]
+"111669150931" [label = <PARAM, 81<BR/>this> ]
+"111669150932" [label = <PARAM, 81<BR/>plugins> ]
+"141733921235" [label = <RETURN, 81<BR/>Object.keys(defaultOptions.plugins).reduce( ...> ]
+"30064780813" [label = <reduce, 81<BR/>Object.keys(defaultOptions.plugins).reduce( ...> ]
+"68719486570" [label = <IDENTIFIER, 83<BR/>_tmp_17<BR/>{}> ]
+"30064780815" [label = <&lt;operator&gt;.assignment, 81<BR/>(_tmp_16 = Object.keys(defaultOptions.plugins))> ]
+"30064780816" [label = <keys, 81<BR/>Object.keys(defaultOptions.plugins)> ]
+  "141733921235" -> "124554052214"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150931" -> "124554052214"  [ label = "DDG: this"] 
+  "111669150932" -> "124554052214"  [ label = "DDG: plugins"] 
+  "30064780816" -> "124554052214"  [ label = "DDG: defaultOptions.plugins"] 
+  "30064780815" -> "124554052214"  [ label = "DDG: Object.keys(defaultOptions.plugins)"] 
+  "30064780813" -> "124554052214"  [ label = "DDG: _tmp_16"] 
+  "30064780813" -> "124554052214"  [ label = "DDG: Object.keys(defaultOptions.plugins).reduce(
+            (obj, name) =&gt; ((obj[name] = name in plugins), obj),
+            {},
+          )"] 
+  "107374183032" -> "111669150931"  [ label = "DDG: "] 
+  "107374183032" -> "111669150932"  [ label = "DDG: "] 
+  "30064780813" -> "141733921235"  [ label = "DDG: Object.keys(defaultOptions.plugins).reduce(
+            (obj, name) =&gt; ((obj[name] = name in plugins), obj),
+            {},
+          )"] 
+  "111669150938" -> "30064780813"  [ label = "DDG: defaultOptions"] 
+  "30064780815" -> "30064780813"  [ label = "DDG: _tmp_16"] 
+  "107374183032" -> "30064780813"  [ label = "DDG: "] 
+  "111669150938" -> "68719486570"  [ label = "DDG: defaultOptions"] 
+  "107374183032" -> "68719486570"  [ label = "DDG: "] 
+  "30064780816" -> "30064780815"  [ label = "DDG: defaultOptions.plugins"] 
+}

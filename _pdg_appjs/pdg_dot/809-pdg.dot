@@ -1,0 +1,58 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183209" [label = <METHOD, 38<BR/>loadTransformer> ]
+"124554052392" [label = <METHOD_RETURN, 38<BR/>void> ]
+"111669151320" [label = <PARAM, 38<BR/>this> ]
+"111669151321" [label = <PARAM, 38<BR/>callback> ]
+"30064784422" [label = <require, 39<BR/>require(['../../../transpilers/babel', 'jscodes...> ]
+"68719490029" [label = <IDENTIFIER, 39<BR/>require<BR/>require(['../../../transpilers/babel', 'jscodes...> ]
+"30064784423" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_4 = __ecma.Array.factory()> ]
+"30064784425" [label = <, 39<BR/>_tmp_4.push(&quot;../../../transpilers/babel&quot;)> ]
+"30064784427" [label = <, 39<BR/>_tmp_4.push(&quot;jscodeshift&quot;)> ]
+"68719490036" [label = <IDENTIFIER, 39<BR/>_tmp_4<BR/>['../../../transpilers/babel', 'jscodeshift']> ]
+  "111669151321" -> "124554052392"  [ label = "DDG: callback"] 
+  "30064784422" -> "124554052392"  [ label = "DDG: this"] 
+  "30064784423" -> "124554052392"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064784423" -> "124554052392"  [ label = "DDG: _tmp_4 = __ecma.Array.factory()"] 
+  "30064784425" -> "124554052392"  [ label = "DDG: _tmp_4.push(&quot;../../../transpilers/babel&quot;)"] 
+  "30064784427" -> "124554052392"  [ label = "DDG: _tmp_4"] 
+  "30064784427" -> "124554052392"  [ label = "DDG: _tmp_4.push(&quot;jscodeshift&quot;)"] 
+  "30064784422" -> "124554052392"  [ label = "DDG: require(['../../../transpilers/babel', 'jscodeshift'], (transpile, jscodeshift) =&gt; {
+        const { registerMethods } = jscodeshift;
+
+        let origMethods;
+
+        jscodeshift.registerMethods({
+          hasOwnProperty(name) {
+            // compare only against current-session &amp; very original methods
+            if (!origMethods) {
+              origMethods = new Set(Object.getOwnPropertyNames(this));
+            }
+            return origMethods.has(name) || sessionMethods.has(name);
+          },
+        });
+
+        // patch in order to collect user-defined method names
+        jscodeshift.registerMethods = function (methods) {
+          registerMethods.apply(this, arguments);
+          for (let name in methods) {
+            sessionMethods.add(name);
+          }
+        };
+
+        callback({ transpile: transpile.default, jscodeshift });
+      },
+    )"] 
+  "107374183209" -> "111669151320"  [ label = "DDG: "] 
+  "107374183209" -> "111669151321"  [ label = "DDG: "] 
+  "107374183209" -> "68719490029"  [ label = "DDG: "] 
+  "111669151320" -> "30064784422"  [ label = "DDG: this"] 
+  "107374183209" -> "30064784422"  [ label = "DDG: "] 
+  "30064784427" -> "30064784422"  [ label = "DDG: _tmp_4"] 
+  "107374183209" -> "30064784423"  [ label = "DDG: "] 
+  "107374183209" -> "68719490036"  [ label = "DDG: "] 
+  "30064784423" -> "30064784425"  [ label = "DDG: _tmp_4"] 
+  "107374183209" -> "30064784425"  [ label = "DDG: "] 
+  "30064784425" -> "30064784427"  [ label = "DDG: _tmp_4"] 
+  "107374183209" -> "30064784427"  [ label = "DDG: "] 
+}

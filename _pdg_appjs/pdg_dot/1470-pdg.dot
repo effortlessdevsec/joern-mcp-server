@@ -1,0 +1,4 @@
+digraph "reduce" {  
+node [shape="rect"];  
+
+}

@@ -1,0 +1,23 @@
+digraph "_onChange" {  
+node [shape="rect"];  
+"107374182623" [label = <METHOD, 26<BR/>_onChange> ]
+"124554051806" [label = <METHOD_RETURN, 26<BR/>void> ]
+"111669150088" [label = <PARAM, 26<BR/>this> ]
+"111669150089" [label = <PARAM, 26<BR/>newSettings> ]
+"30064774641" [label = <setState, 27<BR/>this.setState({parserSettings: newSettings})> ]
+"30064774643" [label = <&lt;operator&gt;.assignment, 27<BR/>_tmp_6.parserSettings = newSettings> ]
+"68719480243" [label = <IDENTIFIER, 27<BR/>_tmp_6<BR/>{parserSettings: newSettings}> ]
+  "30064774641" -> "124554051806"  [ label = "DDG: this"] 
+  "30064774643" -> "124554051806"  [ label = "DDG: _tmp_6.parserSettings"] 
+  "30064774643" -> "124554051806"  [ label = "DDG: newSettings"] 
+  "30064774643" -> "124554051806"  [ label = "DDG: _tmp_6.parserSettings = newSettings"] 
+  "30064774641" -> "124554051806"  [ label = "DDG: this.setState({parserSettings: newSettings})"] 
+  "107374182623" -> "111669150088"  [ label = "DDG: "] 
+  "107374182623" -> "111669150089"  [ label = "DDG: "] 
+  "111669150088" -> "30064774641"  [ label = "DDG: this"] 
+  "107374182623" -> "30064774641"  [ label = "DDG: "] 
+  "30064774643" -> "30064774641"  [ label = "DDG: _tmp_6.parserSettings"] 
+  "111669150089" -> "30064774643"  [ label = "DDG: newSettings"] 
+  "107374182623" -> "30064774643"  [ label = "DDG: "] 
+  "107374182623" -> "68719480243"  [ label = "DDG: "] 
+}

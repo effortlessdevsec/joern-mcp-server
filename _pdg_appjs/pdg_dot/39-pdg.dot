@@ -1,0 +1,147 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182439" [label = <METHOD, 1<BR/>:program> ]
+"124554051630" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149802" [label = <PARAM, 1<BR/>this> ]
+"30064771970" [label = <&lt;operator&gt;.assignment, 9<BR/>function makeFiles = function makeFiles(files) ...> ]
+"30064771971" [label = <&lt;operator&gt;.assignment, 16<BR/>function getDataFromBody = function getDataFrom...> ]
+"25769803892" [label = <BLOCK, 1<BR/>const {AUTH_TOKEN, SETTINGS_FORMAT} = require('...> ]
+"30064771977" [label = <&lt;operator&gt;.assignment, 2<BR/>const GitHub = require('github-api')> ]
+"30064771978" [label = <&lt;operator&gt;.assignment, 4<BR/>const gh = new GitHub({token: AUTH_TOKEN})> ]
+"30064771984" [label = <&lt;operator&gt;.assignment, 50<BR/>exports.create = (req, res, next) =&gt; { gh.get...> ]
+"30064771986" [label = <&lt;operator&gt;.assignment, 57<BR/>exports.update = (req, res, next) =&gt; { gh.get...> ]
+"30064771988" [label = <&lt;operator&gt;.assignment, 64<BR/>exports.fork = (req, res, next) =&gt; { // We ca...> ]
+"30064771972" [label = <&lt;operator&gt;.assignment, 1<BR/>_tmp_9 = require('../../constants')> ]
+"30064771973" [label = <&lt;operator&gt;.assignment, 1<BR/>AUTH_TOKEN = _tmp_9.AUTH_TOKEN> ]
+"30064771975" [label = <&lt;operator&gt;.assignment, 1<BR/>SETTINGS_FORMAT = _tmp_9.SETTINGS_FORMAT> ]
+"68719477673" [label = <IDENTIFIER, 1<BR/>_tmp_9<BR/>const {AUTH_TOKEN, SETTINGS_FORMAT} = require('...> ]
+"68719477675" [label = <IDENTIFIER, 2<BR/>require<BR/>require('github-api')> ]
+"30064771918" [label = <require, 2<BR/>require('github-api')> ]
+"30064771979" [label = <&lt;operator&gt;.assignment, 4<BR/>_tmp_10 = .alloc> ]
+"30064771981" [label = <&lt;operator&gt;.new, 4<BR/>new GitHub({token: AUTH_TOKEN})> ]
+"68719477684" [label = <IDENTIFIER, 4<BR/>_tmp_10<BR/>new GitHub({token: AUTH_TOKEN})> ]
+"68719477667" [label = <IDENTIFIER, 1<BR/>require<BR/>require('../../constants')> ]
+"30064771917" [label = <require, 1<BR/>require('../../constants')> ]
+"68719477679" [label = <IDENTIFIER, 4<BR/>GitHub<BR/>new GitHub({token: AUTH_TOKEN})> ]
+"30064771982" [label = <&lt;operator&gt;.assignment, 4<BR/>_tmp_11.token = AUTH_TOKEN> ]
+"68719477683" [label = <IDENTIFIER, 4<BR/>_tmp_11<BR/>{token: AUTH_TOKEN}> ]
+  "30064771970" -> "124554051630"  [ label = "DDG: makeFiles"] 
+  "30064771970" -> "124554051630"  [ label = "DDG: function makeFiles = function makeFiles(files) {
+  return files.reduce(
+    (obj, [filename, content]) =&gt; (obj[filename] = (content ? {content} : content), obj),
+    {}
+  );
+}"] 
+  "30064771971" -> "124554051630"  [ label = "DDG: getDataFromBody"] 
+  "30064771971" -> "124554051630"  [ label = "DDG: function getDataFromBody = function getDataFromBody(body, additionalData={}) {
+  const files = [
+    [
+      'astexplorer.json',
+      JSON.stringify(
+        Object.assign(
+          {
+            v: SETTINGS_FORMAT,
+            parserID: body.parserID,
+            toolID: body.toolID,
+            settings: body.settings,
+            versions: body.versions,
+          },
+          additionalData
+        ),
+        null,
+        2
+      ),
+    ],
+    [body.filename, body.code],
+  ];
+
+  // null value indicates deletion
+  if (body.transform || body.transform === null) {
+    files.push(['transform.js', body.transform]);
+  }
+
+  return {
+    files: makeFiles(files),
+    description: body.description,
+    public: Boolean(body.public),
+  };
+}"] 
+  "30064771972" -> "124554051630"  [ label = "DDG: _tmp_9"] 
+  "30064771972" -> "124554051630"  [ label = "DDG: require('../../constants')"] 
+  "30064771972" -> "124554051630"  [ label = "DDG: _tmp_9 = require('../../constants')"] 
+  "30064771973" -> "124554051630"  [ label = "DDG: _tmp_9.AUTH_TOKEN"] 
+  "30064771973" -> "124554051630"  [ label = "DDG: AUTH_TOKEN = _tmp_9.AUTH_TOKEN"] 
+  "30064771975" -> "124554051630"  [ label = "DDG: SETTINGS_FORMAT"] 
+  "30064771975" -> "124554051630"  [ label = "DDG: _tmp_9.SETTINGS_FORMAT"] 
+  "30064771975" -> "124554051630"  [ label = "DDG: SETTINGS_FORMAT = _tmp_9.SETTINGS_FORMAT"] 
+  "30064771977" -> "124554051630"  [ label = "DDG: GitHub"] 
+  "30064771918" -> "124554051630"  [ label = "DDG: this"] 
+  "30064771977" -> "124554051630"  [ label = "DDG: require('github-api')"] 
+  "30064771977" -> "124554051630"  [ label = "DDG: const GitHub = require('github-api')"] 
+  "30064771978" -> "124554051630"  [ label = "DDG: gh"] 
+  "30064771979" -> "124554051630"  [ label = "DDG: .alloc"] 
+  "30064771979" -> "124554051630"  [ label = "DDG: _tmp_10 = .alloc"] 
+  "30064771981" -> "124554051630"  [ label = "DDG: _tmp_10"] 
+  "30064771982" -> "124554051630"  [ label = "DDG: _tmp_11.token"] 
+  "30064771982" -> "124554051630"  [ label = "DDG: AUTH_TOKEN"] 
+  "30064771982" -> "124554051630"  [ label = "DDG: _tmp_11.token = AUTH_TOKEN"] 
+  "30064771981" -> "124554051630"  [ label = "DDG: new GitHub({token: AUTH_TOKEN})"] 
+  "30064771978" -> "124554051630"  [ label = "DDG: const gh = new GitHub({token: AUTH_TOKEN})"] 
+  "30064771984" -> "124554051630"  [ label = "DDG: exports.create"] 
+  "30064771984" -> "124554051630"  [ label = "DDG: exports.create = (req, res, next) =&gt; {
+  gh.getGist()
+    .create(getDataFromBody(req.body))
+    .then(response =&gt; res.json(response.data))
+    .catch(next);
+}"] 
+  "30064771986" -> "124554051630"  [ label = "DDG: exports.update"] 
+  "30064771986" -> "124554051630"  [ label = "DDG: exports.update = (req, res, next) =&gt; {
+  gh.getGist(req.params.snippetid)
+    .update(getDataFromBody(req.body))
+    .then(response =&gt; res.json(response.data))
+    .catch(next);
+}"] 
+  "30064771988" -> "124554051630"  [ label = "DDG: exports.fork"] 
+  "30064771988" -> "124554051630"  [ label = "DDG: exports.fork = (req, res, next) =&gt; {
+  // We cannot really &quot;fork&quot; an &quot;anonymous&quot; snippet because a user (astexplorer)
+  // cannot fork it's own gist.
+  const data = getDataFromBody(req.body);
+
+  gh.getGist()
+    .create(data)
+    .then(response =&gt; res.json(response.data))
+    .catch(next);
+}"] 
+  "107374182439" -> "111669149802"  [ label = "DDG: "] 
+  "107374182439" -> "30064771970"  [ label = "DDG: "] 
+  "107374182439" -> "30064771971"  [ label = "DDG: "] 
+  "107374182439" -> "25769803892"  [ label = "DDG: "] 
+  "30064771918" -> "30064771977"  [ label = "DDG: this"] 
+  "30064771918" -> "30064771977"  [ label = "DDG: &quot;github-api&quot;"] 
+  "30064771981" -> "30064771978"  [ label = "DDG: new GitHub({token: AUTH_TOKEN})"] 
+  "30064771981" -> "30064771978"  [ label = "DDG: _tmp_10"] 
+  "107374182439" -> "30064771978"  [ label = "DDG: "] 
+  "107374182439" -> "30064771984"  [ label = "DDG: "] 
+  "107374182439" -> "30064771986"  [ label = "DDG: "] 
+  "107374182439" -> "30064771988"  [ label = "DDG: "] 
+  "30064771917" -> "30064771972"  [ label = "DDG: this"] 
+  "30064771917" -> "30064771972"  [ label = "DDG: &quot;../../constants&quot;"] 
+  "30064771972" -> "30064771973"  [ label = "DDG: _tmp_9"] 
+  "30064771972" -> "30064771975"  [ label = "DDG: _tmp_9"] 
+  "107374182439" -> "68719477673"  [ label = "DDG: "] 
+  "107374182439" -> "68719477675"  [ label = "DDG: "] 
+  "30064771917" -> "30064771918"  [ label = "DDG: this"] 
+  "107374182439" -> "30064771918"  [ label = "DDG: "] 
+  "107374182439" -> "30064771979"  [ label = "DDG: "] 
+  "107374182439" -> "68719477684"  [ label = "DDG: "] 
+  "107374182439" -> "68719477667"  [ label = "DDG: "] 
+  "111669149802" -> "30064771917"  [ label = "DDG: this"] 
+  "107374182439" -> "30064771917"  [ label = "DDG: "] 
+  "107374182439" -> "68719477679"  [ label = "DDG: "] 
+  "30064771979" -> "30064771981"  [ label = "DDG: _tmp_10"] 
+  "107374182439" -> "30064771981"  [ label = "DDG: "] 
+  "30064771982" -> "30064771981"  [ label = "DDG: _tmp_11.token"] 
+  "30064771973" -> "30064771982"  [ label = "DDG: AUTH_TOKEN"] 
+  "107374182439" -> "30064771982"  [ label = "DDG: "] 
+  "107374182439" -> "68719477683"  [ label = "DDG: "] 
+}

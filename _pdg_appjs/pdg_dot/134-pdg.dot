@@ -1,0 +1,73 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182534" [label = <METHOD, 1<BR/>:program> ]
+"124554051720" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149948" [label = <PARAM, 1<BR/>this> ]
+"30064773260" [label = <&lt;operator&gt;.assignment, 1<BR/>const storage = global.localStorage> ]
+"30064773262" [label = <&lt;operator&gt;.assignment, 2<BR/>const key = 'explorerSettingsV1'> ]
+"30064773263" [label = <&lt;operator&gt;.assignment, 3<BR/>const noop = () =&gt; {}> ]
+"25769804117" [label = <BLOCK, 5<BR/>export const writeState = storage ? state =&gt; ...> ]
+"25769804118" [label = <BLOCK, 16<BR/>export const readState = storage ? () =&gt; { ...> ]
+"30064773264" [label = <&lt;operator&gt;.assignment, 5<BR/>const writeState = storage ? state =&gt; { t...> ]
+"30064773266" [label = <&lt;operator&gt;.assignment, 5<BR/>exports.writeState = writeState> ]
+"30064773268" [label = <&lt;operator&gt;.assignment, 16<BR/>const readState = storage ? () =&gt; { try {...> ]
+"30064773270" [label = <&lt;operator&gt;.assignment, 16<BR/>exports.readState = readState> ]
+"30064773265" [label = <&lt;operator&gt;.conditional, 5<BR/>storage ? &lt;lambda&gt;1 : noop> ]
+"30064773269" [label = <&lt;operator&gt;.conditional, 16<BR/>storage ? &lt;lambda&gt;2 : noop> ]
+  "111669149948" -> "124554051720"  [ label = "DDG: this"] 
+  "30064773260" -> "124554051720"  [ label = "DDG: global.localStorage"] 
+  "30064773260" -> "124554051720"  [ label = "DDG: const storage = global.localStorage"] 
+  "30064773262" -> "124554051720"  [ label = "DDG: key"] 
+  "30064773262" -> "124554051720"  [ label = "DDG: const key = 'explorerSettingsV1'"] 
+  "30064773263" -> "124554051720"  [ label = "DDG: const noop = () =&gt; {}"] 
+  "30064773264" -> "124554051720"  [ label = "DDG: storage ? &lt;lambda&gt;1 : noop"] 
+  "30064773264" -> "124554051720"  [ label = "DDG: const writeState = storage ?
+  state =&gt; {
+    try {
+      storage.setItem(key, JSON.stringify(state));
+    } catch(e) {
+      // eslint-disable-next-line no-console
+      console.warn('Unable to write to local storage.');
+    }
+  } :
+  noop"] 
+  "30064773266" -> "124554051720"  [ label = "DDG: exports.writeState"] 
+  "30064773266" -> "124554051720"  [ label = "DDG: writeState"] 
+  "30064773266" -> "124554051720"  [ label = "DDG: exports.writeState = writeState"] 
+  "30064773269" -> "124554051720"  [ label = "DDG: storage"] 
+  "30064773269" -> "124554051720"  [ label = "DDG: noop"] 
+  "30064773268" -> "124554051720"  [ label = "DDG: storage ? &lt;lambda&gt;2 : noop"] 
+  "30064773268" -> "124554051720"  [ label = "DDG: const readState = storage ?
+  () =&gt; {
+    try {
+      const state = storage.getItem(key);
+      if (state) {
+        return JSON.parse(state);
+      }
+    } catch(e) {
+      // eslint-disable-next-line no-console
+      console.warn('Unable to read from local storage.');
+    }
+  } :
+  noop"] 
+  "30064773270" -> "124554051720"  [ label = "DDG: exports.readState"] 
+  "30064773270" -> "124554051720"  [ label = "DDG: readState"] 
+  "30064773270" -> "124554051720"  [ label = "DDG: exports.readState = readState"] 
+  "107374182534" -> "111669149948"  [ label = "DDG: "] 
+  "107374182534" -> "30064773262"  [ label = "DDG: "] 
+  "107374182534" -> "30064773263"  [ label = "DDG: "] 
+  "107374182534" -> "25769804117"  [ label = "DDG: "] 
+  "107374182534" -> "25769804118"  [ label = "DDG: "] 
+  "107374182534" -> "30064773264"  [ label = "DDG: "] 
+  "30064773263" -> "30064773264"  [ label = "DDG: noop"] 
+  "30064773264" -> "30064773266"  [ label = "DDG: writeState"] 
+  "107374182534" -> "30064773266"  [ label = "DDG: "] 
+  "107374182534" -> "30064773268"  [ label = "DDG: "] 
+  "30064773263" -> "30064773268"  [ label = "DDG: noop"] 
+  "30064773268" -> "30064773270"  [ label = "DDG: readState"] 
+  "107374182534" -> "30064773270"  [ label = "DDG: "] 
+  "107374182534" -> "30064773265"  [ label = "DDG: "] 
+  "30064773263" -> "30064773265"  [ label = "DDG: noop"] 
+  "107374182534" -> "30064773269"  [ label = "DDG: "] 
+  "30064773263" -> "30064773269"  [ label = "DDG: noop"] 
+}

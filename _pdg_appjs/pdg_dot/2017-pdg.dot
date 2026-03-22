@@ -1,0 +1,4 @@
+digraph "sqliteParser" {  
+node [shape="rect"];  
+
+}

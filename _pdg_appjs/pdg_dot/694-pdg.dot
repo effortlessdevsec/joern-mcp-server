@@ -1,0 +1,19 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183094" [label = <METHOD, 43<BR/>parse> ]
+"124554052277" [label = <METHOD_RETURN, 43<BR/>Promise&lt;any&gt;> ]
+"111669151056" [label = <PARAM, 43<BR/>this> ]
+"111669151057" [label = <PARAM, 43<BR/>...args> ]
+"141733921286" [label = <RETURN, 44<BR/>return this._request('parse', args)> ]
+"30064782279" [label = <_request, 44<BR/>this._request('parse', args)> ]
+  "141733921286" -> "124554052277"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064782279" -> "124554052277"  [ label = "DDG: this"] 
+  "30064782279" -> "124554052277"  [ label = "DDG: args"] 
+  "30064782279" -> "124554052277"  [ label = "DDG: this._request('parse', args)"] 
+  "107374183094" -> "111669151056"  [ label = "DDG: "] 
+  "107374183094" -> "111669151057"  [ label = "DDG: "] 
+  "30064782279" -> "141733921286"  [ label = "DDG: this._request('parse', args)"] 
+  "111669151056" -> "30064782279"  [ label = "DDG: this"] 
+  "107374183094" -> "30064782279"  [ label = "DDG: "] 
+  "111669151057" -> "30064782279"  [ label = "DDG: args"] 
+}

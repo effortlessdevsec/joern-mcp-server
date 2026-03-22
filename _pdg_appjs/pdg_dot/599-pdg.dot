@@ -1,0 +1,43 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182999" [label = <METHOD, 16<BR/>loadParser> ]
+"124554052182" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150865" [label = <PARAM, 16<BR/>this> ]
+"111669150866" [label = <PARAM, 16<BR/>callback> ]
+"30064780162" [label = <require, 17<BR/>require(['acorn', 'acorn-loose', 'acorn-jsx'], ...> ]
+"68719485949" [label = <IDENTIFIER, 17<BR/>require<BR/>require(['acorn', 'acorn-loose', 'acorn-jsx'], ...> ]
+"30064780163" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064780165" [label = <, 17<BR/>_tmp_3.push(&quot;acorn&quot;)> ]
+"30064780167" [label = <, 17<BR/>_tmp_3.push(&quot;acorn-loose&quot;)> ]
+"30064780169" [label = <, 17<BR/>_tmp_3.push(&quot;acorn-jsx&quot;)> ]
+"68719485958" [label = <IDENTIFIER, 17<BR/>_tmp_3<BR/>['acorn', 'acorn-loose', 'acorn-jsx']> ]
+  "111669150866" -> "124554052182"  [ label = "DDG: callback"] 
+  "30064780162" -> "124554052182"  [ label = "DDG: this"] 
+  "30064780163" -> "124554052182"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064780163" -> "124554052182"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064780165" -> "124554052182"  [ label = "DDG: _tmp_3.push(&quot;acorn&quot;)"] 
+  "30064780167" -> "124554052182"  [ label = "DDG: _tmp_3.push(&quot;acorn-loose&quot;)"] 
+  "30064780169" -> "124554052182"  [ label = "DDG: _tmp_3"] 
+  "30064780169" -> "124554052182"  [ label = "DDG: _tmp_3.push(&quot;acorn-jsx&quot;)"] 
+  "30064780162" -> "124554052182"  [ label = "DDG: require(['acorn', 'acorn-loose', 'acorn-jsx'], (acorn, acornLoose, acornJsx) =&gt; {
+      callback({
+        acorn,
+        acornLoose,
+        acornJsx,
+      });
+    })"] 
+  "107374182999" -> "111669150865"  [ label = "DDG: "] 
+  "107374182999" -> "111669150866"  [ label = "DDG: "] 
+  "107374182999" -> "68719485949"  [ label = "DDG: "] 
+  "111669150865" -> "30064780162"  [ label = "DDG: this"] 
+  "107374182999" -> "30064780162"  [ label = "DDG: "] 
+  "30064780169" -> "30064780162"  [ label = "DDG: _tmp_3"] 
+  "107374182999" -> "30064780163"  [ label = "DDG: "] 
+  "107374182999" -> "68719485958"  [ label = "DDG: "] 
+  "30064780163" -> "30064780165"  [ label = "DDG: _tmp_3"] 
+  "107374182999" -> "30064780165"  [ label = "DDG: "] 
+  "30064780165" -> "30064780167"  [ label = "DDG: _tmp_3"] 
+  "107374182999" -> "30064780167"  [ label = "DDG: "] 
+  "30064780167" -> "30064780169"  [ label = "DDG: _tmp_3"] 
+  "107374182999" -> "30064780169"  [ label = "DDG: "] 
+}

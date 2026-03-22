@@ -1,0 +1,48 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183349" [label = <METHOD, 14<BR/>loadTransformer> ]
+"124554052532" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669151622" [label = <PARAM, 14<BR/>this> ]
+"111669151623" [label = <PARAM, 14<BR/>callback> ]
+"30064786601" [label = <require, 15<BR/>require([ '../../../transpilers/babel', ...> ]
+"68719492186" [label = <IDENTIFIER, 15<BR/>require<BR/>require([ '../../../transpilers/babel', ...> ]
+"30064786602" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064786604" [label = <, 16<BR/>_tmp_1.push(&quot;../../../transpilers/babel&quot;)> ]
+"30064786606" [label = <, 17<BR/>_tmp_1.push(&quot;@mdx-js/mdx&quot;)> ]
+"30064786608" [label = <, 18<BR/>_tmp_1.push(&quot;prettier/standalone&quot;)> ]
+"30064786610" [label = <, 19<BR/>_tmp_1.push(&quot;prettier/parser-babel&quot;)> ]
+"68719492197" [label = <IDENTIFIER, 15<BR/>_tmp_1<BR/>[ '../../../transpilers/babel', '@m...> ]
+  "111669151623" -> "124554052532"  [ label = "DDG: callback"] 
+  "30064786601" -> "124554052532"  [ label = "DDG: this"] 
+  "30064786602" -> "124554052532"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064786602" -> "124554052532"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064786604" -> "124554052532"  [ label = "DDG: _tmp_1.push(&quot;../../../transpilers/babel&quot;)"] 
+  "30064786606" -> "124554052532"  [ label = "DDG: _tmp_1.push(&quot;@mdx-js/mdx&quot;)"] 
+  "30064786608" -> "124554052532"  [ label = "DDG: _tmp_1.push(&quot;prettier/standalone&quot;)"] 
+  "30064786610" -> "124554052532"  [ label = "DDG: _tmp_1"] 
+  "30064786610" -> "124554052532"  [ label = "DDG: _tmp_1.push(&quot;prettier/parser-babel&quot;)"] 
+  "30064786601" -> "124554052532"  [ label = "DDG: require([
+      '../../../transpilers/babel',
+      '@mdx-js/mdx',
+      'prettier/standalone',
+      'prettier/parser-babel',
+    ], (transpile, mdx, prettier, babel) =&gt; {
+      callback({ transpile: transpile.default, mdx, prettier, babel });
+    })"] 
+  "107374183349" -> "111669151622"  [ label = "DDG: "] 
+  "107374183349" -> "111669151623"  [ label = "DDG: "] 
+  "107374183349" -> "68719492186"  [ label = "DDG: "] 
+  "111669151622" -> "30064786601"  [ label = "DDG: this"] 
+  "107374183349" -> "30064786601"  [ label = "DDG: "] 
+  "30064786610" -> "30064786601"  [ label = "DDG: _tmp_1"] 
+  "107374183349" -> "30064786602"  [ label = "DDG: "] 
+  "107374183349" -> "68719492197"  [ label = "DDG: "] 
+  "30064786602" -> "30064786604"  [ label = "DDG: _tmp_1"] 
+  "107374183349" -> "30064786604"  [ label = "DDG: "] 
+  "30064786604" -> "30064786606"  [ label = "DDG: _tmp_1"] 
+  "107374183349" -> "30064786606"  [ label = "DDG: "] 
+  "30064786606" -> "30064786608"  [ label = "DDG: _tmp_1"] 
+  "107374183349" -> "30064786608"  [ label = "DDG: "] 
+  "30064786608" -> "30064786610"  [ label = "DDG: _tmp_1"] 
+  "107374183349" -> "30064786610"  [ label = "DDG: "] 
+}

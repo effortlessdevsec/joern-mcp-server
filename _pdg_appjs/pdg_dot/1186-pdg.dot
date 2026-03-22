@@ -1,0 +1,22 @@
+digraph "matchesURL" {  
+node [shape="rect"];  
+"107374183586" [label = <METHOD, 41<BR/>matchesURL> ]
+"124554052769" [label = <METHOD_RETURN, 41<BR/>astexplorer/website/src/storage/gist.js::program:getIDAndRevisionFromHash:&lt;operator&gt;.notEquals:&lt;returnValue&gt;> ]
+"111669152101" [label = <PARAM, 41<BR/>this> ]
+"141733921634" [label = <RETURN, 42<BR/>return getIDAndRevisionFromHash() !== null> ]
+"30064789918" [label = <&lt;operator&gt;.notEquals, 42<BR/>getIDAndRevisionFromHash() !== null> ]
+"68719495476" [label = <IDENTIFIER, 42<BR/>getIDAndRevisionFromHash<BR/>getIDAndRevisionFromHash()> ]
+"30064789919" [label = <getIDAndRevisionFromHash, 42<BR/>getIDAndRevisionFromHash()> ]
+  "141733921634" -> "124554052769"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064789919" -> "124554052769"  [ label = "DDG: this"] 
+  "30064789918" -> "124554052769"  [ label = "DDG: getIDAndRevisionFromHash()"] 
+  "30064789918" -> "124554052769"  [ label = "DDG: getIDAndRevisionFromHash() !== null"] 
+  "107374183586" -> "111669152101"  [ label = "DDG: "] 
+  "30064789918" -> "141733921634"  [ label = "DDG: getIDAndRevisionFromHash() !== null"] 
+  "30064789919" -> "30064789918"  [ label = "DDG: this"] 
+  "107374183586" -> "30064789918"  [ label = "DDG: "] 
+  "30064790094" -> "68719495476"  [ label = "DDG: getIDAndRevisionFromHash"] 
+  "107374183586" -> "68719495476"  [ label = "DDG: "] 
+  "111669152101" -> "30064789919"  [ label = "DDG: this"] 
+  "107374183586" -> "30064789919"  [ label = "DDG: "] 
+}

@@ -1,0 +1,142 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183053" [label = <METHOD, 123<BR/>parse> ]
+"124554052236" [label = <METHOD_RETURN, 123<BR/>ANY> ]
+"111669150977" [label = <PARAM, 123<BR/>this> ]
+"111669150978" [label = <PARAM, 123<BR/>babylon> ]
+"111669150979" [label = <PARAM, 123<BR/>code> ]
+"111669150980" [label = <PARAM, 123<BR/>options> ]
+"30064781191" [label = <&lt;operator&gt;.assignment, 124<BR/>options = {...options}> ]
+"25769805534" [label = <BLOCK, 127<BR/>const { pipelineOptions = {proposal: options.pi...> ]
+"30064781207" [label = <&lt;operator&gt;.assignment, 128<BR/>options.plugins = (options.plugins || []).map(p...> ]
+"141733921258" [label = <RETURN, 143<BR/>return babylon.parse(code, options)> ]
+"30064781193" [label = <&lt;operator&gt;.assignment, 127<BR/>_tmp_29 = options> ]
+"30064781194" [label = <&lt;operator&gt;.assignment, 127<BR/>pipelineOptions = _tmp_29.pipelineOptions === v...> ]
+"30064781203" [label = <&lt;operator&gt;.assignment, 127<BR/>decoratorOptions = _tmp_29.decoratorOptions> ]
+"30064781205" [label = <&lt;operator&gt;.assignment, 127<BR/>typescriptOptions = _tmp_29.typescriptOptions> ]
+"68719486942" [label = <IDENTIFIER, 127<BR/>_tmp_29<BR/>const { pipelineOptions = {proposal: options.pi...> ]
+"30064781215" [label = <parse, 143<BR/>babylon.parse(code, options)> ]
+"30064781192" [label = <&lt;operator&gt;.spread, 124<BR/>...options> ]
+"68719486929" [label = <IDENTIFIER, 124<BR/>_tmp_28<BR/>{...options}> ]
+"30064781209" [label = <map, 128<BR/>(options.plugins || []).map(plugin =&gt; { s...> ]
+"30064781195" [label = <&lt;operator&gt;.conditional, 127<BR/>_tmp_29.pipelineOptions === void 0 ? {proposal:...> ]
+"30064781196" [label = <&lt;operator&gt;.equals, 127<BR/>_tmp_29.pipelineOptions === void 0> ]
+"30064781199" [label = <&lt;operator&gt;.assignment, 127<BR/>_tmp_30.proposal = options.pipelineProposal> ]
+"68719486936" [label = <IDENTIFIER, 127<BR/>_tmp_30<BR/>{proposal: options.pipelineProposal}> ]
+"30064781211" [label = <&lt;operator&gt;.assignment, 128<BR/>(_tmp_31 = options.plugins || [])> ]
+"30064781212" [label = <&lt;operator&gt;.logicalOr, 128<BR/>options.plugins || []> ]
+"30064781202" [label = <&lt;operator&gt;.fieldAccess, 127<BR/>_tmp_29.pipelineOptions> ]
+"55834578581" [label = <FIELD_IDENTIFIER, 127<BR/>pipelineOptions> ]
+"30064781200" [label = <&lt;operator&gt;.fieldAccess, 127<BR/>_tmp_30.proposal> ]
+"30064781201" [label = <&lt;operator&gt;.fieldAccess, 127<BR/>options.pipelineProposal> ]
+"30064781213" [label = <&lt;operator&gt;.fieldAccess, 128<BR/>options.plugins> ]
+"30064781214" [label = <__ecma.Array.factory, 128<BR/>__ecma.Array.factory()> ]
+"55834578579" [label = <FIELD_IDENTIFIER, 127<BR/>proposal> ]
+"55834578580" [label = <FIELD_IDENTIFIER, 127<BR/>pipelineProposal> ]
+  "141733921258" -> "124554052236"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150977" -> "124554052236"  [ label = "DDG: this"] 
+  "30064781192" -> "124554052236"  [ label = "DDG: _tmp_28"] 
+  "30064781192" -> "124554052236"  [ label = "DDG: ...options"] 
+  "30064781191" -> "124554052236"  [ label = "DDG: options = {...options}"] 
+  "30064781193" -> "124554052236"  [ label = "DDG: _tmp_29"] 
+  "30064781193" -> "124554052236"  [ label = "DDG: _tmp_29 = options"] 
+  "30064781194" -> "124554052236"  [ label = "DDG: pipelineOptions"] 
+  "30064781196" -> "124554052236"  [ label = "DDG: void 0"] 
+  "30064781195" -> "124554052236"  [ label = "DDG: _tmp_29.pipelineOptions === void 0"] 
+  "30064781195" -> "124554052236"  [ label = "DDG: _tmp_29.pipelineOptions"] 
+  "30064781199" -> "124554052236"  [ label = "DDG: _tmp_30.proposal"] 
+  "30064781199" -> "124554052236"  [ label = "DDG: _tmp_30.proposal = options.pipelineProposal"] 
+  "30064781194" -> "124554052236"  [ label = "DDG: _tmp_29.pipelineOptions === void 0 ? {proposal: options.pipelineProposal} : _tmp_29.pipelineOptions"] 
+  "30064781194" -> "124554052236"  [ label = "DDG: pipelineOptions = _tmp_29.pipelineOptions === void 0 ? {proposal: options.pipelineProposal} : _tmp_29.pipelineOptions"] 
+  "30064781203" -> "124554052236"  [ label = "DDG: decoratorOptions"] 
+  "30064781203" -> "124554052236"  [ label = "DDG: _tmp_29.decoratorOptions"] 
+  "30064781203" -> "124554052236"  [ label = "DDG: decoratorOptions = _tmp_29.decoratorOptions"] 
+  "30064781205" -> "124554052236"  [ label = "DDG: typescriptOptions"] 
+  "30064781205" -> "124554052236"  [ label = "DDG: _tmp_29.typescriptOptions"] 
+  "30064781205" -> "124554052236"  [ label = "DDG: typescriptOptions = _tmp_29.typescriptOptions"] 
+  "30064781212" -> "124554052236"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064781211" -> "124554052236"  [ label = "DDG: options.plugins || []"] 
+  "30064781209" -> "124554052236"  [ label = "DDG: _tmp_31"] 
+  "30064781207" -> "124554052236"  [ label = "DDG: (options.plugins || []).map(plugin =&gt; {
+      switch (plugin) {
+        case 'decorators':
+          return ['decorators', decoratorOptions];
+        case 'pipelineOperator':
+          return ['pipelineOperator', {
+            proposal: pipelineOptions.proposal,
+            topicToken: pipelineOptions.hackTopicToken,
+          }];
+        case 'typescript':
+          return ['typescript', typescriptOptions];
+        default:
+          return plugin;
+      }
+    })"] 
+  "30064781207" -> "124554052236"  [ label = "DDG: options.plugins = (options.plugins || []).map(plugin =&gt; {
+      switch (plugin) {
+        case 'decorators':
+          return ['decorators', decoratorOptions];
+        case 'pipelineOperator':
+          return ['pipelineOperator', {
+            proposal: pipelineOptions.proposal,
+            topicToken: pipelineOptions.hackTopicToken,
+          }];
+        case 'typescript':
+          return ['typescript', typescriptOptions];
+        default:
+          return plugin;
+      }
+    })"] 
+  "30064781215" -> "124554052236"  [ label = "DDG: babylon"] 
+  "30064781215" -> "124554052236"  [ label = "DDG: code"] 
+  "30064781215" -> "124554052236"  [ label = "DDG: options"] 
+  "30064781215" -> "124554052236"  [ label = "DDG: babylon.parse(code, options)"] 
+  "107374183053" -> "111669150977"  [ label = "DDG: "] 
+  "107374183053" -> "111669150978"  [ label = "DDG: "] 
+  "107374183053" -> "111669150979"  [ label = "DDG: "] 
+  "107374183053" -> "111669150980"  [ label = "DDG: "] 
+  "30064781192" -> "30064781191"  [ label = "DDG: _tmp_28"] 
+  "107374183053" -> "30064781191"  [ label = "DDG: "] 
+  "107374183053" -> "25769805534"  [ label = "DDG: "] 
+  "30064781209" -> "30064781207"  [ label = "DDG: _tmp_31"] 
+  "30064781209" -> "30064781207"  [ label = "DDG: &lt;lambda&gt;6"] 
+  "30064781215" -> "141733921258"  [ label = "DDG: babylon.parse(code, options)"] 
+  "30064781191" -> "30064781193"  [ label = "DDG: options"] 
+  "107374183053" -> "30064781193"  [ label = "DDG: "] 
+  "30064781199" -> "30064781194"  [ label = "DDG: _tmp_30.proposal"] 
+  "30064781193" -> "30064781194"  [ label = "DDG: _tmp_29"] 
+  "30064781196" -> "30064781194"  [ label = "DDG: _tmp_29.pipelineOptions"] 
+  "30064781193" -> "30064781203"  [ label = "DDG: _tmp_29"] 
+  "30064781193" -> "30064781205"  [ label = "DDG: _tmp_29"] 
+  "107374183053" -> "68719486942"  [ label = "DDG: "] 
+  "107374183053" -> "68719486929"  [ label = "DDG: "] 
+  "30064781211" -> "30064781209"  [ label = "DDG: _tmp_31"] 
+  "107374183053" -> "30064781209"  [ label = "DDG: "] 
+  "111669150978" -> "30064781215"  [ label = "DDG: babylon"] 
+  "107374183053" -> "30064781215"  [ label = "DDG: "] 
+  "111669150979" -> "30064781215"  [ label = "DDG: code"] 
+  "30064781207" -> "30064781215"  [ label = "DDG: options.plugins"] 
+  "30064781191" -> "30064781215"  [ label = "DDG: options"] 
+  "107374183053" -> "30064781192"  [ label = "DDG: "] 
+  "111669150980" -> "30064781192"  [ label = "DDG: options"] 
+  "30064781199" -> "30064781195"  [ label = "DDG: _tmp_30.proposal"] 
+  "30064781193" -> "30064781195"  [ label = "DDG: _tmp_29"] 
+  "30064781196" -> "30064781195"  [ label = "DDG: _tmp_29.pipelineOptions"] 
+  "30064781193" -> "30064781196"  [ label = "DDG: _tmp_29"] 
+  "107374183053" -> "30064781196"  [ label = "DDG: "] 
+  "30064781191" -> "30064781199"  [ label = "DDG: options"] 
+  "107374183053" -> "30064781199"  [ label = "DDG: "] 
+  "107374183053" -> "68719486936"  [ label = "DDG: "] 
+  "30064781212" -> "30064781211"  [ label = "DDG: options.plugins"] 
+  "30064781212" -> "30064781211"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064781191" -> "30064781212"  [ label = "DDG: options"] 
+  "107374183053" -> "30064781212"  [ label = "DDG: "] 
+  "30064781196" -> "55834578580"  [ label = "CDG: "] 
+  "30064781196" -> "55834578579"  [ label = "CDG: "] 
+  "30064781196" -> "30064781200"  [ label = "CDG: "] 
+  "30064781196" -> "30064781199"  [ label = "CDG: "] 
+  "30064781196" -> "55834578581"  [ label = "CDG: "] 
+  "30064781196" -> "30064781202"  [ label = "CDG: "] 
+  "30064781196" -> "30064781201"  [ label = "CDG: "] 
+  "30064781213" -> "30064781214"  [ label = "CDG: "] 
+}

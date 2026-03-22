@@ -1,0 +1,437 @@
+digraph "transform" {  
+node [shape="rect"];  
+"107374183166" [label = <METHOD, 22<BR/>transform> ]
+"124554052351" [label = <METHOD_RETURN, 22<BR/>ANY> ]
+"111669151210" [label = <PARAM, 22<BR/>this> ]
+"111669151211" [label = <PARAM, 22<BR/>{ transpile, babel, recast, macro}> ]
+"111669151212" [label = <PARAM, 22<BR/>transformCode> ]
+"111669151213" [label = <PARAM, 22<BR/>code> ]
+"30064783571" [label = <&lt;operator&gt;.assignment, 22<BR/>transpile = param1_0.transpile> ]
+"30064783573" [label = <&lt;operator&gt;.assignment, 22<BR/>babel = param1_0.babel> ]
+"30064783575" [label = <&lt;operator&gt;.assignment, 22<BR/>recast = param1_0.recast> ]
+"30064783577" [label = <&lt;operator&gt;.assignment, 22<BR/>macro = param1_0.macro> ]
+"30064783579" [label = <&lt;operator&gt;.assignment, 23<BR/>transformCode = transpile(transformCode)> ]
+"30064783581" [label = <&lt;operator&gt;.assignment, 24<BR/>let transform = compileModule( // eslint-disabl...> ]
+"141733921338" [label = <RETURN, 29<BR/>return babel.transform(code, { parserOpts...> ]
+"30064783589" [label = <transform, 29<BR/>babel.transform(code, { parserOpts: { ...> ]
+"68719489160" [label = <IDENTIFIER, 23<BR/>transpile<BR/>transpile(transformCode)> ]
+"30064783580" [label = <transpile, 23<BR/>transpile(transformCode)> ]
+"68719489164" [label = <IDENTIFIER, 24<BR/>compileModule<BR/>compileModule( // eslint-disable-line no-shadow...> ]
+"30064783582" [label = <compileModule, 24<BR/>compileModule( // eslint-disable-line no-shadow...> ]
+"30064783583" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_3.createMacro = macro.createMacro> ]
+"30064783586" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_3.MacroError = macro.MacroError> ]
+"68719489171" [label = <IDENTIFIER, 26<BR/>_tmp_3<BR/>{createMacro: macro.createMacro, MacroError: ma...> ]
+"30064783591" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_4.parserOpts = { parser: recast.pa...> ]
+"30064783664" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_4.generatorOpts = { generator: rec...> ]
+"30064783669" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_4.plugins = [macro(babel, {require: () =&gt; ...> ]
+"30064783680" [label = <&lt;operator&gt;.assignment, 63<BR/>_tmp_4.sourceMaps = true> ]
+"68719489262" [label = <IDENTIFIER, 29<BR/>_tmp_4<BR/>{ parserOpts: { parser: recast.pa...> ]
+"30064783593" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_5.parser = recast.parse> ]
+"30064783596" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_5.plugins = [ 'asyncGenerators',...> ]
+"68719489245" [label = <IDENTIFIER, 30<BR/>_tmp_5<BR/>{ parser: recast.parse, plugins...> ]
+"30064783666" [label = <&lt;operator&gt;.assignment, 60<BR/>_tmp_11.generator = recast.print> ]
+"68719489249" [label = <IDENTIFIER, 59<BR/>_tmp_11<BR/>{ generator: recast.print, }> ]
+"30064783671" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_12 = __ecma.Array.factory()> ]
+"30064783673" [label = <, 62<BR/>_tmp_12.push(macro(babel, {require: () =&gt; trans...> ]
+"68719489260" [label = <IDENTIFIER, 62<BR/>_tmp_12<BR/>[macro(babel, {require: () =&gt; transform, resolv...> ]
+"30064783598" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064783600" [label = <, 33<BR/>_tmp_6.push(&quot;asyncGenerators&quot;)> ]
+"30064783602" [label = <, 34<BR/>_tmp_6.push(&quot;bigInt&quot;)> ]
+"30064783604" [label = <, 35<BR/>_tmp_6.push(&quot;classPrivateMethods&quot;)> ]
+"30064783606" [label = <, 36<BR/>_tmp_6.push(&quot;classPrivateProperties&quot;)> ]
+"30064783608" [label = <, 37<BR/>_tmp_6.push(&quot;classProperties&quot;)> ]
+"30064783610" [label = <, 38<BR/>_tmp_6.push(['decorators', {decoratorsBeforeExp...> ]
+"30064783620" [label = <, 39<BR/>_tmp_6.push(&quot;doExpressions&quot;)> ]
+"30064783622" [label = <, 40<BR/>_tmp_6.push(&quot;dynamicImport&quot;)> ]
+"30064783624" [label = <, 41<BR/>_tmp_6.push(&quot;exportDefaultFrom&quot;)> ]
+"30064783626" [label = <, 42<BR/>_tmp_6.push(&quot;exportNamespaceFrom&quot;)> ]
+"30064783628" [label = <, 43<BR/>_tmp_6.push(&quot;flow&quot;)> ]
+"30064783630" [label = <, 44<BR/>_tmp_6.push(&quot;flowComments&quot;)> ]
+"30064783632" [label = <, 45<BR/>_tmp_6.push(&quot;functionBind&quot;)> ]
+"30064783634" [label = <, 46<BR/>_tmp_6.push(&quot;functionSent&quot;)> ]
+"30064783636" [label = <, 47<BR/>_tmp_6.push(&quot;importMeta&quot;)> ]
+"30064783638" [label = <, 48<BR/>_tmp_6.push(&quot;jsx&quot;)> ]
+"30064783640" [label = <, 49<BR/>_tmp_6.push(&quot;logicalAssignment&quot;)> ]
+"30064783642" [label = <, 50<BR/>_tmp_6.push(&quot;nullishCoalescingOperator&quot;)> ]
+"30064783644" [label = <, 51<BR/>_tmp_6.push(&quot;numericSeparator&quot;)> ]
+"30064783646" [label = <, 52<BR/>_tmp_6.push(&quot;objectRestSpread&quot;)> ]
+"30064783648" [label = <, 53<BR/>_tmp_6.push(&quot;optionalCatchBinding&quot;)> ]
+"30064783650" [label = <, 54<BR/>_tmp_6.push(&quot;optionalChaining&quot;)> ]
+"30064783652" [label = <, 55<BR/>_tmp_6.push(['pipelineOperator', {proposal: 'mi...> ]
+"30064783662" [label = <, 56<BR/>_tmp_6.push(&quot;throwExpressions&quot;)> ]
+"68719489244" [label = <IDENTIFIER, 32<BR/>_tmp_6<BR/>[ 'asyncGenerators', 'bigIn...> ]
+"68719489254" [label = <IDENTIFIER, 62<BR/>macro<BR/>macro(babel, {require: () =&gt; transform, resolve...> ]
+"30064783675" [label = <macro, 62<BR/>macro(babel, {require: () =&gt; transform, resolve...> ]
+"30064783676" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_13.require = &lt;lambda&gt;1> ]
+"30064783678" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_13.resolvePath = &lt;lambda&gt;2> ]
+"68719489259" [label = <IDENTIFIER, 62<BR/>_tmp_13<BR/>{require: () =&gt; transform, resolvePath: src =&gt; ...> ]
+"30064783612" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_7 = __ecma.Array.factory()> ]
+"30064783614" [label = <, 38<BR/>_tmp_7.push(&quot;decorators&quot;)> ]
+"30064783616" [label = <, 38<BR/>_tmp_7.push({decoratorsBeforeExport: false})> ]
+"68719489199" [label = <IDENTIFIER, 38<BR/>_tmp_7<BR/>['decorators', {decoratorsBeforeExport: false}]> ]
+"30064783654" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_9 = __ecma.Array.factory()> ]
+"30064783656" [label = <, 55<BR/>_tmp_9.push(&quot;pipelineOperator&quot;)> ]
+"30064783658" [label = <, 55<BR/>_tmp_9.push({proposal: 'minimal'})> ]
+"68719489241" [label = <IDENTIFIER, 55<BR/>_tmp_9<BR/>['pipelineOperator', {proposal: 'minimal'}]> ]
+"30064783618" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_8.decoratorsBeforeExport = false> ]
+"68719489198" [label = <IDENTIFIER, 38<BR/>_tmp_8<BR/>{decoratorsBeforeExport: false}> ]
+"30064783660" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_10.proposal = &quot;minimal&quot;> ]
+"68719489240" [label = <IDENTIFIER, 55<BR/>_tmp_10<BR/>{proposal: 'minimal'}> ]
+  "141733921338" -> "124554052351"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151211" -> "124554052351"  [ label = "DDG: param1_0"] 
+  "30064783571" -> "124554052351"  [ label = "DDG: transpile"] 
+  "30064783571" -> "124554052351"  [ label = "DDG: param1_0.transpile"] 
+  "30064783571" -> "124554052351"  [ label = "DDG: transpile = param1_0.transpile"] 
+  "30064783573" -> "124554052351"  [ label = "DDG: param1_0.babel"] 
+  "30064783573" -> "124554052351"  [ label = "DDG: babel = param1_0.babel"] 
+  "30064783575" -> "124554052351"  [ label = "DDG: recast"] 
+  "30064783575" -> "124554052351"  [ label = "DDG: param1_0.recast"] 
+  "30064783575" -> "124554052351"  [ label = "DDG: recast = param1_0.recast"] 
+  "30064783577" -> "124554052351"  [ label = "DDG: macro"] 
+  "30064783577" -> "124554052351"  [ label = "DDG: param1_0.macro"] 
+  "30064783577" -> "124554052351"  [ label = "DDG: macro = param1_0.macro"] 
+  "30064783579" -> "124554052351"  [ label = "DDG: transpile(transformCode)"] 
+  "30064783579" -> "124554052351"  [ label = "DDG: transformCode = transpile(transformCode)"] 
+  "30064783581" -> "124554052351"  [ label = "DDG: transform"] 
+  "30064783582" -> "124554052351"  [ label = "DDG: transformCode"] 
+  "30064783583" -> "124554052351"  [ label = "DDG: _tmp_3.createMacro"] 
+  "30064783583" -> "124554052351"  [ label = "DDG: macro.createMacro"] 
+  "30064783583" -> "124554052351"  [ label = "DDG: _tmp_3.createMacro = macro.createMacro"] 
+  "30064783586" -> "124554052351"  [ label = "DDG: _tmp_3.MacroError"] 
+  "30064783586" -> "124554052351"  [ label = "DDG: macro.MacroError"] 
+  "30064783586" -> "124554052351"  [ label = "DDG: _tmp_3.MacroError = macro.MacroError"] 
+  "30064783581" -> "124554052351"  [ label = "DDG: compileModule( // eslint-disable-line no-shadow
+      transformCode,
+      {createMacro: macro.createMacro, MacroError: macro.MacroError},
+    )"] 
+  "30064783581" -> "124554052351"  [ label = "DDG: let transform = compileModule( // eslint-disable-line no-shadow
+      transformCode,
+      {createMacro: macro.createMacro, MacroError: macro.MacroError},
+    )"] 
+  "30064783589" -> "124554052351"  [ label = "DDG: babel"] 
+  "30064783589" -> "124554052351"  [ label = "DDG: code"] 
+  "30064783591" -> "124554052351"  [ label = "DDG: _tmp_4.parserOpts"] 
+  "30064783593" -> "124554052351"  [ label = "DDG: _tmp_5.parser"] 
+  "30064783593" -> "124554052351"  [ label = "DDG: recast.parse"] 
+  "30064783593" -> "124554052351"  [ label = "DDG: _tmp_5.parser = recast.parse"] 
+  "30064783596" -> "124554052351"  [ label = "DDG: _tmp_5.plugins"] 
+  "30064783598" -> "124554052351"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064783600" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;asyncGenerators&quot;)"] 
+  "30064783602" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;bigInt&quot;)"] 
+  "30064783604" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;classPrivateMethods&quot;)"] 
+  "30064783606" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;classPrivateProperties&quot;)"] 
+  "30064783608" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;classProperties&quot;)"] 
+  "30064783612" -> "124554052351"  [ label = "DDG: _tmp_7 = __ecma.Array.factory()"] 
+  "30064783614" -> "124554052351"  [ label = "DDG: _tmp_7.push(&quot;decorators&quot;)"] 
+  "30064783616" -> "124554052351"  [ label = "DDG: _tmp_7"] 
+  "30064783618" -> "124554052351"  [ label = "DDG: _tmp_8.decoratorsBeforeExport"] 
+  "30064783618" -> "124554052351"  [ label = "DDG: _tmp_8.decoratorsBeforeExport = false"] 
+  "30064783616" -> "124554052351"  [ label = "DDG: _tmp_7.push({decoratorsBeforeExport: false})"] 
+  "30064783610" -> "124554052351"  [ label = "DDG: _tmp_6.push(['decorators', {decoratorsBeforeExport: false}])"] 
+  "30064783620" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;doExpressions&quot;)"] 
+  "30064783622" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;dynamicImport&quot;)"] 
+  "30064783624" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;exportDefaultFrom&quot;)"] 
+  "30064783626" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;exportNamespaceFrom&quot;)"] 
+  "30064783628" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;flow&quot;)"] 
+  "30064783630" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;flowComments&quot;)"] 
+  "30064783632" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;functionBind&quot;)"] 
+  "30064783634" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;functionSent&quot;)"] 
+  "30064783636" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;importMeta&quot;)"] 
+  "30064783638" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;jsx&quot;)"] 
+  "30064783640" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;logicalAssignment&quot;)"] 
+  "30064783642" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;nullishCoalescingOperator&quot;)"] 
+  "30064783644" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;numericSeparator&quot;)"] 
+  "30064783646" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;objectRestSpread&quot;)"] 
+  "30064783648" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;optionalCatchBinding&quot;)"] 
+  "30064783650" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;optionalChaining&quot;)"] 
+  "30064783654" -> "124554052351"  [ label = "DDG: _tmp_9 = __ecma.Array.factory()"] 
+  "30064783656" -> "124554052351"  [ label = "DDG: _tmp_9.push(&quot;pipelineOperator&quot;)"] 
+  "30064783658" -> "124554052351"  [ label = "DDG: _tmp_9"] 
+  "30064783660" -> "124554052351"  [ label = "DDG: _tmp_10.proposal"] 
+  "30064783660" -> "124554052351"  [ label = "DDG: _tmp_10.proposal = &quot;minimal&quot;"] 
+  "30064783658" -> "124554052351"  [ label = "DDG: _tmp_9.push({proposal: 'minimal'})"] 
+  "30064783652" -> "124554052351"  [ label = "DDG: _tmp_6.push(['pipelineOperator', {proposal: 'minimal'}])"] 
+  "30064783662" -> "124554052351"  [ label = "DDG: _tmp_6"] 
+  "30064783662" -> "124554052351"  [ label = "DDG: _tmp_6.push(&quot;throwExpressions&quot;)"] 
+  "30064783596" -> "124554052351"  [ label = "DDG: _tmp_5.plugins = [
+          'asyncGenerators',
+          'bigInt',
+          'classPrivateMethods',
+          'classPrivateProperties',
+          'classProperties',
+          ['decorators', {decoratorsBeforeExport: false}],
+          'doExpressions',
+          'dynamicImport',
+          'exportDefaultFrom',
+          'exportNamespaceFrom',
+          'flow',
+          'flowComments',
+          'functionBind',
+          'functionSent',
+          'importMeta',
+          'jsx',
+          'logicalAssignment',
+          'nullishCoalescingOperator',
+          'numericSeparator',
+          'objectRestSpread',
+          'optionalCatchBinding',
+          'optionalChaining',
+          ['pipelineOperator', {proposal: 'minimal'}],
+          'throwExpressions',
+        ]"] 
+  "30064783591" -> "124554052351"  [ label = "DDG: _tmp_4.parserOpts = {
+        parser: recast.parse,
+        plugins: [
+          'asyncGenerators',
+          'bigInt',
+          'classPrivateMethods',
+          'classPrivateProperties',
+          'classProperties',
+          ['decorators', {decoratorsBeforeExport: false}],
+          'doExpressions',
+          'dynamicImport',
+          'exportDefaultFrom',
+          'exportNamespaceFrom',
+          'flow',
+          'flowComments',
+          'functionBind',
+          'functionSent',
+          'importMeta',
+          'jsx',
+          'logicalAssignment',
+          'nullishCoalescingOperator',
+          'numericSeparator',
+          'objectRestSpread',
+          'optionalCatchBinding',
+          'optionalChaining',
+          ['pipelineOperator', {proposal: 'minimal'}],
+          'throwExpressions',
+        ],
+      }"] 
+  "30064783664" -> "124554052351"  [ label = "DDG: _tmp_4.generatorOpts"] 
+  "30064783666" -> "124554052351"  [ label = "DDG: _tmp_11.generator"] 
+  "30064783666" -> "124554052351"  [ label = "DDG: recast.print"] 
+  "30064783666" -> "124554052351"  [ label = "DDG: _tmp_11.generator = recast.print"] 
+  "30064783664" -> "124554052351"  [ label = "DDG: _tmp_4.generatorOpts = {
+        generator: recast.print,
+      }"] 
+  "30064783669" -> "124554052351"  [ label = "DDG: _tmp_4.plugins"] 
+  "30064783671" -> "124554052351"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064783671" -> "124554052351"  [ label = "DDG: _tmp_12 = __ecma.Array.factory()"] 
+  "30064783673" -> "124554052351"  [ label = "DDG: _tmp_12"] 
+  "30064783675" -> "124554052351"  [ label = "DDG: this"] 
+  "30064783676" -> "124554052351"  [ label = "DDG: _tmp_13.require"] 
+  "30064783676" -> "124554052351"  [ label = "DDG: _tmp_13.require = &lt;lambda&gt;1"] 
+  "30064783678" -> "124554052351"  [ label = "DDG: _tmp_13.resolvePath"] 
+  "30064783678" -> "124554052351"  [ label = "DDG: _tmp_13.resolvePath = &lt;lambda&gt;2"] 
+  "30064783673" -> "124554052351"  [ label = "DDG: macro(babel, {require: () =&gt; transform, resolvePath: src =&gt; src})"] 
+  "30064783673" -> "124554052351"  [ label = "DDG: _tmp_12.push(macro(babel, {require: () =&gt; transform, resolvePath: src =&gt; src}))"] 
+  "30064783669" -> "124554052351"  [ label = "DDG: _tmp_4.plugins = [macro(babel, {require: () =&gt; transform, resolvePath: src =&gt; src})]"] 
+  "30064783680" -> "124554052351"  [ label = "DDG: _tmp_4.sourceMaps"] 
+  "30064783680" -> "124554052351"  [ label = "DDG: _tmp_4.sourceMaps = true"] 
+  "30064783589" -> "124554052351"  [ label = "DDG: babel.transform(code, {
+      parserOpts: {
+        parser: recast.parse,
+        plugins: [
+          'asyncGenerators',
+          'bigInt',
+          'classPrivateMethods',
+          'classPrivateProperties',
+          'classProperties',
+          ['decorators', {decoratorsBeforeExport: false}],
+          'doExpressions',
+          'dynamicImport',
+          'exportDefaultFrom',
+          'exportNamespaceFrom',
+          'flow',
+          'flowComments',
+          'functionBind',
+          'functionSent',
+          'importMeta',
+          'jsx',
+          'logicalAssignment',
+          'nullishCoalescingOperator',
+          'numericSeparator',
+          'objectRestSpread',
+          'optionalCatchBinding',
+          'optionalChaining',
+          ['pipelineOperator', {proposal: 'minimal'}],
+          'throwExpressions',
+        ],
+      },
+      generatorOpts: {
+        generator: recast.print,
+      },
+      plugins: [macro(babel, {require: () =&gt; transform, resolvePath: src =&gt; src..."] 
+  "107374183166" -> "111669151210"  [ label = "DDG: "] 
+  "107374183166" -> "111669151211"  [ label = "DDG: "] 
+  "107374183166" -> "111669151212"  [ label = "DDG: "] 
+  "107374183166" -> "111669151213"  [ label = "DDG: "] 
+  "111669151211" -> "30064783571"  [ label = "DDG: param1_0"] 
+  "111669151211" -> "30064783573"  [ label = "DDG: param1_0"] 
+  "111669151211" -> "30064783575"  [ label = "DDG: param1_0"] 
+  "111669151211" -> "30064783577"  [ label = "DDG: param1_0"] 
+  "30064783580" -> "30064783579"  [ label = "DDG: this"] 
+  "30064783580" -> "30064783579"  [ label = "DDG: transformCode"] 
+  "30064783582" -> "30064783581"  [ label = "DDG: this"] 
+  "30064783582" -> "30064783581"  [ label = "DDG: transformCode"] 
+  "30064783582" -> "30064783581"  [ label = "DDG: {createMacro: macro.createMacro, MacroError: macro.MacroError}"] 
+  "30064783582" -> "30064783581"  [ label = "DDG: "] 
+  "30064783589" -> "141733921338"  [ label = "DDG: babel.transform(code, {
+      parserOpts: {
+        parser: recast.parse,
+        plugins: [
+          'asyncGenerators',
+          'bigInt',
+          'classPrivateMethods',
+          'classPrivateProperties',
+          'classProperties',
+          ['decorators', {decoratorsBeforeExport: false}],
+          'doExpressions',
+          'dynamicImport',
+          'exportDefaultFrom',
+          'exportNamespaceFrom',
+          'flow',
+          'flowComments',
+          'functionBind',
+          'functionSent',
+          'importMeta',
+          'jsx',
+          'logicalAssignment',
+          'nullishCoalescingOperator',
+          'numericSeparator',
+          'objectRestSpread',
+          'optionalCatchBinding',
+          'optionalChaining',
+          ['pipelineOperator', {proposal: 'minimal'}],
+          'throwExpressions',
+        ],
+      },
+      generatorOpts: {
+        generator: recast.print,
+      },
+      plugins: [macro(babel, {require: () =&gt; transform, resolvePath: src =&gt; src..."] 
+  "107374183166" -> "68719489160"  [ label = "DDG: "] 
+  "111669151210" -> "30064783580"  [ label = "DDG: this"] 
+  "107374183166" -> "30064783580"  [ label = "DDG: "] 
+  "111669151212" -> "30064783580"  [ label = "DDG: transformCode"] 
+  "30064783682" -> "68719489164"  [ label = "DDG: compileModule"] 
+  "107374183166" -> "68719489164"  [ label = "DDG: "] 
+  "30064783580" -> "30064783582"  [ label = "DDG: this"] 
+  "107374183166" -> "30064783582"  [ label = "DDG: "] 
+  "30064783579" -> "30064783582"  [ label = "DDG: transformCode"] 
+  "30064783583" -> "30064783582"  [ label = "DDG: _tmp_3.createMacro"] 
+  "30064783586" -> "30064783582"  [ label = "DDG: _tmp_3.MacroError"] 
+  "30064783675" -> "30064783589"  [ label = "DDG: babel"] 
+  "107374183166" -> "30064783589"  [ label = "DDG: "] 
+  "111669151213" -> "30064783589"  [ label = "DDG: code"] 
+  "30064783591" -> "30064783589"  [ label = "DDG: _tmp_4.parserOpts"] 
+  "30064783664" -> "30064783589"  [ label = "DDG: _tmp_4.generatorOpts"] 
+  "30064783669" -> "30064783589"  [ label = "DDG: _tmp_4.plugins"] 
+  "30064783680" -> "30064783589"  [ label = "DDG: _tmp_4.sourceMaps"] 
+  "30064783577" -> "30064783583"  [ label = "DDG: macro"] 
+  "30064783577" -> "30064783586"  [ label = "DDG: macro"] 
+  "107374183166" -> "68719489171"  [ label = "DDG: "] 
+  "30064783593" -> "30064783591"  [ label = "DDG: _tmp_5.parser"] 
+  "30064783596" -> "30064783591"  [ label = "DDG: _tmp_5.plugins"] 
+  "107374183166" -> "30064783591"  [ label = "DDG: "] 
+  "30064783666" -> "30064783664"  [ label = "DDG: _tmp_11.generator"] 
+  "107374183166" -> "30064783664"  [ label = "DDG: "] 
+  "30064783673" -> "30064783669"  [ label = "DDG: _tmp_12"] 
+  "107374183166" -> "30064783669"  [ label = "DDG: "] 
+  "107374183166" -> "30064783680"  [ label = "DDG: "] 
+  "107374183166" -> "68719489262"  [ label = "DDG: "] 
+  "30064783575" -> "30064783593"  [ label = "DDG: recast"] 
+  "30064783662" -> "30064783596"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783596"  [ label = "DDG: "] 
+  "107374183166" -> "68719489245"  [ label = "DDG: "] 
+  "30064783575" -> "30064783666"  [ label = "DDG: recast"] 
+  "107374183166" -> "68719489249"  [ label = "DDG: "] 
+  "107374183166" -> "30064783671"  [ label = "DDG: "] 
+  "107374183166" -> "68719489260"  [ label = "DDG: "] 
+  "30064783671" -> "30064783673"  [ label = "DDG: _tmp_12"] 
+  "107374183166" -> "30064783673"  [ label = "DDG: "] 
+  "30064783675" -> "30064783673"  [ label = "DDG: this"] 
+  "30064783675" -> "30064783673"  [ label = "DDG: babel"] 
+  "30064783675" -> "30064783673"  [ label = "DDG: {require: () =&gt; transform, resolvePath: src =&gt; src}"] 
+  "30064783675" -> "30064783673"  [ label = "DDG: "] 
+  "107374183166" -> "30064783598"  [ label = "DDG: "] 
+  "107374183166" -> "68719489244"  [ label = "DDG: "] 
+  "107374183166" -> "68719489254"  [ label = "DDG: "] 
+  "30064783582" -> "30064783675"  [ label = "DDG: this"] 
+  "107374183166" -> "30064783675"  [ label = "DDG: "] 
+  "30064783573" -> "30064783675"  [ label = "DDG: babel"] 
+  "30064783676" -> "30064783675"  [ label = "DDG: _tmp_13.require"] 
+  "30064783678" -> "30064783675"  [ label = "DDG: _tmp_13.resolvePath"] 
+  "30064783598" -> "30064783600"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783600"  [ label = "DDG: "] 
+  "30064783600" -> "30064783602"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783602"  [ label = "DDG: "] 
+  "30064783602" -> "30064783604"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783604"  [ label = "DDG: "] 
+  "30064783604" -> "30064783606"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783606"  [ label = "DDG: "] 
+  "30064783606" -> "30064783608"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783608"  [ label = "DDG: "] 
+  "30064783608" -> "30064783610"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783610"  [ label = "DDG: "] 
+  "30064783616" -> "30064783610"  [ label = "DDG: _tmp_7"] 
+  "30064783610" -> "30064783620"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783620"  [ label = "DDG: "] 
+  "30064783620" -> "30064783622"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783622"  [ label = "DDG: "] 
+  "30064783622" -> "30064783624"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783624"  [ label = "DDG: "] 
+  "30064783624" -> "30064783626"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783626"  [ label = "DDG: "] 
+  "30064783626" -> "30064783628"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783628"  [ label = "DDG: "] 
+  "30064783628" -> "30064783630"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783630"  [ label = "DDG: "] 
+  "30064783630" -> "30064783632"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783632"  [ label = "DDG: "] 
+  "30064783632" -> "30064783634"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783634"  [ label = "DDG: "] 
+  "30064783634" -> "30064783636"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783636"  [ label = "DDG: "] 
+  "30064783636" -> "30064783638"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783638"  [ label = "DDG: "] 
+  "30064783638" -> "30064783640"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783640"  [ label = "DDG: "] 
+  "30064783640" -> "30064783642"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783642"  [ label = "DDG: "] 
+  "30064783642" -> "30064783644"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783644"  [ label = "DDG: "] 
+  "30064783644" -> "30064783646"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783646"  [ label = "DDG: "] 
+  "30064783646" -> "30064783648"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783648"  [ label = "DDG: "] 
+  "30064783648" -> "30064783650"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783650"  [ label = "DDG: "] 
+  "30064783650" -> "30064783652"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783652"  [ label = "DDG: "] 
+  "30064783658" -> "30064783652"  [ label = "DDG: _tmp_9"] 
+  "30064783652" -> "30064783662"  [ label = "DDG: _tmp_6"] 
+  "107374183166" -> "30064783662"  [ label = "DDG: "] 
+  "107374183166" -> "30064783676"  [ label = "DDG: "] 
+  "107374183166" -> "30064783678"  [ label = "DDG: "] 
+  "107374183166" -> "68719489259"  [ label = "DDG: "] 
+  "107374183166" -> "30064783612"  [ label = "DDG: "] 
+  "107374183166" -> "68719489199"  [ label = "DDG: "] 
+  "107374183166" -> "30064783654"  [ label = "DDG: "] 
+  "107374183166" -> "68719489241"  [ label = "DDG: "] 
+  "30064783612" -> "30064783614"  [ label = "DDG: _tmp_7"] 
+  "107374183166" -> "30064783614"  [ label = "DDG: "] 
+  "30064783614" -> "30064783616"  [ label = "DDG: _tmp_7"] 
+  "107374183166" -> "30064783616"  [ label = "DDG: "] 
+  "30064783618" -> "30064783616"  [ label = "DDG: _tmp_8.decoratorsBeforeExport"] 
+  "30064783654" -> "30064783656"  [ label = "DDG: _tmp_9"] 
+  "107374183166" -> "30064783656"  [ label = "DDG: "] 
+  "30064783656" -> "30064783658"  [ label = "DDG: _tmp_9"] 
+  "107374183166" -> "30064783658"  [ label = "DDG: "] 
+  "30064783660" -> "30064783658"  [ label = "DDG: _tmp_10.proposal"] 
+  "107374183166" -> "30064783618"  [ label = "DDG: "] 
+  "107374183166" -> "68719489198"  [ label = "DDG: "] 
+  "107374183166" -> "30064783660"  [ label = "DDG: "] 
+  "107374183166" -> "68719489240"  [ label = "DDG: "] 
+}

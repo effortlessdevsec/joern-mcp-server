@@ -1,0 +1,15 @@
+digraph "resize" {  
+node [shape="rect"];  
+"107374182458" [label = <METHOD, 32<BR/>resize> ]
+"124554051641" [label = <METHOD_RETURN, 32<BR/>void> ]
+"111669149824" [label = <PARAM, 32<BR/>this> ]
+"30064772187" [label = <publish, 33<BR/>publish('PANEL_RESIZE')> ]
+"68719477852" [label = <IDENTIFIER, 33<BR/>publish<BR/>publish('PANEL_RESIZE')> ]
+  "30064772187" -> "124554051641"  [ label = "DDG: this"] 
+  "30064772187" -> "124554051641"  [ label = "DDG: publish('PANEL_RESIZE')"] 
+  "107374182458" -> "111669149824"  [ label = "DDG: "] 
+  "30064772227" -> "68719477852"  [ label = "DDG: publish"] 
+  "107374182458" -> "68719477852"  [ label = "DDG: "] 
+  "111669149824" -> "30064772187"  [ label = "DDG: this"] 
+  "107374182458" -> "30064772187"  [ label = "DDG: "] 
+}

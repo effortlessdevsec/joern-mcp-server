@@ -1,0 +1,33 @@
+digraph "create" {  
+node [shape="rect"];  
+"107374183630" [label = <METHOD, 57<BR/>create> ]
+"124554052813" [label = <METHOD_RETURN, 57<BR/>Promise.reject:&lt;returnValue&gt;> ]
+"111669152175" [label = <PARAM, 57<BR/>this> ]
+"141733921678" [label = <RETURN, 58<BR/>return Promise.reject( new Error('Saving Pa...> ]
+"30064790248" [label = <reject, 58<BR/>Promise.reject( new Error('Saving Parse sni...> ]
+"30064790249" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_7 = .alloc> ]
+"30064790251" [label = <&lt;operator&gt;.new, 59<BR/>new Error('Saving Parse snippets is not support...> ]
+"68719495778" [label = <IDENTIFIER, 59<BR/>_tmp_7<BR/>new Error('Saving Parse snippets is not support...> ]
+"68719495776" [label = <IDENTIFIER, 59<BR/>Error<BR/>new Error('Saving Parse snippets is not support...> ]
+  "141733921678" -> "124554052813"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152175" -> "124554052813"  [ label = "DDG: this"] 
+  "30064790249" -> "124554052813"  [ label = "DDG: .alloc"] 
+  "30064790249" -> "124554052813"  [ label = "DDG: _tmp_7 = .alloc"] 
+  "30064790251" -> "124554052813"  [ label = "DDG: _tmp_7"] 
+  "30064790251" -> "124554052813"  [ label = "DDG: new Error('Saving Parse snippets is not supported anymore.')"] 
+  "30064790248" -> "124554052813"  [ label = "DDG: Promise.reject(
+    new Error('Saving Parse snippets is not supported anymore.'),
+  )"] 
+  "107374183630" -> "111669152175"  [ label = "DDG: "] 
+  "30064790248" -> "141733921678"  [ label = "DDG: Promise.reject(
+    new Error('Saving Parse snippets is not supported anymore.'),
+  )"] 
+  "30064790251" -> "30064790248"  [ label = "DDG: new Error('Saving Parse snippets is not supported anymore.')"] 
+  "30064790251" -> "30064790248"  [ label = "DDG: _tmp_7"] 
+  "107374183630" -> "30064790248"  [ label = "DDG: "] 
+  "107374183630" -> "30064790249"  [ label = "DDG: "] 
+  "107374183630" -> "68719495778"  [ label = "DDG: "] 
+  "107374183630" -> "68719495776"  [ label = "DDG: "] 
+  "30064790249" -> "30064790251"  [ label = "DDG: _tmp_7"] 
+  "107374183630" -> "30064790251"  [ label = "DDG: "] 
+}

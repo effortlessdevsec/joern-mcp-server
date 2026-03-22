@@ -1,0 +1,66 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182925" [label = <METHOD, 21<BR/>&lt;lambda&gt;0> ]
+"124554052108" [label = <METHOD_RETURN, 21<BR/>void> ]
+"111669150708" [label = <PARAM, 21<BR/>this> ]
+"111669150709" [label = <PARAM, 21<BR/>Parser> ]
+"111669150710" [label = <PARAM, 21<BR/>defaultAdapter> ]
+"111669150711" [label = <PARAM, 21<BR/>htmlparser2Adapter> ]
+"30064779157" [label = <callback, 22<BR/>callback({ Parser, TreeAdapters...> ]
+"68719484934" [label = <IDENTIFIER, 22<BR/>callback<BR/>callback({ Parser, TreeAdapters...> ]
+"30064779158" [label = <&lt;operator&gt;.assignment, 23<BR/>_tmp_6.Parser = Parser> ]
+"30064779160" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_6.TreeAdapters = { default: defa...> ]
+"68719484944" [label = <IDENTIFIER, 22<BR/>_tmp_6<BR/>{ Parser, TreeAdapters: { ...> ]
+"30064779162" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_7.default = defaultAdapter> ]
+"30064779164" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_7.htmlparser2 = htmlparser2Adapter> ]
+"68719484943" [label = <IDENTIFIER, 24<BR/>_tmp_7<BR/>{ default: defaultAdapter, ...> ]
+  "30064779157" -> "124554052108"  [ label = "DDG: this"] 
+  "30064779158" -> "124554052108"  [ label = "DDG: _tmp_6.Parser"] 
+  "30064779158" -> "124554052108"  [ label = "DDG: Parser"] 
+  "30064779158" -> "124554052108"  [ label = "DDG: _tmp_6.Parser = Parser"] 
+  "30064779160" -> "124554052108"  [ label = "DDG: _tmp_6.TreeAdapters"] 
+  "30064779162" -> "124554052108"  [ label = "DDG: _tmp_7.default"] 
+  "30064779162" -> "124554052108"  [ label = "DDG: defaultAdapter"] 
+  "30064779162" -> "124554052108"  [ label = "DDG: _tmp_7.default = defaultAdapter"] 
+  "30064779164" -> "124554052108"  [ label = "DDG: _tmp_7.htmlparser2"] 
+  "30064779164" -> "124554052108"  [ label = "DDG: htmlparser2Adapter"] 
+  "30064779164" -> "124554052108"  [ label = "DDG: _tmp_7.htmlparser2 = htmlparser2Adapter"] 
+  "30064779160" -> "124554052108"  [ label = "DDG: _tmp_6.TreeAdapters = {
+          default: defaultAdapter,
+          htmlparser2: htmlparser2Adapter,
+        }"] 
+  "30064779157" -> "124554052108"  [ label = "DDG: callback({
+        Parser,
+        TreeAdapters: {
+          default: defaultAdapter,
+          htmlparser2: htmlparser2Adapter,
+        },
+      })"] 
+  "107374182925" -> "111669150708"  [ label = "DDG: "] 
+  "107374182925" -> "111669150709"  [ label = "DDG: "] 
+  "107374182925" -> "111669150710"  [ label = "DDG: "] 
+  "107374182925" -> "111669150711"  [ label = "DDG: "] 
+  "111669150713" -> "68719484934"  [ label = "DDG: callback"] 
+  "107374182925" -> "68719484934"  [ label = "DDG: "] 
+  "111669150708" -> "30064779157"  [ label = "DDG: this"] 
+  "111669150713" -> "30064779157"  [ label = "DDG: callback"] 
+  "107374182925" -> "30064779157"  [ label = "DDG: "] 
+  "30064779158" -> "30064779157"  [ label = "DDG: _tmp_6.Parser"] 
+  "30064779160" -> "30064779157"  [ label = "DDG: _tmp_6.TreeAdapters"] 
+  "111669150709" -> "30064779158"  [ label = "DDG: Parser"] 
+  "111669150713" -> "30064779158"  [ label = "DDG: callback"] 
+  "107374182925" -> "30064779158"  [ label = "DDG: "] 
+  "30064779162" -> "30064779160"  [ label = "DDG: _tmp_7.default"] 
+  "30064779164" -> "30064779160"  [ label = "DDG: _tmp_7.htmlparser2"] 
+  "107374182925" -> "30064779160"  [ label = "DDG: "] 
+  "111669150713" -> "68719484944"  [ label = "DDG: callback"] 
+  "107374182925" -> "68719484944"  [ label = "DDG: "] 
+  "111669150710" -> "30064779162"  [ label = "DDG: defaultAdapter"] 
+  "111669150713" -> "30064779162"  [ label = "DDG: callback"] 
+  "107374182925" -> "30064779162"  [ label = "DDG: "] 
+  "111669150711" -> "30064779164"  [ label = "DDG: htmlparser2Adapter"] 
+  "111669150713" -> "30064779164"  [ label = "DDG: callback"] 
+  "107374182925" -> "30064779164"  [ label = "DDG: "] 
+  "111669150713" -> "68719484943"  [ label = "DDG: callback"] 
+  "107374182925" -> "68719484943"  [ label = "DDG: "] 
+}

@@ -1,0 +1,15 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374183342" [label = <METHOD, 31<BR/>&lt;lambda&gt;2> ]
+"124554052524" [label = <METHOD_RETURN, 31<BR/>ANY> ]
+"111669151604" [label = <PARAM, 31<BR/>this> ]
+"141733921453" [label = <RETURN, 31<BR/>removeNewlines> ]
+"68719492100" [label = <IDENTIFIER, 31<BR/>removeNewlines> ]
+  "141733921453" -> "124554052524"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151604" -> "124554052524"  [ label = "DDG: this"] 
+  "107374183342" -> "111669151604"  [ label = "DDG: "] 
+  "68719492100" -> "141733921453"  [ label = "DDG: removeNewlines"] 
+  "107374183342" -> "141733921453"  [ label = "DDG: "] 
+  "30064786550" -> "68719492100"  [ label = "DDG: removeNewlines"] 
+  "107374183342" -> "68719492100"  [ label = "DDG: "] 
+}

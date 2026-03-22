@@ -1,0 +1,38 @@
+digraph "cx" {  
+node [shape="rect"];  
+"107374183755" [label = <METHOD, 1<BR/>cx> ]
+"124554052939" [label = <METHOD_RETURN, 1<BR/>__ecma.Array:map:&lt;returnValue&gt;:join:&lt;returnValue&gt;> ]
+"111669152429" [label = <PARAM, 1<BR/>this> ]
+"111669152430" [label = <PARAM, 1<BR/>...configs> ]
+"141733921845" [label = <RETURN, 2<BR/>return configs.map( config =&gt; typeof config...> ]
+"30064791954" [label = <join, 2<BR/>configs.map( config =&gt; typeof config === 's...> ]
+"30064791956" [label = <&lt;operator&gt;.assignment, 2<BR/>(_tmp_0 = configs.map( config =&gt; typeof con...> ]
+"30064791957" [label = <map, 2<BR/>configs.map( config =&gt; typeof config === 's...> ]
+  "141733921845" -> "124554052939"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152429" -> "124554052939"  [ label = "DDG: this"] 
+  "30064791957" -> "124554052939"  [ label = "DDG: configs"] 
+  "30064791956" -> "124554052939"  [ label = "DDG: configs.map(
+    config =&gt; typeof config === 'string' ?
+      config :
+      Object.keys(config).filter(k =&gt; config[k]).join(' '),
+  )"] 
+  "30064791954" -> "124554052939"  [ label = "DDG: _tmp_0"] 
+  "30064791954" -> "124554052939"  [ label = "DDG: configs.map(
+    config =&gt; typeof config === 'string' ?
+      config :
+      Object.keys(config).filter(k =&gt; config[k]).join(' '),
+  ).join(' ')"] 
+  "107374183755" -> "111669152429"  [ label = "DDG: "] 
+  "107374183755" -> "111669152430"  [ label = "DDG: "] 
+  "30064791954" -> "141733921845"  [ label = "DDG: configs.map(
+    config =&gt; typeof config === 'string' ?
+      config :
+      Object.keys(config).filter(k =&gt; config[k]).join(' '),
+  ).join(' ')"] 
+  "30064791956" -> "30064791954"  [ label = "DDG: _tmp_0"] 
+  "107374183755" -> "30064791954"  [ label = "DDG: "] 
+  "30064791957" -> "30064791956"  [ label = "DDG: configs"] 
+  "30064791957" -> "30064791956"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "111669152430" -> "30064791957"  [ label = "DDG: configs"] 
+  "107374183755" -> "30064791957"  [ label = "DDG: "] 
+}

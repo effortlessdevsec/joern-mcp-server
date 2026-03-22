@@ -1,0 +1,35 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183760" [label = <METHOD, 1<BR/>:program> ]
+"124554052944" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152438" [label = <PARAM, 1<BR/>this> ]
+"25769807553" [label = <BLOCK, 1<BR/>export default function debounce(f, timeout=100...> ]
+"30064791973" [label = <&lt;operator&gt;.assignment, 1<BR/>function debounce = function debounce(f, timeou...> ]
+"30064791974" [label = <&lt;operator&gt;.assignment, 1<BR/>exports[&quot;default&quot;] = debounce> ]
+  "111669152438" -> "124554052944"  [ label = "DDG: this"] 
+  "30064791973" -> "124554052944"  [ label = "DDG: function debounce = function debounce(f, timeout=100) {
+  let timer;
+  let lastArgs;
+  let lastThis;
+
+  return function(...args) {
+    lastThis = this;
+    lastArgs = args;
+    if (timer) {
+      return;
+    }
+    timer = setTimeout(() =&gt; {
+      timer = null;
+      f.apply(lastThis, lastArgs);
+    }, timeout);
+  };
+}"] 
+  "30064791974" -> "124554052944"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064791974" -> "124554052944"  [ label = "DDG: debounce"] 
+  "30064791974" -> "124554052944"  [ label = "DDG: exports[&quot;default&quot;] = debounce"] 
+  "107374183760" -> "111669152438"  [ label = "DDG: "] 
+  "107374183760" -> "25769807553"  [ label = "DDG: "] 
+  "107374183760" -> "30064791973"  [ label = "DDG: "] 
+  "30064791973" -> "30064791974"  [ label = "DDG: debounce"] 
+  "107374183760" -> "30064791974"  [ label = "DDG: "] 
+}

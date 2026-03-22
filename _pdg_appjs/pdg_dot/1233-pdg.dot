@@ -1,0 +1,16 @@
+digraph "&lt;init&gt;" {  
+node [shape="rect"];  
+"107374183633" [label = <METHOD, 82<BR/>&lt;init&gt;> ]
+"124554052816" [label = <METHOD_RETURN, 82<BR/>ANY> ]
+"111669152178" [label = <PARAM, 82<BR/>this> ]
+"111669152179" [label = <PARAM, 82<BR/>data> ]
+"30064790260" [label = <&lt;operator&gt;.assignment, 83<BR/>this._data = data> ]
+  "111669152178" -> "124554052816"  [ label = "DDG: this"] 
+  "30064790260" -> "124554052816"  [ label = "DDG: this._data"] 
+  "30064790260" -> "124554052816"  [ label = "DDG: data"] 
+  "30064790260" -> "124554052816"  [ label = "DDG: this._data = data"] 
+  "107374183633" -> "111669152178"  [ label = "DDG: "] 
+  "107374183633" -> "111669152179"  [ label = "DDG: "] 
+  "111669152179" -> "30064790260"  [ label = "DDG: data"] 
+  "107374183633" -> "30064790260"  [ label = "DDG: "] 
+}

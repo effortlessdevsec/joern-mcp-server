@@ -1,0 +1,148 @@
+digraph "fetchSnippet" {  
+node [shape="rect"];  
+"107374183582" [label = <METHOD, 16<BR/>fetchSnippet> ]
+"124554052766" [label = <METHOD_RETURN, 16<BR/>Promise&lt;Revision&gt;> ]
+"111669152093" [label = <PARAM, 16<BR/>this> ]
+"111669152094" [label = <PARAM, 16<BR/>snippetID> ]
+"111669152095" [label = <PARAM, 16<BR/>revisionID='latest'> ]
+"30064789887" [label = <&lt;operator&gt;.assignment, 16<BR/>revisionID = revisionID === void 0 ? &quot;latest&quot; :...> ]
+"141733921630" [label = <RETURN, 17<BR/>return api( `/gist/${snippetID}` + (revisio...> ]
+"30064789891" [label = <then, 17<BR/>api( `/gist/${snippetID}` + (revisionID ? `...> ]
+"30064789888" [label = <&lt;operator&gt;.conditional, 16<BR/>revisionID === void 0 ? &quot;latest&quot; : revisionID> ]
+"30064789889" [label = <&lt;operator&gt;.equals, 16<BR/>revisionID === void 0> ]
+"30064789893" [label = <&lt;operator&gt;.assignment, 17<BR/>(_tmp_2 = api( `/gist/${snippetID}` + (revi...> ]
+"30064789894" [label = <then, 17<BR/>api( `/gist/${snippetID}` + (revisionID ? `...> ]
+"30064789896" [label = <&lt;operator&gt;.assignment, 17<BR/>(_tmp_3 = api( `/gist/${snippetID}` + (revi...> ]
+"68719495457" [label = <IDENTIFIER, 17<BR/>api<BR/>api( `/gist/${snippetID}` + (revisionID ? `...> ]
+"30064789897" [label = <api, 17<BR/>api( `/gist/${snippetID}` + (revisionID ? `...> ]
+"30064789898" [label = <&lt;operator&gt;.addition, 18<BR/>`/gist/${snippetID}` + (revisionID ? `/${revisi...> ]
+"30064789902" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_4.method = &quot;GET&quot;> ]
+"68719495463" [label = <IDENTIFIER, 19<BR/>_tmp_4<BR/>{ method: 'GET', }> ]
+"30064789899" [label = <&lt;operator&gt;.formatString, 18<BR/>&lt;operator&gt;.formatString(&quot;/gist/&quot;, snippetID, &quot;&quot;)> ]
+"30064789900" [label = <&lt;operator&gt;.conditional, 18<BR/>revisionID ? &lt;operator&gt;.formatString(&quot;/&quot;, revis...> ]
+"30064789901" [label = <&lt;operator&gt;.formatString, 18<BR/>&lt;operator&gt;.formatString(&quot;/&quot;, revisionID, &quot;&quot;)> ]
+  "141733921630" -> "124554052766"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064789889" -> "124554052766"  [ label = "DDG: void 0"] 
+  "30064789888" -> "124554052766"  [ label = "DDG: revisionID === void 0"] 
+  "30064789887" -> "124554052766"  [ label = "DDG: revisionID === void 0 ? &quot;latest&quot; : revisionID"] 
+  "30064789887" -> "124554052766"  [ label = "DDG: revisionID = revisionID === void 0 ? &quot;latest&quot; : revisionID"] 
+  "30064789897" -> "124554052766"  [ label = "DDG: this"] 
+  "30064789899" -> "124554052766"  [ label = "DDG: snippetID"] 
+  "30064789898" -> "124554052766"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/gist/&quot;, snippetID, &quot;&quot;)"] 
+  "30064789900" -> "124554052766"  [ label = "DDG: revisionID"] 
+  "30064789900" -> "124554052766"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/&quot;, revisionID, &quot;&quot;)"] 
+  "30064789898" -> "124554052766"  [ label = "DDG: revisionID ? &lt;operator&gt;.formatString(&quot;/&quot;, revisionID, &quot;&quot;) : &quot;&quot;"] 
+  "30064789897" -> "124554052766"  [ label = "DDG: `/gist/${snippetID}` + (revisionID ? `/${revisionID}` : '')"] 
+  "30064789902" -> "124554052766"  [ label = "DDG: _tmp_4.method"] 
+  "30064789902" -> "124554052766"  [ label = "DDG: _tmp_4.method = &quot;GET&quot;"] 
+  "30064789896" -> "124554052766"  [ label = "DDG: api(
+    `/gist/${snippetID}` + (revisionID ? `/${revisionID}` : ''),
+    {
+      method: 'GET',
+    },
+  )"] 
+  "30064789894" -> "124554052766"  [ label = "DDG: _tmp_3"] 
+  "30064789893" -> "124554052766"  [ label = "DDG: api(
+    `/gist/${snippetID}` + (revisionID ? `/${revisionID}` : ''),
+    {
+      method: 'GET',
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    switch (response.status) {
+      case 404:
+        throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+      default:
+        throw new Error('Unknown error.');
+    }
+  })"] 
+  "30064789891" -> "124554052766"  [ label = "DDG: _tmp_2"] 
+  "30064789891" -> "124554052766"  [ label = "DDG: api(
+    `/gist/${snippetID}` + (revisionID ? `/${revisionID}` : ''),
+    {
+      method: 'GET',
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    switch (response.status) {
+      case 404:
+        throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+      default:
+        throw new Error('Unknown error.');
+    }
+  })
+  .then(response =&gt; new Revision(response))"] 
+  "107374183582" -> "111669152093"  [ label = "DDG: "] 
+  "107374183582" -> "111669152094"  [ label = "DDG: "] 
+  "107374183582" -> "111669152095"  [ label = "DDG: "] 
+  "107374183582" -> "30064789887"  [ label = "DDG: "] 
+  "30064789889" -> "30064789887"  [ label = "DDG: revisionID"] 
+  "30064789891" -> "141733921630"  [ label = "DDG: api(
+    `/gist/${snippetID}` + (revisionID ? `/${revisionID}` : ''),
+    {
+      method: 'GET',
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    switch (response.status) {
+      case 404:
+        throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+      default:
+        throw new Error('Unknown error.');
+    }
+  })
+  .then(response =&gt; new Revision(response))"] 
+  "107374183582" -> "30064789888"  [ label = "DDG: "] 
+  "30064789889" -> "30064789888"  [ label = "DDG: revisionID"] 
+  "30064789893" -> "30064789891"  [ label = "DDG: _tmp_2"] 
+  "107374183582" -> "30064789891"  [ label = "DDG: "] 
+  "111669152095" -> "30064789889"  [ label = "DDG: revisionID"] 
+  "107374183582" -> "30064789889"  [ label = "DDG: "] 
+  "30064789894" -> "30064789893"  [ label = "DDG: _tmp_3"] 
+  "30064789894" -> "30064789893"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064789896" -> "30064789894"  [ label = "DDG: _tmp_3"] 
+  "107374183582" -> "30064789894"  [ label = "DDG: "] 
+  "30064789897" -> "30064789896"  [ label = "DDG: this"] 
+  "30064789897" -> "30064789896"  [ label = "DDG: `/gist/${snippetID}` + (revisionID ? `/${revisionID}` : '')"] 
+  "30064789897" -> "30064789896"  [ label = "DDG: {
+      method: 'GET',
+    }"] 
+  "30064789897" -> "30064789896"  [ label = "DDG: "] 
+  "30064790091" -> "68719495457"  [ label = "DDG: api"] 
+  "107374183582" -> "68719495457"  [ label = "DDG: "] 
+  "111669152093" -> "30064789897"  [ label = "DDG: this"] 
+  "107374183582" -> "30064789897"  [ label = "DDG: "] 
+  "30064789899" -> "30064789897"  [ label = "DDG: &quot;/gist/&quot;"] 
+  "30064789899" -> "30064789897"  [ label = "DDG: snippetID"] 
+  "30064789899" -> "30064789897"  [ label = "DDG: &quot;&quot;"] 
+  "30064789901" -> "30064789897"  [ label = "DDG: &quot;/&quot;"] 
+  "30064789901" -> "30064789897"  [ label = "DDG: revisionID"] 
+  "30064789901" -> "30064789897"  [ label = "DDG: &quot;&quot;"] 
+  "30064789902" -> "30064789897"  [ label = "DDG: _tmp_4.method"] 
+  "30064789899" -> "30064789898"  [ label = "DDG: &quot;/gist/&quot;"] 
+  "30064789899" -> "30064789898"  [ label = "DDG: snippetID"] 
+  "30064789899" -> "30064789898"  [ label = "DDG: &quot;&quot;"] 
+  "30064789901" -> "30064789898"  [ label = "DDG: &quot;/&quot;"] 
+  "30064789901" -> "30064789898"  [ label = "DDG: revisionID"] 
+  "30064789901" -> "30064789898"  [ label = "DDG: &quot;&quot;"] 
+  "107374183582" -> "30064789898"  [ label = "DDG: "] 
+  "107374183582" -> "30064789902"  [ label = "DDG: "] 
+  "107374183582" -> "68719495463"  [ label = "DDG: "] 
+  "107374183582" -> "30064789899"  [ label = "DDG: "] 
+  "111669152094" -> "30064789899"  [ label = "DDG: snippetID"] 
+  "30064789901" -> "30064789900"  [ label = "DDG: &quot;/&quot;"] 
+  "30064789901" -> "30064789900"  [ label = "DDG: revisionID"] 
+  "30064789901" -> "30064789900"  [ label = "DDG: &quot;&quot;"] 
+  "107374183582" -> "30064789900"  [ label = "DDG: "] 
+  "107374183582" -> "30064789901"  [ label = "DDG: "] 
+  "30064789887" -> "30064789901"  [ label = "DDG: revisionID"] 
+}

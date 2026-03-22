@@ -1,0 +1,98 @@
+digraph "fetchSnippet" {  
+node [shape="rect"];  
+"107374183624" [label = <METHOD, 16<BR/>fetchSnippet> ]
+"124554052808" [label = <METHOD_RETURN, 16<BR/>Promise&lt;Revision&gt;> ]
+"111669152166" [label = <PARAM, 16<BR/>this> ]
+"111669152167" [label = <PARAM, 16<BR/>snippetID> ]
+"111669152168" [label = <PARAM, 16<BR/>revisionID='latest'> ]
+"30064790212" [label = <&lt;operator&gt;.assignment, 16<BR/>revisionID = revisionID === void 0 ? &quot;latest&quot; :...> ]
+"141733921673" [label = <RETURN, 17<BR/>return api(`/parse/${snippetID}/${revisionID}`)...> ]
+"30064790216" [label = <then, 17<BR/>api(`/parse/${snippetID}/${revisionID}`) .t...> ]
+"30064790213" [label = <&lt;operator&gt;.conditional, 16<BR/>revisionID === void 0 ? &quot;latest&quot; : revisionID> ]
+"30064790214" [label = <&lt;operator&gt;.equals, 16<BR/>revisionID === void 0> ]
+"30064790218" [label = <&lt;operator&gt;.assignment, 17<BR/>(_tmp_2 = api(`/parse/${snippetID}/${revisionID...> ]
+"30064790219" [label = <then, 17<BR/>api(`/parse/${snippetID}/${revisionID}`) .t...> ]
+"30064790221" [label = <&lt;operator&gt;.assignment, 17<BR/>(_tmp_3 = api(`/parse/${snippetID}/${revisionID...> ]
+"68719495746" [label = <IDENTIFIER, 17<BR/>api<BR/>api(`/parse/${snippetID}/${revisionID}`)> ]
+"30064790222" [label = <api, 17<BR/>api(`/parse/${snippetID}/${revisionID}`)> ]
+"30064790223" [label = <&lt;operator&gt;.formatString, 17<BR/>&lt;operator&gt;.formatString(&quot;/parse/&quot;, snippetID, &quot;...> ]
+  "141733921673" -> "124554052808"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064790214" -> "124554052808"  [ label = "DDG: void 0"] 
+  "30064790213" -> "124554052808"  [ label = "DDG: revisionID === void 0"] 
+  "30064790212" -> "124554052808"  [ label = "DDG: revisionID === void 0 ? &quot;latest&quot; : revisionID"] 
+  "30064790212" -> "124554052808"  [ label = "DDG: revisionID = revisionID === void 0 ? &quot;latest&quot; : revisionID"] 
+  "30064790222" -> "124554052808"  [ label = "DDG: this"] 
+  "30064790223" -> "124554052808"  [ label = "DDG: snippetID"] 
+  "30064790223" -> "124554052808"  [ label = "DDG: revisionID"] 
+  "30064790222" -> "124554052808"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/parse/&quot;, snippetID, &quot;/&quot;, revisionID, &quot;&quot;)"] 
+  "30064790221" -> "124554052808"  [ label = "DDG: api(`/parse/${snippetID}/${revisionID}`)"] 
+  "30064790219" -> "124554052808"  [ label = "DDG: _tmp_3"] 
+  "30064790218" -> "124554052808"  [ label = "DDG: api(`/parse/${snippetID}/${revisionID}`)
+    .then(response =&gt; {
+      if (response.ok) {
+        return response.json();
+      }
+      switch (response.status) {
+        case 404:
+          throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+        default:
+          throw new Error('Unknown error.');
+      }
+    })"] 
+  "30064790216" -> "124554052808"  [ label = "DDG: _tmp_2"] 
+  "30064790216" -> "124554052808"  [ label = "DDG: api(`/parse/${snippetID}/${revisionID}`)
+    .then(response =&gt; {
+      if (response.ok) {
+        return response.json();
+      }
+      switch (response.status) {
+        case 404:
+          throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+        default:
+          throw new Error('Unknown error.');
+      }
+    })
+    .then(response =&gt; new Revision(response))"] 
+  "107374183624" -> "111669152166"  [ label = "DDG: "] 
+  "107374183624" -> "111669152167"  [ label = "DDG: "] 
+  "107374183624" -> "111669152168"  [ label = "DDG: "] 
+  "107374183624" -> "30064790212"  [ label = "DDG: "] 
+  "30064790214" -> "30064790212"  [ label = "DDG: revisionID"] 
+  "30064790216" -> "141733921673"  [ label = "DDG: api(`/parse/${snippetID}/${revisionID}`)
+    .then(response =&gt; {
+      if (response.ok) {
+        return response.json();
+      }
+      switch (response.status) {
+        case 404:
+          throw new Error(`Snippet with ID ${snippetID}/${revisionID} doesn't exist.`);
+        default:
+          throw new Error('Unknown error.');
+      }
+    })
+    .then(response =&gt; new Revision(response))"] 
+  "107374183624" -> "30064790213"  [ label = "DDG: "] 
+  "30064790214" -> "30064790213"  [ label = "DDG: revisionID"] 
+  "30064790218" -> "30064790216"  [ label = "DDG: _tmp_2"] 
+  "107374183624" -> "30064790216"  [ label = "DDG: "] 
+  "111669152168" -> "30064790214"  [ label = "DDG: revisionID"] 
+  "107374183624" -> "30064790214"  [ label = "DDG: "] 
+  "30064790219" -> "30064790218"  [ label = "DDG: _tmp_3"] 
+  "30064790219" -> "30064790218"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064790221" -> "30064790219"  [ label = "DDG: _tmp_3"] 
+  "107374183624" -> "30064790219"  [ label = "DDG: "] 
+  "30064790222" -> "30064790221"  [ label = "DDG: this"] 
+  "30064790222" -> "30064790221"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/parse/&quot;, snippetID, &quot;/&quot;, revisionID, &quot;&quot;)"] 
+  "30064790338" -> "68719495746"  [ label = "DDG: api"] 
+  "107374183624" -> "68719495746"  [ label = "DDG: "] 
+  "111669152166" -> "30064790222"  [ label = "DDG: this"] 
+  "107374183624" -> "30064790222"  [ label = "DDG: "] 
+  "30064790223" -> "30064790222"  [ label = "DDG: &quot;&quot;"] 
+  "30064790223" -> "30064790222"  [ label = "DDG: &quot;/parse/&quot;"] 
+  "30064790223" -> "30064790222"  [ label = "DDG: &quot;/&quot;"] 
+  "30064790223" -> "30064790222"  [ label = "DDG: revisionID"] 
+  "30064790223" -> "30064790222"  [ label = "DDG: snippetID"] 
+  "107374183624" -> "30064790223"  [ label = "DDG: "] 
+  "111669152167" -> "30064790223"  [ label = "DDG: snippetID"] 
+  "30064790212" -> "30064790223"  [ label = "DDG: revisionID"] 
+}

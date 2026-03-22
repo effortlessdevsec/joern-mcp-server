@@ -1,0 +1,8 @@
+digraph "&lt;operator&gt;.alloc" {  
+node [shape="rect"];  
+"107374183822" [label = <METHOD<BR/>&lt;operator&gt;.alloc> ]
+"124554053006" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152544" [label = <PARAM<BR/>p0> ]
+  "111669152544" -> "124554053006"  [ label = "DDG: p0"] 
+  "107374183822" -> "111669152544"  [ label = "DDG: "] 
+}

@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182830" [label = <METHOD, 32<BR/>&lt;lambda&gt;1> ]
+"124554052013" [label = <METHOD_RETURN, 32<BR/>ANY> ]
+"111669150503" [label = <PARAM, 32<BR/>this> ]
+"111669150504" [label = <PARAM, 32<BR/>{ Offset }> ]
+"30064777721" [label = <&lt;operator&gt;.assignment, 32<BR/>Offset = param1_0.Offset> ]
+"141733921088" [label = <RETURN, 32<BR/>Offset> ]
+"68719483476" [label = <IDENTIFIER, 32<BR/>Offset> ]
+  "141733921088" -> "124554052013"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150503" -> "124554052013"  [ label = "DDG: this"] 
+  "111669150504" -> "124554052013"  [ label = "DDG: param1_0"] 
+  "30064777721" -> "124554052013"  [ label = "DDG: Offset"] 
+  "30064777721" -> "124554052013"  [ label = "DDG: param1_0.Offset"] 
+  "30064777721" -> "124554052013"  [ label = "DDG: Offset = param1_0.Offset"] 
+  "107374182830" -> "111669150503"  [ label = "DDG: "] 
+  "107374182830" -> "111669150504"  [ label = "DDG: "] 
+  "111669150504" -> "30064777721"  [ label = "DDG: param1_0"] 
+  "68719483476" -> "141733921088"  [ label = "DDG: Offset"] 
+  "30064777721" -> "68719483476"  [ label = "DDG: Offset"] 
+  "107374182830" -> "68719483476"  [ label = "DDG: "] 
+}

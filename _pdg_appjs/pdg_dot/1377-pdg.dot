@@ -1,0 +1,11 @@
+digraph "&lt;operator&gt;.fieldAccess" {  
+node [shape="rect"];  
+"107374183777" [label = <METHOD<BR/>&lt;operator&gt;.fieldAccess> ]
+"124554052961" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152465" [label = <PARAM<BR/>p1> ]
+"111669152466" [label = <PARAM<BR/>p2> ]
+  "111669152465" -> "124554052961"  [ label = "DDG: p1"] 
+  "111669152466" -> "124554052961"  [ label = "DDG: p2"] 
+  "107374183777" -> "111669152465"  [ label = "DDG: "] 
+  "107374183777" -> "111669152466"  [ label = "DDG: "] 
+}

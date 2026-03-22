@@ -1,0 +1,17 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182497" [label = <METHOD, 216<BR/>render> ]
+"124554051680" [label = <METHOD_RETURN, 216<BR/>ANY> ]
+"111669149886" [label = <PARAM, 216<BR/>this> ]
+"141733920853" [label = <RETURN, 217<BR/>return ( &lt;div className=&quot;editor&quot; ref={c =...> ]
+"154618822790" [label = <TEMPLATE_DOM, 218<BR/>&lt;div className=&quot;editor&quot; ref={c =&gt; this.containe...> ]
+"90194313604" [label = <LITERAL, 218<BR/>&quot;editor&quot;<BR/>className=&quot;editor&quot;> ]
+"120259084353" [label = <METHOD_REF, 218<BR/>&lt;lambda&gt;10<BR/>{c =&gt; this.container = c}> ]
+  "141733920853" -> "124554051680"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149886" -> "124554051680"  [ label = "DDG: this"] 
+  "107374182497" -> "111669149886"  [ label = "DDG: "] 
+  "154618822790" -> "141733920853"  [ label = "DDG: &lt;div className=&quot;editor&quot; ref={c =&gt; this.container = c}/&gt;"] 
+  "107374182497" -> "141733920853"  [ label = "DDG: "] 
+  "107374182497" -> "90194313604"  [ label = "DDG: "] 
+  "107374182497" -> "120259084353"  [ label = "DDG: "] 
+}

@@ -1,0 +1,82 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182655" [label = <METHOD, 1<BR/>:program> ]
+"124554051840" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150143" [label = <PARAM, 1<BR/>this> ]
+"30064775077" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064775078" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"25769804421" [label = <BLOCK, 4<BR/>export default function CompactObjectView({keys...> ]
+"30064775082" [label = <&lt;operator&gt;.assignment, 23<BR/>CompactObjectView.propTypes = { keys: PropTyp...> ]
+"30064775079" [label = <&lt;operator&gt;.assignment, 4<BR/>function CompactObjectView = function CompactOb...> ]
+"30064775080" [label = <&lt;operator&gt;.assignment, 4<BR/>exports[&quot;default&quot;] = CompactObjectView> ]
+"68719480684" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064775052" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719480687" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064775053" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"30064775084" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_2.keys = PropTypes.arrayOf(PropTypes.strin...> ]
+"30064775090" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_2.onClick = PropTypes.func> ]
+"68719480699" [label = <IDENTIFIER, 23<BR/>_tmp_2<BR/>{ keys: PropTypes.arrayOf(PropTypes.string).i...> ]
+"30064775087" [label = <arrayOf, 24<BR/>PropTypes.arrayOf(PropTypes.string)> ]
+  "30064775077" -> "124554051840"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064775077" -> "124554051840"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064775078" -> "124554051840"  [ label = "DDG: React"] 
+  "30064775053" -> "124554051840"  [ label = "DDG: this"] 
+  "30064775078" -> "124554051840"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064775078" -> "124554051840"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064775079" -> "124554051840"  [ label = "DDG: function CompactObjectView = function CompactObjectView({keys, onClick}) {
+  if (keys.length === 0) {
+    return &lt;span className=&quot;p&quot;&gt;{'{ }'}&lt;/span&gt;;
+  } else {
+    if (keys.length &gt; 5) {
+      keys = keys.slice(0, 5).concat([`... +${keys.length - 5}`]);
+    }
+    return (
+      &lt;span&gt;
+        &lt;span className=&quot;p&quot;&gt;{'{'}&lt;/span&gt;
+        &lt;span className=&quot;compact placeholder ge&quot; onClick={onClick}&gt;
+          {keys.join(', ')}
+        &lt;/span&gt;
+        &lt;span className=&quot;p&quot;&gt;{'}'}&lt;/span&gt;
+      &lt;/span&gt;
+    );
+  }
+}"] 
+  "30064775080" -> "124554051840"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064775080" -> "124554051840"  [ label = "DDG: CompactObjectView"] 
+  "30064775080" -> "124554051840"  [ label = "DDG: exports[&quot;default&quot;] = CompactObjectView"] 
+  "30064775082" -> "124554051840"  [ label = "DDG: CompactObjectView.propTypes"] 
+  "30064775084" -> "124554051840"  [ label = "DDG: _tmp_2.keys"] 
+  "30064775087" -> "124554051840"  [ label = "DDG: PropTypes"] 
+  "30064775087" -> "124554051840"  [ label = "DDG: PropTypes.string"] 
+  "30064775084" -> "124554051840"  [ label = "DDG: PropTypes.arrayOf(PropTypes.string).isRequired"] 
+  "30064775084" -> "124554051840"  [ label = "DDG: _tmp_2.keys = PropTypes.arrayOf(PropTypes.string).isRequired"] 
+  "30064775090" -> "124554051840"  [ label = "DDG: _tmp_2.onClick"] 
+  "30064775090" -> "124554051840"  [ label = "DDG: PropTypes.func"] 
+  "30064775090" -> "124554051840"  [ label = "DDG: _tmp_2.onClick = PropTypes.func"] 
+  "30064775082" -> "124554051840"  [ label = "DDG: CompactObjectView.propTypes = {
+  keys: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onClick: PropTypes.func,
+}"] 
+  "107374182655" -> "111669150143"  [ label = "DDG: "] 
+  "30064775052" -> "30064775077"  [ label = "DDG: this"] 
+  "30064775052" -> "30064775077"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064775053" -> "30064775078"  [ label = "DDG: this"] 
+  "30064775053" -> "30064775078"  [ label = "DDG: &quot;react&quot;"] 
+  "107374182655" -> "25769804421"  [ label = "DDG: "] 
+  "30064775084" -> "30064775082"  [ label = "DDG: _tmp_2.keys"] 
+  "30064775090" -> "30064775082"  [ label = "DDG: _tmp_2.onClick"] 
+  "107374182655" -> "30064775082"  [ label = "DDG: "] 
+  "107374182655" -> "30064775079"  [ label = "DDG: "] 
+  "30064775079" -> "30064775080"  [ label = "DDG: CompactObjectView"] 
+  "107374182655" -> "30064775080"  [ label = "DDG: "] 
+  "107374182655" -> "68719480684"  [ label = "DDG: "] 
+  "111669150143" -> "30064775052"  [ label = "DDG: this"] 
+  "107374182655" -> "30064775052"  [ label = "DDG: "] 
+  "107374182655" -> "68719480687"  [ label = "DDG: "] 
+  "30064775052" -> "30064775053"  [ label = "DDG: this"] 
+  "107374182655" -> "30064775053"  [ label = "DDG: "] 
+  "30064775087" -> "30064775090"  [ label = "DDG: PropTypes"] 
+  "107374182655" -> "68719480699"  [ label = "DDG: "] 
+  "30064775077" -> "30064775087"  [ label = "DDG: PropTypes"] 
+  "107374182655" -> "30064775087"  [ label = "DDG: "] 
+}

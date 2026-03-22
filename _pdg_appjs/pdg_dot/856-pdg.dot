@@ -1,0 +1,23 @@
+digraph "getSourceFile" {  
+node [shape="rect"];  
+"107374183256" [label = <METHOD, 46<BR/>getSourceFile> ]
+"124554052438" [label = <METHOD_RETURN, 46<BR/>ANY> ]
+"111669151419" [label = <PARAM, 46<BR/>this> ]
+"111669151420" [label = <PARAM, 46<BR/>filename> ]
+"141733921393" [label = <RETURN, 47<BR/>return ts.createSourceFile(filename, code, ts.S...> ]
+"30064785136" [label = <createSourceFile, 47<BR/>ts.createSourceFile(filename, code, ts.ScriptTa...> ]
+  "141733921393" -> "124554052438"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151419" -> "124554052438"  [ label = "DDG: this"] 
+  "30064785136" -> "124554052438"  [ label = "DDG: ts"] 
+  "30064785136" -> "124554052438"  [ label = "DDG: filename"] 
+  "30064785136" -> "124554052438"  [ label = "DDG: code"] 
+  "30064785136" -> "124554052438"  [ label = "DDG: ts.ScriptTarget.Latest"] 
+  "30064785136" -> "124554052438"  [ label = "DDG: ts.createSourceFile(filename, code, ts.ScriptTarget.Latest, true)"] 
+  "107374183256" -> "111669151419"  [ label = "DDG: "] 
+  "107374183256" -> "111669151420"  [ label = "DDG: "] 
+  "30064785136" -> "141733921393"  [ label = "DDG: ts.createSourceFile(filename, code, ts.ScriptTarget.Latest, true)"] 
+  "111669151430" -> "30064785136"  [ label = "DDG: ts"] 
+  "111669151431" -> "30064785136"  [ label = "DDG: code"] 
+  "107374183256" -> "30064785136"  [ label = "DDG: "] 
+  "111669151420" -> "30064785136"  [ label = "DDG: filename"] 
+}

@@ -1,0 +1,22 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183112" [label = <METHOD, 64<BR/>parse> ]
+"124554052294" [label = <METHOD_RETURN, 64<BR/>{ id: __ecma.String; displayName: __ecma.String; version: ANY; homepage: ANY; locationProps: Set&lt;string&gt;; loadParser(callback: ANY): ANY; parse(babylon: ANY, code: ANY, options: __ecma.Array; getDefaultOptions(): { sourceType: __ecma.String; allowImportExportEverywhere: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; createParenthesizedExpressions: __ecma.Boolean; ranges: __ecma.Boolean; tokens: __ecma.Boolean; plugins: __ecma.String[]; decoratorOptions: { version: __ecma.String; decoratorsBeforeExport: __ecma.Boolean; allowCallParenthesized: __ecma.Boolean; }; pipelineOptions: { proposal: __ecma.String; hackTopicToken: __ecma.String; }; typescriptOptions: { dts: __ecma.Boolean; disallowAmbiguousJSXLike: __ecma.Boolean; }; }; _getSettingsConfiguration(): { fields: (string | (string | __ecma.String[])[] | { key: __ecma.String; title: __ecma.String; fields: __ecma.String[]; settings: (settings: ANY) =&gt; ANY; values: (plugins: ANY) =&gt; __ecma.Object; } | { key: __ecma.String; title: __ecma.String; fields: (string | (string | __ecma.String[])[])[]; settings: __ecma.Array; }; opensByDefault(node: ANY, key: ANY): __ecma.Boolean; showInMenu: __ecma.Boolean; _ignoredProperties: Set&lt;any&gt;; typeProps: Set&lt;string&gt;; forEachProperty(node: ANY): Generator&lt;{ value: ANY; key: __ecma.String; computed: __ecma.Boolean; }, ANY, ANY&gt;; hasSettings(): __ecma.Boolean; _mergeDefaultOptions(currentOptions: ANY, defaultOptions: ANY): ANY; renderSettings(settings: ANY, onChange: ANY): ANY; }:parse:&lt;returnValue&gt;> ]
+"111669151093" [label = <PARAM, 64<BR/>this> ]
+"111669151094" [label = <PARAM, 64<BR/>code> ]
+"141733921295" [label = <RETURN, 65<BR/>return babylon7Parser.parse(parsers.babylon7, c...> ]
+"30064782504" [label = <parse, 65<BR/>babylon7Parser.parse(parsers.babylon7, code, ba...> ]
+  "141733921295" -> "124554052294"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151093" -> "124554052294"  [ label = "DDG: this"] 
+  "30064782504" -> "124554052294"  [ label = "DDG: babylon7Parser"] 
+  "30064782504" -> "124554052294"  [ label = "DDG: parsers.babylon7"] 
+  "30064782504" -> "124554052294"  [ label = "DDG: code"] 
+  "30064782504" -> "124554052294"  [ label = "DDG: babylon7Options"] 
+  "30064782504" -> "124554052294"  [ label = "DDG: babylon7Parser.parse(parsers.babylon7, code, babylon7Options)"] 
+  "107374183112" -> "111669151093"  [ label = "DDG: "] 
+  "107374183112" -> "111669151094"  [ label = "DDG: "] 
+  "30064782504" -> "141733921295"  [ label = "DDG: babylon7Parser.parse(parsers.babylon7, code, babylon7Options)"] 
+  "107374183112" -> "30064782504"  [ label = "DDG: "] 
+  "111669151094" -> "30064782504"  [ label = "DDG: code"] 
+  "30064782517" -> "30064782504"  [ label = "DDG: babylon7Options"] 
+}

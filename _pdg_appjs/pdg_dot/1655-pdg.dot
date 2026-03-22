@@ -1,0 +1,4 @@
+digraph "oneOfType" {  
+node [shape="rect"];  
+
+}

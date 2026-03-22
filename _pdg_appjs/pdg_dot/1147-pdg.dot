@@ -1,0 +1,30 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183547" [label = <METHOD, 38<BR/>getDefaultOptions> ]
+"124554052730" [label = <METHOD_RETURN, 38<BR/>{ outputSourceRange: __ecma.Boolean; whitespace: __ecma.String; }> ]
+"111669152028" [label = <PARAM, 38<BR/>this> ]
+"141733921604" [label = <RETURN, 39<BR/>return { outputSourceRange: true, w...> ]
+"25769806962" [label = <BLOCK, 39<BR/>{ outputSourceRange: true, whitespa...> ]
+"30064789364" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_7.outputSourceRange = true> ]
+"30064789366" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_7.whitespace = &quot;preserve&quot;> ]
+"68719494952" [label = <IDENTIFIER, 39<BR/>_tmp_7<BR/>{ outputSourceRange: true, whitespa...> ]
+  "141733921604" -> "124554052730"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152028" -> "124554052730"  [ label = "DDG: this"] 
+  "30064789364" -> "124554052730"  [ label = "DDG: _tmp_7.outputSourceRange"] 
+  "30064789364" -> "124554052730"  [ label = "DDG: _tmp_7.outputSourceRange = true"] 
+  "30064789366" -> "124554052730"  [ label = "DDG: _tmp_7.whitespace"] 
+  "30064789366" -> "124554052730"  [ label = "DDG: _tmp_7.whitespace = &quot;preserve&quot;"] 
+  "107374183547" -> "111669152028"  [ label = "DDG: "] 
+  "25769806962" -> "141733921604"  [ label = "DDG: "] 
+  "25769806962" -> "141733921604"  [ label = "DDG: {
+      outputSourceRange: true,
+      whitespace: 'preserve',
+    }"] 
+  "107374183547" -> "141733921604"  [ label = "DDG: "] 
+  "30064789364" -> "25769806962"  [ label = "DDG: _tmp_7.outputSourceRange"] 
+  "30064789366" -> "25769806962"  [ label = "DDG: _tmp_7.whitespace"] 
+  "107374183547" -> "25769806962"  [ label = "DDG: "] 
+  "107374183547" -> "30064789364"  [ label = "DDG: "] 
+  "107374183547" -> "30064789366"  [ label = "DDG: "] 
+  "107374183547" -> "68719494952"  [ label = "DDG: "] 
+}

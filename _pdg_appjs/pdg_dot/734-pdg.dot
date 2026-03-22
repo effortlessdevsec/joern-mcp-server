@@ -1,0 +1,21 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183134" [label = <METHOD, 21<BR/>&lt;lambda&gt;1> ]
+"124554052317" [label = <METHOD_RETURN, 21<BR/>void> ]
+"111669151140" [label = <PARAM, 21<BR/>this> ]
+"30064782951" [label = <callback, 22<BR/>callback(instance)> ]
+"68719488589" [label = <IDENTIFIER, 22<BR/>callback<BR/>callback(instance)> ]
+  "30064782951" -> "124554052317"  [ label = "DDG: this"] 
+  "30064782951" -> "124554052317"  [ label = "DDG: instance"] 
+  "30064782951" -> "124554052317"  [ label = "DDG: callback(instance)"] 
+  "107374183134" -> "111669151140"  [ label = "DDG: "] 
+  "111669151142" -> "68719488589"  [ label = "DDG: instance"] 
+  "111669151144" -> "68719488589"  [ label = "DDG: callback"] 
+  "107374183134" -> "68719488589"  [ label = "DDG: "] 
+  "111669151140" -> "30064782951"  [ label = "DDG: this"] 
+  "111669151142" -> "30064782951"  [ label = "DDG: instance"] 
+  "111669151144" -> "30064782951"  [ label = "DDG: callback"] 
+  "107374183134" -> "30064782951"  [ label = "DDG: "] 
+  "30064782955" -> "30064782951"  [ label = "DDG: instance"] 
+  "107374183135" -> "30064782951"  [ label = "DDG: "] 
+}

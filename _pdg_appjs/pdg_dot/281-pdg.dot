@@ -1,0 +1,165 @@
+digraph "ElementContainer" {  
+node [shape="rect"];  
+"107374182681" [label = <METHOD, 452<BR/>ElementContainer> ]
+"124554051864" [label = <METHOD_RETURN, 452<BR/>ANY> ]
+"111669150193" [label = <PARAM, 452<BR/>this> ]
+"111669150194" [label = <PARAM, 452<BR/>props> ]
+"25769804492" [label = <BLOCK, 453<BR/>const [selected, setSelected] = useState(false)> ]
+"30064775544" [label = <&lt;operator&gt;.assignment, 454<BR/>const setSelectedNode = useSelectedNode()> ]
+"30064775546" [label = <&lt;operator&gt;.assignment, 455<BR/>const isInRange = props.treeAdapter.isInRange(p...> ]
+"30064775554" [label = <&lt;operator&gt;.assignment, 456<BR/>const onClick = useCallback( (state, own) =...> ]
+"141733920959" [label = <RETURN, 474<BR/>return ( &lt;Element {...props} se...> ]
+"30064775538" [label = <&lt;operator&gt;.assignment, 453<BR/>_tmp_24 = useState(false)> ]
+"30064775540" [label = <&lt;operator&gt;.assignment, 453<BR/>selected = _tmp_24[0]> ]
+"30064775542" [label = <&lt;operator&gt;.assignment, 453<BR/>setSelected = _tmp_24[1]> ]
+"68719481248" [label = <IDENTIFIER, 453<BR/>_tmp_24<BR/>const [selected, setSelected] = useState(false)> ]
+"154618823941" [label = <TEMPLATE_DOM, 475<BR/>&lt;Element {...props} selected={selec...> ]
+"68719481250" [label = <IDENTIFIER, 454<BR/>useSelectedNode<BR/>useSelectedNode()> ]
+"30064775545" [label = <useSelectedNode, 454<BR/>useSelectedNode()> ]
+"30064775547" [label = <isInRange, 455<BR/>props.treeAdapter.isInRange(props.value, props....> ]
+"68719481260" [label = <IDENTIFIER, 456<BR/>useCallback<BR/>useCallback( (state, own) =&gt; { if (ow...> ]
+"30064775555" [label = <useCallback, 456<BR/>useCallback( (state, own) =&gt; { if (ow...> ]
+"68719481242" [label = <IDENTIFIER, 453<BR/>useState<BR/>useState(false)> ]
+"30064775539" [label = <useState, 453<BR/>useState(false)> ]
+"30064775556" [label = <&lt;operator&gt;.assignment, 471<BR/>_tmp_26 = __ecma.Array.factory()> ]
+"30064775558" [label = <, 471<BR/>_tmp_26.push(props.value)> ]
+"30064775561" [label = <, 471<BR/>_tmp_26.push(props.onClick)> ]
+"68719481269" [label = <IDENTIFIER, 471<BR/>_tmp_26<BR/>[props.value, props.onClick]> ]
+"30064775549" [label = <&lt;operator&gt;.assignment, 455<BR/>(_tmp_25 = props.treeAdapter)> ]
+"68719481270" [label = <IDENTIFIER, 476<BR/>props<BR/>{...props}> ]
+"68719481271" [label = <IDENTIFIER, 477<BR/>selected<BR/>{selected}> ]
+"30064775564" [label = <hasChildrenInRange, 479<BR/>props.treeAdapter.hasChildrenInRange(props.valu...> ]
+"68719481278" [label = <IDENTIFIER, 481<BR/>isInRange<BR/>{isInRange}> ]
+"68719481279" [label = <IDENTIFIER, 482<BR/>onClick<BR/>{onClick}> ]
+"30064775566" [label = <&lt;operator&gt;.assignment, 479<BR/>(_tmp_27 = props.treeAdapter)> ]
+  "141733920959" -> "124554051864"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150194" -> "124554051864"  [ label = "DDG: props"] 
+  "30064775538" -> "124554051864"  [ label = "DDG: _tmp_24"] 
+  "30064775538" -> "124554051864"  [ label = "DDG: useState(false)"] 
+  "30064775538" -> "124554051864"  [ label = "DDG: _tmp_24 = useState(false)"] 
+  "30064775540" -> "124554051864"  [ label = "DDG: selected"] 
+  "30064775540" -> "124554051864"  [ label = "DDG: _tmp_24[0]"] 
+  "30064775540" -> "124554051864"  [ label = "DDG: selected = _tmp_24[0]"] 
+  "30064775542" -> "124554051864"  [ label = "DDG: setSelected"] 
+  "30064775542" -> "124554051864"  [ label = "DDG: _tmp_24[1]"] 
+  "30064775542" -> "124554051864"  [ label = "DDG: setSelected = _tmp_24[1]"] 
+  "30064775544" -> "124554051864"  [ label = "DDG: setSelectedNode"] 
+  "30064775544" -> "124554051864"  [ label = "DDG: useSelectedNode()"] 
+  "30064775544" -> "124554051864"  [ label = "DDG: const setSelectedNode = useSelectedNode()"] 
+  "30064775546" -> "124554051864"  [ label = "DDG: isInRange"] 
+  "30064775547" -> "124554051864"  [ label = "DDG: _tmp_25"] 
+  "30064775546" -> "124554051864"  [ label = "DDG: props.treeAdapter.isInRange(props.value, props.name, props.position)"] 
+  "30064775546" -> "124554051864"  [ label = "DDG: const isInRange = props.treeAdapter.isInRange(props.value, props.name, props.position)"] 
+  "30064775554" -> "124554051864"  [ label = "DDG: onClick"] 
+  "30064775555" -> "124554051864"  [ label = "DDG: this"] 
+  "30064775556" -> "124554051864"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064775556" -> "124554051864"  [ label = "DDG: _tmp_26 = __ecma.Array.factory()"] 
+  "30064775558" -> "124554051864"  [ label = "DDG: _tmp_26.push(props.value)"] 
+  "30064775561" -> "124554051864"  [ label = "DDG: _tmp_26"] 
+  "30064775561" -> "124554051864"  [ label = "DDG: props.onClick"] 
+  "30064775561" -> "124554051864"  [ label = "DDG: _tmp_26.push(props.onClick)"] 
+  "30064775554" -> "124554051864"  [ label = "DDG: useCallback(
+    (state, own) =&gt; {
+      if (own) {
+        if (state === OPEN_STATES.CLOSED) {
+          setSelectedNode(null);
+          setSelected(false);
+        } else {
+          setSelectedNode(props.value, () =&gt; setSelected(false));
+          setSelected(true);
+        }
+      }
+      if (props.onClick) {
+        props.onClick(state);
+      }
+    },
+    [props.value, props.onClick],
+  )"] 
+  "30064775554" -> "124554051864"  [ label = "DDG: const onClick = useCallback(
+    (state, own) =&gt; {
+      if (own) {
+        if (state === OPEN_STATES.CLOSED) {
+          setSelectedNode(null);
+          setSelected(false);
+        } else {
+          setSelectedNode(props.value, () =&gt; setSelected(false));
+          setSelected(true);
+        }
+      }
+      if (props.onClick) {
+        props.onClick(state);
+      }
+    },
+    [props.value, props.onClick],
+  )"] 
+  "30064775566" -> "124554051864"  [ label = "DDG: props.treeAdapter"] 
+  "30064775564" -> "124554051864"  [ label = "DDG: _tmp_27"] 
+  "30064775564" -> "124554051864"  [ label = "DDG: props.value"] 
+  "30064775564" -> "124554051864"  [ label = "DDG: props.name"] 
+  "30064775564" -> "124554051864"  [ label = "DDG: props.position"] 
+  "30064775564" -> "124554051864"  [ label = "DDG: props.treeAdapter.hasChildrenInRange(props.value, props.name, props.position)"] 
+  "107374182681" -> "111669150193"  [ label = "DDG: "] 
+  "107374182681" -> "111669150194"  [ label = "DDG: "] 
+  "107374182681" -> "25769804492"  [ label = "DDG: "] 
+  "30064775545" -> "30064775544"  [ label = "DDG: this"] 
+  "30064775547" -> "30064775546"  [ label = "DDG: _tmp_25"] 
+  "30064775547" -> "30064775546"  [ label = "DDG: props.value"] 
+  "30064775547" -> "30064775546"  [ label = "DDG: props.name"] 
+  "30064775547" -> "30064775546"  [ label = "DDG: props.position"] 
+  "30064775555" -> "30064775554"  [ label = "DDG: this"] 
+  "30064775555" -> "30064775554"  [ label = "DDG: &lt;lambda&gt;13"] 
+  "30064775555" -> "30064775554"  [ label = "DDG: [props.value, props.onClick]"] 
+  "30064775555" -> "30064775554"  [ label = "DDG: "] 
+  "154618823941" -> "141733920959"  [ label = "DDG: &lt;Element
+      {...props}
+      selected={selected}
+      hasChildrenInRange={
+        props.treeAdapter.hasChildrenInRange(props.value, props.name, props.position)
+      }
+      isInRange={isInRange}
+      onClick={onClick}
+    /&gt;"] 
+  "107374182681" -> "141733920959"  [ label = "DDG: "] 
+  "30064775539" -> "30064775538"  [ label = "DDG: this"] 
+  "30064775539" -> "30064775538"  [ label = "DDG: false"] 
+  "30064775538" -> "30064775540"  [ label = "DDG: _tmp_24"] 
+  "30064775538" -> "30064775542"  [ label = "DDG: _tmp_24"] 
+  "107374182681" -> "68719481248"  [ label = "DDG: "] 
+  "30064775577" -> "68719481250"  [ label = "DDG: useSelectedNode"] 
+  "107374182681" -> "68719481250"  [ label = "DDG: "] 
+  "30064775539" -> "30064775545"  [ label = "DDG: this"] 
+  "107374182681" -> "30064775545"  [ label = "DDG: "] 
+  "30064775549" -> "30064775547"  [ label = "DDG: _tmp_25"] 
+  "107374182681" -> "30064775547"  [ label = "DDG: "] 
+  "111669150194" -> "30064775547"  [ label = "DDG: props"] 
+  "30064775592" -> "68719481260"  [ label = "DDG: useCallback"] 
+  "107374182681" -> "68719481260"  [ label = "DDG: "] 
+  "30064775545" -> "30064775555"  [ label = "DDG: this"] 
+  "107374182681" -> "30064775555"  [ label = "DDG: "] 
+  "30064775561" -> "30064775555"  [ label = "DDG: _tmp_26"] 
+  "30064775586" -> "68719481242"  [ label = "DDG: useState"] 
+  "107374182681" -> "68719481242"  [ label = "DDG: "] 
+  "111669150193" -> "30064775539"  [ label = "DDG: this"] 
+  "107374182681" -> "30064775539"  [ label = "DDG: "] 
+  "107374182681" -> "30064775556"  [ label = "DDG: "] 
+  "107374182681" -> "68719481269"  [ label = "DDG: "] 
+  "111669150194" -> "30064775549"  [ label = "DDG: props"] 
+  "30064775556" -> "30064775558"  [ label = "DDG: _tmp_26"] 
+  "107374182681" -> "30064775558"  [ label = "DDG: "] 
+  "111669150194" -> "30064775558"  [ label = "DDG: props"] 
+  "30064775547" -> "30064775558"  [ label = "DDG: props.value"] 
+  "30064775558" -> "30064775561"  [ label = "DDG: _tmp_26"] 
+  "107374182681" -> "30064775561"  [ label = "DDG: "] 
+  "111669150194" -> "30064775561"  [ label = "DDG: props"] 
+  "107374182681" -> "68719481270"  [ label = "DDG: "] 
+  "107374182681" -> "68719481271"  [ label = "DDG: "] 
+  "107374182681" -> "68719481278"  [ label = "DDG: "] 
+  "107374182681" -> "68719481279"  [ label = "DDG: "] 
+  "30064775566" -> "30064775564"  [ label = "DDG: _tmp_27"] 
+  "107374182681" -> "30064775564"  [ label = "DDG: "] 
+  "111669150194" -> "30064775564"  [ label = "DDG: props"] 
+  "30064775558" -> "30064775564"  [ label = "DDG: props.value"] 
+  "30064775547" -> "30064775564"  [ label = "DDG: props.name"] 
+  "30064775547" -> "30064775564"  [ label = "DDG: props.position"] 
+  "111669150194" -> "30064775566"  [ label = "DDG: props"] 
+}

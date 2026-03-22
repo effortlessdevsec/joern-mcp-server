@@ -1,0 +1,27 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182540" [label = <METHOD, 14<BR/>&lt;lambda&gt;1> ]
+"124554051724" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669149954" [label = <PARAM, 14<BR/>this> ]
+"111669149955" [label = <PARAM, 14<BR/>{ id, mimeTypes }> ]
+"30064773285" [label = <&lt;operator&gt;.assignment, 14<BR/>id = param1_0.id> ]
+"30064773287" [label = <&lt;operator&gt;.assignment, 14<BR/>mimeTypes = param1_0.mimeTypes> ]
+"30064773289" [label = <forEach, 15<BR/>mimeTypes.forEach(mimeType =&gt; { acceptedFil...> ]
+  "111669149954" -> "124554051724"  [ label = "DDG: this"] 
+  "111669149955" -> "124554051724"  [ label = "DDG: param1_0"] 
+  "30064773285" -> "124554051724"  [ label = "DDG: id"] 
+  "30064773285" -> "124554051724"  [ label = "DDG: param1_0.id"] 
+  "30064773285" -> "124554051724"  [ label = "DDG: id = param1_0.id"] 
+  "30064773287" -> "124554051724"  [ label = "DDG: param1_0.mimeTypes"] 
+  "30064773287" -> "124554051724"  [ label = "DDG: mimeTypes = param1_0.mimeTypes"] 
+  "30064773289" -> "124554051724"  [ label = "DDG: mimeTypes"] 
+  "30064773289" -> "124554051724"  [ label = "DDG: mimeTypes.forEach(mimeType =&gt; {
+    acceptedFileTypes.set(mimeType, id);
+  })"] 
+  "107374182540" -> "111669149954"  [ label = "DDG: "] 
+  "107374182540" -> "111669149955"  [ label = "DDG: "] 
+  "111669149955" -> "30064773285"  [ label = "DDG: param1_0"] 
+  "111669149955" -> "30064773287"  [ label = "DDG: param1_0"] 
+  "30064773287" -> "30064773289"  [ label = "DDG: mimeTypes"] 
+  "107374182540" -> "30064773289"  [ label = "DDG: "] 
+}

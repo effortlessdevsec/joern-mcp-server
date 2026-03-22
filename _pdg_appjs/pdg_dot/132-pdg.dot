@@ -1,0 +1,32 @@
+digraph "LoadingIndicator" {  
+node [shape="rect"];  
+"107374182532" [label = <METHOD, 4<BR/>LoadingIndicator> ]
+"124554051715" [label = <METHOD_RETURN, 4<BR/>ANY> ]
+"111669149941" [label = <PARAM, 4<BR/>this> ]
+"111669149942" [label = <PARAM, 4<BR/>props> ]
+"141733920865" [label = <RETURN, 5<BR/>return props.visible ? &lt;div className...> ]
+"30064773237" [label = <&lt;operator&gt;.conditional, 5<BR/>props.visible ? &lt;div className=&quot;loadingIn...> ]
+"90194313701" [label = <LITERAL, 7<BR/>&quot;loadingIndicator cover&quot;<BR/>className=&quot;loadingIndicator cover&quot;> ]
+"90194313702" [label = <LITERAL, 9<BR/>&quot;fa fa-lg fa-spinner fa-pulse&quot;<BR/>className=&quot;fa fa-lg fa-spinner fa-pulse&quot;> ]
+  "141733920865" -> "124554051715"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149941" -> "124554051715"  [ label = "DDG: this"] 
+  "111669149942" -> "124554051715"  [ label = "DDG: props"] 
+  "30064773237" -> "124554051715"  [ label = "DDG: props.visible"] 
+  "30064773237" -> "124554051715"  [ label = "DDG: props.visible ? &lt;div
+      className=&quot;loadingIndicator cover&quot;&gt;
+      &lt;div&gt;
+        &lt;i className=&quot;fa fa-lg fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; : null"] 
+  "107374182532" -> "111669149941"  [ label = "DDG: "] 
+  "107374182532" -> "111669149942"  [ label = "DDG: "] 
+  "30064773237" -> "141733920865"  [ label = "DDG: props.visible ? &lt;div
+      className=&quot;loadingIndicator cover&quot;&gt;
+      &lt;div&gt;
+        &lt;i className=&quot;fa fa-lg fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; : null"] 
+  "107374182532" -> "30064773237"  [ label = "DDG: "] 
+  "107374182532" -> "90194313701"  [ label = "DDG: "] 
+  "107374182532" -> "90194313702"  [ label = "DDG: "] 
+}

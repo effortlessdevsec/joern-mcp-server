@@ -1,0 +1,63 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183108" [label = <METHOD, 20<BR/>loadParser> ]
+"124554052291" [label = <METHOD_RETURN, 20<BR/>void> ]
+"111669151087" [label = <PARAM, 20<BR/>this> ]
+"111669151088" [label = <PARAM, 20<BR/>callback> ]
+"30064782483" [label = <require, 21<BR/>require( ['recast', 'babel5', 'babylon6',...> ]
+"68719488145" [label = <IDENTIFIER, 21<BR/>require<BR/>require( ['recast', 'babel5', 'babylon6',...> ]
+"30064782484" [label = <&lt;operator&gt;.assignment, 22<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064782486" [label = <, 22<BR/>_tmp_3.push(&quot;recast&quot;)> ]
+"30064782488" [label = <, 22<BR/>_tmp_3.push(&quot;babel5&quot;)> ]
+"30064782490" [label = <, 22<BR/>_tmp_3.push(&quot;babylon6&quot;)> ]
+"30064782492" [label = <, 22<BR/>_tmp_3.push(&quot;babylon7&quot;)> ]
+"30064782494" [label = <, 22<BR/>_tmp_3.push(&quot;flow-parser&quot;)> ]
+"30064782496" [label = <, 22<BR/>_tmp_3.push(&quot;recast/parsers/typescript&quot;)> ]
+"68719488160" [label = <IDENTIFIER, 22<BR/>_tmp_3<BR/>['recast', 'babel5', 'babylon6', 'babylon7', 'f...> ]
+  "111669151088" -> "124554052291"  [ label = "DDG: callback"] 
+  "30064782483" -> "124554052291"  [ label = "DDG: this"] 
+  "30064782484" -> "124554052291"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064782484" -> "124554052291"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064782486" -> "124554052291"  [ label = "DDG: _tmp_3.push(&quot;recast&quot;)"] 
+  "30064782488" -> "124554052291"  [ label = "DDG: _tmp_3.push(&quot;babel5&quot;)"] 
+  "30064782490" -> "124554052291"  [ label = "DDG: _tmp_3.push(&quot;babylon6&quot;)"] 
+  "30064782492" -> "124554052291"  [ label = "DDG: _tmp_3.push(&quot;babylon7&quot;)"] 
+  "30064782494" -> "124554052291"  [ label = "DDG: _tmp_3.push(&quot;flow-parser&quot;)"] 
+  "30064782496" -> "124554052291"  [ label = "DDG: _tmp_3"] 
+  "30064782496" -> "124554052291"  [ label = "DDG: _tmp_3.push(&quot;recast/parsers/typescript&quot;)"] 
+  "30064782483" -> "124554052291"  [ label = "DDG: require(
+      ['recast', 'babel5', 'babylon6', 'babylon7', 'flow-parser', 'recast/parsers/typescript'],
+      (recast, babelCore, babylon6, babylon7, flow, typescript) =&gt; {
+        callback({
+          recast,
+          parsers: {
+            'babel5': babelCore,
+            babylon6,
+            babylon7,
+            flow,
+            typescript,
+          },
+        });
+      },
+    )"] 
+  "107374183108" -> "111669151087"  [ label = "DDG: "] 
+  "107374183108" -> "111669151088"  [ label = "DDG: "] 
+  "107374183108" -> "68719488145"  [ label = "DDG: "] 
+  "111669151087" -> "30064782483"  [ label = "DDG: this"] 
+  "107374183108" -> "30064782483"  [ label = "DDG: "] 
+  "30064782496" -> "30064782483"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782484"  [ label = "DDG: "] 
+  "107374183108" -> "68719488160"  [ label = "DDG: "] 
+  "30064782484" -> "30064782486"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782486"  [ label = "DDG: "] 
+  "30064782486" -> "30064782488"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782488"  [ label = "DDG: "] 
+  "30064782488" -> "30064782490"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782490"  [ label = "DDG: "] 
+  "30064782490" -> "30064782492"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782492"  [ label = "DDG: "] 
+  "30064782492" -> "30064782494"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782494"  [ label = "DDG: "] 
+  "30064782494" -> "30064782496"  [ label = "DDG: _tmp_3"] 
+  "107374183108" -> "30064782496"  [ label = "DDG: "] 
+}

@@ -1,0 +1,39 @@
+digraph "&lt;lambda&gt;3" {  
+node [shape="rect"];  
+"107374182645" [label = <METHOD, 67<BR/>&lt;lambda&gt;3> ]
+"124554051827" [label = <METHOD_RETURN, 67<BR/>ANY> ]
+"111669150122" [label = <PARAM, 67<BR/>this> ]
+"111669150123" [label = <PARAM, 67<BR/>filter> ]
+"141733920923" [label = <RETURN, 68<BR/>&lt;span key={filter.key}&gt; &lt;label&gt; ...> ]
+"154618823569" [label = <TEMPLATE_DOM, 68<BR/>&lt;span key={filter.key}&gt; &lt;label&gt; ...> ]
+"30064774844" [label = <makeCheckbox, 70<BR/>makeCheckbox(filter.key, settings, updateSettings)> ]
+"68719480430" [label = <IDENTIFIER, 70<BR/>makeCheckbox<BR/>makeCheckbox(filter.key, settings, updateSettings)> ]
+  "141733920923" -> "124554051827"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150123" -> "124554051827"  [ label = "DDG: filter"] 
+  "30064774844" -> "124554051827"  [ label = "DDG: this"] 
+  "30064774844" -> "124554051827"  [ label = "DDG: filter.key"] 
+  "30064774844" -> "124554051827"  [ label = "DDG: settings"] 
+  "30064774844" -> "124554051827"  [ label = "DDG: updateSettings"] 
+  "30064774844" -> "124554051827"  [ label = "DDG: makeCheckbox(filter.key, settings, updateSettings)"] 
+  "107374182645" -> "111669150122"  [ label = "DDG: "] 
+  "107374182645" -> "111669150123"  [ label = "DDG: "] 
+  "154618823569" -> "141733920923"  [ label = "DDG: &lt;span key={filter.key}&gt;
+            &lt;label&gt;
+              {makeCheckbox(filter.key, settings, updateSettings)}
+              {filter.label}
+            &lt;/label&gt;
+            &amp;#8203;
+          &lt;/span&gt;"] 
+  "107374182645" -> "141733920923"  [ label = "DDG: "] 
+  "68719480470" -> "68719480430"  [ label = "DDG: makeCheckbox"] 
+  "107374182645" -> "68719480430"  [ label = "DDG: "] 
+  "111669150122" -> "30064774844"  [ label = "DDG: this"] 
+  "107374182645" -> "30064774844"  [ label = "DDG: "] 
+  "111669150123" -> "30064774844"  [ label = "DDG: filter"] 
+  "30064774854" -> "30064774844"  [ label = "DDG: settings"] 
+  "30064774865" -> "30064774844"  [ label = "DDG: settings"] 
+  "30064774871" -> "30064774844"  [ label = "DDG: settings"] 
+  "107374182642" -> "30064774844"  [ label = "DDG: "] 
+  "30064774856" -> "30064774844"  [ label = "DDG: updateSettings"] 
+  "30064774871" -> "30064774844"  [ label = "DDG: updateSettings"] 
+}

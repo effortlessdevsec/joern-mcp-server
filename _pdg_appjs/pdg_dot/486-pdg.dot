@@ -1,0 +1,241 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182886" [label = <METHOD, 1<BR/>:program> ]
+"124554052084" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150658" [label = <PARAM, 1<BR/>this> ]
+"30064778713" [label = <&lt;operator&gt;.assignment, 1<BR/>var defaultParserInterface = require(&quot;../utils/...> ]
+"30064778714" [label = <&lt;operator&gt;.assignment, 2<BR/>var pkg = require(&quot;@angular/compiler/package.js...> ]
+"30064778715" [label = <&lt;operator&gt;.assignment, 67<BR/>function getNodeCtor = function getNodeCtor(nod...> ]
+"30064778716" [label = <&lt;operator&gt;.assignment, 85<BR/>function fixSpan = function fixSpan(ast, code) ...> ]
+"30064778717" [label = <&lt;operator&gt;.assignment, 4<BR/>const ID = 'angular'> ]
+"25769805082" [label = <BLOCK, 6<BR/>export default { ...defaultParserInterface, ...> ]
+"25769805061" [label = <BLOCK, 6<BR/>{ ...defaultParserInterface, id: ID, dis...> ]
+"30064778763" [label = <&lt;operator&gt;.assignment, 6<BR/>exports[&quot;default&quot;] = id> ]
+"30064778765" [label = <&lt;operator&gt;.assignment, 6<BR/>exports[&quot;default&quot;] = displayName> ]
+"30064778767" [label = <&lt;operator&gt;.assignment, 6<BR/>exports[&quot;default&quot;] = version> ]
+"30064778769" [label = <&lt;operator&gt;.assignment, 6<BR/>exports[&quot;default&quot;] = homepage> ]
+"30064778771" [label = <&lt;operator&gt;.assignment, 6<BR/>exports[&quot;default&quot;] = locationProps> ]
+"30064778773" [label = <&lt;operator&gt;.assignment, 6<BR/>exports[&quot;default&quot;] = typeProps> ]
+"68719484511" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;../utils/defaultParserInterface&quot;)> ]
+"30064778553" [label = <require, 1<BR/>require(&quot;../utils/defaultParserInterface&quot;)> ]
+"68719484514" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;@angular/compiler/package.json&quot;)> ]
+"30064778554" [label = <require, 2<BR/>require(&quot;@angular/compiler/package.json&quot;)> ]
+"30064778718" [label = <&lt;operator&gt;.spread, 7<BR/>...defaultParserInterface> ]
+"30064778719" [label = <&lt;operator&gt;.assignment, 9<BR/>_tmp_4.id = ID> ]
+"30064778721" [label = <&lt;operator&gt;.assignment, 10<BR/>_tmp_4.displayName = ID> ]
+"30064778723" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_4.version = pkg.version> ]
+"30064778726" [label = <&lt;operator&gt;.assignment, 12<BR/>_tmp_4.homepage = pkg.homepage> ]
+"30064778729" [label = <&lt;operator&gt;.assignment, 13<BR/>_tmp_4.locationProps = new Set([ 'span', ...> ]
+"30064778744" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_4.typeProps = new Set(['name'])> ]
+"30064778753" [label = <&lt;operator&gt;.assignment, 21<BR/>_tmp_4.loadParser = loadParser> ]
+"30064778755" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_4.parse = parse> ]
+"30064778757" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_4.nodeToRange = nodeToRange> ]
+"30064778759" [label = <&lt;operator&gt;.assignment, 52<BR/>_tmp_4.getNodeName = getNodeName> ]
+"30064778761" [label = <&lt;operator&gt;.assignment, 60<BR/>_tmp_4.getDefaultOptions = getDefaultOptions> ]
+"68719484558" [label = <IDENTIFIER, 6<BR/>_tmp_4<BR/>{ ...defaultParserInterface, id: ID, dis...> ]
+"30064778731" [label = <&lt;operator&gt;.assignment, 13<BR/>_tmp_5 = .alloc> ]
+"30064778733" [label = <&lt;operator&gt;.new, 13<BR/>new Set([ 'span', 'sourceSpan', 'st...> ]
+"68719484543" [label = <IDENTIFIER, 13<BR/>_tmp_5<BR/>new Set([ 'span', 'sourceSpan', 'st...> ]
+"30064778746" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_7 = .alloc> ]
+"30064778748" [label = <&lt;operator&gt;.new, 19<BR/>new Set(['name'])> ]
+"68719484552" [label = <IDENTIFIER, 19<BR/>_tmp_7<BR/>new Set(['name'])> ]
+"68719484531" [label = <IDENTIFIER, 13<BR/>Set<BR/>new Set([ 'span', 'sourceSpan', 'st...> ]
+"68719484546" [label = <IDENTIFIER, 19<BR/>Set<BR/>new Set(['name'])> ]
+"30064778734" [label = <&lt;operator&gt;.assignment, 13<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064778736" [label = <, 14<BR/>_tmp_6.push(&quot;span&quot;)> ]
+"30064778738" [label = <, 15<BR/>_tmp_6.push(&quot;sourceSpan&quot;)> ]
+"30064778740" [label = <, 16<BR/>_tmp_6.push(&quot;startSourceSpan&quot;)> ]
+"30064778742" [label = <, 17<BR/>_tmp_6.push(&quot;endSourceSpan&quot;)> ]
+"68719484542" [label = <IDENTIFIER, 13<BR/>_tmp_6<BR/>[ 'span', 'sourceSpan', 'startSourc...> ]
+"30064778749" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_8 = __ecma.Array.factory()> ]
+"30064778751" [label = <, 19<BR/>_tmp_8.push(&quot;name&quot;)> ]
+"68719484551" [label = <IDENTIFIER, 19<BR/>_tmp_8<BR/>['name']> ]
+  "30064778713" -> "124554052084"  [ label = "DDG: require(&quot;../utils/defaultParserInterface&quot;)"] 
+  "30064778713" -> "124554052084"  [ label = "DDG: var defaultParserInterface = require(&quot;../utils/defaultParserInterface&quot;)"] 
+  "30064778714" -> "124554052084"  [ label = "DDG: pkg"] 
+  "30064778554" -> "124554052084"  [ label = "DDG: this"] 
+  "30064778714" -> "124554052084"  [ label = "DDG: require(&quot;@angular/compiler/package.json&quot;)"] 
+  "30064778714" -> "124554052084"  [ label = "DDG: var pkg = require(&quot;@angular/compiler/package.json&quot;)"] 
+  "30064778715" -> "124554052084"  [ label = "DDG: getNodeCtor"] 
+  "30064778715" -> "124554052084"  [ label = "DDG: function getNodeCtor = function getNodeCtor(node) {
+  return node.constructor &amp;&amp; node.constructor.name;
+}"] 
+  "30064778716" -> "124554052084"  [ label = "DDG: fixSpan"] 
+  "30064778716" -> "124554052084"  [ label = "DDG: function fixSpan = function fixSpan(ast, code) {
+  const fixed = new Set();
+  const KEEP_VISIT = 1;
+  function visitTarget(value, isTarget, fn, parent) {
+    if (value !== null &amp;&amp; typeof value === 'object') {
+      if (isTarget(value)) {
+        if (fn(value, parent) !== KEEP_VISIT) {
+          return;
+        }
+      }
+      if (Array.isArray(value)) {
+        value.forEach(subValue =&gt; visitTarget(subValue, isTarget, fn, value));
+      } else {
+        for (const key in value) {
+          visitTarget(value[key], isTarget, fn, value);
+        }
+      }
+    }
+  }
+
+  function getBaseStart(parent) {
+    const nodeName = getNodeCtor(parent);
+    switch (nodeName) {
+      case 'BoundAttribute':
+      case 'BoundEvent': {
+        let {offset} = parent.sourceSpan.start;
+        const isStructuralBinding = !/[[(]/.test(code[offset]);
+        if (isStructuralBinding) {
+          return offset;
+        }
+
+        const assignment = /[=:]/;
+        while (code[offset] &amp;&amp; !assignment.test(code[offset++]));
+
+     ..."] 
+  "30064778717" -> "124554052084"  [ label = "DDG: const ID = 'angular'"] 
+  "30064778718" -> "124554052084"  [ label = "DDG: _tmp_4"] 
+  "30064778718" -> "124554052084"  [ label = "DDG: defaultParserInterface"] 
+  "30064778718" -> "124554052084"  [ label = "DDG: ...defaultParserInterface"] 
+  "30064778719" -> "124554052084"  [ label = "DDG: _tmp_4.id"] 
+  "30064778719" -> "124554052084"  [ label = "DDG: _tmp_4.id = ID"] 
+  "30064778721" -> "124554052084"  [ label = "DDG: _tmp_4.displayName"] 
+  "30064778721" -> "124554052084"  [ label = "DDG: ID"] 
+  "30064778721" -> "124554052084"  [ label = "DDG: _tmp_4.displayName = ID"] 
+  "30064778723" -> "124554052084"  [ label = "DDG: _tmp_4.version"] 
+  "30064778723" -> "124554052084"  [ label = "DDG: pkg.version"] 
+  "30064778723" -> "124554052084"  [ label = "DDG: _tmp_4.version = pkg.version"] 
+  "30064778726" -> "124554052084"  [ label = "DDG: _tmp_4.homepage"] 
+  "30064778726" -> "124554052084"  [ label = "DDG: pkg.homepage"] 
+  "30064778726" -> "124554052084"  [ label = "DDG: _tmp_4.homepage = pkg.homepage"] 
+  "30064778729" -> "124554052084"  [ label = "DDG: _tmp_4.locationProps"] 
+  "30064778731" -> "124554052084"  [ label = "DDG: _tmp_5 = .alloc"] 
+  "30064778733" -> "124554052084"  [ label = "DDG: _tmp_5"] 
+  "30064778734" -> "124554052084"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064778736" -> "124554052084"  [ label = "DDG: _tmp_6.push(&quot;span&quot;)"] 
+  "30064778738" -> "124554052084"  [ label = "DDG: _tmp_6.push(&quot;sourceSpan&quot;)"] 
+  "30064778740" -> "124554052084"  [ label = "DDG: _tmp_6.push(&quot;startSourceSpan&quot;)"] 
+  "30064778742" -> "124554052084"  [ label = "DDG: _tmp_6"] 
+  "30064778742" -> "124554052084"  [ label = "DDG: _tmp_6.push(&quot;endSourceSpan&quot;)"] 
+  "30064778733" -> "124554052084"  [ label = "DDG: new Set([
+    'span',
+    'sourceSpan',
+    'startSourceSpan',
+    'endSourceSpan',
+  ])"] 
+  "30064778729" -> "124554052084"  [ label = "DDG: _tmp_4.locationProps = new Set([
+    'span',
+    'sourceSpan',
+    'startSourceSpan',
+    'endSourceSpan',
+  ])"] 
+  "30064778744" -> "124554052084"  [ label = "DDG: _tmp_4.typeProps"] 
+  "30064778746" -> "124554052084"  [ label = "DDG: .alloc"] 
+  "30064778746" -> "124554052084"  [ label = "DDG: _tmp_7 = .alloc"] 
+  "30064778748" -> "124554052084"  [ label = "DDG: _tmp_7"] 
+  "30064778749" -> "124554052084"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064778749" -> "124554052084"  [ label = "DDG: _tmp_8 = __ecma.Array.factory()"] 
+  "30064778751" -> "124554052084"  [ label = "DDG: _tmp_8"] 
+  "30064778751" -> "124554052084"  [ label = "DDG: _tmp_8.push(&quot;name&quot;)"] 
+  "30064778748" -> "124554052084"  [ label = "DDG: new Set(['name'])"] 
+  "30064778744" -> "124554052084"  [ label = "DDG: _tmp_4.typeProps = new Set(['name'])"] 
+  "30064778753" -> "124554052084"  [ label = "DDG: _tmp_4.loadParser"] 
+  "30064778753" -> "124554052084"  [ label = "DDG: _tmp_4.loadParser = loadParser"] 
+  "30064778755" -> "124554052084"  [ label = "DDG: _tmp_4.parse"] 
+  "30064778755" -> "124554052084"  [ label = "DDG: _tmp_4.parse = parse"] 
+  "30064778757" -> "124554052084"  [ label = "DDG: _tmp_4.nodeToRange"] 
+  "30064778757" -> "124554052084"  [ label = "DDG: _tmp_4.nodeToRange = nodeToRange"] 
+  "30064778759" -> "124554052084"  [ label = "DDG: _tmp_4.getNodeName"] 
+  "30064778759" -> "124554052084"  [ label = "DDG: _tmp_4.getNodeName = getNodeName"] 
+  "30064778761" -> "124554052084"  [ label = "DDG: _tmp_4.getDefaultOptions"] 
+  "30064778761" -> "124554052084"  [ label = "DDG: _tmp_4.getDefaultOptions = getDefaultOptions"] 
+  "30064778763" -> "124554052084"  [ label = "DDG: id"] 
+  "30064778763" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;] = id"] 
+  "30064778765" -> "124554052084"  [ label = "DDG: displayName"] 
+  "30064778765" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;] = displayName"] 
+  "30064778767" -> "124554052084"  [ label = "DDG: version"] 
+  "30064778767" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;] = version"] 
+  "30064778769" -> "124554052084"  [ label = "DDG: homepage"] 
+  "30064778769" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;] = homepage"] 
+  "30064778771" -> "124554052084"  [ label = "DDG: locationProps"] 
+  "30064778771" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;] = locationProps"] 
+  "30064778773" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064778773" -> "124554052084"  [ label = "DDG: typeProps"] 
+  "30064778773" -> "124554052084"  [ label = "DDG: exports[&quot;default&quot;] = typeProps"] 
+  "107374182886" -> "111669150658"  [ label = "DDG: "] 
+  "30064778553" -> "30064778713"  [ label = "DDG: this"] 
+  "30064778553" -> "30064778713"  [ label = "DDG: &quot;../utils/defaultParserInterface&quot;"] 
+  "30064778554" -> "30064778714"  [ label = "DDG: this"] 
+  "30064778554" -> "30064778714"  [ label = "DDG: &quot;@angular/compiler/package.json&quot;"] 
+  "107374182886" -> "30064778715"  [ label = "DDG: "] 
+  "107374182886" -> "30064778716"  [ label = "DDG: "] 
+  "107374182886" -> "30064778717"  [ label = "DDG: "] 
+  "107374182886" -> "25769805082"  [ label = "DDG: "] 
+  "107374182886" -> "25769805061"  [ label = "DDG: "] 
+  "107374182886" -> "30064778763"  [ label = "DDG: "] 
+  "107374182886" -> "30064778765"  [ label = "DDG: "] 
+  "107374182886" -> "30064778767"  [ label = "DDG: "] 
+  "107374182886" -> "30064778769"  [ label = "DDG: "] 
+  "107374182886" -> "30064778771"  [ label = "DDG: "] 
+  "107374182886" -> "30064778773"  [ label = "DDG: "] 
+  "107374182886" -> "68719484511"  [ label = "DDG: "] 
+  "111669150658" -> "30064778553"  [ label = "DDG: this"] 
+  "107374182886" -> "30064778553"  [ label = "DDG: "] 
+  "107374182886" -> "68719484514"  [ label = "DDG: "] 
+  "30064778553" -> "30064778554"  [ label = "DDG: this"] 
+  "107374182886" -> "30064778554"  [ label = "DDG: "] 
+  "30064778717" -> "30064778719"  [ label = "DDG: ID"] 
+  "107374182886" -> "30064778719"  [ label = "DDG: "] 
+  "107374182886" -> "30064778721"  [ label = "DDG: "] 
+  "30064778717" -> "30064778721"  [ label = "DDG: ID"] 
+  "30064778714" -> "30064778723"  [ label = "DDG: pkg"] 
+  "30064778714" -> "30064778726"  [ label = "DDG: pkg"] 
+  "30064778733" -> "30064778729"  [ label = "DDG: new Set([
+    'span',
+    'sourceSpan',
+    'startSourceSpan',
+    'endSourceSpan',
+  ])"] 
+  "30064778733" -> "30064778729"  [ label = "DDG: _tmp_5"] 
+  "107374182886" -> "30064778729"  [ label = "DDG: "] 
+  "30064778748" -> "30064778744"  [ label = "DDG: new Set(['name'])"] 
+  "30064778748" -> "30064778744"  [ label = "DDG: _tmp_7"] 
+  "107374182886" -> "30064778744"  [ label = "DDG: "] 
+  "107374182886" -> "30064778753"  [ label = "DDG: "] 
+  "107374182886" -> "30064778755"  [ label = "DDG: "] 
+  "107374182886" -> "30064778757"  [ label = "DDG: "] 
+  "107374182886" -> "30064778759"  [ label = "DDG: "] 
+  "107374182886" -> "30064778761"  [ label = "DDG: "] 
+  "107374182886" -> "68719484558"  [ label = "DDG: "] 
+  "107374182886" -> "30064778718"  [ label = "DDG: "] 
+  "30064778713" -> "30064778718"  [ label = "DDG: defaultParserInterface"] 
+  "107374182886" -> "30064778731"  [ label = "DDG: "] 
+  "107374182886" -> "68719484543"  [ label = "DDG: "] 
+  "107374182886" -> "30064778746"  [ label = "DDG: "] 
+  "107374182886" -> "68719484552"  [ label = "DDG: "] 
+  "107374182886" -> "68719484531"  [ label = "DDG: "] 
+  "30064778731" -> "30064778733"  [ label = "DDG: _tmp_5"] 
+  "107374182886" -> "30064778733"  [ label = "DDG: "] 
+  "30064778742" -> "30064778733"  [ label = "DDG: _tmp_6"] 
+  "107374182886" -> "68719484546"  [ label = "DDG: "] 
+  "30064778746" -> "30064778748"  [ label = "DDG: _tmp_7"] 
+  "107374182886" -> "30064778748"  [ label = "DDG: "] 
+  "30064778751" -> "30064778748"  [ label = "DDG: _tmp_8"] 
+  "107374182886" -> "30064778734"  [ label = "DDG: "] 
+  "107374182886" -> "68719484542"  [ label = "DDG: "] 
+  "107374182886" -> "30064778749"  [ label = "DDG: "] 
+  "107374182886" -> "68719484551"  [ label = "DDG: "] 
+  "30064778734" -> "30064778736"  [ label = "DDG: _tmp_6"] 
+  "107374182886" -> "30064778736"  [ label = "DDG: "] 
+  "30064778736" -> "30064778738"  [ label = "DDG: _tmp_6"] 
+  "107374182886" -> "30064778738"  [ label = "DDG: "] 
+  "30064778738" -> "30064778740"  [ label = "DDG: _tmp_6"] 
+  "107374182886" -> "30064778740"  [ label = "DDG: "] 
+  "30064778740" -> "30064778742"  [ label = "DDG: _tmp_6"] 
+  "107374182886" -> "30064778742"  [ label = "DDG: "] 
+  "30064778749" -> "30064778751"  [ label = "DDG: _tmp_8"] 
+  "107374182886" -> "30064778751"  [ label = "DDG: "] 
+}

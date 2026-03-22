@@ -1,0 +1,4 @@
+digraph "constructTree" {  
+node [shape="rect"];  
+
+}

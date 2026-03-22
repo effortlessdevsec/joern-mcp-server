@@ -1,0 +1,70 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182608" [label = <METHOD, 1<BR/>:program> ]
+"124554051793" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150067" [label = <PARAM, 1<BR/>this> ]
+"30064774379" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064774380" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"25769804301" [label = <BLOCK, 4<BR/>export default function ShareButton({onShareBut...> ]
+"30064774384" [label = <&lt;operator&gt;.assignment, 15<BR/>ShareButton.propTypes = { onShareButtonClick:...> ]
+"30064774381" [label = <&lt;operator&gt;.assignment, 4<BR/>function ShareButton = function ShareButton({on...> ]
+"30064774382" [label = <&lt;operator&gt;.assignment, 4<BR/>exports[&quot;default&quot;] = ShareButton> ]
+"68719480019" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064774372" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719480022" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064774373" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"30064774386" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_0.onShareButtonClick = PropTypes.func.isRe...> ]
+"30064774390" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_0.snippet = PropTypes.object> ]
+"68719480032" [label = <IDENTIFIER, 15<BR/>_tmp_0<BR/>{ onShareButtonClick: PropTypes.func.isRequir...> ]
+  "30064774379" -> "124554051793"  [ label = "DDG: PropTypes"] 
+  "30064774379" -> "124554051793"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064774379" -> "124554051793"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064774380" -> "124554051793"  [ label = "DDG: React"] 
+  "30064774373" -> "124554051793"  [ label = "DDG: this"] 
+  "30064774380" -> "124554051793"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064774380" -> "124554051793"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064774381" -> "124554051793"  [ label = "DDG: function ShareButton = function ShareButton({onShareButtonClick, snippet}) {
+  return (
+    &lt;button
+      type=&quot;button&quot;
+      disabled={!snippet}
+      onClick={onShareButtonClick}&gt;
+      &lt;i className=&quot;fa fa-share fa-fw&quot; /&gt;&amp;nbsp;Share...
+    &lt;/button&gt;
+  );
+}"] 
+  "30064774382" -> "124554051793"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064774382" -> "124554051793"  [ label = "DDG: ShareButton"] 
+  "30064774382" -> "124554051793"  [ label = "DDG: exports[&quot;default&quot;] = ShareButton"] 
+  "30064774384" -> "124554051793"  [ label = "DDG: ShareButton.propTypes"] 
+  "30064774386" -> "124554051793"  [ label = "DDG: _tmp_0.onShareButtonClick"] 
+  "30064774386" -> "124554051793"  [ label = "DDG: PropTypes.func.isRequired"] 
+  "30064774386" -> "124554051793"  [ label = "DDG: _tmp_0.onShareButtonClick = PropTypes.func.isRequired"] 
+  "30064774390" -> "124554051793"  [ label = "DDG: _tmp_0.snippet"] 
+  "30064774390" -> "124554051793"  [ label = "DDG: PropTypes.object"] 
+  "30064774390" -> "124554051793"  [ label = "DDG: _tmp_0.snippet = PropTypes.object"] 
+  "30064774384" -> "124554051793"  [ label = "DDG: ShareButton.propTypes = {
+  onShareButtonClick: PropTypes.func.isRequired,
+  snippet: PropTypes.object,
+}"] 
+  "107374182608" -> "111669150067"  [ label = "DDG: "] 
+  "30064774372" -> "30064774379"  [ label = "DDG: this"] 
+  "30064774372" -> "30064774379"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064774373" -> "30064774380"  [ label = "DDG: this"] 
+  "30064774373" -> "30064774380"  [ label = "DDG: &quot;react&quot;"] 
+  "107374182608" -> "25769804301"  [ label = "DDG: "] 
+  "30064774386" -> "30064774384"  [ label = "DDG: _tmp_0.onShareButtonClick"] 
+  "30064774390" -> "30064774384"  [ label = "DDG: _tmp_0.snippet"] 
+  "107374182608" -> "30064774384"  [ label = "DDG: "] 
+  "107374182608" -> "30064774381"  [ label = "DDG: "] 
+  "30064774381" -> "30064774382"  [ label = "DDG: ShareButton"] 
+  "107374182608" -> "30064774382"  [ label = "DDG: "] 
+  "107374182608" -> "68719480019"  [ label = "DDG: "] 
+  "111669150067" -> "30064774372"  [ label = "DDG: this"] 
+  "107374182608" -> "30064774372"  [ label = "DDG: "] 
+  "107374182608" -> "68719480022"  [ label = "DDG: "] 
+  "30064774372" -> "30064774373"  [ label = "DDG: this"] 
+  "107374182608" -> "30064774373"  [ label = "DDG: "] 
+  "30064774379" -> "30064774390"  [ label = "DDG: PropTypes"] 
+  "107374182608" -> "68719480032"  [ label = "DDG: "] 
+}

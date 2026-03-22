@@ -1,0 +1,21 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183370" [label = <METHOD, 19<BR/>parse> ]
+"124554052553" [label = <METHOD_RETURN, 19<BR/>ANY> ]
+"111669151662" [label = <PARAM, 19<BR/>this> ]
+"111669151663" [label = <PARAM, 19<BR/>parser> ]
+"111669151664" [label = <PARAM, 19<BR/>code> ]
+"141733921468" [label = <RETURN, 20<BR/>return parser.parse(code).ast> ]
+"30064786940" [label = <parse, 20<BR/>parser.parse(code)> ]
+  "141733921468" -> "124554052553"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151662" -> "124554052553"  [ label = "DDG: this"] 
+  "30064786940" -> "124554052553"  [ label = "DDG: parser"] 
+  "30064786940" -> "124554052553"  [ label = "DDG: code"] 
+  "107374183370" -> "111669151662"  [ label = "DDG: "] 
+  "107374183370" -> "111669151663"  [ label = "DDG: "] 
+  "107374183370" -> "111669151664"  [ label = "DDG: "] 
+  "107374183370" -> "141733921468"  [ label = "DDG: "] 
+  "111669151663" -> "30064786940"  [ label = "DDG: parser"] 
+  "107374183370" -> "30064786940"  [ label = "DDG: "] 
+  "111669151664" -> "30064786940"  [ label = "DDG: code"] 
+}

@@ -1,0 +1,32 @@
+digraph "&lt;init&gt;" {  
+node [shape="rect"];  
+"107374182473" [label = <METHOD, 21<BR/>&lt;init&gt;> ]
+"124554051656" [label = <METHOD_RETURN, 21<BR/>ANY> ]
+"111669149847" [label = <PARAM, 21<BR/>this> ]
+"111669149848" [label = <PARAM, 21<BR/>props> ]
+"30064772428" [label = <super, 22<BR/>super(props)> ]
+"30064772429" [label = <&lt;operator&gt;.assignment, 23<BR/>this.state = { value: props.value, }> ]
+"68719478172" [label = <IDENTIFIER, 22<BR/>super<BR/>super(props)> ]
+"30064772431" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_1.value = props.value> ]
+"68719478178" [label = <IDENTIFIER, 23<BR/>_tmp_1<BR/>{ value: props.value, }> ]
+  "30064772428" -> "124554051656"  [ label = "DDG: this"] 
+  "30064772428" -> "124554051656"  [ label = "DDG: props"] 
+  "30064772428" -> "124554051656"  [ label = "DDG: super(props)"] 
+  "30064772429" -> "124554051656"  [ label = "DDG: this.state"] 
+  "30064772431" -> "124554051656"  [ label = "DDG: _tmp_1.value"] 
+  "30064772431" -> "124554051656"  [ label = "DDG: props.value"] 
+  "30064772431" -> "124554051656"  [ label = "DDG: _tmp_1.value = props.value"] 
+  "30064772429" -> "124554051656"  [ label = "DDG: this.state = {
+      value: props.value,
+    }"] 
+  "107374182473" -> "111669149847"  [ label = "DDG: "] 
+  "107374182473" -> "111669149848"  [ label = "DDG: "] 
+  "30064772431" -> "30064772429"  [ label = "DDG: _tmp_1.value"] 
+  "107374182473" -> "30064772429"  [ label = "DDG: "] 
+  "107374182473" -> "68719478172"  [ label = "DDG: "] 
+  "111669149847" -> "30064772428"  [ label = "DDG: this"] 
+  "107374182473" -> "30064772428"  [ label = "DDG: "] 
+  "111669149848" -> "30064772428"  [ label = "DDG: props"] 
+  "30064772428" -> "30064772431"  [ label = "DDG: props"] 
+  "107374182473" -> "68719478178"  [ label = "DDG: "] 
+}

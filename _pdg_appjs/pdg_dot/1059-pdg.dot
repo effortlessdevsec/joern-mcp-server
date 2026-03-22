@@ -1,0 +1,95 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183459" [label = <METHOD, 22<BR/>opensByDefault> ]
+"124554052642" [label = <METHOD_RETURN, 22<BR/>__ecma.Boolean> ]
+"111669151853" [label = <PARAM, 22<BR/>this> ]
+"111669151854" [label = <PARAM, 22<BR/>node> ]
+"111669151855" [label = <PARAM, 22<BR/>key> ]
+"141733921536" [label = <RETURN, 23<BR/>return node.type === 'SourceUnit' || node...> ]
+"30064788269" [label = <&lt;operator&gt;.logicalOr, 23<BR/>node.type === 'SourceUnit' || node.type =...> ]
+"30064788270" [label = <&lt;operator&gt;.logicalOr, 23<BR/>node.type === 'SourceUnit' || node.type =...> ]
+"30064788279" [label = <&lt;operator&gt;.equals, 27<BR/>key === 'body'> ]
+"30064788271" [label = <&lt;operator&gt;.logicalOr, 23<BR/>node.type === 'SourceUnit' || node.type =...> ]
+"30064788278" [label = <&lt;operator&gt;.equals, 26<BR/>key === 'subNodes'> ]
+"30064788272" [label = <&lt;operator&gt;.logicalOr, 23<BR/>node.type === 'SourceUnit' || node.type =...> ]
+"30064788277" [label = <&lt;operator&gt;.equals, 25<BR/>key === 'children'> ]
+"30064788273" [label = <&lt;operator&gt;.equals, 23<BR/>node.type === 'SourceUnit'> ]
+"30064788275" [label = <&lt;operator&gt;.equals, 24<BR/>node.type === 'ContractDefinition'> ]
+"30064788276" [label = <&lt;operator&gt;.fieldAccess, 24<BR/>node.type> ]
+"55834581075" [label = <FIELD_IDENTIFIER, 24<BR/>type> ]
+  "141733921536" -> "124554052642"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151853" -> "124554052642"  [ label = "DDG: this"] 
+  "111669151854" -> "124554052642"  [ label = "DDG: node"] 
+  "111669151855" -> "124554052642"  [ label = "DDG: key"] 
+  "30064788273" -> "124554052642"  [ label = "DDG: node.type"] 
+  "30064788272" -> "124554052642"  [ label = "DDG: node.type === 'SourceUnit'"] 
+  "30064788275" -> "124554052642"  [ label = "DDG: node.type"] 
+  "30064788272" -> "124554052642"  [ label = "DDG: node.type === 'ContractDefinition'"] 
+  "30064788271" -> "124554052642"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition'"] 
+  "30064788277" -> "124554052642"  [ label = "DDG: key"] 
+  "30064788271" -> "124554052642"  [ label = "DDG: key === 'children'"] 
+  "30064788270" -> "124554052642"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition' ||
+      key === 'children'"] 
+  "30064788278" -> "124554052642"  [ label = "DDG: key"] 
+  "30064788270" -> "124554052642"  [ label = "DDG: key === 'subNodes'"] 
+  "30064788269" -> "124554052642"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition' ||
+      key === 'children' ||
+      key === 'subNodes'"] 
+  "30064788279" -> "124554052642"  [ label = "DDG: key"] 
+  "30064788269" -> "124554052642"  [ label = "DDG: key === 'body'"] 
+  "30064788269" -> "124554052642"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition' ||
+      key === 'children' ||
+      key === 'subNodes' ||
+      key === 'body'"] 
+  "107374183459" -> "111669151853"  [ label = "DDG: "] 
+  "107374183459" -> "111669151854"  [ label = "DDG: "] 
+  "107374183459" -> "111669151855"  [ label = "DDG: "] 
+  "30064788269" -> "141733921536"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition' ||
+      key === 'children' ||
+      key === 'subNodes' ||
+      key === 'body'"] 
+  "30064788270" -> "30064788269"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition' ||
+      key === 'children'"] 
+  "30064788270" -> "30064788269"  [ label = "DDG: key === 'subNodes'"] 
+  "30064788279" -> "30064788269"  [ label = "DDG: key"] 
+  "30064788279" -> "30064788269"  [ label = "DDG: &quot;body&quot;"] 
+  "30064788271" -> "30064788270"  [ label = "DDG: node.type === 'SourceUnit' ||
+      node.type === 'ContractDefinition'"] 
+  "30064788271" -> "30064788270"  [ label = "DDG: key === 'children'"] 
+  "30064788278" -> "30064788270"  [ label = "DDG: key"] 
+  "30064788278" -> "30064788270"  [ label = "DDG: &quot;subNodes&quot;"] 
+  "111669151855" -> "30064788279"  [ label = "DDG: key"] 
+  "30064788277" -> "30064788279"  [ label = "DDG: key"] 
+  "30064788278" -> "30064788279"  [ label = "DDG: key"] 
+  "107374183459" -> "30064788279"  [ label = "DDG: "] 
+  "30064788272" -> "30064788271"  [ label = "DDG: node.type === 'SourceUnit'"] 
+  "30064788272" -> "30064788271"  [ label = "DDG: node.type === 'ContractDefinition'"] 
+  "30064788277" -> "30064788271"  [ label = "DDG: key"] 
+  "30064788277" -> "30064788271"  [ label = "DDG: &quot;children&quot;"] 
+  "111669151855" -> "30064788278"  [ label = "DDG: key"] 
+  "30064788277" -> "30064788278"  [ label = "DDG: key"] 
+  "107374183459" -> "30064788278"  [ label = "DDG: "] 
+  "30064788273" -> "30064788272"  [ label = "DDG: node.type"] 
+  "30064788273" -> "30064788272"  [ label = "DDG: &quot;SourceUnit&quot;"] 
+  "30064788275" -> "30064788272"  [ label = "DDG: node.type"] 
+  "30064788275" -> "30064788272"  [ label = "DDG: &quot;ContractDefinition&quot;"] 
+  "111669151855" -> "30064788277"  [ label = "DDG: key"] 
+  "107374183459" -> "30064788277"  [ label = "DDG: "] 
+  "111669151854" -> "30064788273"  [ label = "DDG: node"] 
+  "107374183459" -> "30064788273"  [ label = "DDG: "] 
+  "111669151854" -> "30064788275"  [ label = "DDG: node"] 
+  "30064788273" -> "30064788275"  [ label = "DDG: node.type"] 
+  "107374183459" -> "30064788275"  [ label = "DDG: "] 
+  "30064788270" -> "30064788279"  [ label = "CDG: "] 
+  "30064788271" -> "30064788278"  [ label = "CDG: "] 
+  "30064788272" -> "30064788277"  [ label = "CDG: "] 
+  "30064788273" -> "55834581075"  [ label = "CDG: "] 
+  "30064788273" -> "30064788276"  [ label = "CDG: "] 
+  "30064788273" -> "30064788275"  [ label = "CDG: "] 
+}

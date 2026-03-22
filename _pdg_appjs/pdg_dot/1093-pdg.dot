@@ -1,0 +1,179 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183493" [label = <METHOD, 1<BR/>:program> ]
+"124554052691" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151949" [label = <PARAM, 1<BR/>this> ]
+"30064788830" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064788831" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"30064788832" [label = <&lt;operator&gt;.assignment, 6<BR/>function valuesFromArray = function valuesFromA...> ]
+"30064788833" [label = <&lt;operator&gt;.assignment, 16<BR/>function getValuesFromSettings = function getVa...> ]
+"30064788834" [label = <&lt;operator&gt;.assignment, 23<BR/>function defaultUpdater = function defaultUpdat...> ]
+"30064788835" [label = <&lt;operator&gt;.assignment, 27<BR/>function arrayUpdater = function arrayUpdater(s...> ]
+"30064788836" [label = <&lt;operator&gt;.assignment, 37<BR/>function getUpdateStrategy = function getUpdate...> ]
+"30064788837" [label = <&lt;operator&gt;.assignment, 4<BR/>const identity = v =&gt; v> ]
+"25769806850" [label = <BLOCK, 44<BR/>export default function SettingsRenderer(props)...> ]
+"30064788841" [label = <&lt;operator&gt;.assignment, 124<BR/>SettingsRenderer.propTypes = { settingsConfig...> ]
+"30064788838" [label = <&lt;operator&gt;.assignment, 44<BR/>function SettingsRenderer = function SettingsRe...> ]
+"30064788839" [label = <&lt;operator&gt;.assignment, 44<BR/>exports[&quot;default&quot;] = SettingsRenderer> ]
+"68719494426" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064788714" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719494429" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064788715" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"30064788843" [label = <&lt;operator&gt;.assignment, 125<BR/>_tmp_9.settingsConfiguration = PropTypes.object...> ]
+"30064788847" [label = <&lt;operator&gt;.assignment, 126<BR/>_tmp_9.parserSettings = PropTypes.oneOfType([ ...> ]
+"30064788860" [label = <&lt;operator&gt;.assignment, 130<BR/>_tmp_9.onChange = PropTypes.func.isRequired> ]
+"68719494456" [label = <IDENTIFIER, 124<BR/>_tmp_9<BR/>{ settingsConfiguration: PropTypes.object.isR...> ]
+"30064788850" [label = <oneOfType, 126<BR/>PropTypes.oneOfType([ PropTypes.object, ...> ]
+"30064788852" [label = <&lt;operator&gt;.assignment, 126<BR/>_tmp_10 = __ecma.Array.factory()> ]
+"30064788854" [label = <, 127<BR/>_tmp_10.push(PropTypes.object)> ]
+"30064788857" [label = <, 128<BR/>_tmp_10.push(PropTypes.array)> ]
+"68719494453" [label = <IDENTIFIER, 126<BR/>_tmp_10<BR/>[ PropTypes.object, PropTypes.array, ]> ]
+  "30064788830" -> "124554052691"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064788830" -> "124554052691"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064788831" -> "124554052691"  [ label = "DDG: React"] 
+  "30064788715" -> "124554052691"  [ label = "DDG: this"] 
+  "30064788831" -> "124554052691"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064788831" -> "124554052691"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064788832" -> "124554052691"  [ label = "DDG: valuesFromArray"] 
+  "30064788832" -> "124554052691"  [ label = "DDG: function valuesFromArray = function valuesFromArray(settings) {
+  return settings.reduce(
+    (obj, name) =&gt; (
+      (obj[name] = settings.indexOf(name) &gt; -1),
+      obj
+    ),
+    {},
+  );
+}"] 
+  "30064788833" -> "124554052691"  [ label = "DDG: getValuesFromSettings"] 
+  "30064788833" -> "124554052691"  [ label = "DDG: function getValuesFromSettings = function getValuesFromSettings(settings) {
+  if (Array.isArray(settings)) {
+    return valuesFromArray(settings);
+  }
+  return settings;
+}"] 
+  "30064788834" -> "124554052691"  [ label = "DDG: defaultUpdater"] 
+  "30064788834" -> "124554052691"  [ label = "DDG: function defaultUpdater = function defaultUpdater(settings, name, value) {
+  return {...settings, [name]: value};
+}"] 
+  "30064788835" -> "124554052691"  [ label = "DDG: arrayUpdater"] 
+  "30064788835" -> "124554052691"  [ label = "DDG: function arrayUpdater = function arrayUpdater(settings, name, value) {
+  settings = new Set(settings);
+  if (value) {
+    settings.add(name);
+  } else {
+    settings.delete(name);
+  }
+  return Array.from(settings);
+}"] 
+  "30064788836" -> "124554052691"  [ label = "DDG: getUpdateStrategy"] 
+  "30064788836" -> "124554052691"  [ label = "DDG: function getUpdateStrategy = function getUpdateStrategy(settings) {
+  if (Array.isArray(settings)) {
+    return arrayUpdater;
+  }
+  return defaultUpdater;
+}"] 
+  "30064788837" -> "124554052691"  [ label = "DDG: identity"] 
+  "30064788837" -> "124554052691"  [ label = "DDG: const identity = v =&gt; v"] 
+  "30064788838" -> "124554052691"  [ label = "DDG: function SettingsRenderer = function SettingsRenderer(props) {
+  const {settingsConfiguration, parserSettings, onChange} = props;
+  const {
+    title,
+    fields,
+    required = new Set(),
+    update=getUpdateStrategy(parserSettings),
+  } = settingsConfiguration;
+  const values =
+    (settingsConfiguration.values || getValuesFromSettings)(parserSettings);
+
+  return (
+    &lt;div&gt;
+      {title ? &lt;h4&gt;{title}&lt;/h4&gt; : null}
+      &lt;ul className=&quot;settings&quot;&gt;
+        {fields.map(setting =&gt; {
+          if (typeof setting === 'string') {
+            return (
+              &lt;li key={setting}&gt;
+                &lt;label&gt;
+                  &lt;input
+                    type=&quot;checkbox&quot;
+                    readOnly={required.has(setting)}
+                    disabled={required.has(setting)}
+                    checked={values[setting]}
+                    onChange={
+                      ({target}) =&gt; onChange(
+                        update(parserSettings, setting, target.checked),
+                      )
+                    }
+        ..."] 
+  "30064788839" -> "124554052691"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064788839" -> "124554052691"  [ label = "DDG: SettingsRenderer"] 
+  "30064788839" -> "124554052691"  [ label = "DDG: exports[&quot;default&quot;] = SettingsRenderer"] 
+  "30064788841" -> "124554052691"  [ label = "DDG: SettingsRenderer.propTypes"] 
+  "30064788843" -> "124554052691"  [ label = "DDG: _tmp_9.settingsConfiguration"] 
+  "30064788843" -> "124554052691"  [ label = "DDG: _tmp_9.settingsConfiguration = PropTypes.object.isRequired"] 
+  "30064788847" -> "124554052691"  [ label = "DDG: _tmp_9.parserSettings"] 
+  "30064788850" -> "124554052691"  [ label = "DDG: PropTypes"] 
+  "30064788852" -> "124554052691"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064788852" -> "124554052691"  [ label = "DDG: _tmp_10 = __ecma.Array.factory()"] 
+  "30064788854" -> "124554052691"  [ label = "DDG: _tmp_10.push(PropTypes.object)"] 
+  "30064788857" -> "124554052691"  [ label = "DDG: _tmp_10"] 
+  "30064788857" -> "124554052691"  [ label = "DDG: _tmp_10.push(PropTypes.array)"] 
+  "30064788847" -> "124554052691"  [ label = "DDG: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]).isRequired"] 
+  "30064788847" -> "124554052691"  [ label = "DDG: _tmp_9.parserSettings = PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]).isRequired"] 
+  "30064788860" -> "124554052691"  [ label = "DDG: _tmp_9.onChange"] 
+  "30064788860" -> "124554052691"  [ label = "DDG: PropTypes.func.isRequired"] 
+  "30064788860" -> "124554052691"  [ label = "DDG: _tmp_9.onChange = PropTypes.func.isRequired"] 
+  "30064788841" -> "124554052691"  [ label = "DDG: SettingsRenderer.propTypes = {
+  settingsConfiguration: PropTypes.object.isRequired,
+  parserSettings: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]).isRequired,
+  onChange: PropTypes.func.isRequired,
+}"] 
+  "107374183493" -> "111669151949"  [ label = "DDG: "] 
+  "30064788714" -> "30064788830"  [ label = "DDG: this"] 
+  "30064788714" -> "30064788830"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064788715" -> "30064788831"  [ label = "DDG: this"] 
+  "30064788715" -> "30064788831"  [ label = "DDG: &quot;react&quot;"] 
+  "107374183493" -> "30064788832"  [ label = "DDG: "] 
+  "107374183493" -> "30064788833"  [ label = "DDG: "] 
+  "107374183493" -> "30064788834"  [ label = "DDG: "] 
+  "107374183493" -> "30064788835"  [ label = "DDG: "] 
+  "107374183493" -> "30064788836"  [ label = "DDG: "] 
+  "107374183493" -> "30064788837"  [ label = "DDG: "] 
+  "107374183493" -> "25769806850"  [ label = "DDG: "] 
+  "30064788843" -> "30064788841"  [ label = "DDG: _tmp_9.settingsConfiguration"] 
+  "30064788847" -> "30064788841"  [ label = "DDG: _tmp_9.parserSettings"] 
+  "30064788860" -> "30064788841"  [ label = "DDG: _tmp_9.onChange"] 
+  "107374183493" -> "30064788841"  [ label = "DDG: "] 
+  "107374183493" -> "30064788838"  [ label = "DDG: "] 
+  "30064788838" -> "30064788839"  [ label = "DDG: SettingsRenderer"] 
+  "107374183493" -> "30064788839"  [ label = "DDG: "] 
+  "107374183493" -> "68719494426"  [ label = "DDG: "] 
+  "111669151949" -> "30064788714"  [ label = "DDG: this"] 
+  "107374183493" -> "30064788714"  [ label = "DDG: "] 
+  "107374183493" -> "68719494429"  [ label = "DDG: "] 
+  "30064788714" -> "30064788715"  [ label = "DDG: this"] 
+  "107374183493" -> "30064788715"  [ label = "DDG: "] 
+  "107374183493" -> "68719494456"  [ label = "DDG: "] 
+  "30064788830" -> "30064788850"  [ label = "DDG: PropTypes"] 
+  "30064788854" -> "30064788850"  [ label = "DDG: PropTypes.object"] 
+  "30064788857" -> "30064788850"  [ label = "DDG: PropTypes.array"] 
+  "107374183493" -> "30064788850"  [ label = "DDG: "] 
+  "30064788857" -> "30064788850"  [ label = "DDG: _tmp_10"] 
+  "107374183493" -> "30064788852"  [ label = "DDG: "] 
+  "107374183493" -> "68719494453"  [ label = "DDG: "] 
+  "30064788852" -> "30064788854"  [ label = "DDG: _tmp_10"] 
+  "107374183493" -> "30064788854"  [ label = "DDG: "] 
+  "30064788830" -> "30064788854"  [ label = "DDG: PropTypes"] 
+  "30064788854" -> "30064788857"  [ label = "DDG: _tmp_10"] 
+  "107374183493" -> "30064788857"  [ label = "DDG: "] 
+  "30064788830" -> "30064788857"  [ label = "DDG: PropTypes"] 
+}

@@ -1,0 +1,24 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374182900" [label = <METHOD, 60<BR/>getDefaultOptions> ]
+"124554052083" [label = <METHOD_RETURN, 60<BR/>{ preserveWhitespaces: __ecma.Boolean; }> ]
+"111669150657" [label = <PARAM, 60<BR/>this> ]
+"141733921140" [label = <RETURN, 61<BR/>return { preserveWhitespaces: false, }> ]
+"25769805080" [label = <BLOCK, 61<BR/>{ preserveWhitespaces: false, }> ]
+"30064778711" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_14.preserveWhitespaces = false> ]
+"68719484509" [label = <IDENTIFIER, 61<BR/>_tmp_14<BR/>{ preserveWhitespaces: false, }> ]
+  "141733921140" -> "124554052083"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150657" -> "124554052083"  [ label = "DDG: this"] 
+  "30064778711" -> "124554052083"  [ label = "DDG: _tmp_14.preserveWhitespaces"] 
+  "30064778711" -> "124554052083"  [ label = "DDG: _tmp_14.preserveWhitespaces = false"] 
+  "107374182900" -> "111669150657"  [ label = "DDG: "] 
+  "25769805080" -> "141733921140"  [ label = "DDG: "] 
+  "25769805080" -> "141733921140"  [ label = "DDG: {
+      preserveWhitespaces: false,
+    }"] 
+  "107374182900" -> "141733921140"  [ label = "DDG: "] 
+  "30064778711" -> "25769805080"  [ label = "DDG: _tmp_14.preserveWhitespaces"] 
+  "107374182900" -> "25769805080"  [ label = "DDG: "] 
+  "107374182900" -> "30064778711"  [ label = "DDG: "] 
+  "107374182900" -> "68719484509"  [ label = "DDG: "] 
+}

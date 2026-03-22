@@ -1,0 +1,18 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374182644" [label = <METHOD, 55<BR/>&lt;lambda&gt;2> ]
+"124554051826" [label = <METHOD_RETURN, 55<BR/>void> ]
+"111669150121" [label = <PARAM, 55<BR/>this> ]
+"30064774842" [label = <focusNodes, 56<BR/>focusNodes('focus', rootElement)> ]
+"68719480426" [label = <IDENTIFIER, 56<BR/>focusNodes<BR/>focusNodes('focus', rootElement)> ]
+  "30064774842" -> "124554051826"  [ label = "DDG: this"] 
+  "30064774842" -> "124554051826"  [ label = "DDG: rootElement"] 
+  "30064774842" -> "124554051826"  [ label = "DDG: focusNodes('focus', rootElement)"] 
+  "107374182644" -> "111669150121"  [ label = "DDG: "] 
+  "68719480466" -> "68719480426"  [ label = "DDG: focusNodes"] 
+  "107374182644" -> "68719480426"  [ label = "DDG: "] 
+  "111669150121" -> "30064774842"  [ label = "DDG: this"] 
+  "107374182644" -> "30064774842"  [ label = "DDG: "] 
+  "30064774867" -> "30064774842"  [ label = "DDG: rootElement"] 
+  "68719480478" -> "30064774842"  [ label = "DDG: rootElement"] 
+}

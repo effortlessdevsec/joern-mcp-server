@@ -1,0 +1,245 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182414" [label = <METHOD, 1<BR/>:program> ]
+"124554051610" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149755" [label = <PARAM, 1<BR/>this> ]
+"30064771567" [label = <&lt;operator&gt;.assignment, 44<BR/>function printNode = function printNode(node, i...> ]
+"30064771568" [label = <&lt;operator&gt;.assignment, 107<BR/>function getMemberChain = function getMemberCha...> ]
+"30064771569" [label = <&lt;operator&gt;.assignment, 120<BR/>function buildCFG = function buildCFG(ast) { ...> ]
+"30064771570" [label = <&lt;operator&gt;.assignment, 281<BR/>function printCFG = function printCFG(cfg) { ...> ]
+"30064771571" [label = <&lt;operator&gt;.assignment, 9<BR/>const esprima = require(&quot;esprima&quot;)> ]
+"30064771572" [label = <&lt;operator&gt;.assignment, 10<BR/>const fs = require(&quot;fs&quot;)> ]
+"30064771573" [label = <&lt;operator&gt;.assignment, 11<BR/>const path = require(&quot;path&quot;)> ]
+"30064771574" [label = <&lt;operator&gt;.assignment, 13<BR/>const codePath = process.argv[2] || path.join()> ]
+"30064771586" [label = <&lt;operator&gt;.assignment, 30<BR/>const ast = esprima.parseScript(code, { loc: tr...> ]
+"30064771591" [label = <log, 33<BR/>console.log(&quot;========== AST ==========\n&quot;)> ]
+"30064771593" [label = <printNode, 34<BR/>printNode(ast)> ]
+"30064771594" [label = <&lt;operator&gt;.assignment, 37<BR/>const cfg = buildCFG(ast)> ]
+"30064771596" [label = <log, 38<BR/>console.log(&quot;\n========== Control Flow Graph ==...> ]
+"30064771598" [label = <printCFG, 39<BR/>printCFG(cfg)> ]
+"68719477295" [label = <IDENTIFIER, 34<BR/>printNode<BR/>printNode(ast)> ]
+"68719477304" [label = <IDENTIFIER, 39<BR/>printCFG<BR/>printCFG(cfg)> ]
+"68719477268" [label = <IDENTIFIER, 9<BR/>require<BR/>require(&quot;esprima&quot;)> ]
+"30064771564" [label = <require, 9<BR/>require(&quot;esprima&quot;)> ]
+"68719477271" [label = <IDENTIFIER, 10<BR/>require<BR/>require(&quot;fs&quot;)> ]
+"30064771565" [label = <require, 10<BR/>require(&quot;fs&quot;)> ]
+"68719477274" [label = <IDENTIFIER, 11<BR/>require<BR/>require(&quot;path&quot;)> ]
+"30064771566" [label = <require, 11<BR/>require(&quot;path&quot;)> ]
+"30064771575" [label = <&lt;operator&gt;.logicalOr, 13<BR/>process.argv[2] || path.join()> ]
+"30064771580" [label = <&lt;operator&gt;.assignment, 16<BR/>code = fs.readFileSync(codePath, &quot;utf8&quot;)> ]
+"30064771587" [label = <parseScript, 30<BR/>esprima.parseScript(code, { loc: true })> ]
+"68719477299" [label = <IDENTIFIER, 37<BR/>buildCFG<BR/>buildCFG(ast)> ]
+"30064771595" [label = <buildCFG, 37<BR/>buildCFG(ast)> ]
+"30064771578" [label = <join, 13<BR/>path.join()> ]
+"30064771583" [label = <&lt;operator&gt;.assignment, 18<BR/>code = ` function foo(x) { if (x &gt; 0) { r...> ]
+"30064771584" [label = <log, 27<BR/>console.log(&quot;(Using inline sample code; pass a ...> ]
+"30064771589" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_16.loc = true> ]
+"68719477292" [label = <IDENTIFIER, 30<BR/>_tmp_16<BR/>{ loc: true }> ]
+"30064771581" [label = <readFileSync, 16<BR/>fs.readFileSync(codePath, &quot;utf8&quot;)> ]
+"30064771576" [label = <&lt;operator&gt;.indexAccess, 13<BR/>process.argv[2]> ]
+"30064771579" [label = <&lt;operator&gt;.fieldAccess, 13<BR/>path.join> ]
+"55834575031" [label = <FIELD_IDENTIFIER, 13<BR/>join> ]
+"30064771585" [label = <&lt;operator&gt;.fieldAccess, 27<BR/>console.log> ]
+"55834575033" [label = <FIELD_IDENTIFIER, 27<BR/>log> ]
+  "30064771567" -> "124554051610"  [ label = "DDG: printNode"] 
+  "30064771567" -> "124554051610"  [ label = "DDG: function printNode = function printNode(node, indent = 0) {
+  if (!node || typeof node !== &quot;object&quot;) return;
+  const space = &quot; &quot;.repeat(indent);
+
+  switch (node.type) {
+    case &quot;Program&quot;:
+      console.log(space + &quot;Program&quot;);
+      node.body.forEach((n) =&gt; printNode(n, indent + 2));
+      break;
+    case &quot;VariableDeclaration&quot;:
+      console.log(space + `VariableDeclaration (${node.kind})`);
+      node.declarations.forEach((n) =&gt; printNode(n, indent + 2));
+      break;
+    case &quot;VariableDeclarator&quot;:
+      console.log(space + `Variable: ${node.id.name}`);
+      printNode(node.init, indent + 2);
+      break;
+    case &quot;FunctionDeclaration&quot;:
+      console.log(space + `Function: ${node.id.name}`);
+      console.log(space + &quot;Params:&quot;);
+      node.params.forEach((p) =&gt; console.log(space + &quot;  &quot; + (p.name || p.left?.name || &quot;?&quot;)));
+      printNode(node.body, indent + 2);
+      break;
+    case &quot;ArrowFunctionExpression&quot;:
+      console.log(space + &quot;ArrowFunction&quot;);
+      console.log(space + &quot;Params:&quot;);
+      node.p..."] 
+  "30064771568" -> "124554051610"  [ label = "DDG: getMemberChain"] 
+  "30064771568" -> "124554051610"  [ label = "DDG: function getMemberChain = function getMemberChain(node) {
+  const parts = [];
+  while (node.type === &quot;MemberExpression&quot;) {
+    parts.unshift(node.property.name);
+    node = node.object;
+  }
+  if (node.name) parts.unshift(node.name);
+  return parts.join(&quot;.&quot;);
+}"] 
+  "30064771569" -> "124554051610"  [ label = "DDG: buildCFG"] 
+  "30064771569" -> "124554051610"  [ label = "DDG: function buildCFG = function buildCFG(ast) {
+  const nodes = [];
+  const edges = [];
+  let idCounter = 0;
+
+  function nodeId() {
+    return &quot;n&quot; + ++idCounter;
+  }
+
+  function addNode(label, type, loc) {
+    const id = nodeId();
+    nodes.push({
+      id,
+      label: label || type,
+      type,
+      loc: loc ? { line: loc.start.line, column: loc.start.column } : null,
+    });
+    return id;
+  }
+
+  function addEdge(from, to) {
+    if (from &amp;&amp; to) edges.push({ from, to });
+  }
+
+  const EXIT = &quot;__exit&quot;;
+  nodes.push({ id: EXIT, label: &quot;EXIT&quot;, type: &quot;exit&quot;, loc: null });
+
+  function getFirstStmt(stmt) {
+    if (!stmt) return null;
+    if (stmt.type === &quot;BlockStatement&quot; &amp;&amp; stmt.body.length) return stmt.body[0];
+    return stmt;
+  }
+
+  function getNextStmt(stmtList, index) {
+    if (index + 1 &lt; stmtList.length) return stmtList[index + 1];
+    return null;
+  }
+
+  function stmtLabel(node) {
+    if (!node || !node.type) return &quot;?&quot;;
+    const loc = node.loc ? ` (${node.loc.start.line}:${node.loc.start.column})` ..."] 
+  "30064771570" -> "124554051610"  [ label = "DDG: printCFG"] 
+  "30064771570" -> "124554051610"  [ label = "DDG: function printCFG = function printCFG(cfg) {
+  console.log(&quot;Nodes:&quot;);
+  cfg.nodes.forEach((n) =&gt; {
+    const loc = n.loc ? ` @ ${n.loc.line}:${n.loc.column}` : &quot;&quot;;
+    console.log(`  ${n.id}: ${n.label} [${n.type}]${loc}`);
+  });
+  console.log(&quot;\nEdges (from -&gt; to):&quot;);
+  cfg.edges.forEach((e) =&gt; console.log(`  ${e.from} -&gt; ${e.to}`));
+}"] 
+  "30064771571" -> "124554051610"  [ label = "DDG: require(&quot;esprima&quot;)"] 
+  "30064771571" -> "124554051610"  [ label = "DDG: const esprima = require(&quot;esprima&quot;)"] 
+  "30064771572" -> "124554051610"  [ label = "DDG: require(&quot;fs&quot;)"] 
+  "30064771572" -> "124554051610"  [ label = "DDG: const fs = require(&quot;fs&quot;)"] 
+  "30064771573" -> "124554051610"  [ label = "DDG: path"] 
+  "30064771573" -> "124554051610"  [ label = "DDG: require(&quot;path&quot;)"] 
+  "30064771573" -> "124554051610"  [ label = "DDG: const path = require(&quot;path&quot;)"] 
+  "30064771575" -> "124554051610"  [ label = "DDG: process.argv[2]"] 
+  "30064771578" -> "124554051610"  [ label = "DDG: path"] 
+  "30064771575" -> "124554051610"  [ label = "DDG: path.join()"] 
+  "30064771574" -> "124554051610"  [ label = "DDG: process.argv[2] || path.join()"] 
+  "30064771574" -> "124554051610"  [ label = "DDG: const codePath = process.argv[2] || path.join()"] 
+  "30064771581" -> "124554051610"  [ label = "DDG: fs"] 
+  "30064771581" -> "124554051610"  [ label = "DDG: codePath"] 
+  "30064771580" -> "124554051610"  [ label = "DDG: fs.readFileSync(codePath, &quot;utf8&quot;)"] 
+  "30064771580" -> "124554051610"  [ label = "DDG: code = fs.readFileSync(codePath, &quot;utf8&quot;)"] 
+  "30064771583" -> "124554051610"  [ label = "DDG: code = `
+function foo(x) {
+  if (x &gt; 0) {
+    return x * 2;
+  }
+  return 0;
+}
+foo(5);
+`"] 
+  "30064771584" -> "124554051610"  [ label = "DDG: console.log(&quot;(Using inline sample code; pass a path to your .js file as first argument.)\n&quot;)"] 
+  "30064771587" -> "124554051610"  [ label = "DDG: esprima"] 
+  "30064771587" -> "124554051610"  [ label = "DDG: code"] 
+  "30064771589" -> "124554051610"  [ label = "DDG: _tmp_16.loc"] 
+  "30064771589" -> "124554051610"  [ label = "DDG: _tmp_16.loc = true"] 
+  "30064771586" -> "124554051610"  [ label = "DDG: esprima.parseScript(code, { loc: true })"] 
+  "30064771586" -> "124554051610"  [ label = "DDG: const ast = esprima.parseScript(code, { loc: true })"] 
+  "30064771591" -> "124554051610"  [ label = "DDG: console.log(&quot;========== AST ==========\n&quot;)"] 
+  "30064771593" -> "124554051610"  [ label = "DDG: printNode(ast)"] 
+  "30064771595" -> "124554051610"  [ label = "DDG: ast"] 
+  "30064771594" -> "124554051610"  [ label = "DDG: buildCFG(ast)"] 
+  "30064771594" -> "124554051610"  [ label = "DDG: const cfg = buildCFG(ast)"] 
+  "30064771596" -> "124554051610"  [ label = "DDG: console"] 
+  "30064771596" -> "124554051610"  [ label = "DDG: console.log(&quot;\n========== Control Flow Graph ==========\n&quot;)"] 
+  "30064771598" -> "124554051610"  [ label = "DDG: this"] 
+  "30064771598" -> "124554051610"  [ label = "DDG: cfg"] 
+  "30064771598" -> "124554051610"  [ label = "DDG: printCFG(cfg)"] 
+  "107374182414" -> "111669149755"  [ label = "DDG: "] 
+  "107374182414" -> "30064771567"  [ label = "DDG: "] 
+  "107374182414" -> "30064771568"  [ label = "DDG: "] 
+  "107374182414" -> "30064771569"  [ label = "DDG: "] 
+  "107374182414" -> "30064771570"  [ label = "DDG: "] 
+  "30064771564" -> "30064771571"  [ label = "DDG: this"] 
+  "30064771564" -> "30064771571"  [ label = "DDG: &quot;esprima&quot;"] 
+  "30064771565" -> "30064771572"  [ label = "DDG: this"] 
+  "30064771565" -> "30064771572"  [ label = "DDG: &quot;fs&quot;"] 
+  "30064771566" -> "30064771573"  [ label = "DDG: this"] 
+  "30064771566" -> "30064771573"  [ label = "DDG: &quot;path&quot;"] 
+  "30064771575" -> "30064771574"  [ label = "DDG: process.argv[2]"] 
+  "30064771575" -> "30064771574"  [ label = "DDG: path.join()"] 
+  "30064771587" -> "30064771586"  [ label = "DDG: esprima"] 
+  "30064771587" -> "30064771586"  [ label = "DDG: code"] 
+  "30064771587" -> "30064771586"  [ label = "DDG: { loc: true }"] 
+  "30064771587" -> "30064771586"  [ label = "DDG: "] 
+  "30064771595" -> "30064771594"  [ label = "DDG: this"] 
+  "30064771595" -> "30064771594"  [ label = "DDG: ast"] 
+  "30064771584" -> "30064771591"  [ label = "DDG: console"] 
+  "107374182414" -> "30064771591"  [ label = "DDG: "] 
+  "107374182414" -> "68719477295"  [ label = "DDG: "] 
+  "30064771566" -> "30064771593"  [ label = "DDG: this"] 
+  "107374182414" -> "30064771593"  [ label = "DDG: "] 
+  "30064771586" -> "30064771593"  [ label = "DDG: ast"] 
+  "30064771591" -> "30064771596"  [ label = "DDG: console"] 
+  "107374182414" -> "30064771596"  [ label = "DDG: "] 
+  "107374182414" -> "68719477304"  [ label = "DDG: "] 
+  "30064771595" -> "30064771598"  [ label = "DDG: this"] 
+  "107374182414" -> "30064771598"  [ label = "DDG: "] 
+  "30064771594" -> "30064771598"  [ label = "DDG: cfg"] 
+  "107374182414" -> "68719477268"  [ label = "DDG: "] 
+  "111669149755" -> "30064771564"  [ label = "DDG: this"] 
+  "107374182414" -> "30064771564"  [ label = "DDG: "] 
+  "107374182414" -> "68719477271"  [ label = "DDG: "] 
+  "30064771564" -> "30064771565"  [ label = "DDG: this"] 
+  "107374182414" -> "30064771565"  [ label = "DDG: "] 
+  "107374182414" -> "68719477274"  [ label = "DDG: "] 
+  "30064771565" -> "30064771566"  [ label = "DDG: this"] 
+  "107374182414" -> "30064771566"  [ label = "DDG: "] 
+  "30064771578" -> "30064771575"  [ label = "DDG: path"] 
+  "30064771581" -> "30064771580"  [ label = "DDG: fs"] 
+  "30064771581" -> "30064771580"  [ label = "DDG: codePath"] 
+  "30064771581" -> "30064771580"  [ label = "DDG: &quot;utf8&quot;"] 
+  "30064771571" -> "30064771587"  [ label = "DDG: esprima"] 
+  "107374182414" -> "30064771587"  [ label = "DDG: "] 
+  "30064771580" -> "30064771587"  [ label = "DDG: code"] 
+  "30064771583" -> "30064771587"  [ label = "DDG: code"] 
+  "30064771589" -> "30064771587"  [ label = "DDG: _tmp_16.loc"] 
+  "107374182414" -> "68719477299"  [ label = "DDG: "] 
+  "30064771593" -> "30064771595"  [ label = "DDG: this"] 
+  "107374182414" -> "30064771595"  [ label = "DDG: "] 
+  "30064771593" -> "30064771595"  [ label = "DDG: ast"] 
+  "30064771573" -> "30064771578"  [ label = "DDG: path"] 
+  "107374182414" -> "30064771578"  [ label = "DDG: "] 
+  "107374182414" -> "30064771583"  [ label = "DDG: "] 
+  "107374182414" -> "30064771589"  [ label = "DDG: "] 
+  "107374182414" -> "68719477292"  [ label = "DDG: "] 
+  "30064771572" -> "30064771581"  [ label = "DDG: fs"] 
+  "107374182414" -> "30064771581"  [ label = "DDG: "] 
+  "30064771574" -> "30064771581"  [ label = "DDG: codePath"] 
+  "107374182414" -> "30064771584"  [ label = "DDG: "] 
+  "30064771576" -> "55834575031"  [ label = "CDG: "] 
+  "30064771576" -> "30064771578"  [ label = "CDG: "] 
+  "30064771576" -> "30064771579"  [ label = "CDG: "] 
+  "30064771580" -> "55834575033"  [ label = "CDG: "] 
+  "30064771580" -> "30064771584"  [ label = "CDG: "] 
+  "30064771580" -> "30064771583"  [ label = "CDG: "] 
+  "30064771580" -> "30064771585"  [ label = "CDG: "] 
+}

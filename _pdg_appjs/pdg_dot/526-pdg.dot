@@ -1,0 +1,49 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182926" [label = <METHOD, 16<BR/>loadParser> ]
+"124554052109" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150712" [label = <PARAM, 16<BR/>this> ]
+"111669150713" [label = <PARAM, 16<BR/>callback> ]
+"30064779166" [label = <require, 17<BR/>require([ 'parse5/lib/parser', 'par...> ]
+"68719484945" [label = <IDENTIFIER, 17<BR/>require<BR/>require([ 'parse5/lib/parser', 'par...> ]
+"30064779167" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064779169" [label = <, 18<BR/>_tmp_5.push(&quot;parse5/lib/parser&quot;)> ]
+"30064779171" [label = <, 19<BR/>_tmp_5.push(&quot;parse5/lib/tree-adapters/default&quot;)> ]
+"30064779173" [label = <, 20<BR/>_tmp_5.push(&quot;parse5-htmlparser2-tree-adapter&quot;)> ]
+"68719484954" [label = <IDENTIFIER, 17<BR/>_tmp_5<BR/>[ 'parse5/lib/parser', 'parse5/lib/...> ]
+  "111669150713" -> "124554052109"  [ label = "DDG: callback"] 
+  "30064779166" -> "124554052109"  [ label = "DDG: this"] 
+  "30064779167" -> "124554052109"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064779167" -> "124554052109"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064779169" -> "124554052109"  [ label = "DDG: _tmp_5.push(&quot;parse5/lib/parser&quot;)"] 
+  "30064779171" -> "124554052109"  [ label = "DDG: _tmp_5.push(&quot;parse5/lib/tree-adapters/default&quot;)"] 
+  "30064779173" -> "124554052109"  [ label = "DDG: _tmp_5"] 
+  "30064779173" -> "124554052109"  [ label = "DDG: _tmp_5.push(&quot;parse5-htmlparser2-tree-adapter&quot;)"] 
+  "30064779166" -> "124554052109"  [ label = "DDG: require([
+      'parse5/lib/parser',
+      'parse5/lib/tree-adapters/default',
+      'parse5-htmlparser2-tree-adapter',
+    ], (Parser, defaultAdapter, htmlparser2Adapter) =&gt; {
+      callback({
+        Parser,
+        TreeAdapters: {
+          default: defaultAdapter,
+          htmlparser2: htmlparser2Adapter,
+        },
+      });
+    })"] 
+  "107374182926" -> "111669150712"  [ label = "DDG: "] 
+  "107374182926" -> "111669150713"  [ label = "DDG: "] 
+  "107374182926" -> "68719484945"  [ label = "DDG: "] 
+  "111669150712" -> "30064779166"  [ label = "DDG: this"] 
+  "107374182926" -> "30064779166"  [ label = "DDG: "] 
+  "30064779173" -> "30064779166"  [ label = "DDG: _tmp_5"] 
+  "107374182926" -> "30064779167"  [ label = "DDG: "] 
+  "107374182926" -> "68719484954"  [ label = "DDG: "] 
+  "30064779167" -> "30064779169"  [ label = "DDG: _tmp_5"] 
+  "107374182926" -> "30064779169"  [ label = "DDG: "] 
+  "30064779169" -> "30064779171"  [ label = "DDG: _tmp_5"] 
+  "107374182926" -> "30064779171"  [ label = "DDG: "] 
+  "30064779171" -> "30064779173"  [ label = "DDG: _tmp_5"] 
+  "107374182926" -> "30064779173"  [ label = "DDG: "] 
+}

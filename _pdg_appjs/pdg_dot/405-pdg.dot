@@ -1,0 +1,294 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182805" [label = <METHOD, 8<BR/>&lt;lambda&gt;0> ]
+"124554051997" [label = <METHOD_RETURN, 8<BR/>{ startState: (basecolumn: ANY) =&gt; { tokenize: ANY; context: Context; indented: __ecma.Number; startOfLine: __ecma.Boolean; }; token: (stream: ANY, state: ANY) =&gt; ANY; indent: (state: ANY, textAfter: ANY) =&gt; ANY; electricChars: __ecma.String; blockCommentStart: __ecma.String; blockCommentEnd: __ecma.String; lineComment: __ecma.String; fold: __ecma.String; }> ]
+"111669150466" [label = <PARAM, 8<BR/>this> ]
+"111669150467" [label = <PARAM, 8<BR/>config> ]
+"111669150468" [label = <PARAM, 8<BR/>parserConfig> ]
+"30064777439" [label = <&lt;operator&gt;.assignment, 23<BR/>function tokenBase = function tokenBase(stream,...> ]
+"30064777440" [label = <&lt;operator&gt;.assignment, 69<BR/>function tokenString = function tokenString(quo...> ]
+"30064777441" [label = <&lt;operator&gt;.assignment, 84<BR/>function tokenComment = function tokenComment(s...> ]
+"30064777442" [label = <&lt;operator&gt;.assignment, 96<BR/>function Context = function Context(indented, c...> ]
+"30064777443" [label = <&lt;operator&gt;.assignment, 103<BR/>function pushContext = function pushContext(sta...> ]
+"30064777444" [label = <&lt;operator&gt;.assignment, 115<BR/>function popContext = function popContext(state...> ]
+"25769804842" [label = <BLOCK, 9<BR/>var indentUnit = config.indentUnit, stateme...> ]
+"30064777472" [label = <&lt;operator&gt;.assignment, 19<BR/>var isOperatorChar = /[+\-*&amp;%=&lt;&gt;!?|\/]/> ]
+"141733921081" [label = <RETURN, 124<BR/>return { startState: function(basecolumn) {...> ]
+"30064777445" [label = <&lt;operator&gt;.assignment, 9<BR/>var indentUnit = config.indentUnit> ]
+"30064777447" [label = <&lt;operator&gt;.assignment, 10<BR/>var statementIndentUnit = parserConfig.statemen...> ]
+"30064777450" [label = <&lt;operator&gt;.assignment, 11<BR/>var dontAlignCalls = parserConfig.dontAlignCalls> ]
+"30064777452" [label = <&lt;operator&gt;.assignment, 12<BR/>var keywords = parserConfig.keywords || {}> ]
+"30064777455" [label = <&lt;operator&gt;.assignment, 13<BR/>var builtin = parserConfig.builtin || {}> ]
+"30064777458" [label = <&lt;operator&gt;.assignment, 14<BR/>var blockKeywords = parserConfig.blockKeywords ...> ]
+"30064777461" [label = <&lt;operator&gt;.assignment, 15<BR/>var atoms = parserConfig.atoms || {}> ]
+"30064777464" [label = <&lt;operator&gt;.assignment, 16<BR/>var hooks = parserConfig.hooks || {}> ]
+"30064777467" [label = <&lt;operator&gt;.assignment, 17<BR/>var multiLineStrings = parserConfig.multiLineSt...> ]
+"30064777469" [label = <&lt;operator&gt;.assignment, 18<BR/>var indentStatements = parserConfig.indentState...> ]
+"25769804833" [label = <BLOCK, 124<BR/>{ startState: function(basecolumn) { ...> ]
+"30064777473" [label = <&lt;operator&gt;.assignment, 125<BR/>_tmp_11.startState = &lt;lambda&gt;2> ]
+"30064777475" [label = <&lt;operator&gt;.assignment, 134<BR/>_tmp_11.token = &lt;lambda&gt;3> ]
+"30064777477" [label = <&lt;operator&gt;.assignment, 172<BR/>_tmp_11.indent = &lt;lambda&gt;4> ]
+"30064777479" [label = <&lt;operator&gt;.assignment, 187<BR/>_tmp_11.electricChars = &quot;{}&quot;> ]
+"30064777481" [label = <&lt;operator&gt;.assignment, 188<BR/>_tmp_11.blockCommentStart = &quot;/*&quot;> ]
+"30064777483" [label = <&lt;operator&gt;.assignment, 189<BR/>_tmp_11.blockCommentEnd = &quot;*/&quot;> ]
+"30064777485" [label = <&lt;operator&gt;.assignment, 190<BR/>_tmp_11.lineComment = &quot;//&quot;> ]
+"30064777487" [label = <&lt;operator&gt;.assignment, 191<BR/>_tmp_11.fold = &quot;brace&quot;> ]
+"68719483267" [label = <IDENTIFIER, 124<BR/>_tmp_11<BR/>{ startState: function(basecolumn) { ...> ]
+"30064777448" [label = <&lt;operator&gt;.logicalOr, 10<BR/>parserConfig.statementIndentUnit || indentUnit> ]
+"30064777453" [label = <&lt;operator&gt;.logicalOr, 12<BR/>parserConfig.keywords || {}> ]
+"30064777456" [label = <&lt;operator&gt;.logicalOr, 13<BR/>parserConfig.builtin || {}> ]
+"30064777459" [label = <&lt;operator&gt;.logicalOr, 14<BR/>parserConfig.blockKeywords || {}> ]
+"30064777462" [label = <&lt;operator&gt;.logicalOr, 15<BR/>parserConfig.atoms || {}> ]
+"30064777465" [label = <&lt;operator&gt;.logicalOr, 16<BR/>parserConfig.hooks || {}> ]
+"30064777470" [label = <&lt;operator&gt;.notEquals, 18<BR/>parserConfig.indentStatements !== false> ]
+"68719483241" [label = <IDENTIFIER, 12<BR/>_tmp_6<BR/>{}> ]
+"68719483244" [label = <IDENTIFIER, 13<BR/>_tmp_7<BR/>{}> ]
+"68719483247" [label = <IDENTIFIER, 14<BR/>_tmp_8<BR/>{}> ]
+"68719483250" [label = <IDENTIFIER, 15<BR/>_tmp_9<BR/>{}> ]
+"68719483253" [label = <IDENTIFIER, 16<BR/>_tmp_10<BR/>{}> ]
+  "141733921081" -> "124554051997"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150466" -> "124554051997"  [ label = "DDG: this"] 
+  "111669150467" -> "124554051997"  [ label = "DDG: config"] 
+  "111669150468" -> "124554051997"  [ label = "DDG: parserConfig"] 
+  "30064777439" -> "124554051997"  [ label = "DDG: tokenBase"] 
+  "30064777439" -> "124554051997"  [ label = "DDG: function tokenBase = function tokenBase(stream, state) {
+    var ch = stream.next();
+    if (hooks[ch]) {
+      var result = hooks[ch](stream, state);
+      if (result !== false) return result;
+    }
+    if (ch == '&quot;' || ch == &quot;'&quot;) {
+      state.tokenize = tokenString(ch);
+      return state.tokenize(stream, state);
+    }
+    if (/[\[\]{}\(\),;\:\.]/.test(ch)) {
+      curPunc = ch;
+      return null;
+    }
+    if (/\d/.test(ch)) {
+      stream.eatWhile(/[\w\.]/);
+      return 'number';
+    }
+    if (ch == '/') {
+      if (stream.eat('*')) {
+        state.tokenize = tokenComment;
+        return tokenComment(stream, state);
+      }
+      if (stream.eat('/')) {
+        stream.skipToEnd();
+        return 'comment';
+      }
+    }
+    if (isOperatorChar.test(ch)) {
+      stream.eatWhile(isOperatorChar);
+      return 'operator';
+    }
+    stream.eatWhile(/[\w\$_\xa1-\uffff]/);
+    var cur = stream.current();
+    if (keywords.propertyIsEnumerable(cur)) {
+      if (blockKeywords.propertyIsEnumerable(cur)) curPun..."] 
+  "30064777440" -> "124554051997"  [ label = "DDG: tokenString"] 
+  "30064777440" -> "124554051997"  [ label = "DDG: function tokenString = function tokenString(quote) {
+    return function(stream, state) {
+      var escaped = false, next, end = false;
+      while ((next = stream.next()) != null) {
+        if (next == quote &amp;&amp; !escaped) {
+          end = true;
+          break;
+        }
+        escaped = !escaped &amp;&amp; next == '\\';
+      }
+      if (end || !(escaped || multiLineStrings)) state.tokenize = null;
+      return 'string';
+    };
+  }"] 
+  "30064777441" -> "124554051997"  [ label = "DDG: tokenComment"] 
+  "30064777441" -> "124554051997"  [ label = "DDG: function tokenComment = function tokenComment(stream, state) {
+    var maybeEnd = false, ch;
+    while ((ch = stream.next())) {
+      if (ch == '/' &amp;&amp; maybeEnd) {
+        state.tokenize = null;
+        break;
+      }
+      maybeEnd = ch == '*';
+    }
+    return 'comment';
+  }"] 
+  "30064777442" -> "124554051997"  [ label = "DDG: Context"] 
+  "30064777442" -> "124554051997"  [ label = "DDG: function Context = function Context(indented, column, type, align, prev) {
+    this.indented = indented;
+    this.column = column;
+    this.type = type;
+    this.align = align;
+    this.prev = prev;
+  }"] 
+  "30064777443" -> "124554051997"  [ label = "DDG: pushContext"] 
+  "30064777443" -> "124554051997"  [ label = "DDG: function pushContext = function pushContext(state, col, type) {
+    var indent = state.indented;
+    if (state.context &amp;&amp; state.context.type == 'statement')
+      indent = state.context.indented;
+    return (state.context = new Context(
+      indent,
+      col,
+      type,
+      null,
+      state.context,
+    ));
+  }"] 
+  "30064777444" -> "124554051997"  [ label = "DDG: popContext"] 
+  "30064777444" -> "124554051997"  [ label = "DDG: function popContext = function popContext(state) {
+    var t = state.context.type;
+    if (t == ')' || t == ']' || t == '}')
+      state.indented = state.context.indented;
+    return (state.context = state.context.prev);
+  }"] 
+  "30064777445" -> "124554051997"  [ label = "DDG: config.indentUnit"] 
+  "30064777445" -> "124554051997"  [ label = "DDG: var indentUnit = config.indentUnit"] 
+  "30064777447" -> "124554051997"  [ label = "DDG: statementIndentUnit"] 
+  "30064777448" -> "124554051997"  [ label = "DDG: parserConfig.statementIndentUnit"] 
+  "30064777448" -> "124554051997"  [ label = "DDG: indentUnit"] 
+  "30064777447" -> "124554051997"  [ label = "DDG: parserConfig.statementIndentUnit || indentUnit"] 
+  "30064777447" -> "124554051997"  [ label = "DDG: var statementIndentUnit = parserConfig.statementIndentUnit || indentUnit"] 
+  "30064777450" -> "124554051997"  [ label = "DDG: dontAlignCalls"] 
+  "30064777450" -> "124554051997"  [ label = "DDG: parserConfig.dontAlignCalls"] 
+  "30064777450" -> "124554051997"  [ label = "DDG: var dontAlignCalls = parserConfig.dontAlignCalls"] 
+  "30064777452" -> "124554051997"  [ label = "DDG: keywords"] 
+  "30064777453" -> "124554051997"  [ label = "DDG: parserConfig.keywords"] 
+  "30064777452" -> "124554051997"  [ label = "DDG: parserConfig.keywords || {}"] 
+  "30064777452" -> "124554051997"  [ label = "DDG: var keywords = parserConfig.keywords || {}"] 
+  "30064777455" -> "124554051997"  [ label = "DDG: builtin"] 
+  "30064777456" -> "124554051997"  [ label = "DDG: parserConfig.builtin"] 
+  "30064777455" -> "124554051997"  [ label = "DDG: parserConfig.builtin || {}"] 
+  "30064777455" -> "124554051997"  [ label = "DDG: var builtin = parserConfig.builtin || {}"] 
+  "30064777458" -> "124554051997"  [ label = "DDG: blockKeywords"] 
+  "30064777459" -> "124554051997"  [ label = "DDG: parserConfig.blockKeywords"] 
+  "30064777458" -> "124554051997"  [ label = "DDG: parserConfig.blockKeywords || {}"] 
+  "30064777458" -> "124554051997"  [ label = "DDG: var blockKeywords = parserConfig.blockKeywords || {}"] 
+  "30064777461" -> "124554051997"  [ label = "DDG: atoms"] 
+  "30064777462" -> "124554051997"  [ label = "DDG: parserConfig.atoms"] 
+  "30064777461" -> "124554051997"  [ label = "DDG: parserConfig.atoms || {}"] 
+  "30064777461" -> "124554051997"  [ label = "DDG: var atoms = parserConfig.atoms || {}"] 
+  "30064777464" -> "124554051997"  [ label = "DDG: hooks"] 
+  "30064777465" -> "124554051997"  [ label = "DDG: parserConfig.hooks"] 
+  "30064777464" -> "124554051997"  [ label = "DDG: parserConfig.hooks || {}"] 
+  "30064777464" -> "124554051997"  [ label = "DDG: var hooks = parserConfig.hooks || {}"] 
+  "30064777467" -> "124554051997"  [ label = "DDG: multiLineStrings"] 
+  "30064777467" -> "124554051997"  [ label = "DDG: parserConfig.multiLineStrings"] 
+  "30064777467" -> "124554051997"  [ label = "DDG: var multiLineStrings = parserConfig.multiLineStrings"] 
+  "30064777469" -> "124554051997"  [ label = "DDG: indentStatements"] 
+  "30064777470" -> "124554051997"  [ label = "DDG: parserConfig.indentStatements"] 
+  "30064777469" -> "124554051997"  [ label = "DDG: parserConfig.indentStatements !== false"] 
+  "30064777469" -> "124554051997"  [ label = "DDG: var indentStatements = parserConfig.indentStatements !== false"] 
+  "30064777472" -> "124554051997"  [ label = "DDG: isOperatorChar"] 
+  "30064777472" -> "124554051997"  [ label = "DDG: var isOperatorChar = /[+\-*&amp;%=&lt;&gt;!?|\/]/"] 
+  "30064777473" -> "124554051997"  [ label = "DDG: _tmp_11.startState"] 
+  "30064777473" -> "124554051997"  [ label = "DDG: _tmp_11.startState = &lt;lambda&gt;2"] 
+  "30064777475" -> "124554051997"  [ label = "DDG: _tmp_11.token"] 
+  "30064777475" -> "124554051997"  [ label = "DDG: _tmp_11.token = &lt;lambda&gt;3"] 
+  "30064777477" -> "124554051997"  [ label = "DDG: _tmp_11.indent"] 
+  "30064777477" -> "124554051997"  [ label = "DDG: _tmp_11.indent = &lt;lambda&gt;4"] 
+  "30064777479" -> "124554051997"  [ label = "DDG: _tmp_11.electricChars"] 
+  "30064777479" -> "124554051997"  [ label = "DDG: _tmp_11.electricChars = &quot;{}&quot;"] 
+  "30064777481" -> "124554051997"  [ label = "DDG: _tmp_11.blockCommentStart"] 
+  "30064777481" -> "124554051997"  [ label = "DDG: _tmp_11.blockCommentStart = &quot;/*&quot;"] 
+  "30064777483" -> "124554051997"  [ label = "DDG: _tmp_11.blockCommentEnd"] 
+  "30064777483" -> "124554051997"  [ label = "DDG: _tmp_11.blockCommentEnd = &quot;*/&quot;"] 
+  "30064777485" -> "124554051997"  [ label = "DDG: _tmp_11.lineComment"] 
+  "30064777485" -> "124554051997"  [ label = "DDG: _tmp_11.lineComment = &quot;//&quot;"] 
+  "30064777487" -> "124554051997"  [ label = "DDG: _tmp_11.fold"] 
+  "30064777487" -> "124554051997"  [ label = "DDG: _tmp_11.fold = &quot;brace&quot;"] 
+  "107374182805" -> "111669150466"  [ label = "DDG: "] 
+  "107374182805" -> "111669150467"  [ label = "DDG: "] 
+  "107374182805" -> "111669150468"  [ label = "DDG: "] 
+  "107374182805" -> "30064777439"  [ label = "DDG: "] 
+  "107374182805" -> "30064777440"  [ label = "DDG: "] 
+  "107374182805" -> "30064777441"  [ label = "DDG: "] 
+  "107374182805" -> "30064777442"  [ label = "DDG: "] 
+  "107374182805" -> "30064777443"  [ label = "DDG: "] 
+  "107374182805" -> "30064777444"  [ label = "DDG: "] 
+  "107374182805" -> "25769804842"  [ label = "DDG: "] 
+  "107374182805" -> "30064777472"  [ label = "DDG: "] 
+  "25769804833" -> "141733921081"  [ label = "DDG: "] 
+  "25769804833" -> "141733921081"  [ label = "DDG: {
+    startState: function(basecolumn) {
+      return {
+        tokenize: null,
+        context: new Context((basecolumn || 0) - indentUnit, 0, 'top', false),
+        indented: 0,
+        startOfLine: true,
+      };
+    },
+
+    token: function(stream, state) {
+      var ctx = state.context;
+      if (stream.sol()) {
+        if (ctx.align == null) ctx.align = false;
+        state.indented = stream.indentation();
+        state.startOfLine = true;
+      }
+      if (stream.eatSpace()) return null;
+      curPunc = null;
+      var style = (state.tokenize || tokenBase)(stream, state);
+      if (style == 'comment' || style == 'meta') return style;
+      if (ctx.align == null) ctx.align = true;
+
+      if (
+        (curPunc == ';' || curPunc == ':' || curPunc == ',') &amp;&amp;
+        ctx.type == 'statement'
+      )
+        popContext(state);
+      else if (curPunc == '{') pushContext(state, stream.column(), '}');
+      else if (curPunc == '[') pushContext(state, stream.column(), ']');
+      else if..."] 
+  "107374182805" -> "141733921081"  [ label = "DDG: "] 
+  "111669150467" -> "30064777445"  [ label = "DDG: config"] 
+  "30064777448" -> "30064777447"  [ label = "DDG: parserConfig.statementIndentUnit"] 
+  "30064777448" -> "30064777447"  [ label = "DDG: indentUnit"] 
+  "111669150468" -> "30064777450"  [ label = "DDG: parserConfig"] 
+  "30064777453" -> "30064777452"  [ label = "DDG: parserConfig.keywords"] 
+  "30064777453" -> "30064777452"  [ label = "DDG: {}"] 
+  "30064777456" -> "30064777455"  [ label = "DDG: parserConfig.builtin"] 
+  "30064777456" -> "30064777455"  [ label = "DDG: {}"] 
+  "30064777459" -> "30064777458"  [ label = "DDG: parserConfig.blockKeywords"] 
+  "30064777459" -> "30064777458"  [ label = "DDG: {}"] 
+  "30064777462" -> "30064777461"  [ label = "DDG: parserConfig.atoms"] 
+  "30064777462" -> "30064777461"  [ label = "DDG: {}"] 
+  "30064777465" -> "30064777464"  [ label = "DDG: parserConfig.hooks"] 
+  "30064777465" -> "30064777464"  [ label = "DDG: {}"] 
+  "111669150468" -> "30064777467"  [ label = "DDG: parserConfig"] 
+  "30064777470" -> "30064777469"  [ label = "DDG: parserConfig.indentStatements"] 
+  "30064777470" -> "30064777469"  [ label = "DDG: false"] 
+  "30064777473" -> "25769804833"  [ label = "DDG: _tmp_11.startState"] 
+  "30064777475" -> "25769804833"  [ label = "DDG: _tmp_11.token"] 
+  "30064777477" -> "25769804833"  [ label = "DDG: _tmp_11.indent"] 
+  "30064777479" -> "25769804833"  [ label = "DDG: _tmp_11.electricChars"] 
+  "30064777481" -> "25769804833"  [ label = "DDG: _tmp_11.blockCommentStart"] 
+  "30064777483" -> "25769804833"  [ label = "DDG: _tmp_11.blockCommentEnd"] 
+  "30064777485" -> "25769804833"  [ label = "DDG: _tmp_11.lineComment"] 
+  "30064777487" -> "25769804833"  [ label = "DDG: _tmp_11.fold"] 
+  "107374182805" -> "25769804833"  [ label = "DDG: "] 
+  "107374182805" -> "30064777473"  [ label = "DDG: "] 
+  "107374182805" -> "30064777475"  [ label = "DDG: "] 
+  "107374182805" -> "30064777477"  [ label = "DDG: "] 
+  "107374182805" -> "30064777479"  [ label = "DDG: "] 
+  "107374182805" -> "30064777481"  [ label = "DDG: "] 
+  "107374182805" -> "30064777483"  [ label = "DDG: "] 
+  "107374182805" -> "30064777485"  [ label = "DDG: "] 
+  "107374182805" -> "30064777487"  [ label = "DDG: "] 
+  "107374182805" -> "68719483267"  [ label = "DDG: "] 
+  "111669150468" -> "30064777448"  [ label = "DDG: parserConfig"] 
+  "30064777445" -> "30064777448"  [ label = "DDG: indentUnit"] 
+  "107374182805" -> "30064777448"  [ label = "DDG: "] 
+  "111669150468" -> "30064777453"  [ label = "DDG: parserConfig"] 
+  "111669150468" -> "30064777456"  [ label = "DDG: parserConfig"] 
+  "111669150468" -> "30064777459"  [ label = "DDG: parserConfig"] 
+  "111669150468" -> "30064777462"  [ label = "DDG: parserConfig"] 
+  "111669150468" -> "30064777465"  [ label = "DDG: parserConfig"] 
+  "111669150468" -> "30064777470"  [ label = "DDG: parserConfig"] 
+  "107374182805" -> "30064777470"  [ label = "DDG: "] 
+  "107374182805" -> "68719483241"  [ label = "DDG: "] 
+  "107374182805" -> "68719483244"  [ label = "DDG: "] 
+  "107374182805" -> "68719483247"  [ label = "DDG: "] 
+  "107374182805" -> "68719483250"  [ label = "DDG: "] 
+  "107374182805" -> "68719483253"  [ label = "DDG: "] 
+}

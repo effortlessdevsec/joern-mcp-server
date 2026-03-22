@@ -1,0 +1,4 @@
+digraph "onWantToClose" {  
+node [shape="rect"];  
+
+}

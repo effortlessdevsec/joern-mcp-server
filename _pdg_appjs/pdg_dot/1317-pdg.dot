@@ -1,0 +1,13 @@
+digraph "isForking" {  
+node [shape="rect"];  
+"107374183717" [label = <METHOD, 42<BR/>isForking> ]
+"124554052900" [label = <METHOD_RETURN, 42<BR/>ANY> ]
+"111669152341" [label = <PARAM, 42<BR/>this> ]
+"111669152342" [label = <PARAM, 42<BR/>state> ]
+"141733921806" [label = <RETURN, 43<BR/>return state.forking> ]
+  "141733921806" -> "124554052900"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152341" -> "124554052900"  [ label = "DDG: this"] 
+  "111669152342" -> "124554052900"  [ label = "DDG: state"] 
+  "107374183717" -> "111669152341"  [ label = "DDG: "] 
+  "107374183717" -> "111669152342"  [ label = "DDG: "] 
+}

@@ -1,0 +1,11 @@
+digraph "getRevisionID" {  
+node [shape="rect"];  
+"107374183602" [label = <METHOD, 148<BR/>getRevisionID> ]
+"124554052785" [label = <METHOD_RETURN, 148<BR/>ANY> ]
+"111669152130" [label = <PARAM, 148<BR/>this> ]
+"141733921650" [label = <RETURN, 149<BR/>return this._gist.history[0].version> ]
+  "141733921650" -> "124554052785"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152130" -> "124554052785"  [ label = "DDG: this"] 
+  "107374183602" -> "111669152130"  [ label = "DDG: "] 
+  "107374183602" -> "141733921650"  [ label = "DDG: "] 
+}

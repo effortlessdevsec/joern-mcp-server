@@ -1,0 +1,102 @@
+digraph "componentDidMount" {  
+node [shape="rect"];  
+"107374182547" [label = <METHOD, 37<BR/>componentDidMount> ]
+"124554051739" [label = <METHOD_RETURN, 37<BR/>void> ]
+"111669149984" [label = <PARAM, 37<BR/>this> ]
+"30064773412" [label = <&lt;operator&gt;.assignment, 38<BR/>this._listeners = []> ]
+"30064773415" [label = <&lt;operator&gt;.assignment, 39<BR/>let target = this.container> ]
+"30064773417" [label = <_bindListener, 42<BR/>this._bindListener(document, 'paste', event =&gt; ...> ]
+"30064773419" [label = <_bindListener, 67<BR/>this._bindListener(target, 'dragenter', event =...> ]
+"30064773421" [label = <_bindListener, 73<BR/>this._bindListener(target, 'dragover', event =&gt;...> ]
+"30064773423" [label = <_bindListener, 79<BR/>this._bindListener(target, 'drop', event =&gt; { ...> ]
+"30064773425" [label = <_bindListener, 114<BR/>this._bindListener(target, 'dragleave', () =&gt; {...> ]
+  "30064773412" -> "124554051739"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773412" -> "124554051739"  [ label = "DDG: this._listeners = []"] 
+  "30064773415" -> "124554051739"  [ label = "DDG: let target = this.container"] 
+  "30064773417" -> "124554051739"  [ label = "DDG: document"] 
+  "30064773417" -> "124554051739"  [ label = "DDG: this._bindListener(document, 'paste', event =&gt; {
+      if (!event.clipboardData) {
+        // No browser support? :(
+        return;
+      }
+      let cbdata = event.clipboardData;
+      // Plain text
+      if (!cbdata.types.indexOf || !cbdata.types.indexOf('text/plain') &gt; -1) {
+        return;
+      }
+      event.stopPropagation();
+      event.preventDefault();
+      this._jsonToCode(cbdata.getData('text/plain')).then(
+        code =&gt; this.props.onText('paste', event, code),
+        ex =&gt; {
+          if (event.target.nodeName !== 'TEXTAREA') {
+            this._onASTError('paste', event, ex);
+          }
+        },
+      );
+    }, true)"] 
+  "30064773419" -> "124554051739"  [ label = "DDG: this._bindListener(target, 'dragenter', event =&gt; {
+      clearTimeout(timer);
+      event.preventDefault();
+      this.setState({dragging: true});
+    }, true)"] 
+  "30064773421" -> "124554051739"  [ label = "DDG: this._bindListener(target, 'dragover', event =&gt; {
+      clearTimeout(timer);
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'copy';
+    }, true)"] 
+  "30064773423" -> "124554051739"  [ label = "DDG: this._bindListener(target, 'drop', event =&gt; {
+      this.setState({dragging: false});
+      let file = event.dataTransfer.files[0];
+      let categoryId = acceptedFileTypes.get(file.type);
+      if (!categoryId || !this.props.onText) {
+        return;
+      }
+      event.preventDefault();
+      event.stopPropagation();
+      let reader = new FileReader();
+      reader.onload = readerEvent =&gt; {
+        let text = readerEvent.target.result;
+        if (categoryId === 'JSON' || categoryId === 'TEXT') {
+          text = this._jsonToCode(text).then(
+            text =&gt; {
+              categoryId = 'javascript';
+              return text;
+            },
+            ex =&gt; {
+              if (categoryId === 'JSON') {
+                this._onASTError('drop', readerEvent, ex);
+              } else {
+                categoryId = undefined;
+                return text;
+              }
+            },
+          );
+        }
+        Promise.resolve(text).then(text =&gt; {
+          this.props.onText(..."] 
+  "30064773425" -> "124554051739"  [ label = "DDG: this"] 
+  "30064773425" -> "124554051739"  [ label = "DDG: target"] 
+  "30064773425" -> "124554051739"  [ label = "DDG: this._bindListener(target, 'dragleave', () =&gt; {
+      clearTimeout(timer);
+      timer = setTimeout(() =&gt; this.setState({dragging: false}), 50);
+    }, true)"] 
+  "107374182547" -> "111669149984"  [ label = "DDG: "] 
+  "107374182547" -> "30064773412"  [ label = "DDG: "] 
+  "111669149984" -> "30064773415"  [ label = "DDG: this"] 
+  "111669149984" -> "30064773417"  [ label = "DDG: this"] 
+  "30064773412" -> "30064773417"  [ label = "DDG: this._listeners"] 
+  "107374182547" -> "30064773417"  [ label = "DDG: "] 
+  "30064773417" -> "30064773419"  [ label = "DDG: this"] 
+  "107374182547" -> "30064773419"  [ label = "DDG: "] 
+  "30064773415" -> "30064773419"  [ label = "DDG: target"] 
+  "30064773419" -> "30064773421"  [ label = "DDG: this"] 
+  "107374182547" -> "30064773421"  [ label = "DDG: "] 
+  "30064773419" -> "30064773421"  [ label = "DDG: target"] 
+  "30064773421" -> "30064773423"  [ label = "DDG: this"] 
+  "107374182547" -> "30064773423"  [ label = "DDG: "] 
+  "30064773421" -> "30064773423"  [ label = "DDG: target"] 
+  "30064773423" -> "30064773425"  [ label = "DDG: this"] 
+  "107374182547" -> "30064773425"  [ label = "DDG: "] 
+  "30064773423" -> "30064773425"  [ label = "DDG: target"] 
+}

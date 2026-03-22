@@ -1,0 +1,278 @@
+digraph "componentDidMount" {  
+node [shape="rect"];  
+"107374182483" [label = <METHOD, 82<BR/>componentDidMount> ]
+"124554051672" [label = <METHOD_RETURN, 82<BR/>void> ]
+"111669149875" [label = <PARAM, 82<BR/>this> ]
+"30064772632" [label = <&lt;operator&gt;.assignment, 83<BR/>this._CMHandlers = []> ]
+"30064772635" [label = <&lt;operator&gt;.assignment, 84<BR/>this._subscriptions = []> ]
+"30064772638" [label = <&lt;operator&gt;.assignment, 85<BR/>this.codeMirror = CodeMirror( // eslint-disable...> ]
+"30064772662" [label = <_bindCMHandler, 96<BR/>this._bindCMHandler('blur', instance =&gt; { ...> ]
+"30064772664" [label = <_bindCMHandler, 111<BR/>this._bindCMHandler('changes', () =&gt; { cl...> ]
+"30064772666" [label = <_bindCMHandler, 115<BR/>this._bindCMHandler('cursorActivity', () =&gt; { ...> ]
+"30064772668" [label = <push, 120<BR/>this._subscriptions.push( subscribe('PANE...> ]
+"68719478357" [label = <IDENTIFIER, 85<BR/>CodeMirror<BR/>CodeMirror( // eslint-disable-line new-cap ...> ]
+"30064772640" [label = <CodeMirror, 85<BR/>CodeMirror( // eslint-disable-line new-cap ...> ]
+"68719478380" [label = <IDENTIFIER, 121<BR/>subscribe<BR/>subscribe('PANEL_RESIZE', () =&gt; { if (t...> ]
+"30064772672" [label = <subscribe, 121<BR/>subscribe('PANEL_RESIZE', () =&gt; { if (t...> ]
+"30064772675" [label = <&lt;operator&gt;.assignment, 129<BR/>this._markerRange = null> ]
+"30064772677" [label = <&lt;operator&gt;.assignment, 130<BR/>this._mark = null> ]
+"30064772679" [label = <push, 131<BR/>this._subscriptions.push( subscribe('HI...> ]
+"30064772687" [label = <_setError, 171<BR/>this._setError(this.props.error)> ]
+"30064772642" [label = <&lt;operator&gt;.assignment, 88<BR/>_tmp_10.keyMap = this.props.keyMap> ]
+"30064772646" [label = <&lt;operator&gt;.assignment, 89<BR/>_tmp_10.value = this.state.value> ]
+"30064772650" [label = <&lt;operator&gt;.assignment, 90<BR/>_tmp_10.mode = this.props.mode> ]
+"30064772654" [label = <&lt;operator&gt;.assignment, 91<BR/>_tmp_10.lineNumbers = this.props.lineNumbers> ]
+"30064772658" [label = <&lt;operator&gt;.assignment, 92<BR/>_tmp_10.readOnly = this.props.readOnly> ]
+"68719478370" [label = <IDENTIFIER, 87<BR/>_tmp_10<BR/>{ keyMap: this.props.keyMap, va...> ]
+"30064772670" [label = <&lt;operator&gt;.assignment, 120<BR/>(_tmp_19 = this._subscriptions)> ]
+"68719478388" [label = <IDENTIFIER, 132<BR/>subscribe<BR/>subscribe('HIGHLIGHT', ({range}) =&gt; { ...> ]
+"30064772683" [label = <subscribe, 132<BR/>subscribe('HIGHLIGHT', ({range}) =&gt; { ...> ]
+"68719478390" [label = <IDENTIFIER, 154<BR/>subscribe<BR/>subscribe('CLEAR_HIGHLIGHT', ({range}={}) =&gt; { ...> ]
+"30064772684" [label = <subscribe, 154<BR/>subscribe('CLEAR_HIGHLIGHT', ({range}={}) =&gt; { ...> ]
+"30064772681" [label = <&lt;operator&gt;.assignment, 131<BR/>(_tmp_21 = this._subscriptions)> ]
+"30064772673" [label = <&lt;operator&gt;.fieldAccess, 128<BR/>this.props.highlight> ]
+"30064772685" [label = <&lt;operator&gt;.fieldAccess, 170<BR/>this.props.error> ]
+"30064772676" [label = <&lt;operator&gt;.fieldAccess, 129<BR/>this._markerRange> ]
+"30064772678" [label = <&lt;operator&gt;.fieldAccess, 130<BR/>this._mark> ]
+"30064772680" [label = <&lt;operator&gt;.fieldAccess, 131<BR/>(_tmp_21 = this._subscriptions).push> ]
+"30064772688" [label = <&lt;operator&gt;.fieldAccess, 171<BR/>this._setError> ]
+"30064772689" [label = <&lt;operator&gt;.fieldAccess, 171<BR/>this.props.error> ]
+"55834575449" [label = <FIELD_IDENTIFIER, 129<BR/>_markerRange> ]
+"55834575450" [label = <FIELD_IDENTIFIER, 130<BR/>_mark> ]
+"55834575452" [label = <FIELD_IDENTIFIER, 131<BR/>push> ]
+"120259084350" [label = <METHOD_REF, 132<BR/>&lt;lambda&gt;6<BR/>subscribe('HIGHLIGHT', ({range}) =&gt; { ...> ]
+"120259084351" [label = <METHOD_REF, 154<BR/>&lt;lambda&gt;8<BR/>subscribe('CLEAR_HIGHLIGHT', ({range}={}) =&gt; { ...> ]
+"55834575455" [label = <FIELD_IDENTIFIER, 171<BR/>_setError> ]
+"30064772690" [label = <&lt;operator&gt;.fieldAccess, 171<BR/>this.props> ]
+"55834575457" [label = <FIELD_IDENTIFIER, 171<BR/>error> ]
+"30064772682" [label = <&lt;operator&gt;.fieldAccess, 131<BR/>this._subscriptions> ]
+"55834575456" [label = <FIELD_IDENTIFIER, 171<BR/>props> ]
+"55834575451" [label = <FIELD_IDENTIFIER, 131<BR/>_subscriptions> ]
+  "30064772632" -> "124554051672"  [ label = "DDG: this._CMHandlers = []"] 
+  "30064772635" -> "124554051672"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064772635" -> "124554051672"  [ label = "DDG: this._subscriptions = []"] 
+  "30064772642" -> "124554051672"  [ label = "DDG: _tmp_10.keyMap"] 
+  "30064772642" -> "124554051672"  [ label = "DDG: _tmp_10.keyMap = this.props.keyMap"] 
+  "30064772646" -> "124554051672"  [ label = "DDG: _tmp_10.value"] 
+  "30064772646" -> "124554051672"  [ label = "DDG: _tmp_10.value = this.state.value"] 
+  "30064772650" -> "124554051672"  [ label = "DDG: _tmp_10.mode"] 
+  "30064772650" -> "124554051672"  [ label = "DDG: _tmp_10.mode = this.props.mode"] 
+  "30064772654" -> "124554051672"  [ label = "DDG: _tmp_10.lineNumbers"] 
+  "30064772654" -> "124554051672"  [ label = "DDG: _tmp_10.lineNumbers = this.props.lineNumbers"] 
+  "30064772658" -> "124554051672"  [ label = "DDG: _tmp_10.readOnly"] 
+  "30064772658" -> "124554051672"  [ label = "DDG: _tmp_10.readOnly = this.props.readOnly"] 
+  "30064772638" -> "124554051672"  [ label = "DDG: CodeMirror( // eslint-disable-line new-cap
+      this.container,
+      {
+        keyMap: this.props.keyMap,
+        value: this.state.value,
+        mode: this.props.mode,
+        lineNumbers: this.props.lineNumbers,
+        readOnly: this.props.readOnly,
+      },
+    )"] 
+  "30064772638" -> "124554051672"  [ label = "DDG: this.codeMirror = CodeMirror( // eslint-disable-line new-cap
+      this.container,
+      {
+        keyMap: this.props.keyMap,
+        value: this.state.value,
+        mode: this.props.mode,
+        lineNumbers: this.props.lineNumbers,
+        readOnly: this.props.readOnly,
+      },
+    )"] 
+  "30064772662" -> "124554051672"  [ label = "DDG: this._bindCMHandler('blur', instance =&gt; {
+      if (!this.props.enableFormatting) return;
+
+      require(['prettier/standalone', 'prettier/parser-babel'], (prettier, babel) =&gt; {
+        const currValue = instance.doc.getValue();
+        const options = Object.assign({},
+          defaultPrettierOptions,
+          {
+            printWidth: instance.display.maxLineLength,
+            plugins: [babel],
+          });
+        instance.doc.setValue(prettier.format(currValue, options));
+      });
+    })"] 
+  "30064772664" -> "124554051672"  [ label = "DDG: this._bindCMHandler('changes', () =&gt; {
+      clearTimeout(this._updateTimer);
+      this._updateTimer = setTimeout(this._onContentChange.bind(this), 200);
+    })"] 
+  "30064772666" -> "124554051672"  [ label = "DDG: this._bindCMHandler('cursorActivity', () =&gt; {
+      clearTimeout(this._updateTimer);
+      this._updateTimer = setTimeout(this._onActivity.bind(this, true), 100);
+    })"] 
+  "30064772668" -> "124554051672"  [ label = "DDG: _tmp_19"] 
+  "30064772668" -> "124554051672"  [ label = "DDG: subscribe('PANEL_RESIZE', () =&gt; {
+        if (this.codeMirror) {
+          this.codeMirror.refresh();
+        }
+      })"] 
+  "30064772668" -> "124554051672"  [ label = "DDG: this._subscriptions.push(
+      subscribe('PANEL_RESIZE', () =&gt; {
+        if (this.codeMirror) {
+          this.codeMirror.refresh();
+        }
+      }),
+    )"] 
+  "30064772675" -> "124554051672"  [ label = "DDG: this._markerRange = null"] 
+  "30064772677" -> "124554051672"  [ label = "DDG: this._mark = null"] 
+  "30064772679" -> "124554051672"  [ label = "DDG: _tmp_21"] 
+  "30064772679" -> "124554051672"  [ label = "DDG: subscribe('HIGHLIGHT', ({range}) =&gt; {
+          if (!range) {
+            return;
+          }
+          let doc = this.codeMirror.getDoc();
+          this._markerRange = range;
+          // We only want one mark at a time.
+          if (this._mark) {
+            this._mark.clear();
+          }
+          let [start, end] = range.map(index =&gt; this._posFromIndex(doc, index));
+          if (!start || !end) {
+            this._markerRange = this._mark = null;
+            return;
+          }
+          this._mark = this.codeMirror.markText(
+            start,
+            end,
+            {className: 'marked'},
+          );
+        })"] 
+  "30064772679" -> "124554051672"  [ label = "DDG: subscribe('CLEAR_HIGHLIGHT', ({range}={}) =&gt; {
+          if (!range ||
+            this._markerRange &amp;&amp;
+            range[0] === this._markerRange[0] &amp;&amp;
+            range[1] === this._markerRange[1]
+          ) {
+            this._markerRange = null;
+            if (this._mark) {
+              this._mark.clear();
+              this._mark = null;
+            }
+          }
+        })"] 
+  "30064772679" -> "124554051672"  [ label = "DDG: this._subscriptions.push(
+        subscribe('HIGHLIGHT', ({range}) =&gt; {
+          if (!range) {
+            return;
+          }
+          let doc = this.codeMirror.getDoc();
+          this._markerRange = range;
+          // We only want one mark at a time.
+          if (this._mark) {
+            this._mark.clear();
+          }
+          let [start, end] = range.map(index =&gt; this._posFromIndex(doc, index));
+          if (!start || !end) {
+            this._markerRange = this._mark = null;
+            return;
+          }
+          this._mark = this.codeMirror.markText(
+            start,
+            end,
+            {className: 'marked'},
+          );
+        }),
+
+        subscribe('CLEAR_HIGHLIGHT', ({range}={}) =&gt; {
+          if (!range ||
+            this._markerRange &amp;&amp;
+            range[0] === this._markerRange[0] &amp;&amp;
+            range[1] === this._markerRange[1]
+          ) {
+            this._markerRange = null;
+            if (this._mark) {
+              this._mark.clear();
+   ..."] 
+  "30064772687" -> "124554051672"  [ label = "DDG: this"] 
+  "30064772687" -> "124554051672"  [ label = "DDG: this.props.error"] 
+  "30064772687" -> "124554051672"  [ label = "DDG: this._setError(this.props.error)"] 
+  "107374182483" -> "111669149875"  [ label = "DDG: "] 
+  "107374182483" -> "30064772632"  [ label = "DDG: "] 
+  "107374182483" -> "30064772635"  [ label = "DDG: "] 
+  "30064772640" -> "30064772638"  [ label = "DDG: this"] 
+  "30064772640" -> "30064772638"  [ label = "DDG: this.container"] 
+  "30064772640" -> "30064772638"  [ label = "DDG: {
+        keyMap: this.props.keyMap,
+        value: this.state.value,
+        mode: this.props.mode,
+        lineNumbers: this.props.lineNumbers,
+        readOnly: this.props.readOnly,
+      }"] 
+  "30064772640" -> "30064772638"  [ label = "DDG: "] 
+  "30064772638" -> "30064772662"  [ label = "DDG: this.codeMirror"] 
+  "30064772640" -> "30064772662"  [ label = "DDG: this"] 
+  "30064772640" -> "30064772662"  [ label = "DDG: this.container"] 
+  "107374182483" -> "30064772662"  [ label = "DDG: "] 
+  "30064772662" -> "30064772664"  [ label = "DDG: this"] 
+  "107374182483" -> "30064772664"  [ label = "DDG: "] 
+  "30064772664" -> "30064772666"  [ label = "DDG: this"] 
+  "107374182483" -> "30064772666"  [ label = "DDG: "] 
+  "30064772670" -> "30064772668"  [ label = "DDG: _tmp_19"] 
+  "107374182483" -> "30064772668"  [ label = "DDG: "] 
+  "30064772672" -> "30064772668"  [ label = "DDG: this"] 
+  "30064772672" -> "30064772668"  [ label = "DDG: &quot;PANEL_RESIZE&quot;"] 
+  "30064772672" -> "30064772668"  [ label = "DDG: &lt;lambda&gt;5"] 
+  "107374182483" -> "68719478357"  [ label = "DDG: "] 
+  "111669149875" -> "30064772640"  [ label = "DDG: this"] 
+  "30064772632" -> "30064772640"  [ label = "DDG: this._CMHandlers"] 
+  "30064772635" -> "30064772640"  [ label = "DDG: this._subscriptions"] 
+  "107374182483" -> "30064772640"  [ label = "DDG: "] 
+  "30064772642" -> "30064772640"  [ label = "DDG: _tmp_10.keyMap"] 
+  "30064772646" -> "30064772640"  [ label = "DDG: _tmp_10.value"] 
+  "30064772650" -> "30064772640"  [ label = "DDG: _tmp_10.mode"] 
+  "30064772654" -> "30064772640"  [ label = "DDG: _tmp_10.lineNumbers"] 
+  "30064772658" -> "30064772640"  [ label = "DDG: _tmp_10.readOnly"] 
+  "107374182483" -> "68719478380"  [ label = "DDG: "] 
+  "30064772666" -> "30064772672"  [ label = "DDG: this"] 
+  "107374182483" -> "30064772672"  [ label = "DDG: "] 
+  "107374182483" -> "30064772675"  [ label = "DDG: "] 
+  "107374182483" -> "30064772677"  [ label = "DDG: "] 
+  "107374182483" -> "68719478370"  [ label = "DDG: "] 
+  "30064772666" -> "30064772670"  [ label = "DDG: this"] 
+  "30064772681" -> "30064772679"  [ label = "DDG: _tmp_21"] 
+  "107374182483" -> "30064772679"  [ label = "DDG: "] 
+  "30064772683" -> "30064772679"  [ label = "DDG: this"] 
+  "30064772683" -> "30064772679"  [ label = "DDG: &quot;HIGHLIGHT&quot;"] 
+  "30064772683" -> "30064772679"  [ label = "DDG: &lt;lambda&gt;6"] 
+  "30064772684" -> "30064772679"  [ label = "DDG: this"] 
+  "30064772684" -> "30064772679"  [ label = "DDG: &quot;CLEAR_HIGHLIGHT&quot;"] 
+  "30064772684" -> "30064772679"  [ label = "DDG: &lt;lambda&gt;8"] 
+  "30064772672" -> "30064772687"  [ label = "DDG: this"] 
+  "30064772684" -> "30064772687"  [ label = "DDG: this"] 
+  "107374182483" -> "30064772687"  [ label = "DDG: "] 
+  "107374182483" -> "68719478388"  [ label = "DDG: "] 
+  "30064772672" -> "30064772683"  [ label = "DDG: this"] 
+  "30064772675" -> "30064772683"  [ label = "DDG: this._markerRange"] 
+  "30064772677" -> "30064772683"  [ label = "DDG: this._mark"] 
+  "107374182483" -> "30064772683"  [ label = "DDG: "] 
+  "107374182483" -> "68719478390"  [ label = "DDG: "] 
+  "30064772683" -> "30064772684"  [ label = "DDG: this"] 
+  "107374182483" -> "30064772684"  [ label = "DDG: "] 
+  "30064772672" -> "30064772681"  [ label = "DDG: this"] 
+  "30064772673" -> "55834575452"  [ label = "CDG: "] 
+  "30064772673" -> "55834575451"  [ label = "CDG: "] 
+  "30064772673" -> "30064772678"  [ label = "CDG: "] 
+  "30064772673" -> "30064772677"  [ label = "CDG: "] 
+  "30064772673" -> "30064772680"  [ label = "CDG: "] 
+  "30064772673" -> "30064772679"  [ label = "CDG: "] 
+  "30064772673" -> "30064772682"  [ label = "CDG: "] 
+  "30064772673" -> "120259084351"  [ label = "CDG: "] 
+  "30064772673" -> "30064772681"  [ label = "CDG: "] 
+  "30064772673" -> "120259084350"  [ label = "CDG: "] 
+  "30064772673" -> "30064772684"  [ label = "CDG: "] 
+  "30064772673" -> "30064772683"  [ label = "CDG: "] 
+  "30064772673" -> "55834575450"  [ label = "CDG: "] 
+  "30064772673" -> "55834575449"  [ label = "CDG: "] 
+  "30064772673" -> "30064772676"  [ label = "CDG: "] 
+  "30064772673" -> "30064772675"  [ label = "CDG: "] 
+  "30064772685" -> "55834575456"  [ label = "CDG: "] 
+  "30064772685" -> "55834575455"  [ label = "CDG: "] 
+  "30064772685" -> "55834575457"  [ label = "CDG: "] 
+  "30064772685" -> "30064772688"  [ label = "CDG: "] 
+  "30064772685" -> "30064772687"  [ label = "CDG: "] 
+  "30064772685" -> "30064772690"  [ label = "CDG: "] 
+  "30064772685" -> "30064772689"  [ label = "CDG: "] 
+}

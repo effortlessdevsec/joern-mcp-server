@@ -1,0 +1,36 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183460" [label = <METHOD, 30<BR/>getDefaultOptions> ]
+"124554052643" [label = <METHOD_RETURN, 30<BR/>{ range: __ecma.Boolean; loc: __ecma.Boolean; tolerant: __ecma.Boolean; }> ]
+"111669151856" [label = <PARAM, 30<BR/>this> ]
+"141733921537" [label = <RETURN, 31<BR/>return { range: true, loc: false, ...> ]
+"25769806731" [label = <BLOCK, 31<BR/>{ range: true, loc: false, to...> ]
+"30064788280" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_2.range = true> ]
+"30064788282" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_2.loc = false> ]
+"30064788284" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_2.tolerant = false> ]
+"68719493835" [label = <IDENTIFIER, 31<BR/>_tmp_2<BR/>{ range: true, loc: false, to...> ]
+  "141733921537" -> "124554052643"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151856" -> "124554052643"  [ label = "DDG: this"] 
+  "30064788280" -> "124554052643"  [ label = "DDG: _tmp_2.range"] 
+  "30064788280" -> "124554052643"  [ label = "DDG: _tmp_2.range = true"] 
+  "30064788282" -> "124554052643"  [ label = "DDG: _tmp_2.loc"] 
+  "30064788282" -> "124554052643"  [ label = "DDG: _tmp_2.loc = false"] 
+  "30064788284" -> "124554052643"  [ label = "DDG: _tmp_2.tolerant"] 
+  "30064788284" -> "124554052643"  [ label = "DDG: _tmp_2.tolerant = false"] 
+  "107374183460" -> "111669151856"  [ label = "DDG: "] 
+  "25769806731" -> "141733921537"  [ label = "DDG: "] 
+  "25769806731" -> "141733921537"  [ label = "DDG: {
+      range: true,
+      loc: false,
+      tolerant: false,
+    }"] 
+  "107374183460" -> "141733921537"  [ label = "DDG: "] 
+  "30064788280" -> "25769806731"  [ label = "DDG: _tmp_2.range"] 
+  "30064788282" -> "25769806731"  [ label = "DDG: _tmp_2.loc"] 
+  "30064788284" -> "25769806731"  [ label = "DDG: _tmp_2.tolerant"] 
+  "107374183460" -> "25769806731"  [ label = "DDG: "] 
+  "107374183460" -> "30064788280"  [ label = "DDG: "] 
+  "107374183460" -> "30064788282"  [ label = "DDG: "] 
+  "107374183460" -> "30064788284"  [ label = "DDG: "] 
+  "107374183460" -> "68719493835"  [ label = "DDG: "] 
+}

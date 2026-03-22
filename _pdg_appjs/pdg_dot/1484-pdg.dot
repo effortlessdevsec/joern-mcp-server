@@ -1,0 +1,4 @@
+digraph "static" {  
+node [shape="rect"];  
+
+}

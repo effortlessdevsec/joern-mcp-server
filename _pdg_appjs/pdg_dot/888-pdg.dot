@@ -1,0 +1,176 @@
+digraph "runRule" {  
+node [shape="rect"];  
+"107374183288" [label = <METHOD, 28<BR/>runRule> ]
+"124554052471" [label = <METHOD_RETURN, 28<BR/>astexplorer/website/src/parsers/js/utils/eslintUtils.js::program:formatResults:&lt;returnValue&gt;> ]
+"111669151490" [label = <PARAM, 28<BR/>this> ]
+"111669151491" [label = <PARAM, 28<BR/>code> ]
+"111669151492" [label = <PARAM, 28<BR/>eslint> ]
+"111669151493" [label = <PARAM, 28<BR/>sourceCode> ]
+"30064785668" [label = <&lt;operator&gt;.assignment, 31<BR/>const ast = parseNoPatch(code, { sourceType...> ]
+"30064785672" [label = <&lt;operator&gt;.assignment, 34<BR/>const results = eslint.verify(new sourceCode(co...> ]
+"141733921423" [label = <RETURN, 45<BR/>return formatResults(results)> ]
+"30064785696" [label = <formatResults, 45<BR/>formatResults(results)> ]
+"68719491252" [label = <IDENTIFIER, 31<BR/>parseNoPatch<BR/>parseNoPatch(code, { sourceType: 'module', ...> ]
+"30064785669" [label = <parseNoPatch, 31<BR/>parseNoPatch(code, { sourceType: 'module', ...> ]
+"30064785673" [label = <verify, 34<BR/>eslint.verify(new sourceCode(code, ast), { ...> ]
+"68719491280" [label = <IDENTIFIER, 45<BR/>formatResults<BR/>formatResults(results)> ]
+"30064785670" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_3.sourceType = &quot;module&quot;> ]
+"68719491256" [label = <IDENTIFIER, 31<BR/>_tmp_3<BR/>{ sourceType: 'module', }> ]
+"30064785675" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_4 = .alloc> ]
+"30064785677" [label = <&lt;operator&gt;.new, 34<BR/>new sourceCode(code, ast)> ]
+"68719491265" [label = <IDENTIFIER, 34<BR/>_tmp_4<BR/>new sourceCode(code, ast)> ]
+"30064785678" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_5.env = {es6: true}> ]
+"30064785682" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_5.parserOptions = { ecmaVersion: 8, ...> ]
+"30064785692" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_5.rules = { astExplorerRule: 2, }> ]
+"68719491279" [label = <IDENTIFIER, 34<BR/>_tmp_5<BR/>{ env: {es6: true}, parserOptions: { ...> ]
+"68719491261" [label = <IDENTIFIER, 34<BR/>sourceCode<BR/>new sourceCode(code, ast)> ]
+"30064785680" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_6.es6 = true> ]
+"68719491268" [label = <IDENTIFIER, 35<BR/>_tmp_6<BR/>{es6: true}> ]
+"30064785684" [label = <&lt;operator&gt;.assignment, 37<BR/>_tmp_7.ecmaVersion = 8> ]
+"30064785686" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_7.sourceType = &quot;module&quot;> ]
+"30064785688" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_7.ecmaFeatures = {experimentalObjectRestSp...> ]
+"68719491275" [label = <IDENTIFIER, 36<BR/>_tmp_7<BR/>{ ecmaVersion: 8, sourceType: 'modu...> ]
+"30064785694" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_9.astExplorerRule = 2> ]
+"68719491278" [label = <IDENTIFIER, 41<BR/>_tmp_9<BR/>{ astExplorerRule: 2, }> ]
+"30064785690" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_8.experimentalObjectRestSpread = true> ]
+"68719491274" [label = <IDENTIFIER, 39<BR/>_tmp_8<BR/>{experimentalObjectRestSpread: true}> ]
+  "141733921423" -> "124554052471"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151493" -> "124554052471"  [ label = "DDG: sourceCode"] 
+  "30064785670" -> "124554052471"  [ label = "DDG: _tmp_3.sourceType"] 
+  "30064785670" -> "124554052471"  [ label = "DDG: _tmp_3.sourceType = &quot;module&quot;"] 
+  "30064785668" -> "124554052471"  [ label = "DDG: parseNoPatch(code, {
+    sourceType: 'module',
+  })"] 
+  "30064785668" -> "124554052471"  [ label = "DDG: const ast = parseNoPatch(code, {
+    sourceType: 'module',
+  })"] 
+  "30064785673" -> "124554052471"  [ label = "DDG: eslint"] 
+  "30064785675" -> "124554052471"  [ label = "DDG: .alloc"] 
+  "30064785675" -> "124554052471"  [ label = "DDG: _tmp_4 = .alloc"] 
+  "30064785677" -> "124554052471"  [ label = "DDG: _tmp_4"] 
+  "30064785677" -> "124554052471"  [ label = "DDG: code"] 
+  "30064785677" -> "124554052471"  [ label = "DDG: ast"] 
+  "30064785677" -> "124554052471"  [ label = "DDG: new sourceCode(code, ast)"] 
+  "30064785678" -> "124554052471"  [ label = "DDG: _tmp_5.env"] 
+  "30064785680" -> "124554052471"  [ label = "DDG: _tmp_6.es6"] 
+  "30064785680" -> "124554052471"  [ label = "DDG: _tmp_6.es6 = true"] 
+  "30064785678" -> "124554052471"  [ label = "DDG: _tmp_5.env = {es6: true}"] 
+  "30064785682" -> "124554052471"  [ label = "DDG: _tmp_5.parserOptions"] 
+  "30064785684" -> "124554052471"  [ label = "DDG: _tmp_7.ecmaVersion"] 
+  "30064785684" -> "124554052471"  [ label = "DDG: _tmp_7.ecmaVersion = 8"] 
+  "30064785686" -> "124554052471"  [ label = "DDG: _tmp_7.sourceType"] 
+  "30064785686" -> "124554052471"  [ label = "DDG: _tmp_7.sourceType = &quot;module&quot;"] 
+  "30064785688" -> "124554052471"  [ label = "DDG: _tmp_7.ecmaFeatures"] 
+  "30064785690" -> "124554052471"  [ label = "DDG: _tmp_8.experimentalObjectRestSpread"] 
+  "30064785690" -> "124554052471"  [ label = "DDG: _tmp_8.experimentalObjectRestSpread = true"] 
+  "30064785688" -> "124554052471"  [ label = "DDG: _tmp_7.ecmaFeatures = {experimentalObjectRestSpread: true}"] 
+  "30064785682" -> "124554052471"  [ label = "DDG: _tmp_5.parserOptions = {
+      ecmaVersion: 8,
+      sourceType: 'module',
+      ecmaFeatures: {experimentalObjectRestSpread: true},
+    }"] 
+  "30064785692" -> "124554052471"  [ label = "DDG: _tmp_5.rules"] 
+  "30064785694" -> "124554052471"  [ label = "DDG: _tmp_9.astExplorerRule"] 
+  "30064785694" -> "124554052471"  [ label = "DDG: _tmp_9.astExplorerRule = 2"] 
+  "30064785692" -> "124554052471"  [ label = "DDG: _tmp_5.rules = {
+      astExplorerRule: 2,
+    }"] 
+  "30064785672" -> "124554052471"  [ label = "DDG: eslint.verify(new sourceCode(code, ast), {
+    env: {es6: true},
+    parserOptions: {
+      ecmaVersion: 8,
+      sourceType: 'module',
+      ecmaFeatures: {experimentalObjectRestSpread: true},
+    },
+    rules: {
+      astExplorerRule: 2,
+    },
+  })"] 
+  "30064785672" -> "124554052471"  [ label = "DDG: const results = eslint.verify(new sourceCode(code, ast), {
+    env: {es6: true},
+    parserOptions: {
+      ecmaVersion: 8,
+      sourceType: 'module',
+      ecmaFeatures: {experimentalObjectRestSpread: true},
+    },
+    rules: {
+      astExplorerRule: 2,
+    },
+  })"] 
+  "30064785696" -> "124554052471"  [ label = "DDG: this"] 
+  "30064785696" -> "124554052471"  [ label = "DDG: results"] 
+  "30064785696" -> "124554052471"  [ label = "DDG: formatResults(results)"] 
+  "107374183288" -> "111669151490"  [ label = "DDG: "] 
+  "107374183288" -> "111669151491"  [ label = "DDG: "] 
+  "107374183288" -> "111669151492"  [ label = "DDG: "] 
+  "107374183288" -> "111669151493"  [ label = "DDG: "] 
+  "30064785669" -> "30064785668"  [ label = "DDG: this"] 
+  "30064785669" -> "30064785668"  [ label = "DDG: code"] 
+  "30064785669" -> "30064785668"  [ label = "DDG: {
+    sourceType: 'module',
+  }"] 
+  "30064785669" -> "30064785668"  [ label = "DDG: "] 
+  "30064785673" -> "30064785672"  [ label = "DDG: eslint"] 
+  "30064785673" -> "30064785672"  [ label = "DDG: new sourceCode(code, ast)"] 
+  "30064785673" -> "30064785672"  [ label = "DDG: {
+    env: {es6: true},
+    parserOptions: {
+      ecmaVersion: 8,
+      sourceType: 'module',
+      ecmaFeatures: {experimentalObjectRestSpread: true},
+    },
+    rules: {
+      astExplorerRule: 2,
+    },
+  }"] 
+  "30064785673" -> "30064785672"  [ label = "DDG: "] 
+  "30064785696" -> "141733921423"  [ label = "DDG: formatResults(results)"] 
+  "30064785699" -> "68719491252"  [ label = "DDG: parseNoPatch"] 
+  "107374183288" -> "68719491252"  [ label = "DDG: "] 
+  "111669151490" -> "30064785669"  [ label = "DDG: this"] 
+  "107374183288" -> "30064785669"  [ label = "DDG: "] 
+  "111669151491" -> "30064785669"  [ label = "DDG: code"] 
+  "30064785670" -> "30064785669"  [ label = "DDG: _tmp_3.sourceType"] 
+  "111669151492" -> "30064785673"  [ label = "DDG: eslint"] 
+  "107374183288" -> "30064785673"  [ label = "DDG: "] 
+  "30064785677" -> "30064785673"  [ label = "DDG: new sourceCode(code, ast)"] 
+  "30064785677" -> "30064785673"  [ label = "DDG: _tmp_4"] 
+  "30064785678" -> "30064785673"  [ label = "DDG: _tmp_5.env"] 
+  "30064785682" -> "30064785673"  [ label = "DDG: _tmp_5.parserOptions"] 
+  "30064785692" -> "30064785673"  [ label = "DDG: _tmp_5.rules"] 
+  "30064785701" -> "68719491280"  [ label = "DDG: formatResults"] 
+  "107374183288" -> "68719491280"  [ label = "DDG: "] 
+  "107374183284" -> "68719491280"  [ label = "DDG: "] 
+  "30064785669" -> "30064785696"  [ label = "DDG: this"] 
+  "107374183288" -> "30064785696"  [ label = "DDG: "] 
+  "30064785672" -> "30064785696"  [ label = "DDG: results"] 
+  "107374183288" -> "30064785670"  [ label = "DDG: "] 
+  "107374183288" -> "68719491256"  [ label = "DDG: "] 
+  "107374183288" -> "30064785675"  [ label = "DDG: "] 
+  "107374183288" -> "68719491265"  [ label = "DDG: "] 
+  "30064785680" -> "30064785678"  [ label = "DDG: _tmp_6.es6"] 
+  "107374183288" -> "30064785678"  [ label = "DDG: "] 
+  "30064785684" -> "30064785682"  [ label = "DDG: _tmp_7.ecmaVersion"] 
+  "30064785686" -> "30064785682"  [ label = "DDG: _tmp_7.sourceType"] 
+  "30064785688" -> "30064785682"  [ label = "DDG: _tmp_7.ecmaFeatures"] 
+  "107374183288" -> "30064785682"  [ label = "DDG: "] 
+  "30064785694" -> "30064785692"  [ label = "DDG: _tmp_9.astExplorerRule"] 
+  "107374183288" -> "30064785692"  [ label = "DDG: "] 
+  "107374183288" -> "68719491279"  [ label = "DDG: "] 
+  "107374183288" -> "68719491261"  [ label = "DDG: "] 
+  "30064785675" -> "30064785677"  [ label = "DDG: _tmp_4"] 
+  "107374183288" -> "30064785677"  [ label = "DDG: "] 
+  "30064785669" -> "30064785677"  [ label = "DDG: code"] 
+  "30064785668" -> "30064785677"  [ label = "DDG: ast"] 
+  "107374183288" -> "30064785680"  [ label = "DDG: "] 
+  "107374183288" -> "68719491268"  [ label = "DDG: "] 
+  "107374183288" -> "30064785684"  [ label = "DDG: "] 
+  "107374183288" -> "30064785686"  [ label = "DDG: "] 
+  "30064785690" -> "30064785688"  [ label = "DDG: _tmp_8.experimentalObjectRestSpread"] 
+  "107374183288" -> "30064785688"  [ label = "DDG: "] 
+  "107374183288" -> "68719491275"  [ label = "DDG: "] 
+  "107374183288" -> "30064785694"  [ label = "DDG: "] 
+  "107374183288" -> "68719491278"  [ label = "DDG: "] 
+  "107374183288" -> "30064785690"  [ label = "DDG: "] 
+  "107374183288" -> "68719491274"  [ label = "DDG: "] 
+}

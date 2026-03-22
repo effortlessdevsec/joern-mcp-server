@@ -1,0 +1,23 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183612" [label = <METHOD, 1<BR/>:program> ]
+"124554052804" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152160" [label = <PARAM, 1<BR/>this> ]
+"25769807141" [label = <BLOCK, 1<BR/>export default class StorageHandler { constru...> ]
+"25769807142" [label = <BLOCK, 1<BR/>&lt;empty&gt;> ]
+"30064790177" [label = <&lt;operator&gt;.assignment, 1<BR/>exports[&quot;default&quot;] = StorageHandler> ]
+"176093659157" [label = <TYPE_REF, 1<BR/>class StorageHandler> ]
+"30064790176" [label = <&lt;operator&gt;.assignment, 1<BR/>StorageHandler = astexplorer/website/src/storag...> ]
+  "111669152160" -> "124554052804"  [ label = "DDG: this"] 
+  "30064790176" -> "124554052804"  [ label = "DDG: StorageHandler = astexplorer/website/src/storage/index.js::program:StorageHandler:&lt;init&gt;"] 
+  "30064790177" -> "124554052804"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064790177" -> "124554052804"  [ label = "DDG: StorageHandler"] 
+  "30064790177" -> "124554052804"  [ label = "DDG: exports[&quot;default&quot;] = StorageHandler"] 
+  "107374183612" -> "111669152160"  [ label = "DDG: "] 
+  "107374183612" -> "25769807141"  [ label = "DDG: "] 
+  "107374183612" -> "25769807142"  [ label = "DDG: "] 
+  "30064790176" -> "30064790177"  [ label = "DDG: StorageHandler"] 
+  "107374183612" -> "30064790177"  [ label = "DDG: "] 
+  "107374183612" -> "176093659157"  [ label = "DDG: "] 
+  "107374183612" -> "30064790176"  [ label = "DDG: "] 
+}

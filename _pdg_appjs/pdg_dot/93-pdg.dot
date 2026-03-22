@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;9" {  
+node [shape="rect"];  
+"107374182493" [label = <METHOD, 206<BR/>&lt;lambda&gt;9> ]
+"124554051676" [label = <METHOD_RETURN, 206<BR/>astexplorer/website/src/components/Editor.js::program:&lt;member&gt;(props):onContentChange:&lt;returnValue&gt;> ]
+"111669149881" [label = <PARAM, 206<BR/>this> ]
+"141733920851" [label = <RETURN, 206<BR/>this.props.onContentChange(args)> ]
+"30064772730" [label = <onContentChange, 206<BR/>this.props.onContentChange(args)> ]
+"30064772732" [label = <&lt;operator&gt;.assignment, 206<BR/>(_tmp_36 = this.props)> ]
+  "141733920851" -> "124554051676"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149881" -> "124554051676"  [ label = "DDG: this"] 
+  "30064772732" -> "124554051676"  [ label = "DDG: this.props"] 
+  "30064772730" -> "124554051676"  [ label = "DDG: _tmp_36"] 
+  "30064772730" -> "124554051676"  [ label = "DDG: args"] 
+  "30064772730" -> "124554051676"  [ label = "DDG: this.props.onContentChange(args)"] 
+  "107374182493" -> "111669149881"  [ label = "DDG: "] 
+  "30064772730" -> "141733920851"  [ label = "DDG: this.props.onContentChange(args)"] 
+  "30064772732" -> "30064772730"  [ label = "DDG: _tmp_36"] 
+  "107374182493" -> "30064772730"  [ label = "DDG: "] 
+  "30064772739" -> "30064772730"  [ label = "DDG: args"] 
+  "107374182494" -> "30064772730"  [ label = "DDG: "] 
+  "111669149881" -> "30064772732"  [ label = "DDG: this"] 
+}

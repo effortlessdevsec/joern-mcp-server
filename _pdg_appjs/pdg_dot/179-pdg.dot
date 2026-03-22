@@ -1,0 +1,23 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182579" [label = <METHOD, 43<BR/>&lt;lambda&gt;0> ]
+"124554051761" [label = <METHOD_RETURN, 43<BR/>{ line: __ecma.Number; ch: __ecma.Number; }> ]
+"111669150020" [label = <PARAM, 43<BR/>this> ]
+"111669150021" [label = <PARAM, 43<BR/>index> ]
+"141733920891" [label = <RETURN, 43<BR/>positionFromIndex(index, transformResult.map)> ]
+"30064773869" [label = <positionFromIndex, 43<BR/>positionFromIndex(index, transformResult.map)> ]
+"68719479537" [label = <IDENTIFIER, 43<BR/>positionFromIndex<BR/>positionFromIndex(index, transformResult.map)> ]
+  "141733920891" -> "124554051761"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064773869" -> "124554051761"  [ label = "DDG: this"] 
+  "30064773869" -> "124554051761"  [ label = "DDG: index"] 
+  "30064773869" -> "124554051761"  [ label = "DDG: transformResult.map"] 
+  "30064773869" -> "124554051761"  [ label = "DDG: positionFromIndex(index, transformResult.map)"] 
+  "107374182579" -> "111669150020"  [ label = "DDG: "] 
+  "107374182579" -> "111669150021"  [ label = "DDG: "] 
+  "30064773869" -> "141733920891"  [ label = "DDG: positionFromIndex(index, transformResult.map)"] 
+  "30064773903" -> "68719479537"  [ label = "DDG: positionFromIndex"] 
+  "107374182579" -> "68719479537"  [ label = "DDG: "] 
+  "111669150020" -> "30064773869"  [ label = "DDG: this"] 
+  "107374182579" -> "30064773869"  [ label = "DDG: "] 
+  "111669150021" -> "30064773869"  [ label = "DDG: index"] 
+}

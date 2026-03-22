@@ -1,0 +1,14 @@
+digraph "&lt;lambda&gt;3" {  
+node [shape="rect"];  
+"107374183344" [label = <METHOD, 32<BR/>&lt;lambda&gt;3> ]
+"124554052526" [label = <METHOD_RETURN, 32<BR/>(tree: ANY) =&gt; ANY> ]
+"111669151607" [label = <PARAM, 32<BR/>this> ]
+"141733921454" [label = <RETURN, 32<BR/>tree =&gt; { result = tree; }> ]
+"120259085001" [label = <METHOD_REF, 32<BR/>&lt;lambda&gt;4<BR/>tree =&gt; { result = tree; }> ]
+  "141733921454" -> "124554052526"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151607" -> "124554052526"  [ label = "DDG: this"] 
+  "107374183344" -> "111669151607"  [ label = "DDG: "] 
+  "120259085001" -> "141733921454"  [ label = "DDG: &lt;lambda&gt;4"] 
+  "107374183344" -> "141733921454"  [ label = "DDG: "] 
+  "107374183344" -> "120259085001"  [ label = "DDG: "] 
+}

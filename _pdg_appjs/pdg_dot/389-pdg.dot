@@ -1,0 +1,19 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182789" [label = <METHOD, 21<BR/>&lt;lambda&gt;0> ]
+"124554051971" [label = <METHOD_RETURN, 21<BR/>astexplorer/website/src/parsers/css/rework.js::program:getOffset:&lt;returnValue&gt;> ]
+"111669150399" [label = <PARAM, 21<BR/>this> ]
+"111669150400" [label = <PARAM, 21<BR/>pos> ]
+"141733921045" [label = <RETURN, 21<BR/>this.getOffset(pos)> ]
+"30064776925" [label = <getOffset, 21<BR/>this.getOffset(pos)> ]
+  "141733921045" -> "124554051971"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064776925" -> "124554051971"  [ label = "DDG: this"] 
+  "30064776925" -> "124554051971"  [ label = "DDG: pos"] 
+  "30064776925" -> "124554051971"  [ label = "DDG: this.getOffset(pos)"] 
+  "107374182789" -> "111669150399"  [ label = "DDG: "] 
+  "107374182789" -> "111669150400"  [ label = "DDG: "] 
+  "30064776925" -> "141733921045"  [ label = "DDG: this.getOffset(pos)"] 
+  "111669150399" -> "30064776925"  [ label = "DDG: this"] 
+  "107374182789" -> "30064776925"  [ label = "DDG: "] 
+  "111669150400" -> "30064776925"  [ label = "DDG: pos"] 
+}

@@ -1,0 +1,20 @@
+digraph "owns" {  
+node [shape="rect"];  
+"107374183626" [label = <METHOD, 32<BR/>owns> ]
+"124554052809" [label = <METHOD_RETURN, 32<BR/>ANY> ]
+"111669152169" [label = <PARAM, 32<BR/>this> ]
+"111669152170" [label = <PARAM, 32<BR/>snippet> ]
+"141733921674" [label = <RETURN, 33<BR/>return snippet instanceof Revision> ]
+"30064790224" [label = <&lt;operator&gt;.instanceOf, 33<BR/>snippet instanceof Revision> ]
+  "141733921674" -> "124554052809"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152169" -> "124554052809"  [ label = "DDG: this"] 
+  "30064790224" -> "124554052809"  [ label = "DDG: snippet"] 
+  "30064790224" -> "124554052809"  [ label = "DDG: Revision"] 
+  "30064790224" -> "124554052809"  [ label = "DDG: snippet instanceof Revision"] 
+  "107374183626" -> "111669152169"  [ label = "DDG: "] 
+  "107374183626" -> "111669152170"  [ label = "DDG: "] 
+  "30064790224" -> "141733921674"  [ label = "DDG: snippet instanceof Revision"] 
+  "111669152170" -> "30064790224"  [ label = "DDG: snippet"] 
+  "107374183626" -> "30064790224"  [ label = "DDG: "] 
+  "30064790366" -> "30064790224"  [ label = "DDG: Revision"] 
+}

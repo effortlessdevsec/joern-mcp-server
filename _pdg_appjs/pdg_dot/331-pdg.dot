@@ -1,0 +1,18 @@
+digraph "isValidPosition" {  
+node [shape="rect"];  
+"107374182731" [label = <METHOD, 189<BR/>isValidPosition> ]
+"124554051915" [label = <METHOD_RETURN, 189<BR/>__ecma.Boolean> ]
+"111669150276" [label = <PARAM, 189<BR/>this> ]
+"111669150277" [label = <PARAM, 189<BR/>position> ]
+"141733920987" [label = <RETURN, 190<BR/>return Number.isInteger(position)> ]
+"30064776157" [label = <isInteger, 190<BR/>Number.isInteger(position)> ]
+  "141733920987" -> "124554051915"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150276" -> "124554051915"  [ label = "DDG: this"] 
+  "30064776157" -> "124554051915"  [ label = "DDG: position"] 
+  "30064776157" -> "124554051915"  [ label = "DDG: Number.isInteger(position)"] 
+  "107374182731" -> "111669150276"  [ label = "DDG: "] 
+  "107374182731" -> "111669150277"  [ label = "DDG: "] 
+  "30064776157" -> "141733920987"  [ label = "DDG: Number.isInteger(position)"] 
+  "111669150277" -> "30064776157"  [ label = "DDG: position"] 
+  "107374182731" -> "30064776157"  [ label = "DDG: "] 
+}

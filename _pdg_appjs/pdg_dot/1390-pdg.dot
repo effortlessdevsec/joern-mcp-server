@@ -1,0 +1,8 @@
+digraph "Boolean" {  
+node [shape="rect"];  
+"107374183790" [label = <METHOD<BR/>Boolean> ]
+"124554052974" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152486" [label = <PARAM<BR/>p1> ]
+  "111669152486" -> "124554052974"  [ label = "DDG: p1"] 
+  "107374183790" -> "111669152486"  [ label = "DDG: "] 
+}

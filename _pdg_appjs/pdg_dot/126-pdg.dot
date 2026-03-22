@@ -1,0 +1,138 @@
+digraph "componentDidMount" {  
+node [shape="rect"];  
+"107374182526" [label = <METHOD, 25<BR/>componentDidMount> ]
+"124554051709" [label = <METHOD_RETURN, 25<BR/>void> ]
+"111669149934" [label = <PARAM, 25<BR/>this> ]
+"30064773161" [label = <&lt;operator&gt;.assignment, 26<BR/>this._subscriptions = []> ]
+"30064773164" [label = <&lt;operator&gt;.assignment, 27<BR/>this.codeMirror = CodeMirror( // eslint-disable...> ]
+"30064773192" [label = <push, 39<BR/>this._subscriptions.push( subscribe('PANE...> ]
+"68719478815" [label = <IDENTIFIER, 27<BR/>CodeMirror<BR/>CodeMirror( // eslint-disable-line new-cap ...> ]
+"30064773166" [label = <CodeMirror, 27<BR/>CodeMirror( // eslint-disable-line new-cap ...> ]
+"68719478838" [label = <IDENTIFIER, 40<BR/>subscribe<BR/>subscribe('PANEL_RESIZE', () =&gt; { if (t...> ]
+"30064773196" [label = <subscribe, 40<BR/>subscribe('PANEL_RESIZE', () =&gt; { if (t...> ]
+"30064773168" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_4.value = this.props.value> ]
+"30064773172" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_4.mode = {name: 'javascript', json: true}> ]
+"30064773178" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_4.readOnly = true> ]
+"30064773180" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_4.lineNumbers = true> ]
+"30064773182" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_4.foldGutter = true> ]
+"30064773184" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_4.gutters = ['CodeMirror-linenumbers', 'Co...> ]
+"68719478834" [label = <IDENTIFIER, 29<BR/>_tmp_4<BR/>{ value: this.props.value, mode...> ]
+"30064773194" [label = <&lt;operator&gt;.assignment, 39<BR/>(_tmp_7 = this._subscriptions)> ]
+"30064773174" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_5.name = &quot;javascript&quot;> ]
+"30064773176" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_5.json = true> ]
+"68719478823" [label = <IDENTIFIER, 31<BR/>_tmp_5<BR/>{name: 'javascript', json: true}> ]
+"30064773186" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064773188" [label = <, 35<BR/>_tmp_6.push(&quot;CodeMirror-linenumbers&quot;)> ]
+"30064773190" [label = <, 35<BR/>_tmp_6.push(&quot;CodeMirror-foldgutter&quot;)> ]
+"68719478833" [label = <IDENTIFIER, 35<BR/>_tmp_6<BR/>['CodeMirror-linenumbers', 'CodeMirror-foldgutt...> ]
+  "30064773161" -> "124554051709"  [ label = "DDG: this._subscriptions = []"] 
+  "30064773168" -> "124554051709"  [ label = "DDG: _tmp_4.value"] 
+  "30064773168" -> "124554051709"  [ label = "DDG: _tmp_4.value = this.props.value"] 
+  "30064773172" -> "124554051709"  [ label = "DDG: _tmp_4.mode"] 
+  "30064773174" -> "124554051709"  [ label = "DDG: _tmp_5.name"] 
+  "30064773174" -> "124554051709"  [ label = "DDG: _tmp_5.name = &quot;javascript&quot;"] 
+  "30064773176" -> "124554051709"  [ label = "DDG: _tmp_5.json"] 
+  "30064773176" -> "124554051709"  [ label = "DDG: _tmp_5.json = true"] 
+  "30064773172" -> "124554051709"  [ label = "DDG: _tmp_4.mode = {name: 'javascript', json: true}"] 
+  "30064773178" -> "124554051709"  [ label = "DDG: _tmp_4.readOnly"] 
+  "30064773178" -> "124554051709"  [ label = "DDG: _tmp_4.readOnly = true"] 
+  "30064773180" -> "124554051709"  [ label = "DDG: _tmp_4.lineNumbers"] 
+  "30064773180" -> "124554051709"  [ label = "DDG: _tmp_4.lineNumbers = true"] 
+  "30064773182" -> "124554051709"  [ label = "DDG: _tmp_4.foldGutter"] 
+  "30064773182" -> "124554051709"  [ label = "DDG: _tmp_4.foldGutter = true"] 
+  "30064773184" -> "124554051709"  [ label = "DDG: _tmp_4.gutters"] 
+  "30064773186" -> "124554051709"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773186" -> "124554051709"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064773188" -> "124554051709"  [ label = "DDG: _tmp_6.push(&quot;CodeMirror-linenumbers&quot;)"] 
+  "30064773190" -> "124554051709"  [ label = "DDG: _tmp_6"] 
+  "30064773190" -> "124554051709"  [ label = "DDG: _tmp_6.push(&quot;CodeMirror-foldgutter&quot;)"] 
+  "30064773184" -> "124554051709"  [ label = "DDG: _tmp_4.gutters = ['CodeMirror-linenumbers', 'CodeMirror-foldgutter']"] 
+  "30064773164" -> "124554051709"  [ label = "DDG: CodeMirror( // eslint-disable-line new-cap
+      this.container,
+      {
+        value: this.props.value,
+        mode: {name: 'javascript', json: true},
+        readOnly: true,
+        lineNumbers: true,
+        foldGutter: true,
+        gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+      },
+    )"] 
+  "30064773164" -> "124554051709"  [ label = "DDG: this.codeMirror = CodeMirror( // eslint-disable-line new-cap
+      this.container,
+      {
+        value: this.props.value,
+        mode: {name: 'javascript', json: true},
+        readOnly: true,
+        lineNumbers: true,
+        foldGutter: true,
+        gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+      },
+    )"] 
+  "30064773192" -> "124554051709"  [ label = "DDG: _tmp_7"] 
+  "30064773196" -> "124554051709"  [ label = "DDG: this"] 
+  "30064773192" -> "124554051709"  [ label = "DDG: subscribe('PANEL_RESIZE', () =&gt; {
+        if (this.codeMirror) {
+          this.codeMirror.refresh();
+        }
+      })"] 
+  "30064773192" -> "124554051709"  [ label = "DDG: this._subscriptions.push(
+      subscribe('PANEL_RESIZE', () =&gt; {
+        if (this.codeMirror) {
+          this.codeMirror.refresh();
+        }
+      }),
+    )"] 
+  "107374182526" -> "111669149934"  [ label = "DDG: "] 
+  "107374182526" -> "30064773161"  [ label = "DDG: "] 
+  "30064773166" -> "30064773164"  [ label = "DDG: this"] 
+  "30064773166" -> "30064773164"  [ label = "DDG: this.container"] 
+  "30064773166" -> "30064773164"  [ label = "DDG: {
+        value: this.props.value,
+        mode: {name: 'javascript', json: true},
+        readOnly: true,
+        lineNumbers: true,
+        foldGutter: true,
+        gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+      }"] 
+  "30064773166" -> "30064773164"  [ label = "DDG: "] 
+  "30064773194" -> "30064773192"  [ label = "DDG: _tmp_7"] 
+  "107374182526" -> "30064773192"  [ label = "DDG: "] 
+  "30064773196" -> "30064773192"  [ label = "DDG: this"] 
+  "30064773196" -> "30064773192"  [ label = "DDG: &quot;PANEL_RESIZE&quot;"] 
+  "30064773196" -> "30064773192"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "107374182526" -> "68719478815"  [ label = "DDG: "] 
+  "111669149934" -> "30064773166"  [ label = "DDG: this"] 
+  "30064773161" -> "30064773166"  [ label = "DDG: this._subscriptions"] 
+  "107374182526" -> "30064773166"  [ label = "DDG: "] 
+  "30064773168" -> "30064773166"  [ label = "DDG: _tmp_4.value"] 
+  "30064773172" -> "30064773166"  [ label = "DDG: _tmp_4.mode"] 
+  "30064773178" -> "30064773166"  [ label = "DDG: _tmp_4.readOnly"] 
+  "30064773180" -> "30064773166"  [ label = "DDG: _tmp_4.lineNumbers"] 
+  "30064773182" -> "30064773166"  [ label = "DDG: _tmp_4.foldGutter"] 
+  "30064773184" -> "30064773166"  [ label = "DDG: _tmp_4.gutters"] 
+  "107374182526" -> "68719478838"  [ label = "DDG: "] 
+  "30064773164" -> "30064773196"  [ label = "DDG: this.codeMirror"] 
+  "30064773166" -> "30064773196"  [ label = "DDG: this"] 
+  "30064773166" -> "30064773196"  [ label = "DDG: this.container"] 
+  "107374182526" -> "30064773196"  [ label = "DDG: "] 
+  "30064773174" -> "30064773172"  [ label = "DDG: _tmp_5.name"] 
+  "30064773176" -> "30064773172"  [ label = "DDG: _tmp_5.json"] 
+  "107374182526" -> "30064773172"  [ label = "DDG: "] 
+  "107374182526" -> "30064773178"  [ label = "DDG: "] 
+  "107374182526" -> "30064773180"  [ label = "DDG: "] 
+  "107374182526" -> "30064773182"  [ label = "DDG: "] 
+  "30064773190" -> "30064773184"  [ label = "DDG: _tmp_6"] 
+  "107374182526" -> "30064773184"  [ label = "DDG: "] 
+  "107374182526" -> "68719478834"  [ label = "DDG: "] 
+  "30064773166" -> "30064773194"  [ label = "DDG: this"] 
+  "107374182526" -> "30064773174"  [ label = "DDG: "] 
+  "107374182526" -> "30064773176"  [ label = "DDG: "] 
+  "107374182526" -> "68719478823"  [ label = "DDG: "] 
+  "107374182526" -> "30064773186"  [ label = "DDG: "] 
+  "107374182526" -> "68719478833"  [ label = "DDG: "] 
+  "30064773186" -> "30064773188"  [ label = "DDG: _tmp_6"] 
+  "107374182526" -> "30064773188"  [ label = "DDG: "] 
+  "30064773188" -> "30064773190"  [ label = "DDG: _tmp_6"] 
+  "107374182526" -> "30064773190"  [ label = "DDG: "] 
+}

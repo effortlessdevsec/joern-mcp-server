@@ -1,0 +1,24 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183453" [label = <METHOD, 57<BR/>getDefaultOptions> ]
+"124554052636" [label = <METHOD_RETURN, 57<BR/>{ dialect: __ecma.String; }> ]
+"111669151843" [label = <PARAM, 57<BR/>this> ]
+"141733921533" [label = <RETURN, 58<BR/>return { dialect: 'Scala213', }> ]
+"25769806712" [label = <BLOCK, 58<BR/>{ dialect: 'Scala213', }> ]
+"30064788163" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_8.dialect = &quot;Scala213&quot;> ]
+"68719493729" [label = <IDENTIFIER, 58<BR/>_tmp_8<BR/>{ dialect: 'Scala213', }> ]
+  "141733921533" -> "124554052636"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151843" -> "124554052636"  [ label = "DDG: this"] 
+  "30064788163" -> "124554052636"  [ label = "DDG: _tmp_8.dialect"] 
+  "30064788163" -> "124554052636"  [ label = "DDG: _tmp_8.dialect = &quot;Scala213&quot;"] 
+  "107374183453" -> "111669151843"  [ label = "DDG: "] 
+  "25769806712" -> "141733921533"  [ label = "DDG: "] 
+  "25769806712" -> "141733921533"  [ label = "DDG: {
+      dialect: 'Scala213',
+    }"] 
+  "107374183453" -> "141733921533"  [ label = "DDG: "] 
+  "30064788163" -> "25769806712"  [ label = "DDG: _tmp_8.dialect"] 
+  "107374183453" -> "25769806712"  [ label = "DDG: "] 
+  "107374183453" -> "30064788163"  [ label = "DDG: "] 
+  "107374183453" -> "68719493729"  [ label = "DDG: "] 
+}

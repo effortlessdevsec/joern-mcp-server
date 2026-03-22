@@ -1,0 +1,52 @@
+digraph "renderSettings" {  
+node [shape="rect"];  
+"107374183125" [label = <METHOD, 60<BR/>renderSettings> ]
+"124554052308" [label = <METHOD_RETURN, 60<BR/>ANY> ]
+"111669151122" [label = <PARAM, 60<BR/>this> ]
+"111669151123" [label = <PARAM, 60<BR/>parserSettings> ]
+"111669151124" [label = <PARAM, 60<BR/>onChange> ]
+"141733921308" [label = <RETURN, 61<BR/>return ( &lt;div&gt; &lt;p&gt; &lt;a ...> ]
+"154618824010" [label = <TEMPLATE_DOM, 62<BR/>&lt;div&gt; &lt;p&gt; &lt;a href...> ]
+"30064782794" [label = <call, 72<BR/>defaultParserInterface.renderSettings.call( ...> ]
+"90194315698" [label = <LITERAL, 66<BR/>&quot;_blank&quot;<BR/>target=&quot;_blank&quot;> ]
+"90194315699" [label = <LITERAL, 67<BR/>&quot;noopener noreferrer&quot;<BR/>rel=&quot;noopener noreferrer&quot;> ]
+"30064782796" [label = <&lt;operator&gt;.assignment, 72<BR/>(_tmp_4 = defaultParserInterface.renderSettings)> ]
+  "141733921308" -> "124554052308"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064782796" -> "124554052308"  [ label = "DDG: defaultParserInterface.renderSettings"] 
+  "30064782794" -> "124554052308"  [ label = "DDG: _tmp_4"] 
+  "30064782794" -> "124554052308"  [ label = "DDG: this"] 
+  "30064782794" -> "124554052308"  [ label = "DDG: parserSettings"] 
+  "30064782794" -> "124554052308"  [ label = "DDG: onChange"] 
+  "30064782794" -> "124554052308"  [ label = "DDG: defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )"] 
+  "107374183125" -> "111669151122"  [ label = "DDG: "] 
+  "107374183125" -> "111669151123"  [ label = "DDG: "] 
+  "107374183125" -> "111669151124"  [ label = "DDG: "] 
+  "154618824010" -> "141733921308"  [ label = "DDG: &lt;div&gt;
+        &lt;p&gt;
+          &lt;a
+            href={pkg.homepage}
+            target=&quot;_blank&quot;
+            rel=&quot;noopener noreferrer&quot;
+          &gt;
+            Option descriptions
+          &lt;/a&gt;
+        &lt;/p&gt;
+        {defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )}
+      &lt;/div&gt;"] 
+  "107374183125" -> "141733921308"  [ label = "DDG: "] 
+  "30064782796" -> "30064782794"  [ label = "DDG: _tmp_4"] 
+  "107374183125" -> "30064782794"  [ label = "DDG: "] 
+  "111669151122" -> "30064782794"  [ label = "DDG: this"] 
+  "111669151123" -> "30064782794"  [ label = "DDG: parserSettings"] 
+  "111669151124" -> "30064782794"  [ label = "DDG: onChange"] 
+  "107374183125" -> "90194315698"  [ label = "DDG: "] 
+  "107374183125" -> "90194315699"  [ label = "DDG: "] 
+}

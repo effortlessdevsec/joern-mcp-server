@@ -1,0 +1,4 @@
+digraph "min" {  
+node [shape="rect"];  
+
+}

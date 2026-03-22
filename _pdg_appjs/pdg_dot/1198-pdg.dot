@@ -1,0 +1,23 @@
+digraph "&lt;init&gt;" {  
+node [shape="rect"];  
+"107374183598" [label = <METHOD, 132<BR/>&lt;init&gt;> ]
+"124554052781" [label = <METHOD_RETURN, 132<BR/>ANY> ]
+"111669152125" [label = <PARAM, 132<BR/>this> ]
+"111669152126" [label = <PARAM, 132<BR/>gist> ]
+"30064790026" [label = <&lt;operator&gt;.assignment, 133<BR/>this._gist = gist> ]
+"30064790028" [label = <&lt;operator&gt;.assignment, 134<BR/>this._config = JSON.parse(gist.files['astexplor...> ]
+"30064790030" [label = <parse, 134<BR/>JSON.parse(gist.files['astexplorer.json'].content)> ]
+  "111669152125" -> "124554052781"  [ label = "DDG: this"] 
+  "30064790026" -> "124554052781"  [ label = "DDG: this._gist"] 
+  "30064790026" -> "124554052781"  [ label = "DDG: gist"] 
+  "30064790026" -> "124554052781"  [ label = "DDG: this._gist = gist"] 
+  "30064790028" -> "124554052781"  [ label = "DDG: this._config"] 
+  "30064790030" -> "124554052781"  [ label = "DDG: gist.files[&quot;astexplorer.json&quot;].content"] 
+  "30064790028" -> "124554052781"  [ label = "DDG: JSON.parse(gist.files['astexplorer.json'].content)"] 
+  "30064790028" -> "124554052781"  [ label = "DDG: this._config = JSON.parse(gist.files['astexplorer.json'].content)"] 
+  "107374183598" -> "111669152125"  [ label = "DDG: "] 
+  "107374183598" -> "111669152126"  [ label = "DDG: "] 
+  "111669152126" -> "30064790026"  [ label = "DDG: gist"] 
+  "107374183598" -> "30064790026"  [ label = "DDG: "] 
+  "30064790030" -> "30064790028"  [ label = "DDG: gist.files[&quot;astexplorer.json&quot;].content"] 
+}

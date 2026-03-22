@@ -1,0 +1,21 @@
+digraph "SelectedNodeProvider" {  
+node [shape="rect"];  
+"107374182636" [label = <METHOD, 28<BR/>SelectedNodeProvider> ]
+"124554051819" [label = <METHOD_RETURN, 28<BR/>ANY> ]
+"111669150107" [label = <PARAM, 28<BR/>this> ]
+"111669150108" [label = <PARAM, 28<BR/>props> ]
+"141733920917" [label = <RETURN, 29<BR/>return &lt;SelectedNodeContext.Provider value={set...> ]
+"154618823555" [label = <TEMPLATE_DOM, 29<BR/>&lt;SelectedNodeContext.Provider value={setSelecte...> ]
+"68719480376" [label = <IDENTIFIER, 29<BR/>props<BR/>{...props}> ]
+"68719480375" [label = <IDENTIFIER, 29<BR/>setSelectedNode<BR/>{setSelectedNode}> ]
+  "141733920917" -> "124554051819"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150107" -> "124554051819"  [ label = "DDG: this"] 
+  "111669150108" -> "124554051819"  [ label = "DDG: props"] 
+  "107374182636" -> "111669150107"  [ label = "DDG: "] 
+  "107374182636" -> "111669150108"  [ label = "DDG: "] 
+  "154618823555" -> "141733920917"  [ label = "DDG: &lt;SelectedNodeContext.Provider value={setSelectedNode} {...props} /&gt;"] 
+  "107374182636" -> "141733920917"  [ label = "DDG: "] 
+  "107374182636" -> "68719480376"  [ label = "DDG: "] 
+  "30064774793" -> "68719480375"  [ label = "DDG: setSelectedNode"] 
+  "107374182636" -> "68719480375"  [ label = "DDG: "] 
+}

@@ -1,0 +1,136 @@
+digraph "_getSettingsConfiguration" {  
+node [shape="rect"];  
+"107374183141" [label = <METHOD, 52<BR/>_getSettingsConfiguration> ]
+"124554052324" [label = <METHOD_RETURN, 52<BR/>{ fields: (string | (string | __ecma.String[])[])[]; }> ]
+"111669151154" [label = <PARAM, 52<BR/>this> ]
+"141733921318" [label = <RETURN, 53<BR/>return { fields: [ ['syntax', ['t...> ]
+"25769805808" [label = <BLOCK, 53<BR/>{ fields: [ ['syntax', ['typescri...> ]
+"30064782998" [label = <&lt;operator&gt;.assignment, 54<BR/>_tmp_10.fields = [ ['syntax', ['typescr...> ]
+"68719488676" [label = <IDENTIFIER, 53<BR/>_tmp_10<BR/>{ fields: [ ['syntax', ['typescri...> ]
+"30064783000" [label = <&lt;operator&gt;.assignment, 54<BR/>_tmp_11 = __ecma.Array.factory()> ]
+"30064783002" [label = <, 55<BR/>_tmp_11.push(['syntax', ['typescript', 'ecmascr...> ]
+"30064783016" [label = <, 56<BR/>_tmp_11.push(&quot;jsx&quot;)> ]
+"30064783018" [label = <, 57<BR/>_tmp_11.push(&quot;tsx&quot;)> ]
+"30064783020" [label = <, 58<BR/>_tmp_11.push(&quot;dynamicImport&quot;)> ]
+"30064783022" [label = <, 59<BR/>_tmp_11.push(&quot;privateMethod&quot;)> ]
+"30064783024" [label = <, 60<BR/>_tmp_11.push(&quot;functionBind&quot;)> ]
+"30064783026" [label = <, 61<BR/>_tmp_11.push(&quot;exportDefaultFrom&quot;)> ]
+"30064783028" [label = <, 62<BR/>_tmp_11.push(&quot;exportNamespaceFrom&quot;)> ]
+"30064783030" [label = <, 63<BR/>_tmp_11.push(&quot;decorators&quot;)> ]
+"30064783032" [label = <, 64<BR/>_tmp_11.push(&quot;decoratorsBeforeExport&quot;)> ]
+"30064783034" [label = <, 65<BR/>_tmp_11.push(&quot;topLevelAwait&quot;)> ]
+"30064783036" [label = <, 66<BR/>_tmp_11.push(&quot;importMeta&quot;)> ]
+"68719488675" [label = <IDENTIFIER, 54<BR/>_tmp_11<BR/>[ ['syntax', ['typescript', 'ecmascript...> ]
+"30064783004" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_12 = __ecma.Array.factory()> ]
+"30064783006" [label = <, 55<BR/>_tmp_12.push(&quot;syntax&quot;)> ]
+"30064783008" [label = <, 55<BR/>_tmp_12.push(['typescript', 'ecmascript'])> ]
+"68719488652" [label = <IDENTIFIER, 55<BR/>_tmp_12<BR/>['syntax', ['typescript', 'ecmascript']]> ]
+"30064783010" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_13 = __ecma.Array.factory()> ]
+"30064783012" [label = <, 55<BR/>_tmp_13.push(&quot;typescript&quot;)> ]
+"30064783014" [label = <, 55<BR/>_tmp_13.push(&quot;ecmascript&quot;)> ]
+"68719488651" [label = <IDENTIFIER, 55<BR/>_tmp_13<BR/>['typescript', 'ecmascript']> ]
+  "141733921318" -> "124554052324"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151154" -> "124554052324"  [ label = "DDG: this"] 
+  "30064782998" -> "124554052324"  [ label = "DDG: _tmp_10.fields"] 
+  "30064783000" -> "124554052324"  [ label = "DDG: _tmp_11 = __ecma.Array.factory()"] 
+  "30064783004" -> "124554052324"  [ label = "DDG: _tmp_12 = __ecma.Array.factory()"] 
+  "30064783006" -> "124554052324"  [ label = "DDG: _tmp_12.push(&quot;syntax&quot;)"] 
+  "30064783008" -> "124554052324"  [ label = "DDG: _tmp_12"] 
+  "30064783010" -> "124554052324"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064783010" -> "124554052324"  [ label = "DDG: _tmp_13 = __ecma.Array.factory()"] 
+  "30064783012" -> "124554052324"  [ label = "DDG: _tmp_13.push(&quot;typescript&quot;)"] 
+  "30064783014" -> "124554052324"  [ label = "DDG: _tmp_13"] 
+  "30064783014" -> "124554052324"  [ label = "DDG: _tmp_13.push(&quot;ecmascript&quot;)"] 
+  "30064783008" -> "124554052324"  [ label = "DDG: _tmp_12.push(['typescript', 'ecmascript'])"] 
+  "30064783002" -> "124554052324"  [ label = "DDG: _tmp_11.push(['syntax', ['typescript', 'ecmascript']])"] 
+  "30064783016" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;jsx&quot;)"] 
+  "30064783018" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;tsx&quot;)"] 
+  "30064783020" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;dynamicImport&quot;)"] 
+  "30064783022" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;privateMethod&quot;)"] 
+  "30064783024" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;functionBind&quot;)"] 
+  "30064783026" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;exportDefaultFrom&quot;)"] 
+  "30064783028" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;exportNamespaceFrom&quot;)"] 
+  "30064783030" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;decorators&quot;)"] 
+  "30064783032" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;decoratorsBeforeExport&quot;)"] 
+  "30064783034" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;topLevelAwait&quot;)"] 
+  "30064783036" -> "124554052324"  [ label = "DDG: _tmp_11"] 
+  "30064783036" -> "124554052324"  [ label = "DDG: _tmp_11.push(&quot;importMeta&quot;)"] 
+  "30064782998" -> "124554052324"  [ label = "DDG: _tmp_10.fields = [
+        ['syntax', ['typescript', 'ecmascript']],
+        'jsx',
+        'tsx',
+        'dynamicImport',
+        'privateMethod',
+        'functionBind',
+        'exportDefaultFrom',
+        'exportNamespaceFrom',
+        'decorators',
+        'decoratorsBeforeExport',
+        'topLevelAwait',
+        'importMeta'
+      ]"] 
+  "107374183141" -> "111669151154"  [ label = "DDG: "] 
+  "25769805808" -> "141733921318"  [ label = "DDG: "] 
+  "25769805808" -> "141733921318"  [ label = "DDG: {
+      fields: [
+        ['syntax', ['typescript', 'ecmascript']],
+        'jsx',
+        'tsx',
+        'dynamicImport',
+        'privateMethod',
+        'functionBind',
+        'exportDefaultFrom',
+        'exportNamespaceFrom',
+        'decorators',
+        'decoratorsBeforeExport',
+        'topLevelAwait',
+        'importMeta'
+      ],
+    }"] 
+  "107374183141" -> "141733921318"  [ label = "DDG: "] 
+  "30064782998" -> "25769805808"  [ label = "DDG: _tmp_10.fields"] 
+  "107374183141" -> "25769805808"  [ label = "DDG: "] 
+  "30064783036" -> "30064782998"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064782998"  [ label = "DDG: "] 
+  "107374183141" -> "68719488676"  [ label = "DDG: "] 
+  "107374183141" -> "30064783000"  [ label = "DDG: "] 
+  "107374183141" -> "68719488675"  [ label = "DDG: "] 
+  "30064783000" -> "30064783002"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783002"  [ label = "DDG: "] 
+  "30064783008" -> "30064783002"  [ label = "DDG: _tmp_12"] 
+  "30064783002" -> "30064783016"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783016"  [ label = "DDG: "] 
+  "30064783016" -> "30064783018"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783018"  [ label = "DDG: "] 
+  "30064783018" -> "30064783020"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783020"  [ label = "DDG: "] 
+  "30064783020" -> "30064783022"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783022"  [ label = "DDG: "] 
+  "30064783022" -> "30064783024"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783024"  [ label = "DDG: "] 
+  "30064783024" -> "30064783026"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783026"  [ label = "DDG: "] 
+  "30064783026" -> "30064783028"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783028"  [ label = "DDG: "] 
+  "30064783028" -> "30064783030"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783030"  [ label = "DDG: "] 
+  "30064783030" -> "30064783032"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783032"  [ label = "DDG: "] 
+  "30064783032" -> "30064783034"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783034"  [ label = "DDG: "] 
+  "30064783034" -> "30064783036"  [ label = "DDG: _tmp_11"] 
+  "107374183141" -> "30064783036"  [ label = "DDG: "] 
+  "107374183141" -> "30064783004"  [ label = "DDG: "] 
+  "107374183141" -> "68719488652"  [ label = "DDG: "] 
+  "30064783004" -> "30064783006"  [ label = "DDG: _tmp_12"] 
+  "107374183141" -> "30064783006"  [ label = "DDG: "] 
+  "30064783006" -> "30064783008"  [ label = "DDG: _tmp_12"] 
+  "107374183141" -> "30064783008"  [ label = "DDG: "] 
+  "30064783014" -> "30064783008"  [ label = "DDG: _tmp_13"] 
+  "107374183141" -> "30064783010"  [ label = "DDG: "] 
+  "107374183141" -> "68719488651"  [ label = "DDG: "] 
+  "30064783010" -> "30064783012"  [ label = "DDG: _tmp_13"] 
+  "107374183141" -> "30064783012"  [ label = "DDG: "] 
+  "30064783012" -> "30064783014"  [ label = "DDG: _tmp_13"] 
+  "107374183141" -> "30064783014"  [ label = "DDG: "] 
+}

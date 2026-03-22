@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182603" [label = <METHOD, 25<BR/>&lt;lambda&gt;1> ]
+"124554051785" [label = <METHOD_RETURN, 25<BR/>ANY> ]
+"111669150055" [label = <PARAM, 25<BR/>this> ]
+"111669150056" [label = <PARAM, 25<BR/>parser> ]
+"141733920902" [label = <RETURN, 26<BR/>&lt;li key={parser.id} onClick={this._onClick} dat...> ]
+"154618823238" [label = <TEMPLATE_DOM, 26<BR/>&lt;li key={parser.id} onClick={this._onClick} dat...> ]
+"90194313927" [label = <LITERAL, 27<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+  "141733920902" -> "124554051785"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150055" -> "124554051785"  [ label = "DDG: this"] 
+  "111669150056" -> "124554051785"  [ label = "DDG: parser"] 
+  "107374182603" -> "111669150055"  [ label = "DDG: "] 
+  "107374182603" -> "111669150056"  [ label = "DDG: "] 
+  "154618823238" -> "141733920902"  [ label = "DDG: &lt;li key={parser.id} onClick={this._onClick} data-id={parser.id}&gt;
+              &lt;button type=&quot;button&quot; &gt;
+                {parser.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;"] 
+  "107374182603" -> "141733920902"  [ label = "DDG: "] 
+  "107374182603" -> "90194313927"  [ label = "DDG: "] 
+}

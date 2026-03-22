@@ -1,0 +1,16 @@
+digraph "_expand" {  
+node [shape="rect"];  
+"107374182566" [label = <METHOD, 11<BR/>_expand> ]
+"124554051749" [label = <METHOD_RETURN, 11<BR/>void> ]
+"111669150002" [label = <PARAM, 11<BR/>this> ]
+"30064773545" [label = <onWantToExpand, 12<BR/>this.props.onWantToExpand()> ]
+"30064773547" [label = <&lt;operator&gt;.assignment, 12<BR/>(_tmp_2 = this.props)> ]
+  "111669150002" -> "124554051749"  [ label = "DDG: this"] 
+  "30064773547" -> "124554051749"  [ label = "DDG: this.props"] 
+  "30064773545" -> "124554051749"  [ label = "DDG: _tmp_2"] 
+  "30064773545" -> "124554051749"  [ label = "DDG: this.props.onWantToExpand()"] 
+  "107374182566" -> "111669150002"  [ label = "DDG: "] 
+  "30064773547" -> "30064773545"  [ label = "DDG: _tmp_2"] 
+  "107374182566" -> "30064773545"  [ label = "DDG: "] 
+  "111669150002" -> "30064773547"  [ label = "DDG: this"] 
+}

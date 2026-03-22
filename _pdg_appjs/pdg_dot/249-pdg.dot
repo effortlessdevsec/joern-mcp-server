@@ -1,0 +1,48 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182649" [label = <METHOD, 1<BR/>:program> ]
+"124554051833" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150134" [label = <PARAM, 1<BR/>this> ]
+"25769804398" [label = <BLOCK, 21<BR/>export default function(message, arg) { switc...> ]
+"30064774989" [label = <&lt;operator&gt;.assignment, 21<BR/>function &lt;lambda&gt;0 = function(message, arg) { ...> ]
+"30064774990" [label = <&lt;operator&gt;.assignment, 21<BR/>exports[&quot;default&quot;] = &lt;lambda&gt;0> ]
+  "111669150134" -> "124554051833"  [ label = "DDG: this"] 
+  "30064774989" -> "124554051833"  [ label = "DDG: function &lt;lambda&gt;0 = function(message, arg) {
+  switch (message) {
+    case 'init':
+      nodes = new Set();
+      break;
+    case 'add':
+      nodes.add(arg);
+      break;
+    case 'focus': {
+      const root = arg.current;
+      const size = nodes.size;
+      try {
+        if (size === 1) {
+          nodes.values().next().value.current.scrollIntoView();
+        } else if (size &gt; 1) {
+          const rootRect = root.getBoundingClientRect();
+          const center = (rootRect.y + rootRect.height) / 2 + rootRect.y;
+          const closest = Array.from(nodes).reduce((closest, element) =&gt; {
+            if (!element.current) {
+              return closest;
+            }
+            const elementRect = element.current.getBoundingClientRect();
+            const distance = elementRect.y - center;
+            const minDistance = Math.min(
+              Math.abs(distance),
+              Math.abs(distance + elementRect.height),
+            );
+
+            if (!closest || closest[1] &gt; minDistance) {
+              ..."] 
+  "30064774990" -> "124554051833"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064774990" -> "124554051833"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064774990" -> "124554051833"  [ label = "DDG: exports[&quot;default&quot;] = &lt;lambda&gt;0"] 
+  "107374182649" -> "111669150134"  [ label = "DDG: "] 
+  "107374182649" -> "25769804398"  [ label = "DDG: "] 
+  "107374182649" -> "30064774989"  [ label = "DDG: "] 
+  "30064774989" -> "30064774990"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "107374182649" -> "30064774990"  [ label = "DDG: "] 
+}

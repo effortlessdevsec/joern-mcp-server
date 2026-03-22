@@ -1,0 +1,14 @@
+digraph "shouldComponentUpdate" {  
+node [shape="rect"];  
+"107374182524" [label = <METHOD, 21<BR/>shouldComponentUpdate> ]
+"124554051707" [label = <METHOD_RETURN, 21<BR/>__ecma.Boolean> ]
+"111669149932" [label = <PARAM, 21<BR/>this> ]
+"141733920862" [label = <RETURN, 22<BR/>return false> ]
+"90194313679" [label = <LITERAL, 22<BR/>false<BR/>return false> ]
+  "141733920862" -> "124554051707"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149932" -> "124554051707"  [ label = "DDG: this"] 
+  "107374182524" -> "111669149932"  [ label = "DDG: "] 
+  "90194313679" -> "141733920862"  [ label = "DDG: false"] 
+  "107374182524" -> "141733920862"  [ label = "DDG: "] 
+  "107374182524" -> "90194313679"  [ label = "DDG: "] 
+}

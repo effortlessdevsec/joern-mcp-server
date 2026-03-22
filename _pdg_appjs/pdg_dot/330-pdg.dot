@@ -1,0 +1,81 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182730" [label = <METHOD, 1<BR/>:program> ]
+"124554051914" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150275" [label = <PARAM, 1<BR/>this> ]
+"30064776144" [label = <&lt;operator&gt;.assignment, 6<BR/>const ParseResult = { /** * The generated ...> ]
+"30064776145" [label = <&lt;operator&gt;.assignment, 10<BR/>_tmp_0.ast = &quot;any&quot;> ]
+"30064776147" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_0.error = &quot;Object&quot;> ]
+"30064776149" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_0.time = &quot;number&quot;> ]
+"30064776151" [label = <&lt;operator&gt;.assignment, 22<BR/>_tmp_0.treeAdapter = { /** * The type ...> ]
+"68719481956" [label = <IDENTIFIER, 6<BR/>_tmp_0<BR/>{ /** * The generated AST */ ast: 'an...> ]
+"30064776153" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_1.type = &quot;string&quot;> ]
+"30064776155" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_1.options = &quot;Object&quot;> ]
+"68719481955" [label = <IDENTIFIER, 22<BR/>_tmp_1<BR/>{ /** * The type of the adapter to use...> ]
+  "111669150275" -> "124554051914"  [ label = "DDG: this"] 
+  "30064776144" -> "124554051914"  [ label = "DDG: ParseResult"] 
+  "30064776145" -> "124554051914"  [ label = "DDG: _tmp_0.ast"] 
+  "30064776145" -> "124554051914"  [ label = "DDG: _tmp_0.ast = &quot;any&quot;"] 
+  "30064776147" -> "124554051914"  [ label = "DDG: _tmp_0.error"] 
+  "30064776147" -> "124554051914"  [ label = "DDG: _tmp_0.error = &quot;Object&quot;"] 
+  "30064776149" -> "124554051914"  [ label = "DDG: _tmp_0.time"] 
+  "30064776149" -> "124554051914"  [ label = "DDG: _tmp_0.time = &quot;number&quot;"] 
+  "30064776151" -> "124554051914"  [ label = "DDG: _tmp_0.treeAdapter"] 
+  "30064776153" -> "124554051914"  [ label = "DDG: _tmp_1.type"] 
+  "30064776153" -> "124554051914"  [ label = "DDG: _tmp_1.type = &quot;string&quot;"] 
+  "30064776155" -> "124554051914"  [ label = "DDG: _tmp_1.options"] 
+  "30064776155" -> "124554051914"  [ label = "DDG: _tmp_1.options = &quot;Object&quot;"] 
+  "30064776151" -> "124554051914"  [ label = "DDG: _tmp_0.treeAdapter = {
+    /**
+     * The type of the adapter to use, as defined in TreeAdapters.js
+     */
+    type: 'string',
+    /**
+     * Override the default options with these values
+     */
+    options: 'Object',
+  }"] 
+  "30064776144" -> "124554051914"  [ label = "DDG: const ParseResult = {
+  /**
+   * The generated AST
+   */
+  ast: 'any',
+
+  /**
+   * An error object, if parsing resulted in an error
+   */
+  error: 'Object',
+
+  /**
+   * How long it took to generate the AST
+   */
+  time: 'number',
+
+  treeAdapter: {
+    /**
+     * The type of the adapter to use, as defined in TreeAdapters.js
+     */
+    type: 'string',
+    /**
+     * Override the default options with these values
+     */
+    options: 'Object',
+  },
+}"] 
+  "107374182730" -> "111669150275"  [ label = "DDG: "] 
+  "30064776145" -> "30064776144"  [ label = "DDG: _tmp_0.ast"] 
+  "30064776147" -> "30064776144"  [ label = "DDG: _tmp_0.error"] 
+  "30064776149" -> "30064776144"  [ label = "DDG: _tmp_0.time"] 
+  "30064776151" -> "30064776144"  [ label = "DDG: _tmp_0.treeAdapter"] 
+  "107374182730" -> "30064776144"  [ label = "DDG: "] 
+  "107374182730" -> "30064776145"  [ label = "DDG: "] 
+  "107374182730" -> "30064776147"  [ label = "DDG: "] 
+  "107374182730" -> "30064776149"  [ label = "DDG: "] 
+  "30064776153" -> "30064776151"  [ label = "DDG: _tmp_1.type"] 
+  "30064776155" -> "30064776151"  [ label = "DDG: _tmp_1.options"] 
+  "107374182730" -> "30064776151"  [ label = "DDG: "] 
+  "107374182730" -> "68719481956"  [ label = "DDG: "] 
+  "107374182730" -> "30064776153"  [ label = "DDG: "] 
+  "107374182730" -> "30064776155"  [ label = "DDG: "] 
+  "107374182730" -> "68719481955"  [ label = "DDG: "] 
+}

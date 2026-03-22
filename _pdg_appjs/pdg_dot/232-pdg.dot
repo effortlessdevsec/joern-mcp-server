@@ -1,0 +1,35 @@
+digraph "JSON" {  
+node [shape="rect"];  
+"107374182632" [label = <METHOD, 7<BR/>JSON> ]
+"124554051815" [label = <METHOD_RETURN, 7<BR/>ANY> ]
+"111669150100" [label = <PARAM, 7<BR/>this> ]
+"111669150101" [label = <PARAM, 7<BR/>{parseResult}> ]
+"30064774759" [label = <&lt;operator&gt;.assignment, 7<BR/>parseResult = param1_0.parseResult> ]
+"141733920915" [label = <RETURN, 8<BR/>return ( &lt;JSONEditor className=&quot;conta...> ]
+"154618823550" [label = <TEMPLATE_DOM, 9<BR/>&lt;JSONEditor className=&quot;container&quot; v...> ]
+"90194314016" [label = <LITERAL, 10<BR/>&quot;container&quot;<BR/>className=&quot;container&quot;> ]
+"30064774761" [label = <stringify, 11<BR/>stringify(parseResult.ast, null, 2)> ]
+"68719480333" [label = <IDENTIFIER, 11<BR/>stringify<BR/>stringify(parseResult.ast, null, 2)> ]
+  "141733920915" -> "124554051815"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150101" -> "124554051815"  [ label = "DDG: param1_0"] 
+  "30064774759" -> "124554051815"  [ label = "DDG: parseResult"] 
+  "30064774759" -> "124554051815"  [ label = "DDG: param1_0.parseResult"] 
+  "30064774759" -> "124554051815"  [ label = "DDG: parseResult = param1_0.parseResult"] 
+  "30064774761" -> "124554051815"  [ label = "DDG: this"] 
+  "30064774761" -> "124554051815"  [ label = "DDG: parseResult.ast"] 
+  "30064774761" -> "124554051815"  [ label = "DDG: stringify(parseResult.ast, null, 2)"] 
+  "107374182632" -> "111669150100"  [ label = "DDG: "] 
+  "107374182632" -> "111669150101"  [ label = "DDG: "] 
+  "111669150101" -> "30064774759"  [ label = "DDG: param1_0"] 
+  "154618823550" -> "141733920915"  [ label = "DDG: &lt;JSONEditor
+      className=&quot;container&quot;
+      value={stringify(parseResult.ast, null, 2)}
+    /&gt;"] 
+  "107374182632" -> "141733920915"  [ label = "DDG: "] 
+  "107374182632" -> "90194314016"  [ label = "DDG: "] 
+  "30064774766" -> "68719480333"  [ label = "DDG: stringify"] 
+  "107374182632" -> "68719480333"  [ label = "DDG: "] 
+  "111669150100" -> "30064774761"  [ label = "DDG: this"] 
+  "107374182632" -> "30064774761"  [ label = "DDG: "] 
+  "30064774759" -> "30064774761"  [ label = "DDG: parseResult"] 
+}

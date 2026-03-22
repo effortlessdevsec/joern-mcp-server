@@ -1,0 +1,8 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182455" [label = <METHOD, 1<BR/>:program> ]
+"124554051639" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149822" [label = <PARAM, 1<BR/>this> ]
+  "111669149822" -> "124554051639"  [ label = "DDG: this"] 
+  "107374182455" -> "111669149822"  [ label = "DDG: "] 
+}

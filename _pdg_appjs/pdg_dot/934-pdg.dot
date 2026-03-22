@@ -1,0 +1,19 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183334" [label = <METHOD, 39<BR/>opensByDefault> ]
+"124554052517" [label = <METHOD_RETURN, 39<BR/>__ecma.Boolean> ]
+"111669151591" [label = <PARAM, 39<BR/>this> ]
+"111669151592" [label = <PARAM, 39<BR/>node> ]
+"141733921450" [label = <RETURN, 40<BR/>return node.type === 'BlockNode'> ]
+"30064786428" [label = <&lt;operator&gt;.equals, 40<BR/>node.type === 'BlockNode'> ]
+  "141733921450" -> "124554052517"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151591" -> "124554052517"  [ label = "DDG: this"] 
+  "111669151592" -> "124554052517"  [ label = "DDG: node"] 
+  "30064786428" -> "124554052517"  [ label = "DDG: node.type"] 
+  "30064786428" -> "124554052517"  [ label = "DDG: node.type === 'BlockNode'"] 
+  "107374183334" -> "111669151591"  [ label = "DDG: "] 
+  "107374183334" -> "111669151592"  [ label = "DDG: "] 
+  "30064786428" -> "141733921450"  [ label = "DDG: node.type === 'BlockNode'"] 
+  "111669151592" -> "30064786428"  [ label = "DDG: node"] 
+  "107374183334" -> "30064786428"  [ label = "DDG: "] 
+}

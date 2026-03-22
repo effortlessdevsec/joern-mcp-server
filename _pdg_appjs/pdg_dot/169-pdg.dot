@@ -1,0 +1,153 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182569" [label = <METHOD, 1<BR/>:program> ]
+"124554051757" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150013" [label = <PARAM, 1<BR/>this> ]
+"30064773694" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064773695" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"30064773696" [label = <&lt;operator&gt;.assignment, 3<BR/>var cx = require(&quot;../utils/classnames.js&quot;)> ]
+"30064773697" [label = <&lt;operator&gt;.assignment, 5<BR/>const baseStyle = { flex: '1', display: 'fl...> ]
+"30064773702" [label = <&lt;operator&gt;.assignment, 10<BR/>const styleB = { ...baseStyle, minWidth: 0,...> ]
+"25769804206" [label = <BLOCK, 19<BR/>export default function SplitPane({vertical, cl...> ]
+"30064773711" [label = <&lt;operator&gt;.assignment, 101<BR/>SplitPane.propTypes = { vertical: PropTypes.b...> ]
+"30064773708" [label = <&lt;operator&gt;.assignment, 19<BR/>function SplitPane = function SplitPane({vertic...> ]
+"30064773709" [label = <&lt;operator&gt;.assignment, 19<BR/>exports[&quot;default&quot;] = SplitPane> ]
+"68719479365" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064773574" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719479368" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064773575" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"68719479371" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../utils/classnames.js&quot;)> ]
+"30064773576" [label = <require, 3<BR/>require(&quot;../utils/classnames.js&quot;)> ]
+"30064773698" [label = <&lt;operator&gt;.assignment, 6<BR/>_tmp_0.flex = &quot;1&quot;> ]
+"30064773700" [label = <&lt;operator&gt;.assignment, 7<BR/>_tmp_0.display = &quot;flex&quot;> ]
+"68719479376" [label = <IDENTIFIER, 5<BR/>_tmp_0<BR/>{ flex: '1', display: 'flex', }> ]
+"30064773703" [label = <&lt;operator&gt;.spread, 11<BR/>...baseStyle> ]
+"30064773704" [label = <&lt;operator&gt;.assignment, 12<BR/>_tmp_1.minWidth = 0> ]
+"30064773706" [label = <&lt;operator&gt;.assignment, 13<BR/>_tmp_1.minHeight = 0> ]
+"68719479382" [label = <IDENTIFIER, 10<BR/>_tmp_1<BR/>{ ...baseStyle, minWidth: 0, minHeight: 0, }> ]
+"30064773713" [label = <&lt;operator&gt;.assignment, 102<BR/>_tmp_9.vertical = PropTypes.bool> ]
+"30064773716" [label = <&lt;operator&gt;.assignment, 103<BR/>_tmp_9.className = PropTypes.string> ]
+"30064773719" [label = <&lt;operator&gt;.assignment, 104<BR/>_tmp_9.children = PropTypes.node> ]
+"30064773722" [label = <&lt;operator&gt;.assignment, 105<BR/>_tmp_9.onResize = PropTypes.func> ]
+"68719479395" [label = <IDENTIFIER, 101<BR/>_tmp_9<BR/>{ vertical: PropTypes.bool, className: Prop...> ]
+  "30064773694" -> "124554051757"  [ label = "DDG: PropTypes"] 
+  "30064773694" -> "124554051757"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064773694" -> "124554051757"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064773695" -> "124554051757"  [ label = "DDG: React"] 
+  "30064773695" -> "124554051757"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064773695" -> "124554051757"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064773696" -> "124554051757"  [ label = "DDG: cx"] 
+  "30064773576" -> "124554051757"  [ label = "DDG: this"] 
+  "30064773696" -> "124554051757"  [ label = "DDG: require(&quot;../utils/classnames.js&quot;)"] 
+  "30064773696" -> "124554051757"  [ label = "DDG: var cx = require(&quot;../utils/classnames.js&quot;)"] 
+  "30064773698" -> "124554051757"  [ label = "DDG: _tmp_0.flex"] 
+  "30064773698" -> "124554051757"  [ label = "DDG: _tmp_0.flex = &quot;1&quot;"] 
+  "30064773700" -> "124554051757"  [ label = "DDG: _tmp_0.display"] 
+  "30064773700" -> "124554051757"  [ label = "DDG: _tmp_0.display = &quot;flex&quot;"] 
+  "30064773697" -> "124554051757"  [ label = "DDG: const baseStyle = {
+  flex: '1',
+  display: 'flex',
+}"] 
+  "30064773702" -> "124554051757"  [ label = "DDG: styleB"] 
+  "30064773703" -> "124554051757"  [ label = "DDG: _tmp_1"] 
+  "30064773703" -> "124554051757"  [ label = "DDG: baseStyle"] 
+  "30064773703" -> "124554051757"  [ label = "DDG: ...baseStyle"] 
+  "30064773704" -> "124554051757"  [ label = "DDG: _tmp_1.minWidth"] 
+  "30064773704" -> "124554051757"  [ label = "DDG: _tmp_1.minWidth = 0"] 
+  "30064773706" -> "124554051757"  [ label = "DDG: _tmp_1.minHeight"] 
+  "30064773706" -> "124554051757"  [ label = "DDG: _tmp_1.minHeight = 0"] 
+  "30064773702" -> "124554051757"  [ label = "DDG: const styleB = {
+  ...baseStyle,
+  minWidth: 0,
+  minHeight: 0,
+}"] 
+  "30064773708" -> "124554051757"  [ label = "DDG: function SplitPane = function SplitPane({vertical, className, children, onResize}) {
+  // Position is really the size (width or height) of the first (left or top)
+  // panel, as percentage of the parent containers size. The remaining elements
+  // are sized and layed out through flexbox.
+  const [position, setPosition] = React.useState(50)
+  const container = React.useRef()
+
+  const onMouseDown = React.useCallback(function(event) {
+    if (!container.current) {
+      return;
+    }
+
+    // This is needed to prevent text selection in Safari
+    event.preventDefault();
+
+    const offset = vertical ? container.current.offsetTop : container.current.offsetLeft;
+    const size = vertical ? container.current.offsetHeight : container.current.offsetWidth;
+    global.document.body.style.cursor = vertical ? 'row-resize' : 'col-resize';
+    let moveHandler = event =&gt; {
+      event.preventDefault();
+      const newPosition = ((vertical ? event.pageY : event.pageX) - offset) / size * 100;
+      // Using 99% as the max..."] 
+  "30064773709" -> "124554051757"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064773709" -> "124554051757"  [ label = "DDG: SplitPane"] 
+  "30064773709" -> "124554051757"  [ label = "DDG: exports[&quot;default&quot;] = SplitPane"] 
+  "30064773711" -> "124554051757"  [ label = "DDG: SplitPane.propTypes"] 
+  "30064773713" -> "124554051757"  [ label = "DDG: _tmp_9.vertical"] 
+  "30064773713" -> "124554051757"  [ label = "DDG: PropTypes.bool"] 
+  "30064773713" -> "124554051757"  [ label = "DDG: _tmp_9.vertical = PropTypes.bool"] 
+  "30064773716" -> "124554051757"  [ label = "DDG: _tmp_9.className"] 
+  "30064773716" -> "124554051757"  [ label = "DDG: PropTypes.string"] 
+  "30064773716" -> "124554051757"  [ label = "DDG: _tmp_9.className = PropTypes.string"] 
+  "30064773719" -> "124554051757"  [ label = "DDG: _tmp_9.children"] 
+  "30064773719" -> "124554051757"  [ label = "DDG: PropTypes.node"] 
+  "30064773719" -> "124554051757"  [ label = "DDG: _tmp_9.children = PropTypes.node"] 
+  "30064773722" -> "124554051757"  [ label = "DDG: _tmp_9.onResize"] 
+  "30064773722" -> "124554051757"  [ label = "DDG: PropTypes.func"] 
+  "30064773722" -> "124554051757"  [ label = "DDG: _tmp_9.onResize = PropTypes.func"] 
+  "30064773711" -> "124554051757"  [ label = "DDG: SplitPane.propTypes = {
+  vertical: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.node,
+  onResize: PropTypes.func,
+}"] 
+  "107374182569" -> "111669150013"  [ label = "DDG: "] 
+  "30064773574" -> "30064773694"  [ label = "DDG: this"] 
+  "30064773574" -> "30064773694"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064773575" -> "30064773695"  [ label = "DDG: this"] 
+  "30064773575" -> "30064773695"  [ label = "DDG: &quot;react&quot;"] 
+  "30064773576" -> "30064773696"  [ label = "DDG: this"] 
+  "30064773576" -> "30064773696"  [ label = "DDG: &quot;../utils/classnames.js&quot;"] 
+  "30064773698" -> "30064773697"  [ label = "DDG: _tmp_0.flex"] 
+  "30064773700" -> "30064773697"  [ label = "DDG: _tmp_0.display"] 
+  "107374182569" -> "30064773697"  [ label = "DDG: "] 
+  "30064773703" -> "30064773702"  [ label = "DDG: _tmp_1"] 
+  "30064773704" -> "30064773702"  [ label = "DDG: _tmp_1.minWidth"] 
+  "30064773706" -> "30064773702"  [ label = "DDG: _tmp_1.minHeight"] 
+  "107374182569" -> "30064773702"  [ label = "DDG: "] 
+  "107374182569" -> "25769804206"  [ label = "DDG: "] 
+  "30064773713" -> "30064773711"  [ label = "DDG: _tmp_9.vertical"] 
+  "30064773716" -> "30064773711"  [ label = "DDG: _tmp_9.className"] 
+  "30064773719" -> "30064773711"  [ label = "DDG: _tmp_9.children"] 
+  "30064773722" -> "30064773711"  [ label = "DDG: _tmp_9.onResize"] 
+  "107374182569" -> "30064773711"  [ label = "DDG: "] 
+  "107374182569" -> "30064773708"  [ label = "DDG: "] 
+  "30064773708" -> "30064773709"  [ label = "DDG: SplitPane"] 
+  "107374182569" -> "30064773709"  [ label = "DDG: "] 
+  "107374182569" -> "68719479365"  [ label = "DDG: "] 
+  "111669150013" -> "30064773574"  [ label = "DDG: this"] 
+  "107374182569" -> "30064773574"  [ label = "DDG: "] 
+  "107374182569" -> "68719479368"  [ label = "DDG: "] 
+  "30064773574" -> "30064773575"  [ label = "DDG: this"] 
+  "107374182569" -> "30064773575"  [ label = "DDG: "] 
+  "107374182569" -> "68719479371"  [ label = "DDG: "] 
+  "30064773575" -> "30064773576"  [ label = "DDG: this"] 
+  "107374182569" -> "30064773576"  [ label = "DDG: "] 
+  "107374182569" -> "30064773698"  [ label = "DDG: "] 
+  "107374182569" -> "30064773700"  [ label = "DDG: "] 
+  "107374182569" -> "68719479376"  [ label = "DDG: "] 
+  "107374182569" -> "30064773704"  [ label = "DDG: "] 
+  "107374182569" -> "30064773706"  [ label = "DDG: "] 
+  "107374182569" -> "68719479382"  [ label = "DDG: "] 
+  "30064773694" -> "30064773713"  [ label = "DDG: PropTypes"] 
+  "30064773694" -> "30064773716"  [ label = "DDG: PropTypes"] 
+  "30064773694" -> "30064773719"  [ label = "DDG: PropTypes"] 
+  "30064773694" -> "30064773722"  [ label = "DDG: PropTypes"] 
+  "107374182569" -> "68719479395"  [ label = "DDG: "] 
+  "107374182569" -> "30064773703"  [ label = "DDG: "] 
+  "30064773697" -> "30064773703"  [ label = "DDG: baseStyle"] 
+}

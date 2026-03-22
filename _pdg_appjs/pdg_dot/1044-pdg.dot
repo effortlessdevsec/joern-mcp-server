@@ -1,0 +1,21 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183444" [label = <METHOD, 24<BR/>opensByDefault> ]
+"124554052627" [label = <METHOD_RETURN, 24<BR/>__ecma.Boolean> ]
+"111669151824" [label = <PARAM, 24<BR/>this> ]
+"111669151825" [label = <PARAM, 24<BR/>node> ]
+"111669151826" [label = <PARAM, 24<BR/>key> ]
+"141733921527" [label = <RETURN, 25<BR/>return key === 'children'> ]
+"30064788039" [label = <&lt;operator&gt;.equals, 25<BR/>key === 'children'> ]
+  "141733921527" -> "124554052627"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151824" -> "124554052627"  [ label = "DDG: this"] 
+  "111669151825" -> "124554052627"  [ label = "DDG: node"] 
+  "30064788039" -> "124554052627"  [ label = "DDG: key"] 
+  "30064788039" -> "124554052627"  [ label = "DDG: key === 'children'"] 
+  "107374183444" -> "111669151824"  [ label = "DDG: "] 
+  "107374183444" -> "111669151825"  [ label = "DDG: "] 
+  "107374183444" -> "111669151826"  [ label = "DDG: "] 
+  "30064788039" -> "141733921527"  [ label = "DDG: key === 'children'"] 
+  "111669151826" -> "30064788039"  [ label = "DDG: key"] 
+  "107374183444" -> "30064788039"  [ label = "DDG: "] 
+}

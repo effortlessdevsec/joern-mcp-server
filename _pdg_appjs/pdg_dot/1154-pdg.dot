@@ -1,0 +1,31 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183554" [label = <METHOD, 25<BR/>loadParser> ]
+"124554052737" [label = <METHOD_RETURN, 25<BR/>void> ]
+"111669152039" [label = <PARAM, 25<BR/>this> ]
+"111669152040" [label = <PARAM, 25<BR/>callback> ]
+"30064789480" [label = <require, 26<BR/>require(['@webassemblyjs/wast-parser'], functio...> ]
+"68719495062" [label = <IDENTIFIER, 26<BR/>require<BR/>require(['@webassemblyjs/wast-parser'], functio...> ]
+"30064789481" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064789483" [label = <, 26<BR/>_tmp_5.push(&quot;@webassemblyjs/wast-parser&quot;)> ]
+"68719495067" [label = <IDENTIFIER, 26<BR/>_tmp_5<BR/>['@webassemblyjs/wast-parser']> ]
+  "111669152040" -> "124554052737"  [ label = "DDG: callback"] 
+  "30064789480" -> "124554052737"  [ label = "DDG: this"] 
+  "30064789481" -> "124554052737"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064789481" -> "124554052737"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064789483" -> "124554052737"  [ label = "DDG: _tmp_5"] 
+  "30064789483" -> "124554052737"  [ label = "DDG: _tmp_5.push(&quot;@webassemblyjs/wast-parser&quot;)"] 
+  "30064789480" -> "124554052737"  [ label = "DDG: require(['@webassemblyjs/wast-parser'], function(parser) {
+      callback(parser);
+    })"] 
+  "107374183554" -> "111669152039"  [ label = "DDG: "] 
+  "107374183554" -> "111669152040"  [ label = "DDG: "] 
+  "107374183554" -> "68719495062"  [ label = "DDG: "] 
+  "111669152039" -> "30064789480"  [ label = "DDG: this"] 
+  "107374183554" -> "30064789480"  [ label = "DDG: "] 
+  "30064789483" -> "30064789480"  [ label = "DDG: _tmp_5"] 
+  "107374183554" -> "30064789481"  [ label = "DDG: "] 
+  "107374183554" -> "68719495067"  [ label = "DDG: "] 
+  "30064789481" -> "30064789483"  [ label = "DDG: _tmp_5"] 
+  "107374183554" -> "30064789483"  [ label = "DDG: "] 
+}

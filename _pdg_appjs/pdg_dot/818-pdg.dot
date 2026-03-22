@@ -1,0 +1,82 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183218" [label = <METHOD, 14<BR/>loadTransformer> ]
+"124554052401" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669151350" [label = <PARAM, 14<BR/>this> ]
+"111669151351" [label = <PARAM, 14<BR/>callback> ]
+"30064784627" [label = <require, 15<BR/>require( [ '../../../transpilers/...> ]
+"68719490242" [label = <IDENTIFIER, 15<BR/>require<BR/>require( [ '../../../transpilers/...> ]
+"30064784628" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064784630" [label = <, 17<BR/>_tmp_1.push(&quot;../../../transpilers/babel&quot;)> ]
+"30064784632" [label = <, 18<BR/>_tmp_1.push(&quot;recast&quot;)> ]
+"30064784634" [label = <, 19<BR/>_tmp_1.push(&quot;recast/parsers/acorn&quot;)> ]
+"30064784636" [label = <, 20<BR/>_tmp_1.push(&quot;recast/parsers/babel&quot;)> ]
+"30064784638" [label = <, 21<BR/>_tmp_1.push(&quot;recast/parsers/babylon&quot;)> ]
+"30064784640" [label = <, 22<BR/>_tmp_1.push(&quot;recast/parsers/esprima&quot;)> ]
+"30064784642" [label = <, 23<BR/>_tmp_1.push(&quot;recast/parsers/flow&quot;)> ]
+"30064784644" [label = <, 24<BR/>_tmp_1.push(&quot;recast/parsers/typescript&quot;)> ]
+"68719490261" [label = <IDENTIFIER, 16<BR/>_tmp_1<BR/>[ '../../../transpilers/babel', ...> ]
+  "111669151351" -> "124554052401"  [ label = "DDG: callback"] 
+  "30064784627" -> "124554052401"  [ label = "DDG: this"] 
+  "30064784628" -> "124554052401"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064784628" -> "124554052401"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064784630" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;../../../transpilers/babel&quot;)"] 
+  "30064784632" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast&quot;)"] 
+  "30064784634" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast/parsers/acorn&quot;)"] 
+  "30064784636" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast/parsers/babel&quot;)"] 
+  "30064784638" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast/parsers/babylon&quot;)"] 
+  "30064784640" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast/parsers/esprima&quot;)"] 
+  "30064784642" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast/parsers/flow&quot;)"] 
+  "30064784644" -> "124554052401"  [ label = "DDG: _tmp_1"] 
+  "30064784644" -> "124554052401"  [ label = "DDG: _tmp_1.push(&quot;recast/parsers/typescript&quot;)"] 
+  "30064784627" -> "124554052401"  [ label = "DDG: require(
+      [
+        '../../../transpilers/babel',
+        'recast',
+        'recast/parsers/acorn',
+        'recast/parsers/babel',
+        'recast/parsers/babylon',
+        'recast/parsers/esprima',
+        'recast/parsers/flow',
+        'recast/parsers/typescript',
+      ],
+      (transpile, recast, acorn, babel, babylon, esprima, flow, typescript) =&gt; {
+        callback({
+          transpile: transpile.default,
+          recast,
+          parsers: {
+            acorn,
+            babel,
+            babylon,
+            esprima,
+            flow,
+            typescript,
+          },
+        });
+      },
+    )"] 
+  "107374183218" -> "111669151350"  [ label = "DDG: "] 
+  "107374183218" -> "111669151351"  [ label = "DDG: "] 
+  "107374183218" -> "68719490242"  [ label = "DDG: "] 
+  "111669151350" -> "30064784627"  [ label = "DDG: this"] 
+  "107374183218" -> "30064784627"  [ label = "DDG: "] 
+  "30064784644" -> "30064784627"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784628"  [ label = "DDG: "] 
+  "107374183218" -> "68719490261"  [ label = "DDG: "] 
+  "30064784628" -> "30064784630"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784630"  [ label = "DDG: "] 
+  "30064784630" -> "30064784632"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784632"  [ label = "DDG: "] 
+  "30064784632" -> "30064784634"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784634"  [ label = "DDG: "] 
+  "30064784634" -> "30064784636"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784636"  [ label = "DDG: "] 
+  "30064784636" -> "30064784638"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784638"  [ label = "DDG: "] 
+  "30064784638" -> "30064784640"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784640"  [ label = "DDG: "] 
+  "30064784640" -> "30064784642"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784642"  [ label = "DDG: "] 
+  "30064784642" -> "30064784644"  [ label = "DDG: _tmp_1"] 
+  "107374183218" -> "30064784644"  [ label = "DDG: "] 
+}

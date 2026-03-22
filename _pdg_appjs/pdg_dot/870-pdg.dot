@@ -1,0 +1,22 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183270" [label = <METHOD, 28<BR/>parse> ]
+"124554052453" [label = <METHOD_RETURN, 28<BR/>ANY> ]
+"111669151448" [label = <PARAM, 28<BR/>this> ]
+"111669151449" [label = <PARAM, 28<BR/>UglifyJS> ]
+"111669151450" [label = <PARAM, 28<BR/>code> ]
+"141733921407" [label = <RETURN, 29<BR/>return UglifyJS.parse(code)> ]
+"30064785413" [label = <parse, 29<BR/>UglifyJS.parse(code)> ]
+  "141733921407" -> "124554052453"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151448" -> "124554052453"  [ label = "DDG: this"] 
+  "30064785413" -> "124554052453"  [ label = "DDG: UglifyJS"] 
+  "30064785413" -> "124554052453"  [ label = "DDG: code"] 
+  "30064785413" -> "124554052453"  [ label = "DDG: UglifyJS.parse(code)"] 
+  "107374183270" -> "111669151448"  [ label = "DDG: "] 
+  "107374183270" -> "111669151449"  [ label = "DDG: "] 
+  "107374183270" -> "111669151450"  [ label = "DDG: "] 
+  "30064785413" -> "141733921407"  [ label = "DDG: UglifyJS.parse(code)"] 
+  "111669151449" -> "30064785413"  [ label = "DDG: UglifyJS"] 
+  "107374183270" -> "30064785413"  [ label = "DDG: "] 
+  "111669151450" -> "30064785413"  [ label = "DDG: code"] 
+}

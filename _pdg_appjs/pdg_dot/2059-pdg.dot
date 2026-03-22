@@ -1,0 +1,4 @@
+digraph "parseAllDocuments" {  
+node [shape="rect"];  
+
+}

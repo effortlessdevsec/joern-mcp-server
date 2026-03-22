@@ -1,0 +1,14 @@
+digraph "getNodeName" {  
+node [shape="rect"];  
+"107374182767" [label = <METHOD, 24<BR/>getNodeName> ]
+"124554051950" [label = <METHOD_RETURN, 24<BR/>ANY> ]
+"111669150355" [label = <PARAM, 24<BR/>this> ]
+"111669150356" [label = <PARAM, 24<BR/>node> ]
+"141733921031" [label = <RETURN, 25<BR/>return node.constructor.name> ]
+  "141733921031" -> "124554051950"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150355" -> "124554051950"  [ label = "DDG: this"] 
+  "111669150356" -> "124554051950"  [ label = "DDG: node"] 
+  "107374182767" -> "111669150355"  [ label = "DDG: "] 
+  "107374182767" -> "111669150356"  [ label = "DDG: "] 
+  "107374182767" -> "141733921031"  [ label = "DDG: "] 
+}

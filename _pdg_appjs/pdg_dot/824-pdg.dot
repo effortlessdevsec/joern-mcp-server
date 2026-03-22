@@ -1,0 +1,46 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183224" [label = <METHOD, 14<BR/>loadTransformer> ]
+"124554052407" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669151365" [label = <PARAM, 14<BR/>this> ]
+"111669151366" [label = <PARAM, 14<BR/>callback> ]
+"30064784748" [label = <require, 15<BR/>require([ '../../../transpilers/typescrip...> ]
+"68719490363" [label = <IDENTIFIER, 15<BR/>require<BR/>require([ '../../../transpilers/typescrip...> ]
+"30064784749" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064784751" [label = <, 16<BR/>_tmp_6.push(&quot;../../../transpilers/typescript&quot;)> ]
+"30064784753" [label = <, 17<BR/>_tmp_6.push(&quot;tslint/lib/index&quot;)> ]
+"30064784755" [label = <, 18<BR/>_tmp_6.push(&quot;typescript&quot;)> ]
+"68719490372" [label = <IDENTIFIER, 15<BR/>_tmp_6<BR/>[ '../../../transpilers/typescript', ...> ]
+  "111669151366" -> "124554052407"  [ label = "DDG: callback"] 
+  "30064784748" -> "124554052407"  [ label = "DDG: this"] 
+  "30064784749" -> "124554052407"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064784749" -> "124554052407"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064784751" -> "124554052407"  [ label = "DDG: _tmp_6.push(&quot;../../../transpilers/typescript&quot;)"] 
+  "30064784753" -> "124554052407"  [ label = "DDG: _tmp_6.push(&quot;tslint/lib/index&quot;)"] 
+  "30064784755" -> "124554052407"  [ label = "DDG: _tmp_6"] 
+  "30064784755" -> "124554052407"  [ label = "DDG: _tmp_6.push(&quot;typescript&quot;)"] 
+  "30064784748" -> "124554052407"  [ label = "DDG: require([
+      '../../../transpilers/typescript',
+      'tslint/lib/index',
+      'typescript',
+    ],
+    (
+      transpile,
+      tslint,
+      typescript,
+    ) =&gt; callback({transpile: transpile.default, tslint, typescript}))"] 
+  "107374183224" -> "111669151365"  [ label = "DDG: "] 
+  "107374183224" -> "111669151366"  [ label = "DDG: "] 
+  "107374183224" -> "68719490363"  [ label = "DDG: "] 
+  "111669151365" -> "30064784748"  [ label = "DDG: this"] 
+  "107374183224" -> "30064784748"  [ label = "DDG: "] 
+  "30064784755" -> "30064784748"  [ label = "DDG: _tmp_6"] 
+  "107374183224" -> "30064784749"  [ label = "DDG: "] 
+  "107374183224" -> "68719490372"  [ label = "DDG: "] 
+  "30064784749" -> "30064784751"  [ label = "DDG: _tmp_6"] 
+  "107374183224" -> "30064784751"  [ label = "DDG: "] 
+  "30064784751" -> "30064784753"  [ label = "DDG: _tmp_6"] 
+  "107374183224" -> "30064784753"  [ label = "DDG: "] 
+  "30064784753" -> "30064784755"  [ label = "DDG: _tmp_6"] 
+  "107374183224" -> "30064784755"  [ label = "DDG: "] 
+}

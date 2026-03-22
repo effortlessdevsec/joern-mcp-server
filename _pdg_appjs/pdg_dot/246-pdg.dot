@@ -1,0 +1,15 @@
+digraph "&lt;lambda&gt;4" {  
+node [shape="rect"];  
+"107374182646" [label = <METHOD, 77<BR/>&lt;lambda&gt;4> ]
+"124554051828" [label = <METHOD_RETURN, 77<BR/>void> ]
+"111669150124" [label = <PARAM, 77<BR/>this> ]
+"30064774847" [label = <publish, 77<BR/>publish('CLEAR_HIGHLIGHT')> ]
+"68719480436" [label = <IDENTIFIER, 77<BR/>publish<BR/>publish('CLEAR_HIGHLIGHT')> ]
+  "30064774847" -> "124554051828"  [ label = "DDG: this"] 
+  "30064774847" -> "124554051828"  [ label = "DDG: publish('CLEAR_HIGHLIGHT')"] 
+  "107374182646" -> "111669150124"  [ label = "DDG: "] 
+  "30064774882" -> "68719480436"  [ label = "DDG: publish"] 
+  "107374182646" -> "68719480436"  [ label = "DDG: "] 
+  "111669150124" -> "30064774847"  [ label = "DDG: this"] 
+  "107374182646" -> "30064774847"  [ label = "DDG: "] 
+}

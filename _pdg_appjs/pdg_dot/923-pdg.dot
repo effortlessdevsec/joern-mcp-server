@@ -1,0 +1,57 @@
+digraph "renderSettings" {  
+node [shape="rect"];  
+"107374183323" [label = <METHOD, 69<BR/>renderSettings> ]
+"124554052506" [label = <METHOD_RETURN, 69<BR/>ANY> ]
+"111669151565" [label = <PARAM, 69<BR/>this> ]
+"111669151566" [label = <PARAM, 69<BR/>parserSettings> ]
+"111669151567" [label = <PARAM, 69<BR/>onChange> ]
+"141733921445" [label = <RETURN, 70<BR/>return ( &lt;div&gt; &lt;p&gt; rema...> ]
+"154618824068" [label = <TEMPLATE_DOM, 71<BR/>&lt;div&gt; &lt;p&gt; remark is extended ...> ]
+"30064786261" [label = <call, 82<BR/>defaultParserInterface.renderSettings.call( ...> ]
+"90194316486" [label = <LITERAL, 73<BR/>&quot; &quot;<BR/>{' '}> ]
+"90194316487" [label = <LITERAL, 75<BR/>&quot;https://github.com/remarkjs/remark/blob/HEAD/d...<BR/>href=&quot;https://github.com/remarkjs/remark/blob/H...> ]
+"90194316488" [label = <LITERAL, 76<BR/>&quot;_blank&quot;<BR/>target=&quot;_blank&quot;> ]
+"90194316489" [label = <LITERAL, 77<BR/>&quot;noreferrer noopener&quot;<BR/>rel=&quot;noreferrer noopener&quot;> ]
+"30064786263" [label = <&lt;operator&gt;.assignment, 82<BR/>(_tmp_13 = defaultParserInterface.renderSettings)> ]
+  "141733921445" -> "124554052506"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064786263" -> "124554052506"  [ label = "DDG: defaultParserInterface.renderSettings"] 
+  "30064786261" -> "124554052506"  [ label = "DDG: _tmp_13"] 
+  "30064786261" -> "124554052506"  [ label = "DDG: this"] 
+  "30064786261" -> "124554052506"  [ label = "DDG: parserSettings"] 
+  "30064786261" -> "124554052506"  [ label = "DDG: onChange"] 
+  "30064786261" -> "124554052506"  [ label = "DDG: defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )"] 
+  "107374183323" -> "111669151565"  [ label = "DDG: "] 
+  "107374183323" -> "111669151566"  [ label = "DDG: "] 
+  "107374183323" -> "111669151567"  [ label = "DDG: "] 
+  "154618824068" -> "141733921445"  [ label = "DDG: &lt;div&gt;
+        &lt;p&gt;
+          remark is extended through{' '}
+          &lt;a
+            href=&quot;https://github.com/remarkjs/remark/blob/HEAD/doc/plugins.md&quot;
+            target=&quot;_blank&quot;
+            rel=&quot;noreferrer noopener&quot;
+          &gt;
+            plugins
+          &lt;/a&gt;
+        &lt;/p&gt;
+        {defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )}
+      &lt;/div&gt;"] 
+  "107374183323" -> "141733921445"  [ label = "DDG: "] 
+  "107374183323" -> "90194316486"  [ label = "DDG: "] 
+  "30064786263" -> "30064786261"  [ label = "DDG: _tmp_13"] 
+  "107374183323" -> "30064786261"  [ label = "DDG: "] 
+  "111669151565" -> "30064786261"  [ label = "DDG: this"] 
+  "111669151566" -> "30064786261"  [ label = "DDG: parserSettings"] 
+  "111669151567" -> "30064786261"  [ label = "DDG: onChange"] 
+  "107374183323" -> "90194316487"  [ label = "DDG: "] 
+  "107374183323" -> "90194316488"  [ label = "DDG: "] 
+  "107374183323" -> "90194316489"  [ label = "DDG: "] 
+}

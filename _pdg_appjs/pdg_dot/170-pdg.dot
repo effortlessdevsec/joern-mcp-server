@@ -1,0 +1,345 @@
+digraph "SplitPane" {  
+node [shape="rect"];  
+"107374182570" [label = <METHOD, 19<BR/>SplitPane> ]
+"124554051756" [label = <METHOD_RETURN, 19<BR/>ANY> ]
+"111669150011" [label = <PARAM, 19<BR/>this> ]
+"111669150012" [label = <PARAM, 19<BR/>{vertical, className, children, onResize}> ]
+"30064773629" [label = <&lt;operator&gt;.assignment, 19<BR/>vertical = param1_0.vertical> ]
+"30064773631" [label = <&lt;operator&gt;.assignment, 19<BR/>className = param1_0.className> ]
+"30064773633" [label = <&lt;operator&gt;.assignment, 19<BR/>children = param1_0.children> ]
+"30064773635" [label = <&lt;operator&gt;.assignment, 19<BR/>onResize = param1_0.onResize> ]
+"25769804191" [label = <BLOCK, 23<BR/>const [position, setPosition] = React.useState(50)> ]
+"30064773644" [label = <&lt;operator&gt;.assignment, 24<BR/>const container = React.useRef()> ]
+"30064773647" [label = <&lt;operator&gt;.assignment, 26<BR/>const onMouseDown = React.useCallback(function(...> ]
+"30064773658" [label = <&lt;operator&gt;.assignment, 57<BR/>children = React.Children.toArray(children)> ]
+"30064773667" [label = <&lt;operator&gt;.assignment, 67<BR/>const styleA = {...baseStyle}> ]
+"141733920885" [label = <RETURN, 78<BR/>return ( &lt;div ref={container} c...> ]
+"30064773637" [label = <&lt;operator&gt;.assignment, 23<BR/>_tmp_2 = React.useState(50)> ]
+"30064773640" [label = <&lt;operator&gt;.assignment, 23<BR/>position = _tmp_2[0]> ]
+"30064773642" [label = <&lt;operator&gt;.assignment, 23<BR/>setPosition = _tmp_2[1]> ]
+"68719479306" [label = <IDENTIFIER, 23<BR/>_tmp_2<BR/>const [position, setPosition] = React.useState(50)> ]
+"30064773663" [label = <&lt;operator&gt;.lessThan, 59<BR/>children.length &lt; 2> ]
+"68719479338" [label = <IDENTIFIER, 70<BR/>vertical<BR/>if (vertical) { // top styleA.minHeight...> ]
+"154618822939" [label = <TEMPLATE_DOM, 79<BR/>&lt;div ref={container} className={cla...> ]
+"30064773645" [label = <useRef, 24<BR/>React.useRef()> ]
+"30064773648" [label = <useCallback, 26<BR/>React.useCallback(function(event) { if (!co...> ]
+"30064773659" [label = <toArray, 57<BR/>React.Children.toArray(children)> ]
+"141733920884" [label = <RETURN, 60<BR/>return ( &lt;div className={className} style...> ]
+"30064773668" [label = <&lt;operator&gt;.spread, 67<BR/>...baseStyle> ]
+"68719479337" [label = <IDENTIFIER, 67<BR/>_tmp_6<BR/>{...baseStyle}> ]
+"30064773669" [label = <&lt;operator&gt;.assignment, 72<BR/>styleA.minHeight = styleA.maxHeight = position ...> ]
+"30064773674" [label = <&lt;operator&gt;.assignment, 75<BR/>styleA.minWidth = styleA.maxWidth = position + '%'> ]
+"30064773638" [label = <useState, 23<BR/>React.useState(50)> ]
+"30064773650" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064773652" [label = <, 55<BR/>_tmp_3.push(vertical)> ]
+"30064773654" [label = <, 55<BR/>_tmp_3.push(position)> ]
+"30064773656" [label = <, 55<BR/>_tmp_3.push(container)> ]
+"68719479323" [label = <IDENTIFIER, 55<BR/>_tmp_3<BR/>[vertical, position, container]> ]
+"154618822929" [label = <TEMPLATE_DOM, 61<BR/>&lt;div className={className} style={{display: 'fl...> ]
+"30064773661" [label = <&lt;operator&gt;.assignment, 57<BR/>(_tmp_4 = React.Children)> ]
+"30064773671" [label = <&lt;operator&gt;.assignment, 72<BR/>styleA.maxHeight = position + '%'> ]
+"30064773676" [label = <&lt;operator&gt;.assignment, 75<BR/>styleA.maxWidth = position + '%'> ]
+"68719479333" [label = <IDENTIFIER, 62<BR/>children<BR/>{children}> ]
+"30064773673" [label = <&lt;operator&gt;.addition, 72<BR/>position + '%'> ]
+"30064773678" [label = <&lt;operator&gt;.addition, 75<BR/>position + '%'> ]
+"68719479345" [label = <IDENTIFIER, 80<BR/>container<BR/>{container}> ]
+"68719479346" [label = <IDENTIFIER, 81<BR/>className<BR/>{className}> ]
+"25769804200" [label = <BLOCK, 82<BR/>{display: 'flex', flexDirection: vertical ? 'co...> ]
+"30064773679" [label = <&lt;operator&gt;.assignment, 82<BR/>_tmp_7.display = &quot;flex&quot;> ]
+"30064773681" [label = <&lt;operator&gt;.assignment, 82<BR/>_tmp_7.flexDirection = vertical ? &quot;column&quot; : &quot;row&quot;> ]
+"68719479350" [label = <IDENTIFIER, 82<BR/>_tmp_7<BR/>{display: 'flex', flexDirection: vertical ? 'co...> ]
+"68719479351" [label = <IDENTIFIER, 83<BR/>styleA<BR/>{styleA}> ]
+"30064773685" [label = <cx, 87<BR/>cx({ 'splitpane-divider': true, ...> ]
+"68719479361" [label = <IDENTIFIER, 92<BR/>onMouseDown<BR/>{onMouseDown}> ]
+"68719479362" [label = <IDENTIFIER, 94<BR/>styleB<BR/>{styleB}> ]
+"68719479330" [label = <IDENTIFIER, 61<BR/>className<BR/>{className}> ]
+"25769804198" [label = <BLOCK, 61<BR/>{display: 'flex'}> ]
+"68719479353" [label = <IDENTIFIER, 87<BR/>cx<BR/>cx({ 'splitpane-divider': true, ...> ]
+"30064773665" [label = <&lt;operator&gt;.assignment, 61<BR/>_tmp_5.display = &quot;flex&quot;> ]
+"68719479332" [label = <IDENTIFIER, 61<BR/>_tmp_5<BR/>{display: 'flex'}> ]
+"30064773683" [label = <&lt;operator&gt;.conditional, 82<BR/>vertical ? &quot;column&quot; : &quot;row&quot;> ]
+"30064773686" [label = <&lt;operator&gt;.assignment, 88<BR/>_tmp_8.splitpane-divider = true> ]
+"30064773688" [label = <&lt;operator&gt;.assignment, 89<BR/>_tmp_8.vertical = vertical> ]
+"30064773690" [label = <&lt;operator&gt;.assignment, 90<BR/>_tmp_8.horizontal = !vertical> ]
+"68719479360" [label = <IDENTIFIER, 87<BR/>_tmp_8<BR/>{ 'splitpane-divider': true, ...> ]
+"30064773692" [label = <&lt;operator&gt;.logicalNot, 90<BR/>!vertical> ]
+"30064773670" [label = <&lt;operator&gt;.fieldAccess, 72<BR/>styleA.minHeight> ]
+"30064773675" [label = <&lt;operator&gt;.fieldAccess, 75<BR/>styleA.minWidth> ]
+"55834575878" [label = <FIELD_IDENTIFIER, 72<BR/>minHeight> ]
+"30064773672" [label = <&lt;operator&gt;.fieldAccess, 72<BR/>styleA.maxHeight> ]
+"55834575880" [label = <FIELD_IDENTIFIER, 75<BR/>minWidth> ]
+"30064773677" [label = <&lt;operator&gt;.fieldAccess, 75<BR/>styleA.maxWidth> ]
+"30064773684" [label = <&lt;operator&gt;.indexAccess, 84<BR/>children[0]> ]
+"30064773693" [label = <&lt;operator&gt;.indexAccess, 95<BR/>children[1]> ]
+"55834575879" [label = <FIELD_IDENTIFIER, 72<BR/>maxHeight> ]
+"55834575881" [label = <FIELD_IDENTIFIER, 75<BR/>maxWidth> ]
+"30064773680" [label = <&lt;operator&gt;.fieldAccess, 82<BR/>_tmp_7.display> ]
+"30064773682" [label = <&lt;operator&gt;.fieldAccess, 82<BR/>_tmp_7.flexDirection> ]
+"55834575882" [label = <FIELD_IDENTIFIER, 82<BR/>display> ]
+"55834575883" [label = <FIELD_IDENTIFIER, 82<BR/>flexDirection> ]
+"30064773666" [label = <&lt;operator&gt;.fieldAccess, 61<BR/>_tmp_5.display> ]
+"30064773687" [label = <&lt;operator&gt;.fieldAccess, 88<BR/>_tmp_8.splitpane-divider> ]
+"30064773689" [label = <&lt;operator&gt;.fieldAccess, 89<BR/>_tmp_8.vertical> ]
+"30064773691" [label = <&lt;operator&gt;.fieldAccess, 90<BR/>_tmp_8.horizontal> ]
+"55834575877" [label = <FIELD_IDENTIFIER, 61<BR/>display> ]
+"55834575884" [label = <FIELD_IDENTIFIER, 88<BR/>splitpane-divider> ]
+"55834575885" [label = <FIELD_IDENTIFIER, 89<BR/>vertical> ]
+"55834575886" [label = <FIELD_IDENTIFIER, 90<BR/>horizontal> ]
+  "141733920884" -> "124554051756"  [ label = "DDG: &lt;RET&gt;"] 
+  "141733920885" -> "124554051756"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150011" -> "124554051756"  [ label = "DDG: this"] 
+  "111669150012" -> "124554051756"  [ label = "DDG: param1_0"] 
+  "30064773629" -> "124554051756"  [ label = "DDG: param1_0.vertical"] 
+  "30064773629" -> "124554051756"  [ label = "DDG: vertical = param1_0.vertical"] 
+  "30064773631" -> "124554051756"  [ label = "DDG: className"] 
+  "30064773631" -> "124554051756"  [ label = "DDG: param1_0.className"] 
+  "30064773631" -> "124554051756"  [ label = "DDG: className = param1_0.className"] 
+  "30064773633" -> "124554051756"  [ label = "DDG: param1_0.children"] 
+  "30064773633" -> "124554051756"  [ label = "DDG: children = param1_0.children"] 
+  "30064773635" -> "124554051756"  [ label = "DDG: onResize"] 
+  "30064773635" -> "124554051756"  [ label = "DDG: param1_0.onResize"] 
+  "30064773635" -> "124554051756"  [ label = "DDG: onResize = param1_0.onResize"] 
+  "30064773637" -> "124554051756"  [ label = "DDG: _tmp_2"] 
+  "30064773637" -> "124554051756"  [ label = "DDG: React.useState(50)"] 
+  "30064773637" -> "124554051756"  [ label = "DDG: _tmp_2 = React.useState(50)"] 
+  "30064773640" -> "124554051756"  [ label = "DDG: _tmp_2[0]"] 
+  "30064773640" -> "124554051756"  [ label = "DDG: position = _tmp_2[0]"] 
+  "30064773642" -> "124554051756"  [ label = "DDG: setPosition"] 
+  "30064773642" -> "124554051756"  [ label = "DDG: _tmp_2[1]"] 
+  "30064773642" -> "124554051756"  [ label = "DDG: setPosition = _tmp_2[1]"] 
+  "30064773644" -> "124554051756"  [ label = "DDG: React.useRef()"] 
+  "30064773644" -> "124554051756"  [ label = "DDG: const container = React.useRef()"] 
+  "30064773647" -> "124554051756"  [ label = "DDG: onMouseDown"] 
+  "30064773648" -> "124554051756"  [ label = "DDG: React"] 
+  "30064773650" -> "124554051756"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773650" -> "124554051756"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064773652" -> "124554051756"  [ label = "DDG: vertical"] 
+  "30064773652" -> "124554051756"  [ label = "DDG: _tmp_3.push(vertical)"] 
+  "30064773654" -> "124554051756"  [ label = "DDG: position"] 
+  "30064773654" -> "124554051756"  [ label = "DDG: _tmp_3.push(position)"] 
+  "30064773656" -> "124554051756"  [ label = "DDG: _tmp_3"] 
+  "30064773656" -> "124554051756"  [ label = "DDG: container"] 
+  "30064773656" -> "124554051756"  [ label = "DDG: _tmp_3.push(container)"] 
+  "30064773647" -> "124554051756"  [ label = "DDG: React.useCallback(function(event) {
+    if (!container.current) {
+      return;
+    }
+
+    // This is needed to prevent text selection in Safari
+    event.preventDefault();
+
+    const offset = vertical ? container.current.offsetTop : container.current.offsetLeft;
+    const size = vertical ? container.current.offsetHeight : container.current.offsetWidth;
+    global.document.body.style.cursor = vertical ? 'row-resize' : 'col-resize';
+    let moveHandler = event =&gt; {
+      event.preventDefault();
+      const newPosition = ((vertical ? event.pageY : event.pageX) - offset) / size * 100;
+      // Using 99% as the max value prevents the divider from disappearing
+      setPosition(Math.min(Math.max(0, newPosition), 99));
+    };
+    let upHandler = () =&gt; {
+      document.removeEventListener('mousemove', moveHandler);
+      document.removeEventListener('mouseup', upHandler);
+      global.document.body.style.cursor = '';
+
+      if (onResize) {
+        onResize();
+      }
+    };
+
+    document.a..."] 
+  "30064773647" -> "124554051756"  [ label = "DDG: const onMouseDown = React.useCallback(function(event) {
+    if (!container.current) {
+      return;
+    }
+
+    // This is needed to prevent text selection in Safari
+    event.preventDefault();
+
+    const offset = vertical ? container.current.offsetTop : container.current.offsetLeft;
+    const size = vertical ? container.current.offsetHeight : container.current.offsetWidth;
+    global.document.body.style.cursor = vertical ? 'row-resize' : 'col-resize';
+    let moveHandler = event =&gt; {
+      event.preventDefault();
+      const newPosition = ((vertical ? event.pageY : event.pageX) - offset) / size * 100;
+      // Using 99% as the max value prevents the divider from disappearing
+      setPosition(Math.min(Math.max(0, newPosition), 99));
+    };
+    let upHandler = () =&gt; {
+      document.removeEventListener('mousemove', moveHandler);
+      document.removeEventListener('mouseup', upHandler);
+      global.document.body.style.cursor = '';
+
+      if (onResize) {
+        onResize();
+      }
+    };
+
+..."] 
+  "30064773658" -> "124554051756"  [ label = "DDG: children"] 
+  "30064773661" -> "124554051756"  [ label = "DDG: React.Children"] 
+  "30064773659" -> "124554051756"  [ label = "DDG: _tmp_4"] 
+  "30064773658" -> "124554051756"  [ label = "DDG: React.Children.toArray(children)"] 
+  "30064773658" -> "124554051756"  [ label = "DDG: children = React.Children.toArray(children)"] 
+  "30064773663" -> "124554051756"  [ label = "DDG: children.length"] 
+  "30064773663" -> "124554051756"  [ label = "DDG: children.length &lt; 2"] 
+  "30064773665" -> "124554051756"  [ label = "DDG: _tmp_5.display"] 
+  "30064773665" -> "124554051756"  [ label = "DDG: _tmp_5.display = &quot;flex&quot;"] 
+  "107374182570" -> "111669150011"  [ label = "DDG: "] 
+  "107374182570" -> "111669150012"  [ label = "DDG: "] 
+  "111669150012" -> "30064773629"  [ label = "DDG: param1_0"] 
+  "111669150012" -> "30064773631"  [ label = "DDG: param1_0"] 
+  "111669150012" -> "30064773633"  [ label = "DDG: param1_0"] 
+  "111669150012" -> "30064773635"  [ label = "DDG: param1_0"] 
+  "107374182570" -> "25769804191"  [ label = "DDG: "] 
+  "30064773645" -> "30064773644"  [ label = "DDG: React"] 
+  "30064773648" -> "30064773647"  [ label = "DDG: React"] 
+  "30064773648" -> "30064773647"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064773648" -> "30064773647"  [ label = "DDG: [vertical, position, container]"] 
+  "30064773648" -> "30064773647"  [ label = "DDG: "] 
+  "30064773659" -> "30064773658"  [ label = "DDG: _tmp_4"] 
+  "30064773659" -> "30064773658"  [ label = "DDG: children"] 
+  "30064773668" -> "30064773667"  [ label = "DDG: _tmp_6"] 
+  "107374182570" -> "30064773667"  [ label = "DDG: "] 
+  "154618822939" -> "141733920885"  [ label = "DDG: &lt;div
+      ref={container}
+      className={className}
+      style={{display: 'flex', flexDirection: vertical ? 'column' : 'row'}}&gt;
+      &lt;div style={styleA}&gt;
+        {children[0]}
+      &lt;/div&gt;
+      &lt;div
+        className={cx({
+          'splitpane-divider': true,
+          vertical: vertical,
+          horizontal: !vertical,
+        })}
+        onMouseDown={onMouseDown}
+      /&gt;
+      &lt;div style={styleB}&gt;
+        {children[1]}
+      &lt;/div&gt;
+    &lt;/div&gt;"] 
+  "107374182570" -> "141733920885"  [ label = "DDG: "] 
+  "30064773638" -> "30064773637"  [ label = "DDG: React"] 
+  "30064773638" -> "30064773637"  [ label = "DDG: 50"] 
+  "30064773637" -> "30064773640"  [ label = "DDG: _tmp_2"] 
+  "30064773637" -> "30064773642"  [ label = "DDG: _tmp_2"] 
+  "107374182570" -> "68719479306"  [ label = "DDG: "] 
+  "107374182570" -> "68719479338"  [ label = "DDG: "] 
+  "30064773638" -> "30064773645"  [ label = "DDG: React"] 
+  "107374182570" -> "30064773645"  [ label = "DDG: "] 
+  "30064773645" -> "30064773648"  [ label = "DDG: React"] 
+  "107374182570" -> "30064773648"  [ label = "DDG: "] 
+  "30064773656" -> "30064773648"  [ label = "DDG: _tmp_3"] 
+  "30064773661" -> "30064773659"  [ label = "DDG: _tmp_4"] 
+  "107374182570" -> "30064773659"  [ label = "DDG: "] 
+  "30064773633" -> "30064773659"  [ label = "DDG: children"] 
+  "30064773658" -> "30064773663"  [ label = "DDG: children"] 
+  "107374182570" -> "30064773663"  [ label = "DDG: "] 
+  "154618822929" -> "141733920884"  [ label = "DDG: &lt;div className={className} style={{display: 'flex'}}&gt;
+        {children}
+      &lt;/div&gt;"] 
+  "107374182570" -> "141733920884"  [ label = "DDG: "] 
+  "107374182570" -> "68719479337"  [ label = "DDG: "] 
+  "30064773671" -> "30064773669"  [ label = "DDG: styleA.maxHeight"] 
+  "30064773654" -> "30064773669"  [ label = "DDG: position"] 
+  "107374182570" -> "30064773669"  [ label = "DDG: "] 
+  "30064773676" -> "30064773674"  [ label = "DDG: styleA.maxWidth"] 
+  "30064773654" -> "30064773674"  [ label = "DDG: position"] 
+  "107374182570" -> "30064773674"  [ label = "DDG: "] 
+  "107374182570" -> "30064773638"  [ label = "DDG: "] 
+  "107374182570" -> "30064773650"  [ label = "DDG: "] 
+  "107374182570" -> "68719479323"  [ label = "DDG: "] 
+  "107374182570" -> "30064773668"  [ label = "DDG: "] 
+  "30064773697" -> "30064773668"  [ label = "DDG: baseStyle"] 
+  "30064773703" -> "30064773668"  [ label = "DDG: baseStyle"] 
+  "30064773650" -> "30064773652"  [ label = "DDG: _tmp_3"] 
+  "107374182570" -> "30064773652"  [ label = "DDG: "] 
+  "30064773629" -> "30064773652"  [ label = "DDG: vertical"] 
+  "30064773652" -> "30064773654"  [ label = "DDG: _tmp_3"] 
+  "107374182570" -> "30064773654"  [ label = "DDG: "] 
+  "30064773640" -> "30064773654"  [ label = "DDG: position"] 
+  "30064773654" -> "30064773656"  [ label = "DDG: _tmp_3"] 
+  "107374182570" -> "30064773656"  [ label = "DDG: "] 
+  "30064773644" -> "30064773656"  [ label = "DDG: container"] 
+  "30064773648" -> "30064773661"  [ label = "DDG: React"] 
+  "30064773654" -> "30064773671"  [ label = "DDG: position"] 
+  "107374182570" -> "30064773671"  [ label = "DDG: "] 
+  "30064773654" -> "30064773676"  [ label = "DDG: position"] 
+  "107374182570" -> "30064773676"  [ label = "DDG: "] 
+  "107374182570" -> "68719479333"  [ label = "DDG: "] 
+  "30064773654" -> "30064773673"  [ label = "DDG: position"] 
+  "107374182570" -> "30064773673"  [ label = "DDG: "] 
+  "30064773654" -> "30064773678"  [ label = "DDG: position"] 
+  "107374182570" -> "30064773678"  [ label = "DDG: "] 
+  "107374182570" -> "68719479345"  [ label = "DDG: "] 
+  "107374182570" -> "68719479346"  [ label = "DDG: "] 
+  "107374182570" -> "25769804200"  [ label = "DDG: "] 
+  "107374182570" -> "30064773679"  [ label = "DDG: "] 
+  "107374182570" -> "30064773681"  [ label = "DDG: "] 
+  "107374182570" -> "68719479350"  [ label = "DDG: "] 
+  "107374182570" -> "68719479351"  [ label = "DDG: "] 
+  "107374182570" -> "68719479361"  [ label = "DDG: "] 
+  "30064773702" -> "68719479362"  [ label = "DDG: styleB"] 
+  "107374182570" -> "68719479362"  [ label = "DDG: "] 
+  "107374182570" -> "68719479330"  [ label = "DDG: "] 
+  "107374182570" -> "25769804198"  [ label = "DDG: "] 
+  "30064773696" -> "68719479353"  [ label = "DDG: cx"] 
+  "107374182570" -> "68719479353"  [ label = "DDG: "] 
+  "111669150011" -> "30064773685"  [ label = "DDG: this"] 
+  "107374182570" -> "30064773685"  [ label = "DDG: "] 
+  "30064773686" -> "30064773685"  [ label = "DDG: _tmp_8.splitpane-divider"] 
+  "30064773688" -> "30064773685"  [ label = "DDG: _tmp_8.vertical"] 
+  "30064773690" -> "30064773685"  [ label = "DDG: _tmp_8.horizontal"] 
+  "107374182570" -> "30064773665"  [ label = "DDG: "] 
+  "107374182570" -> "68719479332"  [ label = "DDG: "] 
+  "107374182570" -> "30064773683"  [ label = "DDG: "] 
+  "107374182570" -> "30064773686"  [ label = "DDG: "] 
+  "107374182570" -> "30064773688"  [ label = "DDG: "] 
+  "30064773692" -> "30064773690"  [ label = "DDG: vertical"] 
+  "107374182570" -> "68719479360"  [ label = "DDG: "] 
+  "107374182570" -> "30064773692"  [ label = "DDG: "] 
+  "30064773663" -> "30064773680"  [ label = "CDG: "] 
+  "30064773663" -> "30064773679"  [ label = "CDG: "] 
+  "30064773663" -> "30064773682"  [ label = "CDG: "] 
+  "30064773663" -> "30064773681"  [ label = "CDG: "] 
+  "30064773663" -> "30064773684"  [ label = "CDG: "] 
+  "30064773663" -> "30064773683"  [ label = "CDG: "] 
+  "30064773663" -> "141733920884"  [ label = "CDG: "] 
+  "30064773663" -> "141733920885"  [ label = "CDG: "] 
+  "30064773663" -> "30064773666"  [ label = "CDG: "] 
+  "30064773663" -> "30064773665"  [ label = "CDG: "] 
+  "30064773663" -> "30064773668"  [ label = "CDG: "] 
+  "30064773663" -> "30064773667"  [ label = "CDG: "] 
+  "30064773663" -> "55834575884"  [ label = "CDG: "] 
+  "30064773663" -> "55834575883"  [ label = "CDG: "] 
+  "30064773663" -> "55834575886"  [ label = "CDG: "] 
+  "30064773663" -> "55834575885"  [ label = "CDG: "] 
+  "30064773663" -> "30064773686"  [ label = "CDG: "] 
+  "30064773663" -> "30064773685"  [ label = "CDG: "] 
+  "30064773663" -> "30064773688"  [ label = "CDG: "] 
+  "30064773663" -> "30064773687"  [ label = "CDG: "] 
+  "30064773663" -> "30064773690"  [ label = "CDG: "] 
+  "30064773663" -> "30064773689"  [ label = "CDG: "] 
+  "30064773663" -> "30064773692"  [ label = "CDG: "] 
+  "30064773663" -> "30064773691"  [ label = "CDG: "] 
+  "30064773663" -> "30064773693"  [ label = "CDG: "] 
+  "30064773663" -> "55834575877"  [ label = "CDG: "] 
+  "30064773663" -> "68719479338"  [ label = "CDG: "] 
+  "30064773663" -> "55834575882"  [ label = "CDG: "] 
+  "68719479338" -> "30064773670"  [ label = "CDG: "] 
+  "68719479338" -> "30064773669"  [ label = "CDG: "] 
+  "68719479338" -> "30064773672"  [ label = "CDG: "] 
+  "68719479338" -> "30064773671"  [ label = "CDG: "] 
+  "68719479338" -> "30064773674"  [ label = "CDG: "] 
+  "68719479338" -> "30064773673"  [ label = "CDG: "] 
+  "68719479338" -> "30064773676"  [ label = "CDG: "] 
+  "68719479338" -> "30064773675"  [ label = "CDG: "] 
+  "68719479338" -> "30064773678"  [ label = "CDG: "] 
+  "68719479338" -> "30064773677"  [ label = "CDG: "] 
+  "68719479338" -> "55834575878"  [ label = "CDG: "] 
+  "68719479338" -> "55834575880"  [ label = "CDG: "] 
+  "68719479338" -> "55834575879"  [ label = "CDG: "] 
+  "68719479338" -> "55834575881"  [ label = "CDG: "] 
+}

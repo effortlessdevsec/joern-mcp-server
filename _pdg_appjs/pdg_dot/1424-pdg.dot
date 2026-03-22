@@ -1,0 +1,8 @@
+digraph "isInteger" {  
+node [shape="rect"];  
+"107374183824" [label = <METHOD<BR/>isInteger> ]
+"124554053008" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152547" [label = <PARAM<BR/>p1> ]
+  "111669152547" -> "124554053008"  [ label = "DDG: p1"] 
+  "107374183824" -> "111669152547"  [ label = "DDG: "] 
+}

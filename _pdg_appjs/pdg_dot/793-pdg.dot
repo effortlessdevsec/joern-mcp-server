@@ -1,0 +1,52 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183193" [label = <METHOD, 15<BR/>loadTransformer> ]
+"124554052376" [label = <METHOD_RETURN, 15<BR/>void> ]
+"111669151278" [label = <PARAM, 15<BR/>this> ]
+"111669151279" [label = <PARAM, 15<BR/>callback> ]
+"30064784191" [label = <require, 16<BR/>require( [ // Explicitly require ...> ]
+"68719489782" [label = <IDENTIFIER, 16<BR/>require<BR/>require( [ // Explicitly require ...> ]
+"30064784192" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064784194" [label = <, 21<BR/>_tmp_1.push(&quot;eslint3/lib/eslint&quot;)> ]
+"30064784196" [label = <, 22<BR/>_tmp_1.push(&quot;eslint3/lib/util/source-code&quot;)> ]
+"30064784198" [label = <, 23<BR/>_tmp_1.push(&quot;eslint3/lib/rules&quot;)> ]
+"30064784200" [label = <, 24<BR/>_tmp_1.push(&quot;../../utils/eslintUtils&quot;)> ]
+"68719489793" [label = <IDENTIFIER, 17<BR/>_tmp_1<BR/>[ // Explicitly require just the stuff ...> ]
+  "111669151279" -> "124554052376"  [ label = "DDG: callback"] 
+  "30064784191" -> "124554052376"  [ label = "DDG: this"] 
+  "30064784192" -> "124554052376"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064784192" -> "124554052376"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064784194" -> "124554052376"  [ label = "DDG: _tmp_1.push(&quot;eslint3/lib/eslint&quot;)"] 
+  "30064784196" -> "124554052376"  [ label = "DDG: _tmp_1.push(&quot;eslint3/lib/util/source-code&quot;)"] 
+  "30064784198" -> "124554052376"  [ label = "DDG: _tmp_1.push(&quot;eslint3/lib/rules&quot;)"] 
+  "30064784200" -> "124554052376"  [ label = "DDG: _tmp_1"] 
+  "30064784200" -> "124554052376"  [ label = "DDG: _tmp_1.push(&quot;../../utils/eslintUtils&quot;)"] 
+  "30064784191" -> "124554052376"  [ label = "DDG: require(
+      [
+        // Explicitly require just the stuff we care about to avoid loading
+        // RuleTester and CLIEngine, which are unnecessary and bloat out the
+        // package size.
+        'eslint3/lib/eslint',
+        'eslint3/lib/util/source-code',
+        'eslint3/lib/rules',
+        '../../utils/eslintUtils',
+      ],
+      (eslint, sourceCode, rules, utils) =&gt; callback({eslint, sourceCode, rules, utils}),
+    )"] 
+  "107374183193" -> "111669151278"  [ label = "DDG: "] 
+  "107374183193" -> "111669151279"  [ label = "DDG: "] 
+  "107374183193" -> "68719489782"  [ label = "DDG: "] 
+  "111669151278" -> "30064784191"  [ label = "DDG: this"] 
+  "107374183193" -> "30064784191"  [ label = "DDG: "] 
+  "30064784200" -> "30064784191"  [ label = "DDG: _tmp_1"] 
+  "107374183193" -> "30064784192"  [ label = "DDG: "] 
+  "107374183193" -> "68719489793"  [ label = "DDG: "] 
+  "30064784192" -> "30064784194"  [ label = "DDG: _tmp_1"] 
+  "107374183193" -> "30064784194"  [ label = "DDG: "] 
+  "30064784194" -> "30064784196"  [ label = "DDG: _tmp_1"] 
+  "107374183193" -> "30064784196"  [ label = "DDG: "] 
+  "30064784196" -> "30064784198"  [ label = "DDG: _tmp_1"] 
+  "107374183193" -> "30064784198"  [ label = "DDG: "] 
+  "30064784198" -> "30064784200"  [ label = "DDG: _tmp_1"] 
+  "107374183193" -> "30064784200"  [ label = "DDG: "] 
+}

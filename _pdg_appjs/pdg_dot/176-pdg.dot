@@ -1,0 +1,155 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182576" [label = <METHOD, 1<BR/>:program> ]
+"124554051763" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150024" [label = <PARAM, 1<BR/>this> ]
+"30064773898" [label = <&lt;operator&gt;.assignment, 2<BR/>var Editor = require(&quot;./Editor&quot;)> ]
+"30064773899" [label = <&lt;operator&gt;.assignment, 3<BR/>var JSONEditor = require(&quot;./JSONEditor&quot;)> ]
+"30064773900" [label = <&lt;operator&gt;.assignment, 4<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064773901" [label = <&lt;operator&gt;.assignment, 5<BR/>var React = require(&quot;react&quot;)> ]
+"30064773902" [label = <&lt;operator&gt;.assignment, 7<BR/>var stringify = require(&quot;json-stringify-safe&quot;)> ]
+"30064773903" [label = <&lt;operator&gt;.assignment, 9<BR/>function positionFromIndex = function positionF...> ]
+"25769804235" [label = <BLOCK, 38<BR/>export default function TransformOutput({transf...> ]
+"30064773907" [label = <&lt;operator&gt;.assignment, 75<BR/>TransformOutput.propTypes = { transformResult...> ]
+"30064773904" [label = <&lt;operator&gt;.assignment, 38<BR/>function TransformOutput = function TransformOu...> ]
+"30064773905" [label = <&lt;operator&gt;.assignment, 38<BR/>exports[&quot;default&quot;] = TransformOutput> ]
+"68719479568" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;./Editor&quot;)> ]
+"30064773816" [label = <require, 2<BR/>require(&quot;./Editor&quot;)> ]
+"68719479571" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;./JSONEditor&quot;)> ]
+"30064773817" [label = <require, 3<BR/>require(&quot;./JSONEditor&quot;)> ]
+"68719479574" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064773818" [label = <require, 4<BR/>require(&quot;prop-types&quot;)> ]
+"68719479577" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064773819" [label = <require, 5<BR/>require(&quot;react&quot;)> ]
+"68719479580" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;json-stringify-safe&quot;)> ]
+"30064773820" [label = <require, 7<BR/>require(&quot;json-stringify-safe&quot;)> ]
+"30064773909" [label = <&lt;operator&gt;.assignment, 76<BR/>_tmp_6.transformResult = PropTypes.object> ]
+"30064773912" [label = <&lt;operator&gt;.assignment, 77<BR/>_tmp_6.mode = PropTypes.string> ]
+"68719479591" [label = <IDENTIFIER, 75<BR/>_tmp_6<BR/>{ transformResult: PropTypes.object, mode: ...> ]
+  "30064773898" -> "124554051763"  [ label = "DDG: Editor"] 
+  "30064773898" -> "124554051763"  [ label = "DDG: require(&quot;./Editor&quot;)"] 
+  "30064773898" -> "124554051763"  [ label = "DDG: var Editor = require(&quot;./Editor&quot;)"] 
+  "30064773899" -> "124554051763"  [ label = "DDG: JSONEditor"] 
+  "30064773899" -> "124554051763"  [ label = "DDG: require(&quot;./JSONEditor&quot;)"] 
+  "30064773899" -> "124554051763"  [ label = "DDG: var JSONEditor = require(&quot;./JSONEditor&quot;)"] 
+  "30064773900" -> "124554051763"  [ label = "DDG: PropTypes"] 
+  "30064773900" -> "124554051763"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064773900" -> "124554051763"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064773901" -> "124554051763"  [ label = "DDG: React"] 
+  "30064773901" -> "124554051763"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064773901" -> "124554051763"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064773902" -> "124554051763"  [ label = "DDG: stringify"] 
+  "30064773820" -> "124554051763"  [ label = "DDG: this"] 
+  "30064773902" -> "124554051763"  [ label = "DDG: require(&quot;json-stringify-safe&quot;)"] 
+  "30064773902" -> "124554051763"  [ label = "DDG: var stringify = require(&quot;json-stringify-safe&quot;)"] 
+  "30064773903" -> "124554051763"  [ label = "DDG: positionFromIndex"] 
+  "30064773903" -> "124554051763"  [ label = "DDG: function positionFromIndex = function positionFromIndex(index, map) {
+  if (!map) {
+    return;
+  }
+  const src = map.sourcesContent[0];
+  if (index === 0) {
+    return { line: 0, ch: 0 };
+  }
+  let lineStart = src.lastIndexOf('\n', index - 1);
+  let column = index - lineStart - 1;
+  let line = 1;
+  while (lineStart &gt; 0) {
+      lineStart = src.lastIndexOf('\n', lineStart - 1);
+        line++;
+  }
+  if (lineStart === 0) {
+        line++;
+  }
+  ({ line, column } = map.generatedPositionFor({
+    line,
+    column,
+    source: map.sources[0],
+  }));
+  if (line === null || column === null) {
+    return;
+  }
+  return { line: line - 1, ch: column };
+}"] 
+  "30064773904" -> "124554051763"  [ label = "DDG: function TransformOutput = function TransformOutput({transformResult, mode}) {
+  // This ensures that we are rendering an empty editor as &quot;placeholder&quot; if no transform result is available yet.
+  transformResult = transformResult == null ? {result: ''} : transformResult;
+
+  const posFromIndex = React.useCallback(
+    index =&gt; positionFromIndex(index, transformResult.map),
+    [transformResult],
+  );
+
+  return (
+    &lt;div className=&quot;output highlight&quot;&gt;
+      {transformResult.error ?
+        &lt;Editor
+          highlight={false}
+          key=&quot;error&quot;
+          lineNumbers={false}
+          readOnly={true}
+          value={transformResult.error.message}
+        /&gt; : (
+          typeof transformResult.result === 'string' ?
+          &lt;Editor
+            posFromIndex={posFromIndex}
+            mode={mode}
+            key=&quot;output&quot;
+            readOnly={true}
+            value={transformResult.result}
+          /&gt; :
+          &lt;JSONEditor
+            className=&quot;container no-toolbar&quot;
+            value={stringify(transformRe..."] 
+  "30064773905" -> "124554051763"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064773905" -> "124554051763"  [ label = "DDG: TransformOutput"] 
+  "30064773905" -> "124554051763"  [ label = "DDG: exports[&quot;default&quot;] = TransformOutput"] 
+  "30064773907" -> "124554051763"  [ label = "DDG: TransformOutput.propTypes"] 
+  "30064773909" -> "124554051763"  [ label = "DDG: _tmp_6.transformResult"] 
+  "30064773909" -> "124554051763"  [ label = "DDG: PropTypes.object"] 
+  "30064773909" -> "124554051763"  [ label = "DDG: _tmp_6.transformResult = PropTypes.object"] 
+  "30064773912" -> "124554051763"  [ label = "DDG: _tmp_6.mode"] 
+  "30064773912" -> "124554051763"  [ label = "DDG: PropTypes.string"] 
+  "30064773912" -> "124554051763"  [ label = "DDG: _tmp_6.mode = PropTypes.string"] 
+  "30064773907" -> "124554051763"  [ label = "DDG: TransformOutput.propTypes = {
+  transformResult: PropTypes.object,
+  mode: PropTypes.string,
+}"] 
+  "107374182576" -> "111669150024"  [ label = "DDG: "] 
+  "30064773816" -> "30064773898"  [ label = "DDG: this"] 
+  "30064773816" -> "30064773898"  [ label = "DDG: &quot;./Editor&quot;"] 
+  "30064773817" -> "30064773899"  [ label = "DDG: this"] 
+  "30064773817" -> "30064773899"  [ label = "DDG: &quot;./JSONEditor&quot;"] 
+  "30064773818" -> "30064773900"  [ label = "DDG: this"] 
+  "30064773818" -> "30064773900"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064773819" -> "30064773901"  [ label = "DDG: this"] 
+  "30064773819" -> "30064773901"  [ label = "DDG: &quot;react&quot;"] 
+  "30064773820" -> "30064773902"  [ label = "DDG: this"] 
+  "30064773820" -> "30064773902"  [ label = "DDG: &quot;json-stringify-safe&quot;"] 
+  "107374182576" -> "30064773903"  [ label = "DDG: "] 
+  "107374182576" -> "25769804235"  [ label = "DDG: "] 
+  "30064773909" -> "30064773907"  [ label = "DDG: _tmp_6.transformResult"] 
+  "30064773912" -> "30064773907"  [ label = "DDG: _tmp_6.mode"] 
+  "107374182576" -> "30064773907"  [ label = "DDG: "] 
+  "107374182576" -> "30064773904"  [ label = "DDG: "] 
+  "30064773904" -> "30064773905"  [ label = "DDG: TransformOutput"] 
+  "107374182576" -> "30064773905"  [ label = "DDG: "] 
+  "107374182576" -> "68719479568"  [ label = "DDG: "] 
+  "111669150024" -> "30064773816"  [ label = "DDG: this"] 
+  "107374182576" -> "30064773816"  [ label = "DDG: "] 
+  "107374182576" -> "68719479571"  [ label = "DDG: "] 
+  "30064773816" -> "30064773817"  [ label = "DDG: this"] 
+  "107374182576" -> "30064773817"  [ label = "DDG: "] 
+  "107374182576" -> "68719479574"  [ label = "DDG: "] 
+  "30064773817" -> "30064773818"  [ label = "DDG: this"] 
+  "107374182576" -> "30064773818"  [ label = "DDG: "] 
+  "107374182576" -> "68719479577"  [ label = "DDG: "] 
+  "30064773818" -> "30064773819"  [ label = "DDG: this"] 
+  "107374182576" -> "30064773819"  [ label = "DDG: "] 
+  "107374182576" -> "68719479580"  [ label = "DDG: "] 
+  "30064773819" -> "30064773820"  [ label = "DDG: this"] 
+  "107374182576" -> "30064773820"  [ label = "DDG: "] 
+  "30064773900" -> "30064773909"  [ label = "DDG: PropTypes"] 
+  "30064773900" -> "30064773912"  [ label = "DDG: PropTypes"] 
+  "107374182576" -> "68719479591"  [ label = "DDG: "] 
+}

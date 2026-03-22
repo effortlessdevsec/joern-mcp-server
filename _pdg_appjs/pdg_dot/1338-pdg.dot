@@ -1,0 +1,141 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183738" [label = <METHOD, 1<BR/>:program> ]
+"124554052931" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152413" [label = <PARAM, 1<BR/>this> ]
+"30064791805" [label = <&lt;operator&gt;.assignment, 1<BR/>var selectors = require(&quot;./selectors.js&quot;)> ]
+"30064791806" [label = <&lt;operator&gt;.assignment, 2<BR/>var actions = require(&quot;./actions.js&quot;)> ]
+"30064791807" [label = <&lt;operator&gt;.assignment, 29<BR/>function loadSnippet = async function loadSnipp...> ]
+"30064791808" [label = <&lt;operator&gt;.assignment, 66<BR/>function saveSnippet = async function saveSnipp...> ]
+"30064791809" [label = <&lt;operator&gt;.assignment, 4<BR/>let clearURLOnClearError = false> ]
+"30064791810" [label = <&lt;operator&gt;.assignment, 5<BR/>let cancelLoad = () =&gt; {}> ]
+"25769807515" [label = <BLOCK, 7<BR/>export default storageAdapter =&gt; store =&gt; next ...> ]
+"30064791811" [label = <&lt;operator&gt;.assignment, 7<BR/>function &lt;lambda&gt;2 = storageAdapter =&gt; store =&gt;...> ]
+"30064791812" [label = <&lt;operator&gt;.assignment, 7<BR/>exports[&quot;default&quot;] = &lt;lambda&gt;2> ]
+"68719497375" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./selectors.js&quot;)> ]
+"30064791663" [label = <require, 1<BR/>require(&quot;./selectors.js&quot;)> ]
+"68719497378" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;./actions.js&quot;)> ]
+"30064791664" [label = <require, 2<BR/>require(&quot;./actions.js&quot;)> ]
+  "30064791805" -> "124554052931"  [ label = "DDG: selectors"] 
+  "30064791805" -> "124554052931"  [ label = "DDG: require(&quot;./selectors.js&quot;)"] 
+  "30064791805" -> "124554052931"  [ label = "DDG: var selectors = require(&quot;./selectors.js&quot;)"] 
+  "30064791806" -> "124554052931"  [ label = "DDG: actions"] 
+  "30064791664" -> "124554052931"  [ label = "DDG: this"] 
+  "30064791806" -> "124554052931"  [ label = "DDG: require(&quot;./actions.js&quot;)"] 
+  "30064791806" -> "124554052931"  [ label = "DDG: var actions = require(&quot;./actions.js&quot;)"] 
+  "30064791807" -> "124554052931"  [ label = "DDG: loadSnippet"] 
+  "30064791807" -> "124554052931"  [ label = "DDG: function loadSnippet = async function loadSnippet(state, next, storageAdapter) {
+  // Ignore changes to the URL while a snippet is being saved (that process will
+  // update the URL.
+  if (selectors.isSaving(state) || selectors.isForking(state)) {
+    return;
+  }
+
+  // Cancel any previous snippet loader (see below)
+  cancelLoad();
+  // Do not clear URL anymore, we are loading a new one
+  clearURLOnClearError = false;
+
+  next(actions.setError(null));
+  next(actions.startLoadingSnippet());
+
+  try {
+    let cancelled = false;
+    cancelLoad = () =&gt; cancelled = true;
+    const revision = await storageAdapter.fetchFromURL();
+    // revision can be null if the URL is &quot;empty&quot;
+    if (!cancelled) {
+      if (revision) {
+        next(actions.setSnippet(revision));
+      } else {
+        next(actions.clearSnippet());
+      }
+    }
+  } catch(error) {
+    const errorMessage = 'Failed to fetch revision: ' + error.message;
+
+    clearURLOnClearError = true;
+    next(actions.setError(new Error(errorMessage)));
+  } finall..."] 
+  "30064791808" -> "124554052931"  [ label = "DDG: saveSnippet"] 
+  "30064791808" -> "124554052931"  [ label = "DDG: function saveSnippet = async function saveSnippet({fork}, state, next, storageAdapter) {
+  const revision = selectors.getRevision(state);
+  const parser = selectors.getParser(state);
+  const parserSettings = selectors.getParserSettings(state);
+  const code = selectors.getCode(state);
+  const transformCode = selectors.getTransformCode(state);
+  const transformer = selectors.getTransformer(state);
+  const showTransformPanel = selectors.showTransformer(state);
+
+  const data = {
+    parserID: parser.id,
+    settings: {
+      [parser.id]: parserSettings,
+    },
+    versions: {
+      [parser.id]: parser.version,
+    },
+    filename: `source.${parser.category.fileExtension}`,
+    code,
+  };
+  if (showTransformPanel &amp;&amp; transformer) {
+    data.toolID = transformer.id;
+    data.versions[transformer.id] = transformer.version;
+    data.transform = transformCode;
+  }
+
+
+  try {
+    let newRevision;
+    if (fork) {
+      newRevision = await storageAdapter.fork(revision, data);
+    } else if (revision) {
+      newRevisio..."] 
+  "30064791809" -> "124554052931"  [ label = "DDG: clearURLOnClearError"] 
+  "30064791809" -> "124554052931"  [ label = "DDG: let clearURLOnClearError = false"] 
+  "30064791810" -> "124554052931"  [ label = "DDG: cancelLoad"] 
+  "30064791810" -> "124554052931"  [ label = "DDG: let cancelLoad = () =&gt; {}"] 
+  "30064791811" -> "124554052931"  [ label = "DDG: function &lt;lambda&gt;2 = storageAdapter =&gt; store =&gt; next =&gt; action =&gt; {
+  switch (action.type) {
+    case actions.CLEAR_ERROR:
+      // If CLEAR_ERROR action happens after a URL was loaded, clear the URL
+      if (clearURLOnClearError) {
+        clearURLOnClearError = false;
+        global.location.hash = '';
+      }
+      return next(action);
+    case actions.LOAD_SNIPPET:
+      return loadSnippet(store.getState(), next, storageAdapter);
+    case actions.SAVE:
+      next(actions.startSave(action.fork));
+      saveSnippet(action, store.getState(), next, storageAdapter)
+        .then(() =&gt; next(actions.endSave(action.fork)));
+      break;
+    default:
+      // Pass on
+      return next(action);
+  }
+}"] 
+  "30064791812" -> "124554052931"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064791812" -> "124554052931"  [ label = "DDG: &lt;lambda&gt;2"] 
+  "30064791812" -> "124554052931"  [ label = "DDG: exports[&quot;default&quot;] = &lt;lambda&gt;2"] 
+  "107374183738" -> "111669152413"  [ label = "DDG: "] 
+  "30064791663" -> "30064791805"  [ label = "DDG: this"] 
+  "30064791663" -> "30064791805"  [ label = "DDG: &quot;./selectors.js&quot;"] 
+  "30064791664" -> "30064791806"  [ label = "DDG: this"] 
+  "30064791664" -> "30064791806"  [ label = "DDG: &quot;./actions.js&quot;"] 
+  "107374183738" -> "30064791807"  [ label = "DDG: "] 
+  "107374183738" -> "30064791808"  [ label = "DDG: "] 
+  "107374183738" -> "30064791809"  [ label = "DDG: "] 
+  "107374183738" -> "30064791810"  [ label = "DDG: "] 
+  "107374183738" -> "25769807515"  [ label = "DDG: "] 
+  "107374183738" -> "30064791811"  [ label = "DDG: "] 
+  "30064791811" -> "30064791812"  [ label = "DDG: &lt;lambda&gt;2"] 
+  "107374183738" -> "30064791812"  [ label = "DDG: "] 
+  "107374183738" -> "68719497375"  [ label = "DDG: "] 
+  "111669152413" -> "30064791663"  [ label = "DDG: this"] 
+  "107374183738" -> "30064791663"  [ label = "DDG: "] 
+  "107374183738" -> "68719497378"  [ label = "DDG: "] 
+  "30064791663" -> "30064791664"  [ label = "DDG: this"] 
+  "107374183738" -> "30064791664"  [ label = "DDG: "] 
+}

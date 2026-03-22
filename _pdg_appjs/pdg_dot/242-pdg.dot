@@ -1,0 +1,196 @@
+digraph "Tree" {  
+node [shape="rect"];  
+"107374182642" [label = <METHOD, 46<BR/>Tree> ]
+"124554051829" [label = <METHOD_RETURN, 46<BR/>ANY> ]
+"111669150125" [label = <PARAM, 46<BR/>this> ]
+"111669150126" [label = <PARAM, 46<BR/>{parseResult, position}> ]
+"30064774848" [label = <&lt;operator&gt;.assignment, 46<BR/>parseResult = param1_0.parseResult> ]
+"30064774850" [label = <&lt;operator&gt;.assignment, 46<BR/>position = param1_0.position> ]
+"25769804376" [label = <BLOCK, 47<BR/>const [settings, updateSettings] = useReducer(r...> ]
+"30064774858" [label = <&lt;operator&gt;.assignment, 48<BR/>const treeAdapter = useMemo( () =&gt; treeAdap...> ]
+"30064774867" [label = <&lt;operator&gt;.assignment, 52<BR/>const rootElement = useRef()> ]
+"30064774869" [label = <focusNodes, 54<BR/>focusNodes('init')> ]
+"30064774870" [label = <useLayoutEffect, 55<BR/>useLayoutEffect(() =&gt; { focusNodes('focus',...> ]
+"141733920924" [label = <RETURN, 59<BR/>return ( &lt;div className=&quot;tree-visualization...> ]
+"30064774852" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_5 = useReducer(reducer, null, initSettings)> ]
+"30064774854" [label = <&lt;operator&gt;.assignment, 47<BR/>settings = _tmp_5[0]> ]
+"30064774856" [label = <&lt;operator&gt;.assignment, 47<BR/>updateSettings = _tmp_5[1]> ]
+"68719480451" [label = <IDENTIFIER, 47<BR/>_tmp_5<BR/>const [settings, updateSettings] = useReducer(r...> ]
+"68719480466" [label = <IDENTIFIER, 54<BR/>focusNodes<BR/>focusNodes('init')> ]
+"68719480468" [label = <IDENTIFIER, 55<BR/>useLayoutEffect<BR/>useLayoutEffect(() =&gt; { focusNodes('focus',...> ]
+"154618823584" [label = <TEMPLATE_DOM, 60<BR/>&lt;div className=&quot;tree-visualization container&quot;&gt; ...> ]
+"68719480453" [label = <IDENTIFIER, 48<BR/>useMemo<BR/>useMemo( () =&gt; treeAdapterFromParseResult(p...> ]
+"30064774859" [label = <useMemo, 48<BR/>useMemo( () =&gt; treeAdapterFromParseResult(p...> ]
+"68719480464" [label = <IDENTIFIER, 52<BR/>useRef<BR/>useRef()> ]
+"30064774868" [label = <useRef, 52<BR/>useRef()> ]
+"68719480443" [label = <IDENTIFIER, 47<BR/>useReducer<BR/>useReducer(reducer, null, initSettings)> ]
+"30064774853" [label = <useReducer, 47<BR/>useReducer(reducer, null, initSettings)> ]
+"30064774860" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064774862" [label = <, 50<BR/>_tmp_6.push(parseResult.treeAdapter)> ]
+"30064774865" [label = <, 50<BR/>_tmp_6.push(settings)> ]
+"68719480462" [label = <IDENTIFIER, 50<BR/>_tmp_6<BR/>[parseResult.treeAdapter, settings]> ]
+"90194314039" [label = <LITERAL, 60<BR/>&quot;tree-visualization container&quot;<BR/>className=&quot;tree-visualization container&quot;> ]
+"30064774872" [label = <map, 67<BR/>treeAdapter.getConfigurableFilters().map(filter...> ]
+"90194314040" [label = <LITERAL, 61<BR/>&quot;toolbar&quot;<BR/>className=&quot;toolbar&quot;> ]
+"30064774871" [label = <makeCheckbox, 63<BR/>makeCheckbox('autofocus', settings, updateSetti...> ]
+"90194314041" [label = <LITERAL, 62<BR/>&quot;Auto open the node at the cursor in the source...<BR/>title=&quot;Auto open the node at the cursor in the ...> ]
+"68719480470" [label = <IDENTIFIER, 63<BR/>makeCheckbox<BR/>makeCheckbox('autofocus', settings, updateSetti...> ]
+"68719480478" [label = <IDENTIFIER, 77<BR/>rootElement<BR/>{rootElement}> ]
+"120259084435" [label = <METHOD_REF, 77<BR/>&lt;lambda&gt;4<BR/>{() =&gt; {publish('CLEAR_HIGHLIGHT');}}> ]
+"30064774874" [label = <&lt;operator&gt;.assignment, 67<BR/>(_tmp_7 = treeAdapter.getConfigurableFilters())> ]
+"30064774875" [label = <getConfigurableFilters, 67<BR/>treeAdapter.getConfigurableFilters()> ]
+"90194314043" [label = <LITERAL, 81<BR/>0<BR/>{0}> ]
+"68719480480" [label = <IDENTIFIER, 82<BR/>treeAdapter<BR/>{treeAdapter}> ]
+"68719480482" [label = <IDENTIFIER, 84<BR/>position<BR/>{position}> ]
+  "141733920924" -> "124554051829"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150126" -> "124554051829"  [ label = "DDG: param1_0"] 
+  "30064774848" -> "124554051829"  [ label = "DDG: parseResult"] 
+  "30064774848" -> "124554051829"  [ label = "DDG: param1_0.parseResult"] 
+  "30064774848" -> "124554051829"  [ label = "DDG: parseResult = param1_0.parseResult"] 
+  "30064774850" -> "124554051829"  [ label = "DDG: position"] 
+  "30064774850" -> "124554051829"  [ label = "DDG: param1_0.position"] 
+  "30064774850" -> "124554051829"  [ label = "DDG: position = param1_0.position"] 
+  "30064774852" -> "124554051829"  [ label = "DDG: _tmp_5"] 
+  "30064774853" -> "124554051829"  [ label = "DDG: reducer"] 
+  "30064774853" -> "124554051829"  [ label = "DDG: initSettings"] 
+  "30064774852" -> "124554051829"  [ label = "DDG: useReducer(reducer, null, initSettings)"] 
+  "30064774852" -> "124554051829"  [ label = "DDG: _tmp_5 = useReducer(reducer, null, initSettings)"] 
+  "30064774854" -> "124554051829"  [ label = "DDG: _tmp_5[0]"] 
+  "30064774854" -> "124554051829"  [ label = "DDG: settings = _tmp_5[0]"] 
+  "30064774856" -> "124554051829"  [ label = "DDG: _tmp_5[1]"] 
+  "30064774856" -> "124554051829"  [ label = "DDG: updateSettings = _tmp_5[1]"] 
+  "30064774860" -> "124554051829"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064774860" -> "124554051829"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064774862" -> "124554051829"  [ label = "DDG: parseResult.treeAdapter"] 
+  "30064774862" -> "124554051829"  [ label = "DDG: _tmp_6.push(parseResult.treeAdapter)"] 
+  "30064774865" -> "124554051829"  [ label = "DDG: _tmp_6"] 
+  "30064774865" -> "124554051829"  [ label = "DDG: _tmp_6.push(settings)"] 
+  "30064774858" -> "124554051829"  [ label = "DDG: useMemo(
+    () =&gt; treeAdapterFromParseResult(parseResult, settings),
+    [parseResult.treeAdapter, settings],
+  )"] 
+  "30064774858" -> "124554051829"  [ label = "DDG: const treeAdapter = useMemo(
+    () =&gt; treeAdapterFromParseResult(parseResult, settings),
+    [parseResult.treeAdapter, settings],
+  )"] 
+  "30064774867" -> "124554051829"  [ label = "DDG: rootElement"] 
+  "30064774867" -> "124554051829"  [ label = "DDG: useRef()"] 
+  "30064774867" -> "124554051829"  [ label = "DDG: const rootElement = useRef()"] 
+  "30064774869" -> "124554051829"  [ label = "DDG: focusNodes('init')"] 
+  "30064774870" -> "124554051829"  [ label = "DDG: useLayoutEffect(() =&gt; {
+    focusNodes('focus', rootElement);
+  })"] 
+  "30064774871" -> "124554051829"  [ label = "DDG: this"] 
+  "30064774871" -> "124554051829"  [ label = "DDG: settings"] 
+  "30064774871" -> "124554051829"  [ label = "DDG: updateSettings"] 
+  "30064774871" -> "124554051829"  [ label = "DDG: makeCheckbox('autofocus', settings, updateSettings)"] 
+  "30064774875" -> "124554051829"  [ label = "DDG: treeAdapter"] 
+  "30064774874" -> "124554051829"  [ label = "DDG: treeAdapter.getConfigurableFilters()"] 
+  "30064774872" -> "124554051829"  [ label = "DDG: _tmp_7"] 
+  "30064774872" -> "124554051829"  [ label = "DDG: treeAdapter.getConfigurableFilters().map(filter =&gt; (
+          &lt;span key={filter.key}&gt;
+            &lt;label&gt;
+              {makeCheckbox(filter.key, settings, updateSettings)}
+              {filter.label}
+            &lt;/label&gt;
+            &amp;#8203;
+          &lt;/span&gt;
+        ))"] 
+  "107374182642" -> "111669150125"  [ label = "DDG: "] 
+  "107374182642" -> "111669150126"  [ label = "DDG: "] 
+  "111669150126" -> "30064774848"  [ label = "DDG: param1_0"] 
+  "111669150126" -> "30064774850"  [ label = "DDG: param1_0"] 
+  "107374182642" -> "25769804376"  [ label = "DDG: "] 
+  "30064774859" -> "30064774858"  [ label = "DDG: this"] 
+  "30064774859" -> "30064774858"  [ label = "DDG: &lt;lambda&gt;1"] 
+  "30064774859" -> "30064774858"  [ label = "DDG: [parseResult.treeAdapter, settings]"] 
+  "30064774859" -> "30064774858"  [ label = "DDG: "] 
+  "30064774868" -> "30064774867"  [ label = "DDG: this"] 
+  "154618823584" -> "141733920924"  [ label = "DDG: &lt;div className=&quot;tree-visualization container&quot;&gt;
+      &lt;div className=&quot;toolbar&quot;&gt;
+        &lt;label title=&quot;Auto open the node at the cursor in the source code&quot;&gt;
+          {makeCheckbox('autofocus', settings, updateSettings)}
+          Autofocus
+        &lt;/label&gt;
+        &amp;#8203;
+        {treeAdapter.getConfigurableFilters().map(filter =&gt; (
+          &lt;span key={filter.key}&gt;
+            &lt;label&gt;
+              {makeCheckbox(filter.key, settings, updateSettings)}
+              {filter.label}
+            &lt;/label&gt;
+            &amp;#8203;
+          &lt;/span&gt;
+        ))}
+      &lt;/div&gt;
+      &lt;ul ref={rootElement} onMouseLeave={() =&gt; {publish('CLEAR_HIGHLIGHT');}}&gt;
+        &lt;SelectedNodeProvider&gt;
+          &lt;Element
+            value={parseResult.ast}
+            level={0}
+            treeAdapter={treeAdapter}
+            autofocus={settings.autofocus}
+            position={position}
+          /&gt;
+        &lt;/SelectedNodeProvider&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;"] 
+  "107374182642" -> "141733920924"  [ label = "DDG: "] 
+  "30064774853" -> "30064774852"  [ label = "DDG: this"] 
+  "30064774853" -> "30064774852"  [ label = "DDG: reducer"] 
+  "30064774853" -> "30064774852"  [ label = "DDG: null"] 
+  "30064774853" -> "30064774852"  [ label = "DDG: initSettings"] 
+  "30064774852" -> "30064774854"  [ label = "DDG: _tmp_5"] 
+  "30064774852" -> "30064774856"  [ label = "DDG: _tmp_5"] 
+  "107374182642" -> "68719480451"  [ label = "DDG: "] 
+  "30064774888" -> "68719480466"  [ label = "DDG: focusNodes"] 
+  "107374182642" -> "68719480466"  [ label = "DDG: "] 
+  "30064774868" -> "30064774869"  [ label = "DDG: this"] 
+  "107374182642" -> "30064774869"  [ label = "DDG: "] 
+  "30064774900" -> "68719480468"  [ label = "DDG: useLayoutEffect"] 
+  "107374182642" -> "68719480468"  [ label = "DDG: "] 
+  "30064774869" -> "30064774870"  [ label = "DDG: this"] 
+  "107374182642" -> "30064774870"  [ label = "DDG: "] 
+  "30064774896" -> "68719480453"  [ label = "DDG: useMemo"] 
+  "107374182642" -> "68719480453"  [ label = "DDG: "] 
+  "30064774853" -> "30064774859"  [ label = "DDG: this"] 
+  "107374182642" -> "30064774859"  [ label = "DDG: "] 
+  "30064774865" -> "30064774859"  [ label = "DDG: _tmp_6"] 
+  "30064774898" -> "68719480464"  [ label = "DDG: useRef"] 
+  "107374182642" -> "68719480464"  [ label = "DDG: "] 
+  "30064774859" -> "30064774868"  [ label = "DDG: this"] 
+  "107374182642" -> "30064774868"  [ label = "DDG: "] 
+  "30064774894" -> "68719480443"  [ label = "DDG: useReducer"] 
+  "107374182642" -> "68719480443"  [ label = "DDG: "] 
+  "111669150125" -> "30064774853"  [ label = "DDG: this"] 
+  "107374182642" -> "30064774853"  [ label = "DDG: "] 
+  "30064774891" -> "30064774853"  [ label = "DDG: reducer"] 
+  "30064774890" -> "30064774853"  [ label = "DDG: initSettings"] 
+  "107374182642" -> "30064774860"  [ label = "DDG: "] 
+  "107374182642" -> "68719480462"  [ label = "DDG: "] 
+  "30064774860" -> "30064774862"  [ label = "DDG: _tmp_6"] 
+  "107374182642" -> "30064774862"  [ label = "DDG: "] 
+  "30064774848" -> "30064774862"  [ label = "DDG: parseResult"] 
+  "30064774862" -> "30064774865"  [ label = "DDG: _tmp_6"] 
+  "107374182642" -> "30064774865"  [ label = "DDG: "] 
+  "30064774854" -> "30064774865"  [ label = "DDG: settings"] 
+  "107374182642" -> "90194314039"  [ label = "DDG: "] 
+  "107374182642" -> "90194314040"  [ label = "DDG: "] 
+  "30064774874" -> "30064774872"  [ label = "DDG: _tmp_7"] 
+  "107374182642" -> "30064774872"  [ label = "DDG: "] 
+  "107374182642" -> "90194314041"  [ label = "DDG: "] 
+  "30064774892" -> "68719480470"  [ label = "DDG: makeCheckbox"] 
+  "107374182642" -> "68719480470"  [ label = "DDG: "] 
+  "30064774870" -> "30064774871"  [ label = "DDG: this"] 
+  "107374182642" -> "30064774871"  [ label = "DDG: "] 
+  "30064774865" -> "30064774871"  [ label = "DDG: settings"] 
+  "30064774856" -> "30064774871"  [ label = "DDG: updateSettings"] 
+  "107374182642" -> "68719480478"  [ label = "DDG: "] 
+  "107374182642" -> "120259084435"  [ label = "DDG: "] 
+  "30064774875" -> "30064774874"  [ label = "DDG: treeAdapter"] 
+  "30064774858" -> "30064774875"  [ label = "DDG: treeAdapter"] 
+  "107374182642" -> "30064774875"  [ label = "DDG: "] 
+  "107374182642" -> "90194314043"  [ label = "DDG: "] 
+  "107374182642" -> "68719480480"  [ label = "DDG: "] 
+  "107374182642" -> "68719480482"  [ label = "DDG: "] 
+}

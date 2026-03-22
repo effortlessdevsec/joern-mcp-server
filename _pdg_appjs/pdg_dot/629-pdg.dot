@@ -1,0 +1,235 @@
+digraph "_getSettingsConfiguration" {  
+node [shape="rect"];  
+"107374183029" [label = <METHOD, 62<BR/>_getSettingsConfiguration> ]
+"124554052216" [label = <METHOD_RETURN, 62<BR/>{ fields: (string | (string | __ecma.String[])[] | { key: __ecma.String; title: __ecma.String; fields: __ecma.String[]; settings: (settings: ANY) =&gt; ANY; values?: ANY; update?: ANY; } | { key: __ecma.String; title: __ecma.String; fields: __ecma.String[]; settings: (settings: ANY) =&gt; ANY; values: (plugins: ANY) =&gt; __ecma.Object; update: (plugins: ANY, name: ANY, value: __ecma.Array; }> ]
+"111669150937" [label = <PARAM, 62<BR/>this> ]
+"111669150938" [label = <PARAM, 62<BR/>defaultOptions> ]
+"141733921238" [label = <RETURN, 63<BR/>return { fields: [ ['sourceType',...> ]
+"25769805443" [label = <BLOCK, 63<BR/>{ fields: [ ['sourceType', ['modu...> ]
+"30064780825" [label = <&lt;operator&gt;.assignment, 64<BR/>_tmp_8.fields = [ ['sourceType', ['modu...> ]
+"68719486627" [label = <IDENTIFIER, 63<BR/>_tmp_8<BR/>{ fields: [ ['sourceType', ['modu...> ]
+"30064780827" [label = <&lt;operator&gt;.assignment, 64<BR/>_tmp_9 = __ecma.Array.factory()> ]
+"30064780829" [label = <, 65<BR/>_tmp_9.push(['sourceType', ['module', 'script']])> ]
+"30064780843" [label = <, 66<BR/>_tmp_9.push(&quot;allowReserved&quot;)> ]
+"30064780845" [label = <, 67<BR/>_tmp_9.push(&quot;allowReturnOutsideFunction&quot;)> ]
+"30064780847" [label = <, 68<BR/>_tmp_9.push(&quot;strictMode&quot;)> ]
+"30064780849" [label = <, 69<BR/>_tmp_9.push(&quot;tokens&quot;)> ]
+"30064780851" [label = <, 70<BR/>_tmp_9.push({ key: 'features', ...> ]
+"30064780863" [label = <, 76<BR/>_tmp_9.push({ key: 'plugins', ...> ]
+"68719486626" [label = <IDENTIFIER, 64<BR/>_tmp_9<BR/>[ ['sourceType', ['module', 'script']],...> ]
+"30064780831" [label = <&lt;operator&gt;.assignment, 65<BR/>_tmp_10 = __ecma.Array.factory()> ]
+"30064780833" [label = <, 65<BR/>_tmp_10.push(&quot;sourceType&quot;)> ]
+"30064780835" [label = <, 65<BR/>_tmp_10.push(['module', 'script'])> ]
+"68719486599" [label = <IDENTIFIER, 65<BR/>_tmp_10<BR/>['sourceType', ['module', 'script']]> ]
+"30064780853" [label = <&lt;operator&gt;.assignment, 71<BR/>_tmp_12.key = &quot;features&quot;> ]
+"30064780855" [label = <&lt;operator&gt;.assignment, 72<BR/>_tmp_12.title = &quot;Features&quot;> ]
+"30064780857" [label = <&lt;operator&gt;.assignment, 73<BR/>_tmp_12.fields = Object.keys(defaultOptions.fea...> ]
+"30064780861" [label = <&lt;operator&gt;.assignment, 74<BR/>_tmp_12.settings = &lt;lambda&gt;0> ]
+"68719486615" [label = <IDENTIFIER, 70<BR/>_tmp_12<BR/>{ key: 'features', title: '...> ]
+"30064780865" [label = <&lt;operator&gt;.assignment, 77<BR/>_tmp_14.key = &quot;plugins&quot;> ]
+"30064780867" [label = <&lt;operator&gt;.assignment, 78<BR/>_tmp_14.title = &quot;Plugins&quot;> ]
+"30064780869" [label = <&lt;operator&gt;.assignment, 79<BR/>_tmp_14.fields = Object.keys(defaultOptions.plu...> ]
+"30064780873" [label = <&lt;operator&gt;.assignment, 80<BR/>_tmp_14.settings = &lt;lambda&gt;1> ]
+"30064780875" [label = <&lt;operator&gt;.assignment, 81<BR/>_tmp_14.values = &lt;lambda&gt;2> ]
+"30064780877" [label = <&lt;operator&gt;.assignment, 85<BR/>_tmp_14.update = &lt;lambda&gt;4> ]
+"68719486625" [label = <IDENTIFIER, 76<BR/>_tmp_14<BR/>{ key: 'plugins', title: 'P...> ]
+"30064780837" [label = <&lt;operator&gt;.assignment, 65<BR/>_tmp_11 = __ecma.Array.factory()> ]
+"30064780839" [label = <, 65<BR/>_tmp_11.push(&quot;module&quot;)> ]
+"30064780841" [label = <, 65<BR/>_tmp_11.push(&quot;script&quot;)> ]
+"68719486598" [label = <IDENTIFIER, 65<BR/>_tmp_11<BR/>['module', 'script']> ]
+"30064780859" [label = <keys, 73<BR/>Object.keys(defaultOptions.features)> ]
+"30064780871" [label = <keys, 79<BR/>Object.keys(defaultOptions.plugins)> ]
+  "141733921238" -> "124554052216"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150937" -> "124554052216"  [ label = "DDG: this"] 
+  "111669150938" -> "124554052216"  [ label = "DDG: defaultOptions"] 
+  "30064780825" -> "124554052216"  [ label = "DDG: _tmp_8.fields"] 
+  "30064780827" -> "124554052216"  [ label = "DDG: _tmp_9 = __ecma.Array.factory()"] 
+  "30064780831" -> "124554052216"  [ label = "DDG: _tmp_10 = __ecma.Array.factory()"] 
+  "30064780833" -> "124554052216"  [ label = "DDG: _tmp_10.push(&quot;sourceType&quot;)"] 
+  "30064780835" -> "124554052216"  [ label = "DDG: _tmp_10"] 
+  "30064780837" -> "124554052216"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064780837" -> "124554052216"  [ label = "DDG: _tmp_11 = __ecma.Array.factory()"] 
+  "30064780839" -> "124554052216"  [ label = "DDG: _tmp_11.push(&quot;module&quot;)"] 
+  "30064780841" -> "124554052216"  [ label = "DDG: _tmp_11"] 
+  "30064780841" -> "124554052216"  [ label = "DDG: _tmp_11.push(&quot;script&quot;)"] 
+  "30064780835" -> "124554052216"  [ label = "DDG: _tmp_10.push(['module', 'script'])"] 
+  "30064780829" -> "124554052216"  [ label = "DDG: _tmp_9.push(['sourceType', ['module', 'script']])"] 
+  "30064780843" -> "124554052216"  [ label = "DDG: _tmp_9.push(&quot;allowReserved&quot;)"] 
+  "30064780845" -> "124554052216"  [ label = "DDG: _tmp_9.push(&quot;allowReturnOutsideFunction&quot;)"] 
+  "30064780847" -> "124554052216"  [ label = "DDG: _tmp_9.push(&quot;strictMode&quot;)"] 
+  "30064780849" -> "124554052216"  [ label = "DDG: _tmp_9.push(&quot;tokens&quot;)"] 
+  "30064780853" -> "124554052216"  [ label = "DDG: _tmp_12.key"] 
+  "30064780853" -> "124554052216"  [ label = "DDG: _tmp_12.key = &quot;features&quot;"] 
+  "30064780855" -> "124554052216"  [ label = "DDG: _tmp_12.title"] 
+  "30064780855" -> "124554052216"  [ label = "DDG: _tmp_12.title = &quot;Features&quot;"] 
+  "30064780857" -> "124554052216"  [ label = "DDG: _tmp_12.fields"] 
+  "30064780859" -> "124554052216"  [ label = "DDG: defaultOptions.features"] 
+  "30064780857" -> "124554052216"  [ label = "DDG: Object.keys(defaultOptions.features)"] 
+  "30064780857" -> "124554052216"  [ label = "DDG: _tmp_12.fields = Object.keys(defaultOptions.features)"] 
+  "30064780861" -> "124554052216"  [ label = "DDG: _tmp_12.settings"] 
+  "30064780861" -> "124554052216"  [ label = "DDG: _tmp_12.settings = &lt;lambda&gt;0"] 
+  "30064780851" -> "124554052216"  [ label = "DDG: _tmp_9.push({
+          key: 'features',
+          title: 'Features',
+          fields: Object.keys(defaultOptions.features),
+          settings: settings =&gt; settings.features || {...defaultOptions.features},
+        })"] 
+  "30064780863" -> "124554052216"  [ label = "DDG: _tmp_9"] 
+  "30064780865" -> "124554052216"  [ label = "DDG: _tmp_14.key"] 
+  "30064780865" -> "124554052216"  [ label = "DDG: _tmp_14.key = &quot;plugins&quot;"] 
+  "30064780867" -> "124554052216"  [ label = "DDG: _tmp_14.title"] 
+  "30064780867" -> "124554052216"  [ label = "DDG: _tmp_14.title = &quot;Plugins&quot;"] 
+  "30064780869" -> "124554052216"  [ label = "DDG: _tmp_14.fields"] 
+  "30064780871" -> "124554052216"  [ label = "DDG: defaultOptions.plugins"] 
+  "30064780869" -> "124554052216"  [ label = "DDG: Object.keys(defaultOptions.plugins)"] 
+  "30064780869" -> "124554052216"  [ label = "DDG: _tmp_14.fields = Object.keys(defaultOptions.plugins)"] 
+  "30064780873" -> "124554052216"  [ label = "DDG: _tmp_14.settings"] 
+  "30064780873" -> "124554052216"  [ label = "DDG: _tmp_14.settings = &lt;lambda&gt;1"] 
+  "30064780875" -> "124554052216"  [ label = "DDG: _tmp_14.values"] 
+  "30064780875" -> "124554052216"  [ label = "DDG: _tmp_14.values = &lt;lambda&gt;2"] 
+  "30064780877" -> "124554052216"  [ label = "DDG: _tmp_14.update"] 
+  "30064780877" -> "124554052216"  [ label = "DDG: _tmp_14.update = &lt;lambda&gt;4"] 
+  "30064780863" -> "124554052216"  [ label = "DDG: _tmp_9.push({
+          key: 'plugins',
+          title: 'Plugins',
+          fields: Object.keys(defaultOptions.plugins),
+          settings: settings =&gt; settings.plugins || {...defaultOptions.plugins},
+          values: plugins =&gt; Object.keys(defaultOptions.plugins).reduce(
+            (obj, name) =&gt; ((obj[name] = name in plugins), obj),
+            {},
+          ),
+          update: (plugins, name, value) =&gt; {
+            if (value) {
+              return {...plugins, [name]: true};
+            }
+            plugins = {...plugins};
+            delete plugins[name];
+            return plugins;
+          },
+        })"] 
+  "30064780825" -> "124554052216"  [ label = "DDG: _tmp_8.fields = [
+        ['sourceType', ['module', 'script']],
+        'allowReserved',
+        'allowReturnOutsideFunction',
+        'strictMode',
+        'tokens',
+        {
+          key: 'features',
+          title: 'Features',
+          fields: Object.keys(defaultOptions.features),
+          settings: settings =&gt; settings.features || {...defaultOptions.features},
+        },
+        {
+          key: 'plugins',
+          title: 'Plugins',
+          fields: Object.keys(defaultOptions.plugins),
+          settings: settings =&gt; settings.plugins || {...defaultOptions.plugins},
+          values: plugins =&gt; Object.keys(defaultOptions.plugins).reduce(
+            (obj, name) =&gt; ((obj[name] = name in plugins), obj),
+            {},
+          ),
+          update: (plugins, name, value) =&gt; {
+            if (value) {
+              return {...plugins, [name]: true};
+            }
+            plugins = {...plugins};
+            delete plugins[name];
+            return plugins;
+          },
+        },
+      ]"] 
+  "107374183029" -> "111669150937"  [ label = "DDG: "] 
+  "107374183029" -> "111669150938"  [ label = "DDG: "] 
+  "25769805443" -> "141733921238"  [ label = "DDG: "] 
+  "25769805443" -> "141733921238"  [ label = "DDG: {
+      fields: [
+        ['sourceType', ['module', 'script']],
+        'allowReserved',
+        'allowReturnOutsideFunction',
+        'strictMode',
+        'tokens',
+        {
+          key: 'features',
+          title: 'Features',
+          fields: Object.keys(defaultOptions.features),
+          settings: settings =&gt; settings.features || {...defaultOptions.features},
+        },
+        {
+          key: 'plugins',
+          title: 'Plugins',
+          fields: Object.keys(defaultOptions.plugins),
+          settings: settings =&gt; settings.plugins || {...defaultOptions.plugins},
+          values: plugins =&gt; Object.keys(defaultOptions.plugins).reduce(
+            (obj, name) =&gt; ((obj[name] = name in plugins), obj),
+            {},
+          ),
+          update: (plugins, name, value) =&gt; {
+            if (value) {
+              return {...plugins, [name]: true};
+            }
+            plugins = {...plugins};
+            delete plugins[name];
+            return plugins;
+          },
+  ..."] 
+  "107374183029" -> "141733921238"  [ label = "DDG: "] 
+  "30064780825" -> "25769805443"  [ label = "DDG: _tmp_8.fields"] 
+  "107374183029" -> "25769805443"  [ label = "DDG: "] 
+  "30064780863" -> "30064780825"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780825"  [ label = "DDG: "] 
+  "107374183029" -> "68719486627"  [ label = "DDG: "] 
+  "107374183029" -> "30064780827"  [ label = "DDG: "] 
+  "107374183029" -> "68719486626"  [ label = "DDG: "] 
+  "30064780827" -> "30064780829"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780829"  [ label = "DDG: "] 
+  "30064780835" -> "30064780829"  [ label = "DDG: _tmp_10"] 
+  "30064780829" -> "30064780843"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780843"  [ label = "DDG: "] 
+  "30064780843" -> "30064780845"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780845"  [ label = "DDG: "] 
+  "30064780845" -> "30064780847"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780847"  [ label = "DDG: "] 
+  "30064780847" -> "30064780849"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780849"  [ label = "DDG: "] 
+  "30064780849" -> "30064780851"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780851"  [ label = "DDG: "] 
+  "30064780853" -> "30064780851"  [ label = "DDG: _tmp_12.key"] 
+  "30064780855" -> "30064780851"  [ label = "DDG: _tmp_12.title"] 
+  "30064780857" -> "30064780851"  [ label = "DDG: _tmp_12.fields"] 
+  "30064780861" -> "30064780851"  [ label = "DDG: _tmp_12.settings"] 
+  "30064780851" -> "30064780863"  [ label = "DDG: _tmp_9"] 
+  "107374183029" -> "30064780863"  [ label = "DDG: "] 
+  "30064780865" -> "30064780863"  [ label = "DDG: _tmp_14.key"] 
+  "30064780867" -> "30064780863"  [ label = "DDG: _tmp_14.title"] 
+  "30064780869" -> "30064780863"  [ label = "DDG: _tmp_14.fields"] 
+  "30064780873" -> "30064780863"  [ label = "DDG: _tmp_14.settings"] 
+  "30064780875" -> "30064780863"  [ label = "DDG: _tmp_14.values"] 
+  "30064780877" -> "30064780863"  [ label = "DDG: _tmp_14.update"] 
+  "107374183029" -> "30064780831"  [ label = "DDG: "] 
+  "107374183029" -> "68719486599"  [ label = "DDG: "] 
+  "107374183029" -> "30064780853"  [ label = "DDG: "] 
+  "107374183029" -> "30064780855"  [ label = "DDG: "] 
+  "30064780859" -> "30064780857"  [ label = "DDG: defaultOptions.features"] 
+  "107374183029" -> "30064780861"  [ label = "DDG: "] 
+  "107374183029" -> "68719486615"  [ label = "DDG: "] 
+  "107374183029" -> "30064780865"  [ label = "DDG: "] 
+  "107374183029" -> "30064780867"  [ label = "DDG: "] 
+  "30064780871" -> "30064780869"  [ label = "DDG: defaultOptions.plugins"] 
+  "107374183029" -> "30064780873"  [ label = "DDG: "] 
+  "107374183029" -> "30064780875"  [ label = "DDG: "] 
+  "107374183029" -> "30064780877"  [ label = "DDG: "] 
+  "107374183029" -> "68719486625"  [ label = "DDG: "] 
+  "30064780831" -> "30064780833"  [ label = "DDG: _tmp_10"] 
+  "107374183029" -> "30064780833"  [ label = "DDG: "] 
+  "30064780833" -> "30064780835"  [ label = "DDG: _tmp_10"] 
+  "107374183029" -> "30064780835"  [ label = "DDG: "] 
+  "30064780841" -> "30064780835"  [ label = "DDG: _tmp_11"] 
+  "107374183029" -> "30064780837"  [ label = "DDG: "] 
+  "107374183029" -> "68719486598"  [ label = "DDG: "] 
+  "111669150938" -> "30064780859"  [ label = "DDG: defaultOptions"] 
+  "111669150938" -> "30064780871"  [ label = "DDG: defaultOptions"] 
+  "30064780837" -> "30064780839"  [ label = "DDG: _tmp_11"] 
+  "107374183029" -> "30064780839"  [ label = "DDG: "] 
+  "30064780839" -> "30064780841"  [ label = "DDG: _tmp_11"] 
+  "107374183029" -> "30064780841"  [ label = "DDG: "] 
+}

@@ -1,0 +1,8 @@
+digraph "&lt;init&gt;" {  
+node [shape="rect"];  
+"107374182589" [label = <METHOD, 5<BR/>&lt;init&gt;> ]
+"124554051772" [label = <METHOD_RETURN, 5<BR/>ANY> ]
+"111669150037" [label = <PARAM, 5<BR/>this> ]
+  "111669150037" -> "124554051772"  [ label = "DDG: this"] 
+  "107374182589" -> "111669150037"  [ label = "DDG: "] 
+}

@@ -1,0 +1,24 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183562" [label = <METHOD, 37<BR/>getDefaultOptions> ]
+"124554052745" [label = <METHOD_RETURN, 37<BR/>{ concrete: __ecma.Boolean; }> ]
+"111669152057" [label = <PARAM, 37<BR/>this> ]
+"141733921615" [label = <RETURN, 38<BR/>return { concrete: false, }> ]
+"25769807005" [label = <BLOCK, 38<BR/>{ concrete: false, }> ]
+"30064789581" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_4.concrete = false> ]
+"68719495165" [label = <IDENTIFIER, 38<BR/>_tmp_4<BR/>{ concrete: false, }> ]
+  "141733921615" -> "124554052745"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152057" -> "124554052745"  [ label = "DDG: this"] 
+  "30064789581" -> "124554052745"  [ label = "DDG: _tmp_4.concrete"] 
+  "30064789581" -> "124554052745"  [ label = "DDG: _tmp_4.concrete = false"] 
+  "107374183562" -> "111669152057"  [ label = "DDG: "] 
+  "25769807005" -> "141733921615"  [ label = "DDG: "] 
+  "25769807005" -> "141733921615"  [ label = "DDG: {
+      concrete: false,
+    }"] 
+  "107374183562" -> "141733921615"  [ label = "DDG: "] 
+  "30064789581" -> "25769807005"  [ label = "DDG: _tmp_4.concrete"] 
+  "107374183562" -> "25769807005"  [ label = "DDG: "] 
+  "107374183562" -> "30064789581"  [ label = "DDG: "] 
+  "107374183562" -> "68719495165"  [ label = "DDG: "] 
+}

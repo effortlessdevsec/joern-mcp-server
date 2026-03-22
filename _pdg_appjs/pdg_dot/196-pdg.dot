@@ -1,0 +1,77 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182596" [label = <METHOD, 1<BR/>:program> ]
+"124554051781" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150048" [label = <PARAM, 1<BR/>this> ]
+"30064774210" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064774211" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"25769804277" [label = <BLOCK, 4<BR/>export default function SaveButton({saving, for...> ]
+"30064774215" [label = <&lt;operator&gt;.assignment, 15<BR/>SaveButton.propTypes = { saving: PropTypes.bo...> ]
+"30064774212" [label = <&lt;operator&gt;.assignment, 4<BR/>function SaveButton = function SaveButton({savi...> ]
+"30064774213" [label = <&lt;operator&gt;.assignment, 4<BR/>exports[&quot;default&quot;] = SaveButton> ]
+"68719479863" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064774201" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719479866" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064774202" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"30064774217" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_0.saving = PropTypes.bool> ]
+"30064774220" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_0.forking = PropTypes.bool> ]
+"30064774223" [label = <&lt;operator&gt;.assignment, 18<BR/>_tmp_0.onNew = PropTypes.func> ]
+"68719479878" [label = <IDENTIFIER, 15<BR/>_tmp_0<BR/>{ saving: PropTypes.bool, forking: PropType...> ]
+  "30064774210" -> "124554051781"  [ label = "DDG: PropTypes"] 
+  "30064774210" -> "124554051781"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064774210" -> "124554051781"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064774211" -> "124554051781"  [ label = "DDG: React"] 
+  "30064774202" -> "124554051781"  [ label = "DDG: this"] 
+  "30064774211" -> "124554051781"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064774211" -> "124554051781"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064774212" -> "124554051781"  [ label = "DDG: function SaveButton = function SaveButton({saving, forking, onNew}) {
+  return (
+    &lt;button
+      type=&quot;button&quot;
+      disabled={saving || forking}
+      onClick={onNew}&gt;
+      &lt;i className=&quot;fa fa-file-o fa-fw&quot; /&gt;&amp;nbsp;New
+    &lt;/button&gt;
+  );
+}"] 
+  "30064774213" -> "124554051781"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064774213" -> "124554051781"  [ label = "DDG: SaveButton"] 
+  "30064774213" -> "124554051781"  [ label = "DDG: exports[&quot;default&quot;] = SaveButton"] 
+  "30064774215" -> "124554051781"  [ label = "DDG: SaveButton.propTypes"] 
+  "30064774217" -> "124554051781"  [ label = "DDG: _tmp_0.saving"] 
+  "30064774217" -> "124554051781"  [ label = "DDG: _tmp_0.saving = PropTypes.bool"] 
+  "30064774220" -> "124554051781"  [ label = "DDG: _tmp_0.forking"] 
+  "30064774220" -> "124554051781"  [ label = "DDG: PropTypes.bool"] 
+  "30064774220" -> "124554051781"  [ label = "DDG: _tmp_0.forking = PropTypes.bool"] 
+  "30064774223" -> "124554051781"  [ label = "DDG: _tmp_0.onNew"] 
+  "30064774223" -> "124554051781"  [ label = "DDG: PropTypes.func"] 
+  "30064774223" -> "124554051781"  [ label = "DDG: _tmp_0.onNew = PropTypes.func"] 
+  "30064774215" -> "124554051781"  [ label = "DDG: SaveButton.propTypes = {
+  saving: PropTypes.bool,
+  forking: PropTypes.bool,
+  onNew: PropTypes.func,
+}"] 
+  "107374182596" -> "111669150048"  [ label = "DDG: "] 
+  "30064774201" -> "30064774210"  [ label = "DDG: this"] 
+  "30064774201" -> "30064774210"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064774202" -> "30064774211"  [ label = "DDG: this"] 
+  "30064774202" -> "30064774211"  [ label = "DDG: &quot;react&quot;"] 
+  "107374182596" -> "25769804277"  [ label = "DDG: "] 
+  "30064774217" -> "30064774215"  [ label = "DDG: _tmp_0.saving"] 
+  "30064774220" -> "30064774215"  [ label = "DDG: _tmp_0.forking"] 
+  "30064774223" -> "30064774215"  [ label = "DDG: _tmp_0.onNew"] 
+  "107374182596" -> "30064774215"  [ label = "DDG: "] 
+  "107374182596" -> "30064774212"  [ label = "DDG: "] 
+  "30064774212" -> "30064774213"  [ label = "DDG: SaveButton"] 
+  "107374182596" -> "30064774213"  [ label = "DDG: "] 
+  "107374182596" -> "68719479863"  [ label = "DDG: "] 
+  "111669150048" -> "30064774201"  [ label = "DDG: this"] 
+  "107374182596" -> "30064774201"  [ label = "DDG: "] 
+  "107374182596" -> "68719479866"  [ label = "DDG: "] 
+  "30064774201" -> "30064774202"  [ label = "DDG: this"] 
+  "107374182596" -> "30064774202"  [ label = "DDG: "] 
+  "30064774210" -> "30064774217"  [ label = "DDG: PropTypes"] 
+  "30064774210" -> "30064774220"  [ label = "DDG: PropTypes"] 
+  "30064774210" -> "30064774223"  [ label = "DDG: PropTypes"] 
+  "107374182596" -> "68719479878"  [ label = "DDG: "] 
+}

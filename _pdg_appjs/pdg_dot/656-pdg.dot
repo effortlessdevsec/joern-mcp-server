@@ -1,0 +1,16 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183056" [label = <METHOD, 160<BR/>getDefaultOptions> ]
+"124554052239" [label = <METHOD_RETURN, 160<BR/>{ sourceType: __ecma.String; allowImportExportEverywhere: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; createParenthesizedExpressions: __ecma.Boolean; ranges: __ecma.Boolean; tokens: __ecma.Boolean; plugins: __ecma.String[]; decoratorOptions: { version: __ecma.String; decoratorsBeforeExport: __ecma.Boolean; allowCallParenthesized: __ecma.Boolean; }; pipelineOptions: { proposal: __ecma.String; hackTopicToken: __ecma.String; }; typescriptOptions: { dts: __ecma.Boolean; disallowAmbiguousJSXLike: __ecma.Boolean; }; }> ]
+"111669150985" [label = <PARAM, 160<BR/>this> ]
+"141733921262" [label = <RETURN, 161<BR/>return defaultOptions> ]
+"68719486963" [label = <IDENTIFIER, 161<BR/>defaultOptions<BR/>return defaultOptions> ]
+  "141733921262" -> "124554052239"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150985" -> "124554052239"  [ label = "DDG: this"] 
+  "107374183056" -> "111669150985"  [ label = "DDG: "] 
+  "68719486963" -> "141733921262"  [ label = "DDG: defaultOptions"] 
+  "107374183056" -> "141733921262"  [ label = "DDG: "] 
+  "30064781282" -> "68719486963"  [ label = "DDG: defaultOptions"] 
+  "107374183056" -> "68719486963"  [ label = "DDG: "] 
+  "107374183044" -> "68719486963"  [ label = "DDG: "] 
+}

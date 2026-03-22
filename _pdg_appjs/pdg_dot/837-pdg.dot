@@ -1,0 +1,14 @@
+digraph "useCaseSensitiveFileNames" {  
+node [shape="rect"];  
+"107374183237" [label = <METHOD, 54<BR/>useCaseSensitiveFileNames> ]
+"124554052419" [label = <METHOD_RETURN, 54<BR/>__ecma.Boolean> ]
+"111669151386" [label = <PARAM, 54<BR/>this> ]
+"141733921379" [label = <RETURN, 54<BR/>true> ]
+"90194316176" [label = <LITERAL, 54<BR/>true> ]
+  "141733921379" -> "124554052419"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151386" -> "124554052419"  [ label = "DDG: this"] 
+  "107374183237" -> "111669151386"  [ label = "DDG: "] 
+  "90194316176" -> "141733921379"  [ label = "DDG: true"] 
+  "107374183237" -> "141733921379"  [ label = "DDG: "] 
+  "107374183237" -> "90194316176"  [ label = "DDG: "] 
+}

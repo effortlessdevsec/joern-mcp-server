@@ -1,0 +1,63 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183317" [label = <METHOD, 16<BR/>loadParser> ]
+"124554052500" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669151551" [label = <PARAM, 16<BR/>this> ]
+"111669151552" [label = <PARAM, 16<BR/>callback> ]
+"30064786165" [label = <require, 17<BR/>require([ 'remark', 'remark-gfm', ...> ]
+"68719491746" [label = <IDENTIFIER, 17<BR/>require<BR/>require([ 'remark', 'remark-gfm', ...> ]
+"30064786166" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064786168" [label = <, 18<BR/>_tmp_3.push(&quot;remark&quot;)> ]
+"30064786170" [label = <, 19<BR/>_tmp_3.push(&quot;remark-gfm&quot;)> ]
+"30064786172" [label = <, 20<BR/>_tmp_3.push(&quot;remark-directive&quot;)> ]
+"30064786174" [label = <, 21<BR/>_tmp_3.push(&quot;remark-footnotes&quot;)> ]
+"30064786176" [label = <, 22<BR/>_tmp_3.push(&quot;remark-frontmatter&quot;)> ]
+"30064786178" [label = <, 23<BR/>_tmp_3.push(&quot;remark-math&quot;)> ]
+"68719491761" [label = <IDENTIFIER, 17<BR/>_tmp_3<BR/>[ 'remark', 'remark-gfm', 're...> ]
+  "111669151552" -> "124554052500"  [ label = "DDG: callback"] 
+  "30064786165" -> "124554052500"  [ label = "DDG: this"] 
+  "30064786166" -> "124554052500"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064786166" -> "124554052500"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064786168" -> "124554052500"  [ label = "DDG: _tmp_3.push(&quot;remark&quot;)"] 
+  "30064786170" -> "124554052500"  [ label = "DDG: _tmp_3.push(&quot;remark-gfm&quot;)"] 
+  "30064786172" -> "124554052500"  [ label = "DDG: _tmp_3.push(&quot;remark-directive&quot;)"] 
+  "30064786174" -> "124554052500"  [ label = "DDG: _tmp_3.push(&quot;remark-footnotes&quot;)"] 
+  "30064786176" -> "124554052500"  [ label = "DDG: _tmp_3.push(&quot;remark-frontmatter&quot;)"] 
+  "30064786178" -> "124554052500"  [ label = "DDG: _tmp_3"] 
+  "30064786178" -> "124554052500"  [ label = "DDG: _tmp_3.push(&quot;remark-math&quot;)"] 
+  "30064786165" -> "124554052500"  [ label = "DDG: require([
+      'remark',
+      'remark-gfm',
+      'remark-directive',
+      'remark-footnotes',
+      'remark-frontmatter',
+      'remark-math',
+    ], (
+      { remark },
+      { default: gfm },
+      { default: directive },
+      { default: footnotes },
+      { default: frontmatter },
+      { default: math },
+    ) =&gt; callback({ remark, gfm, directive, footnotes, frontmatter, math }))"] 
+  "107374183317" -> "111669151551"  [ label = "DDG: "] 
+  "107374183317" -> "111669151552"  [ label = "DDG: "] 
+  "107374183317" -> "68719491746"  [ label = "DDG: "] 
+  "111669151551" -> "30064786165"  [ label = "DDG: this"] 
+  "107374183317" -> "30064786165"  [ label = "DDG: "] 
+  "30064786178" -> "30064786165"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786166"  [ label = "DDG: "] 
+  "107374183317" -> "68719491761"  [ label = "DDG: "] 
+  "30064786166" -> "30064786168"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786168"  [ label = "DDG: "] 
+  "30064786168" -> "30064786170"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786170"  [ label = "DDG: "] 
+  "30064786170" -> "30064786172"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786172"  [ label = "DDG: "] 
+  "30064786172" -> "30064786174"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786174"  [ label = "DDG: "] 
+  "30064786174" -> "30064786176"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786176"  [ label = "DDG: "] 
+  "30064786176" -> "30064786178"  [ label = "DDG: _tmp_3"] 
+  "107374183317" -> "30064786178"  [ label = "DDG: "] 
+}

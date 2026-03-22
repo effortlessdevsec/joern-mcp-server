@@ -1,0 +1,4 @@
+digraph "startLoadingSnippet" {  
+node [shape="rect"];  
+
+}

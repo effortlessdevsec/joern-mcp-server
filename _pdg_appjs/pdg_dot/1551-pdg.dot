@@ -1,0 +1,4 @@
+digraph "complete" {  
+node [shape="rect"];  
+
+}

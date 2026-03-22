@@ -1,0 +1,17 @@
+digraph "tokenString" {  
+node [shape="rect"];  
+"107374182807" [label = <METHOD, 69<BR/>tokenString> ]
+"124554051989" [label = <METHOD_RETURN, 69<BR/>(stream: ANY, state: ANY) =&gt; __ecma.String> ]
+"111669150441" [label = <PARAM, 69<BR/>this> ]
+"111669150442" [label = <PARAM, 69<BR/>quote> ]
+"141733921068" [label = <RETURN, 70<BR/>return function(stream, state) { var esca...> ]
+"120259084557" [label = <METHOD_REF, 70<BR/>&lt;lambda&gt;1<BR/>return function(stream, state) { var esca...> ]
+  "141733921068" -> "124554051989"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150441" -> "124554051989"  [ label = "DDG: this"] 
+  "111669150442" -> "124554051989"  [ label = "DDG: quote"] 
+  "107374182807" -> "111669150441"  [ label = "DDG: "] 
+  "107374182807" -> "111669150442"  [ label = "DDG: "] 
+  "120259084557" -> "141733921068"  [ label = "DDG: &lt;lambda&gt;1"] 
+  "107374182807" -> "141733921068"  [ label = "DDG: "] 
+  "107374182807" -> "120259084557"  [ label = "DDG: "] 
+}

@@ -1,0 +1,93 @@
+digraph "mapDispatchToProps" {  
+node [shape="rect"];  
+"107374182716" [label = <METHOD, 33<BR/>mapDispatchToProps> ]
+"124554051907" [label = <METHOD_RETURN, 33<BR/>{ onParserChange: (parser: ANY) =&gt; ANY; onCategoryChange: (category: ANY) =&gt; ANY; onParserSettingsButtonClick: () =&gt; ANY; onShareButtonClick: () =&gt; ANY; onTransformChange: (transformer: ANY) =&gt; ANY; onKeyMapChange: (keyMap: ANY) =&gt; ANY; onSave: () =&gt; ANY; onFork: () =&gt; ANY; onNew: () =&gt; ANY; }> ]
+"111669150264" [label = <PARAM, 33<BR/>this> ]
+"111669150265" [label = <PARAM, 33<BR/>dispatch> ]
+"141733920984" [label = <RETURN, 34<BR/>return { onParserChange: parser =&gt; { ...> ]
+"25769804565" [label = <BLOCK, 34<BR/>{ onParserChange: parser =&gt; { dispatc...> ]
+"30064776028" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_1.onParserChange = &lt;lambda&gt;0> ]
+"30064776030" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_1.onCategoryChange = &lt;lambda&gt;1> ]
+"30064776032" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_1.onParserSettingsButtonClick = &lt;lambda&gt;2> ]
+"30064776034" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_1.onShareButtonClick = &lt;lambda&gt;3> ]
+"30064776036" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_1.onTransformChange = &lt;lambda&gt;4> ]
+"30064776038" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_1.onKeyMapChange = &lt;lambda&gt;5> ]
+"30064776040" [label = <&lt;operator&gt;.assignment, 53<BR/>_tmp_1.onSave = &lt;lambda&gt;6> ]
+"30064776042" [label = <&lt;operator&gt;.assignment, 54<BR/>_tmp_1.onFork = &lt;lambda&gt;7> ]
+"30064776044" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_1.onNew = &lt;lambda&gt;8> ]
+"68719481824" [label = <IDENTIFIER, 34<BR/>_tmp_1<BR/>{ onParserChange: parser =&gt; { dispatc...> ]
+  "141733920984" -> "124554051907"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150264" -> "124554051907"  [ label = "DDG: this"] 
+  "111669150265" -> "124554051907"  [ label = "DDG: dispatch"] 
+  "30064776028" -> "124554051907"  [ label = "DDG: _tmp_1.onParserChange"] 
+  "30064776028" -> "124554051907"  [ label = "DDG: _tmp_1.onParserChange = &lt;lambda&gt;0"] 
+  "30064776030" -> "124554051907"  [ label = "DDG: _tmp_1.onCategoryChange"] 
+  "30064776030" -> "124554051907"  [ label = "DDG: _tmp_1.onCategoryChange = &lt;lambda&gt;1"] 
+  "30064776032" -> "124554051907"  [ label = "DDG: _tmp_1.onParserSettingsButtonClick"] 
+  "30064776032" -> "124554051907"  [ label = "DDG: _tmp_1.onParserSettingsButtonClick = &lt;lambda&gt;2"] 
+  "30064776034" -> "124554051907"  [ label = "DDG: _tmp_1.onShareButtonClick"] 
+  "30064776034" -> "124554051907"  [ label = "DDG: _tmp_1.onShareButtonClick = &lt;lambda&gt;3"] 
+  "30064776036" -> "124554051907"  [ label = "DDG: _tmp_1.onTransformChange"] 
+  "30064776036" -> "124554051907"  [ label = "DDG: _tmp_1.onTransformChange = &lt;lambda&gt;4"] 
+  "30064776038" -> "124554051907"  [ label = "DDG: _tmp_1.onKeyMapChange"] 
+  "30064776038" -> "124554051907"  [ label = "DDG: _tmp_1.onKeyMapChange = &lt;lambda&gt;5"] 
+  "30064776040" -> "124554051907"  [ label = "DDG: _tmp_1.onSave"] 
+  "30064776040" -> "124554051907"  [ label = "DDG: _tmp_1.onSave = &lt;lambda&gt;6"] 
+  "30064776042" -> "124554051907"  [ label = "DDG: _tmp_1.onFork"] 
+  "30064776042" -> "124554051907"  [ label = "DDG: _tmp_1.onFork = &lt;lambda&gt;7"] 
+  "30064776044" -> "124554051907"  [ label = "DDG: _tmp_1.onNew"] 
+  "30064776044" -> "124554051907"  [ label = "DDG: _tmp_1.onNew = &lt;lambda&gt;8"] 
+  "107374182716" -> "111669150264"  [ label = "DDG: "] 
+  "107374182716" -> "111669150265"  [ label = "DDG: "] 
+  "25769804565" -> "141733920984"  [ label = "DDG: "] 
+  "25769804565" -> "141733920984"  [ label = "DDG: {
+    onParserChange: parser =&gt; {
+      dispatch(setParser(parser));
+    },
+    onCategoryChange: category =&gt; {
+      dispatch(selectCategory(category));
+    },
+    onParserSettingsButtonClick: () =&gt; {
+      dispatch(openSettingsDialog());
+    },
+    onShareButtonClick: () =&gt; {
+      dispatch(openShareDialog());
+    },
+    onTransformChange: transformer =&gt; {
+      dispatch(transformer ? selectTransformer(transformer) : hideTransformer());
+    },
+    onKeyMapChange: keyMap =&gt; {
+      dispatch(setKeyMap(keyMap))
+    },
+    onSave: () =&gt; dispatch(save(false)),
+    onFork: () =&gt; dispatch(save(true)),
+    onNew: () =&gt; {
+      if (global.location.hash) {
+        global.location.hash = '';
+      } else {
+        dispatch(reset());
+      }
+    },
+  }"] 
+  "107374182716" -> "141733920984"  [ label = "DDG: "] 
+  "30064776028" -> "25769804565"  [ label = "DDG: _tmp_1.onParserChange"] 
+  "30064776030" -> "25769804565"  [ label = "DDG: _tmp_1.onCategoryChange"] 
+  "30064776032" -> "25769804565"  [ label = "DDG: _tmp_1.onParserSettingsButtonClick"] 
+  "30064776034" -> "25769804565"  [ label = "DDG: _tmp_1.onShareButtonClick"] 
+  "30064776036" -> "25769804565"  [ label = "DDG: _tmp_1.onTransformChange"] 
+  "30064776038" -> "25769804565"  [ label = "DDG: _tmp_1.onKeyMapChange"] 
+  "30064776040" -> "25769804565"  [ label = "DDG: _tmp_1.onSave"] 
+  "30064776042" -> "25769804565"  [ label = "DDG: _tmp_1.onFork"] 
+  "30064776044" -> "25769804565"  [ label = "DDG: _tmp_1.onNew"] 
+  "107374182716" -> "25769804565"  [ label = "DDG: "] 
+  "107374182716" -> "30064776028"  [ label = "DDG: "] 
+  "107374182716" -> "30064776030"  [ label = "DDG: "] 
+  "107374182716" -> "30064776032"  [ label = "DDG: "] 
+  "107374182716" -> "30064776034"  [ label = "DDG: "] 
+  "107374182716" -> "30064776036"  [ label = "DDG: "] 
+  "107374182716" -> "30064776038"  [ label = "DDG: "] 
+  "107374182716" -> "30064776040"  [ label = "DDG: "] 
+  "107374182716" -> "30064776042"  [ label = "DDG: "] 
+  "107374182716" -> "30064776044"  [ label = "DDG: "] 
+  "107374182716" -> "68719481824"  [ label = "DDG: "] 
+}

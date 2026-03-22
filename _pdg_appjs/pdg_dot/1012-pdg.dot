@@ -1,0 +1,31 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183412" [label = <METHOD, 15<BR/>loadParser> ]
+"124554052595" [label = <METHOD_RETURN, 15<BR/>void> ]
+"111669151755" [label = <PARAM, 15<BR/>this> ]
+"111669151756" [label = <PARAM, 15<BR/>callback> ]
+"30064787553" [label = <require, 16<BR/>require(['regexp-tree'], (regexpTree) =&gt; { ...> ]
+"68719493140" [label = <IDENTIFIER, 16<BR/>require<BR/>require(['regexp-tree'], (regexpTree) =&gt; { ...> ]
+"30064787554" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064787556" [label = <, 16<BR/>_tmp_3.push(&quot;regexp-tree&quot;)> ]
+"68719493145" [label = <IDENTIFIER, 16<BR/>_tmp_3<BR/>['regexp-tree']> ]
+  "111669151756" -> "124554052595"  [ label = "DDG: callback"] 
+  "30064787553" -> "124554052595"  [ label = "DDG: this"] 
+  "30064787554" -> "124554052595"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064787554" -> "124554052595"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064787556" -> "124554052595"  [ label = "DDG: _tmp_3"] 
+  "30064787556" -> "124554052595"  [ label = "DDG: _tmp_3.push(&quot;regexp-tree&quot;)"] 
+  "30064787553" -> "124554052595"  [ label = "DDG: require(['regexp-tree'], (regexpTree) =&gt; {
+      callback(regexpTree);
+    })"] 
+  "107374183412" -> "111669151755"  [ label = "DDG: "] 
+  "107374183412" -> "111669151756"  [ label = "DDG: "] 
+  "107374183412" -> "68719493140"  [ label = "DDG: "] 
+  "111669151755" -> "30064787553"  [ label = "DDG: this"] 
+  "107374183412" -> "30064787553"  [ label = "DDG: "] 
+  "30064787556" -> "30064787553"  [ label = "DDG: _tmp_3"] 
+  "107374183412" -> "30064787554"  [ label = "DDG: "] 
+  "107374183412" -> "68719493145"  [ label = "DDG: "] 
+  "30064787554" -> "30064787556"  [ label = "DDG: _tmp_3"] 
+  "107374183412" -> "30064787556"  [ label = "DDG: "] 
+}

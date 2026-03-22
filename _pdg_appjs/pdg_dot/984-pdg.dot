@@ -1,0 +1,45 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183384" [label = <METHOD, 21<BR/>parse> ]
+"124554052567" [label = <METHOD_RETURN, 21<BR/>ANY> ]
+"111669151691" [label = <PARAM, 21<BR/>this> ]
+"111669151692" [label = <PARAM, 21<BR/>{ parser }> ]
+"111669151693" [label = <PARAM, 21<BR/>code> ]
+"30064787144" [label = <&lt;operator&gt;.assignment, 21<BR/>parser = param1_0.parser> ]
+"141733921481" [label = <RETURN, 22<BR/>return parser.parse(code, { locations: ...> ]
+"30064787146" [label = <parse, 22<BR/>parser.parse(code, { locations: true, ...> ]
+"30064787148" [label = <&lt;operator&gt;.assignment, 23<BR/>_tmp_5.locations = true> ]
+"30064787150" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_5.ranges = true> ]
+"68719492746" [label = <IDENTIFIER, 22<BR/>_tmp_5<BR/>{ locations: true, ranges: true...> ]
+  "141733921481" -> "124554052567"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151691" -> "124554052567"  [ label = "DDG: this"] 
+  "111669151692" -> "124554052567"  [ label = "DDG: param1_0"] 
+  "30064787144" -> "124554052567"  [ label = "DDG: param1_0.parser"] 
+  "30064787144" -> "124554052567"  [ label = "DDG: parser = param1_0.parser"] 
+  "30064787146" -> "124554052567"  [ label = "DDG: parser"] 
+  "30064787146" -> "124554052567"  [ label = "DDG: code"] 
+  "30064787148" -> "124554052567"  [ label = "DDG: _tmp_5.locations"] 
+  "30064787148" -> "124554052567"  [ label = "DDG: _tmp_5.locations = true"] 
+  "30064787150" -> "124554052567"  [ label = "DDG: _tmp_5.ranges"] 
+  "30064787150" -> "124554052567"  [ label = "DDG: _tmp_5.ranges = true"] 
+  "30064787146" -> "124554052567"  [ label = "DDG: parser.parse(code, {
+        locations: true,
+        ranges: true,
+    })"] 
+  "107374183384" -> "111669151691"  [ label = "DDG: "] 
+  "107374183384" -> "111669151692"  [ label = "DDG: "] 
+  "107374183384" -> "111669151693"  [ label = "DDG: "] 
+  "111669151692" -> "30064787144"  [ label = "DDG: param1_0"] 
+  "30064787146" -> "141733921481"  [ label = "DDG: parser.parse(code, {
+        locations: true,
+        ranges: true,
+    })"] 
+  "30064787144" -> "30064787146"  [ label = "DDG: parser"] 
+  "107374183384" -> "30064787146"  [ label = "DDG: "] 
+  "111669151693" -> "30064787146"  [ label = "DDG: code"] 
+  "30064787148" -> "30064787146"  [ label = "DDG: _tmp_5.locations"] 
+  "30064787150" -> "30064787146"  [ label = "DDG: _tmp_5.ranges"] 
+  "107374183384" -> "30064787148"  [ label = "DDG: "] 
+  "107374183384" -> "30064787150"  [ label = "DDG: "] 
+  "107374183384" -> "68719492746"  [ label = "DDG: "] 
+}

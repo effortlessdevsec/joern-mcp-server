@@ -1,0 +1,197 @@
+digraph "TransformOutput" {  
+node [shape="rect"];  
+"107374182578" [label = <METHOD, 38<BR/>TransformOutput> ]
+"124554051762" [label = <METHOD_RETURN, 38<BR/>ANY> ]
+"111669150022" [label = <PARAM, 38<BR/>this> ]
+"111669150023" [label = <PARAM, 38<BR/>{transformResult, mode}> ]
+"30064773871" [label = <&lt;operator&gt;.assignment, 38<BR/>transformResult = param1_0.transformResult> ]
+"30064773873" [label = <&lt;operator&gt;.assignment, 38<BR/>mode = param1_0.mode> ]
+"30064773875" [label = <&lt;operator&gt;.assignment, 40<BR/>transformResult = transformResult == null ? {re...> ]
+"30064773880" [label = <&lt;operator&gt;.assignment, 42<BR/>const posFromIndex = React.useCallback( ind...> ]
+"141733920892" [label = <RETURN, 47<BR/>return ( &lt;div className=&quot;output highlight&quot;&gt;...> ]
+"154618823054" [label = <TEMPLATE_DOM, 48<BR/>&lt;div className=&quot;output highlight&quot;&gt; {trans...> ]
+"30064773876" [label = <&lt;operator&gt;.conditional, 40<BR/>transformResult == null ? {result: ''} : transf...> ]
+"30064773881" [label = <useCallback, 42<BR/>React.useCallback( index =&gt; positionFromInd...> ]
+"30064773877" [label = <&lt;operator&gt;.equals, 40<BR/>transformResult == null> ]
+"30064773878" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_4.result = &quot;&quot;> ]
+"68719479548" [label = <IDENTIFIER, 40<BR/>_tmp_4<BR/>{result: ''}> ]
+"30064773883" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064773885" [label = <, 44<BR/>_tmp_5.push(transformResult)> ]
+"68719479557" [label = <IDENTIFIER, 44<BR/>_tmp_5<BR/>[transformResult]> ]
+"30064773887" [label = <&lt;operator&gt;.conditional, 49<BR/>transformResult.error ? &lt;Editor highl...> ]
+"90194313834" [label = <LITERAL, 48<BR/>&quot;output highlight&quot;<BR/>className=&quot;output highlight&quot;> ]
+"30064773891" [label = <&lt;operator&gt;.conditional, 57<BR/>typeof transformResult.result === 'string' ? &lt;E...> ]
+"30064773892" [label = <&lt;operator&gt;.equals, 57<BR/>typeof transformResult.result === 'string'> ]
+"90194313836" [label = <LITERAL, 52<BR/>&quot;error&quot;<BR/>key=&quot;error&quot;> ]
+"30064773893" [label = <&lt;operator&gt;.instanceOf, 57<BR/>typeof transformResult.result> ]
+"90194313835" [label = <LITERAL, 51<BR/>false<BR/>{false}> ]
+"90194313837" [label = <LITERAL, 53<BR/>false<BR/>{false}> ]
+"90194313838" [label = <LITERAL, 54<BR/>true<BR/>{true}> ]
+"90194313840" [label = <LITERAL, 61<BR/>&quot;output&quot;<BR/>key=&quot;output&quot;> ]
+"90194313842" [label = <LITERAL, 66<BR/>&quot;container no-toolbar&quot;<BR/>className=&quot;container no-toolbar&quot;> ]
+"68719479561" [label = <IDENTIFIER, 59<BR/>posFromIndex<BR/>{posFromIndex}> ]
+"68719479562" [label = <IDENTIFIER, 60<BR/>mode<BR/>{mode}> ]
+"90194313841" [label = <LITERAL, 62<BR/>true<BR/>{true}> ]
+"30064773896" [label = <stringify, 67<BR/>stringify(transformResult.result, null, 2)> ]
+"68719479564" [label = <IDENTIFIER, 67<BR/>stringify<BR/>stringify(transformResult.result, null, 2)> ]
+"30064773879" [label = <&lt;operator&gt;.fieldAccess, 40<BR/>_tmp_4.result> ]
+"30064773888" [label = <&lt;operator&gt;.fieldAccess, 49<BR/>transformResult.error> ]
+"55834575960" [label = <FIELD_IDENTIFIER, 40<BR/>result> ]
+"30064773894" [label = <&lt;operator&gt;.fieldAccess, 57<BR/>transformResult.result> ]
+"30064773889" [label = <&lt;operator&gt;.fieldAccess, 55<BR/>transformResult.error.message> ]
+"55834575966" [label = <FIELD_IDENTIFIER, 57<BR/>result> ]
+"30064773890" [label = <&lt;operator&gt;.fieldAccess, 55<BR/>transformResult.error> ]
+"55834575965" [label = <FIELD_IDENTIFIER, 55<BR/>message> ]
+"30064773895" [label = <&lt;operator&gt;.fieldAccess, 63<BR/>transformResult.result> ]
+"55834575964" [label = <FIELD_IDENTIFIER, 55<BR/>error> ]
+"55834575967" [label = <FIELD_IDENTIFIER, 63<BR/>result> ]
+"30064773897" [label = <&lt;operator&gt;.fieldAccess, 67<BR/>transformResult.result> ]
+"55834575968" [label = <FIELD_IDENTIFIER, 67<BR/>result> ]
+  "141733920892" -> "124554051762"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150022" -> "124554051762"  [ label = "DDG: this"] 
+  "111669150023" -> "124554051762"  [ label = "DDG: param1_0"] 
+  "30064773871" -> "124554051762"  [ label = "DDG: param1_0.transformResult"] 
+  "30064773871" -> "124554051762"  [ label = "DDG: transformResult = param1_0.transformResult"] 
+  "30064773873" -> "124554051762"  [ label = "DDG: mode"] 
+  "30064773873" -> "124554051762"  [ label = "DDG: param1_0.mode"] 
+  "30064773873" -> "124554051762"  [ label = "DDG: mode = param1_0.mode"] 
+  "30064773876" -> "124554051762"  [ label = "DDG: transformResult == null"] 
+  "30064773878" -> "124554051762"  [ label = "DDG: _tmp_4.result"] 
+  "30064773878" -> "124554051762"  [ label = "DDG: _tmp_4.result = &quot;&quot;"] 
+  "30064773875" -> "124554051762"  [ label = "DDG: transformResult == null ? {result: ''} : transformResult"] 
+  "30064773875" -> "124554051762"  [ label = "DDG: transformResult = transformResult == null ? {result: ''} : transformResult"] 
+  "30064773880" -> "124554051762"  [ label = "DDG: posFromIndex"] 
+  "30064773881" -> "124554051762"  [ label = "DDG: React"] 
+  "30064773883" -> "124554051762"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773883" -> "124554051762"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064773885" -> "124554051762"  [ label = "DDG: _tmp_5"] 
+  "30064773885" -> "124554051762"  [ label = "DDG: transformResult"] 
+  "30064773885" -> "124554051762"  [ label = "DDG: _tmp_5.push(transformResult)"] 
+  "30064773880" -> "124554051762"  [ label = "DDG: React.useCallback(
+    index =&gt; positionFromIndex(index, transformResult.map),
+    [transformResult],
+  )"] 
+  "30064773880" -> "124554051762"  [ label = "DDG: const posFromIndex = React.useCallback(
+    index =&gt; positionFromIndex(index, transformResult.map),
+    [transformResult],
+  )"] 
+  "30064773887" -> "124554051762"  [ label = "DDG: transformResult.error"] 
+  "30064773893" -> "124554051762"  [ label = "DDG: transformResult.result"] 
+  "30064773892" -> "124554051762"  [ label = "DDG: typeof transformResult.result"] 
+  "30064773891" -> "124554051762"  [ label = "DDG: typeof transformResult.result === 'string'"] 
+  "30064773896" -> "124554051762"  [ label = "DDG: this"] 
+  "30064773896" -> "124554051762"  [ label = "DDG: transformResult.result"] 
+  "30064773896" -> "124554051762"  [ label = "DDG: stringify(transformResult.result, null, 2)"] 
+  "30064773887" -> "124554051762"  [ label = "DDG: typeof transformResult.result === 'string' ? &lt;Editor
+            posFromIndex={posFromIndex}
+            mode={mode}
+            key=&quot;output&quot;
+            readOnly={true}
+            value={transformResult.result}
+          /&gt; : &lt;JSONEditor
+            className=&quot;container no-toolbar&quot;
+            value={stringify(transformResult.result, null, 2)}
+          /&gt;"] 
+  "30064773887" -> "124554051762"  [ label = "DDG: transformResult.error ? &lt;Editor
+          highlight={false}
+          key=&quot;error&quot;
+          lineNumbers={false}
+          readOnly={true}
+          value={transformResult.error.message}
+        /&gt; : typeof transformResult.result === 'string' ? &lt;Editor
+            posFromIndex={posFromIndex}
+            mode={mode}
+            key=&quot;output&quot;
+            readOnly={true}
+            value={transformResult.result}
+          /&gt; : &lt;JSONEditor
+            className=&quot;container no-toolbar&quot;
+            value={stringify(transformResult.result, null, 2)}
+          /&gt;"] 
+  "107374182578" -> "111669150022"  [ label = "DDG: "] 
+  "107374182578" -> "111669150023"  [ label = "DDG: "] 
+  "111669150023" -> "30064773871"  [ label = "DDG: param1_0"] 
+  "111669150023" -> "30064773873"  [ label = "DDG: param1_0"] 
+  "30064773878" -> "30064773875"  [ label = "DDG: _tmp_4.result"] 
+  "30064773877" -> "30064773875"  [ label = "DDG: transformResult"] 
+  "107374182578" -> "30064773875"  [ label = "DDG: "] 
+  "30064773881" -> "30064773880"  [ label = "DDG: React"] 
+  "30064773881" -> "30064773880"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064773881" -> "30064773880"  [ label = "DDG: [transformResult]"] 
+  "30064773881" -> "30064773880"  [ label = "DDG: "] 
+  "154618823054" -> "141733920892"  [ label = "DDG: &lt;div className=&quot;output highlight&quot;&gt;
+      {transformResult.error ?
+        &lt;Editor
+          highlight={false}
+          key=&quot;error&quot;
+          lineNumbers={false}
+          readOnly={true}
+          value={transformResult.error.message}
+        /&gt; : (
+          typeof transformResult.result === 'string' ?
+          &lt;Editor
+            posFromIndex={posFromIndex}
+            mode={mode}
+            key=&quot;output&quot;
+            readOnly={true}
+            value={transformResult.result}
+          /&gt; :
+          &lt;JSONEditor
+            className=&quot;container no-toolbar&quot;
+            value={stringify(transformResult.result, null, 2)}
+          /&gt;
+        )
+      }
+    &lt;/div&gt;"] 
+  "107374182578" -> "141733920892"  [ label = "DDG: "] 
+  "30064773878" -> "30064773876"  [ label = "DDG: _tmp_4.result"] 
+  "30064773877" -> "30064773876"  [ label = "DDG: transformResult"] 
+  "107374182578" -> "30064773876"  [ label = "DDG: "] 
+  "107374182578" -> "30064773881"  [ label = "DDG: "] 
+  "30064773885" -> "30064773881"  [ label = "DDG: _tmp_5"] 
+  "30064773871" -> "30064773877"  [ label = "DDG: transformResult"] 
+  "107374182578" -> "30064773877"  [ label = "DDG: "] 
+  "107374182578" -> "30064773878"  [ label = "DDG: "] 
+  "107374182578" -> "68719479548"  [ label = "DDG: "] 
+  "107374182578" -> "30064773883"  [ label = "DDG: "] 
+  "107374182578" -> "68719479557"  [ label = "DDG: "] 
+  "30064773883" -> "30064773885"  [ label = "DDG: _tmp_5"] 
+  "107374182578" -> "30064773885"  [ label = "DDG: "] 
+  "30064773875" -> "30064773885"  [ label = "DDG: transformResult"] 
+  "107374182578" -> "90194313834"  [ label = "DDG: "] 
+  "30064773893" -> "30064773892"  [ label = "DDG: transformResult.result"] 
+  "107374182578" -> "30064773892"  [ label = "DDG: "] 
+  "107374182578" -> "90194313836"  [ label = "DDG: "] 
+  "30064773885" -> "30064773893"  [ label = "DDG: transformResult"] 
+  "107374182578" -> "90194313835"  [ label = "DDG: "] 
+  "107374182578" -> "90194313837"  [ label = "DDG: "] 
+  "107374182578" -> "90194313838"  [ label = "DDG: "] 
+  "107374182578" -> "90194313840"  [ label = "DDG: "] 
+  "107374182578" -> "90194313842"  [ label = "DDG: "] 
+  "107374182578" -> "68719479561"  [ label = "DDG: "] 
+  "107374182578" -> "68719479562"  [ label = "DDG: "] 
+  "107374182578" -> "90194313841"  [ label = "DDG: "] 
+  "30064773902" -> "68719479564"  [ label = "DDG: stringify"] 
+  "107374182578" -> "68719479564"  [ label = "DDG: "] 
+  "111669150022" -> "30064773896"  [ label = "DDG: this"] 
+  "107374182578" -> "30064773896"  [ label = "DDG: "] 
+  "30064773885" -> "30064773896"  [ label = "DDG: transformResult"] 
+  "30064773893" -> "30064773896"  [ label = "DDG: transformResult.result"] 
+  "30064773877" -> "55834575960"  [ label = "CDG: "] 
+  "30064773877" -> "30064773878"  [ label = "CDG: "] 
+  "30064773877" -> "30064773879"  [ label = "CDG: "] 
+  "30064773888" -> "55834575964"  [ label = "CDG: "] 
+  "30064773888" -> "55834575966"  [ label = "CDG: "] 
+  "30064773888" -> "55834575965"  [ label = "CDG: "] 
+  "30064773888" -> "30064773894"  [ label = "CDG: "] 
+  "30064773888" -> "30064773893"  [ label = "CDG: "] 
+  "30064773888" -> "30064773890"  [ label = "CDG: "] 
+  "30064773888" -> "30064773889"  [ label = "CDG: "] 
+  "30064773888" -> "30064773892"  [ label = "CDG: "] 
+  "30064773888" -> "30064773891"  [ label = "CDG: "] 
+  "30064773892" -> "55834575968"  [ label = "CDG: "] 
+  "30064773892" -> "55834575967"  [ label = "CDG: "] 
+  "30064773892" -> "30064773896"  [ label = "CDG: "] 
+  "30064773892" -> "30064773895"  [ label = "CDG: "] 
+  "30064773892" -> "30064773897"  [ label = "CDG: "] 
+}

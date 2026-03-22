@@ -1,0 +1,262 @@
+digraph "_getSettingsConfiguration" {  
+node [shape="rect"];  
+"107374183117" [label = <METHOD, 119<BR/>_getSettingsConfiguration> ]
+"124554052302" [label = <METHOD_RETURN, 119<BR/>{ fields: (string | (string | __ecma.String[])[] | { key: __ecma.String; title: __ecma.String; fields: (string | (string | __ecma.String[])[] | { key: __ecma.String; title: __ecma.String; fields: __ecma.String[]; settings: (settings: ANY) =&gt; ANY; values: (plugins: ANY) =&gt; __ecma.Object; } | { key: __ecma.String; title: __ecma.String; fields: (string | (string | __ecma.String[])[])[]; settings: __ecma.Array; required: Set&lt;string&gt;; }> ]
+"111669151110" [label = <PARAM, 119<BR/>this> ]
+"111669151111" [label = <PARAM, 119<BR/>defaultOptions> ]
+"141733921304" [label = <RETURN, 120<BR/>return { fields: [ ['parser', ['e...> ]
+"25769805739" [label = <BLOCK, 120<BR/>{ fields: [ ['parser', ['esprima'...> ]
+"30064782612" [label = <&lt;operator&gt;.assignment, 121<BR/>_tmp_16.fields = [ ['parser', ['esprima...> ]
+"30064782678" [label = <&lt;operator&gt;.assignment, 144<BR/>_tmp_16.required = new Set(['range'])> ]
+"68719488325" [label = <IDENTIFIER, 120<BR/>_tmp_16<BR/>{ fields: [ ['parser', ['esprima'...> ]
+"30064782614" [label = <&lt;operator&gt;.assignment, 121<BR/>_tmp_17 = __ecma.Array.factory()> ]
+"30064782616" [label = <, 122<BR/>_tmp_17.push(['parser', ['esprima', 'babel5', '...> ]
+"30064782638" [label = <, 123<BR/>_tmp_17.push(&quot;range&quot;)> ]
+"30064782640" [label = <, 124<BR/>_tmp_17.push(&quot;tolerant&quot;)> ]
+"30064782642" [label = <, 125<BR/>_tmp_17.push({ key: 'flow', ...> ]
+"30064782654" [label = <, 131<BR/>_tmp_17.push({ key: 'babylon6', ...> ]
+"30064782666" [label = <, 137<BR/>_tmp_17.push({ key: 'babylon7', ...> ]
+"68719488315" [label = <IDENTIFIER, 121<BR/>_tmp_17<BR/>[ ['parser', ['esprima', 'babel5', 'bab...> ]
+"30064782680" [label = <&lt;operator&gt;.assignment, 144<BR/>_tmp_23 = .alloc> ]
+"30064782682" [label = <&lt;operator&gt;.new, 144<BR/>new Set(['range'])> ]
+"68719488324" [label = <IDENTIFIER, 144<BR/>_tmp_23<BR/>new Set(['range'])> ]
+"68719488318" [label = <IDENTIFIER, 144<BR/>Set<BR/>new Set(['range'])> ]
+"30064782618" [label = <&lt;operator&gt;.assignment, 122<BR/>_tmp_18 = __ecma.Array.factory()> ]
+"30064782620" [label = <, 122<BR/>_tmp_18.push(&quot;parser&quot;)> ]
+"30064782622" [label = <, 122<BR/>_tmp_18.push(['esprima', 'babel5', 'babylon6', ...> ]
+"68719488286" [label = <IDENTIFIER, 122<BR/>_tmp_18<BR/>['parser', ['esprima', 'babel5', 'babylon6', 'b...> ]
+"30064782644" [label = <&lt;operator&gt;.assignment, 126<BR/>_tmp_20.key = &quot;flow&quot;> ]
+"30064782646" [label = <&lt;operator&gt;.assignment, 127<BR/>_tmp_20.title = &quot;Flow Settings&quot;> ]
+"30064782648" [label = <&lt;operator&gt;.assignment, 128<BR/>_tmp_20.fields = flowSettings.parserSettingsCon...> ]
+"30064782652" [label = <&lt;operator&gt;.assignment, 129<BR/>_tmp_20.settings = &lt;lambda&gt;1> ]
+"68719488298" [label = <IDENTIFIER, 125<BR/>_tmp_20<BR/>{ key: 'flow', title: 'Flow...> ]
+"30064782656" [label = <&lt;operator&gt;.assignment, 132<BR/>_tmp_21.key = &quot;babylon6&quot;> ]
+"30064782658" [label = <&lt;operator&gt;.assignment, 133<BR/>_tmp_21.title = &quot;Babylon 6 Settings&quot;> ]
+"30064782660" [label = <&lt;operator&gt;.assignment, 134<BR/>_tmp_21.fields = babylon6Settings.parserSetting...> ]
+"30064782664" [label = <&lt;operator&gt;.assignment, 135<BR/>_tmp_21.settings = &lt;lambda&gt;2> ]
+"68719488306" [label = <IDENTIFIER, 131<BR/>_tmp_21<BR/>{ key: 'babylon6', title: '...> ]
+"30064782668" [label = <&lt;operator&gt;.assignment, 138<BR/>_tmp_22.key = &quot;babylon7&quot;> ]
+"30064782670" [label = <&lt;operator&gt;.assignment, 139<BR/>_tmp_22.title = &quot;Babylon 7 Settings&quot;> ]
+"30064782672" [label = <&lt;operator&gt;.assignment, 140<BR/>_tmp_22.fields = babylon7Settings.parserSetting...> ]
+"30064782676" [label = <&lt;operator&gt;.assignment, 141<BR/>_tmp_22.settings = &lt;lambda&gt;3> ]
+"68719488314" [label = <IDENTIFIER, 137<BR/>_tmp_22<BR/>{ key: 'babylon7', title: '...> ]
+"30064782683" [label = <&lt;operator&gt;.assignment, 144<BR/>_tmp_24 = __ecma.Array.factory()> ]
+"30064782685" [label = <, 144<BR/>_tmp_24.push(&quot;range&quot;)> ]
+"68719488323" [label = <IDENTIFIER, 144<BR/>_tmp_24<BR/>['range']> ]
+"30064782624" [label = <&lt;operator&gt;.assignment, 122<BR/>_tmp_19 = __ecma.Array.factory()> ]
+"30064782626" [label = <, 122<BR/>_tmp_19.push(&quot;esprima&quot;)> ]
+"30064782628" [label = <, 122<BR/>_tmp_19.push(&quot;babel5&quot;)> ]
+"30064782630" [label = <, 122<BR/>_tmp_19.push(&quot;babylon6&quot;)> ]
+"30064782632" [label = <, 122<BR/>_tmp_19.push(&quot;babylon7&quot;)> ]
+"30064782634" [label = <, 122<BR/>_tmp_19.push(&quot;flow&quot;)> ]
+"30064782636" [label = <, 122<BR/>_tmp_19.push(&quot;typescript&quot;)> ]
+"68719488285" [label = <IDENTIFIER, 122<BR/>_tmp_19<BR/>['esprima', 'babel5', 'babylon6', 'babylon7', '...> ]
+  "141733921304" -> "124554052302"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151110" -> "124554052302"  [ label = "DDG: this"] 
+  "111669151111" -> "124554052302"  [ label = "DDG: defaultOptions"] 
+  "30064782612" -> "124554052302"  [ label = "DDG: _tmp_16.fields"] 
+  "30064782614" -> "124554052302"  [ label = "DDG: _tmp_17 = __ecma.Array.factory()"] 
+  "30064782618" -> "124554052302"  [ label = "DDG: _tmp_18 = __ecma.Array.factory()"] 
+  "30064782620" -> "124554052302"  [ label = "DDG: _tmp_18.push(&quot;parser&quot;)"] 
+  "30064782622" -> "124554052302"  [ label = "DDG: _tmp_18"] 
+  "30064782624" -> "124554052302"  [ label = "DDG: _tmp_19 = __ecma.Array.factory()"] 
+  "30064782626" -> "124554052302"  [ label = "DDG: _tmp_19.push(&quot;esprima&quot;)"] 
+  "30064782628" -> "124554052302"  [ label = "DDG: _tmp_19.push(&quot;babel5&quot;)"] 
+  "30064782630" -> "124554052302"  [ label = "DDG: _tmp_19.push(&quot;babylon6&quot;)"] 
+  "30064782632" -> "124554052302"  [ label = "DDG: _tmp_19.push(&quot;babylon7&quot;)"] 
+  "30064782634" -> "124554052302"  [ label = "DDG: _tmp_19.push(&quot;flow&quot;)"] 
+  "30064782636" -> "124554052302"  [ label = "DDG: _tmp_19"] 
+  "30064782636" -> "124554052302"  [ label = "DDG: _tmp_19.push(&quot;typescript&quot;)"] 
+  "30064782622" -> "124554052302"  [ label = "DDG: _tmp_18.push(['esprima', 'babel5', 'babylon6', 'babylon7', 'flow', 'typescript'])"] 
+  "30064782616" -> "124554052302"  [ label = "DDG: _tmp_17.push(['parser', ['esprima', 'babel5', 'babylon6', 'babylon7', 'flow', 'typescript']])"] 
+  "30064782638" -> "124554052302"  [ label = "DDG: _tmp_17.push(&quot;range&quot;)"] 
+  "30064782640" -> "124554052302"  [ label = "DDG: _tmp_17.push(&quot;tolerant&quot;)"] 
+  "30064782644" -> "124554052302"  [ label = "DDG: _tmp_20.key"] 
+  "30064782644" -> "124554052302"  [ label = "DDG: _tmp_20.key = &quot;flow&quot;"] 
+  "30064782646" -> "124554052302"  [ label = "DDG: _tmp_20.title"] 
+  "30064782646" -> "124554052302"  [ label = "DDG: _tmp_20.title = &quot;Flow Settings&quot;"] 
+  "30064782648" -> "124554052302"  [ label = "DDG: _tmp_20.fields"] 
+  "30064782648" -> "124554052302"  [ label = "DDG: flowSettings.parserSettingsConfiguration.fields"] 
+  "30064782648" -> "124554052302"  [ label = "DDG: _tmp_20.fields = flowSettings.parserSettingsConfiguration.fields"] 
+  "30064782652" -> "124554052302"  [ label = "DDG: _tmp_20.settings"] 
+  "30064782652" -> "124554052302"  [ label = "DDG: _tmp_20.settings = &lt;lambda&gt;1"] 
+  "30064782642" -> "124554052302"  [ label = "DDG: _tmp_17.push({
+          key: 'flow',
+          title: 'Flow Settings',
+          fields: flowSettings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.flow || defaultOptions.flow,
+        })"] 
+  "30064782656" -> "124554052302"  [ label = "DDG: _tmp_21.key"] 
+  "30064782656" -> "124554052302"  [ label = "DDG: _tmp_21.key = &quot;babylon6&quot;"] 
+  "30064782658" -> "124554052302"  [ label = "DDG: _tmp_21.title"] 
+  "30064782658" -> "124554052302"  [ label = "DDG: _tmp_21.title = &quot;Babylon 6 Settings&quot;"] 
+  "30064782660" -> "124554052302"  [ label = "DDG: _tmp_21.fields"] 
+  "30064782660" -> "124554052302"  [ label = "DDG: babylon6Settings.parserSettingsConfiguration.fields"] 
+  "30064782660" -> "124554052302"  [ label = "DDG: _tmp_21.fields = babylon6Settings.parserSettingsConfiguration.fields"] 
+  "30064782664" -> "124554052302"  [ label = "DDG: _tmp_21.settings"] 
+  "30064782664" -> "124554052302"  [ label = "DDG: _tmp_21.settings = &lt;lambda&gt;2"] 
+  "30064782654" -> "124554052302"  [ label = "DDG: _tmp_17.push({
+          key: 'babylon6',
+          title: 'Babylon 6 Settings',
+          fields: babylon6Settings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.babylon6 || defaultOptions.babylon6,
+        })"] 
+  "30064782666" -> "124554052302"  [ label = "DDG: _tmp_17"] 
+  "30064782668" -> "124554052302"  [ label = "DDG: _tmp_22.key"] 
+  "30064782668" -> "124554052302"  [ label = "DDG: _tmp_22.key = &quot;babylon7&quot;"] 
+  "30064782670" -> "124554052302"  [ label = "DDG: _tmp_22.title"] 
+  "30064782670" -> "124554052302"  [ label = "DDG: _tmp_22.title = &quot;Babylon 7 Settings&quot;"] 
+  "30064782672" -> "124554052302"  [ label = "DDG: _tmp_22.fields"] 
+  "30064782672" -> "124554052302"  [ label = "DDG: babylon7Settings.parserSettingsConfiguration.fields"] 
+  "30064782672" -> "124554052302"  [ label = "DDG: _tmp_22.fields = babylon7Settings.parserSettingsConfiguration.fields"] 
+  "30064782676" -> "124554052302"  [ label = "DDG: _tmp_22.settings"] 
+  "30064782676" -> "124554052302"  [ label = "DDG: _tmp_22.settings = &lt;lambda&gt;3"] 
+  "30064782666" -> "124554052302"  [ label = "DDG: _tmp_17.push({
+          key: 'babylon7',
+          title: 'Babylon 7 Settings',
+          fields: babylon7Settings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.babylon7 || defaultOptions.babylon7,
+        })"] 
+  "30064782612" -> "124554052302"  [ label = "DDG: _tmp_16.fields = [
+        ['parser', ['esprima', 'babel5', 'babylon6', 'babylon7', 'flow', 'typescript']],
+        'range',
+        'tolerant',
+        {
+          key: 'flow',
+          title: 'Flow Settings',
+          fields: flowSettings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.flow || defaultOptions.flow,
+        },
+        {
+          key: 'babylon6',
+          title: 'Babylon 6 Settings',
+          fields: babylon6Settings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.babylon6 || defaultOptions.babylon6,
+        },
+        {
+          key: 'babylon7',
+          title: 'Babylon 7 Settings',
+          fields: babylon7Settings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.babylon7 || defaultOptions.babylon7,
+        },
+      ]"] 
+  "30064782678" -> "124554052302"  [ label = "DDG: _tmp_16.required"] 
+  "30064782680" -> "124554052302"  [ label = "DDG: .alloc"] 
+  "30064782680" -> "124554052302"  [ label = "DDG: _tmp_23 = .alloc"] 
+  "30064782682" -> "124554052302"  [ label = "DDG: _tmp_23"] 
+  "30064782683" -> "124554052302"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064782683" -> "124554052302"  [ label = "DDG: _tmp_24 = __ecma.Array.factory()"] 
+  "30064782685" -> "124554052302"  [ label = "DDG: _tmp_24"] 
+  "30064782685" -> "124554052302"  [ label = "DDG: _tmp_24.push(&quot;range&quot;)"] 
+  "30064782682" -> "124554052302"  [ label = "DDG: new Set(['range'])"] 
+  "30064782678" -> "124554052302"  [ label = "DDG: _tmp_16.required = new Set(['range'])"] 
+  "107374183117" -> "111669151110"  [ label = "DDG: "] 
+  "107374183117" -> "111669151111"  [ label = "DDG: "] 
+  "25769805739" -> "141733921304"  [ label = "DDG: "] 
+  "25769805739" -> "141733921304"  [ label = "DDG: {
+      fields: [
+        ['parser', ['esprima', 'babel5', 'babylon6', 'babylon7', 'flow', 'typescript']],
+        'range',
+        'tolerant',
+        {
+          key: 'flow',
+          title: 'Flow Settings',
+          fields: flowSettings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.flow || defaultOptions.flow,
+        },
+        {
+          key: 'babylon6',
+          title: 'Babylon 6 Settings',
+          fields: babylon6Settings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.babylon6 || defaultOptions.babylon6,
+        },
+        {
+          key: 'babylon7',
+          title: 'Babylon 7 Settings',
+          fields: babylon7Settings.parserSettingsConfiguration.fields,
+          settings: settings =&gt; settings.babylon7 || defaultOptions.babylon7,
+        },
+      ],
+      required: new Set(['range']),
+    }"] 
+  "107374183117" -> "141733921304"  [ label = "DDG: "] 
+  "30064782612" -> "25769805739"  [ label = "DDG: _tmp_16.fields"] 
+  "30064782678" -> "25769805739"  [ label = "DDG: _tmp_16.required"] 
+  "107374183117" -> "25769805739"  [ label = "DDG: "] 
+  "30064782666" -> "30064782612"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782612"  [ label = "DDG: "] 
+  "30064782682" -> "30064782678"  [ label = "DDG: new Set(['range'])"] 
+  "30064782682" -> "30064782678"  [ label = "DDG: _tmp_23"] 
+  "107374183117" -> "30064782678"  [ label = "DDG: "] 
+  "107374183117" -> "68719488325"  [ label = "DDG: "] 
+  "107374183117" -> "30064782614"  [ label = "DDG: "] 
+  "107374183117" -> "68719488315"  [ label = "DDG: "] 
+  "107374183117" -> "30064782680"  [ label = "DDG: "] 
+  "107374183117" -> "68719488324"  [ label = "DDG: "] 
+  "30064782614" -> "30064782616"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782616"  [ label = "DDG: "] 
+  "30064782622" -> "30064782616"  [ label = "DDG: _tmp_18"] 
+  "30064782616" -> "30064782638"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782638"  [ label = "DDG: "] 
+  "30064782638" -> "30064782640"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782640"  [ label = "DDG: "] 
+  "30064782640" -> "30064782642"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782642"  [ label = "DDG: "] 
+  "30064782644" -> "30064782642"  [ label = "DDG: _tmp_20.key"] 
+  "30064782646" -> "30064782642"  [ label = "DDG: _tmp_20.title"] 
+  "30064782648" -> "30064782642"  [ label = "DDG: _tmp_20.fields"] 
+  "30064782652" -> "30064782642"  [ label = "DDG: _tmp_20.settings"] 
+  "30064782642" -> "30064782654"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782654"  [ label = "DDG: "] 
+  "30064782656" -> "30064782654"  [ label = "DDG: _tmp_21.key"] 
+  "30064782658" -> "30064782654"  [ label = "DDG: _tmp_21.title"] 
+  "30064782660" -> "30064782654"  [ label = "DDG: _tmp_21.fields"] 
+  "30064782664" -> "30064782654"  [ label = "DDG: _tmp_21.settings"] 
+  "30064782654" -> "30064782666"  [ label = "DDG: _tmp_17"] 
+  "107374183117" -> "30064782666"  [ label = "DDG: "] 
+  "30064782668" -> "30064782666"  [ label = "DDG: _tmp_22.key"] 
+  "30064782670" -> "30064782666"  [ label = "DDG: _tmp_22.title"] 
+  "30064782672" -> "30064782666"  [ label = "DDG: _tmp_22.fields"] 
+  "30064782676" -> "30064782666"  [ label = "DDG: _tmp_22.settings"] 
+  "107374183117" -> "68719488318"  [ label = "DDG: "] 
+  "30064782680" -> "30064782682"  [ label = "DDG: _tmp_23"] 
+  "107374183117" -> "30064782682"  [ label = "DDG: "] 
+  "30064782685" -> "30064782682"  [ label = "DDG: _tmp_24"] 
+  "107374183117" -> "30064782618"  [ label = "DDG: "] 
+  "107374183117" -> "68719488286"  [ label = "DDG: "] 
+  "107374183117" -> "30064782644"  [ label = "DDG: "] 
+  "107374183117" -> "30064782646"  [ label = "DDG: "] 
+  "107374183117" -> "30064782652"  [ label = "DDG: "] 
+  "107374183117" -> "68719488298"  [ label = "DDG: "] 
+  "107374183117" -> "30064782656"  [ label = "DDG: "] 
+  "107374183117" -> "30064782658"  [ label = "DDG: "] 
+  "107374183117" -> "30064782664"  [ label = "DDG: "] 
+  "107374183117" -> "68719488306"  [ label = "DDG: "] 
+  "107374183117" -> "30064782668"  [ label = "DDG: "] 
+  "107374183117" -> "30064782670"  [ label = "DDG: "] 
+  "107374183117" -> "30064782676"  [ label = "DDG: "] 
+  "107374183117" -> "68719488314"  [ label = "DDG: "] 
+  "107374183117" -> "30064782683"  [ label = "DDG: "] 
+  "107374183117" -> "68719488323"  [ label = "DDG: "] 
+  "30064782618" -> "30064782620"  [ label = "DDG: _tmp_18"] 
+  "107374183117" -> "30064782620"  [ label = "DDG: "] 
+  "30064782620" -> "30064782622"  [ label = "DDG: _tmp_18"] 
+  "107374183117" -> "30064782622"  [ label = "DDG: "] 
+  "30064782636" -> "30064782622"  [ label = "DDG: _tmp_19"] 
+  "30064782683" -> "30064782685"  [ label = "DDG: _tmp_24"] 
+  "107374183117" -> "30064782685"  [ label = "DDG: "] 
+  "107374183117" -> "30064782624"  [ label = "DDG: "] 
+  "107374183117" -> "68719488285"  [ label = "DDG: "] 
+  "30064782624" -> "30064782626"  [ label = "DDG: _tmp_19"] 
+  "107374183117" -> "30064782626"  [ label = "DDG: "] 
+  "30064782626" -> "30064782628"  [ label = "DDG: _tmp_19"] 
+  "107374183117" -> "30064782628"  [ label = "DDG: "] 
+  "30064782628" -> "30064782630"  [ label = "DDG: _tmp_19"] 
+  "107374183117" -> "30064782630"  [ label = "DDG: "] 
+  "30064782630" -> "30064782632"  [ label = "DDG: _tmp_19"] 
+  "107374183117" -> "30064782632"  [ label = "DDG: "] 
+  "30064782632" -> "30064782634"  [ label = "DDG: _tmp_19"] 
+  "107374183117" -> "30064782634"  [ label = "DDG: "] 
+  "30064782634" -> "30064782636"  [ label = "DDG: _tmp_19"] 
+  "107374183117" -> "30064782636"  [ label = "DDG: "] 
+}

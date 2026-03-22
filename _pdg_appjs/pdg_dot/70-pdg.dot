@@ -1,0 +1,22 @@
+digraph "getDerivedStateFromError" {  
+node [shape="rect"];  
+"107374182470" [label = <METHOD, 82<BR/>getDerivedStateFromError> ]
+"124554051653" [label = <METHOD_RETURN, 82<BR/>{ hasError: __ecma.Boolean; }> ]
+"111669149844" [label = <PARAM, 82<BR/>this> ]
+"141733920839" [label = <RETURN, 84<BR/>return { hasError: true }> ]
+"25769803961" [label = <BLOCK, 84<BR/>{ hasError: true }> ]
+"30064772387" [label = <&lt;operator&gt;.assignment, 84<BR/>_tmp_9.hasError = true> ]
+"68719478135" [label = <IDENTIFIER, 84<BR/>_tmp_9<BR/>{ hasError: true }> ]
+  "141733920839" -> "124554051653"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149844" -> "124554051653"  [ label = "DDG: this"] 
+  "30064772387" -> "124554051653"  [ label = "DDG: _tmp_9.hasError"] 
+  "30064772387" -> "124554051653"  [ label = "DDG: _tmp_9.hasError = true"] 
+  "107374182470" -> "111669149844"  [ label = "DDG: "] 
+  "25769803961" -> "141733920839"  [ label = "DDG: "] 
+  "25769803961" -> "141733920839"  [ label = "DDG: { hasError: true }"] 
+  "107374182470" -> "141733920839"  [ label = "DDG: "] 
+  "30064772387" -> "25769803961"  [ label = "DDG: _tmp_9.hasError"] 
+  "107374182470" -> "25769803961"  [ label = "DDG: "] 
+  "107374182470" -> "30064772387"  [ label = "DDG: "] 
+  "107374182470" -> "68719478135"  [ label = "DDG: "] 
+}

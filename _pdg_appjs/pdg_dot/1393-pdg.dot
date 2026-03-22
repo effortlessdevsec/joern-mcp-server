@@ -1,0 +1,11 @@
+digraph "&lt;operator&gt;.logicalAnd" {  
+node [shape="rect"];  
+"107374183793" [label = <METHOD<BR/>&lt;operator&gt;.logicalAnd> ]
+"124554052977" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152489" [label = <PARAM<BR/>p1> ]
+"111669152490" [label = <PARAM<BR/>p2> ]
+  "111669152489" -> "124554052977"  [ label = "DDG: p1"] 
+  "111669152490" -> "124554052977"  [ label = "DDG: p2"] 
+  "107374183793" -> "111669152489"  [ label = "DDG: "] 
+  "107374183793" -> "111669152490"  [ label = "DDG: "] 
+}

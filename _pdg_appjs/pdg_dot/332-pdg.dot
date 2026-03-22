@@ -1,0 +1,465 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182732" [label = <METHOD, 1<BR/>:program> ]
+"124554051947" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150349" [label = <PARAM, 1<BR/>this> ]
+"30064776437" [label = <&lt;operator&gt;.assignment, 189<BR/>function isValidPosition = function isValidPosi...> ]
+"30064776438" [label = <&lt;operator&gt;.assignment, 233<BR/>function createTreeAdapter = function createTre...> ]
+"25769804682" [label = <BLOCK, 4<BR/>&lt;empty&gt;> ]
+"30064776440" [label = <&lt;operator&gt;.assignment, 133<BR/>const TreeAdapterConfigs = { default: { f...> ]
+"25769804683" [label = <BLOCK, 193<BR/>export function ignoreKeysFilter(keys=new Set()...> ]
+"25769804684" [label = <BLOCK, 201<BR/>export function locationInformationFilter(keys)...> ]
+"25769804685" [label = <BLOCK, 209<BR/>export function functionFilter() { return { ...> ]
+"25769804686" [label = <BLOCK, 217<BR/>export function emptyKeysFilter() { return { ...> ]
+"25769804687" [label = <BLOCK, 225<BR/>export function typeKeysFilter(keys) { return...> ]
+"25769804688" [label = <BLOCK, 243<BR/>export function treeAdapterFromParseResult({tre...> ]
+"176093659152" [label = <TYPE_REF, 4<BR/>class TreeAdapter> ]
+"30064776439" [label = <&lt;operator&gt;.assignment, 4<BR/>TreeAdapter = astexplorer/website/src/core/Tree...> ]
+"30064776517" [label = <&lt;operator&gt;.assignment, 193<BR/>function ignoreKeysFilter = function ignoreKeys...> ]
+"30064776518" [label = <&lt;operator&gt;.assignment, 193<BR/>exports.ignoreKeysFilter = ignoreKeysFilter> ]
+"30064776520" [label = <&lt;operator&gt;.assignment, 201<BR/>function locationInformationFilter = function l...> ]
+"30064776521" [label = <&lt;operator&gt;.assignment, 201<BR/>exports.locationInformationFilter = locationInf...> ]
+"30064776523" [label = <&lt;operator&gt;.assignment, 209<BR/>function functionFilter = function functionFilt...> ]
+"30064776524" [label = <&lt;operator&gt;.assignment, 209<BR/>exports.functionFilter = functionFilter> ]
+"30064776526" [label = <&lt;operator&gt;.assignment, 217<BR/>function emptyKeysFilter = function emptyKeysFi...> ]
+"30064776527" [label = <&lt;operator&gt;.assignment, 217<BR/>exports.emptyKeysFilter = emptyKeysFilter> ]
+"30064776529" [label = <&lt;operator&gt;.assignment, 225<BR/>function typeKeysFilter = function typeKeysFilt...> ]
+"30064776530" [label = <&lt;operator&gt;.assignment, 225<BR/>exports.typeKeysFilter = typeKeysFilter> ]
+"30064776532" [label = <&lt;operator&gt;.assignment, 243<BR/>function treeAdapterFromParseResult = function ...> ]
+"30064776533" [label = <&lt;operator&gt;.assignment, 243<BR/>exports.treeAdapterFromParseResult = treeAdapte...> ]
+"30064776441" [label = <&lt;operator&gt;.assignment, 134<BR/>_tmp_15.default = { filters: [], openBy...> ]
+"30064776454" [label = <&lt;operator&gt;.assignment, 142<BR/>_tmp_15.estree = { filters: [ functio...> ]
+"68719482309" [label = <IDENTIFIER, 133<BR/>_tmp_15<BR/>{ default: { filters: [], openByDefau...> ]
+"30064776443" [label = <&lt;operator&gt;.assignment, 135<BR/>_tmp_16.filters = __ecma.Array.factory()> ]
+"30064776446" [label = <&lt;operator&gt;.assignment, 136<BR/>_tmp_16.openByDefault = &lt;lambda&gt;2> ]
+"30064776448" [label = <&lt;operator&gt;.assignment, 137<BR/>_tmp_16.nodeToRange = &lt;lambda&gt;3> ]
+"30064776450" [label = <&lt;operator&gt;.assignment, 138<BR/>_tmp_16.nodeToName = &lt;lambda&gt;4> ]
+"30064776452" [label = <&lt;operator&gt;.assignment, 139<BR/>_tmp_16.walkNode = &lt;lambda&gt;5> ]
+"68719482245" [label = <IDENTIFIER, 134<BR/>_tmp_16<BR/>{ filters: [], openByDefault: () =&gt; fal...> ]
+"30064776456" [label = <&lt;operator&gt;.assignment, 143<BR/>_tmp_19.filters = [ functionFilter(), ...> ]
+"30064776485" [label = <&lt;operator&gt;.assignment, 149<BR/>_tmp_19.openByDefaultNodes = new Set(['Program'])> ]
+"30064776494" [label = <&lt;operator&gt;.assignment, 150<BR/>_tmp_19.openByDefaultKeys = new Set([ 'bo...> ]
+"30064776509" [label = <&lt;operator&gt;.assignment, 156<BR/>_tmp_19.openByDefault = openByDefault> ]
+"30064776511" [label = <&lt;operator&gt;.assignment, 160<BR/>_tmp_19.nodeToRange = nodeToRange> ]
+"30064776513" [label = <&lt;operator&gt;.assignment, 172<BR/>_tmp_19.nodeToName = nodeToName> ]
+"30064776515" [label = <&lt;operator&gt;.assignment, 175<BR/>_tmp_19.walkNode = walkNode> ]
+"68719482308" [label = <IDENTIFIER, 142<BR/>_tmp_19<BR/>{ filters: [ functionFilter(), ...> ]
+"30064776458" [label = <&lt;operator&gt;.assignment, 143<BR/>_tmp_20 = __ecma.Array.factory()> ]
+"30064776460" [label = <, 144<BR/>_tmp_20.push(functionFilter())> ]
+"30064776463" [label = <, 145<BR/>_tmp_20.push(emptyKeysFilter())> ]
+"30064776466" [label = <, 146<BR/>_tmp_20.push(locationInformationFilter(new Set(...> ]
+"30064776482" [label = <, 147<BR/>_tmp_20.push(typeKeysFilter())> ]
+"68719482279" [label = <IDENTIFIER, 143<BR/>_tmp_20<BR/>[ functionFilter(), emptyKeysFilter...> ]
+"30064776487" [label = <&lt;operator&gt;.assignment, 149<BR/>_tmp_23 = .alloc> ]
+"30064776489" [label = <&lt;operator&gt;.new, 149<BR/>new Set(['Program'])> ]
+"68719482288" [label = <IDENTIFIER, 149<BR/>_tmp_23<BR/>new Set(['Program'])> ]
+"30064776496" [label = <&lt;operator&gt;.assignment, 150<BR/>_tmp_25 = .alloc> ]
+"30064776498" [label = <&lt;operator&gt;.new, 150<BR/>new Set([ 'body', 'elements', // ar...> ]
+"68719482303" [label = <IDENTIFIER, 150<BR/>_tmp_25<BR/>new Set([ 'body', 'elements', // ar...> ]
+"68719482282" [label = <IDENTIFIER, 149<BR/>Set<BR/>new Set(['Program'])> ]
+"68719482291" [label = <IDENTIFIER, 150<BR/>Set<BR/>new Set([ 'body', 'elements', // ar...> ]
+"68719482251" [label = <IDENTIFIER, 144<BR/>functionFilter<BR/>functionFilter()> ]
+"30064776462" [label = <functionFilter, 144<BR/>functionFilter()> ]
+"68719482255" [label = <IDENTIFIER, 145<BR/>emptyKeysFilter<BR/>emptyKeysFilter()> ]
+"30064776465" [label = <emptyKeysFilter, 145<BR/>emptyKeysFilter()> ]
+"68719482259" [label = <IDENTIFIER, 146<BR/>locationInformationFilter<BR/>locationInformationFilter(new Set(['range', 'lo...> ]
+"30064776468" [label = <locationInformationFilter, 146<BR/>locationInformationFilter(new Set(['range', 'lo...> ]
+"68719482277" [label = <IDENTIFIER, 147<BR/>typeKeysFilter<BR/>typeKeysFilter()> ]
+"30064776484" [label = <typeKeysFilter, 147<BR/>typeKeysFilter()> ]
+"30064776490" [label = <&lt;operator&gt;.assignment, 149<BR/>_tmp_24 = __ecma.Array.factory()> ]
+"30064776492" [label = <, 149<BR/>_tmp_24.push(&quot;Program&quot;)> ]
+"68719482287" [label = <IDENTIFIER, 149<BR/>_tmp_24<BR/>['Program']> ]
+"30064776499" [label = <&lt;operator&gt;.assignment, 150<BR/>_tmp_26 = __ecma.Array.factory()> ]
+"30064776501" [label = <, 151<BR/>_tmp_26.push(&quot;body&quot;)> ]
+"30064776503" [label = <, 152<BR/>_tmp_26.push(&quot;elements&quot;)> ]
+"30064776505" [label = <, 153<BR/>_tmp_26.push(&quot;declarations&quot;)> ]
+"30064776507" [label = <, 154<BR/>_tmp_26.push(&quot;expression&quot;)> ]
+"68719482302" [label = <IDENTIFIER, 150<BR/>_tmp_26<BR/>[ 'body', 'elements', // array lite...> ]
+"30064776469" [label = <&lt;operator&gt;.assignment, 146<BR/>_tmp_21 = .alloc> ]
+"30064776471" [label = <&lt;operator&gt;.new, 146<BR/>new Set(['range', 'loc', 'start', 'end'])> ]
+"68719482274" [label = <IDENTIFIER, 146<BR/>_tmp_21<BR/>new Set(['range', 'loc', 'start', 'end'])> ]
+"68719482262" [label = <IDENTIFIER, 146<BR/>Set<BR/>new Set(['range', 'loc', 'start', 'end'])> ]
+"30064776472" [label = <&lt;operator&gt;.assignment, 146<BR/>_tmp_22 = __ecma.Array.factory()> ]
+"30064776474" [label = <, 146<BR/>_tmp_22.push(&quot;range&quot;)> ]
+"30064776476" [label = <, 146<BR/>_tmp_22.push(&quot;loc&quot;)> ]
+"30064776478" [label = <, 146<BR/>_tmp_22.push(&quot;start&quot;)> ]
+"30064776480" [label = <, 146<BR/>_tmp_22.push(&quot;end&quot;)> ]
+"68719482273" [label = <IDENTIFIER, 146<BR/>_tmp_22<BR/>['range', 'loc', 'start', 'end']> ]
+  "30064776437" -> "124554051947"  [ label = "DDG: isValidPosition"] 
+  "30064776437" -> "124554051947"  [ label = "DDG: function isValidPosition = function isValidPosition(position) {
+  return Number.isInteger(position);
+}"] 
+  "30064776438" -> "124554051947"  [ label = "DDG: createTreeAdapter"] 
+  "30064776438" -> "124554051947"  [ label = "DDG: function createTreeAdapter = function createTreeAdapter(type, adapterOptions, filterValues) {
+  if (TreeAdapterConfigs[type] == null) {
+    throw new Error(`Unknown tree adapter type &quot;${type}&quot;`);
+  }
+  return new TreeAdapter(
+    Object.assign({}, TreeAdapterConfigs[type], adapterOptions),
+    filterValues,
+  );
+}"] 
+  "30064776439" -> "124554051947"  [ label = "DDG: TreeAdapter"] 
+  "30064776439" -> "124554051947"  [ label = "DDG: TreeAdapter = astexplorer/website/src/core/TreeAdapter.js::program:TreeAdapter:&lt;init&gt;"] 
+  "30064776440" -> "124554051947"  [ label = "DDG: TreeAdapterConfigs"] 
+  "30064776441" -> "124554051947"  [ label = "DDG: _tmp_15.default"] 
+  "30064776443" -> "124554051947"  [ label = "DDG: _tmp_16.filters"] 
+  "30064776443" -> "124554051947"  [ label = "DDG: _tmp_16.filters = __ecma.Array.factory()"] 
+  "30064776446" -> "124554051947"  [ label = "DDG: _tmp_16.openByDefault"] 
+  "30064776446" -> "124554051947"  [ label = "DDG: _tmp_16.openByDefault = &lt;lambda&gt;2"] 
+  "30064776448" -> "124554051947"  [ label = "DDG: _tmp_16.nodeToRange"] 
+  "30064776448" -> "124554051947"  [ label = "DDG: _tmp_16.nodeToRange = &lt;lambda&gt;3"] 
+  "30064776450" -> "124554051947"  [ label = "DDG: _tmp_16.nodeToName"] 
+  "30064776450" -> "124554051947"  [ label = "DDG: _tmp_16.nodeToName = &lt;lambda&gt;4"] 
+  "30064776452" -> "124554051947"  [ label = "DDG: _tmp_16.walkNode"] 
+  "30064776452" -> "124554051947"  [ label = "DDG: _tmp_16.walkNode = &lt;lambda&gt;5"] 
+  "30064776441" -> "124554051947"  [ label = "DDG: _tmp_15.default = {
+    filters: [],
+    openByDefault: () =&gt; false,
+    nodeToRange: () =&gt; null,
+    nodeToName: () =&gt; { throw new Error('nodeToName must be passed');},
+    walkNode: () =&gt; { throw new Error('walkNode must be passed');},
+  }"] 
+  "30064776454" -> "124554051947"  [ label = "DDG: _tmp_15.estree"] 
+  "30064776456" -> "124554051947"  [ label = "DDG: _tmp_19.filters"] 
+  "30064776458" -> "124554051947"  [ label = "DDG: _tmp_20 = __ecma.Array.factory()"] 
+  "30064776460" -> "124554051947"  [ label = "DDG: functionFilter()"] 
+  "30064776460" -> "124554051947"  [ label = "DDG: _tmp_20.push(functionFilter())"] 
+  "30064776463" -> "124554051947"  [ label = "DDG: emptyKeysFilter()"] 
+  "30064776463" -> "124554051947"  [ label = "DDG: _tmp_20.push(emptyKeysFilter())"] 
+  "30064776469" -> "124554051947"  [ label = "DDG: _tmp_21 = .alloc"] 
+  "30064776471" -> "124554051947"  [ label = "DDG: _tmp_21"] 
+  "30064776472" -> "124554051947"  [ label = "DDG: _tmp_22 = __ecma.Array.factory()"] 
+  "30064776474" -> "124554051947"  [ label = "DDG: _tmp_22.push(&quot;range&quot;)"] 
+  "30064776476" -> "124554051947"  [ label = "DDG: _tmp_22.push(&quot;loc&quot;)"] 
+  "30064776478" -> "124554051947"  [ label = "DDG: _tmp_22.push(&quot;start&quot;)"] 
+  "30064776480" -> "124554051947"  [ label = "DDG: _tmp_22"] 
+  "30064776480" -> "124554051947"  [ label = "DDG: _tmp_22.push(&quot;end&quot;)"] 
+  "30064776471" -> "124554051947"  [ label = "DDG: new Set(['range', 'loc', 'start', 'end'])"] 
+  "30064776466" -> "124554051947"  [ label = "DDG: locationInformationFilter(new Set(['range', 'loc', 'start', 'end']))"] 
+  "30064776466" -> "124554051947"  [ label = "DDG: _tmp_20.push(locationInformationFilter(new Set(['range', 'loc', 'start', 'end'])))"] 
+  "30064776482" -> "124554051947"  [ label = "DDG: _tmp_20"] 
+  "30064776484" -> "124554051947"  [ label = "DDG: this"] 
+  "30064776482" -> "124554051947"  [ label = "DDG: typeKeysFilter()"] 
+  "30064776482" -> "124554051947"  [ label = "DDG: _tmp_20.push(typeKeysFilter())"] 
+  "30064776456" -> "124554051947"  [ label = "DDG: _tmp_19.filters = [
+      functionFilter(),
+      emptyKeysFilter(),
+      locationInformationFilter(new Set(['range', 'loc', 'start', 'end'])),
+      typeKeysFilter(),
+    ]"] 
+  "30064776485" -> "124554051947"  [ label = "DDG: _tmp_19.openByDefaultNodes"] 
+  "30064776487" -> "124554051947"  [ label = "DDG: _tmp_23 = .alloc"] 
+  "30064776489" -> "124554051947"  [ label = "DDG: _tmp_23"] 
+  "30064776490" -> "124554051947"  [ label = "DDG: _tmp_24 = __ecma.Array.factory()"] 
+  "30064776492" -> "124554051947"  [ label = "DDG: _tmp_24"] 
+  "30064776492" -> "124554051947"  [ label = "DDG: _tmp_24.push(&quot;Program&quot;)"] 
+  "30064776489" -> "124554051947"  [ label = "DDG: new Set(['Program'])"] 
+  "30064776485" -> "124554051947"  [ label = "DDG: _tmp_19.openByDefaultNodes = new Set(['Program'])"] 
+  "30064776494" -> "124554051947"  [ label = "DDG: _tmp_19.openByDefaultKeys"] 
+  "30064776496" -> "124554051947"  [ label = "DDG: .alloc"] 
+  "30064776496" -> "124554051947"  [ label = "DDG: _tmp_25 = .alloc"] 
+  "30064776498" -> "124554051947"  [ label = "DDG: _tmp_25"] 
+  "30064776499" -> "124554051947"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064776499" -> "124554051947"  [ label = "DDG: _tmp_26 = __ecma.Array.factory()"] 
+  "30064776501" -> "124554051947"  [ label = "DDG: _tmp_26.push(&quot;body&quot;)"] 
+  "30064776503" -> "124554051947"  [ label = "DDG: _tmp_26.push(&quot;elements&quot;)"] 
+  "30064776505" -> "124554051947"  [ label = "DDG: _tmp_26.push(&quot;declarations&quot;)"] 
+  "30064776507" -> "124554051947"  [ label = "DDG: _tmp_26"] 
+  "30064776507" -> "124554051947"  [ label = "DDG: _tmp_26.push(&quot;expression&quot;)"] 
+  "30064776498" -> "124554051947"  [ label = "DDG: new Set([
+      'body',
+      'elements', // array literals
+      'declarations', // variable declaration
+      'expression', // expression statements
+    ])"] 
+  "30064776494" -> "124554051947"  [ label = "DDG: _tmp_19.openByDefaultKeys = new Set([
+      'body',
+      'elements', // array literals
+      'declarations', // variable declaration
+      'expression', // expression statements
+    ])"] 
+  "30064776509" -> "124554051947"  [ label = "DDG: _tmp_19.openByDefault"] 
+  "30064776509" -> "124554051947"  [ label = "DDG: _tmp_19.openByDefault = openByDefault"] 
+  "30064776511" -> "124554051947"  [ label = "DDG: _tmp_19.nodeToRange"] 
+  "30064776511" -> "124554051947"  [ label = "DDG: _tmp_19.nodeToRange = nodeToRange"] 
+  "30064776513" -> "124554051947"  [ label = "DDG: _tmp_19.nodeToName"] 
+  "30064776513" -> "124554051947"  [ label = "DDG: _tmp_19.nodeToName = nodeToName"] 
+  "30064776515" -> "124554051947"  [ label = "DDG: _tmp_19.walkNode"] 
+  "30064776515" -> "124554051947"  [ label = "DDG: _tmp_19.walkNode = walkNode"] 
+  "30064776454" -> "124554051947"  [ label = "DDG: _tmp_15.estree = {
+    filters: [
+      functionFilter(),
+      emptyKeysFilter(),
+      locationInformationFilter(new Set(['range', 'loc', 'start', 'end'])),
+      typeKeysFilter(),
+    ],
+    openByDefaultNodes: new Set(['Program']),
+    openByDefaultKeys: new Set([
+      'body',
+      'elements', // array literals
+      'declarations', // variable declaration
+      'expression', // expression statements
+    ]),
+    openByDefault(node, key) {
+      return node &amp;&amp; this.openByDefaultNodes.has(node.type) ||
+        this.openByDefaultKeys.has(key);
+    },
+    nodeToRange(node) {
+      if (!(node &amp;&amp; typeof node === 'object')) {
+        return null;
+      }
+      if (node.range) {
+        return node.range;
+      }
+      if (typeof node.start === 'number' &amp;&amp; typeof node.end === 'number') {
+        return [node.start, node.end];
+      }
+      return null;
+    },
+    nodeToName(node) {
+      return node.type;
+    },
+    *walkNode(node) {
+      if (node &amp;&amp; typeof node === 'object') {
+        for (let prop ..."] 
+  "30064776440" -> "124554051947"  [ label = "DDG: const TreeAdapterConfigs = {
+  default: {
+    filters: [],
+    openByDefault: () =&gt; false,
+    nodeToRange: () =&gt; null,
+    nodeToName: () =&gt; { throw new Error('nodeToName must be passed');},
+    walkNode: () =&gt; { throw new Error('walkNode must be passed');},
+  },
+
+  estree: {
+    filters: [
+      functionFilter(),
+      emptyKeysFilter(),
+      locationInformationFilter(new Set(['range', 'loc', 'start', 'end'])),
+      typeKeysFilter(),
+    ],
+    openByDefaultNodes: new Set(['Program']),
+    openByDefaultKeys: new Set([
+      'body',
+      'elements', // array literals
+      'declarations', // variable declaration
+      'expression', // expression statements
+    ]),
+    openByDefault(node, key) {
+      return node &amp;&amp; this.openByDefaultNodes.has(node.type) ||
+        this.openByDefaultKeys.has(key);
+    },
+    nodeToRange(node) {
+      if (!(node &amp;&amp; typeof node === 'object')) {
+        return null;
+      }
+      if (node.range) {
+        return node.range;
+      }
+      if (typeof node.s..."] 
+  "30064776517" -> "124554051947"  [ label = "DDG: function ignoreKeysFilter = function ignoreKeysFilter(keys=new Set(), key, label) {
+  return {
+    key,
+    label,
+    test(_, key) { return  keys.has(key); },
+  };
+}"] 
+  "30064776518" -> "124554051947"  [ label = "DDG: exports.ignoreKeysFilter"] 
+  "30064776518" -> "124554051947"  [ label = "DDG: ignoreKeysFilter"] 
+  "30064776518" -> "124554051947"  [ label = "DDG: exports.ignoreKeysFilter = ignoreKeysFilter"] 
+  "30064776520" -> "124554051947"  [ label = "DDG: function locationInformationFilter = function locationInformationFilter(keys) {
+  return ignoreKeysFilter(
+    keys,
+    'hideLocationData',
+    'Hide location data',
+  );
+}"] 
+  "30064776521" -> "124554051947"  [ label = "DDG: exports.locationInformationFilter"] 
+  "30064776521" -> "124554051947"  [ label = "DDG: locationInformationFilter"] 
+  "30064776521" -> "124554051947"  [ label = "DDG: exports.locationInformationFilter = locationInformationFilter"] 
+  "30064776523" -> "124554051947"  [ label = "DDG: function functionFilter = function functionFilter() {
+  return {
+    key: 'hideFunctions',
+    label: 'Hide methods',
+    test(value) { return typeof value === 'function'; },
+  };
+}"] 
+  "30064776524" -> "124554051947"  [ label = "DDG: exports.functionFilter"] 
+  "30064776524" -> "124554051947"  [ label = "DDG: functionFilter"] 
+  "30064776524" -> "124554051947"  [ label = "DDG: exports.functionFilter = functionFilter"] 
+  "30064776526" -> "124554051947"  [ label = "DDG: function emptyKeysFilter = function emptyKeysFilter() {
+  return {
+    key: 'hideEmptyKeys',
+    label: 'Hide empty keys',
+    test(value, key, fromArray) { return value == null &amp;&amp; !fromArray; },
+  };
+}"] 
+  "30064776527" -> "124554051947"  [ label = "DDG: exports.emptyKeysFilter"] 
+  "30064776527" -> "124554051947"  [ label = "DDG: emptyKeysFilter"] 
+  "30064776527" -> "124554051947"  [ label = "DDG: exports.emptyKeysFilter = emptyKeysFilter"] 
+  "30064776529" -> "124554051947"  [ label = "DDG: function typeKeysFilter = function typeKeysFilter(keys) {
+  return ignoreKeysFilter(
+    keys,
+    'hideTypeKeys',
+    'Hide type keys',
+  );
+}"] 
+  "30064776530" -> "124554051947"  [ label = "DDG: exports.typeKeysFilter"] 
+  "30064776530" -> "124554051947"  [ label = "DDG: typeKeysFilter"] 
+  "30064776530" -> "124554051947"  [ label = "DDG: exports.typeKeysFilter = typeKeysFilter"] 
+  "30064776532" -> "124554051947"  [ label = "DDG: function treeAdapterFromParseResult = function treeAdapterFromParseResult({treeAdapter}, filterValues) {
+  return createTreeAdapter(
+    treeAdapter.type,
+    treeAdapter.options,
+    filterValues,
+  );
+}"] 
+  "30064776533" -> "124554051947"  [ label = "DDG: exports.treeAdapterFromParseResult"] 
+  "30064776533" -> "124554051947"  [ label = "DDG: treeAdapterFromParseResult"] 
+  "30064776533" -> "124554051947"  [ label = "DDG: exports.treeAdapterFromParseResult = treeAdapterFromParseResult"] 
+  "107374182732" -> "111669150349"  [ label = "DDG: "] 
+  "107374182732" -> "30064776437"  [ label = "DDG: "] 
+  "107374182732" -> "30064776438"  [ label = "DDG: "] 
+  "107374182732" -> "25769804682"  [ label = "DDG: "] 
+  "30064776441" -> "30064776440"  [ label = "DDG: _tmp_15.default"] 
+  "30064776454" -> "30064776440"  [ label = "DDG: _tmp_15.estree"] 
+  "107374182732" -> "30064776440"  [ label = "DDG: "] 
+  "107374182732" -> "25769804683"  [ label = "DDG: "] 
+  "107374182732" -> "25769804684"  [ label = "DDG: "] 
+  "107374182732" -> "25769804685"  [ label = "DDG: "] 
+  "107374182732" -> "25769804686"  [ label = "DDG: "] 
+  "107374182732" -> "25769804687"  [ label = "DDG: "] 
+  "107374182732" -> "25769804688"  [ label = "DDG: "] 
+  "107374182732" -> "176093659152"  [ label = "DDG: "] 
+  "107374182732" -> "30064776439"  [ label = "DDG: "] 
+  "107374182732" -> "30064776517"  [ label = "DDG: "] 
+  "30064776517" -> "30064776518"  [ label = "DDG: ignoreKeysFilter"] 
+  "107374182732" -> "30064776518"  [ label = "DDG: "] 
+  "107374182732" -> "30064776520"  [ label = "DDG: "] 
+  "30064776520" -> "30064776521"  [ label = "DDG: locationInformationFilter"] 
+  "107374182732" -> "30064776521"  [ label = "DDG: "] 
+  "107374182732" -> "30064776523"  [ label = "DDG: "] 
+  "30064776523" -> "30064776524"  [ label = "DDG: functionFilter"] 
+  "107374182732" -> "30064776524"  [ label = "DDG: "] 
+  "107374182732" -> "30064776526"  [ label = "DDG: "] 
+  "30064776526" -> "30064776527"  [ label = "DDG: emptyKeysFilter"] 
+  "107374182732" -> "30064776527"  [ label = "DDG: "] 
+  "107374182732" -> "30064776529"  [ label = "DDG: "] 
+  "30064776529" -> "30064776530"  [ label = "DDG: typeKeysFilter"] 
+  "107374182732" -> "30064776530"  [ label = "DDG: "] 
+  "107374182732" -> "30064776532"  [ label = "DDG: "] 
+  "30064776532" -> "30064776533"  [ label = "DDG: treeAdapterFromParseResult"] 
+  "107374182732" -> "30064776533"  [ label = "DDG: "] 
+  "30064776443" -> "30064776441"  [ label = "DDG: _tmp_16.filters"] 
+  "30064776446" -> "30064776441"  [ label = "DDG: _tmp_16.openByDefault"] 
+  "30064776448" -> "30064776441"  [ label = "DDG: _tmp_16.nodeToRange"] 
+  "30064776450" -> "30064776441"  [ label = "DDG: _tmp_16.nodeToName"] 
+  "30064776452" -> "30064776441"  [ label = "DDG: _tmp_16.walkNode"] 
+  "107374182732" -> "30064776441"  [ label = "DDG: "] 
+  "30064776456" -> "30064776454"  [ label = "DDG: _tmp_19.filters"] 
+  "30064776485" -> "30064776454"  [ label = "DDG: _tmp_19.openByDefaultNodes"] 
+  "30064776494" -> "30064776454"  [ label = "DDG: _tmp_19.openByDefaultKeys"] 
+  "30064776509" -> "30064776454"  [ label = "DDG: _tmp_19.openByDefault"] 
+  "30064776511" -> "30064776454"  [ label = "DDG: _tmp_19.nodeToRange"] 
+  "30064776513" -> "30064776454"  [ label = "DDG: _tmp_19.nodeToName"] 
+  "30064776515" -> "30064776454"  [ label = "DDG: _tmp_19.walkNode"] 
+  "107374182732" -> "30064776454"  [ label = "DDG: "] 
+  "107374182732" -> "68719482309"  [ label = "DDG: "] 
+  "107374182732" -> "30064776443"  [ label = "DDG: "] 
+  "107374182732" -> "30064776446"  [ label = "DDG: "] 
+  "107374182732" -> "30064776448"  [ label = "DDG: "] 
+  "107374182732" -> "30064776450"  [ label = "DDG: "] 
+  "107374182732" -> "30064776452"  [ label = "DDG: "] 
+  "107374182732" -> "68719482245"  [ label = "DDG: "] 
+  "30064776482" -> "30064776456"  [ label = "DDG: _tmp_20"] 
+  "107374182732" -> "30064776456"  [ label = "DDG: "] 
+  "30064776489" -> "30064776485"  [ label = "DDG: new Set(['Program'])"] 
+  "30064776489" -> "30064776485"  [ label = "DDG: _tmp_23"] 
+  "107374182732" -> "30064776485"  [ label = "DDG: "] 
+  "30064776498" -> "30064776494"  [ label = "DDG: new Set([
+      'body',
+      'elements', // array literals
+      'declarations', // variable declaration
+      'expression', // expression statements
+    ])"] 
+  "30064776498" -> "30064776494"  [ label = "DDG: _tmp_25"] 
+  "107374182732" -> "30064776494"  [ label = "DDG: "] 
+  "107374182732" -> "30064776509"  [ label = "DDG: "] 
+  "107374182732" -> "30064776511"  [ label = "DDG: "] 
+  "107374182732" -> "30064776513"  [ label = "DDG: "] 
+  "107374182732" -> "30064776515"  [ label = "DDG: "] 
+  "107374182732" -> "68719482308"  [ label = "DDG: "] 
+  "107374182732" -> "30064776458"  [ label = "DDG: "] 
+  "107374182732" -> "68719482279"  [ label = "DDG: "] 
+  "107374182732" -> "30064776487"  [ label = "DDG: "] 
+  "107374182732" -> "68719482288"  [ label = "DDG: "] 
+  "107374182732" -> "30064776496"  [ label = "DDG: "] 
+  "107374182732" -> "68719482303"  [ label = "DDG: "] 
+  "30064776458" -> "30064776460"  [ label = "DDG: _tmp_20"] 
+  "107374182732" -> "30064776460"  [ label = "DDG: "] 
+  "30064776462" -> "30064776460"  [ label = "DDG: this"] 
+  "30064776460" -> "30064776463"  [ label = "DDG: _tmp_20"] 
+  "107374182732" -> "30064776463"  [ label = "DDG: "] 
+  "30064776465" -> "30064776463"  [ label = "DDG: this"] 
+  "30064776463" -> "30064776466"  [ label = "DDG: _tmp_20"] 
+  "107374182732" -> "30064776466"  [ label = "DDG: "] 
+  "30064776468" -> "30064776466"  [ label = "DDG: this"] 
+  "30064776468" -> "30064776466"  [ label = "DDG: new Set(['range', 'loc', 'start', 'end'])"] 
+  "30064776468" -> "30064776466"  [ label = "DDG: "] 
+  "30064776466" -> "30064776482"  [ label = "DDG: _tmp_20"] 
+  "107374182732" -> "30064776482"  [ label = "DDG: "] 
+  "30064776484" -> "30064776482"  [ label = "DDG: this"] 
+  "107374182732" -> "68719482282"  [ label = "DDG: "] 
+  "30064776487" -> "30064776489"  [ label = "DDG: _tmp_23"] 
+  "107374182732" -> "30064776489"  [ label = "DDG: "] 
+  "30064776492" -> "30064776489"  [ label = "DDG: _tmp_24"] 
+  "107374182732" -> "68719482291"  [ label = "DDG: "] 
+  "30064776496" -> "30064776498"  [ label = "DDG: _tmp_25"] 
+  "107374182732" -> "30064776498"  [ label = "DDG: "] 
+  "30064776507" -> "30064776498"  [ label = "DDG: _tmp_26"] 
+  "107374182732" -> "68719482251"  [ label = "DDG: "] 
+  "111669150349" -> "30064776462"  [ label = "DDG: this"] 
+  "107374182732" -> "30064776462"  [ label = "DDG: "] 
+  "107374182732" -> "68719482255"  [ label = "DDG: "] 
+  "30064776462" -> "30064776465"  [ label = "DDG: this"] 
+  "107374182732" -> "30064776465"  [ label = "DDG: "] 
+  "107374182732" -> "68719482259"  [ label = "DDG: "] 
+  "30064776465" -> "30064776468"  [ label = "DDG: this"] 
+  "107374182732" -> "30064776468"  [ label = "DDG: "] 
+  "30064776471" -> "30064776468"  [ label = "DDG: new Set(['range', 'loc', 'start', 'end'])"] 
+  "30064776471" -> "30064776468"  [ label = "DDG: _tmp_21"] 
+  "107374182732" -> "68719482277"  [ label = "DDG: "] 
+  "30064776468" -> "30064776484"  [ label = "DDG: this"] 
+  "107374182732" -> "30064776484"  [ label = "DDG: "] 
+  "107374182732" -> "30064776490"  [ label = "DDG: "] 
+  "107374182732" -> "68719482287"  [ label = "DDG: "] 
+  "107374182732" -> "30064776499"  [ label = "DDG: "] 
+  "107374182732" -> "68719482302"  [ label = "DDG: "] 
+  "107374182732" -> "30064776469"  [ label = "DDG: "] 
+  "107374182732" -> "68719482274"  [ label = "DDG: "] 
+  "30064776490" -> "30064776492"  [ label = "DDG: _tmp_24"] 
+  "107374182732" -> "30064776492"  [ label = "DDG: "] 
+  "30064776499" -> "30064776501"  [ label = "DDG: _tmp_26"] 
+  "107374182732" -> "30064776501"  [ label = "DDG: "] 
+  "30064776501" -> "30064776503"  [ label = "DDG: _tmp_26"] 
+  "107374182732" -> "30064776503"  [ label = "DDG: "] 
+  "30064776503" -> "30064776505"  [ label = "DDG: _tmp_26"] 
+  "107374182732" -> "30064776505"  [ label = "DDG: "] 
+  "30064776505" -> "30064776507"  [ label = "DDG: _tmp_26"] 
+  "107374182732" -> "30064776507"  [ label = "DDG: "] 
+  "107374182732" -> "68719482262"  [ label = "DDG: "] 
+  "30064776469" -> "30064776471"  [ label = "DDG: _tmp_21"] 
+  "107374182732" -> "30064776471"  [ label = "DDG: "] 
+  "30064776480" -> "30064776471"  [ label = "DDG: _tmp_22"] 
+  "107374182732" -> "30064776472"  [ label = "DDG: "] 
+  "107374182732" -> "68719482273"  [ label = "DDG: "] 
+  "30064776472" -> "30064776474"  [ label = "DDG: _tmp_22"] 
+  "107374182732" -> "30064776474"  [ label = "DDG: "] 
+  "30064776474" -> "30064776476"  [ label = "DDG: _tmp_22"] 
+  "107374182732" -> "30064776476"  [ label = "DDG: "] 
+  "30064776476" -> "30064776478"  [ label = "DDG: _tmp_22"] 
+  "107374182732" -> "30064776478"  [ label = "DDG: "] 
+  "30064776478" -> "30064776480"  [ label = "DDG: _tmp_22"] 
+  "107374182732" -> "30064776480"  [ label = "DDG: "] 
+}

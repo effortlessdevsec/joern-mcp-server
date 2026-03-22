@@ -2,6 +2,18 @@
 
 After code changes: run `npm run build`, then reload MCP in Cursor (or restart Cursor) so the client sees these tools.
 
+Env (see BACKEND.md): `JOERN_SERVER_URL` → script tools POST `/query-sync` in-memory (no temp file). `JOERN_MCP_HTTP_ONLY=1` → scripts require URL; `joern_scan` / `joern_parse` / `joern_export` / `joern_slice` / list tools error (no HTTP API).
+
+0a. joern_http_check
+    - query? (default `cpg.graph.nodeCount`)
+    - POST /query-sync health probe; requires `JOERN_SERVER_URL` (ignores `JOERN_MCP_FORCE_SPAWN`).
+
+0b. joern_http_query
+    - query (required)
+    - Raw CPGQL via POST /query-sync (curl-equivalent). `plotDot*` often yields empty stdout + SVG via Graphviz — see tool description.
+
+    Plots over HTTP: see **`PLOT-HTTP.md`**. Prefer `cpg.method.take(1).dotDdg.foreach(println)` (DOT in stdout) instead of `plotDotDdg` when you need text in MCP.
+
 1. joern_run_script
    - script, cpgPath?, params?
    - Run any Joern Scala script (full CPG API).
@@ -19,8 +31,11 @@ After code changes: run `npm run build`, then reload MCP in Cursor (or restart C
    - List methods (name, fullName, filename).
 
 5. joern_import_code
-   - inputPath, language?
-   - Import source/binary and build CPG.
+   - inputPath, language?, runOssDataflow? (default true)
+   - Joern importCode.<language>(path); optional run.ossdataflow; returns projectPath.
+
+5b. joern_importcode
+   - Same args and behavior as joern_import_code (duplicate name for importCode discoverability).
 
 6. joern_query_flows
    - cpgPath, sourceCallName, sinkCallNamePattern
@@ -45,5 +60,55 @@ After code changes: run `npm run build`, then reload MCP in Cursor (or restart C
    - One merged DOT + SVG for all flows.
 
 10. joern_scan
-    - inputPath, language?, overwrite?
-    - Run joern-scan on a path.
+    - inputPath, language?, overwrite?, store?, names?, tags?, maxCallDepth?
+    - `joern-scan` CLI on a source tree (query DB rules).
+
+11. joern_scan_list_queries
+    - (optional `_` — leave empty)
+    - `joern-scan --list-query-names`
+
+12. joern_scan_list_languages
+    - (optional `_` — leave empty)
+    - `joern-scan --list-languages`
+
+13. joern_parse
+    - inputPath?, outputCpgPath?, language?, listLanguages?, noOverlays?
+    - `joern-parse`: write CPG to disk (default under MCP_OUT). Or listLanguages only.
+
+14. joern_export
+    - cpgPath, repr?, format?, outputDir?
+    - `joern-export`: ast/cfg/ddg/cdg/pdg/cpg14/cpg/all → dot/graphml/graphson/neo4jcsv (out dir must not exist; default fresh dir under MCP_OUT).
+
+15. joern_slice
+    - cpgPath, mode (data-flow | usages), outputPath?, plus filters (sinkFilter, sliceDepth, fileFilter, methodNameFilter, …)
+    - `joern-slice`: JSON slices.
+
+---
+
+## Joern execution backend (modular)
+
+**Script tools** (1–9, import 5–5b, query/list/dump/flow): **prefer `JOERN_SERVER_URL`** → **`POST /query-sync`** on `joern --server`. If **`JOERN_SERVER_URL` is not set**, they **fall back** to **`joern [cpgPath] --script <temp.sc>`**. Optional **`JOERN_MCP_FORCE_SPAWN=1`** forces spawn even when the URL is set.
+
+**Direct HTTP** (0a–0b): **`joern_http_check`** / **`joern_http_query`** always POST to **`JOERN_SERVER_URL/query-sync`** (even if `JOERN_MCP_FORCE_SPAWN` is set).
+
+**CLI tools** (10–15): always **spawn** `joern-cli/joern-scan`, `joern-parse`, `joern-export`, `joern-slice` — Joern has no HTTP API for these.
+
+| Env var | Purpose |
+|---------|--------|
+| `JOERN_SERVER_URL` | **Set for production use:** script tools use **`POST .../query-sync`**. Unset → spawn fallback. |
+| `JOERN_SERVER_USER` / `JOERN_SERVER_PASSWORD` | HTTP Basic auth for the Joern server (aliases: `JOERN_SERVER_BASIC_USER` / `JOERN_SERVER_BASIC_PASS`). |
+| `JOERN_SERVER_TIMEOUT_MS` | Max wait for `/query-sync` (default `300000`). |
+| `JOERN_MCP_FORCE_SPAWN` | `1` / `true` / `yes` → always spawn scripts (ignore URL; e.g. for `joern_run_script` **params**). |
+| `JOERN_MCP_DEBUG` | `1` / `true` / `yes` → full stderr trace: startup env, `[executor]` routing, `[http]` POST + responses, `[spawn]` CLI. See BACKEND.md. |
+| `JOERN_MCP_DEBUG_QUERY_MAX` | Optional; chars of query preview in logs (default 2000). |
+| `JOERN_HOME` | Joern install dir (**required** for `joern-cli/*` binaries unless they are on `PATH`). |
+
+**HTTP notes (script tools):**
+- Start Joern with the CPG you want, e.g. `joern --server --runBefore "run.ossdataflow" /path/to/cpg.bin`
+- Tool `cpgPath` is **not** passed to the server per request; stdout includes a reminder if you still pass it.
+- `joern_run_script` **`params`** are **not** forwarded over HTTP (use **`JOERN_MCP_FORCE_SPAWN=1`** or embed values in the script).
+- **`joern_scan`**, **`joern_scan_list_*`**, **`joern_parse`**, **`joern_export`**, **`joern_slice`** always use **spawn**, not HTTP.
+
+See `BACKEND.md` and `docs/JOERN-HTTP-SERVER-GUIDE.md` in the Joern repo.
+
+**Source layout:** `src/create-server.ts` + `src/tools/*.ts` (one file per MCP tool), `src/joern/*` (spawn/HTTP executor), `src/flow-graph/merge-dot.ts`. Full table in `BACKEND.md`.

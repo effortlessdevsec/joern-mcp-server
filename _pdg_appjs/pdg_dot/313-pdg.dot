@@ -1,0 +1,185 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182713" [label = <METHOD, 1<BR/>:program> ]
+"124554051908" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150266" [label = <PARAM, 1<BR/>this> ]
+"30064776046" [label = <&lt;operator&gt;.assignment, 1<BR/>var connect = require(&quot;react-redux&quot;).connect> ]
+"25769804578" [label = <BLOCK, 2<BR/>import { save, selectCategory, openSettin...> ]
+"30064776066" [label = <&lt;operator&gt;.assignment, 13<BR/>var Toolbar = require(&quot;../components/Toolbar&quot;)> ]
+"30064776067" [label = <&lt;operator&gt;.assignment, 14<BR/>var selectors = require(&quot;../store/selectors&quot;)> ]
+"30064776068" [label = <&lt;operator&gt;.assignment, 16<BR/>function mapStateToProps = function mapStateToP...> ]
+"30064776069" [label = <&lt;operator&gt;.assignment, 33<BR/>function mapDispatchToProps = function mapDispa...> ]
+"25769804579" [label = <BLOCK, 65<BR/>export default connect(mapStateToProps, mapDisp...> ]
+"30064776048" [label = <&lt;operator&gt;.assignment, 2<BR/>var save = require(&quot;../store/actions&quot;).save> ]
+"30064776050" [label = <&lt;operator&gt;.assignment, 2<BR/>var selectCategory = require(&quot;../store/actions&quot;...> ]
+"30064776052" [label = <&lt;operator&gt;.assignment, 2<BR/>var openSettingsDialog = require(&quot;../store/acti...> ]
+"30064776054" [label = <&lt;operator&gt;.assignment, 2<BR/>var openShareDialog = require(&quot;../store/actions...> ]
+"30064776056" [label = <&lt;operator&gt;.assignment, 2<BR/>var selectTransformer = require(&quot;../store/actio...> ]
+"30064776058" [label = <&lt;operator&gt;.assignment, 2<BR/>var hideTransformer = require(&quot;../store/actions...> ]
+"30064776060" [label = <&lt;operator&gt;.assignment, 2<BR/>var setParser = require(&quot;../store/actions&quot;).set...> ]
+"30064776062" [label = <&lt;operator&gt;.assignment, 2<BR/>var reset = require(&quot;../store/actions&quot;).reset> ]
+"30064776064" [label = <&lt;operator&gt;.assignment, 2<BR/>var setKeyMap = require(&quot;../store/actions&quot;).set...> ]
+"30064776070" [label = <connect(mapStateToProps, mapDispatchToProps), 65<BR/>connect(mapStateToProps, mapDispatchToProps)(To...> ]
+"30064776072" [label = <&lt;operator&gt;.assignment, 65<BR/>exports[&quot;default&quot;] = connect> ]
+"68719481856" [label = <IDENTIFIER, 13<BR/>require<BR/>require(&quot;../components/Toolbar&quot;)> ]
+"30064775961" [label = <require, 13<BR/>require(&quot;../components/Toolbar&quot;)> ]
+"68719481859" [label = <IDENTIFIER, 14<BR/>require<BR/>require(&quot;../store/selectors&quot;)> ]
+"30064775962" [label = <require, 14<BR/>require(&quot;../store/selectors&quot;)> ]
+"30064776071" [label = <connect, 65<BR/>connect(mapStateToProps, mapDispatchToProps)> ]
+"68719481826" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;react-redux&quot;)> ]
+"30064775951" [label = <require, 1<BR/>require(&quot;react-redux&quot;)> ]
+"68719481863" [label = <IDENTIFIER, 65<BR/>connect<BR/>connect(mapStateToProps, mapDispatchToProps)> ]
+"68719481829" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775952" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481832" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775953" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481835" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775954" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481838" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775955" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481841" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775956" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481844" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775957" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481847" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775958" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481850" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775959" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481853" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775960" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+  "30064776046" -> "124554051908"  [ label = "DDG: var connect = require(&quot;react-redux&quot;).connect"] 
+  "30064776048" -> "124554051908"  [ label = "DDG: save"] 
+  "30064776048" -> "124554051908"  [ label = "DDG: var save = require(&quot;../store/actions&quot;).save"] 
+  "30064776050" -> "124554051908"  [ label = "DDG: selectCategory"] 
+  "30064776050" -> "124554051908"  [ label = "DDG: var selectCategory = require(&quot;../store/actions&quot;).selectCategory"] 
+  "30064776052" -> "124554051908"  [ label = "DDG: openSettingsDialog"] 
+  "30064776052" -> "124554051908"  [ label = "DDG: var openSettingsDialog = require(&quot;../store/actions&quot;).openSettingsDialog"] 
+  "30064776054" -> "124554051908"  [ label = "DDG: openShareDialog"] 
+  "30064776054" -> "124554051908"  [ label = "DDG: var openShareDialog = require(&quot;../store/actions&quot;).openShareDialog"] 
+  "30064776056" -> "124554051908"  [ label = "DDG: selectTransformer"] 
+  "30064776056" -> "124554051908"  [ label = "DDG: var selectTransformer = require(&quot;../store/actions&quot;).selectTransformer"] 
+  "30064776058" -> "124554051908"  [ label = "DDG: hideTransformer"] 
+  "30064776058" -> "124554051908"  [ label = "DDG: var hideTransformer = require(&quot;../store/actions&quot;).hideTransformer"] 
+  "30064776060" -> "124554051908"  [ label = "DDG: setParser"] 
+  "30064776060" -> "124554051908"  [ label = "DDG: var setParser = require(&quot;../store/actions&quot;).setParser"] 
+  "30064776062" -> "124554051908"  [ label = "DDG: reset"] 
+  "30064776062" -> "124554051908"  [ label = "DDG: var reset = require(&quot;../store/actions&quot;).reset"] 
+  "30064776064" -> "124554051908"  [ label = "DDG: setKeyMap"] 
+  "30064776064" -> "124554051908"  [ label = "DDG: var setKeyMap = require(&quot;../store/actions&quot;).setKeyMap"] 
+  "30064776066" -> "124554051908"  [ label = "DDG: require(&quot;../components/Toolbar&quot;)"] 
+  "30064776066" -> "124554051908"  [ label = "DDG: var Toolbar = require(&quot;../components/Toolbar&quot;)"] 
+  "30064776067" -> "124554051908"  [ label = "DDG: selectors"] 
+  "30064776067" -> "124554051908"  [ label = "DDG: require(&quot;../store/selectors&quot;)"] 
+  "30064776067" -> "124554051908"  [ label = "DDG: var selectors = require(&quot;../store/selectors&quot;)"] 
+  "30064776068" -> "124554051908"  [ label = "DDG: function mapStateToProps = function mapStateToProps(state) {
+  const parser = selectors.getParser(state);
+
+  return {
+    forking: selectors.isForking(state),
+    saving: selectors.isSaving(state),
+    canSave: selectors.canSave(state),
+    canFork: selectors.canFork(state),
+    category: parser.category,
+    parser,
+    transformer: selectors.getTransformer(state),
+    keyMap: selectors.getKeyMap(state),
+    showTransformer: selectors.showTransformer(state),
+    snippet: selectors.getRevision(state),
+  };
+}"] 
+  "30064776069" -> "124554051908"  [ label = "DDG: function mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    onParserChange: parser =&gt; {
+      dispatch(setParser(parser));
+    },
+    onCategoryChange: category =&gt; {
+      dispatch(selectCategory(category));
+    },
+    onParserSettingsButtonClick: () =&gt; {
+      dispatch(openSettingsDialog());
+    },
+    onShareButtonClick: () =&gt; {
+      dispatch(openShareDialog());
+    },
+    onTransformChange: transformer =&gt; {
+      dispatch(transformer ? selectTransformer(transformer) : hideTransformer());
+    },
+    onKeyMapChange: keyMap =&gt; {
+      dispatch(setKeyMap(keyMap))
+    },
+    onSave: () =&gt; dispatch(save(false)),
+    onFork: () =&gt; dispatch(save(true)),
+    onNew: () =&gt; {
+      if (global.location.hash) {
+        global.location.hash = '';
+      } else {
+        dispatch(reset());
+      }
+    },
+  };
+}"] 
+  "30064776071" -> "124554051908"  [ label = "DDG: mapStateToProps"] 
+  "30064776071" -> "124554051908"  [ label = "DDG: mapDispatchToProps"] 
+  "30064776071" -> "124554051908"  [ label = "DDG: connect(mapStateToProps, mapDispatchToProps)"] 
+  "30064776070" -> "124554051908"  [ label = "DDG: this"] 
+  "30064776070" -> "124554051908"  [ label = "DDG: Toolbar"] 
+  "30064776070" -> "124554051908"  [ label = "DDG: connect(mapStateToProps, mapDispatchToProps)(Toolbar)"] 
+  "30064776072" -> "124554051908"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064776072" -> "124554051908"  [ label = "DDG: connect"] 
+  "30064776072" -> "124554051908"  [ label = "DDG: exports[&quot;default&quot;] = connect"] 
+  "107374182713" -> "111669150266"  [ label = "DDG: "] 
+  "107374182713" -> "25769804578"  [ label = "DDG: "] 
+  "30064775961" -> "30064776066"  [ label = "DDG: this"] 
+  "30064775961" -> "30064776066"  [ label = "DDG: &quot;../components/Toolbar&quot;"] 
+  "30064775962" -> "30064776067"  [ label = "DDG: this"] 
+  "30064775962" -> "30064776067"  [ label = "DDG: &quot;../store/selectors&quot;"] 
+  "107374182713" -> "30064776068"  [ label = "DDG: "] 
+  "107374182713" -> "30064776069"  [ label = "DDG: "] 
+  "107374182713" -> "25769804579"  [ label = "DDG: "] 
+  "30064776046" -> "30064776072"  [ label = "DDG: connect"] 
+  "107374182713" -> "30064776072"  [ label = "DDG: "] 
+  "107374182713" -> "68719481856"  [ label = "DDG: "] 
+  "30064775960" -> "30064775961"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775961"  [ label = "DDG: "] 
+  "107374182713" -> "68719481859"  [ label = "DDG: "] 
+  "30064775961" -> "30064775962"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775962"  [ label = "DDG: "] 
+  "30064776071" -> "30064776070"  [ label = "DDG: this"] 
+  "107374182713" -> "30064776070"  [ label = "DDG: "] 
+  "30064776066" -> "30064776070"  [ label = "DDG: Toolbar"] 
+  "107374182713" -> "68719481826"  [ label = "DDG: "] 
+  "111669150266" -> "30064775951"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775951"  [ label = "DDG: "] 
+  "107374182713" -> "68719481863"  [ label = "DDG: "] 
+  "30064775962" -> "30064776071"  [ label = "DDG: this"] 
+  "107374182713" -> "30064776071"  [ label = "DDG: "] 
+  "30064776068" -> "30064776071"  [ label = "DDG: mapStateToProps"] 
+  "30064776069" -> "30064776071"  [ label = "DDG: mapDispatchToProps"] 
+  "107374182713" -> "68719481829"  [ label = "DDG: "] 
+  "30064775951" -> "30064775952"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775952"  [ label = "DDG: "] 
+  "107374182713" -> "68719481832"  [ label = "DDG: "] 
+  "30064775952" -> "30064775953"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775953"  [ label = "DDG: "] 
+  "107374182713" -> "68719481835"  [ label = "DDG: "] 
+  "30064775953" -> "30064775954"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775954"  [ label = "DDG: "] 
+  "107374182713" -> "68719481838"  [ label = "DDG: "] 
+  "30064775954" -> "30064775955"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775955"  [ label = "DDG: "] 
+  "107374182713" -> "68719481841"  [ label = "DDG: "] 
+  "30064775955" -> "30064775956"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775956"  [ label = "DDG: "] 
+  "107374182713" -> "68719481844"  [ label = "DDG: "] 
+  "30064775956" -> "30064775957"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775957"  [ label = "DDG: "] 
+  "107374182713" -> "68719481847"  [ label = "DDG: "] 
+  "30064775957" -> "30064775958"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775958"  [ label = "DDG: "] 
+  "107374182713" -> "68719481850"  [ label = "DDG: "] 
+  "30064775958" -> "30064775959"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775959"  [ label = "DDG: "] 
+  "107374182713" -> "68719481853"  [ label = "DDG: "] 
+  "30064775959" -> "30064775960"  [ label = "DDG: this"] 
+  "107374182713" -> "30064775960"  [ label = "DDG: "] 
+}

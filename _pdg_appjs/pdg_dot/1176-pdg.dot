@@ -1,0 +1,21 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183576" [label = <METHOD, 1<BR/>:program> ]
+"124554052760" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152083" [label = <PARAM, 1<BR/>this> ]
+"30064789841" [label = <&lt;operator&gt;.assignment, 1<BR/>module.exports = { validate(){}, }> ]
+"30064789843" [label = <&lt;operator&gt;.assignment, 2<BR/>_tmp_0.validate = validate> ]
+"68719495411" [label = <IDENTIFIER, 1<BR/>_tmp_0<BR/>{ validate(){}, }> ]
+  "111669152083" -> "124554052760"  [ label = "DDG: this"] 
+  "30064789841" -> "124554052760"  [ label = "DDG: module.exports"] 
+  "30064789843" -> "124554052760"  [ label = "DDG: _tmp_0.validate"] 
+  "30064789843" -> "124554052760"  [ label = "DDG: _tmp_0.validate = validate"] 
+  "30064789841" -> "124554052760"  [ label = "DDG: module.exports = {
+  validate(){},
+}"] 
+  "107374183576" -> "111669152083"  [ label = "DDG: "] 
+  "30064789843" -> "30064789841"  [ label = "DDG: _tmp_0.validate"] 
+  "107374183576" -> "30064789841"  [ label = "DDG: "] 
+  "107374183576" -> "30064789843"  [ label = "DDG: "] 
+  "107374183576" -> "68719495411"  [ label = "DDG: "] 
+}

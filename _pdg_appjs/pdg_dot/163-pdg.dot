@@ -1,0 +1,64 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182563" [label = <METHOD, 149<BR/>render> ]
+"124554051746" [label = <METHOD_RETURN, 149<BR/>ANY> ]
+"111669149998" [label = <PARAM, 149<BR/>this> ]
+"25769804174" [label = <BLOCK, 150<BR/>let {children, onText: _onText, ...props} = thi...> ]
+"30064773483" [label = <&lt;operator&gt;.assignment, 151<BR/>const dropindicator = this.state.dragging ? ...> ]
+"141733920881" [label = <RETURN, 157<BR/>return ( &lt;div ref={c =&gt; this.cont...> ]
+"30064773476" [label = <&lt;operator&gt;.assignment, 150<BR/>_tmp_23 = this.props> ]
+"30064773478" [label = <&lt;operator&gt;.assignment, 150<BR/>children = _tmp_23.children> ]
+"30064773480" [label = <&lt;operator&gt;.assignment, 150<BR/>_onText = _tmp_23.onText> ]
+"30064773482" [label = <&lt;operator&gt;.spread, 150<BR/>...props> ]
+"68719479154" [label = <IDENTIFIER, 150<BR/>_tmp_23<BR/>let {children, onText: _onText, ...props} = thi...> ]
+"154618822895" [label = <TEMPLATE_DOM, 158<BR/>&lt;div ref={c =&gt; this.container = c} ...> ]
+"30064773484" [label = <&lt;operator&gt;.conditional, 151<BR/>this.state.dragging ? &lt;div className=&quot;dropIndic...> ]
+"68719479158" [label = <IDENTIFIER, 161<BR/>dropindicator<BR/>{dropindicator}> ]
+"68719479159" [label = <IDENTIFIER, 162<BR/>children<BR/>{children}> ]
+"68719479157" [label = <IDENTIFIER, 160<BR/>props<BR/>{...props}> ]
+"90194313745" [label = <LITERAL, 152<BR/>&quot;dropIndicator&quot;<BR/>className=&quot;dropIndicator&quot;> ]
+"120259084393" [label = <METHOD_REF, 159<BR/>&lt;lambda&gt;17<BR/>{c =&gt; this.container = c}> ]
+  "141733920881" -> "124554051746"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149998" -> "124554051746"  [ label = "DDG: this"] 
+  "30064773476" -> "124554051746"  [ label = "DDG: this.props"] 
+  "30064773476" -> "124554051746"  [ label = "DDG: _tmp_23 = this.props"] 
+  "30064773478" -> "124554051746"  [ label = "DDG: children"] 
+  "30064773478" -> "124554051746"  [ label = "DDG: children = _tmp_23.children"] 
+  "30064773480" -> "124554051746"  [ label = "DDG: _onText"] 
+  "30064773480" -> "124554051746"  [ label = "DDG: _onText = _tmp_23.onText"] 
+  "30064773482" -> "124554051746"  [ label = "DDG: _tmp_23"] 
+  "30064773482" -> "124554051746"  [ label = "DDG: props"] 
+  "30064773482" -> "124554051746"  [ label = "DDG: ...props"] 
+  "30064773483" -> "124554051746"  [ label = "DDG: dropindicator"] 
+  "30064773484" -> "124554051746"  [ label = "DDG: this.state.dragging"] 
+  "30064773483" -> "124554051746"  [ label = "DDG: this.state.dragging ? &lt;div className=&quot;dropIndicator&quot;&gt;
+        &lt;div&gt;Drop the code or (JSON-encoded) AST file here&lt;/div&gt;
+      &lt;/div&gt; : null"] 
+  "30064773483" -> "124554051746"  [ label = "DDG: const dropindicator = this.state.dragging ?
+      &lt;div className=&quot;dropIndicator&quot;&gt;
+        &lt;div&gt;Drop the code or (JSON-encoded) AST file here&lt;/div&gt;
+      &lt;/div&gt; :
+      null"] 
+  "107374182563" -> "111669149998"  [ label = "DDG: "] 
+  "107374182563" -> "25769804174"  [ label = "DDG: "] 
+  "107374182563" -> "30064773483"  [ label = "DDG: "] 
+  "154618822895" -> "141733920881"  [ label = "DDG: &lt;div
+        ref={c =&gt; this.container = c}
+        {...props}&gt;
+        {dropindicator}
+        {children}
+      &lt;/div&gt;"] 
+  "107374182563" -> "141733920881"  [ label = "DDG: "] 
+  "111669149998" -> "30064773476"  [ label = "DDG: this"] 
+  "30064773476" -> "30064773478"  [ label = "DDG: _tmp_23"] 
+  "30064773476" -> "30064773480"  [ label = "DDG: _tmp_23"] 
+  "107374182563" -> "68719479154"  [ label = "DDG: "] 
+  "30064773476" -> "30064773482"  [ label = "DDG: _tmp_23"] 
+  "107374182563" -> "30064773482"  [ label = "DDG: "] 
+  "107374182563" -> "30064773484"  [ label = "DDG: "] 
+  "107374182563" -> "68719479158"  [ label = "DDG: "] 
+  "107374182563" -> "68719479159"  [ label = "DDG: "] 
+  "107374182563" -> "68719479157"  [ label = "DDG: "] 
+  "107374182563" -> "90194313745"  [ label = "DDG: "] 
+  "107374182563" -> "120259084393"  [ label = "DDG: "] 
+}

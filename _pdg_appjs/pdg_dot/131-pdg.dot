@@ -1,0 +1,64 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182531" [label = <METHOD, 1<BR/>:program> ]
+"124554051716" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149943" [label = <PARAM, 1<BR/>this> ]
+"30064773239" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064773240" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"25769804107" [label = <BLOCK, 4<BR/>export default function LoadingIndicator(props)...> ]
+"30064773244" [label = <&lt;operator&gt;.assignment, 15<BR/>LoadingIndicator.propTypes = { visible: PropT...> ]
+"30064773241" [label = <&lt;operator&gt;.assignment, 4<BR/>function LoadingIndicator = function LoadingInd...> ]
+"30064773242" [label = <&lt;operator&gt;.assignment, 4<BR/>exports[&quot;default&quot;] = LoadingIndicator> ]
+"68719478892" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064773235" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719478895" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064773236" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"30064773246" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_0.visible = PropTypes.bool> ]
+"68719478903" [label = <IDENTIFIER, 15<BR/>_tmp_0<BR/>{ visible: PropTypes.bool, }> ]
+  "30064773239" -> "124554051716"  [ label = "DDG: PropTypes"] 
+  "30064773239" -> "124554051716"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064773239" -> "124554051716"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064773240" -> "124554051716"  [ label = "DDG: React"] 
+  "30064773236" -> "124554051716"  [ label = "DDG: this"] 
+  "30064773240" -> "124554051716"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064773240" -> "124554051716"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064773241" -> "124554051716"  [ label = "DDG: function LoadingIndicator = function LoadingIndicator(props) {
+  return props.visible ?
+    &lt;div
+      className=&quot;loadingIndicator cover&quot;&gt;
+      &lt;div&gt;
+        &lt;i className=&quot;fa fa-lg fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; :
+    null;
+}"] 
+  "30064773242" -> "124554051716"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064773242" -> "124554051716"  [ label = "DDG: LoadingIndicator"] 
+  "30064773242" -> "124554051716"  [ label = "DDG: exports[&quot;default&quot;] = LoadingIndicator"] 
+  "30064773244" -> "124554051716"  [ label = "DDG: LoadingIndicator.propTypes"] 
+  "30064773246" -> "124554051716"  [ label = "DDG: _tmp_0.visible"] 
+  "30064773246" -> "124554051716"  [ label = "DDG: PropTypes.bool"] 
+  "30064773246" -> "124554051716"  [ label = "DDG: _tmp_0.visible = PropTypes.bool"] 
+  "30064773244" -> "124554051716"  [ label = "DDG: LoadingIndicator.propTypes = {
+  visible: PropTypes.bool,
+}"] 
+  "107374182531" -> "111669149943"  [ label = "DDG: "] 
+  "30064773235" -> "30064773239"  [ label = "DDG: this"] 
+  "30064773235" -> "30064773239"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064773236" -> "30064773240"  [ label = "DDG: this"] 
+  "30064773236" -> "30064773240"  [ label = "DDG: &quot;react&quot;"] 
+  "107374182531" -> "25769804107"  [ label = "DDG: "] 
+  "30064773246" -> "30064773244"  [ label = "DDG: _tmp_0.visible"] 
+  "107374182531" -> "30064773244"  [ label = "DDG: "] 
+  "107374182531" -> "30064773241"  [ label = "DDG: "] 
+  "30064773241" -> "30064773242"  [ label = "DDG: LoadingIndicator"] 
+  "107374182531" -> "30064773242"  [ label = "DDG: "] 
+  "107374182531" -> "68719478892"  [ label = "DDG: "] 
+  "111669149943" -> "30064773235"  [ label = "DDG: this"] 
+  "107374182531" -> "30064773235"  [ label = "DDG: "] 
+  "107374182531" -> "68719478895"  [ label = "DDG: "] 
+  "30064773235" -> "30064773236"  [ label = "DDG: this"] 
+  "107374182531" -> "30064773236"  [ label = "DDG: "] 
+  "30064773239" -> "30064773246"  [ label = "DDG: PropTypes"] 
+  "107374182531" -> "68719478903"  [ label = "DDG: "] 
+}

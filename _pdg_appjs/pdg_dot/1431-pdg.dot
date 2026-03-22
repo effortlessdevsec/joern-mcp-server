@@ -1,0 +1,4 @@
+digraph "log" {  
+node [shape="rect"];  
+
+}

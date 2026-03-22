@@ -1,0 +1,36 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374182910" [label = <METHOD, 60<BR/>getDefaultOptions> ]
+"124554052093" [label = <METHOD_RETURN, 60<BR/>{ xmlMode: __ecma.Boolean; lowerCaseAttributeNames: __ecma.Boolean; lowerCaseTags: __ecma.Boolean; }> ]
+"111669150679" [label = <PARAM, 60<BR/>this> ]
+"141733921145" [label = <RETURN, 61<BR/>return { xmlMode: false, lowerCaseA...> ]
+"25769805106" [label = <BLOCK, 61<BR/>{ xmlMode: false, lowerCaseAttribut...> ]
+"30064778839" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_13.xmlMode = false> ]
+"30064778841" [label = <&lt;operator&gt;.assignment, 63<BR/>_tmp_13.lowerCaseAttributeNames = true> ]
+"30064778843" [label = <&lt;operator&gt;.assignment, 64<BR/>_tmp_13.lowerCaseTags = true> ]
+"68719484640" [label = <IDENTIFIER, 61<BR/>_tmp_13<BR/>{ xmlMode: false, lowerCaseAttribut...> ]
+  "141733921145" -> "124554052093"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150679" -> "124554052093"  [ label = "DDG: this"] 
+  "30064778839" -> "124554052093"  [ label = "DDG: _tmp_13.xmlMode"] 
+  "30064778839" -> "124554052093"  [ label = "DDG: _tmp_13.xmlMode = false"] 
+  "30064778841" -> "124554052093"  [ label = "DDG: _tmp_13.lowerCaseAttributeNames"] 
+  "30064778841" -> "124554052093"  [ label = "DDG: _tmp_13.lowerCaseAttributeNames = true"] 
+  "30064778843" -> "124554052093"  [ label = "DDG: _tmp_13.lowerCaseTags"] 
+  "30064778843" -> "124554052093"  [ label = "DDG: _tmp_13.lowerCaseTags = true"] 
+  "107374182910" -> "111669150679"  [ label = "DDG: "] 
+  "25769805106" -> "141733921145"  [ label = "DDG: "] 
+  "25769805106" -> "141733921145"  [ label = "DDG: {
+      xmlMode: false,
+      lowerCaseAttributeNames: true,
+      lowerCaseTags: true,
+    }"] 
+  "107374182910" -> "141733921145"  [ label = "DDG: "] 
+  "30064778839" -> "25769805106"  [ label = "DDG: _tmp_13.xmlMode"] 
+  "30064778841" -> "25769805106"  [ label = "DDG: _tmp_13.lowerCaseAttributeNames"] 
+  "30064778843" -> "25769805106"  [ label = "DDG: _tmp_13.lowerCaseTags"] 
+  "107374182910" -> "25769805106"  [ label = "DDG: "] 
+  "107374182910" -> "30064778839"  [ label = "DDG: "] 
+  "107374182910" -> "30064778841"  [ label = "DDG: "] 
+  "107374182910" -> "30064778843"  [ label = "DDG: "] 
+  "107374182910" -> "68719484640"  [ label = "DDG: "] 
+}

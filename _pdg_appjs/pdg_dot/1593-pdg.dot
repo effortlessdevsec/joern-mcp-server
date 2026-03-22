@@ -1,0 +1,4 @@
+digraph "max" {  
+node [shape="rect"];  
+
+}

@@ -1,0 +1,15 @@
+digraph "getNewLine" {  
+node [shape="rect"];  
+"107374183234" [label = <METHOD, 44<BR/>getNewLine> ]
+"124554052416" [label = <METHOD_RETURN, 44<BR/>__ecma.String> ]
+"111669151382" [label = <PARAM, 44<BR/>this> ]
+"141733921376" [label = <RETURN, 44<BR/>'\n'> ]
+"90194316173" [label = <LITERAL, 44<BR/>&quot; &quot;<BR/>'\n'> ]
+  "141733921376" -> "124554052416"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151382" -> "124554052416"  [ label = "DDG: this"] 
+  "107374183234" -> "111669151382"  [ label = "DDG: "] 
+  "90194316173" -> "141733921376"  [ label = "DDG: &quot;
+&quot;"] 
+  "107374183234" -> "141733921376"  [ label = "DDG: "] 
+  "107374183234" -> "90194316173"  [ label = "DDG: "] 
+}

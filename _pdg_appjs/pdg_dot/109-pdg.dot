@@ -1,0 +1,219 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182509" [label = <METHOD, 1<BR/>:program> ]
+"124554051704" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149928" [label = <PARAM, 1<BR/>this> ]
+"30064773078" [label = <&lt;operator&gt;.assignment, 1<BR/>var CodeMirror = require(&quot;codemirror&quot;)> ]
+"30064773079" [label = <&lt;operator&gt;.assignment, 2<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064773080" [label = <&lt;operator&gt;.assignment, 3<BR/>var Editor = require(&quot;./Editor&quot;)> ]
+"30064773081" [label = <&lt;operator&gt;.assignment, 5<BR/>var codemirror/addon/hint/show-hint.css = requi...> ]
+"30064773082" [label = <&lt;operator&gt;.assignment, 6<BR/>var codemirror/addon/tern/tern.css = require(&quot;c...> ]
+"30064773083" [label = <&lt;operator&gt;.assignment, 31<BR/>function loadTern = function loadTern() { req...> ]
+"25769804083" [label = <BLOCK, 10<BR/>export default class JSCodeshiftEditor extends ...> ]
+"30064773087" [label = <&lt;operator&gt;.assignment, 81<BR/>JSCodeshiftEditor.propTypes = { value: PropTy...> ]
+"30064773119" [label = <&lt;operator&gt;.assignment, 94<BR/>JSCodeshiftEditor.defaultProps = Object.assign(...> ]
+"25769804084" [label = <BLOCK, 10<BR/>&lt;empty&gt;> ]
+"30064773085" [label = <&lt;operator&gt;.assignment, 10<BR/>exports[&quot;default&quot;] = JSCodeshiftEditor> ]
+"68719478747" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;codemirror&quot;)> ]
+"30064772963" [label = <require, 1<BR/>require(&quot;codemirror&quot;)> ]
+"68719478750" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064772964" [label = <require, 2<BR/>require(&quot;prop-types&quot;)> ]
+"68719478753" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;./Editor&quot;)> ]
+"30064772965" [label = <require, 3<BR/>require(&quot;./Editor&quot;)> ]
+"68719478756" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;codemirror/addon/hint/show-hint.css&quot;)> ]
+"30064772966" [label = <require, 5<BR/>require(&quot;codemirror/addon/hint/show-hint.css&quot;)> ]
+"68719478759" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;codemirror/addon/tern/tern.css&quot;)> ]
+"30064772967" [label = <require, 6<BR/>require(&quot;codemirror/addon/tern/tern.css&quot;)> ]
+"176093659140" [label = <TYPE_REF, 10<BR/>class JSCodeshiftEditor> ]
+"30064773084" [label = <&lt;operator&gt;.assignment, 10<BR/>JSCodeshiftEditor = astexplorer/website/src/com...> ]
+"30064773089" [label = <&lt;operator&gt;.assignment, 82<BR/>_tmp_12.value = PropTypes.string> ]
+"30064773092" [label = <&lt;operator&gt;.assignment, 83<BR/>_tmp_12.highlight = PropTypes.bool> ]
+"30064773095" [label = <&lt;operator&gt;.assignment, 84<BR/>_tmp_12.lineNumbers = PropTypes.bool> ]
+"30064773098" [label = <&lt;operator&gt;.assignment, 85<BR/>_tmp_12.readOnly = PropTypes.bool> ]
+"30064773101" [label = <&lt;operator&gt;.assignment, 86<BR/>_tmp_12.onContentChange = PropTypes.func> ]
+"30064773104" [label = <&lt;operator&gt;.assignment, 87<BR/>_tmp_12.onActivity = PropTypes.func> ]
+"30064773107" [label = <&lt;operator&gt;.assignment, 88<BR/>_tmp_12.posFromIndex = PropTypes.func> ]
+"30064773110" [label = <&lt;operator&gt;.assignment, 89<BR/>_tmp_12.error = PropTypes.object> ]
+"30064773113" [label = <&lt;operator&gt;.assignment, 90<BR/>_tmp_12.mode = PropTypes.string> ]
+"30064773116" [label = <&lt;operator&gt;.assignment, 91<BR/>_tmp_12.keyMap = PropTypes.string> ]
+"68719478786" [label = <IDENTIFIER, 81<BR/>_tmp_12<BR/>{ value: PropTypes.string, highlight: PropT...> ]
+"30064773121" [label = <assign, 94<BR/>Object.assign( {}, Editor.defaultProps, {...> ]
+"68719478788" [label = <IDENTIFIER, 95<BR/>_tmp_13<BR/>{}> ]
+"30064773123" [label = <&lt;operator&gt;.assignment, 98<BR/>_tmp_14.highlight = false> ]
+"68719478791" [label = <IDENTIFIER, 97<BR/>_tmp_14<BR/>{ highlight: false, }> ]
+  "30064773078" -> "124554051704"  [ label = "DDG: CodeMirror"] 
+  "30064773078" -> "124554051704"  [ label = "DDG: require(&quot;codemirror&quot;)"] 
+  "30064773078" -> "124554051704"  [ label = "DDG: var CodeMirror = require(&quot;codemirror&quot;)"] 
+  "30064773079" -> "124554051704"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "124554051704"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064773079" -> "124554051704"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064773080" -> "124554051704"  [ label = "DDG: Editor"] 
+  "30064773080" -> "124554051704"  [ label = "DDG: require(&quot;./Editor&quot;)"] 
+  "30064773080" -> "124554051704"  [ label = "DDG: var Editor = require(&quot;./Editor&quot;)"] 
+  "30064773081" -> "124554051704"  [ label = "DDG: codemirror/addon/hint/show-hint.css"] 
+  "30064773081" -> "124554051704"  [ label = "DDG: require(&quot;codemirror/addon/hint/show-hint.css&quot;)"] 
+  "30064773081" -> "124554051704"  [ label = "DDG: var codemirror/addon/hint/show-hint.css = require(&quot;codemirror/addon/hint/show-hint.css&quot;)"] 
+  "30064773082" -> "124554051704"  [ label = "DDG: codemirror/addon/tern/tern.css"] 
+  "30064772967" -> "124554051704"  [ label = "DDG: this"] 
+  "30064773082" -> "124554051704"  [ label = "DDG: require(&quot;codemirror/addon/tern/tern.css&quot;)"] 
+  "30064773082" -> "124554051704"  [ label = "DDG: var codemirror/addon/tern/tern.css = require(&quot;codemirror/addon/tern/tern.css&quot;)"] 
+  "30064773083" -> "124554051704"  [ label = "DDG: loadTern"] 
+  "30064773083" -> "124554051704"  [ label = "DDG: function loadTern = function loadTern() {
+  require(
+    [
+      'codemirror/addon/hint/show-hint',
+      'codemirror/addon/tern/tern',
+      'acorn',
+    ],
+    (_1, _2, acorn) =&gt; {
+      global.acorn = acorn;
+      require(
+        [
+          'tern',
+          'tern/plugin/doc_comment',
+          'tern/lib/infer',
+          '../defs/jscodeshift.json',
+          'tern/defs/ecmascript.json',
+        ],
+        (tern, _, infer, jscs_def, ecmascript) =&gt; {
+          global.tern = tern;
+          tern.registerPlugin('transformer', server =&gt; {
+            server.on('afterLoad', file =&gt; {
+              const fnVal = file.scope.props.transformer;
+              if (fnVal) {
+                const fnType = fnVal.getFunctionType();
+                const cx = infer.cx();
+                fnType.propagate(new infer.IsCallee(
+                  infer.cx().topScope,
+                  [
+                    cx.definitions.jscodeshift.file,
+                    cx.definitions.jscodeshift.apiObject,
+                  ],
+  ..."] 
+  "30064773084" -> "124554051704"  [ label = "DDG: JSCodeshiftEditor = astexplorer/website/src/components/JSCodeshiftEditor.js::program:JSCodeshiftEditor:&lt;init&gt;"] 
+  "30064773085" -> "124554051704"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064773085" -> "124554051704"  [ label = "DDG: JSCodeshiftEditor"] 
+  "30064773085" -> "124554051704"  [ label = "DDG: exports[&quot;default&quot;] = JSCodeshiftEditor"] 
+  "30064773087" -> "124554051704"  [ label = "DDG: JSCodeshiftEditor.propTypes"] 
+  "30064773089" -> "124554051704"  [ label = "DDG: _tmp_12.value"] 
+  "30064773089" -> "124554051704"  [ label = "DDG: _tmp_12.value = PropTypes.string"] 
+  "30064773092" -> "124554051704"  [ label = "DDG: _tmp_12.highlight"] 
+  "30064773092" -> "124554051704"  [ label = "DDG: _tmp_12.highlight = PropTypes.bool"] 
+  "30064773095" -> "124554051704"  [ label = "DDG: _tmp_12.lineNumbers"] 
+  "30064773095" -> "124554051704"  [ label = "DDG: _tmp_12.lineNumbers = PropTypes.bool"] 
+  "30064773098" -> "124554051704"  [ label = "DDG: _tmp_12.readOnly"] 
+  "30064773098" -> "124554051704"  [ label = "DDG: PropTypes.bool"] 
+  "30064773098" -> "124554051704"  [ label = "DDG: _tmp_12.readOnly = PropTypes.bool"] 
+  "30064773101" -> "124554051704"  [ label = "DDG: _tmp_12.onContentChange"] 
+  "30064773101" -> "124554051704"  [ label = "DDG: _tmp_12.onContentChange = PropTypes.func"] 
+  "30064773104" -> "124554051704"  [ label = "DDG: _tmp_12.onActivity"] 
+  "30064773104" -> "124554051704"  [ label = "DDG: _tmp_12.onActivity = PropTypes.func"] 
+  "30064773107" -> "124554051704"  [ label = "DDG: _tmp_12.posFromIndex"] 
+  "30064773107" -> "124554051704"  [ label = "DDG: PropTypes.func"] 
+  "30064773107" -> "124554051704"  [ label = "DDG: _tmp_12.posFromIndex = PropTypes.func"] 
+  "30064773110" -> "124554051704"  [ label = "DDG: _tmp_12.error"] 
+  "30064773110" -> "124554051704"  [ label = "DDG: PropTypes.object"] 
+  "30064773110" -> "124554051704"  [ label = "DDG: _tmp_12.error = PropTypes.object"] 
+  "30064773113" -> "124554051704"  [ label = "DDG: _tmp_12.mode"] 
+  "30064773113" -> "124554051704"  [ label = "DDG: _tmp_12.mode = PropTypes.string"] 
+  "30064773116" -> "124554051704"  [ label = "DDG: _tmp_12.keyMap"] 
+  "30064773116" -> "124554051704"  [ label = "DDG: PropTypes.string"] 
+  "30064773116" -> "124554051704"  [ label = "DDG: _tmp_12.keyMap = PropTypes.string"] 
+  "30064773087" -> "124554051704"  [ label = "DDG: JSCodeshiftEditor.propTypes = {
+  value: PropTypes.string,
+  highlight: PropTypes.bool,
+  lineNumbers: PropTypes.bool,
+  readOnly: PropTypes.bool,
+  onContentChange: PropTypes.func,
+  onActivity: PropTypes.func,
+  posFromIndex: PropTypes.func,
+  error: PropTypes.object,
+  mode: PropTypes.string,
+  keyMap: PropTypes.string,
+}"] 
+  "30064773119" -> "124554051704"  [ label = "DDG: JSCodeshiftEditor.defaultProps"] 
+  "30064773121" -> "124554051704"  [ label = "DDG: Editor.defaultProps"] 
+  "30064773123" -> "124554051704"  [ label = "DDG: _tmp_14.highlight"] 
+  "30064773123" -> "124554051704"  [ label = "DDG: _tmp_14.highlight = false"] 
+  "30064773119" -> "124554051704"  [ label = "DDG: Object.assign(
+  {},
+  Editor.defaultProps,
+  {
+    highlight: false,
+  },
+)"] 
+  "30064773119" -> "124554051704"  [ label = "DDG: JSCodeshiftEditor.defaultProps = Object.assign(
+  {},
+  Editor.defaultProps,
+  {
+    highlight: false,
+  },
+)"] 
+  "107374182509" -> "111669149928"  [ label = "DDG: "] 
+  "30064772963" -> "30064773078"  [ label = "DDG: this"] 
+  "30064772963" -> "30064773078"  [ label = "DDG: &quot;codemirror&quot;"] 
+  "30064772964" -> "30064773079"  [ label = "DDG: this"] 
+  "30064772964" -> "30064773079"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064772965" -> "30064773080"  [ label = "DDG: this"] 
+  "30064772965" -> "30064773080"  [ label = "DDG: &quot;./Editor&quot;"] 
+  "30064772966" -> "30064773081"  [ label = "DDG: this"] 
+  "30064772966" -> "30064773081"  [ label = "DDG: &quot;codemirror/addon/hint/show-hint.css&quot;"] 
+  "30064772967" -> "30064773082"  [ label = "DDG: this"] 
+  "30064772967" -> "30064773082"  [ label = "DDG: &quot;codemirror/addon/tern/tern.css&quot;"] 
+  "107374182509" -> "30064773083"  [ label = "DDG: "] 
+  "107374182509" -> "25769804083"  [ label = "DDG: "] 
+  "30064773089" -> "30064773087"  [ label = "DDG: _tmp_12.value"] 
+  "30064773092" -> "30064773087"  [ label = "DDG: _tmp_12.highlight"] 
+  "30064773095" -> "30064773087"  [ label = "DDG: _tmp_12.lineNumbers"] 
+  "30064773098" -> "30064773087"  [ label = "DDG: _tmp_12.readOnly"] 
+  "30064773101" -> "30064773087"  [ label = "DDG: _tmp_12.onContentChange"] 
+  "30064773104" -> "30064773087"  [ label = "DDG: _tmp_12.onActivity"] 
+  "30064773107" -> "30064773087"  [ label = "DDG: _tmp_12.posFromIndex"] 
+  "30064773110" -> "30064773087"  [ label = "DDG: _tmp_12.error"] 
+  "30064773113" -> "30064773087"  [ label = "DDG: _tmp_12.mode"] 
+  "30064773116" -> "30064773087"  [ label = "DDG: _tmp_12.keyMap"] 
+  "107374182509" -> "30064773087"  [ label = "DDG: "] 
+  "30064773121" -> "30064773119"  [ label = "DDG: {}"] 
+  "30064773121" -> "30064773119"  [ label = "DDG: Editor.defaultProps"] 
+  "30064773121" -> "30064773119"  [ label = "DDG: {
+    highlight: false,
+  }"] 
+  "30064773121" -> "30064773119"  [ label = "DDG: "] 
+  "107374182509" -> "25769804084"  [ label = "DDG: "] 
+  "30064773084" -> "30064773085"  [ label = "DDG: JSCodeshiftEditor"] 
+  "107374182509" -> "30064773085"  [ label = "DDG: "] 
+  "107374182509" -> "68719478747"  [ label = "DDG: "] 
+  "111669149928" -> "30064772963"  [ label = "DDG: this"] 
+  "107374182509" -> "30064772963"  [ label = "DDG: "] 
+  "107374182509" -> "68719478750"  [ label = "DDG: "] 
+  "30064772963" -> "30064772964"  [ label = "DDG: this"] 
+  "107374182509" -> "30064772964"  [ label = "DDG: "] 
+  "107374182509" -> "68719478753"  [ label = "DDG: "] 
+  "30064772964" -> "30064772965"  [ label = "DDG: this"] 
+  "107374182509" -> "30064772965"  [ label = "DDG: "] 
+  "107374182509" -> "68719478756"  [ label = "DDG: "] 
+  "30064772965" -> "30064772966"  [ label = "DDG: this"] 
+  "107374182509" -> "30064772966"  [ label = "DDG: "] 
+  "107374182509" -> "68719478759"  [ label = "DDG: "] 
+  "30064772966" -> "30064772967"  [ label = "DDG: this"] 
+  "107374182509" -> "30064772967"  [ label = "DDG: "] 
+  "107374182509" -> "176093659140"  [ label = "DDG: "] 
+  "107374182509" -> "30064773084"  [ label = "DDG: "] 
+  "30064773079" -> "30064773089"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773092"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773095"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773098"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773101"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773104"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773107"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773110"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773113"  [ label = "DDG: PropTypes"] 
+  "30064773079" -> "30064773116"  [ label = "DDG: PropTypes"] 
+  "107374182509" -> "68719478786"  [ label = "DDG: "] 
+  "107374182509" -> "30064773121"  [ label = "DDG: "] 
+  "30064773080" -> "30064773121"  [ label = "DDG: Editor"] 
+  "30064773123" -> "30064773121"  [ label = "DDG: _tmp_14.highlight"] 
+  "107374182509" -> "68719478788"  [ label = "DDG: "] 
+  "107374182509" -> "30064773123"  [ label = "DDG: "] 
+  "107374182509" -> "68719478791"  [ label = "DDG: "] 
+}

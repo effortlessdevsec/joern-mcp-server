@@ -1,0 +1,174 @@
+digraph "transform" {  
+node [shape="rect"];  
+"107374182951" [label = <METHOD, 21<BR/>transform> ]
+"124554052140" [label = <METHOD_RETURN, 21<BR/>astexplorer/website/src/parsers/html/transformers/svelte/index.js::program:preprocess:&lt;returnValue&gt;> ]
+"111669150783" [label = <PARAM, 21<BR/>this> ]
+"111669150784" [label = <PARAM, 21<BR/>{ preprocess }> ]
+"111669150785" [label = <PARAM, 21<BR/>transformCode> ]
+"111669150786" [label = <PARAM, 21<BR/>code> ]
+"30064779575" [label = <&lt;operator&gt;.assignment, 21<BR/>preprocess = param1_0.preprocess> ]
+"30064779577" [label = <&lt;operator&gt;.assignment, 22<BR/>const transform = compileModule(transformCode)> ]
+"30064779579" [label = <&lt;operator&gt;.assignment, 25<BR/>const _markupIdentity = (content, _filename) =&gt;...> ]
+"30064779580" [label = <&lt;operator&gt;.assignment, 26<BR/>const _scriptIdentity = (content, _attributes, ...> ]
+"30064779581" [label = <&lt;operator&gt;.assignment, 27<BR/>const _styleIdentity = (content, _attributes, _...> ]
+"30064779582" [label = <&lt;operator&gt;.assignment, 31<BR/>const markupTransform = transform().markup || _...> ]
+"30064779586" [label = <&lt;operator&gt;.assignment, 32<BR/>const scriptTransform = transform().script || _...> ]
+"30064779590" [label = <&lt;operator&gt;.assignment, 33<BR/>const styleTransform = transform().style || _st...> ]
+"30064779594" [label = <&lt;operator&gt;.assignment, 35<BR/>const result = preprocess(code, { markup:...> ]
+"141733921184" [label = <RETURN, 52<BR/>return result> ]
+"68719485384" [label = <IDENTIFIER, 52<BR/>result<BR/>return result> ]
+"68719485358" [label = <IDENTIFIER, 22<BR/>compileModule<BR/>compileModule(transformCode)> ]
+"30064779578" [label = <compileModule, 22<BR/>compileModule(transformCode)> ]
+"30064779583" [label = <&lt;operator&gt;.logicalOr, 31<BR/>transform().markup || _markupIdentity> ]
+"30064779587" [label = <&lt;operator&gt;.logicalOr, 32<BR/>transform().script || _scriptIdentity> ]
+"30064779591" [label = <&lt;operator&gt;.logicalOr, 33<BR/>transform().style || _styleIdentity> ]
+"68719485377" [label = <IDENTIFIER, 35<BR/>preprocess<BR/>preprocess(code, { markup:({ content, _fi...> ]
+"30064779595" [label = <preprocess, 35<BR/>preprocess(code, { markup:({ content, _fi...> ]
+"30064779596" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_2.markup = &lt;lambda&gt;3> ]
+"30064779598" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_2.script = &lt;lambda&gt;4> ]
+"30064779600" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_2.style = &lt;lambda&gt;5> ]
+"68719485383" [label = <IDENTIFIER, 35<BR/>_tmp_2<BR/>{ markup:({ content, _filename}) =&gt; { ...> ]
+"68719485365" [label = <IDENTIFIER, 31<BR/>transform<BR/>transform()> ]
+"30064779585" [label = <transform, 31<BR/>transform()> ]
+"68719485369" [label = <IDENTIFIER, 32<BR/>transform<BR/>transform()> ]
+"30064779589" [label = <transform, 32<BR/>transform()> ]
+"68719485373" [label = <IDENTIFIER, 33<BR/>transform<BR/>transform()> ]
+"30064779593" [label = <transform, 33<BR/>transform()> ]
+  "141733921184" -> "124554052140"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150784" -> "124554052140"  [ label = "DDG: param1_0"] 
+  "30064779575" -> "124554052140"  [ label = "DDG: preprocess"] 
+  "30064779575" -> "124554052140"  [ label = "DDG: param1_0.preprocess"] 
+  "30064779575" -> "124554052140"  [ label = "DDG: preprocess = param1_0.preprocess"] 
+  "30064779577" -> "124554052140"  [ label = "DDG: transform"] 
+  "30064779578" -> "124554052140"  [ label = "DDG: transformCode"] 
+  "30064779577" -> "124554052140"  [ label = "DDG: compileModule(transformCode)"] 
+  "30064779577" -> "124554052140"  [ label = "DDG: const transform = compileModule(transformCode)"] 
+  "30064779579" -> "124554052140"  [ label = "DDG: const _markupIdentity = (content, _filename) =&gt; content"] 
+  "30064779580" -> "124554052140"  [ label = "DDG: const _scriptIdentity = (content, _attributes, _filename) =&gt; content"] 
+  "30064779581" -> "124554052140"  [ label = "DDG: const _styleIdentity = (content, _attributes, _filename) =&gt; content"] 
+  "30064779582" -> "124554052140"  [ label = "DDG: markupTransform"] 
+  "30064779583" -> "124554052140"  [ label = "DDG: _markupIdentity"] 
+  "30064779582" -> "124554052140"  [ label = "DDG: transform().markup || _markupIdentity"] 
+  "30064779582" -> "124554052140"  [ label = "DDG: const markupTransform = transform().markup || _markupIdentity"] 
+  "30064779586" -> "124554052140"  [ label = "DDG: scriptTransform"] 
+  "30064779587" -> "124554052140"  [ label = "DDG: _scriptIdentity"] 
+  "30064779586" -> "124554052140"  [ label = "DDG: transform().script || _scriptIdentity"] 
+  "30064779586" -> "124554052140"  [ label = "DDG: const scriptTransform = transform().script || _scriptIdentity"] 
+  "30064779590" -> "124554052140"  [ label = "DDG: styleTransform"] 
+  "30064779591" -> "124554052140"  [ label = "DDG: _styleIdentity"] 
+  "30064779590" -> "124554052140"  [ label = "DDG: transform().style || _styleIdentity"] 
+  "30064779590" -> "124554052140"  [ label = "DDG: const styleTransform = transform().style || _styleIdentity"] 
+  "30064779594" -> "124554052140"  [ label = "DDG: result"] 
+  "30064779595" -> "124554052140"  [ label = "DDG: this"] 
+  "30064779595" -> "124554052140"  [ label = "DDG: code"] 
+  "30064779596" -> "124554052140"  [ label = "DDG: _tmp_2.markup"] 
+  "30064779596" -> "124554052140"  [ label = "DDG: _tmp_2.markup = &lt;lambda&gt;3"] 
+  "30064779598" -> "124554052140"  [ label = "DDG: _tmp_2.script"] 
+  "30064779598" -> "124554052140"  [ label = "DDG: _tmp_2.script = &lt;lambda&gt;4"] 
+  "30064779600" -> "124554052140"  [ label = "DDG: _tmp_2.style"] 
+  "30064779600" -> "124554052140"  [ label = "DDG: _tmp_2.style = &lt;lambda&gt;5"] 
+  "30064779594" -> "124554052140"  [ label = "DDG: preprocess(code, {
+      markup:({ content, _filename}) =&gt; {
+        return {
+          code: markupTransform(content),
+        };
+      },
+      script: ({content, attributes, _filename}) =&gt; {
+        return {
+          code: scriptTransform(content, attributes),
+        };
+      },
+      style: ({content, attributes, _filename}) =&gt; {
+        return {
+          code: styleTransform(content, attributes),
+        };
+      },
+    })"] 
+  "30064779594" -> "124554052140"  [ label = "DDG: const result = preprocess(code, {
+      markup:({ content, _filename}) =&gt; {
+        return {
+          code: markupTransform(content),
+        };
+      },
+      script: ({content, attributes, _filename}) =&gt; {
+        return {
+          code: scriptTransform(content, attributes),
+        };
+      },
+      style: ({content, attributes, _filename}) =&gt; {
+        return {
+          code: styleTransform(content, attributes),
+        };
+      },
+    })"] 
+  "107374182951" -> "111669150783"  [ label = "DDG: "] 
+  "107374182951" -> "111669150784"  [ label = "DDG: "] 
+  "107374182951" -> "111669150785"  [ label = "DDG: "] 
+  "107374182951" -> "111669150786"  [ label = "DDG: "] 
+  "111669150784" -> "30064779575"  [ label = "DDG: param1_0"] 
+  "30064779578" -> "30064779577"  [ label = "DDG: this"] 
+  "30064779578" -> "30064779577"  [ label = "DDG: transformCode"] 
+  "107374182951" -> "30064779579"  [ label = "DDG: "] 
+  "107374182951" -> "30064779580"  [ label = "DDG: "] 
+  "107374182951" -> "30064779581"  [ label = "DDG: "] 
+  "30064779583" -> "30064779582"  [ label = "DDG: transform().markup"] 
+  "30064779583" -> "30064779582"  [ label = "DDG: _markupIdentity"] 
+  "30064779587" -> "30064779586"  [ label = "DDG: transform().script"] 
+  "30064779587" -> "30064779586"  [ label = "DDG: _scriptIdentity"] 
+  "30064779591" -> "30064779590"  [ label = "DDG: transform().style"] 
+  "30064779591" -> "30064779590"  [ label = "DDG: _styleIdentity"] 
+  "30064779595" -> "30064779594"  [ label = "DDG: this"] 
+  "30064779595" -> "30064779594"  [ label = "DDG: code"] 
+  "30064779595" -> "30064779594"  [ label = "DDG: {
+      markup:({ content, _filename}) =&gt; {
+        return {
+          code: markupTransform(content),
+        };
+      },
+      script: ({content, attributes, _filename}) =&gt; {
+        return {
+          code: scriptTransform(content, attributes),
+        };
+      },
+      style: ({content, attributes, _filename}) =&gt; {
+        return {
+          code: styleTransform(content, attributes),
+        };
+      },
+    }"] 
+  "30064779595" -> "30064779594"  [ label = "DDG: "] 
+  "68719485384" -> "141733921184"  [ label = "DDG: result"] 
+  "30064779594" -> "68719485384"  [ label = "DDG: result"] 
+  "107374182951" -> "68719485384"  [ label = "DDG: "] 
+  "30064779602" -> "68719485358"  [ label = "DDG: compileModule"] 
+  "107374182951" -> "68719485358"  [ label = "DDG: "] 
+  "111669150783" -> "30064779578"  [ label = "DDG: this"] 
+  "107374182951" -> "30064779578"  [ label = "DDG: "] 
+  "111669150785" -> "30064779578"  [ label = "DDG: transformCode"] 
+  "30064779579" -> "30064779583"  [ label = "DDG: _markupIdentity"] 
+  "107374182951" -> "30064779583"  [ label = "DDG: "] 
+  "30064779580" -> "30064779587"  [ label = "DDG: _scriptIdentity"] 
+  "107374182951" -> "30064779587"  [ label = "DDG: "] 
+  "30064779581" -> "30064779591"  [ label = "DDG: _styleIdentity"] 
+  "107374182951" -> "30064779591"  [ label = "DDG: "] 
+  "107374182951" -> "68719485377"  [ label = "DDG: "] 
+  "30064779593" -> "30064779595"  [ label = "DDG: this"] 
+  "107374182951" -> "30064779595"  [ label = "DDG: "] 
+  "111669150786" -> "30064779595"  [ label = "DDG: code"] 
+  "30064779596" -> "30064779595"  [ label = "DDG: _tmp_2.markup"] 
+  "30064779598" -> "30064779595"  [ label = "DDG: _tmp_2.script"] 
+  "30064779600" -> "30064779595"  [ label = "DDG: _tmp_2.style"] 
+  "107374182951" -> "30064779596"  [ label = "DDG: "] 
+  "107374182951" -> "30064779598"  [ label = "DDG: "] 
+  "107374182951" -> "30064779600"  [ label = "DDG: "] 
+  "107374182951" -> "68719485383"  [ label = "DDG: "] 
+  "107374182951" -> "68719485365"  [ label = "DDG: "] 
+  "30064779578" -> "30064779585"  [ label = "DDG: this"] 
+  "107374182951" -> "30064779585"  [ label = "DDG: "] 
+  "107374182951" -> "68719485369"  [ label = "DDG: "] 
+  "30064779585" -> "30064779589"  [ label = "DDG: this"] 
+  "107374182951" -> "30064779589"  [ label = "DDG: "] 
+  "107374182951" -> "68719485373"  [ label = "DDG: "] 
+  "30064779589" -> "30064779593"  [ label = "DDG: this"] 
+  "107374182951" -> "30064779593"  [ label = "DDG: "] 
+}

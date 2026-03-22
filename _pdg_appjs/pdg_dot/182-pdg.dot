@@ -1,0 +1,142 @@
+digraph "Transformer" {  
+node [shape="rect"];  
+"107374182582" [label = <METHOD, 14<BR/>Transformer> ]
+"124554051765" [label = <METHOD_RETURN, 14<BR/>ANY> ]
+"111669150026" [label = <PARAM, 14<BR/>this> ]
+"111669150027" [label = <PARAM, 14<BR/>props> ]
+"30064773924" [label = <&lt;operator&gt;.assignment, 15<BR/>const plainEditor = React.createElement( pr...> ]
+"30064773945" [label = <&lt;operator&gt;.assignment, 26<BR/>const formattingEditor = (&lt;div style={{flex: 1,...> ]
+"141733920893" [label = <RETURN, 31<BR/>return ( &lt;SplitPane className=&quot;splitp...> ]
+"154618823103" [label = <TEMPLATE_DOM, 32<BR/>&lt;SplitPane className=&quot;splitpane&quot; on...> ]
+"30064773925" [label = <createElement, 15<BR/>React.createElement( props.transformer.id =...> ]
+"30064773927" [label = <&lt;operator&gt;.conditional, 16<BR/>props.transformer.id === 'jscodeshift' ? JSCode...> ]
+"30064773931" [label = <&lt;operator&gt;.assignment, 18<BR/>_tmp_0.highlight = false> ]
+"30064773933" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_0.value = props.transformCode> ]
+"30064773936" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_0.onContentChange = props.onContentChange> ]
+"30064773939" [label = <&lt;operator&gt;.assignment, 21<BR/>_tmp_0.enableFormatting = props.enableFormatting> ]
+"30064773942" [label = <&lt;operator&gt;.assignment, 22<BR/>_tmp_0.keyMap = props.keyMap> ]
+"68719479609" [label = <IDENTIFIER, 17<BR/>_tmp_0<BR/>{ highlight: false, value: props.tr...> ]
+"68719479619" [label = <IDENTIFIER, 28<BR/>plainEditor<BR/>{plainEditor}> ]
+"68719479621" [label = <IDENTIFIER, 35<BR/>formattingEditor<BR/>{formattingEditor}> ]
+"30064773928" [label = <&lt;operator&gt;.equals, 16<BR/>props.transformer.id === 'jscodeshift'> ]
+"90194313859" [label = <LITERAL, 33<BR/>&quot;splitpane&quot;<BR/>className=&quot;splitpane&quot;> ]
+"25769804240" [label = <BLOCK, 26<BR/>{flex: 1, minHeight: 0, minWidth: 0, position: ...> ]
+"68719479620" [label = <IDENTIFIER, 34<BR/>resize<BR/>{resize}> ]
+"30064773946" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_1.flex = 1> ]
+"30064773948" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_1.minHeight = 0> ]
+"30064773950" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_1.minWidth = 0> ]
+"30064773952" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_1.position = &quot;relative&quot;> ]
+"30064773954" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_1.display = &quot;flex&quot;> ]
+"68719479616" [label = <IDENTIFIER, 26<BR/>_tmp_1<BR/>{flex: 1, minHeight: 0, minWidth: 0, position: ...> ]
+  "141733920893" -> "124554051765"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150026" -> "124554051765"  [ label = "DDG: this"] 
+  "111669150027" -> "124554051765"  [ label = "DDG: props"] 
+  "30064773924" -> "124554051765"  [ label = "DDG: plainEditor"] 
+  "30064773925" -> "124554051765"  [ label = "DDG: React"] 
+  "30064773928" -> "124554051765"  [ label = "DDG: props.transformer.id"] 
+  "30064773927" -> "124554051765"  [ label = "DDG: props.transformer.id === 'jscodeshift'"] 
+  "30064773927" -> "124554051765"  [ label = "DDG: Editor"] 
+  "30064773927" -> "124554051765"  [ label = "DDG: JSCodeshiftEditor"] 
+  "30064773925" -> "124554051765"  [ label = "DDG: props.transformer.id === 'jscodeshift' ? JSCodeshiftEditor : Editor"] 
+  "30064773931" -> "124554051765"  [ label = "DDG: _tmp_0.highlight"] 
+  "30064773931" -> "124554051765"  [ label = "DDG: _tmp_0.highlight = false"] 
+  "30064773933" -> "124554051765"  [ label = "DDG: _tmp_0.value"] 
+  "30064773933" -> "124554051765"  [ label = "DDG: props.transformCode"] 
+  "30064773933" -> "124554051765"  [ label = "DDG: _tmp_0.value = props.transformCode"] 
+  "30064773936" -> "124554051765"  [ label = "DDG: _tmp_0.onContentChange"] 
+  "30064773936" -> "124554051765"  [ label = "DDG: props.onContentChange"] 
+  "30064773936" -> "124554051765"  [ label = "DDG: _tmp_0.onContentChange = props.onContentChange"] 
+  "30064773939" -> "124554051765"  [ label = "DDG: _tmp_0.enableFormatting"] 
+  "30064773939" -> "124554051765"  [ label = "DDG: props.enableFormatting"] 
+  "30064773939" -> "124554051765"  [ label = "DDG: _tmp_0.enableFormatting = props.enableFormatting"] 
+  "30064773942" -> "124554051765"  [ label = "DDG: _tmp_0.keyMap"] 
+  "30064773942" -> "124554051765"  [ label = "DDG: props.keyMap"] 
+  "30064773942" -> "124554051765"  [ label = "DDG: _tmp_0.keyMap = props.keyMap"] 
+  "30064773924" -> "124554051765"  [ label = "DDG: React.createElement(
+    props.transformer.id === 'jscodeshift' ? JSCodeshiftEditor : Editor,
+    {
+      highlight: false,
+      value: props.transformCode,
+      onContentChange: props.onContentChange,
+      enableFormatting: props.enableFormatting,
+      keyMap: props.keyMap,
+    },
+  )"] 
+  "30064773924" -> "124554051765"  [ label = "DDG: const plainEditor = React.createElement(
+    props.transformer.id === 'jscodeshift' ? JSCodeshiftEditor : Editor,
+    {
+      highlight: false,
+      value: props.transformCode,
+      onContentChange: props.onContentChange,
+      enableFormatting: props.enableFormatting,
+      keyMap: props.keyMap,
+    },
+  )"] 
+  "30064773945" -> "124554051765"  [ label = "DDG: formattingEditor"] 
+  "30064773946" -> "124554051765"  [ label = "DDG: _tmp_1.flex"] 
+  "30064773946" -> "124554051765"  [ label = "DDG: _tmp_1.flex = 1"] 
+  "30064773948" -> "124554051765"  [ label = "DDG: _tmp_1.minHeight"] 
+  "30064773948" -> "124554051765"  [ label = "DDG: _tmp_1.minHeight = 0"] 
+  "30064773950" -> "124554051765"  [ label = "DDG: _tmp_1.minWidth"] 
+  "30064773950" -> "124554051765"  [ label = "DDG: _tmp_1.minWidth = 0"] 
+  "30064773952" -> "124554051765"  [ label = "DDG: _tmp_1.position"] 
+  "30064773952" -> "124554051765"  [ label = "DDG: _tmp_1.position = &quot;relative&quot;"] 
+  "30064773954" -> "124554051765"  [ label = "DDG: _tmp_1.display"] 
+  "30064773954" -> "124554051765"  [ label = "DDG: _tmp_1.display = &quot;flex&quot;"] 
+  "30064773945" -> "124554051765"  [ label = "DDG: const formattingEditor = (&lt;div style={{flex: 1, minHeight: 0, minWidth: 0, position: 'relative', display: 'flex'}}&gt;
+    &lt;PrettierButton toggleFormatting={props.toggleFormatting} enableFormatting={props.enableFormatting}/&gt;
+    {plainEditor}
+  &lt;/div&gt;)"] 
+  "107374182582" -> "111669150026"  [ label = "DDG: "] 
+  "107374182582" -> "111669150027"  [ label = "DDG: "] 
+  "30064773925" -> "30064773924"  [ label = "DDG: React"] 
+  "30064773925" -> "30064773924"  [ label = "DDG: props.transformer.id === 'jscodeshift' ? JSCodeshiftEditor : Editor"] 
+  "30064773925" -> "30064773924"  [ label = "DDG: {
+      highlight: false,
+      value: props.transformCode,
+      onContentChange: props.onContentChange,
+      enableFormatting: props.enableFormatting,
+      keyMap: props.keyMap,
+    }"] 
+  "30064773925" -> "30064773924"  [ label = "DDG: "] 
+  "154618823103" -> "141733920893"  [ label = "DDG: &lt;SplitPane
+      className=&quot;splitpane&quot;
+      onResize={resize}&gt;
+      {formattingEditor}
+      &lt;TransformOutput
+        transformResult={props.transformResult}
+        mode={props.mode}
+      /&gt;
+    &lt;/SplitPane&gt;"] 
+  "107374182582" -> "141733920893"  [ label = "DDG: "] 
+  "107374182582" -> "30064773925"  [ label = "DDG: "] 
+  "30064773961" -> "30064773925"  [ label = "DDG: JSCodeshiftEditor"] 
+  "30064773960" -> "30064773925"  [ label = "DDG: Editor"] 
+  "30064773931" -> "30064773925"  [ label = "DDG: _tmp_0.highlight"] 
+  "30064773933" -> "30064773925"  [ label = "DDG: _tmp_0.value"] 
+  "30064773936" -> "30064773925"  [ label = "DDG: _tmp_0.onContentChange"] 
+  "30064773939" -> "30064773925"  [ label = "DDG: _tmp_0.enableFormatting"] 
+  "30064773942" -> "30064773925"  [ label = "DDG: _tmp_0.keyMap"] 
+  "30064773961" -> "30064773927"  [ label = "DDG: JSCodeshiftEditor"] 
+  "107374182582" -> "30064773927"  [ label = "DDG: "] 
+  "30064773960" -> "30064773927"  [ label = "DDG: Editor"] 
+  "107374182582" -> "30064773931"  [ label = "DDG: "] 
+  "111669150027" -> "30064773933"  [ label = "DDG: props"] 
+  "111669150027" -> "30064773936"  [ label = "DDG: props"] 
+  "111669150027" -> "30064773939"  [ label = "DDG: props"] 
+  "111669150027" -> "30064773942"  [ label = "DDG: props"] 
+  "107374182582" -> "68719479609"  [ label = "DDG: "] 
+  "107374182582" -> "68719479619"  [ label = "DDG: "] 
+  "107374182582" -> "68719479621"  [ label = "DDG: "] 
+  "107374182582" -> "30064773928"  [ label = "DDG: "] 
+  "107374182582" -> "90194313859"  [ label = "DDG: "] 
+  "107374182582" -> "25769804240"  [ label = "DDG: "] 
+  "30064773969" -> "68719479620"  [ label = "DDG: resize"] 
+  "107374182582" -> "68719479620"  [ label = "DDG: "] 
+  "107374182582" -> "30064773946"  [ label = "DDG: "] 
+  "107374182582" -> "30064773948"  [ label = "DDG: "] 
+  "107374182582" -> "30064773950"  [ label = "DDG: "] 
+  "107374182582" -> "30064773952"  [ label = "DDG: "] 
+  "107374182582" -> "30064773954"  [ label = "DDG: "] 
+  "107374182582" -> "68719479616"  [ label = "DDG: "] 
+}

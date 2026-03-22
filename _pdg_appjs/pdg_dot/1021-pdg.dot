@@ -1,0 +1,70 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183421" [label = <METHOD, 38<BR/>opensByDefault> ]
+"124554052604" [label = <METHOD_RETURN, 38<BR/>__ecma.Boolean> ]
+"111669151776" [label = <PARAM, 38<BR/>this> ]
+"111669151777" [label = <PARAM, 38<BR/>node> ]
+"111669151778" [label = <PARAM, 38<BR/>key> ]
+"141733921514" [label = <RETURN, 39<BR/>return ( key === 'pattern' || key =...> ]
+"30064787661" [label = <&lt;operator&gt;.logicalOr, 40<BR/>key === 'pattern' || key === 'elements' |...> ]
+"30064787662" [label = <&lt;operator&gt;.logicalOr, 40<BR/>key === 'pattern' || key === 'elements' |...> ]
+"30064787667" [label = <&lt;operator&gt;.equals, 43<BR/>key === 'alternatives'> ]
+"30064787663" [label = <&lt;operator&gt;.logicalOr, 40<BR/>key === 'pattern' || key === 'elements'> ]
+"30064787666" [label = <&lt;operator&gt;.equals, 42<BR/>key === 'element'> ]
+"30064787664" [label = <&lt;operator&gt;.equals, 40<BR/>key === 'pattern'> ]
+"30064787665" [label = <&lt;operator&gt;.equals, 41<BR/>key === 'elements'> ]
+  "141733921514" -> "124554052604"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151776" -> "124554052604"  [ label = "DDG: this"] 
+  "111669151777" -> "124554052604"  [ label = "DDG: node"] 
+  "30064787664" -> "124554052604"  [ label = "DDG: key"] 
+  "30064787663" -> "124554052604"  [ label = "DDG: key === 'pattern'"] 
+  "30064787665" -> "124554052604"  [ label = "DDG: key"] 
+  "30064787663" -> "124554052604"  [ label = "DDG: key === 'elements'"] 
+  "30064787662" -> "124554052604"  [ label = "DDG: key === 'pattern' ||
+      key === 'elements'"] 
+  "30064787666" -> "124554052604"  [ label = "DDG: key"] 
+  "30064787662" -> "124554052604"  [ label = "DDG: key === 'element'"] 
+  "30064787661" -> "124554052604"  [ label = "DDG: key === 'pattern' ||
+      key === 'elements' ||
+      key === 'element'"] 
+  "30064787667" -> "124554052604"  [ label = "DDG: key"] 
+  "30064787661" -> "124554052604"  [ label = "DDG: key === 'alternatives'"] 
+  "30064787661" -> "124554052604"  [ label = "DDG: key === 'pattern' ||
+      key === 'elements' ||
+      key === 'element' ||
+      key === 'alternatives'"] 
+  "107374183421" -> "111669151776"  [ label = "DDG: "] 
+  "107374183421" -> "111669151777"  [ label = "DDG: "] 
+  "107374183421" -> "111669151778"  [ label = "DDG: "] 
+  "30064787661" -> "141733921514"  [ label = "DDG: key === 'pattern' ||
+      key === 'elements' ||
+      key === 'element' ||
+      key === 'alternatives'"] 
+  "30064787662" -> "30064787661"  [ label = "DDG: key === 'pattern' ||
+      key === 'elements'"] 
+  "30064787662" -> "30064787661"  [ label = "DDG: key === 'element'"] 
+  "30064787667" -> "30064787661"  [ label = "DDG: key"] 
+  "30064787667" -> "30064787661"  [ label = "DDG: &quot;alternatives&quot;"] 
+  "30064787663" -> "30064787662"  [ label = "DDG: key === 'pattern'"] 
+  "30064787663" -> "30064787662"  [ label = "DDG: key === 'elements'"] 
+  "30064787666" -> "30064787662"  [ label = "DDG: key"] 
+  "30064787666" -> "30064787662"  [ label = "DDG: &quot;element&quot;"] 
+  "30064787664" -> "30064787667"  [ label = "DDG: key"] 
+  "30064787665" -> "30064787667"  [ label = "DDG: key"] 
+  "30064787666" -> "30064787667"  [ label = "DDG: key"] 
+  "107374183421" -> "30064787667"  [ label = "DDG: "] 
+  "30064787664" -> "30064787663"  [ label = "DDG: key"] 
+  "30064787664" -> "30064787663"  [ label = "DDG: &quot;pattern&quot;"] 
+  "30064787665" -> "30064787663"  [ label = "DDG: key"] 
+  "30064787665" -> "30064787663"  [ label = "DDG: &quot;elements&quot;"] 
+  "30064787664" -> "30064787666"  [ label = "DDG: key"] 
+  "30064787665" -> "30064787666"  [ label = "DDG: key"] 
+  "107374183421" -> "30064787666"  [ label = "DDG: "] 
+  "111669151778" -> "30064787664"  [ label = "DDG: key"] 
+  "107374183421" -> "30064787664"  [ label = "DDG: "] 
+  "30064787664" -> "30064787665"  [ label = "DDG: key"] 
+  "107374183421" -> "30064787665"  [ label = "DDG: "] 
+  "30064787662" -> "30064787667"  [ label = "CDG: "] 
+  "30064787663" -> "30064787666"  [ label = "CDG: "] 
+  "30064787664" -> "30064787665"  [ label = "CDG: "] 
+}

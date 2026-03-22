@@ -1,0 +1,56 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182586" [label = <METHOD, 48<BR/>&lt;lambda&gt;0> ]
+"124554051769" [label = <METHOD_RETURN, 48<BR/>ANY> ]
+"111669150033" [label = <PARAM, 48<BR/>this> ]
+"111669150034" [label = <PARAM, 48<BR/>category> ]
+"141733920894" [label = <RETURN, 49<BR/>&lt;li key={category.id} onClick={this._onClick} d...> ]
+"154618823119" [label = <TEMPLATE_DOM, 49<BR/>&lt;li key={category.id} onClick={this._onClick} d...> ]
+"90194313870" [label = <LITERAL, 50<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064774027" [label = <cx, 52<BR/>cx(categoryIcon[category.id] || 'fa-file-o', { ...> ]
+"68719479694" [label = <IDENTIFIER, 52<BR/>cx<BR/>cx(categoryIcon[category.id] || 'fa-file-o', { ...> ]
+"30064774028" [label = <&lt;operator&gt;.logicalOr, 52<BR/>categoryIcon[category.id] || 'fa-file-o'> ]
+"30064774031" [label = <&lt;operator&gt;.assignment, 53<BR/>_tmp_4.fa = true> ]
+"30064774033" [label = <&lt;operator&gt;.assignment, 54<BR/>_tmp_4.fa-fw = true> ]
+"68719479700" [label = <IDENTIFIER, 52<BR/>_tmp_4<BR/>{ fa: true, ...> ]
+  "141733920894" -> "124554051769"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150034" -> "124554051769"  [ label = "DDG: category"] 
+  "30064774027" -> "124554051769"  [ label = "DDG: this"] 
+  "30064774028" -> "124554051769"  [ label = "DDG: categoryIcon[category.id]"] 
+  "30064774027" -> "124554051769"  [ label = "DDG: categoryIcon[category.id] || 'fa-file-o'"] 
+  "30064774031" -> "124554051769"  [ label = "DDG: _tmp_4.fa"] 
+  "30064774031" -> "124554051769"  [ label = "DDG: _tmp_4.fa = true"] 
+  "30064774033" -> "124554051769"  [ label = "DDG: _tmp_4.fa-fw"] 
+  "30064774033" -> "124554051769"  [ label = "DDG: _tmp_4.fa-fw = true"] 
+  "30064774027" -> "124554051769"  [ label = "DDG: cx(categoryIcon[category.id] || 'fa-file-o', {
+                    fa: true,
+                    'fa-fw': true,
+                  })"] 
+  "107374182586" -> "111669150033"  [ label = "DDG: "] 
+  "107374182586" -> "111669150034"  [ label = "DDG: "] 
+  "154618823119" -> "141733920894"  [ label = "DDG: &lt;li key={category.id} onClick={this._onClick} data-id={category.id}&gt;
+              &lt;button type=&quot;button&quot;&gt;
+                &lt;i
+                  className={cx(categoryIcon[category.id] || 'fa-file-o', {
+                    fa: true,
+                    'fa-fw': true,
+                  })}
+                /&gt;
+                &amp;nbsp;{category.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;"] 
+  "107374182586" -> "141733920894"  [ label = "DDG: "] 
+  "107374182586" -> "90194313870"  [ label = "DDG: "] 
+  "68719479702" -> "68719479694"  [ label = "DDG: cx"] 
+  "107374182586" -> "68719479694"  [ label = "DDG: "] 
+  "111669150033" -> "30064774027"  [ label = "DDG: this"] 
+  "107374182586" -> "30064774027"  [ label = "DDG: "] 
+  "30064774028" -> "30064774027"  [ label = "DDG: categoryIcon[category.id]"] 
+  "30064774028" -> "30064774027"  [ label = "DDG: &quot;fa-file-o&quot;"] 
+  "30064774031" -> "30064774027"  [ label = "DDG: _tmp_4.fa"] 
+  "30064774033" -> "30064774027"  [ label = "DDG: _tmp_4.fa-fw"] 
+  "107374182586" -> "30064774028"  [ label = "DDG: "] 
+  "107374182586" -> "30064774031"  [ label = "DDG: "] 
+  "107374182586" -> "30064774033"  [ label = "DDG: "] 
+  "107374182586" -> "68719479700"  [ label = "DDG: "] 
+}

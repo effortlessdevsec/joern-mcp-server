@@ -1,0 +1,68 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182618" [label = <METHOD, 55<BR/>&lt;lambda&gt;1> ]
+"124554051800" [label = <METHOD_RETURN, 55<BR/>ANY> ]
+"111669150078" [label = <PARAM, 55<BR/>this> ]
+"111669150079" [label = <PARAM, 55<BR/>transformer> ]
+"141733920909" [label = <RETURN, 56<BR/>&lt;li key={transformer.id} ...> ]
+"154618823408" [label = <TEMPLATE_DOM, 56<BR/>&lt;li key={transformer.id} ...> ]
+"30064774516" [label = <cx, 58<BR/>cx({ selected: this.props.showT...> ]
+"90194313980" [label = <LITERAL, 63<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"68719480141" [label = <IDENTIFIER, 58<BR/>cx<BR/>cx({ selected: this.props.showT...> ]
+"30064774517" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_8.selected = this.props.showTransformer &amp;&amp;...> ]
+"68719480147" [label = <IDENTIFIER, 58<BR/>_tmp_8<BR/>{ selected: this.props.showTran...> ]
+"30064774519" [label = <&lt;operator&gt;.logicalAnd, 59<BR/>this.props.showTransformer &amp;&amp; ...> ]
+"30064774522" [label = <&lt;operator&gt;.equals, 60<BR/>this.props.transformer === transformer> ]
+"30064774520" [label = <&lt;operator&gt;.fieldAccess, 59<BR/>this.props.showTransformer> ]
+"30064774523" [label = <&lt;operator&gt;.fieldAccess, 60<BR/>this.props.transformer> ]
+"30064774524" [label = <&lt;operator&gt;.fieldAccess, 60<BR/>this.props> ]
+"55834576241" [label = <FIELD_IDENTIFIER, 60<BR/>transformer> ]
+"55834576240" [label = <FIELD_IDENTIFIER, 60<BR/>props> ]
+  "141733920909" -> "124554051800"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150079" -> "124554051800"  [ label = "DDG: transformer"] 
+  "30064774516" -> "124554051800"  [ label = "DDG: this"] 
+  "30064774517" -> "124554051800"  [ label = "DDG: _tmp_8.selected"] 
+  "30064774522" -> "124554051800"  [ label = "DDG: transformer"] 
+  "30064774519" -> "124554051800"  [ label = "DDG: this.props.transformer === transformer"] 
+  "30064774517" -> "124554051800"  [ label = "DDG: this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer"] 
+  "30064774517" -> "124554051800"  [ label = "DDG: _tmp_8.selected = this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer"] 
+  "30064774516" -> "124554051800"  [ label = "DDG: cx({
+                selected: this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer,
+              })"] 
+  "107374182618" -> "111669150078"  [ label = "DDG: "] 
+  "107374182618" -> "111669150079"  [ label = "DDG: "] 
+  "154618823408" -> "141733920909"  [ label = "DDG: &lt;li
+              key={transformer.id}
+              className={cx({
+                selected: this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer,
+              })}
+              onClick={this._onClick}&gt;
+              &lt;button value={transformer.id} type=&quot;button&quot; &gt;
+                {transformer.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;"] 
+  "107374182618" -> "141733920909"  [ label = "DDG: "] 
+  "107374182618" -> "90194313980"  [ label = "DDG: "] 
+  "68719480155" -> "68719480141"  [ label = "DDG: cx"] 
+  "68719480164" -> "68719480141"  [ label = "DDG: cx"] 
+  "107374182618" -> "68719480141"  [ label = "DDG: "] 
+  "111669150078" -> "30064774516"  [ label = "DDG: this"] 
+  "107374182618" -> "30064774516"  [ label = "DDG: "] 
+  "30064774517" -> "30064774516"  [ label = "DDG: _tmp_8.selected"] 
+  "30064774519" -> "30064774517"  [ label = "DDG: this.props.showTransformer"] 
+  "30064774519" -> "30064774517"  [ label = "DDG: this.props.transformer === transformer"] 
+  "107374182618" -> "68719480147"  [ label = "DDG: "] 
+  "30064774522" -> "30064774519"  [ label = "DDG: this.props.transformer"] 
+  "30064774522" -> "30064774519"  [ label = "DDG: transformer"] 
+  "111669150079" -> "30064774522"  [ label = "DDG: transformer"] 
+  "107374182618" -> "30064774522"  [ label = "DDG: "] 
+  "30064774520" -> "30064774522"  [ label = "CDG: "] 
+  "30064774520" -> "55834576240"  [ label = "CDG: "] 
+  "30064774520" -> "30064774524"  [ label = "CDG: "] 
+  "30064774520" -> "30064774523"  [ label = "CDG: "] 
+  "30064774520" -> "55834576241"  [ label = "CDG: "] 
+}

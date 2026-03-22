@@ -1,0 +1,85 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182602" [label = <METHOD, 16<BR/>render> ]
+"124554051786" [label = <METHOD_RETURN, 16<BR/>ANY> ]
+"111669150057" [label = <PARAM, 16<BR/>this> ]
+"30064774251" [label = <&lt;operator&gt;.assignment, 17<BR/>const parsers = this.props.category.parsers.fil...> ]
+"141733920903" [label = <RETURN, 18<BR/>return ( &lt;div className=&quot;button menuButto...> ]
+"154618823256" [label = <TEMPLATE_DOM, 19<BR/>&lt;div className=&quot;button menuButton&quot;&gt; &lt;sp...> ]
+"30064774252" [label = <filter, 17<BR/>this.props.category.parsers.filter(p =&gt; p.showI...> ]
+"30064774254" [label = <&lt;operator&gt;.assignment, 17<BR/>(_tmp_2 = this.props.category.parsers)> ]
+"90194313928" [label = <LITERAL, 19<BR/>&quot;button menuButton&quot;<BR/>className=&quot;button menuButton&quot;> ]
+"30064774261" [label = <map, 25<BR/>parsers.map(parser =&gt; ( &lt;li key={pa...> ]
+"90194313930" [label = <LITERAL, 34<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"90194313931" [label = <LITERAL, 35<BR/>&quot;Parser Settings&quot;<BR/>title=&quot;Parser Settings&quot;> ]
+"90194313929" [label = <LITERAL, 21<BR/>&quot;fa fa-lg fa-code fa-fw&quot;<BR/>className='fa fa-lg fa-code fa-fw'> ]
+"25769804284" [label = <BLOCK, 36<BR/>{minWidth: 0}> ]
+"30064774265" [label = <&lt;operator&gt;.logicalNot, 37<BR/>!this.props.parser.hasSettings()> ]
+"90194313933" [label = <LITERAL, 39<BR/>&quot;fa fa-cog fa-fw&quot;<BR/>className=&quot;fa fa-cog fa-fw&quot;> ]
+"30064774263" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_3.minWidth = 0> ]
+"68719479911" [label = <IDENTIFIER, 36<BR/>_tmp_3<BR/>{minWidth: 0}> ]
+"30064774266" [label = <hasSettings, 37<BR/>this.props.parser.hasSettings()> ]
+"30064774268" [label = <&lt;operator&gt;.assignment, 37<BR/>(_tmp_4 = this.props.parser)> ]
+  "141733920903" -> "124554051786"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150057" -> "124554051786"  [ label = "DDG: this"] 
+  "30064774254" -> "124554051786"  [ label = "DDG: this.props.category.parsers"] 
+  "30064774252" -> "124554051786"  [ label = "DDG: _tmp_2"] 
+  "30064774251" -> "124554051786"  [ label = "DDG: this.props.category.parsers.filter(p =&gt; p.showInMenu)"] 
+  "30064774251" -> "124554051786"  [ label = "DDG: const parsers = this.props.category.parsers.filter(p =&gt; p.showInMenu)"] 
+  "30064774261" -> "124554051786"  [ label = "DDG: parsers"] 
+  "30064774261" -> "124554051786"  [ label = "DDG: parsers.map(parser =&gt; (
+            &lt;li key={parser.id} onClick={this._onClick} data-id={parser.id}&gt;
+              &lt;button type=&quot;button&quot; &gt;
+                {parser.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;
+          ))"] 
+  "30064774263" -> "124554051786"  [ label = "DDG: _tmp_3.minWidth"] 
+  "30064774263" -> "124554051786"  [ label = "DDG: _tmp_3.minWidth = 0"] 
+  "30064774268" -> "124554051786"  [ label = "DDG: this.props.parser"] 
+  "30064774266" -> "124554051786"  [ label = "DDG: _tmp_4"] 
+  "30064774265" -> "124554051786"  [ label = "DDG: this.props.parser.hasSettings()"] 
+  "30064774265" -> "124554051786"  [ label = "DDG: !this.props.parser.hasSettings()"] 
+  "107374182602" -> "111669150057"  [ label = "DDG: "] 
+  "30064774252" -> "30064774251"  [ label = "DDG: _tmp_2"] 
+  "30064774252" -> "30064774251"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "154618823256" -> "141733920903"  [ label = "DDG: &lt;div className=&quot;button menuButton&quot;&gt;
+        &lt;span&gt;
+          &lt;i className='fa fa-lg fa-code fa-fw' /&gt;
+          &amp;nbsp;{this.props.parser.displayName}
+        &lt;/span&gt;
+        &lt;ul&gt;
+          {parsers.map(parser =&gt; (
+            &lt;li key={parser.id} onClick={this._onClick} data-id={parser.id}&gt;
+              &lt;button type=&quot;button&quot; &gt;
+                {parser.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;
+          ))}
+        &lt;/ul&gt;
+        &lt;button
+          type=&quot;button&quot;
+          title=&quot;Parser Settings&quot;
+          style={{minWidth: 0}}
+          disabled={!this.props.parser.hasSettings()}
+          onClick={this.props.onParserSettingsButtonClick}&gt;
+          &lt;i className=&quot;fa fa-cog fa-fw&quot; /&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;"] 
+  "107374182602" -> "141733920903"  [ label = "DDG: "] 
+  "30064774254" -> "30064774252"  [ label = "DDG: _tmp_2"] 
+  "107374182602" -> "30064774252"  [ label = "DDG: "] 
+  "107374182602" -> "90194313928"  [ label = "DDG: "] 
+  "30064774251" -> "30064774261"  [ label = "DDG: parsers"] 
+  "107374182602" -> "30064774261"  [ label = "DDG: "] 
+  "107374182602" -> "90194313930"  [ label = "DDG: "] 
+  "107374182602" -> "90194313931"  [ label = "DDG: "] 
+  "107374182602" -> "90194313929"  [ label = "DDG: "] 
+  "107374182602" -> "25769804284"  [ label = "DDG: "] 
+  "107374182602" -> "90194313933"  [ label = "DDG: "] 
+  "107374182602" -> "30064774263"  [ label = "DDG: "] 
+  "107374182602" -> "68719479911"  [ label = "DDG: "] 
+  "30064774266" -> "30064774265"  [ label = "DDG: _tmp_4"] 
+  "30064774268" -> "30064774266"  [ label = "DDG: _tmp_4"] 
+  "107374182602" -> "30064774266"  [ label = "DDG: "] 
+}

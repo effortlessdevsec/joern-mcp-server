@@ -1,0 +1,54 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183115" [label = <METHOD, 108<BR/>getDefaultOptions> ]
+"124554052298" [label = <METHOD_RETURN, 108<BR/>{ tolerant: __ecma.Boolean; range: __ecma.Boolean; parser: __ecma.String; flow: { enums: __ecma.Boolean; esproposal_class_instance_fields: __ecma.Boolean; esproposal_class_static_fields: __ecma.Boolean; esproposal_decorators: __ecma.Boolean; esproposal_export_star_as: __ecma.Boolean; esproposal_optional_chaining: __ecma.Boolean; esproposal_nullish_coalescing: __ecma.Boolean; tokens: __ecma.Boolean; types: __ecma.Boolean; }; babylon6: { sourceType: __ecma.String; allowImportExportEverywhere: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; tokens: __ecma.Boolean; plugins: __ecma.String[]; }; babylon7: { sourceType: __ecma.String; allowImportExportEverywhere: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; createParenthesizedExpressions: __ecma.Boolean; ranges: __ecma.Boolean; tokens: __ecma.Boolean; plugins: __ecma.String[]; decoratorOptions: { version: __ecma.String; decoratorsBeforeExport: __ecma.Boolean; allowCallParenthesized: __ecma.Boolean; }; pipelineOptions: { proposal: __ecma.String; hackTopicToken: __ecma.String; }; typescriptOptions: { dts: __ecma.Boolean; disallowAmbiguousJSXLike: __ecma.Boolean; }; }; }> ]
+"111669151103" [label = <PARAM, 108<BR/>this> ]
+"141733921300" [label = <RETURN, 109<BR/>return { tolerant: false, range: tr...> ]
+"25769805737" [label = <BLOCK, 109<BR/>{ tolerant: false, range: true, ...> ]
+"30064782588" [label = <&lt;operator&gt;.assignment, 110<BR/>_tmp_15.tolerant = false> ]
+"30064782590" [label = <&lt;operator&gt;.assignment, 111<BR/>_tmp_15.range = true> ]
+"30064782592" [label = <&lt;operator&gt;.assignment, 112<BR/>_tmp_15.parser = &quot;esprima&quot;> ]
+"30064782594" [label = <&lt;operator&gt;.assignment, 113<BR/>_tmp_15.flow = flowSettings.defaultOptions> ]
+"30064782597" [label = <&lt;operator&gt;.assignment, 114<BR/>_tmp_15.babylon6 = babylon6Settings.defaultOptions> ]
+"30064782600" [label = <&lt;operator&gt;.assignment, 115<BR/>_tmp_15.babylon7 = babylon7Settings.defaultOptions> ]
+"68719488256" [label = <IDENTIFIER, 109<BR/>_tmp_15<BR/>{ tolerant: false, range: true, ...> ]
+  "141733921300" -> "124554052298"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151103" -> "124554052298"  [ label = "DDG: this"] 
+  "30064782588" -> "124554052298"  [ label = "DDG: _tmp_15.tolerant"] 
+  "30064782588" -> "124554052298"  [ label = "DDG: _tmp_15.tolerant = false"] 
+  "30064782590" -> "124554052298"  [ label = "DDG: _tmp_15.range"] 
+  "30064782590" -> "124554052298"  [ label = "DDG: _tmp_15.range = true"] 
+  "30064782592" -> "124554052298"  [ label = "DDG: _tmp_15.parser"] 
+  "30064782592" -> "124554052298"  [ label = "DDG: _tmp_15.parser = &quot;esprima&quot;"] 
+  "30064782594" -> "124554052298"  [ label = "DDG: _tmp_15.flow"] 
+  "30064782594" -> "124554052298"  [ label = "DDG: flowSettings.defaultOptions"] 
+  "30064782594" -> "124554052298"  [ label = "DDG: _tmp_15.flow = flowSettings.defaultOptions"] 
+  "30064782597" -> "124554052298"  [ label = "DDG: _tmp_15.babylon6"] 
+  "30064782597" -> "124554052298"  [ label = "DDG: babylon6Settings.defaultOptions"] 
+  "30064782597" -> "124554052298"  [ label = "DDG: _tmp_15.babylon6 = babylon6Settings.defaultOptions"] 
+  "30064782600" -> "124554052298"  [ label = "DDG: _tmp_15.babylon7"] 
+  "30064782600" -> "124554052298"  [ label = "DDG: babylon7Settings.defaultOptions"] 
+  "30064782600" -> "124554052298"  [ label = "DDG: _tmp_15.babylon7 = babylon7Settings.defaultOptions"] 
+  "107374183115" -> "111669151103"  [ label = "DDG: "] 
+  "25769805737" -> "141733921300"  [ label = "DDG: "] 
+  "25769805737" -> "141733921300"  [ label = "DDG: {
+      tolerant: false,
+      range: true,
+      parser: 'esprima',
+      flow: flowSettings.defaultOptions,
+      babylon6: babylon6Settings.defaultOptions,
+      babylon7: babylon7Settings.defaultOptions,
+    }"] 
+  "107374183115" -> "141733921300"  [ label = "DDG: "] 
+  "30064782588" -> "25769805737"  [ label = "DDG: _tmp_15.tolerant"] 
+  "30064782590" -> "25769805737"  [ label = "DDG: _tmp_15.range"] 
+  "30064782592" -> "25769805737"  [ label = "DDG: _tmp_15.parser"] 
+  "30064782594" -> "25769805737"  [ label = "DDG: _tmp_15.flow"] 
+  "30064782597" -> "25769805737"  [ label = "DDG: _tmp_15.babylon6"] 
+  "30064782600" -> "25769805737"  [ label = "DDG: _tmp_15.babylon7"] 
+  "107374183115" -> "25769805737"  [ label = "DDG: "] 
+  "107374183115" -> "30064782588"  [ label = "DDG: "] 
+  "107374183115" -> "30064782590"  [ label = "DDG: "] 
+  "107374183115" -> "30064782592"  [ label = "DDG: "] 
+  "107374183115" -> "68719488256"  [ label = "DDG: "] 
+}

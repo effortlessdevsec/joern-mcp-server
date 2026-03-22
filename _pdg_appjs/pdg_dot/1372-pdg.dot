@@ -1,0 +1,11 @@
+digraph "&lt;operator&gt;.instanceOf" {  
+node [shape="rect"];  
+"107374183772" [label = <METHOD<BR/>&lt;operator&gt;.instanceOf> ]
+"124554052956" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152457" [label = <PARAM<BR/>p1> ]
+"111669152458" [label = <PARAM<BR/>p2> ]
+  "111669152457" -> "124554052956"  [ label = "DDG: p1"] 
+  "111669152458" -> "124554052956"  [ label = "DDG: p2"] 
+  "107374183772" -> "111669152457"  [ label = "DDG: "] 
+  "107374183772" -> "111669152458"  [ label = "DDG: "] 
+}

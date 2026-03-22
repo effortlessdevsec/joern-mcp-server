@@ -1,0 +1,27 @@
+digraph "mapDispatchToProps" {  
+node [shape="rect"];  
+"107374182692" [label = <METHOD, 13<BR/>mapDispatchToProps> ]
+"124554051875" [label = <METHOD_RETURN, 13<BR/>{ onWantToClose: () =&gt; ANY; }> ]
+"111669150211" [label = <PARAM, 13<BR/>this> ]
+"111669150212" [label = <PARAM, 13<BR/>dispatch> ]
+"141733920966" [label = <RETURN, 14<BR/>return { onWantToClose: () =&gt; dispatch(clea...> ]
+"25769804520" [label = <BLOCK, 14<BR/>{ onWantToClose: () =&gt; dispatch(clearError(...> ]
+"30064775792" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_1.onWantToClose = &lt;lambda&gt;0> ]
+"68719481513" [label = <IDENTIFIER, 14<BR/>_tmp_1<BR/>{ onWantToClose: () =&gt; dispatch(clearError(...> ]
+  "141733920966" -> "124554051875"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150211" -> "124554051875"  [ label = "DDG: this"] 
+  "111669150212" -> "124554051875"  [ label = "DDG: dispatch"] 
+  "30064775792" -> "124554051875"  [ label = "DDG: _tmp_1.onWantToClose"] 
+  "30064775792" -> "124554051875"  [ label = "DDG: _tmp_1.onWantToClose = &lt;lambda&gt;0"] 
+  "107374182692" -> "111669150211"  [ label = "DDG: "] 
+  "107374182692" -> "111669150212"  [ label = "DDG: "] 
+  "25769804520" -> "141733920966"  [ label = "DDG: "] 
+  "25769804520" -> "141733920966"  [ label = "DDG: {
+    onWantToClose: () =&gt; dispatch(clearError()),
+  }"] 
+  "107374182692" -> "141733920966"  [ label = "DDG: "] 
+  "30064775792" -> "25769804520"  [ label = "DDG: _tmp_1.onWantToClose"] 
+  "107374182692" -> "25769804520"  [ label = "DDG: "] 
+  "107374182692" -> "30064775792"  [ label = "DDG: "] 
+  "107374182692" -> "68719481513"  [ label = "DDG: "] 
+}

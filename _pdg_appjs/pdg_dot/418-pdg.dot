@@ -1,0 +1,83 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374182818" [label = <METHOD, 29<BR/>parse> ]
+"124554052004" [label = <METHOD_RETURN, 29<BR/>astexplorer/website/src/parsers/glsl/glsl-parser.js::program:parse:&lt;returnValue&gt;> ]
+"111669150484" [label = <PARAM, 29<BR/>this> ]
+"111669150485" [label = <PARAM, 29<BR/>{ tokenize, parse }> ]
+"111669150486" [label = <PARAM, 29<BR/>code> ]
+"30064777607" [label = <&lt;operator&gt;.assignment, 29<BR/>tokenize = param1_0.tokenize> ]
+"30064777609" [label = <&lt;operator&gt;.assignment, 29<BR/>parse = param1_0.parse> ]
+"30064777611" [label = <&lt;operator&gt;.assignment, 33<BR/>function decoratePosition = function decoratePo...> ]
+"30064777612" [label = <&lt;operator&gt;.assignment, 30<BR/>const tokens = tokenize(code)> ]
+"30064777614" [label = <&lt;operator&gt;.assignment, 31<BR/>const ast = parse(tokens)> ]
+"30064777616" [label = <decoratePosition, 50<BR/>decoratePosition(ast, code.length)> ]
+"141733921083" [label = <RETURN, 51<BR/>return ast> ]
+"68719483364" [label = <IDENTIFIER, 50<BR/>decoratePosition<BR/>decoratePosition(ast, code.length)> ]
+"68719483368" [label = <IDENTIFIER, 51<BR/>ast<BR/>return ast> ]
+"68719483357" [label = <IDENTIFIER, 30<BR/>tokenize<BR/>tokenize(code)> ]
+"30064777613" [label = <tokenize, 30<BR/>tokenize(code)> ]
+"68719483361" [label = <IDENTIFIER, 31<BR/>parse<BR/>parse(tokens)> ]
+"30064777615" [label = <parse, 31<BR/>parse(tokens)> ]
+  "141733921083" -> "124554052004"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150485" -> "124554052004"  [ label = "DDG: param1_0"] 
+  "30064777607" -> "124554052004"  [ label = "DDG: tokenize"] 
+  "30064777607" -> "124554052004"  [ label = "DDG: param1_0.tokenize"] 
+  "30064777607" -> "124554052004"  [ label = "DDG: tokenize = param1_0.tokenize"] 
+  "30064777609" -> "124554052004"  [ label = "DDG: parse"] 
+  "30064777609" -> "124554052004"  [ label = "DDG: param1_0.parse"] 
+  "30064777609" -> "124554052004"  [ label = "DDG: parse = param1_0.parse"] 
+  "30064777611" -> "124554052004"  [ label = "DDG: decoratePosition"] 
+  "30064777611" -> "124554052004"  [ label = "DDG: function decoratePosition = function decoratePosition(node, end) {
+      node.loc = {
+        start: node.token.position || 0,
+        end,
+      };
+      node.children.forEach((child, i) =&gt; {
+        const nextSibling = node.children[i + 1];
+        decoratePosition(
+          child,
+          nextSibling &amp;&amp; nextSibling.token &amp;&amp; 'position' in nextSibling.token
+            ? nextSibling.token.position -
+                (nextSibling.token.preceding || [])
+                  .reduce((s, n) =&gt; s + (n.data || '').length, 0)
+            : end,
+        );
+      });
+    }"] 
+  "30064777613" -> "124554052004"  [ label = "DDG: code"] 
+  "30064777612" -> "124554052004"  [ label = "DDG: tokenize(code)"] 
+  "30064777612" -> "124554052004"  [ label = "DDG: const tokens = tokenize(code)"] 
+  "30064777615" -> "124554052004"  [ label = "DDG: tokens"] 
+  "30064777614" -> "124554052004"  [ label = "DDG: parse(tokens)"] 
+  "30064777614" -> "124554052004"  [ label = "DDG: const ast = parse(tokens)"] 
+  "30064777616" -> "124554052004"  [ label = "DDG: this"] 
+  "30064777616" -> "124554052004"  [ label = "DDG: ast"] 
+  "30064777616" -> "124554052004"  [ label = "DDG: code.length"] 
+  "30064777616" -> "124554052004"  [ label = "DDG: decoratePosition(ast, code.length)"] 
+  "107374182818" -> "111669150484"  [ label = "DDG: "] 
+  "107374182818" -> "111669150485"  [ label = "DDG: "] 
+  "107374182818" -> "111669150486"  [ label = "DDG: "] 
+  "111669150485" -> "30064777607"  [ label = "DDG: param1_0"] 
+  "111669150485" -> "30064777609"  [ label = "DDG: param1_0"] 
+  "107374182818" -> "30064777611"  [ label = "DDG: "] 
+  "30064777613" -> "30064777612"  [ label = "DDG: this"] 
+  "30064777613" -> "30064777612"  [ label = "DDG: code"] 
+  "30064777615" -> "30064777614"  [ label = "DDG: this"] 
+  "30064777615" -> "30064777614"  [ label = "DDG: tokens"] 
+  "68719483368" -> "141733921083"  [ label = "DDG: ast"] 
+  "107374182818" -> "68719483364"  [ label = "DDG: "] 
+  "30064777615" -> "30064777616"  [ label = "DDG: this"] 
+  "107374182818" -> "30064777616"  [ label = "DDG: "] 
+  "30064777614" -> "30064777616"  [ label = "DDG: ast"] 
+  "30064777613" -> "30064777616"  [ label = "DDG: code"] 
+  "30064777616" -> "68719483368"  [ label = "DDG: ast"] 
+  "107374182818" -> "68719483368"  [ label = "DDG: "] 
+  "107374182818" -> "68719483357"  [ label = "DDG: "] 
+  "111669150484" -> "30064777613"  [ label = "DDG: this"] 
+  "107374182818" -> "30064777613"  [ label = "DDG: "] 
+  "111669150486" -> "30064777613"  [ label = "DDG: code"] 
+  "107374182818" -> "68719483361"  [ label = "DDG: "] 
+  "30064777613" -> "30064777615"  [ label = "DDG: this"] 
+  "107374182818" -> "30064777615"  [ label = "DDG: "] 
+  "30064777612" -> "30064777615"  [ label = "DDG: tokens"] 
+}

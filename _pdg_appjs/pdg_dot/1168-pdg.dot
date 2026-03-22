@@ -1,0 +1,32 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183568" [label = <METHOD, 29<BR/>loadParser> ]
+"124554052751" [label = <METHOD_RETURN, 29<BR/>void> ]
+"111669152066" [label = <PARAM, 29<BR/>this> ]
+"111669152067" [label = <PARAM, 29<BR/>callback> ]
+"30064789669" [label = <require, 30<BR/>require(['yaml-ast-parser'], function(yamlAstPa...> ]
+"68719495249" [label = <IDENTIFIER, 30<BR/>require<BR/>require(['yaml-ast-parser'], function(yamlAstPa...> ]
+"30064789670" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_8 = __ecma.Array.factory()> ]
+"30064789672" [label = <, 30<BR/>_tmp_8.push(&quot;yaml-ast-parser&quot;)> ]
+"68719495254" [label = <IDENTIFIER, 30<BR/>_tmp_8<BR/>['yaml-ast-parser']> ]
+  "111669152067" -> "124554052751"  [ label = "DDG: callback"] 
+  "30064789669" -> "124554052751"  [ label = "DDG: this"] 
+  "30064789670" -> "124554052751"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064789670" -> "124554052751"  [ label = "DDG: _tmp_8 = __ecma.Array.factory()"] 
+  "30064789672" -> "124554052751"  [ label = "DDG: _tmp_8"] 
+  "30064789672" -> "124554052751"  [ label = "DDG: _tmp_8.push(&quot;yaml-ast-parser&quot;)"] 
+  "30064789669" -> "124554052751"  [ label = "DDG: require(['yaml-ast-parser'], function(yamlAstParser) {
+      Kind = yamlAstParser.Kind;
+      callback(yamlAstParser);
+    })"] 
+  "107374183568" -> "111669152066"  [ label = "DDG: "] 
+  "107374183568" -> "111669152067"  [ label = "DDG: "] 
+  "107374183568" -> "68719495249"  [ label = "DDG: "] 
+  "111669152066" -> "30064789669"  [ label = "DDG: this"] 
+  "107374183568" -> "30064789669"  [ label = "DDG: "] 
+  "30064789672" -> "30064789669"  [ label = "DDG: _tmp_8"] 
+  "107374183568" -> "30064789670"  [ label = "DDG: "] 
+  "107374183568" -> "68719495254"  [ label = "DDG: "] 
+  "30064789670" -> "30064789672"  [ label = "DDG: _tmp_8"] 
+  "107374183568" -> "30064789672"  [ label = "DDG: "] 
+}

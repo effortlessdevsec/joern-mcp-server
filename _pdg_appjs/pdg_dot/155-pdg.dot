@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;14" {  
+node [shape="rect"];  
+"107374182555" [label = <METHOD, 116<BR/>&lt;lambda&gt;14> ]
+"124554051737" [label = <METHOD_RETURN, 116<BR/>astexplorer/website/src/components/PasteDropTarget.js::program:setState:&lt;returnValue&gt;> ]
+"111669149982" [label = <PARAM, 116<BR/>this> ]
+"141733920875" [label = <RETURN, 116<BR/>this.setState({dragging: false})> ]
+"30064773405" [label = <setState, 116<BR/>this.setState({dragging: false})> ]
+"30064773407" [label = <&lt;operator&gt;.assignment, 116<BR/>_tmp_17.dragging = false> ]
+"68719479067" [label = <IDENTIFIER, 116<BR/>_tmp_17<BR/>{dragging: false}> ]
+  "141733920875" -> "124554051737"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064773405" -> "124554051737"  [ label = "DDG: this"] 
+  "30064773407" -> "124554051737"  [ label = "DDG: _tmp_17.dragging"] 
+  "30064773407" -> "124554051737"  [ label = "DDG: _tmp_17.dragging = false"] 
+  "30064773405" -> "124554051737"  [ label = "DDG: this.setState({dragging: false})"] 
+  "107374182555" -> "111669149982"  [ label = "DDG: "] 
+  "30064773405" -> "141733920875"  [ label = "DDG: this.setState({dragging: false})"] 
+  "111669149982" -> "30064773405"  [ label = "DDG: this"] 
+  "107374182555" -> "30064773405"  [ label = "DDG: "] 
+  "30064773407" -> "30064773405"  [ label = "DDG: _tmp_17.dragging"] 
+  "107374182555" -> "30064773407"  [ label = "DDG: "] 
+  "107374182555" -> "68719479067"  [ label = "DDG: "] 
+}

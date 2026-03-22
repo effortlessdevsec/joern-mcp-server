@@ -1,0 +1,43 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183401" [label = <METHOD, 1<BR/>:program> ]
+"124554052585" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151738" [label = <PARAM, 1<BR/>this> ]
+"25769806565" [label = <BLOCK, 1<BR/>export default function(CodeMirror) { /* http...> ]
+"30064787392" [label = <&lt;operator&gt;.assignment, 1<BR/>function &lt;lambda&gt;0 = function(CodeMirror) { /...> ]
+"30064787393" [label = <&lt;operator&gt;.assignment, 1<BR/>exports[&quot;default&quot;] = &lt;lambda&gt;0> ]
+  "111669151738" -> "124554052585"  [ label = "DDG: this"] 
+  "30064787392" -> "124554052585"  [ label = "DDG: function &lt;lambda&gt;0 = function(CodeMirror) {
+  /* https://github.com/facebook/reason/blob/master/src/reason-parser/reason_lexer.mll#L94-L154 */
+  const keywords = (
+    'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec ' +
+    'object of open or pri rec then to type val virtual' +
+    'try catch finally do else for if switch while import library export ' +
+    'part of show hide is as'
+  ).split(' ');
+  const blockKeywords = 'try catch match with else for if switch while do begin end in module sig struct'.split(
+    ' ',
+  );
+  const atoms = 'unit int char exn string int32 int64 float bool option mod land lor lxor lsl lsr asr'.split(
+    ' ',
+  );
+  const builtins = 'true false Error Ok None Some'.split(' ');
+
+  function set(words) {
+    let obj = {};
+    for (let i = 0; i &lt; words.length; ++i) obj[words[i]] = true;
+    return obj;
+  }
+
+  CodeMirror.defineMIME('application/reason', {
+    name..."] 
+  "30064787393" -> "124554052585"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064787393" -> "124554052585"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "30064787393" -> "124554052585"  [ label = "DDG: exports[&quot;default&quot;] = &lt;lambda&gt;0"] 
+  "107374183401" -> "111669151738"  [ label = "DDG: "] 
+  "107374183401" -> "25769806565"  [ label = "DDG: "] 
+  "107374183401" -> "30064787392"  [ label = "DDG: "] 
+  "30064787392" -> "30064787393"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "107374183401" -> "30064787393"  [ label = "DDG: "] 
+}

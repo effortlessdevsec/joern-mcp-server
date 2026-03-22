@@ -1,0 +1,52 @@
+digraph "renderSettings" {  
+node [shape="rect"];  
+"107374183305" [label = <METHOD, 48<BR/>renderSettings> ]
+"124554052488" [label = <METHOD_RETURN, 48<BR/>ANY> ]
+"111669151523" [label = <PARAM, 48<BR/>this> ]
+"111669151524" [label = <PARAM, 48<BR/>parserSettings> ]
+"111669151525" [label = <PARAM, 48<BR/>onChange> ]
+"141733921432" [label = <RETURN, 49<BR/>return ( &lt;div&gt; &lt;p&gt; &lt;a ...> ]
+"154618824049" [label = <TEMPLATE_DOM, 50<BR/>&lt;div&gt; &lt;p&gt; &lt;a href...> ]
+"30064785941" [label = <call, 58<BR/>defaultParserInterface.renderSettings.call( ...> ]
+"90194316422" [label = <LITERAL, 53<BR/>&quot;https://fstirlitz.github.io/luaparse/#parser-i...<BR/>href=&quot;https://fstirlitz.github.io/luaparse/#par...> ]
+"90194316423" [label = <LITERAL, 54<BR/>&quot;_blank&quot;<BR/>target=&quot;_blank&quot;> ]
+"90194316424" [label = <LITERAL, 54<BR/>&quot;noopener noreferrer&quot;<BR/>rel=&quot;noopener noreferrer&quot;> ]
+"30064785943" [label = <&lt;operator&gt;.assignment, 58<BR/>(_tmp_12 = defaultParserInterface.renderSettings)> ]
+  "141733921432" -> "124554052488"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064785943" -> "124554052488"  [ label = "DDG: defaultParserInterface.renderSettings"] 
+  "30064785941" -> "124554052488"  [ label = "DDG: _tmp_12"] 
+  "30064785941" -> "124554052488"  [ label = "DDG: this"] 
+  "30064785941" -> "124554052488"  [ label = "DDG: parserSettings"] 
+  "30064785941" -> "124554052488"  [ label = "DDG: onChange"] 
+  "30064785941" -> "124554052488"  [ label = "DDG: defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )"] 
+  "107374183305" -> "111669151523"  [ label = "DDG: "] 
+  "107374183305" -> "111669151524"  [ label = "DDG: "] 
+  "107374183305" -> "111669151525"  [ label = "DDG: "] 
+  "154618824049" -> "141733921432"  [ label = "DDG: &lt;div&gt;
+        &lt;p&gt;
+          &lt;a
+            href=&quot;https://fstirlitz.github.io/luaparse/#parser-interface&quot;
+            target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+            Option descriptions
+          &lt;/a&gt;
+        &lt;/p&gt;
+        {defaultParserInterface.renderSettings.call(
+          this,
+          parserSettings,
+          onChange,
+        )}
+      &lt;/div&gt;"] 
+  "107374183305" -> "141733921432"  [ label = "DDG: "] 
+  "30064785943" -> "30064785941"  [ label = "DDG: _tmp_12"] 
+  "107374183305" -> "30064785941"  [ label = "DDG: "] 
+  "111669151523" -> "30064785941"  [ label = "DDG: this"] 
+  "111669151524" -> "30064785941"  [ label = "DDG: parserSettings"] 
+  "111669151525" -> "30064785941"  [ label = "DDG: onChange"] 
+  "107374183305" -> "90194316422"  [ label = "DDG: "] 
+  "107374183305" -> "90194316423"  [ label = "DDG: "] 
+  "107374183305" -> "90194316424"  [ label = "DDG: "] 
+}

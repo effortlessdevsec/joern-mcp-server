@@ -1,0 +1,242 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374183502" [label = <METHOD, 59<BR/>&lt;lambda&gt;2> ]
+"124554052689" [label = <METHOD_RETURN, 59<BR/>ANY> ]
+"111669151945" [label = <PARAM, 59<BR/>this> ]
+"111669151946" [label = <PARAM, 59<BR/>setting> ]
+"30064788759" [label = <&lt;operator&gt;.equals, 60<BR/>typeof setting === 'string'> ]
+"141733921570" [label = <RETURN, 61<BR/>return ( &lt;li key={setting}&gt; ...> ]
+"30064788766" [label = <isArray, 79<BR/>Array.isArray(setting)> ]
+"30064788760" [label = <&lt;operator&gt;.instanceOf, 60<BR/>typeof setting> ]
+"154618824105" [label = <TEMPLATE_DOM, 62<BR/>&lt;li key={setting}&gt; &lt;label&gt; ...> ]
+"25769806839" [label = <BLOCK, 80<BR/>const [fieldName, options, converter=identity] ...> ]
+"141733921571" [label = <RETURN, 81<BR/>return ( &lt;li key={fieldName}&gt; ...> ]
+"30064788789" [label = <&lt;operator&gt;.logicalAnd, 104<BR/>setting &amp;&amp; typeof setting === 'object'> ]
+"30064788768" [label = <&lt;operator&gt;.assignment, 80<BR/>_tmp_6 = setting> ]
+"30064788769" [label = <&lt;operator&gt;.assignment, 80<BR/>fieldName = _tmp_6[0]> ]
+"30064788771" [label = <&lt;operator&gt;.assignment, 80<BR/>options = _tmp_6[1]> ]
+"30064788773" [label = <&lt;operator&gt;.assignment, 80<BR/>converter = _tmp_6[2] === void 0 ? identity : _...> ]
+"68719494367" [label = <IDENTIFIER, 80<BR/>_tmp_6<BR/>const [fieldName, options, converter=identity] ...> ]
+"154618824130" [label = <TEMPLATE_DOM, 82<BR/>&lt;li key={fieldName}&gt; &lt;label&gt; ...> ]
+"141733921572" [label = <RETURN, 105<BR/>return ( &lt;SettingsRenderer ...> ]
+"30064788790" [label = <&lt;operator&gt;.equals, 104<BR/>typeof setting === 'object'> ]
+"154618824154" [label = <TEMPLATE_DOM, 106<BR/>&lt;SettingsRenderer key={setting....> ]
+"68719494353" [label = <IDENTIFIER, 75<BR/>setting<BR/>{setting}> ]
+"30064788774" [label = <&lt;operator&gt;.conditional, 80<BR/>_tmp_6[2] === void 0 ? identity : _tmp_6[2]> ]
+"30064788791" [label = <&lt;operator&gt;.instanceOf, 104<BR/>typeof setting> ]
+"68719494344" [label = <IDENTIFIER, 62<BR/>setting<BR/>{setting}> ]
+"30064788775" [label = <&lt;operator&gt;.equals, 80<BR/>_tmp_6[2] === void 0> ]
+"68719494369" [label = <IDENTIFIER, 84<BR/>fieldName<BR/>{fieldName}> ]
+"90194317101" [label = <LITERAL, 65<BR/>&quot;checkbox&quot;<BR/>type=&quot;checkbox&quot;> ]
+"68719494368" [label = <IDENTIFIER, 82<BR/>fieldName<BR/>{fieldName}> ]
+"30064788780" [label = <&lt;operator&gt;.conditional, 94<BR/>Array.isArray(options) ? options.map(o =&gt; &lt;opti...> ]
+"30064788761" [label = <has, 66<BR/>required.has(setting)> ]
+"30064788763" [label = <has, 67<BR/>required.has(setting)> ]
+"120259085117" [label = <METHOD_REF, 70<BR/>&lt;lambda&gt;3<BR/>{ ({target}) =&gt; onChange(...> ]
+"68719494383" [label = <IDENTIFIER, 108<BR/>setting<BR/>{setting}> ]
+"30064788793" [label = <settings, 109<BR/>setting.settings(parserSettings)> ]
+"120259085121" [label = <METHOD_REF, 111<BR/>&lt;lambda&gt;7<BR/>{ settings =&gt; onChange( ...> ]
+"120259085118" [label = <METHOD_REF, 87<BR/>&lt;lambda&gt;4<BR/>{ ({target}) =&gt; onChange(...> ]
+"30064788781" [label = <isArray, 94<BR/>Array.isArray(options)> ]
+"30064788783" [label = <map, 95<BR/>options.map(o =&gt; &lt;option key={o} value={o}&gt;{o}&lt;...> ]
+"30064788785" [label = <map, 96<BR/>Object.keys(options).map( ...> ]
+"30064788787" [label = <&lt;operator&gt;.assignment, 96<BR/>(_tmp_7 = Object.keys(options))> ]
+"30064788788" [label = <keys, 96<BR/>Object.keys(options)> ]
+"30064788767" [label = <&lt;operator&gt;.fieldAccess, 79<BR/>Array.isArray> ]
+"55834581225" [label = <FIELD_IDENTIFIER, 79<BR/>isArray> ]
+"30064788770" [label = <&lt;operator&gt;.indexAccess, 80<BR/>_tmp_6[0]> ]
+"30064788772" [label = <&lt;operator&gt;.indexAccess, 80<BR/>_tmp_6[1]> ]
+"30064788778" [label = <&lt;operator&gt;.indexAccess, 80<BR/>_tmp_6[2]> ]
+"30064788776" [label = <&lt;operator&gt;.indexAccess, 80<BR/>_tmp_6[2]> ]
+"30064788777" [label = <&lt;operator&gt;.void, 80<BR/>void 0> ]
+"30064788765" [label = <&lt;operator&gt;.indexAccess, 68<BR/>values[setting]> ]
+"30064788792" [label = <&lt;operator&gt;.fieldAccess, 107<BR/>setting.key> ]
+"30064788762" [label = <&lt;operator&gt;.fieldAccess, 66<BR/>required.has> ]
+"30064788764" [label = <&lt;operator&gt;.fieldAccess, 67<BR/>required.has> ]
+"30064788779" [label = <&lt;operator&gt;.indexAccess, 93<BR/>values[fieldName]> ]
+"30064788782" [label = <&lt;operator&gt;.fieldAccess, 94<BR/>Array.isArray> ]
+"30064788784" [label = <&lt;operator&gt;.fieldAccess, 95<BR/>options.map> ]
+"120259085119" [label = <METHOD_REF, 95<BR/>&lt;lambda&gt;5<BR/>options.map(o =&gt; &lt;option key={o} value={o}&gt;{o}&lt;...> ]
+"30064788786" [label = <&lt;operator&gt;.fieldAccess, 96<BR/>(_tmp_7 = Object.keys(options)).map> ]
+"120259085120" [label = <METHOD_REF, 97<BR/>&lt;lambda&gt;6<BR/>Object.keys(options).map( ...> ]
+"55834581229" [label = <FIELD_IDENTIFIER, 107<BR/>key> ]
+"30064788794" [label = <&lt;operator&gt;.fieldAccess, 109<BR/>setting.settings> ]
+"55834581223" [label = <FIELD_IDENTIFIER, 66<BR/>has> ]
+"55834581224" [label = <FIELD_IDENTIFIER, 67<BR/>has> ]
+"55834581226" [label = <FIELD_IDENTIFIER, 94<BR/>isArray> ]
+"55834581227" [label = <FIELD_IDENTIFIER, 95<BR/>map> ]
+"55834581228" [label = <FIELD_IDENTIFIER, 96<BR/>map> ]
+"55834581230" [label = <FIELD_IDENTIFIER, 109<BR/>settings> ]
+  "141733921572" -> "124554052689"  [ label = "DDG: &lt;RET&gt;"] 
+  "141733921571" -> "124554052689"  [ label = "DDG: &lt;RET&gt;"] 
+  "141733921570" -> "124554052689"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151945" -> "124554052689"  [ label = "DDG: this"] 
+  "30064788759" -> "124554052689"  [ label = "DDG: typeof setting"] 
+  "30064788759" -> "124554052689"  [ label = "DDG: typeof setting === 'string'"] 
+  "30064788763" -> "124554052689"  [ label = "DDG: required"] 
+  "30064788763" -> "124554052689"  [ label = "DDG: setting"] 
+  "30064788763" -> "124554052689"  [ label = "DDG: required.has(setting)"] 
+  "107374183502" -> "111669151945"  [ label = "DDG: "] 
+  "107374183502" -> "111669151946"  [ label = "DDG: "] 
+  "30064788760" -> "30064788759"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788759"  [ label = "DDG: "] 
+  "154618824105" -> "141733921570"  [ label = "DDG: &lt;li key={setting}&gt;
+                &lt;label&gt;
+                  &lt;input
+                    type=&quot;checkbox&quot;
+                    readOnly={required.has(setting)}
+                    disabled={required.has(setting)}
+                    checked={values[setting]}
+                    onChange={
+                      ({target}) =&gt; onChange(
+                        update(parserSettings, setting, target.checked),
+                      )
+                    }
+                  /&gt;
+                  &amp;nbsp;{setting}
+                &lt;/label&gt;
+              &lt;/li&gt;"] 
+  "107374183502" -> "141733921570"  [ label = "DDG: "] 
+  "111669151946" -> "30064788760"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788760"  [ label = "DDG: "] 
+  "107374183502" -> "30064788766"  [ label = "DDG: "] 
+  "30064788760" -> "30064788766"  [ label = "DDG: setting"] 
+  "107374183502" -> "25769806839"  [ label = "DDG: "] 
+  "154618824130" -> "141733921571"  [ label = "DDG: &lt;li key={fieldName}&gt;
+                &lt;label&gt;
+                  {fieldName}:&amp;nbsp;
+                  &lt;select
+                    onChange={
+                      ({target}) =&gt; onChange(update(
+                        parserSettings,
+                        fieldName,
+                        converter(target.value),
+                      ))
+                    }
+                    value={values[fieldName]}&gt;
+                    {Array.isArray(options) ?
+                      options.map(o =&gt; &lt;option key={o} value={o}&gt;{o}&lt;/option&gt;) :
+                      Object.keys(options).map(
+                        key =&gt; &lt;option key={key} value={options[key]}&gt;{key}&lt;/option&gt;,
+                      )
+                    }
+                  &lt;/select&gt;
+                &lt;/label&gt;
+              &lt;/li&gt;"] 
+  "107374183502" -> "141733921571"  [ label = "DDG: "] 
+  "30064788766" -> "30064788768"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788768"  [ label = "DDG: "] 
+  "30064788768" -> "30064788769"  [ label = "DDG: _tmp_6"] 
+  "30064788768" -> "30064788771"  [ label = "DDG: _tmp_6"] 
+  "30064788837" -> "30064788773"  [ label = "DDG: identity"] 
+  "107374183502" -> "30064788773"  [ label = "DDG: "] 
+  "30064788768" -> "30064788773"  [ label = "DDG: _tmp_6"] 
+  "30064788775" -> "30064788773"  [ label = "DDG: _tmp_6[2]"] 
+  "107374183502" -> "68719494367"  [ label = "DDG: "] 
+  "30064788766" -> "30064788789"  [ label = "DDG: setting"] 
+  "30064788791" -> "30064788789"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788789"  [ label = "DDG: "] 
+  "30064788790" -> "30064788789"  [ label = "DDG: typeof setting"] 
+  "30064788790" -> "30064788789"  [ label = "DDG: &quot;object&quot;"] 
+  "154618824154" -> "141733921572"  [ label = "DDG: &lt;SettingsRenderer
+                key={setting.key}
+                settingsConfiguration={setting}
+                parserSettings={setting.settings(parserSettings)}
+                onChange={
+                  settings =&gt; onChange(
+                    {...parserSettings, [setting.key]: settings},
+                  )
+                }
+              /&gt;"] 
+  "107374183502" -> "141733921572"  [ label = "DDG: "] 
+  "30064788791" -> "30064788790"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788790"  [ label = "DDG: "] 
+  "107374183502" -> "68719494353"  [ label = "DDG: "] 
+  "30064788837" -> "30064788774"  [ label = "DDG: identity"] 
+  "107374183502" -> "30064788774"  [ label = "DDG: "] 
+  "30064788768" -> "30064788774"  [ label = "DDG: _tmp_6"] 
+  "30064788775" -> "30064788774"  [ label = "DDG: _tmp_6[2]"] 
+  "30064788766" -> "30064788791"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788791"  [ label = "DDG: "] 
+  "107374183502" -> "68719494344"  [ label = "DDG: "] 
+  "30064788768" -> "30064788775"  [ label = "DDG: _tmp_6"] 
+  "107374183502" -> "30064788775"  [ label = "DDG: "] 
+  "107374183502" -> "68719494369"  [ label = "DDG: "] 
+  "107374183502" -> "90194317101"  [ label = "DDG: "] 
+  "107374183502" -> "68719494368"  [ label = "DDG: "] 
+  "30064788783" -> "30064788780"  [ label = "DDG: options"] 
+  "30064788783" -> "30064788780"  [ label = "DDG: &lt;lambda&gt;5"] 
+  "30064788785" -> "30064788780"  [ label = "DDG: _tmp_7"] 
+  "30064788785" -> "30064788780"  [ label = "DDG: &lt;lambda&gt;6"] 
+  "107374183502" -> "120259085117"  [ label = "DDG: "] 
+  "107374183502" -> "68719494383"  [ label = "DDG: "] 
+  "107374183502" -> "120259085121"  [ label = "DDG: "] 
+  "107374183502" -> "30064788761"  [ label = "DDG: "] 
+  "30064788760" -> "30064788761"  [ label = "DDG: setting"] 
+  "30064788761" -> "30064788763"  [ label = "DDG: required"] 
+  "107374183502" -> "30064788763"  [ label = "DDG: "] 
+  "30064788761" -> "30064788763"  [ label = "DDG: setting"] 
+  "107374183502" -> "120259085118"  [ label = "DDG: "] 
+  "30064788766" -> "30064788781"  [ label = "DDG: Array"] 
+  "107374183502" -> "30064788781"  [ label = "DDG: "] 
+  "30064788771" -> "30064788781"  [ label = "DDG: options"] 
+  "30064788781" -> "30064788783"  [ label = "DDG: options"] 
+  "107374183502" -> "30064788783"  [ label = "DDG: "] 
+  "30064788787" -> "30064788785"  [ label = "DDG: _tmp_7"] 
+  "107374183502" -> "30064788785"  [ label = "DDG: "] 
+  "30064788789" -> "30064788793"  [ label = "DDG: setting"] 
+  "107374183502" -> "30064788793"  [ label = "DDG: "] 
+  "30064788788" -> "30064788787"  [ label = "DDG: options"] 
+  "30064788781" -> "30064788788"  [ label = "DDG: options"] 
+  "107374183502" -> "30064788788"  [ label = "DDG: "] 
+  "30064788759" -> "30064788762"  [ label = "CDG: "] 
+  "30064788759" -> "30064788761"  [ label = "CDG: "] 
+  "30064788759" -> "30064788764"  [ label = "CDG: "] 
+  "30064788759" -> "30064788763"  [ label = "CDG: "] 
+  "30064788759" -> "30064788766"  [ label = "CDG: "] 
+  "30064788759" -> "30064788765"  [ label = "CDG: "] 
+  "30064788759" -> "30064788767"  [ label = "CDG: "] 
+  "30064788759" -> "141733921570"  [ label = "CDG: "] 
+  "30064788759" -> "55834581224"  [ label = "CDG: "] 
+  "30064788759" -> "55834581223"  [ label = "CDG: "] 
+  "30064788759" -> "55834581225"  [ label = "CDG: "] 
+  "30064788759" -> "120259085117"  [ label = "CDG: "] 
+  "30064788766" -> "30064788774"  [ label = "CDG: "] 
+  "30064788766" -> "30064788773"  [ label = "CDG: "] 
+  "30064788766" -> "30064788776"  [ label = "CDG: "] 
+  "30064788766" -> "30064788775"  [ label = "CDG: "] 
+  "30064788766" -> "30064788777"  [ label = "CDG: "] 
+  "30064788766" -> "30064788780"  [ label = "CDG: "] 
+  "30064788766" -> "30064788779"  [ label = "CDG: "] 
+  "30064788766" -> "30064788782"  [ label = "CDG: "] 
+  "30064788766" -> "30064788781"  [ label = "CDG: "] 
+  "30064788766" -> "30064788768"  [ label = "CDG: "] 
+  "30064788766" -> "30064788770"  [ label = "CDG: "] 
+  "30064788766" -> "30064788769"  [ label = "CDG: "] 
+  "30064788766" -> "30064788772"  [ label = "CDG: "] 
+  "30064788766" -> "30064788771"  [ label = "CDG: "] 
+  "30064788766" -> "141733921571"  [ label = "CDG: "] 
+  "30064788766" -> "30064788789"  [ label = "CDG: "] 
+  "30064788766" -> "55834581226"  [ label = "CDG: "] 
+  "30064788766" -> "120259085118"  [ label = "CDG: "] 
+  "30064788766" -> "30064788790"  [ label = "CDG: "] 
+  "30064788766" -> "30064788791"  [ label = "CDG: "] 
+  "30064788789" -> "141733921572"  [ label = "CDG: "] 
+  "30064788789" -> "30064788792"  [ label = "CDG: "] 
+  "30064788789" -> "30064788794"  [ label = "CDG: "] 
+  "30064788789" -> "30064788793"  [ label = "CDG: "] 
+  "30064788789" -> "55834581230"  [ label = "CDG: "] 
+  "30064788789" -> "55834581229"  [ label = "CDG: "] 
+  "30064788789" -> "120259085121"  [ label = "CDG: "] 
+  "30064788775" -> "30064788778"  [ label = "CDG: "] 
+  "30064788781" -> "30064788784"  [ label = "CDG: "] 
+  "30064788781" -> "30064788783"  [ label = "CDG: "] 
+  "30064788781" -> "30064788786"  [ label = "CDG: "] 
+  "30064788781" -> "30064788785"  [ label = "CDG: "] 
+  "30064788781" -> "30064788788"  [ label = "CDG: "] 
+  "30064788781" -> "30064788787"  [ label = "CDG: "] 
+  "30064788781" -> "55834581228"  [ label = "CDG: "] 
+  "30064788781" -> "55834581227"  [ label = "CDG: "] 
+  "30064788781" -> "120259085119"  [ label = "CDG: "] 
+  "30064788781" -> "120259085120"  [ label = "CDG: "] 
+}

@@ -1,0 +1,4 @@
+digraph "halts" {  
+node [shape="rect"];  
+
+}

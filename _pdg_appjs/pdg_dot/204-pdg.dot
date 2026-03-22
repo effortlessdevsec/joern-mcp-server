@@ -1,0 +1,88 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182604" [label = <METHOD, 1<BR/>:program> ]
+"124554051789" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150061" [label = <PARAM, 1<BR/>this> ]
+"30064774312" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064774313" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"30064774314" [label = <&lt;operator&gt;.assignment, 3<BR/>var cx = require(&quot;../../utils/classnames.js&quot;)> ]
+"25769804292" [label = <BLOCK, 5<BR/>export default function PrettierButton(props) {...> ]
+"30064774318" [label = <&lt;operator&gt;.assignment, 22<BR/>PrettierButton.propTypes = { toggleFormatting...> ]
+"30064774315" [label = <&lt;operator&gt;.assignment, 5<BR/>function PrettierButton = function PrettierButt...> ]
+"30064774316" [label = <&lt;operator&gt;.assignment, 5<BR/>exports[&quot;default&quot;] = PrettierButton> ]
+"68719479950" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064774294" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719479953" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064774295" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"68719479956" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../../utils/classnames.js&quot;)> ]
+"30064774296" [label = <require, 3<BR/>require(&quot;../../utils/classnames.js&quot;)> ]
+"30064774320" [label = <&lt;operator&gt;.assignment, 23<BR/>_tmp_1.toggleFormatting = PropTypes.func> ]
+"30064774323" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_1.enableFormatting = PropTypes.bool> ]
+"68719479966" [label = <IDENTIFIER, 22<BR/>_tmp_1<BR/>{ toggleFormatting: PropTypes.func, enableF...> ]
+  "30064774312" -> "124554051789"  [ label = "DDG: PropTypes"] 
+  "30064774312" -> "124554051789"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064774312" -> "124554051789"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064774313" -> "124554051789"  [ label = "DDG: React"] 
+  "30064774313" -> "124554051789"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064774313" -> "124554051789"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064774314" -> "124554051789"  [ label = "DDG: cx"] 
+  "30064774296" -> "124554051789"  [ label = "DDG: this"] 
+  "30064774314" -> "124554051789"  [ label = "DDG: require(&quot;../../utils/classnames.js&quot;)"] 
+  "30064774314" -> "124554051789"  [ label = "DDG: var cx = require(&quot;../../utils/classnames.js&quot;)"] 
+  "30064774315" -> "124554051789"  [ label = "DDG: function PrettierButton = function PrettierButton(props) {
+  return (&lt;button type=&quot;button&quot;
+            className=&quot;toggleBtn&quot;
+            onClick={props.toggleFormatting}&gt;
+          &lt;i
+            className={cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-toggle-off': !props.enableFormatting,
+              'fa-toggle-on': props.enableFormatting,
+              'fa-fw': true,
+            })}
+          /&gt;
+          &lt;span className=&quot;btnText&quot;&gt;Prettier&lt;/span&gt;
+      &lt;/button&gt;);
+}"] 
+  "30064774316" -> "124554051789"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064774316" -> "124554051789"  [ label = "DDG: PrettierButton"] 
+  "30064774316" -> "124554051789"  [ label = "DDG: exports[&quot;default&quot;] = PrettierButton"] 
+  "30064774318" -> "124554051789"  [ label = "DDG: PrettierButton.propTypes"] 
+  "30064774320" -> "124554051789"  [ label = "DDG: _tmp_1.toggleFormatting"] 
+  "30064774320" -> "124554051789"  [ label = "DDG: PropTypes.func"] 
+  "30064774320" -> "124554051789"  [ label = "DDG: _tmp_1.toggleFormatting = PropTypes.func"] 
+  "30064774323" -> "124554051789"  [ label = "DDG: _tmp_1.enableFormatting"] 
+  "30064774323" -> "124554051789"  [ label = "DDG: PropTypes.bool"] 
+  "30064774323" -> "124554051789"  [ label = "DDG: _tmp_1.enableFormatting = PropTypes.bool"] 
+  "30064774318" -> "124554051789"  [ label = "DDG: PrettierButton.propTypes = {
+  toggleFormatting: PropTypes.func,
+  enableFormatting: PropTypes.bool,
+}"] 
+  "107374182604" -> "111669150061"  [ label = "DDG: "] 
+  "30064774294" -> "30064774312"  [ label = "DDG: this"] 
+  "30064774294" -> "30064774312"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064774295" -> "30064774313"  [ label = "DDG: this"] 
+  "30064774295" -> "30064774313"  [ label = "DDG: &quot;react&quot;"] 
+  "30064774296" -> "30064774314"  [ label = "DDG: this"] 
+  "30064774296" -> "30064774314"  [ label = "DDG: &quot;../../utils/classnames.js&quot;"] 
+  "107374182604" -> "25769804292"  [ label = "DDG: "] 
+  "30064774320" -> "30064774318"  [ label = "DDG: _tmp_1.toggleFormatting"] 
+  "30064774323" -> "30064774318"  [ label = "DDG: _tmp_1.enableFormatting"] 
+  "107374182604" -> "30064774318"  [ label = "DDG: "] 
+  "107374182604" -> "30064774315"  [ label = "DDG: "] 
+  "30064774315" -> "30064774316"  [ label = "DDG: PrettierButton"] 
+  "107374182604" -> "30064774316"  [ label = "DDG: "] 
+  "107374182604" -> "68719479950"  [ label = "DDG: "] 
+  "111669150061" -> "30064774294"  [ label = "DDG: this"] 
+  "107374182604" -> "30064774294"  [ label = "DDG: "] 
+  "107374182604" -> "68719479953"  [ label = "DDG: "] 
+  "30064774294" -> "30064774295"  [ label = "DDG: this"] 
+  "107374182604" -> "30064774295"  [ label = "DDG: "] 
+  "107374182604" -> "68719479956"  [ label = "DDG: "] 
+  "30064774295" -> "30064774296"  [ label = "DDG: this"] 
+  "107374182604" -> "30064774296"  [ label = "DDG: "] 
+  "30064774312" -> "30064774320"  [ label = "DDG: PropTypes"] 
+  "30064774312" -> "30064774323"  [ label = "DDG: PropTypes"] 
+  "107374182604" -> "68719479966"  [ label = "DDG: "] 
+}

@@ -1,0 +1,584 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183684" [label = <METHOD, 1<BR/>:program> ]
+"124554052889" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152319" [label = <PARAM, 1<BR/>this> ]
+"30064791359" [label = <&lt;operator&gt;.assignment, 1<BR/>var actions = require(&quot;./actions&quot;)> ]
+"25769807417" [label = <BLOCK, 2<BR/>import {getCategoryByID, getDefaultParser, getP...> ]
+"30064791368" [label = <&lt;operator&gt;.assignment, 105<BR/>function format = function format(state=initial...> ]
+"30064791369" [label = <&lt;operator&gt;.assignment, 110<BR/>function getDefaultTransform = function getDefa...> ]
+"30064791370" [label = <&lt;operator&gt;.assignment, 123<BR/>function workbench = function workbench(state=i...> ]
+"30064791371" [label = <&lt;operator&gt;.assignment, 277<BR/>function parserSettings = function parserSettin...> ]
+"30064791372" [label = <&lt;operator&gt;.assignment, 294<BR/>function parserPerCategory = function parserPer...> ]
+"30064791373" [label = <&lt;operator&gt;.assignment, 303<BR/>function showSettingsDialog = function showSett...> ]
+"30064791374" [label = <&lt;operator&gt;.assignment, 314<BR/>function showSettingsDrawer = function showSett...> ]
+"30064791375" [label = <&lt;operator&gt;.assignment, 325<BR/>function showShareDialog = function showShareDi...> ]
+"30064791376" [label = <&lt;operator&gt;.assignment, 336<BR/>function loadSnippet = function loadSnippet(sta...> ]
+"30064791377" [label = <&lt;operator&gt;.assignment, 347<BR/>function saving = function saving(state=initial...> ]
+"30064791378" [label = <&lt;operator&gt;.assignment, 358<BR/>function forking = function forking(state=initi...> ]
+"30064791379" [label = <&lt;operator&gt;.assignment, 369<BR/>function cursor = function cursor(state=initial...> ]
+"30064791380" [label = <&lt;operator&gt;.assignment, 389<BR/>function error = function error(state=initialSt...> ]
+"30064791381" [label = <&lt;operator&gt;.assignment, 400<BR/>function showTransformPanel = function showTran...> ]
+"30064791382" [label = <&lt;operator&gt;.assignment, 415<BR/>function activeRevision = function activeRevisi...> ]
+"30064791383" [label = <&lt;operator&gt;.assignment, 428<BR/>function pick = function pick(obj, ...propertie...> ]
+"30064791384" [label = <&lt;operator&gt;.assignment, 4<BR/>const defaultParser = getDefaultParser(getCateg...> ]
+"30064791387" [label = <&lt;operator&gt;.assignment, 6<BR/>const initialState = { // UI related state ...> ]
+"25769807418" [label = <BLOCK, 52<BR/>export function persist(state) { return { ...> ]
+"25769807419" [label = <BLOCK, 66<BR/>export function revive(state=initialState) { ...> ]
+"25769807420" [label = <BLOCK, 81<BR/>export function astexplorer(state=initialState,...> ]
+"30064791360" [label = <&lt;operator&gt;.assignment, 2<BR/>var getCategoryByID = require(&quot;../parsers&quot;).get...> ]
+"30064791362" [label = <&lt;operator&gt;.assignment, 2<BR/>var getDefaultParser = require(&quot;../parsers&quot;).ge...> ]
+"30064791364" [label = <&lt;operator&gt;.assignment, 2<BR/>var getParserByID = require(&quot;../parsers&quot;).getPa...> ]
+"30064791366" [label = <&lt;operator&gt;.assignment, 2<BR/>var getTransformerByID = require(&quot;../parsers&quot;)....> ]
+"30064791443" [label = <&lt;operator&gt;.assignment, 52<BR/>function persist = function persist(state) { ...> ]
+"30064791444" [label = <&lt;operator&gt;.assignment, 52<BR/>exports.persist = persist> ]
+"30064791446" [label = <&lt;operator&gt;.assignment, 66<BR/>function revive = function revive(state=initial...> ]
+"30064791447" [label = <&lt;operator&gt;.assignment, 66<BR/>exports.revive = revive> ]
+"30064791449" [label = <&lt;operator&gt;.assignment, 81<BR/>function astexplorer = function astexplorer(sta...> ]
+"30064791450" [label = <&lt;operator&gt;.assignment, 81<BR/>exports.astexplorer = astexplorer> ]
+"68719496901" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;./actions&quot;)> ]
+"30064790808" [label = <require, 1<BR/>require(&quot;./actions&quot;)> ]
+"68719496932" [label = <IDENTIFIER, 4<BR/>getDefaultParser<BR/>getDefaultParser(getCategoryByID('javascript'))> ]
+"30064791385" [label = <getDefaultParser, 4<BR/>getDefaultParser(getCategoryByID('javascript'))> ]
+"30064791388" [label = <&lt;operator&gt;.assignment, 9<BR/>_tmp_30.showSettingsDialog = false> ]
+"30064791390" [label = <&lt;operator&gt;.assignment, 10<BR/>_tmp_30.showSettingsDrawer = false> ]
+"30064791392" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_30.showShareDialog = false> ]
+"30064791394" [label = <&lt;operator&gt;.assignment, 12<BR/>_tmp_30.loadingSnippet = false> ]
+"30064791396" [label = <&lt;operator&gt;.assignment, 13<BR/>_tmp_30.forking = false> ]
+"30064791398" [label = <&lt;operator&gt;.assignment, 14<BR/>_tmp_30.saving = false> ]
+"30064791400" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_30.cursor = null> ]
+"30064791402" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_30.error = null> ]
+"30064791404" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_30.showTransformPanel = false> ]
+"30064791406" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_30.selectedRevision = null> ]
+"30064791408" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_30.parserSettings = {}> ]
+"30064791410" [label = <&lt;operator&gt;.assignment, 28<BR/>_tmp_30.parserPerCategory = {}> ]
+"30064791412" [label = <&lt;operator&gt;.assignment, 30<BR/>_tmp_30.workbench = { parser: defaultParser...> ]
+"30064791441" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_30.enableFormatting = false> ]
+"68719496969" [label = <IDENTIFIER, 6<BR/>_tmp_30<BR/>{ // UI related state showSettingsDialog: ...> ]
+"68719496934" [label = <IDENTIFIER, 4<BR/>getCategoryByID<BR/>getCategoryByID('javascript')> ]
+"30064791386" [label = <getCategoryByID, 4<BR/>getCategoryByID('javascript')> ]
+"68719496904" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../parsers&quot;)> ]
+"30064790809" [label = <require, 2<BR/>require(&quot;../parsers&quot;)> ]
+"68719496907" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../parsers&quot;)> ]
+"30064790810" [label = <require, 2<BR/>require(&quot;../parsers&quot;)> ]
+"68719496910" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../parsers&quot;)> ]
+"30064790811" [label = <require, 2<BR/>require(&quot;../parsers&quot;)> ]
+"68719496913" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../parsers&quot;)> ]
+"30064790812" [label = <require, 2<BR/>require(&quot;../parsers&quot;)> ]
+"68719496948" [label = <IDENTIFIER, 25<BR/>_tmp_31<BR/>{}> ]
+"68719496950" [label = <IDENTIFIER, 28<BR/>_tmp_32<BR/>{}> ]
+"30064791414" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_33.parser = defaultParser.id> ]
+"30064791417" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_33.parserSettings = null> ]
+"30064791419" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_33.parseError = null> ]
+"30064791421" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_33.code = defaultParser.category.codeExample> ]
+"30064791425" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_33.keyMap = &quot;default&quot;> ]
+"30064791427" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_33.initialCode = defaultParser.category.co...> ]
+"30064791431" [label = <&lt;operator&gt;.assignment, 37<BR/>_tmp_33.transform = { code: '', ini...> ]
+"68719496967" [label = <IDENTIFIER, 30<BR/>_tmp_33<BR/>{ parser: defaultParser.id, parserSetti...> ]
+"30064791433" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_34.code = &quot;&quot;> ]
+"30064791435" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_34.initialCode = &quot;&quot;> ]
+"30064791437" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_34.transformer = null> ]
+"30064791439" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_34.transformResult = null> ]
+"68719496966" [label = <IDENTIFIER, 37<BR/>_tmp_34<BR/>{ code: '', initialCode: '', ...> ]
+  "30064791359" -> "124554052889"  [ label = "DDG: actions"] 
+  "30064791359" -> "124554052889"  [ label = "DDG: require(&quot;./actions&quot;)"] 
+  "30064791359" -> "124554052889"  [ label = "DDG: var actions = require(&quot;./actions&quot;)"] 
+  "30064791360" -> "124554052889"  [ label = "DDG: getCategoryByID"] 
+  "30064791360" -> "124554052889"  [ label = "DDG: var getCategoryByID = require(&quot;../parsers&quot;).getCategoryByID"] 
+  "30064791362" -> "124554052889"  [ label = "DDG: getDefaultParser"] 
+  "30064791362" -> "124554052889"  [ label = "DDG: var getDefaultParser = require(&quot;../parsers&quot;).getDefaultParser"] 
+  "30064791364" -> "124554052889"  [ label = "DDG: getParserByID"] 
+  "30064791364" -> "124554052889"  [ label = "DDG: var getParserByID = require(&quot;../parsers&quot;).getParserByID"] 
+  "30064791366" -> "124554052889"  [ label = "DDG: getTransformerByID"] 
+  "30064791366" -> "124554052889"  [ label = "DDG: var getTransformerByID = require(&quot;../parsers&quot;).getTransformerByID"] 
+  "30064791368" -> "124554052889"  [ label = "DDG: format"] 
+  "30064791368" -> "124554052889"  [ label = "DDG: function format = function format(state=initialState.enableFormatting, action) {
+  if (action.type === actions.TOGGLE_FORMATTING) return !state;
+  return state;
+}"] 
+  "30064791369" -> "124554052889"  [ label = "DDG: getDefaultTransform"] 
+  "30064791369" -> "124554052889"  [ label = "DDG: function getDefaultTransform = function getDefaultTransform(transformer, workbenchState) {
+  if (typeof transformer.formatCodeExample === 'function') {
+    return transformer.formatCodeExample(
+      transformer.defaultTransform,
+      {
+        parser: workbenchState.parser,
+        parserSettings: workbenchState.parserSettings || {},
+      },
+    )
+  }
+  return transformer.defaultTransform
+}"] 
+  "30064791370" -> "124554052889"  [ label = "DDG: workbench"] 
+  "30064791370" -> "124554052889"  [ label = "DDG: function workbench = function workbench(state=initialState.workbench, action, fullState) {
+  function parserFromCategory(category) {
+    const parser = fullState.parserPerCategory[category.id] ||
+      getDefaultParser(category).id;
+    return {
+      parser,
+      parserSettings: fullState.parserSettings[parser] || null,
+      code: category.codeExample,
+      initialCode: category.codeExample,
+    };
+  }
+
+  switch (action.type) {
+    case actions.SELECT_CATEGORY:
+      return {
+        ...state,
+        ...parserFromCategory(action.category),
+      };
+    case actions.DROP_TEXT:
+      return {
+        ...state,
+        ...parserFromCategory(getCategoryByID(action.categoryId)),
+        code: action.text,
+        initialCode: action.text,
+      };
+    case actions.SET_PARSE_RESULT:
+      return {...state, parseResult: action.result};
+    case actions.SET_PARSER_SETTINGS:
+      return {...state, parserSettings: action.settings};
+    case actions.SET_PARSER:
+      {
+        const newState = {...state, par..."] 
+  "30064791371" -> "124554052889"  [ label = "DDG: parserSettings"] 
+  "30064791371" -> "124554052889"  [ label = "DDG: function parserSettings = function parserSettings(state=initialState.parserSettings, action, fullState) {
+  switch (action.type) {
+    case actions.SET_PARSER_SETTINGS:
+      if (fullState.activeRevision) {
+        // If a revision is loaded, we are **not** storing changes to the
+        // settings in our local copy
+        return state;
+      }
+      return {
+        ...state,
+        [fullState.workbench.parser]: action.settings,
+      };
+    default:
+      return state;
+  }
+}"] 
+  "30064791372" -> "124554052889"  [ label = "DDG: parserPerCategory"] 
+  "30064791372" -> "124554052889"  [ label = "DDG: function parserPerCategory = function parserPerCategory(state=initialState.parserPerCategory, action) {
+  switch (action.type) {
+    case actions.SET_PARSER:
+      return {...state, [action.parser.category.id]: action.parser.id};
+    default:
+      return state;
+  }
+}"] 
+  "30064791373" -> "124554052889"  [ label = "DDG: showSettingsDialog"] 
+  "30064791373" -> "124554052889"  [ label = "DDG: function showSettingsDialog = function showSettingsDialog(state=initialState.showSettingsDialog, action) {
+  switch(action.type) {
+    case actions.OPEN_SETTINGS_DIALOG:
+      return true;
+    case actions.CLOSE_SETTINGS_DIALOG:
+      return false;
+    default:
+      return state;
+  }
+}"] 
+  "30064791374" -> "124554052889"  [ label = "DDG: showSettingsDrawer"] 
+  "30064791374" -> "124554052889"  [ label = "DDG: function showSettingsDrawer = function showSettingsDrawer(state=initialState.showSettingsDrawer, action) {
+  switch(action.type) {
+    case actions.EXPAND_SETTINGS_DRAWER:
+      return true;
+    case actions.COLLAPSE_SETTINGS_DRAWER:
+      return false;
+    default:
+      return state;
+  }
+}"] 
+  "30064791375" -> "124554052889"  [ label = "DDG: showShareDialog"] 
+  "30064791375" -> "124554052889"  [ label = "DDG: function showShareDialog = function showShareDialog(state=initialState.showShareDialog, action) {
+  switch(action.type) {
+    case actions.OPEN_SHARE_DIALOG:
+      return true;
+    case actions.CLOSE_SHARE_DIALOG:
+      return false;
+    default:
+      return state;
+  }
+}"] 
+  "30064791376" -> "124554052889"  [ label = "DDG: loadSnippet"] 
+  "30064791376" -> "124554052889"  [ label = "DDG: function loadSnippet = function loadSnippet(state=initialState.loadingSnippet, action) {
+  switch(action.type) {
+    case actions.START_LOADING_SNIPPET:
+      return true;
+    case actions.DONE_LOADING_SNIPPET:
+      return false;
+    default:
+      return state;
+  }
+}"] 
+  "30064791377" -> "124554052889"  [ label = "DDG: saving"] 
+  "30064791377" -> "124554052889"  [ label = "DDG: function saving = function saving(state=initialState.saving, action) {
+  switch(action.type) {
+    case actions.START_SAVE:
+      return !action.fork;
+    case actions.END_SAVE:
+      return false;
+    default:
+      return state;
+  }
+}"] 
+  "30064791378" -> "124554052889"  [ label = "DDG: forking"] 
+  "30064791378" -> "124554052889"  [ label = "DDG: function forking = function forking(state=initialState.forking, action) {
+  switch(action.type) {
+    case actions.START_SAVE:
+      return action.fork;
+    case actions.END_SAVE:
+      return false;
+    default:
+      return state;
+  }
+}"] 
+  "30064791379" -> "124554052889"  [ label = "DDG: cursor"] 
+  "30064791379" -> "124554052889"  [ label = "DDG: function cursor = function cursor(state=initialState.cursor, action) {
+  switch(action.type) {
+    case actions.SET_CURSOR:
+      return action.cursor;
+    case actions.SET_CODE:
+      // If this action is triggered and the cursor = 0, then the code must be
+      // loaded
+      if (action.cursor != null &amp;&amp; action.cursor !== 0) {
+        return action.cursor;
+      }
+      return state;
+    case actions.RESET:
+    case actions.SET_SNIPPET:
+    case actions.CLEAR_SNIPPET:
+      return null;
+    default:
+      return state;
+  }
+}"] 
+  "30064791380" -> "124554052889"  [ label = "DDG: error"] 
+  "30064791380" -> "124554052889"  [ label = "DDG: function error = function error(state=initialState.error, action) {
+  switch (action.type) {
+    case actions.SET_ERROR:
+      return action.error;
+    case actions.CLEAR_ERROR:
+      return null;
+    default:
+      return state;
+  }
+}"] 
+  "30064791381" -> "124554052889"  [ label = "DDG: showTransformPanel"] 
+  "30064791381" -> "124554052889"  [ label = "DDG: function showTransformPanel = function showTransformPanel(state=initialState.showTransformPanel, action) {
+  switch (action.type) {
+    case actions.SELECT_TRANSFORMER:
+      return true;
+    case actions.HIDE_TRANSFORMER:
+    case actions.SELECT_CATEGORY:
+    case actions.CLEAR_SNIPPET:
+      return false;
+    case actions.SET_SNIPPET:
+      return Boolean(action.revision.getTransformerID());
+    default:
+      return state;
+  }
+}"] 
+  "30064791382" -> "124554052889"  [ label = "DDG: activeRevision"] 
+  "30064791382" -> "124554052889"  [ label = "DDG: function activeRevision = function activeRevision(state=initialState.selectedRevision, action) {
+  switch (action.type) {
+    case actions.SET_SNIPPET:
+      return action.revision;
+    case actions.SELECT_CATEGORY:
+    case actions.CLEAR_SNIPPET:
+    case actions.RESET:
+      return null;
+    default:
+      return state;
+  }
+}"] 
+  "30064791383" -> "124554052889"  [ label = "DDG: pick"] 
+  "30064791383" -> "124554052889"  [ label = "DDG: function pick = function pick(obj, ...properties) {
+  return properties.reduce(
+    (result, prop) =&gt; (result[prop] = obj[prop], result),
+    {},
+  );
+}"] 
+  "30064791384" -> "124554052889"  [ label = "DDG: defaultParser"] 
+  "30064791385" -> "124554052889"  [ label = "DDG: this"] 
+  "30064791385" -> "124554052889"  [ label = "DDG: getCategoryByID('javascript')"] 
+  "30064791384" -> "124554052889"  [ label = "DDG: getDefaultParser(getCategoryByID('javascript'))"] 
+  "30064791384" -> "124554052889"  [ label = "DDG: const defaultParser = getDefaultParser(getCategoryByID('javascript'))"] 
+  "30064791387" -> "124554052889"  [ label = "DDG: initialState"] 
+  "30064791388" -> "124554052889"  [ label = "DDG: _tmp_30.showSettingsDialog"] 
+  "30064791388" -> "124554052889"  [ label = "DDG: _tmp_30.showSettingsDialog = false"] 
+  "30064791390" -> "124554052889"  [ label = "DDG: _tmp_30.showSettingsDrawer"] 
+  "30064791390" -> "124554052889"  [ label = "DDG: _tmp_30.showSettingsDrawer = false"] 
+  "30064791392" -> "124554052889"  [ label = "DDG: _tmp_30.showShareDialog"] 
+  "30064791392" -> "124554052889"  [ label = "DDG: _tmp_30.showShareDialog = false"] 
+  "30064791394" -> "124554052889"  [ label = "DDG: _tmp_30.loadingSnippet"] 
+  "30064791394" -> "124554052889"  [ label = "DDG: _tmp_30.loadingSnippet = false"] 
+  "30064791396" -> "124554052889"  [ label = "DDG: _tmp_30.forking"] 
+  "30064791396" -> "124554052889"  [ label = "DDG: _tmp_30.forking = false"] 
+  "30064791398" -> "124554052889"  [ label = "DDG: _tmp_30.saving"] 
+  "30064791398" -> "124554052889"  [ label = "DDG: _tmp_30.saving = false"] 
+  "30064791400" -> "124554052889"  [ label = "DDG: _tmp_30.cursor"] 
+  "30064791400" -> "124554052889"  [ label = "DDG: _tmp_30.cursor = null"] 
+  "30064791402" -> "124554052889"  [ label = "DDG: _tmp_30.error"] 
+  "30064791402" -> "124554052889"  [ label = "DDG: _tmp_30.error = null"] 
+  "30064791404" -> "124554052889"  [ label = "DDG: _tmp_30.showTransformPanel"] 
+  "30064791404" -> "124554052889"  [ label = "DDG: _tmp_30.showTransformPanel = false"] 
+  "30064791406" -> "124554052889"  [ label = "DDG: _tmp_30.selectedRevision"] 
+  "30064791406" -> "124554052889"  [ label = "DDG: _tmp_30.selectedRevision = null"] 
+  "30064791408" -> "124554052889"  [ label = "DDG: _tmp_30.parserSettings"] 
+  "30064791408" -> "124554052889"  [ label = "DDG: _tmp_30.parserSettings = {}"] 
+  "30064791410" -> "124554052889"  [ label = "DDG: _tmp_30.parserPerCategory"] 
+  "30064791410" -> "124554052889"  [ label = "DDG: _tmp_30.parserPerCategory = {}"] 
+  "30064791412" -> "124554052889"  [ label = "DDG: _tmp_30.workbench"] 
+  "30064791414" -> "124554052889"  [ label = "DDG: _tmp_33.parser"] 
+  "30064791414" -> "124554052889"  [ label = "DDG: defaultParser.id"] 
+  "30064791414" -> "124554052889"  [ label = "DDG: _tmp_33.parser = defaultParser.id"] 
+  "30064791417" -> "124554052889"  [ label = "DDG: _tmp_33.parserSettings"] 
+  "30064791417" -> "124554052889"  [ label = "DDG: _tmp_33.parserSettings = null"] 
+  "30064791419" -> "124554052889"  [ label = "DDG: _tmp_33.parseError"] 
+  "30064791419" -> "124554052889"  [ label = "DDG: _tmp_33.parseError = null"] 
+  "30064791421" -> "124554052889"  [ label = "DDG: _tmp_33.code"] 
+  "30064791421" -> "124554052889"  [ label = "DDG: _tmp_33.code = defaultParser.category.codeExample"] 
+  "30064791425" -> "124554052889"  [ label = "DDG: _tmp_33.keyMap"] 
+  "30064791425" -> "124554052889"  [ label = "DDG: _tmp_33.keyMap = &quot;default&quot;"] 
+  "30064791427" -> "124554052889"  [ label = "DDG: _tmp_33.initialCode"] 
+  "30064791427" -> "124554052889"  [ label = "DDG: defaultParser.category.codeExample"] 
+  "30064791427" -> "124554052889"  [ label = "DDG: _tmp_33.initialCode = defaultParser.category.codeExample"] 
+  "30064791431" -> "124554052889"  [ label = "DDG: _tmp_33.transform"] 
+  "30064791433" -> "124554052889"  [ label = "DDG: _tmp_34.code"] 
+  "30064791433" -> "124554052889"  [ label = "DDG: _tmp_34.code = &quot;&quot;"] 
+  "30064791435" -> "124554052889"  [ label = "DDG: _tmp_34.initialCode"] 
+  "30064791435" -> "124554052889"  [ label = "DDG: _tmp_34.initialCode = &quot;&quot;"] 
+  "30064791437" -> "124554052889"  [ label = "DDG: _tmp_34.transformer"] 
+  "30064791437" -> "124554052889"  [ label = "DDG: _tmp_34.transformer = null"] 
+  "30064791439" -> "124554052889"  [ label = "DDG: _tmp_34.transformResult"] 
+  "30064791439" -> "124554052889"  [ label = "DDG: _tmp_34.transformResult = null"] 
+  "30064791431" -> "124554052889"  [ label = "DDG: _tmp_33.transform = {
+      code: '',
+      initialCode: '',
+      transformer: null,
+      transformResult: null,
+    }"] 
+  "30064791412" -> "124554052889"  [ label = "DDG: _tmp_30.workbench = {
+    parser: defaultParser.id,
+    parserSettings: null,
+    parseError: null,
+    code: defaultParser.category.codeExample,
+    keyMap: 'default',
+    initialCode: defaultParser.category.codeExample,
+    transform: {
+      code: '',
+      initialCode: '',
+      transformer: null,
+      transformResult: null,
+    },
+  }"] 
+  "30064791441" -> "124554052889"  [ label = "DDG: _tmp_30.enableFormatting"] 
+  "30064791441" -> "124554052889"  [ label = "DDG: _tmp_30.enableFormatting = false"] 
+  "30064791387" -> "124554052889"  [ label = "DDG: const initialState = {
+
+  // UI related state
+  showSettingsDialog: false,
+  showSettingsDrawer: false,
+  showShareDialog: false,
+  loadingSnippet: false,
+  forking: false,
+  saving: false,
+  cursor: null,
+  error: null,
+  showTransformPanel: false,
+
+  // Snippet related state
+  selectedRevision: null,
+
+  // Workbench settings
+
+  // Contains local settings of all parsers
+  parserSettings: {},
+
+  // Remember selected parser per category
+  parserPerCategory: {},
+
+  workbench: {
+    parser: defaultParser.id,
+    parserSettings: null,
+    parseError: null,
+    code: defaultParser.category.codeExample,
+    keyMap: 'default',
+    initialCode: defaultParser.category.codeExample,
+    transform: {
+      code: '',
+      initialCode: '',
+      transformer: null,
+      transformResult: null,
+    },
+  },
+
+  enableFormatting: false,
+
+}"] 
+  "30064791443" -> "124554052889"  [ label = "DDG: function persist = function persist(state) {
+  return {
+    ...pick(state, 'showTransformPanel', 'parserSettings', 'parserPerCategory'),
+    workbench: {
+      ...pick(state.workbench, 'parser', 'code', 'keyMap'),
+      transform: pick(state.workbench.transform, 'code', 'transformer'),
+    },
+  };
+}"] 
+  "30064791444" -> "124554052889"  [ label = "DDG: exports.persist"] 
+  "30064791444" -> "124554052889"  [ label = "DDG: persist"] 
+  "30064791444" -> "124554052889"  [ label = "DDG: exports.persist = persist"] 
+  "30064791446" -> "124554052889"  [ label = "DDG: function revive = function revive(state=initialState) {
+  return {
+    ...state,
+    workbench: {
+      ...state.workbench,
+      initialCode: state.workbench.code,
+      parserSettings: state.parserSettings[state.workbench.parser] || null,
+      transform: {
+        ...state.workbench.transform,
+        initialCode: state.workbench.transform.code,
+      },
+    },
+  };
+}"] 
+  "30064791447" -> "124554052889"  [ label = "DDG: exports.revive"] 
+  "30064791447" -> "124554052889"  [ label = "DDG: revive"] 
+  "30064791447" -> "124554052889"  [ label = "DDG: exports.revive = revive"] 
+  "30064791449" -> "124554052889"  [ label = "DDG: function astexplorer = function astexplorer(state=initialState, action) {
+  return {
+    // UI related state
+    showSettingsDialog: showSettingsDialog(state.showSettingsDialog, action),
+    showSettingsDrawer: showSettingsDrawer(state.showSettingsDrawer, action),
+    showShareDialog: showShareDialog(state.showShareDialog, action),
+    loadingSnippet: loadSnippet(state.loadingSnippet, action),
+    saving: saving(state.saving, action),
+    forking: forking(state.forking, action),
+    cursor: cursor(state.cursor, action),
+    error: error(state.error, action),
+    showTransformPanel: showTransformPanel(state.showTransformPanel, action),
+
+    // Snippet related state
+    activeRevision: activeRevision(state.activeRevision, action),
+
+    // Workbench settings
+    parserPerCategory: parserPerCategory(state.parserPerCategory, action),
+    parserSettings: parserSettings(state.parserSettings, action, state),
+    workbench: workbench(state.workbench, action, state),
+    enableFormatting: format(state.enableFormatt..."] 
+  "30064791450" -> "124554052889"  [ label = "DDG: exports.astexplorer"] 
+  "30064791450" -> "124554052889"  [ label = "DDG: astexplorer"] 
+  "30064791450" -> "124554052889"  [ label = "DDG: exports.astexplorer = astexplorer"] 
+  "107374183684" -> "111669152319"  [ label = "DDG: "] 
+  "30064790808" -> "30064791359"  [ label = "DDG: this"] 
+  "30064790808" -> "30064791359"  [ label = "DDG: &quot;./actions&quot;"] 
+  "107374183684" -> "25769807417"  [ label = "DDG: "] 
+  "107374183684" -> "30064791368"  [ label = "DDG: "] 
+  "107374183684" -> "30064791369"  [ label = "DDG: "] 
+  "107374183684" -> "30064791370"  [ label = "DDG: "] 
+  "107374183684" -> "30064791371"  [ label = "DDG: "] 
+  "107374183684" -> "30064791372"  [ label = "DDG: "] 
+  "107374183684" -> "30064791373"  [ label = "DDG: "] 
+  "107374183684" -> "30064791374"  [ label = "DDG: "] 
+  "107374183684" -> "30064791375"  [ label = "DDG: "] 
+  "107374183684" -> "30064791376"  [ label = "DDG: "] 
+  "107374183684" -> "30064791377"  [ label = "DDG: "] 
+  "107374183684" -> "30064791378"  [ label = "DDG: "] 
+  "107374183684" -> "30064791379"  [ label = "DDG: "] 
+  "107374183684" -> "30064791380"  [ label = "DDG: "] 
+  "107374183684" -> "30064791381"  [ label = "DDG: "] 
+  "107374183684" -> "30064791382"  [ label = "DDG: "] 
+  "107374183684" -> "30064791383"  [ label = "DDG: "] 
+  "30064791385" -> "30064791384"  [ label = "DDG: this"] 
+  "30064791385" -> "30064791384"  [ label = "DDG: getCategoryByID('javascript')"] 
+  "30064791388" -> "30064791387"  [ label = "DDG: _tmp_30.showSettingsDialog"] 
+  "30064791390" -> "30064791387"  [ label = "DDG: _tmp_30.showSettingsDrawer"] 
+  "30064791392" -> "30064791387"  [ label = "DDG: _tmp_30.showShareDialog"] 
+  "30064791394" -> "30064791387"  [ label = "DDG: _tmp_30.loadingSnippet"] 
+  "30064791396" -> "30064791387"  [ label = "DDG: _tmp_30.forking"] 
+  "30064791398" -> "30064791387"  [ label = "DDG: _tmp_30.saving"] 
+  "30064791400" -> "30064791387"  [ label = "DDG: _tmp_30.cursor"] 
+  "30064791402" -> "30064791387"  [ label = "DDG: _tmp_30.error"] 
+  "30064791404" -> "30064791387"  [ label = "DDG: _tmp_30.showTransformPanel"] 
+  "30064791406" -> "30064791387"  [ label = "DDG: _tmp_30.selectedRevision"] 
+  "30064791408" -> "30064791387"  [ label = "DDG: _tmp_30.parserSettings"] 
+  "30064791410" -> "30064791387"  [ label = "DDG: _tmp_30.parserPerCategory"] 
+  "30064791412" -> "30064791387"  [ label = "DDG: _tmp_30.workbench"] 
+  "30064791441" -> "30064791387"  [ label = "DDG: _tmp_30.enableFormatting"] 
+  "107374183684" -> "30064791387"  [ label = "DDG: "] 
+  "107374183684" -> "25769807418"  [ label = "DDG: "] 
+  "107374183684" -> "25769807419"  [ label = "DDG: "] 
+  "107374183684" -> "25769807420"  [ label = "DDG: "] 
+  "107374183684" -> "30064791443"  [ label = "DDG: "] 
+  "30064791443" -> "30064791444"  [ label = "DDG: persist"] 
+  "107374183684" -> "30064791444"  [ label = "DDG: "] 
+  "107374183684" -> "30064791446"  [ label = "DDG: "] 
+  "30064791446" -> "30064791447"  [ label = "DDG: revive"] 
+  "107374183684" -> "30064791447"  [ label = "DDG: "] 
+  "107374183684" -> "30064791449"  [ label = "DDG: "] 
+  "30064791449" -> "30064791450"  [ label = "DDG: astexplorer"] 
+  "107374183684" -> "30064791450"  [ label = "DDG: "] 
+  "107374183684" -> "68719496901"  [ label = "DDG: "] 
+  "111669152319" -> "30064790808"  [ label = "DDG: this"] 
+  "107374183684" -> "30064790808"  [ label = "DDG: "] 
+  "107374183684" -> "68719496932"  [ label = "DDG: "] 
+  "30064791386" -> "30064791385"  [ label = "DDG: this"] 
+  "107374183684" -> "30064791385"  [ label = "DDG: "] 
+  "30064791386" -> "30064791385"  [ label = "DDG: &quot;javascript&quot;"] 
+  "107374183684" -> "30064791388"  [ label = "DDG: "] 
+  "107374183684" -> "30064791390"  [ label = "DDG: "] 
+  "107374183684" -> "30064791392"  [ label = "DDG: "] 
+  "107374183684" -> "30064791394"  [ label = "DDG: "] 
+  "107374183684" -> "30064791396"  [ label = "DDG: "] 
+  "107374183684" -> "30064791398"  [ label = "DDG: "] 
+  "107374183684" -> "30064791400"  [ label = "DDG: "] 
+  "107374183684" -> "30064791402"  [ label = "DDG: "] 
+  "107374183684" -> "30064791404"  [ label = "DDG: "] 
+  "107374183684" -> "30064791406"  [ label = "DDG: "] 
+  "107374183684" -> "30064791408"  [ label = "DDG: "] 
+  "107374183684" -> "30064791410"  [ label = "DDG: "] 
+  "30064791414" -> "30064791412"  [ label = "DDG: _tmp_33.parser"] 
+  "30064791417" -> "30064791412"  [ label = "DDG: _tmp_33.parserSettings"] 
+  "30064791419" -> "30064791412"  [ label = "DDG: _tmp_33.parseError"] 
+  "30064791421" -> "30064791412"  [ label = "DDG: _tmp_33.code"] 
+  "30064791425" -> "30064791412"  [ label = "DDG: _tmp_33.keyMap"] 
+  "30064791427" -> "30064791412"  [ label = "DDG: _tmp_33.initialCode"] 
+  "30064791431" -> "30064791412"  [ label = "DDG: _tmp_33.transform"] 
+  "107374183684" -> "30064791412"  [ label = "DDG: "] 
+  "107374183684" -> "30064791441"  [ label = "DDG: "] 
+  "107374183684" -> "68719496969"  [ label = "DDG: "] 
+  "107374183684" -> "68719496934"  [ label = "DDG: "] 
+  "30064790812" -> "30064791386"  [ label = "DDG: this"] 
+  "107374183684" -> "30064791386"  [ label = "DDG: "] 
+  "107374183684" -> "68719496904"  [ label = "DDG: "] 
+  "30064790808" -> "30064790809"  [ label = "DDG: this"] 
+  "107374183684" -> "30064790809"  [ label = "DDG: "] 
+  "107374183684" -> "68719496907"  [ label = "DDG: "] 
+  "30064790809" -> "30064790810"  [ label = "DDG: this"] 
+  "107374183684" -> "30064790810"  [ label = "DDG: "] 
+  "107374183684" -> "68719496910"  [ label = "DDG: "] 
+  "30064790810" -> "30064790811"  [ label = "DDG: this"] 
+  "107374183684" -> "30064790811"  [ label = "DDG: "] 
+  "107374183684" -> "68719496913"  [ label = "DDG: "] 
+  "30064790811" -> "30064790812"  [ label = "DDG: this"] 
+  "107374183684" -> "30064790812"  [ label = "DDG: "] 
+  "107374183684" -> "68719496948"  [ label = "DDG: "] 
+  "107374183684" -> "68719496950"  [ label = "DDG: "] 
+  "30064791384" -> "30064791414"  [ label = "DDG: defaultParser"] 
+  "107374183684" -> "30064791417"  [ label = "DDG: "] 
+  "107374183684" -> "30064791419"  [ label = "DDG: "] 
+  "107374183684" -> "30064791425"  [ label = "DDG: "] 
+  "30064791433" -> "30064791431"  [ label = "DDG: _tmp_34.code"] 
+  "30064791435" -> "30064791431"  [ label = "DDG: _tmp_34.initialCode"] 
+  "30064791437" -> "30064791431"  [ label = "DDG: _tmp_34.transformer"] 
+  "30064791439" -> "30064791431"  [ label = "DDG: _tmp_34.transformResult"] 
+  "107374183684" -> "30064791431"  [ label = "DDG: "] 
+  "107374183684" -> "68719496967"  [ label = "DDG: "] 
+  "107374183684" -> "30064791433"  [ label = "DDG: "] 
+  "107374183684" -> "30064791435"  [ label = "DDG: "] 
+  "107374183684" -> "30064791437"  [ label = "DDG: "] 
+  "107374183684" -> "30064791439"  [ label = "DDG: "] 
+  "107374183684" -> "68719496966"  [ label = "DDG: "] 
+}

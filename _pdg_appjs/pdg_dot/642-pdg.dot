@@ -1,0 +1,16 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183042" [label = <METHOD, 94<BR/>getDefaultOptions> ]
+"124554052225" [label = <METHOD_RETURN, 94<BR/>{ sourceType: __ecma.String; allowImportExportEverywhere: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; tokens: __ecma.Boolean; plugins: __ecma.String[]; }> ]
+"111669150957" [label = <PARAM, 94<BR/>this> ]
+"141733921246" [label = <RETURN, 95<BR/>return defaultOptions> ]
+"68719486723" [label = <IDENTIFIER, 95<BR/>defaultOptions<BR/>return defaultOptions> ]
+  "141733921246" -> "124554052225"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150957" -> "124554052225"  [ label = "DDG: this"] 
+  "107374183042" -> "111669150957"  [ label = "DDG: "] 
+  "68719486723" -> "141733921246"  [ label = "DDG: defaultOptions"] 
+  "107374183042" -> "141733921246"  [ label = "DDG: "] 
+  "30064781012" -> "68719486723"  [ label = "DDG: defaultOptions"] 
+  "107374183042" -> "68719486723"  [ label = "DDG: "] 
+  "107374183034" -> "68719486723"  [ label = "DDG: "] 
+}

@@ -1,0 +1,56 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182432" [label = <METHOD, 1<BR/>:program> ]
+"124554051616" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149767" [label = <PARAM, 1<BR/>this> ]
+"30064771770" [label = <&lt;operator&gt;.assignment, 9<BR/>module.exports = { AUTH_TOKEN: process.env.AU...> ]
+"30064771762" [label = <&lt;operator&gt;.logicalNot, 1<BR/>!process.env.AUTH_TOKEN> ]
+"30064771765" [label = <error, 2<BR/>console.error( 'AUTH_TOKEN is not set! That...> ]
+"30064771768" [label = <exit, 6<BR/>process.exit(1)> ]
+"30064771772" [label = <&lt;operator&gt;.assignment, 10<BR/>_tmp_0.AUTH_TOKEN = process.env.AUTH_TOKEN> ]
+"30064771776" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_0.SETTINGS_FORMAT = 2> ]
+"68719477481" [label = <IDENTIFIER, 9<BR/>_tmp_0<BR/>{ AUTH_TOKEN: process.env.AUTH_TOKEN, SETTI...> ]
+"30064771767" [label = <&lt;operator&gt;.addition, 3<BR/>'AUTH_TOKEN is not set! That will result in all...> ]
+"30064771766" [label = <&lt;operator&gt;.fieldAccess, 2<BR/>console.error> ]
+"30064771769" [label = <&lt;operator&gt;.fieldAccess, 6<BR/>process.exit> ]
+"55834575088" [label = <FIELD_IDENTIFIER, 2<BR/>error> ]
+"55834575089" [label = <FIELD_IDENTIFIER, 6<BR/>exit> ]
+  "111669149767" -> "124554051616"  [ label = "DDG: this"] 
+  "30064771762" -> "124554051616"  [ label = "DDG: !process.env.AUTH_TOKEN"] 
+  "30064771765" -> "124554051616"  [ label = "DDG: console"] 
+  "30064771765" -> "124554051616"  [ label = "DDG: 'AUTH_TOKEN is not set! That will result in all gists being anonymous, ' +
+    'which is probably not what you want.'"] 
+  "30064771765" -> "124554051616"  [ label = "DDG: console.error(
+    'AUTH_TOKEN is not set! That will result in all gists being anonymous, ' +
+    'which is probably not what you want.'
+  )"] 
+  "30064771768" -> "124554051616"  [ label = "DDG: process"] 
+  "30064771768" -> "124554051616"  [ label = "DDG: process.exit(1)"] 
+  "30064771770" -> "124554051616"  [ label = "DDG: module.exports"] 
+  "30064771772" -> "124554051616"  [ label = "DDG: _tmp_0.AUTH_TOKEN"] 
+  "30064771772" -> "124554051616"  [ label = "DDG: process.env.AUTH_TOKEN"] 
+  "30064771772" -> "124554051616"  [ label = "DDG: _tmp_0.AUTH_TOKEN = process.env.AUTH_TOKEN"] 
+  "30064771776" -> "124554051616"  [ label = "DDG: _tmp_0.SETTINGS_FORMAT"] 
+  "30064771776" -> "124554051616"  [ label = "DDG: _tmp_0.SETTINGS_FORMAT = 2"] 
+  "30064771770" -> "124554051616"  [ label = "DDG: module.exports = {
+  AUTH_TOKEN: process.env.AUTH_TOKEN,
+  SETTINGS_FORMAT: 2,
+}"] 
+  "107374182432" -> "111669149767"  [ label = "DDG: "] 
+  "30064771772" -> "30064771770"  [ label = "DDG: _tmp_0.AUTH_TOKEN"] 
+  "30064771776" -> "30064771770"  [ label = "DDG: _tmp_0.SETTINGS_FORMAT"] 
+  "107374182432" -> "30064771770"  [ label = "DDG: "] 
+  "30064771762" -> "30064771772"  [ label = "DDG: process.env.AUTH_TOKEN"] 
+  "107374182432" -> "30064771776"  [ label = "DDG: "] 
+  "107374182432" -> "68719477481"  [ label = "DDG: "] 
+  "107374182432" -> "30064771765"  [ label = "DDG: "] 
+  "107374182432" -> "30064771768"  [ label = "DDG: "] 
+  "107374182432" -> "30064771767"  [ label = "DDG: "] 
+  "30064771762" -> "55834575088"  [ label = "CDG: "] 
+  "30064771762" -> "55834575089"  [ label = "CDG: "] 
+  "30064771762" -> "30064771766"  [ label = "CDG: "] 
+  "30064771762" -> "30064771765"  [ label = "CDG: "] 
+  "30064771762" -> "30064771768"  [ label = "CDG: "] 
+  "30064771762" -> "30064771767"  [ label = "CDG: "] 
+  "30064771762" -> "30064771769"  [ label = "CDG: "] 
+}

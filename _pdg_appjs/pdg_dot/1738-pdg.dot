@@ -1,0 +1,4 @@
+digraph "openByDefault" {  
+node [shape="rect"];  
+
+}

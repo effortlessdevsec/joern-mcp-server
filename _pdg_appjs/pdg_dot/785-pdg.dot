@@ -1,0 +1,14 @@
+digraph "loadRules" {  
+node [shape="rect"];  
+"107374183185" [label = <METHOD, 1<BR/>loadRules> ]
+"124554052369" [label = <METHOD_RETURN, 1<BR/>__ecma.Array> ]
+"111669151259" [label = <PARAM, 1<BR/>this> ]
+"141733921347" [label = <RETURN, 5<BR/>return []> ]
+"30064784112" [label = <__ecma.Array.factory, 5<BR/>__ecma.Array.factory()> ]
+  "141733921347" -> "124554052369"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151259" -> "124554052369"  [ label = "DDG: this"] 
+  "30064784112" -> "124554052369"  [ label = "DDG: __ecma.Array.factory()"] 
+  "107374183185" -> "111669151259"  [ label = "DDG: "] 
+  "30064784112" -> "141733921347"  [ label = "DDG: __ecma.Array.factory()"] 
+  "107374183185" -> "30064784112"  [ label = "DDG: "] 
+}

@@ -1,0 +1,39 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374182781" [label = <METHOD, 26<BR/>parse> ]
+"124554051964" [label = <METHOD_RETURN, 26<BR/>ANY> ]
+"111669150385" [label = <PARAM, 26<BR/>this> ]
+"111669150386" [label = <PARAM, 26<BR/>parsers> ]
+"111669150387" [label = <PARAM, 26<BR/>code> ]
+"111669150388" [label = <PARAM, 26<BR/>options> ]
+"141733921039" [label = <RETURN, 27<BR/>return defaultParserInterface.parse.call( ...> ]
+"30064776810" [label = <call, 27<BR/>defaultParserInterface.parse.call( this, ...> ]
+"30064776812" [label = <&lt;operator&gt;.assignment, 27<BR/>(_tmp_5 = defaultParserInterface.parse)> ]
+  "141733921039" -> "124554051964"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150386" -> "124554051964"  [ label = "DDG: parsers"] 
+  "111669150388" -> "124554051964"  [ label = "DDG: options"] 
+  "30064776812" -> "124554051964"  [ label = "DDG: defaultParserInterface.parse"] 
+  "30064776810" -> "124554051964"  [ label = "DDG: _tmp_5"] 
+  "30064776810" -> "124554051964"  [ label = "DDG: this"] 
+  "30064776810" -> "124554051964"  [ label = "DDG: parsers[options.parser]"] 
+  "30064776810" -> "124554051964"  [ label = "DDG: code"] 
+  "30064776810" -> "124554051964"  [ label = "DDG: defaultParserInterface.parse.call(
+      this,
+      parsers[options.parser],
+      code,
+    )"] 
+  "107374182781" -> "111669150385"  [ label = "DDG: "] 
+  "107374182781" -> "111669150386"  [ label = "DDG: "] 
+  "107374182781" -> "111669150387"  [ label = "DDG: "] 
+  "107374182781" -> "111669150388"  [ label = "DDG: "] 
+  "30064776810" -> "141733921039"  [ label = "DDG: defaultParserInterface.parse.call(
+      this,
+      parsers[options.parser],
+      code,
+    )"] 
+  "30064776812" -> "30064776810"  [ label = "DDG: _tmp_5"] 
+  "107374182781" -> "30064776810"  [ label = "DDG: "] 
+  "111669150385" -> "30064776810"  [ label = "DDG: this"] 
+  "111669150386" -> "30064776810"  [ label = "DDG: parsers"] 
+  "111669150387" -> "30064776810"  [ label = "DDG: code"] 
+}

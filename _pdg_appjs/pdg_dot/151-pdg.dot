@@ -1,0 +1,108 @@
+digraph "&lt;lambda&gt;9" {  
+node [shape="rect"];  
+"107374182551" [label = <METHOD, 89<BR/>&lt;lambda&gt;9> ]
+"124554051735" [label = <METHOD_RETURN, 89<BR/>void> ]
+"111669149978" [label = <PARAM, 89<BR/>this> ]
+"111669149979" [label = <PARAM, 89<BR/>readerEvent> ]
+"30064773360" [label = <&lt;operator&gt;.assignment, 90<BR/>let text = readerEvent.target.result> ]
+"30064773372" [label = <then, 107<BR/>Promise.resolve(text).then(text =&gt; { ...> ]
+"30064773363" [label = <&lt;operator&gt;.logicalOr, 91<BR/>categoryId === 'JSON' || categoryId === 'TEXT'> ]
+"30064773366" [label = <&lt;operator&gt;.assignment, 92<BR/>text = this._jsonToCode(text).then( ...> ]
+"30064773364" [label = <&lt;operator&gt;.equals, 91<BR/>categoryId === 'JSON'> ]
+"30064773365" [label = <&lt;operator&gt;.equals, 91<BR/>categoryId === 'TEXT'> ]
+"30064773374" [label = <&lt;operator&gt;.assignment, 107<BR/>(_tmp_15 = Promise.resolve(text))> ]
+"30064773367" [label = <then, 92<BR/>this._jsonToCode(text).then( text =...> ]
+"30064773375" [label = <resolve, 107<BR/>Promise.resolve(text)> ]
+"30064773369" [label = <&lt;operator&gt;.assignment, 92<BR/>(_tmp_14 = this._jsonToCode(text))> ]
+"30064773370" [label = <_jsonToCode, 92<BR/>this._jsonToCode(text)> ]
+"30064773368" [label = <&lt;operator&gt;.fieldAccess, 92<BR/>(_tmp_14 = this._jsonToCode(text)).then> ]
+"120259084381" [label = <METHOD_REF, 93<BR/>&lt;lambda&gt;10<BR/>this._jsonToCode(text).then( text =...> ]
+"120259084382" [label = <METHOD_REF, 97<BR/>&lt;lambda&gt;11<BR/>this._jsonToCode(text).then( text =...> ]
+"55834575754" [label = <FIELD_IDENTIFIER, 92<BR/>then> ]
+"30064773371" [label = <&lt;operator&gt;.fieldAccess, 92<BR/>this._jsonToCode> ]
+"55834575753" [label = <FIELD_IDENTIFIER, 92<BR/>_jsonToCode> ]
+  "111669149978" -> "124554051735"  [ label = "DDG: this"] 
+  "111669149979" -> "124554051735"  [ label = "DDG: readerEvent"] 
+  "30064773360" -> "124554051735"  [ label = "DDG: readerEvent.target.result"] 
+  "30064773360" -> "124554051735"  [ label = "DDG: let text = readerEvent.target.result"] 
+  "30064773364" -> "124554051735"  [ label = "DDG: categoryId"] 
+  "30064773363" -> "124554051735"  [ label = "DDG: categoryId === 'JSON'"] 
+  "30064773365" -> "124554051735"  [ label = "DDG: categoryId"] 
+  "30064773363" -> "124554051735"  [ label = "DDG: categoryId === 'TEXT'"] 
+  "30064773363" -> "124554051735"  [ label = "DDG: categoryId === 'JSON' || categoryId === 'TEXT'"] 
+  "30064773370" -> "124554051735"  [ label = "DDG: this"] 
+  "30064773369" -> "124554051735"  [ label = "DDG: this._jsonToCode(text)"] 
+  "30064773367" -> "124554051735"  [ label = "DDG: _tmp_14"] 
+  "30064773366" -> "124554051735"  [ label = "DDG: this._jsonToCode(text).then(
+            text =&gt; {
+              categoryId = 'javascript';
+              return text;
+            },
+            ex =&gt; {
+              if (categoryId === 'JSON') {
+                this._onASTError('drop', readerEvent, ex);
+              } else {
+                categoryId = undefined;
+                return text;
+              }
+            },
+          )"] 
+  "30064773366" -> "124554051735"  [ label = "DDG: text = this._jsonToCode(text).then(
+            text =&gt; {
+              categoryId = 'javascript';
+              return text;
+            },
+            ex =&gt; {
+              if (categoryId === 'JSON') {
+                this._onASTError('drop', readerEvent, ex);
+              } else {
+                categoryId = undefined;
+                return text;
+              }
+            },
+          )"] 
+  "30064773375" -> "124554051735"  [ label = "DDG: text"] 
+  "30064773374" -> "124554051735"  [ label = "DDG: Promise.resolve(text)"] 
+  "30064773372" -> "124554051735"  [ label = "DDG: _tmp_15"] 
+  "30064773372" -> "124554051735"  [ label = "DDG: Promise.resolve(text).then(text =&gt; {
+          this.props.onText('drop', readerEvent, text, categoryId);
+        })"] 
+  "107374182551" -> "111669149978"  [ label = "DDG: "] 
+  "107374182551" -> "111669149979"  [ label = "DDG: "] 
+  "30064773374" -> "30064773372"  [ label = "DDG: _tmp_15"] 
+  "107374182551" -> "30064773372"  [ label = "DDG: "] 
+  "30064773364" -> "30064773363"  [ label = "DDG: categoryId"] 
+  "30064773364" -> "30064773363"  [ label = "DDG: &quot;JSON&quot;"] 
+  "30064773365" -> "30064773363"  [ label = "DDG: categoryId"] 
+  "30064773365" -> "30064773363"  [ label = "DDG: &quot;TEXT&quot;"] 
+  "30064773367" -> "30064773366"  [ label = "DDG: _tmp_14"] 
+  "30064773367" -> "30064773366"  [ label = "DDG: &lt;lambda&gt;10"] 
+  "30064773367" -> "30064773366"  [ label = "DDG: &lt;lambda&gt;11"] 
+  "30064773384" -> "30064773364"  [ label = "DDG: categoryId"] 
+  "30064773389" -> "30064773364"  [ label = "DDG: categoryId"] 
+  "107374182551" -> "30064773364"  [ label = "DDG: "] 
+  "30064773364" -> "30064773365"  [ label = "DDG: categoryId"] 
+  "107374182551" -> "30064773365"  [ label = "DDG: "] 
+  "30064773375" -> "30064773374"  [ label = "DDG: text"] 
+  "30064773369" -> "30064773367"  [ label = "DDG: _tmp_14"] 
+  "107374182551" -> "30064773367"  [ label = "DDG: "] 
+  "30064773360" -> "30064773375"  [ label = "DDG: text"] 
+  "30064773366" -> "30064773375"  [ label = "DDG: text"] 
+  "107374182551" -> "30064773375"  [ label = "DDG: "] 
+  "30064773370" -> "30064773369"  [ label = "DDG: this"] 
+  "30064773370" -> "30064773369"  [ label = "DDG: text"] 
+  "111669149978" -> "30064773370"  [ label = "DDG: this"] 
+  "107374182551" -> "30064773370"  [ label = "DDG: "] 
+  "30064773360" -> "30064773370"  [ label = "DDG: text"] 
+  "30064773363" -> "120259084381"  [ label = "CDG: "] 
+  "30064773363" -> "120259084382"  [ label = "CDG: "] 
+  "30064773363" -> "30064773366"  [ label = "CDG: "] 
+  "30064773363" -> "30064773368"  [ label = "CDG: "] 
+  "30064773363" -> "30064773367"  [ label = "CDG: "] 
+  "30064773363" -> "30064773370"  [ label = "CDG: "] 
+  "30064773363" -> "30064773369"  [ label = "CDG: "] 
+  "30064773363" -> "30064773371"  [ label = "CDG: "] 
+  "30064773363" -> "55834575754"  [ label = "CDG: "] 
+  "30064773363" -> "55834575753"  [ label = "CDG: "] 
+  "30064773364" -> "30064773365"  [ label = "CDG: "] 
+}

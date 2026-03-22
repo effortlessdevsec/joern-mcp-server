@@ -1,0 +1,145 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182448" [label = <METHOD, 1<BR/>:program> ]
+"124554051635" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149814" [label = <PARAM, 1<BR/>this> ]
+"30064772049" [label = <&lt;operator&gt;.assignment, 6<BR/>function notFound = function notFound(req, res)...> ]
+"30064772050" [label = <&lt;operator&gt;.assignment, 15<BR/>function prepareData = function prepareData(dat...> ]
+"30064772051" [label = <&lt;operator&gt;.assignment, 22<BR/>function load = function load(req, res, next) {...> ]
+"30064772052" [label = <&lt;operator&gt;.assignment, 1<BR/>const express = require('express')> ]
+"30064772053" [label = <&lt;operator&gt;.assignment, 2<BR/>const path = require('path')> ]
+"30064772054" [label = <&lt;operator&gt;.assignment, 3<BR/>const snippets = prepareData(require(process.en...> ]
+"30064772059" [label = <&lt;operator&gt;.assignment, 4<BR/>const snippetRevisions = prepareData(require(pr...> ]
+"30064772064" [label = <&lt;operator&gt;.assignment, 11<BR/>module.exports = express.Router() // Load sni...> ]
+"68719477752" [label = <IDENTIFIER, 1<BR/>require<BR/>require('express')> ]
+"30064772047" [label = <require, 1<BR/>require('express')> ]
+"68719477755" [label = <IDENTIFIER, 2<BR/>require<BR/>require('path')> ]
+"30064772048" [label = <require, 2<BR/>require('path')> ]
+"68719477758" [label = <IDENTIFIER, 3<BR/>prepareData<BR/>prepareData(require(process.env.SNIPPET_FILE))> ]
+"30064772055" [label = <prepareData, 3<BR/>prepareData(require(process.env.SNIPPET_FILE))> ]
+"68719477764" [label = <IDENTIFIER, 4<BR/>prepareData<BR/>prepareData(require(process.env.REVISION_FILE))> ]
+"30064772060" [label = <prepareData, 4<BR/>prepareData(require(process.env.REVISION_FILE))> ]
+"30064772066" [label = <get, 11<BR/>express.Router() // Load snippet .get('/:sn...> ]
+"68719477760" [label = <IDENTIFIER, 3<BR/>require<BR/>require(process.env.SNIPPET_FILE)> ]
+"30064772056" [label = <require, 3<BR/>require(process.env.SNIPPET_FILE)> ]
+"68719477766" [label = <IDENTIFIER, 4<BR/>require<BR/>require(process.env.REVISION_FILE)> ]
+"30064772061" [label = <require, 4<BR/>require(process.env.REVISION_FILE)> ]
+"30064772068" [label = <&lt;operator&gt;.assignment, 11<BR/>(_tmp_2 = express.Router())> ]
+"30064772069" [label = <Router, 11<BR/>express.Router()> ]
+  "30064772049" -> "124554051635"  [ label = "DDG: notFound"] 
+  "30064772049" -> "124554051635"  [ label = "DDG: function notFound = function notFound(req, res) {
+  console.error(`Not found: ${req.path}`);
+  res.sendStatus(404);
+}"] 
+  "30064772050" -> "124554051635"  [ label = "DDG: prepareData"] 
+  "30064772050" -> "124554051635"  [ label = "DDG: function prepareData = function prepareData(data) {
+  // Array of objects -&gt; Map index by object ID
+  const m = new Map();
+  data.forEach(obj =&gt; m.set(obj._id, obj));
+  return m;
+}"] 
+  "30064772051" -> "124554051635"  [ label = "DDG: function load = function load(req, res, next) {
+  const snippet = snippets.get(req.params.snippetid);
+  let revisionID = req.params.revisionid;
+
+  if (!snippet) {
+    return notFound(req, res);
+  }
+
+  if (revisionID === 'latest') {
+    revisionID = snippet.revisions.length - 1;
+  }
+
+  if (+revisionID != revisionID || revisionID &gt;= snippet.revisions.length) {
+    return notFound(req, res);
+  }
+
+  const revision = snippetRevisions.get(snippet.revisions[revisionID].objectId);
+
+  if (!revision) {
+    return notFound(req, res);
+  }
+
+  const copy = Object.assign(
+    {
+      revisionID: +revisionID,
+      snippetID: snippet._id,
+    },
+    revision
+  );
+  delete copy._id;
+
+  // The data will never change but we don't want to keep it in caches
+  // unnecessarily
+  // res.append('Cache-Control', 'max-age=86400, public'); // 24h
+  res.json(copy);
+}"] 
+  "30064772052" -> "124554051635"  [ label = "DDG: require('express')"] 
+  "30064772052" -> "124554051635"  [ label = "DDG: const express = require('express')"] 
+  "30064772053" -> "124554051635"  [ label = "DDG: path"] 
+  "30064772053" -> "124554051635"  [ label = "DDG: require('path')"] 
+  "30064772053" -> "124554051635"  [ label = "DDG: const path = require('path')"] 
+  "30064772054" -> "124554051635"  [ label = "DDG: snippets"] 
+  "30064772056" -> "124554051635"  [ label = "DDG: process.env.SNIPPET_FILE"] 
+  "30064772055" -> "124554051635"  [ label = "DDG: require(process.env.SNIPPET_FILE)"] 
+  "30064772054" -> "124554051635"  [ label = "DDG: prepareData(require(process.env.SNIPPET_FILE))"] 
+  "30064772054" -> "124554051635"  [ label = "DDG: const snippets = prepareData(require(process.env.SNIPPET_FILE))"] 
+  "30064772059" -> "124554051635"  [ label = "DDG: snippetRevisions"] 
+  "30064772060" -> "124554051635"  [ label = "DDG: this"] 
+  "30064772061" -> "124554051635"  [ label = "DDG: process.env.REVISION_FILE"] 
+  "30064772060" -> "124554051635"  [ label = "DDG: require(process.env.REVISION_FILE)"] 
+  "30064772059" -> "124554051635"  [ label = "DDG: prepareData(require(process.env.REVISION_FILE))"] 
+  "30064772059" -> "124554051635"  [ label = "DDG: const snippetRevisions = prepareData(require(process.env.REVISION_FILE))"] 
+  "30064772064" -> "124554051635"  [ label = "DDG: module.exports"] 
+  "30064772069" -> "124554051635"  [ label = "DDG: express"] 
+  "30064772068" -> "124554051635"  [ label = "DDG: express.Router()"] 
+  "30064772066" -> "124554051635"  [ label = "DDG: _tmp_2"] 
+  "30064772066" -> "124554051635"  [ label = "DDG: load"] 
+  "30064772064" -> "124554051635"  [ label = "DDG: express.Router()
+  // Load snippet
+  .get('/:snippetid/:revisionid', load)"] 
+  "30064772064" -> "124554051635"  [ label = "DDG: module.exports = express.Router()
+  // Load snippet
+  .get('/:snippetid/:revisionid', load)"] 
+  "107374182448" -> "111669149814"  [ label = "DDG: "] 
+  "107374182448" -> "30064772049"  [ label = "DDG: "] 
+  "107374182448" -> "30064772050"  [ label = "DDG: "] 
+  "107374182448" -> "30064772051"  [ label = "DDG: "] 
+  "30064772047" -> "30064772052"  [ label = "DDG: this"] 
+  "30064772047" -> "30064772052"  [ label = "DDG: &quot;express&quot;"] 
+  "30064772048" -> "30064772053"  [ label = "DDG: this"] 
+  "30064772048" -> "30064772053"  [ label = "DDG: &quot;path&quot;"] 
+  "30064772055" -> "30064772054"  [ label = "DDG: this"] 
+  "30064772055" -> "30064772054"  [ label = "DDG: require(process.env.SNIPPET_FILE)"] 
+  "30064772060" -> "30064772059"  [ label = "DDG: this"] 
+  "30064772060" -> "30064772059"  [ label = "DDG: require(process.env.REVISION_FILE)"] 
+  "30064772066" -> "30064772064"  [ label = "DDG: _tmp_2"] 
+  "30064772066" -> "30064772064"  [ label = "DDG: &quot;/:snippetid/:revisionid&quot;"] 
+  "30064772066" -> "30064772064"  [ label = "DDG: load"] 
+  "107374182448" -> "68719477752"  [ label = "DDG: "] 
+  "111669149814" -> "30064772047"  [ label = "DDG: this"] 
+  "107374182448" -> "30064772047"  [ label = "DDG: "] 
+  "107374182448" -> "68719477755"  [ label = "DDG: "] 
+  "30064772047" -> "30064772048"  [ label = "DDG: this"] 
+  "107374182448" -> "30064772048"  [ label = "DDG: "] 
+  "107374182448" -> "68719477758"  [ label = "DDG: "] 
+  "30064772056" -> "30064772055"  [ label = "DDG: this"] 
+  "107374182448" -> "30064772055"  [ label = "DDG: "] 
+  "30064772056" -> "30064772055"  [ label = "DDG: process.env.SNIPPET_FILE"] 
+  "107374182448" -> "68719477764"  [ label = "DDG: "] 
+  "30064772061" -> "30064772060"  [ label = "DDG: this"] 
+  "107374182448" -> "30064772060"  [ label = "DDG: "] 
+  "30064772061" -> "30064772060"  [ label = "DDG: process.env.REVISION_FILE"] 
+  "30064772068" -> "30064772066"  [ label = "DDG: _tmp_2"] 
+  "107374182448" -> "30064772066"  [ label = "DDG: "] 
+  "30064772051" -> "30064772066"  [ label = "DDG: load"] 
+  "107374182448" -> "68719477760"  [ label = "DDG: "] 
+  "30064772048" -> "30064772056"  [ label = "DDG: this"] 
+  "107374182448" -> "30064772056"  [ label = "DDG: "] 
+  "107374182448" -> "68719477766"  [ label = "DDG: "] 
+  "30064772055" -> "30064772061"  [ label = "DDG: this"] 
+  "107374182448" -> "30064772061"  [ label = "DDG: "] 
+  "30064772069" -> "30064772068"  [ label = "DDG: express"] 
+  "30064772052" -> "30064772069"  [ label = "DDG: express"] 
+  "107374182448" -> "30064772069"  [ label = "DDG: "] 
+}

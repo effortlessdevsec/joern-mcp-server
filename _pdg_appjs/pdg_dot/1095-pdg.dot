@@ -1,0 +1,32 @@
+digraph "valuesFromArray" {  
+node [shape="rect"];  
+"107374183495" [label = <METHOD, 6<BR/>valuesFromArray> ]
+"124554052678" [label = <METHOD_RETURN, 6<BR/>ANY> ]
+"111669151919" [label = <PARAM, 6<BR/>this> ]
+"111669151920" [label = <PARAM, 6<BR/>settings> ]
+"141733921557" [label = <RETURN, 7<BR/>return settings.reduce( (obj, name) =&gt; ( ...> ]
+"30064788722" [label = <reduce, 7<BR/>settings.reduce( (obj, name) =&gt; ( (ob...> ]
+"68719494272" [label = <IDENTIFIER, 12<BR/>_tmp_0<BR/>{}> ]
+  "141733921557" -> "124554052678"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151919" -> "124554052678"  [ label = "DDG: this"] 
+  "30064788722" -> "124554052678"  [ label = "DDG: settings"] 
+  "30064788722" -> "124554052678"  [ label = "DDG: settings.reduce(
+    (obj, name) =&gt; (
+      (obj[name] = settings.indexOf(name) &gt; -1),
+      obj
+    ),
+    {},
+  )"] 
+  "107374183495" -> "111669151919"  [ label = "DDG: "] 
+  "107374183495" -> "111669151920"  [ label = "DDG: "] 
+  "30064788722" -> "141733921557"  [ label = "DDG: settings.reduce(
+    (obj, name) =&gt; (
+      (obj[name] = settings.indexOf(name) &gt; -1),
+      obj
+    ),
+    {},
+  )"] 
+  "111669151920" -> "30064788722"  [ label = "DDG: settings"] 
+  "107374183495" -> "30064788722"  [ label = "DDG: "] 
+  "107374183495" -> "68719494272"  [ label = "DDG: "] 
+}

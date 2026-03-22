@@ -1,0 +1,22 @@
+digraph "getTransformer" {  
+node [shape="rect"];  
+"107374183729" [label = <METHOD, 97<BR/>getTransformer> ]
+"124554052912" [label = <METHOD_RETURN, 97<BR/>astexplorer/website/src/parsers/index.js::program:getTransformerByID:&lt;returnValue&gt;> ]
+"111669152366" [label = <PARAM, 97<BR/>this> ]
+"111669152367" [label = <PARAM, 97<BR/>state> ]
+"141733921818" [label = <RETURN, 98<BR/>return getTransformerByID(state.workbench.trans...> ]
+"30064791490" [label = <getTransformerByID, 98<BR/>getTransformerByID(state.workbench.transform.tr...> ]
+"68719497009" [label = <IDENTIFIER, 98<BR/>getTransformerByID<BR/>getTransformerByID(state.workbench.transform.tr...> ]
+  "141733921818" -> "124554052912"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152367" -> "124554052912"  [ label = "DDG: state"] 
+  "30064791490" -> "124554052912"  [ label = "DDG: this"] 
+  "30064791490" -> "124554052912"  [ label = "DDG: state.workbench.transform.transformer"] 
+  "30064791490" -> "124554052912"  [ label = "DDG: getTransformerByID(state.workbench.transform.transformer)"] 
+  "107374183729" -> "111669152366"  [ label = "DDG: "] 
+  "107374183729" -> "111669152367"  [ label = "DDG: "] 
+  "30064791490" -> "141733921818"  [ label = "DDG: getTransformerByID(state.workbench.transform.transformer)"] 
+  "30064791531" -> "68719497009"  [ label = "DDG: getTransformerByID"] 
+  "107374183729" -> "68719497009"  [ label = "DDG: "] 
+  "111669152366" -> "30064791490"  [ label = "DDG: this"] 
+  "107374183729" -> "30064791490"  [ label = "DDG: "] 
+}

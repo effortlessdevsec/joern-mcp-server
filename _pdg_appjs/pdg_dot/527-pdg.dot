@@ -1,0 +1,83 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374182927" [label = <METHOD, 32<BR/>parse> ]
+"124554052110" [label = <METHOD_RETURN, 32<BR/>ANY> ]
+"111669150714" [label = <PARAM, 32<BR/>this> ]
+"111669150715" [label = <PARAM, 32<BR/>{ Parser, TreeAdapters }> ]
+"111669150716" [label = <PARAM, 32<BR/>code> ]
+"111669150717" [label = <PARAM, 32<BR/>options> ]
+"30064779175" [label = <&lt;operator&gt;.assignment, 32<BR/>Parser = param1_0.Parser> ]
+"30064779177" [label = <&lt;operator&gt;.assignment, 32<BR/>TreeAdapters = param1_0.TreeAdapters> ]
+"30064779179" [label = <&lt;operator&gt;.assignment, 33<BR/>this.options = options> ]
+"141733921161" [label = <RETURN, 34<BR/>return new Parser({ treeAdapter: TreeAdap...> ]
+"30064779181" [label = <parse, 34<BR/>new Parser({ treeAdapter: TreeAdapters[th...> ]
+"30064779183" [label = <&lt;operator&gt;.assignment, 34<BR/>(_tmp_8 = new Parser({ treeAdapter: TreeA...> ]
+"30064779184" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_9 = .alloc> ]
+"30064779186" [label = <&lt;operator&gt;.new, 34<BR/>new Parser({ treeAdapter: TreeAdapters[th...> ]
+"68719484970" [label = <IDENTIFIER, 34<BR/>_tmp_9<BR/>new Parser({ treeAdapter: TreeAdapters[th...> ]
+"68719484963" [label = <IDENTIFIER, 34<BR/>Parser<BR/>new Parser({ treeAdapter: TreeAdapters[th...> ]
+"30064779187" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_10.treeAdapter = TreeAdapters[this.options...> ]
+"30064779192" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_10.sourceCodeLocationInfo = true> ]
+"68719484969" [label = <IDENTIFIER, 34<BR/>_tmp_10<BR/>{ treeAdapter: TreeAdapters[this.options....> ]
+  "141733921161" -> "124554052110"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150714" -> "124554052110"  [ label = "DDG: this"] 
+  "111669150715" -> "124554052110"  [ label = "DDG: param1_0"] 
+  "30064779175" -> "124554052110"  [ label = "DDG: Parser"] 
+  "30064779175" -> "124554052110"  [ label = "DDG: param1_0.Parser"] 
+  "30064779175" -> "124554052110"  [ label = "DDG: Parser = param1_0.Parser"] 
+  "30064779177" -> "124554052110"  [ label = "DDG: TreeAdapters"] 
+  "30064779177" -> "124554052110"  [ label = "DDG: param1_0.TreeAdapters"] 
+  "30064779177" -> "124554052110"  [ label = "DDG: TreeAdapters = param1_0.TreeAdapters"] 
+  "30064779179" -> "124554052110"  [ label = "DDG: this.options"] 
+  "30064779179" -> "124554052110"  [ label = "DDG: options"] 
+  "30064779179" -> "124554052110"  [ label = "DDG: this.options = options"] 
+  "30064779184" -> "124554052110"  [ label = "DDG: .alloc"] 
+  "30064779184" -> "124554052110"  [ label = "DDG: _tmp_9 = .alloc"] 
+  "30064779186" -> "124554052110"  [ label = "DDG: _tmp_9"] 
+  "30064779187" -> "124554052110"  [ label = "DDG: _tmp_10.treeAdapter"] 
+  "30064779187" -> "124554052110"  [ label = "DDG: TreeAdapters[this.options.treeAdapter]"] 
+  "30064779187" -> "124554052110"  [ label = "DDG: _tmp_10.treeAdapter = TreeAdapters[this.options.treeAdapter]"] 
+  "30064779192" -> "124554052110"  [ label = "DDG: _tmp_10.sourceCodeLocationInfo"] 
+  "30064779192" -> "124554052110"  [ label = "DDG: _tmp_10.sourceCodeLocationInfo = true"] 
+  "30064779186" -> "124554052110"  [ label = "DDG: new Parser({
+      treeAdapter: TreeAdapters[this.options.treeAdapter],
+      sourceCodeLocationInfo: true,
+    })"] 
+  "30064779181" -> "124554052110"  [ label = "DDG: _tmp_8"] 
+  "30064779181" -> "124554052110"  [ label = "DDG: code"] 
+  "30064779181" -> "124554052110"  [ label = "DDG: new Parser({
+      treeAdapter: TreeAdapters[this.options.treeAdapter],
+      sourceCodeLocationInfo: true,
+    }).parse(code)"] 
+  "107374182927" -> "111669150714"  [ label = "DDG: "] 
+  "107374182927" -> "111669150715"  [ label = "DDG: "] 
+  "107374182927" -> "111669150716"  [ label = "DDG: "] 
+  "107374182927" -> "111669150717"  [ label = "DDG: "] 
+  "111669150715" -> "30064779175"  [ label = "DDG: param1_0"] 
+  "111669150715" -> "30064779177"  [ label = "DDG: param1_0"] 
+  "111669150717" -> "30064779179"  [ label = "DDG: options"] 
+  "107374182927" -> "30064779179"  [ label = "DDG: "] 
+  "30064779181" -> "141733921161"  [ label = "DDG: new Parser({
+      treeAdapter: TreeAdapters[this.options.treeAdapter],
+      sourceCodeLocationInfo: true,
+    }).parse(code)"] 
+  "30064779183" -> "30064779181"  [ label = "DDG: _tmp_8"] 
+  "107374182927" -> "30064779181"  [ label = "DDG: "] 
+  "111669150716" -> "30064779181"  [ label = "DDG: code"] 
+  "30064779186" -> "30064779183"  [ label = "DDG: new Parser({
+      treeAdapter: TreeAdapters[this.options.treeAdapter],
+      sourceCodeLocationInfo: true,
+    })"] 
+  "30064779186" -> "30064779183"  [ label = "DDG: _tmp_9"] 
+  "107374182927" -> "30064779183"  [ label = "DDG: "] 
+  "107374182927" -> "30064779184"  [ label = "DDG: "] 
+  "107374182927" -> "68719484970"  [ label = "DDG: "] 
+  "107374182927" -> "68719484963"  [ label = "DDG: "] 
+  "30064779184" -> "30064779186"  [ label = "DDG: _tmp_9"] 
+  "107374182927" -> "30064779186"  [ label = "DDG: "] 
+  "30064779187" -> "30064779186"  [ label = "DDG: _tmp_10.treeAdapter"] 
+  "30064779192" -> "30064779186"  [ label = "DDG: _tmp_10.sourceCodeLocationInfo"] 
+  "30064779177" -> "30064779187"  [ label = "DDG: TreeAdapters"] 
+  "107374182927" -> "30064779192"  [ label = "DDG: "] 
+  "107374182927" -> "68719484969"  [ label = "DDG: "] 
+}

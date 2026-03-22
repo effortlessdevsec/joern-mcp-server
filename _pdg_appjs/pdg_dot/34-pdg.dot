@@ -1,0 +1,53 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182434" [label = <METHOD, 1<BR/>:program> ]
+"124554051620" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149775" [label = <PARAM, 1<BR/>this> ]
+"25769803872" [label = <BLOCK, 1<BR/>const {AUTH_TOKEN} = require('../../constants')> ]
+"30064771839" [label = <&lt;operator&gt;.assignment, 2<BR/>const GitHub = require('github-api')> ]
+"30064771840" [label = <&lt;operator&gt;.assignment, 4<BR/>module.exports = function loadGist(req, res, ne...> ]
+"30064771836" [label = <&lt;operator&gt;.assignment, 1<BR/>_tmp_0 = require('../../constants')> ]
+"30064771837" [label = <&lt;operator&gt;.assignment, 1<BR/>AUTH_TOKEN = _tmp_0.AUTH_TOKEN> ]
+"68719477539" [label = <IDENTIFIER, 1<BR/>_tmp_0<BR/>const {AUTH_TOKEN} = require('../../constants')> ]
+"68719477541" [label = <IDENTIFIER, 2<BR/>require<BR/>require('github-api')> ]
+"30064771804" [label = <require, 2<BR/>require('github-api')> ]
+"68719477535" [label = <IDENTIFIER, 1<BR/>require<BR/>require('../../constants')> ]
+"30064771803" [label = <require, 1<BR/>require('../../constants')> ]
+  "30064771836" -> "124554051620"  [ label = "DDG: _tmp_0"] 
+  "30064771836" -> "124554051620"  [ label = "DDG: require('../../constants')"] 
+  "30064771836" -> "124554051620"  [ label = "DDG: _tmp_0 = require('../../constants')"] 
+  "30064771837" -> "124554051620"  [ label = "DDG: AUTH_TOKEN"] 
+  "30064771837" -> "124554051620"  [ label = "DDG: _tmp_0.AUTH_TOKEN"] 
+  "30064771837" -> "124554051620"  [ label = "DDG: AUTH_TOKEN = _tmp_0.AUTH_TOKEN"] 
+  "30064771839" -> "124554051620"  [ label = "DDG: GitHub"] 
+  "30064771804" -> "124554051620"  [ label = "DDG: this"] 
+  "30064771839" -> "124554051620"  [ label = "DDG: require('github-api')"] 
+  "30064771839" -> "124554051620"  [ label = "DDG: const GitHub = require('github-api')"] 
+  "30064771840" -> "124554051620"  [ label = "DDG: module.exports"] 
+  "30064771840" -> "124554051620"  [ label = "DDG: module.exports = function loadGist(req, res, next) {
+  const gh = new GitHub({token: AUTH_TOKEN});
+  const gist = gh.getGist(req.params.snippetid);
+  const latest = req.params.revisionid === 'latest';
+  (latest ?
+    gist.read() :
+    gist.getRevision(req.params.revisionid)
+  )
+    .then(response =&gt; res.json(response.data))
+    .catch(next);
+}"] 
+  "107374182434" -> "111669149775"  [ label = "DDG: "] 
+  "107374182434" -> "25769803872"  [ label = "DDG: "] 
+  "30064771804" -> "30064771839"  [ label = "DDG: this"] 
+  "30064771804" -> "30064771839"  [ label = "DDG: &quot;github-api&quot;"] 
+  "107374182434" -> "30064771840"  [ label = "DDG: "] 
+  "30064771803" -> "30064771836"  [ label = "DDG: this"] 
+  "30064771803" -> "30064771836"  [ label = "DDG: &quot;../../constants&quot;"] 
+  "30064771836" -> "30064771837"  [ label = "DDG: _tmp_0"] 
+  "107374182434" -> "68719477539"  [ label = "DDG: "] 
+  "107374182434" -> "68719477541"  [ label = "DDG: "] 
+  "30064771803" -> "30064771804"  [ label = "DDG: this"] 
+  "107374182434" -> "30064771804"  [ label = "DDG: "] 
+  "107374182434" -> "68719477535"  [ label = "DDG: "] 
+  "111669149775" -> "30064771803"  [ label = "DDG: this"] 
+  "107374182434" -> "30064771803"  [ label = "DDG: "] 
+}

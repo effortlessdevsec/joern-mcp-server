@@ -1,0 +1,47 @@
+digraph "_request" {  
+node [shape="rect"];  
+"107374183093" [label = <METHOD, 35<BR/>_request> ]
+"124554052276" [label = <METHOD_RETURN, 35<BR/>Promise&lt;any&gt;> ]
+"111669151053" [label = <PARAM, 35<BR/>this> ]
+"111669151054" [label = <PARAM, 35<BR/>type> ]
+"111669151055" [label = <PARAM, 35<BR/>args> ]
+"141733921285" [label = <RETURN, 36<BR/>return new Promise((resolve, reject) =&gt; { ...> ]
+"25769805668" [label = <BLOCK, 36<BR/>new Promise((resolve, reject) =&gt; { const ...> ]
+"30064782276" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_8 = .alloc> ]
+"30064782278" [label = <&lt;operator&gt;.new, 36<BR/>new Promise((resolve, reject) =&gt; { const ...> ]
+"68719487952" [label = <IDENTIFIER, 36<BR/>_tmp_8<BR/>new Promise((resolve, reject) =&gt; { const ...> ]
+"68719487950" [label = <IDENTIFIER, 36<BR/>Promise<BR/>new Promise((resolve, reject) =&gt; { const ...> ]
+  "141733921285" -> "124554052276"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151053" -> "124554052276"  [ label = "DDG: this"] 
+  "111669151054" -> "124554052276"  [ label = "DDG: type"] 
+  "111669151055" -> "124554052276"  [ label = "DDG: args"] 
+  "30064782276" -> "124554052276"  [ label = "DDG: .alloc"] 
+  "30064782276" -> "124554052276"  [ label = "DDG: _tmp_8 = .alloc"] 
+  "30064782278" -> "124554052276"  [ label = "DDG: _tmp_8"] 
+  "30064782278" -> "124554052276"  [ label = "DDG: new Promise((resolve, reject) =&gt; {
+      const requestId = this._nextRequestId++;
+      this._requests.set(requestId, {resolve, reject});
+      this._worker.postMessage({type, args, requestId});
+    })"] 
+  "107374183093" -> "111669151053"  [ label = "DDG: "] 
+  "107374183093" -> "111669151054"  [ label = "DDG: "] 
+  "107374183093" -> "111669151055"  [ label = "DDG: "] 
+  "25769805668" -> "141733921285"  [ label = "DDG: "] 
+  "25769805668" -> "141733921285"  [ label = "DDG: new Promise((resolve, reject) =&gt; {
+      const requestId = this._nextRequestId++;
+      this._requests.set(requestId, {resolve, reject});
+      this._worker.postMessage({type, args, requestId});
+    })"] 
+  "30064782278" -> "25769805668"  [ label = "DDG: _tmp_8"] 
+  "30064782278" -> "25769805668"  [ label = "DDG: new Promise((resolve, reject) =&gt; {
+      const requestId = this._nextRequestId++;
+      this._requests.set(requestId, {resolve, reject});
+      this._worker.postMessage({type, args, requestId});
+    })"] 
+  "107374183093" -> "25769805668"  [ label = "DDG: "] 
+  "107374183093" -> "30064782276"  [ label = "DDG: "] 
+  "107374183093" -> "68719487952"  [ label = "DDG: "] 
+  "107374183093" -> "68719487950"  [ label = "DDG: "] 
+  "30064782276" -> "30064782278"  [ label = "DDG: _tmp_8"] 
+  "107374183093" -> "30064782278"  [ label = "DDG: "] 
+}

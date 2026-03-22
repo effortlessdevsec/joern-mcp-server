@@ -1,0 +1,22 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183247" [label = <METHOD, 28<BR/>&lt;lambda&gt;1> ]
+"124554052430" [label = <METHOD_RETURN, 28<BR/>__ecma.Boolean> ]
+"111669151407" [label = <PARAM, 28<BR/>this> ]
+"111669151408" [label = <PARAM, 28<BR/>x> ]
+"141733921387" [label = <RETURN, 28<BR/>isNaN(parseInt(x))> ]
+"30064785107" [label = <isNaN, 28<BR/>isNaN(parseInt(x))> ]
+"30064785108" [label = <parseInt, 28<BR/>parseInt(x)> ]
+  "141733921387" -> "124554052430"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151407" -> "124554052430"  [ label = "DDG: this"] 
+  "30064785108" -> "124554052430"  [ label = "DDG: x"] 
+  "30064785107" -> "124554052430"  [ label = "DDG: parseInt(x)"] 
+  "30064785107" -> "124554052430"  [ label = "DDG: isNaN(parseInt(x))"] 
+  "107374183247" -> "111669151407"  [ label = "DDG: "] 
+  "107374183247" -> "111669151408"  [ label = "DDG: "] 
+  "30064785107" -> "141733921387"  [ label = "DDG: isNaN(parseInt(x))"] 
+  "30064785108" -> "30064785107"  [ label = "DDG: x"] 
+  "111669151408" -> "30064785108"  [ label = "DDG: x"] 
+  "111669151412" -> "30064785108"  [ label = "DDG: callback"] 
+  "107374183247" -> "30064785108"  [ label = "DDG: "] 
+}

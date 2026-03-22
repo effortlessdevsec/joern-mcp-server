@@ -1,0 +1,222 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182574" [label = <METHOD, 1<BR/>:program> ]
+"124554051759" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150016" [label = <PARAM, 1<BR/>this> ]
+"30064773762" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064773763" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"30064773764" [label = <&lt;operator&gt;.assignment, 3<BR/>var CategoryButton = require(&quot;./buttons/Categor...> ]
+"30064773765" [label = <&lt;operator&gt;.assignment, 4<BR/>var ParserButton = require(&quot;./buttons/ParserBut...> ]
+"30064773766" [label = <&lt;operator&gt;.assignment, 5<BR/>var SnippetButton = require(&quot;./buttons/SnippetB...> ]
+"30064773767" [label = <&lt;operator&gt;.assignment, 6<BR/>var TransformButton = require(&quot;./buttons/Transf...> ]
+"30064773768" [label = <&lt;operator&gt;.assignment, 7<BR/>var KeyMapButton = require(&quot;./buttons/KeyMapBut...> ]
+"25769804218" [label = <BLOCK, 9<BR/>export default function Toolbar(props) { let ...> ]
+"30064773772" [label = <&lt;operator&gt;.assignment, 57<BR/>Toolbar.propTypes = { saving: PropTypes.bool,...> ]
+"30064773769" [label = <&lt;operator&gt;.assignment, 9<BR/>function Toolbar = function Toolbar(props) { ...> ]
+"30064773770" [label = <&lt;operator&gt;.assignment, 9<BR/>exports[&quot;default&quot;] = Toolbar> ]
+"68719479439" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064773725" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719479442" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064773726" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"68719479445" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;./buttons/CategoryButton&quot;)> ]
+"30064773727" [label = <require, 3<BR/>require(&quot;./buttons/CategoryButton&quot;)> ]
+"68719479448" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;./buttons/ParserButton&quot;)> ]
+"30064773728" [label = <require, 4<BR/>require(&quot;./buttons/ParserButton&quot;)> ]
+"68719479451" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;./buttons/SnippetButton&quot;)> ]
+"30064773729" [label = <require, 5<BR/>require(&quot;./buttons/SnippetButton&quot;)> ]
+"68719479454" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;./buttons/TransformButton&quot;)> ]
+"30064773730" [label = <require, 6<BR/>require(&quot;./buttons/TransformButton&quot;)> ]
+"68719479457" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;./buttons/KeyMapButton&quot;)> ]
+"30064773731" [label = <require, 7<BR/>require(&quot;./buttons/KeyMapButton&quot;)> ]
+"30064773774" [label = <&lt;operator&gt;.assignment, 58<BR/>_tmp_2.saving = PropTypes.bool> ]
+"30064773777" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_2.forking = PropTypes.bool> ]
+"30064773780" [label = <&lt;operator&gt;.assignment, 60<BR/>_tmp_2.onSave = PropTypes.func> ]
+"30064773783" [label = <&lt;operator&gt;.assignment, 61<BR/>_tmp_2.onFork = PropTypes.func> ]
+"30064773786" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_2.onParserChange = PropTypes.func> ]
+"30064773789" [label = <&lt;operator&gt;.assignment, 63<BR/>_tmp_2.onParserSettingsButtonClick = PropTypes....> ]
+"30064773792" [label = <&lt;operator&gt;.assignment, 64<BR/>_tmp_2.onShareButtonClick = PropTypes.func> ]
+"30064773795" [label = <&lt;operator&gt;.assignment, 65<BR/>_tmp_2.onTransformChange = PropTypes.func> ]
+"30064773798" [label = <&lt;operator&gt;.assignment, 66<BR/>_tmp_2.onKeyMapChange = PropTypes.func> ]
+"30064773801" [label = <&lt;operator&gt;.assignment, 67<BR/>_tmp_2.parser = PropTypes.object> ]
+"30064773804" [label = <&lt;operator&gt;.assignment, 68<BR/>_tmp_2.transformer = PropTypes.object> ]
+"30064773807" [label = <&lt;operator&gt;.assignment, 69<BR/>_tmp_2.showTransformer = PropTypes.bool> ]
+"30064773810" [label = <&lt;operator&gt;.assignment, 70<BR/>_tmp_2.canSave = PropTypes.bool> ]
+"30064773813" [label = <&lt;operator&gt;.assignment, 71<BR/>_tmp_2.canFork = PropTypes.bool> ]
+"68719479491" [label = <IDENTIFIER, 57<BR/>_tmp_2<BR/>{ saving: PropTypes.bool, forking: PropType...> ]
+  "30064773762" -> "124554051759"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "124554051759"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064773762" -> "124554051759"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064773763" -> "124554051759"  [ label = "DDG: React"] 
+  "30064773763" -> "124554051759"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064773763" -> "124554051759"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064773764" -> "124554051759"  [ label = "DDG: CategoryButton"] 
+  "30064773764" -> "124554051759"  [ label = "DDG: require(&quot;./buttons/CategoryButton&quot;)"] 
+  "30064773764" -> "124554051759"  [ label = "DDG: var CategoryButton = require(&quot;./buttons/CategoryButton&quot;)"] 
+  "30064773765" -> "124554051759"  [ label = "DDG: ParserButton"] 
+  "30064773765" -> "124554051759"  [ label = "DDG: require(&quot;./buttons/ParserButton&quot;)"] 
+  "30064773765" -> "124554051759"  [ label = "DDG: var ParserButton = require(&quot;./buttons/ParserButton&quot;)"] 
+  "30064773766" -> "124554051759"  [ label = "DDG: SnippetButton"] 
+  "30064773766" -> "124554051759"  [ label = "DDG: require(&quot;./buttons/SnippetButton&quot;)"] 
+  "30064773766" -> "124554051759"  [ label = "DDG: var SnippetButton = require(&quot;./buttons/SnippetButton&quot;)"] 
+  "30064773767" -> "124554051759"  [ label = "DDG: TransformButton"] 
+  "30064773767" -> "124554051759"  [ label = "DDG: require(&quot;./buttons/TransformButton&quot;)"] 
+  "30064773767" -> "124554051759"  [ label = "DDG: var TransformButton = require(&quot;./buttons/TransformButton&quot;)"] 
+  "30064773768" -> "124554051759"  [ label = "DDG: KeyMapButton"] 
+  "30064773731" -> "124554051759"  [ label = "DDG: this"] 
+  "30064773768" -> "124554051759"  [ label = "DDG: require(&quot;./buttons/KeyMapButton&quot;)"] 
+  "30064773768" -> "124554051759"  [ label = "DDG: var KeyMapButton = require(&quot;./buttons/KeyMapButton&quot;)"] 
+  "30064773769" -> "124554051759"  [ label = "DDG: function Toolbar = function Toolbar(props) {
+  let {parser, transformer, showTransformer} = props;
+  let parserInfo = parser.displayName;
+  let transformerInfo = '';
+  if (parser) {
+    if (parser.version) {
+      parserInfo += '-' + parser.version;
+    }
+    if (parser.homepage) {
+      parserInfo =
+        &lt;a href={parser.homepage} target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;{parserInfo}&lt;/a&gt;;
+    }
+  }
+  if (showTransformer) {
+    transformerInfo = transformer.displayName;
+    if (transformer.version) {
+      transformerInfo += '-' + transformer.version;
+    }
+    if (transformer.homepage) {
+      transformerInfo =
+        &lt;a href={transformer.homepage} target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;{transformerInfo}&lt;/a&gt;;
+    }
+    transformerInfo = &lt;span&gt;Transformer: {transformerInfo}&lt;/span&gt;;
+  }
+
+  return (
+    &lt;div id=&quot;Toolbar&quot;&gt;
+      &lt;h1&gt;AST Explorer&lt;/h1&gt;
+      &lt;SnippetButton {...props} /&gt;
+      &lt;CategoryButton {...props} /&gt;
+      &lt;ParserButton {...props} /&gt;
+      &lt;TransformButton {...props} /&gt;
+      &lt;..."] 
+  "30064773770" -> "124554051759"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064773770" -> "124554051759"  [ label = "DDG: Toolbar"] 
+  "30064773770" -> "124554051759"  [ label = "DDG: exports[&quot;default&quot;] = Toolbar"] 
+  "30064773772" -> "124554051759"  [ label = "DDG: Toolbar.propTypes"] 
+  "30064773774" -> "124554051759"  [ label = "DDG: _tmp_2.saving"] 
+  "30064773774" -> "124554051759"  [ label = "DDG: _tmp_2.saving = PropTypes.bool"] 
+  "30064773777" -> "124554051759"  [ label = "DDG: _tmp_2.forking"] 
+  "30064773777" -> "124554051759"  [ label = "DDG: _tmp_2.forking = PropTypes.bool"] 
+  "30064773780" -> "124554051759"  [ label = "DDG: _tmp_2.onSave"] 
+  "30064773780" -> "124554051759"  [ label = "DDG: _tmp_2.onSave = PropTypes.func"] 
+  "30064773783" -> "124554051759"  [ label = "DDG: _tmp_2.onFork"] 
+  "30064773783" -> "124554051759"  [ label = "DDG: _tmp_2.onFork = PropTypes.func"] 
+  "30064773786" -> "124554051759"  [ label = "DDG: _tmp_2.onParserChange"] 
+  "30064773786" -> "124554051759"  [ label = "DDG: _tmp_2.onParserChange = PropTypes.func"] 
+  "30064773789" -> "124554051759"  [ label = "DDG: _tmp_2.onParserSettingsButtonClick"] 
+  "30064773789" -> "124554051759"  [ label = "DDG: _tmp_2.onParserSettingsButtonClick = PropTypes.func"] 
+  "30064773792" -> "124554051759"  [ label = "DDG: _tmp_2.onShareButtonClick"] 
+  "30064773792" -> "124554051759"  [ label = "DDG: _tmp_2.onShareButtonClick = PropTypes.func"] 
+  "30064773795" -> "124554051759"  [ label = "DDG: _tmp_2.onTransformChange"] 
+  "30064773795" -> "124554051759"  [ label = "DDG: _tmp_2.onTransformChange = PropTypes.func"] 
+  "30064773798" -> "124554051759"  [ label = "DDG: _tmp_2.onKeyMapChange"] 
+  "30064773798" -> "124554051759"  [ label = "DDG: PropTypes.func"] 
+  "30064773798" -> "124554051759"  [ label = "DDG: _tmp_2.onKeyMapChange = PropTypes.func"] 
+  "30064773801" -> "124554051759"  [ label = "DDG: _tmp_2.parser"] 
+  "30064773801" -> "124554051759"  [ label = "DDG: _tmp_2.parser = PropTypes.object"] 
+  "30064773804" -> "124554051759"  [ label = "DDG: _tmp_2.transformer"] 
+  "30064773804" -> "124554051759"  [ label = "DDG: PropTypes.object"] 
+  "30064773804" -> "124554051759"  [ label = "DDG: _tmp_2.transformer = PropTypes.object"] 
+  "30064773807" -> "124554051759"  [ label = "DDG: _tmp_2.showTransformer"] 
+  "30064773807" -> "124554051759"  [ label = "DDG: _tmp_2.showTransformer = PropTypes.bool"] 
+  "30064773810" -> "124554051759"  [ label = "DDG: _tmp_2.canSave"] 
+  "30064773810" -> "124554051759"  [ label = "DDG: _tmp_2.canSave = PropTypes.bool"] 
+  "30064773813" -> "124554051759"  [ label = "DDG: _tmp_2.canFork"] 
+  "30064773813" -> "124554051759"  [ label = "DDG: PropTypes.bool"] 
+  "30064773813" -> "124554051759"  [ label = "DDG: _tmp_2.canFork = PropTypes.bool"] 
+  "30064773772" -> "124554051759"  [ label = "DDG: Toolbar.propTypes = {
+  saving: PropTypes.bool,
+  forking: PropTypes.bool,
+  onSave: PropTypes.func,
+  onFork: PropTypes.func,
+  onParserChange: PropTypes.func,
+  onParserSettingsButtonClick: PropTypes.func,
+  onShareButtonClick: PropTypes.func,
+  onTransformChange: PropTypes.func,
+  onKeyMapChange: PropTypes.func,
+  parser: PropTypes.object,
+  transformer: PropTypes.object,
+  showTransformer: PropTypes.bool,
+  canSave: PropTypes.bool,
+  canFork: PropTypes.bool,
+}"] 
+  "107374182574" -> "111669150016"  [ label = "DDG: "] 
+  "30064773725" -> "30064773762"  [ label = "DDG: this"] 
+  "30064773725" -> "30064773762"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064773726" -> "30064773763"  [ label = "DDG: this"] 
+  "30064773726" -> "30064773763"  [ label = "DDG: &quot;react&quot;"] 
+  "30064773727" -> "30064773764"  [ label = "DDG: this"] 
+  "30064773727" -> "30064773764"  [ label = "DDG: &quot;./buttons/CategoryButton&quot;"] 
+  "30064773728" -> "30064773765"  [ label = "DDG: this"] 
+  "30064773728" -> "30064773765"  [ label = "DDG: &quot;./buttons/ParserButton&quot;"] 
+  "30064773729" -> "30064773766"  [ label = "DDG: this"] 
+  "30064773729" -> "30064773766"  [ label = "DDG: &quot;./buttons/SnippetButton&quot;"] 
+  "30064773730" -> "30064773767"  [ label = "DDG: this"] 
+  "30064773730" -> "30064773767"  [ label = "DDG: &quot;./buttons/TransformButton&quot;"] 
+  "30064773731" -> "30064773768"  [ label = "DDG: this"] 
+  "30064773731" -> "30064773768"  [ label = "DDG: &quot;./buttons/KeyMapButton&quot;"] 
+  "107374182574" -> "25769804218"  [ label = "DDG: "] 
+  "30064773774" -> "30064773772"  [ label = "DDG: _tmp_2.saving"] 
+  "30064773777" -> "30064773772"  [ label = "DDG: _tmp_2.forking"] 
+  "30064773780" -> "30064773772"  [ label = "DDG: _tmp_2.onSave"] 
+  "30064773783" -> "30064773772"  [ label = "DDG: _tmp_2.onFork"] 
+  "30064773786" -> "30064773772"  [ label = "DDG: _tmp_2.onParserChange"] 
+  "30064773789" -> "30064773772"  [ label = "DDG: _tmp_2.onParserSettingsButtonClick"] 
+  "30064773792" -> "30064773772"  [ label = "DDG: _tmp_2.onShareButtonClick"] 
+  "30064773795" -> "30064773772"  [ label = "DDG: _tmp_2.onTransformChange"] 
+  "30064773798" -> "30064773772"  [ label = "DDG: _tmp_2.onKeyMapChange"] 
+  "30064773801" -> "30064773772"  [ label = "DDG: _tmp_2.parser"] 
+  "30064773804" -> "30064773772"  [ label = "DDG: _tmp_2.transformer"] 
+  "30064773807" -> "30064773772"  [ label = "DDG: _tmp_2.showTransformer"] 
+  "30064773810" -> "30064773772"  [ label = "DDG: _tmp_2.canSave"] 
+  "30064773813" -> "30064773772"  [ label = "DDG: _tmp_2.canFork"] 
+  "107374182574" -> "30064773772"  [ label = "DDG: "] 
+  "107374182574" -> "30064773769"  [ label = "DDG: "] 
+  "30064773769" -> "30064773770"  [ label = "DDG: Toolbar"] 
+  "107374182574" -> "30064773770"  [ label = "DDG: "] 
+  "107374182574" -> "68719479439"  [ label = "DDG: "] 
+  "111669150016" -> "30064773725"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773725"  [ label = "DDG: "] 
+  "107374182574" -> "68719479442"  [ label = "DDG: "] 
+  "30064773725" -> "30064773726"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773726"  [ label = "DDG: "] 
+  "107374182574" -> "68719479445"  [ label = "DDG: "] 
+  "30064773726" -> "30064773727"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773727"  [ label = "DDG: "] 
+  "107374182574" -> "68719479448"  [ label = "DDG: "] 
+  "30064773727" -> "30064773728"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773728"  [ label = "DDG: "] 
+  "107374182574" -> "68719479451"  [ label = "DDG: "] 
+  "30064773728" -> "30064773729"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773729"  [ label = "DDG: "] 
+  "107374182574" -> "68719479454"  [ label = "DDG: "] 
+  "30064773729" -> "30064773730"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773730"  [ label = "DDG: "] 
+  "107374182574" -> "68719479457"  [ label = "DDG: "] 
+  "30064773730" -> "30064773731"  [ label = "DDG: this"] 
+  "107374182574" -> "30064773731"  [ label = "DDG: "] 
+  "30064773762" -> "30064773774"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773777"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773780"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773783"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773786"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773789"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773792"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773795"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773798"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773801"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773804"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773807"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773810"  [ label = "DDG: PropTypes"] 
+  "30064773762" -> "30064773813"  [ label = "DDG: PropTypes"] 
+  "107374182574" -> "68719479491"  [ label = "DDG: "] 
+}

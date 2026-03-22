@@ -1,0 +1,210 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183251" [label = <METHOD, 39<BR/>parse> ]
+"124554052444" [label = <METHOD_RETURN, 39<BR/>ANY> ]
+"111669151429" [label = <PARAM, 39<BR/>this> ]
+"111669151430" [label = <PARAM, 39<BR/>ts> ]
+"111669151431" [label = <PARAM, 39<BR/>code> ]
+"111669151432" [label = <PARAM, 39<BR/>options> ]
+"30064785182" [label = <&lt;operator&gt;.assignment, 40<BR/>const compilerHost/*: ts.CompilerHost*/ = { ...> ]
+"30064785201" [label = <&lt;operator&gt;.assignment, 54<BR/>const filename = FILENAME + (options.jsx ? 'x' ...> ]
+"30064785205" [label = <&lt;operator&gt;.assignment, 56<BR/>const program = ts.createProgram([filename], { ...> ]
+"30064785228" [label = <&lt;operator&gt;.assignment, 64<BR/>const sourceFile = program.getSourceFile(filename)> ]
+"30064785231" [label = <&lt;operator&gt;.assignment, 66<BR/>getComments = (node, isTrailing) =&gt; { if ...> ]
+"141733921398" [label = <RETURN, 88<BR/>return sourceFile> ]
+"68719490835" [label = <IDENTIFIER, 88<BR/>sourceFile<BR/>return sourceFile> ]
+"30064785183" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_9.fileExists = &lt;lambda&gt;2> ]
+"30064785185" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_9.getCanonicalFileName = &lt;lambda&gt;3> ]
+"30064785187" [label = <&lt;operator&gt;.assignment, 43<BR/>_tmp_9.getCurrentDirectory = &lt;lambda&gt;4> ]
+"30064785189" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_9.getDefaultLibFileName = &lt;lambda&gt;5> ]
+"30064785191" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_9.getNewLine = &lt;lambda&gt;6> ]
+"30064785193" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_9.getSourceFile = &lt;lambda&gt;7> ]
+"30064785195" [label = <&lt;operator&gt;.assignment, 49<BR/>_tmp_9.readFile = &lt;lambda&gt;8> ]
+"30064785197" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_9.useCaseSensitiveFileNames = &lt;lambda&gt;9> ]
+"30064785199" [label = <&lt;operator&gt;.assignment, 51<BR/>_tmp_9.writeFile = &lt;lambda&gt;10> ]
+"68719490806" [label = <IDENTIFIER, 40<BR/>_tmp_9<BR/>{ fileExists: () =&gt; true, getCanoni...> ]
+"30064785202" [label = <&lt;operator&gt;.addition, 54<BR/>FILENAME + (options.jsx ? 'x' : '')> ]
+"30064785206" [label = <createProgram, 56<BR/>ts.createProgram([filename], { noResolve:...> ]
+"30064785229" [label = <getSourceFile, 64<BR/>program.getSourceFile(filename)> ]
+"30064785203" [label = <&lt;operator&gt;.conditional, 54<BR/>options.jsx ? &quot;x&quot; : &quot;&quot;> ]
+"30064785208" [label = <&lt;operator&gt;.assignment, 56<BR/>_tmp_10 = __ecma.Array.factory()> ]
+"30064785210" [label = <, 56<BR/>_tmp_10.push(filename)> ]
+"68719490817" [label = <IDENTIFIER, 56<BR/>_tmp_10<BR/>[filename]> ]
+"30064785212" [label = <&lt;operator&gt;.assignment, 57<BR/>_tmp_11.noResolve = true> ]
+"30064785214" [label = <&lt;operator&gt;.assignment, 58<BR/>_tmp_11.target = ts.ScriptTarget.Latest> ]
+"30064785218" [label = <&lt;operator&gt;.assignment, 59<BR/>_tmp_11.experimentalDecorators = options.experi...> ]
+"30064785221" [label = <&lt;operator&gt;.assignment, 60<BR/>_tmp_11.experimentalAsyncFunctions = options.ex...> ]
+"30064785224" [label = <&lt;operator&gt;.assignment, 61<BR/>_tmp_11.jsx = options.jsx ? &quot;preserve&quot; : undefined> ]
+"68719490828" [label = <IDENTIFIER, 56<BR/>_tmp_11<BR/>{ noResolve: true, target: ts.Scrip...> ]
+"30064785226" [label = <&lt;operator&gt;.conditional, 61<BR/>options.jsx ? &quot;preserve&quot; : undefined> ]
+  "141733921398" -> "124554052444"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151429" -> "124554052444"  [ label = "DDG: this"] 
+  "111669151431" -> "124554052444"  [ label = "DDG: code"] 
+  "111669151432" -> "124554052444"  [ label = "DDG: options"] 
+  "30064785183" -> "124554052444"  [ label = "DDG: _tmp_9.fileExists"] 
+  "30064785183" -> "124554052444"  [ label = "DDG: _tmp_9.fileExists = &lt;lambda&gt;2"] 
+  "30064785185" -> "124554052444"  [ label = "DDG: _tmp_9.getCanonicalFileName"] 
+  "30064785185" -> "124554052444"  [ label = "DDG: _tmp_9.getCanonicalFileName = &lt;lambda&gt;3"] 
+  "30064785187" -> "124554052444"  [ label = "DDG: _tmp_9.getCurrentDirectory"] 
+  "30064785187" -> "124554052444"  [ label = "DDG: _tmp_9.getCurrentDirectory = &lt;lambda&gt;4"] 
+  "30064785189" -> "124554052444"  [ label = "DDG: _tmp_9.getDefaultLibFileName"] 
+  "30064785189" -> "124554052444"  [ label = "DDG: _tmp_9.getDefaultLibFileName = &lt;lambda&gt;5"] 
+  "30064785191" -> "124554052444"  [ label = "DDG: _tmp_9.getNewLine"] 
+  "30064785191" -> "124554052444"  [ label = "DDG: _tmp_9.getNewLine = &lt;lambda&gt;6"] 
+  "30064785193" -> "124554052444"  [ label = "DDG: _tmp_9.getSourceFile"] 
+  "30064785193" -> "124554052444"  [ label = "DDG: _tmp_9.getSourceFile = &lt;lambda&gt;7"] 
+  "30064785195" -> "124554052444"  [ label = "DDG: _tmp_9.readFile"] 
+  "30064785195" -> "124554052444"  [ label = "DDG: _tmp_9.readFile = &lt;lambda&gt;8"] 
+  "30064785197" -> "124554052444"  [ label = "DDG: _tmp_9.useCaseSensitiveFileNames"] 
+  "30064785197" -> "124554052444"  [ label = "DDG: _tmp_9.useCaseSensitiveFileNames = &lt;lambda&gt;9"] 
+  "30064785199" -> "124554052444"  [ label = "DDG: _tmp_9.writeFile"] 
+  "30064785199" -> "124554052444"  [ label = "DDG: _tmp_9.writeFile = &lt;lambda&gt;10"] 
+  "30064785182" -> "124554052444"  [ label = "DDG: const compilerHost/*: ts.CompilerHost*/ = {
+      fileExists: () =&gt; true,
+      getCanonicalFileName: filename =&gt; filename,
+      getCurrentDirectory: () =&gt; '',
+      getDefaultLibFileName: () =&gt; 'lib.d.ts',
+      getNewLine: () =&gt; '\n',
+      getSourceFile: filename =&gt; {
+        return ts.createSourceFile(filename, code, ts.ScriptTarget.Latest, true);
+      },
+      readFile: () =&gt; null,
+      useCaseSensitiveFileNames: () =&gt; true,
+      writeFile: () =&gt; null,
+    }"] 
+  "30064785202" -> "124554052444"  [ label = "DDG: FILENAME"] 
+  "30064785202" -> "124554052444"  [ label = "DDG: options.jsx ? &quot;x&quot; : &quot;&quot;"] 
+  "30064785201" -> "124554052444"  [ label = "DDG: FILENAME + (options.jsx ? 'x' : '')"] 
+  "30064785201" -> "124554052444"  [ label = "DDG: const filename = FILENAME + (options.jsx ? 'x' : '')"] 
+  "30064785206" -> "124554052444"  [ label = "DDG: ts"] 
+  "30064785208" -> "124554052444"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064785208" -> "124554052444"  [ label = "DDG: _tmp_10 = __ecma.Array.factory()"] 
+  "30064785210" -> "124554052444"  [ label = "DDG: _tmp_10"] 
+  "30064785210" -> "124554052444"  [ label = "DDG: _tmp_10.push(filename)"] 
+  "30064785212" -> "124554052444"  [ label = "DDG: _tmp_11.noResolve"] 
+  "30064785212" -> "124554052444"  [ label = "DDG: _tmp_11.noResolve = true"] 
+  "30064785214" -> "124554052444"  [ label = "DDG: _tmp_11.target"] 
+  "30064785214" -> "124554052444"  [ label = "DDG: _tmp_11.target = ts.ScriptTarget.Latest"] 
+  "30064785218" -> "124554052444"  [ label = "DDG: _tmp_11.experimentalDecorators"] 
+  "30064785218" -> "124554052444"  [ label = "DDG: options.experimentalDecorators"] 
+  "30064785218" -> "124554052444"  [ label = "DDG: _tmp_11.experimentalDecorators = options.experimentalDecorators"] 
+  "30064785221" -> "124554052444"  [ label = "DDG: _tmp_11.experimentalAsyncFunctions"] 
+  "30064785221" -> "124554052444"  [ label = "DDG: options.experimentalAsyncFunctions"] 
+  "30064785221" -> "124554052444"  [ label = "DDG: _tmp_11.experimentalAsyncFunctions = options.experimentalAsyncFunctions"] 
+  "30064785224" -> "124554052444"  [ label = "DDG: _tmp_11.jsx"] 
+  "30064785226" -> "124554052444"  [ label = "DDG: options.jsx"] 
+  "30064785226" -> "124554052444"  [ label = "DDG: undefined"] 
+  "30064785224" -> "124554052444"  [ label = "DDG: options.jsx ? &quot;preserve&quot; : undefined"] 
+  "30064785224" -> "124554052444"  [ label = "DDG: _tmp_11.jsx = options.jsx ? &quot;preserve&quot; : undefined"] 
+  "30064785206" -> "124554052444"  [ label = "DDG: compilerHost"] 
+  "30064785205" -> "124554052444"  [ label = "DDG: ts.createProgram([filename], {
+      noResolve: true,
+      target: ts.ScriptTarget.Latest,
+      experimentalDecorators: options.experimentalDecorators,
+      experimentalAsyncFunctions: options.experimentalAsyncFunctions,
+      jsx: options.jsx ? 'preserve' : undefined,
+    }, compilerHost)"] 
+  "30064785205" -> "124554052444"  [ label = "DDG: const program = ts.createProgram([filename], {
+      noResolve: true,
+      target: ts.ScriptTarget.Latest,
+      experimentalDecorators: options.experimentalDecorators,
+      experimentalAsyncFunctions: options.experimentalAsyncFunctions,
+      jsx: options.jsx ? 'preserve' : undefined,
+    }, compilerHost)"] 
+  "30064785228" -> "124554052444"  [ label = "DDG: sourceFile"] 
+  "30064785229" -> "124554052444"  [ label = "DDG: program"] 
+  "30064785229" -> "124554052444"  [ label = "DDG: filename"] 
+  "30064785228" -> "124554052444"  [ label = "DDG: program.getSourceFile(filename)"] 
+  "30064785228" -> "124554052444"  [ label = "DDG: const sourceFile = program.getSourceFile(filename)"] 
+  "30064785231" -> "124554052444"  [ label = "DDG: getComments"] 
+  "30064785231" -> "124554052444"  [ label = "DDG: getComments = (node, isTrailing) =&gt; {
+      if (node.parent) {
+        const nodePos = isTrailing ? node.end : node.pos;
+        const parentPos = isTrailing ? node.parent.end : node.parent.pos;
+
+        if (node.parent.kind === ts.SyntaxKind.SourceFile || nodePos !== parentPos) {
+          let comments = isTrailing ?
+            ts.getTrailingCommentRanges(sourceFile.text, nodePos) :
+            ts.getLeadingCommentRanges(sourceFile.text, nodePos);
+
+          if (Array.isArray(comments)) {
+            comments.forEach((comment) =&gt; {
+              comment.type = syntaxKind[comment.kind];
+              comment.text = sourceFile.text.substring(comment.pos, comment.end);
+            });
+
+            return comments;
+          }
+        }
+      }
+    }"] 
+  "107374183251" -> "111669151429"  [ label = "DDG: "] 
+  "107374183251" -> "111669151430"  [ label = "DDG: "] 
+  "107374183251" -> "111669151431"  [ label = "DDG: "] 
+  "107374183251" -> "111669151432"  [ label = "DDG: "] 
+  "30064785183" -> "30064785182"  [ label = "DDG: _tmp_9.fileExists"] 
+  "30064785185" -> "30064785182"  [ label = "DDG: _tmp_9.getCanonicalFileName"] 
+  "30064785187" -> "30064785182"  [ label = "DDG: _tmp_9.getCurrentDirectory"] 
+  "30064785189" -> "30064785182"  [ label = "DDG: _tmp_9.getDefaultLibFileName"] 
+  "30064785191" -> "30064785182"  [ label = "DDG: _tmp_9.getNewLine"] 
+  "30064785193" -> "30064785182"  [ label = "DDG: _tmp_9.getSourceFile"] 
+  "30064785195" -> "30064785182"  [ label = "DDG: _tmp_9.readFile"] 
+  "30064785197" -> "30064785182"  [ label = "DDG: _tmp_9.useCaseSensitiveFileNames"] 
+  "30064785199" -> "30064785182"  [ label = "DDG: _tmp_9.writeFile"] 
+  "107374183251" -> "30064785182"  [ label = "DDG: "] 
+  "30064785319" -> "30064785201"  [ label = "DDG: FILENAME"] 
+  "107374183251" -> "30064785201"  [ label = "DDG: "] 
+  "30064785206" -> "30064785205"  [ label = "DDG: ts"] 
+  "30064785206" -> "30064785205"  [ label = "DDG: [filename]"] 
+  "30064785206" -> "30064785205"  [ label = "DDG: {
+      noResolve: true,
+      target: ts.ScriptTarget.Latest,
+      experimentalDecorators: options.experimentalDecorators,
+      experimentalAsyncFunctions: options.experimentalAsyncFunctions,
+      jsx: options.jsx ? 'preserve' : undefined,
+    }"] 
+  "30064785206" -> "30064785205"  [ label = "DDG: compilerHost"] 
+  "30064785206" -> "30064785205"  [ label = "DDG: "] 
+  "30064785229" -> "30064785228"  [ label = "DDG: program"] 
+  "30064785229" -> "30064785228"  [ label = "DDG: filename"] 
+  "107374183251" -> "30064785231"  [ label = "DDG: "] 
+  "68719490835" -> "141733921398"  [ label = "DDG: sourceFile"] 
+  "30064785228" -> "68719490835"  [ label = "DDG: sourceFile"] 
+  "107374183251" -> "68719490835"  [ label = "DDG: "] 
+  "107374183251" -> "30064785183"  [ label = "DDG: "] 
+  "107374183251" -> "30064785185"  [ label = "DDG: "] 
+  "107374183251" -> "30064785187"  [ label = "DDG: "] 
+  "107374183251" -> "30064785189"  [ label = "DDG: "] 
+  "107374183251" -> "30064785191"  [ label = "DDG: "] 
+  "107374183251" -> "30064785193"  [ label = "DDG: "] 
+  "107374183251" -> "30064785195"  [ label = "DDG: "] 
+  "107374183251" -> "30064785197"  [ label = "DDG: "] 
+  "107374183251" -> "30064785199"  [ label = "DDG: "] 
+  "107374183251" -> "68719490806"  [ label = "DDG: "] 
+  "30064785319" -> "30064785202"  [ label = "DDG: FILENAME"] 
+  "107374183251" -> "30064785202"  [ label = "DDG: "] 
+  "111669151430" -> "30064785206"  [ label = "DDG: ts"] 
+  "107374183251" -> "30064785206"  [ label = "DDG: "] 
+  "30064785210" -> "30064785206"  [ label = "DDG: _tmp_10"] 
+  "30064785212" -> "30064785206"  [ label = "DDG: _tmp_11.noResolve"] 
+  "30064785214" -> "30064785206"  [ label = "DDG: _tmp_11.target"] 
+  "30064785218" -> "30064785206"  [ label = "DDG: _tmp_11.experimentalDecorators"] 
+  "30064785221" -> "30064785206"  [ label = "DDG: _tmp_11.experimentalAsyncFunctions"] 
+  "30064785224" -> "30064785206"  [ label = "DDG: _tmp_11.jsx"] 
+  "30064785182" -> "30064785206"  [ label = "DDG: compilerHost"] 
+  "30064785205" -> "30064785229"  [ label = "DDG: program"] 
+  "107374183251" -> "30064785229"  [ label = "DDG: "] 
+  "30064785210" -> "30064785229"  [ label = "DDG: filename"] 
+  "107374183251" -> "30064785203"  [ label = "DDG: "] 
+  "107374183251" -> "30064785208"  [ label = "DDG: "] 
+  "107374183251" -> "68719490817"  [ label = "DDG: "] 
+  "107374183251" -> "30064785212"  [ label = "DDG: "] 
+  "111669151432" -> "30064785218"  [ label = "DDG: options"] 
+  "111669151432" -> "30064785221"  [ label = "DDG: options"] 
+  "107374183251" -> "30064785224"  [ label = "DDG: "] 
+  "107374183251" -> "68719490828"  [ label = "DDG: "] 
+  "30064785208" -> "30064785210"  [ label = "DDG: _tmp_10"] 
+  "107374183251" -> "30064785210"  [ label = "DDG: "] 
+  "30064785201" -> "30064785210"  [ label = "DDG: filename"] 
+  "107374183251" -> "30064785226"  [ label = "DDG: "] 
+}

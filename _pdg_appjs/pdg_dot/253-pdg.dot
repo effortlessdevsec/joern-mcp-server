@@ -1,0 +1,18 @@
+digraph "shouldComponentUpdate" {  
+node [shape="rect"];  
+"107374182653" [label = <METHOD, 5<BR/>shouldComponentUpdate> ]
+"124554051836" [label = <METHOD_RETURN, 5<BR/>__ecma.Boolean> ]
+"111669150137" [label = <PARAM, 5<BR/>this> ]
+"111669150138" [label = <PARAM, 5<BR/>nextProps> ]
+"141733920928" [label = <RETURN, 6<BR/>return nextProps.array.length !== this.props.ar...> ]
+"30064775006" [label = <&lt;operator&gt;.notEquals, 6<BR/>nextProps.array.length !== this.props.array.length> ]
+  "141733920928" -> "124554051836"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150137" -> "124554051836"  [ label = "DDG: this"] 
+  "111669150138" -> "124554051836"  [ label = "DDG: nextProps"] 
+  "30064775006" -> "124554051836"  [ label = "DDG: nextProps.array.length"] 
+  "30064775006" -> "124554051836"  [ label = "DDG: this.props.array.length"] 
+  "30064775006" -> "124554051836"  [ label = "DDG: nextProps.array.length !== this.props.array.length"] 
+  "107374182653" -> "111669150137"  [ label = "DDG: "] 
+  "107374182653" -> "111669150138"  [ label = "DDG: "] 
+  "30064775006" -> "141733920928"  [ label = "DDG: nextProps.array.length !== this.props.array.length"] 
+}

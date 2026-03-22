@@ -1,0 +1,31 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374182511" [label = <METHOD, 50<BR/>&lt;lambda&gt;2> ]
+"124554051694" [label = <METHOD_RETURN, 50<BR/>void> ]
+"111669149904" [label = <PARAM, 50<BR/>this> ]
+"111669149905" [label = <PARAM, 50<BR/>server> ]
+"30064773000" [label = <on, 51<BR/>server.on('afterLoad', file =&gt; { ...> ]
+  "111669149904" -> "124554051694"  [ label = "DDG: this"] 
+  "30064773000" -> "124554051694"  [ label = "DDG: server"] 
+  "30064773000" -> "124554051694"  [ label = "DDG: server.on('afterLoad', file =&gt; {
+              const fnVal = file.scope.props.transformer;
+              if (fnVal) {
+                const fnType = fnVal.getFunctionType();
+                const cx = infer.cx();
+                fnType.propagate(new infer.IsCallee(
+                  infer.cx().topScope,
+                  [
+                    cx.definitions.jscodeshift.file,
+                    cx.definitions.jscodeshift.apiObject,
+                  ],
+                  null,
+                  infer.ANull,
+                ));
+              }
+            })"] 
+  "107374182511" -> "111669149904"  [ label = "DDG: "] 
+  "107374182511" -> "111669149905"  [ label = "DDG: "] 
+  "111669149905" -> "30064773000"  [ label = "DDG: server"] 
+  "111669149909" -> "30064773000"  [ label = "DDG: infer"] 
+  "107374182511" -> "30064773000"  [ label = "DDG: "] 
+}

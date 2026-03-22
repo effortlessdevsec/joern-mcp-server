@@ -1,0 +1,4 @@
+digraph "removeChild" {  
+node [shape="rect"];  
+
+}

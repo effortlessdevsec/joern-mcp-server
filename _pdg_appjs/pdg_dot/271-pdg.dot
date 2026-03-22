@@ -1,0 +1,66 @@
+digraph "&lt;lambda&gt;8" {  
+node [shape="rect"];  
+"107374182671" [label = <METHOD, 251<BR/>&lt;lambda&gt;8> ]
+"124554051853" [label = <METHOD_RETURN, 251<BR/>astexplorer/website/src/components/visualization/tree/Element.js::program:Element:renderChild:&lt;returnValue&gt;> ]
+"111669150171" [label = <PARAM, 251<BR/>this> ]
+"111669150172" [label = <PARAM, 251<BR/>{key, value, computed}> ]
+"30064775230" [label = <&lt;operator&gt;.assignment, 251<BR/>key = param1_2.key> ]
+"30064775232" [label = <&lt;operator&gt;.assignment, 251<BR/>value = param1_2.value> ]
+"30064775234" [label = <&lt;operator&gt;.assignment, 251<BR/>computed = param1_2.computed> ]
+"141733920948" [label = <RETURN, 251<BR/>renderChild( key, value...> ]
+"30064775236" [label = <renderChild, 251<BR/>renderChild( key, value...> ]
+"68719480884" [label = <IDENTIFIER, 251<BR/>renderChild<BR/>renderChild( key, value...> ]
+"30064775237" [label = <&lt;operator&gt;.conditional, 255<BR/>Number.isInteger(+key) ? undefined : key> ]
+"30064775238" [label = <isInteger, 255<BR/>Number.isInteger(+key)> ]
+"30064775239" [label = <&lt;operator&gt;.plus, 255<BR/>+key> ]
+  "141733920948" -> "124554051853"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150172" -> "124554051853"  [ label = "DDG: param1_2"] 
+  "30064775230" -> "124554051853"  [ label = "DDG: param1_2.key"] 
+  "30064775230" -> "124554051853"  [ label = "DDG: key = param1_2.key"] 
+  "30064775232" -> "124554051853"  [ label = "DDG: param1_2.value"] 
+  "30064775232" -> "124554051853"  [ label = "DDG: value = param1_2.value"] 
+  "30064775234" -> "124554051853"  [ label = "DDG: param1_2.computed"] 
+  "30064775234" -> "124554051853"  [ label = "DDG: computed = param1_2.computed"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: this"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: key"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: value"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: node"] 
+  "30064775238" -> "124554051853"  [ label = "DDG: +key"] 
+  "30064775237" -> "124554051853"  [ label = "DDG: Number.isInteger(+key)"] 
+  "30064775237" -> "124554051853"  [ label = "DDG: undefined"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: Number.isInteger(+key) ? undefined : key"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: computed"] 
+  "30064775236" -> "124554051853"  [ label = "DDG: renderChild(
+            key,
+            value,
+            node,
+            Number.isInteger(+key) ? undefined : key,
+            computed,
+          )"] 
+  "107374182671" -> "111669150171"  [ label = "DDG: "] 
+  "107374182671" -> "111669150172"  [ label = "DDG: "] 
+  "111669150172" -> "30064775230"  [ label = "DDG: param1_2"] 
+  "111669150172" -> "30064775232"  [ label = "DDG: param1_2"] 
+  "111669150172" -> "30064775234"  [ label = "DDG: param1_2"] 
+  "30064775236" -> "141733920948"  [ label = "DDG: renderChild(
+            key,
+            value,
+            node,
+            Number.isInteger(+key) ? undefined : key,
+            computed,
+          )"] 
+  "30064775273" -> "68719480884"  [ label = "DDG: renderChild"] 
+  "107374182671" -> "68719480884"  [ label = "DDG: "] 
+  "111669150171" -> "30064775236"  [ label = "DDG: this"] 
+  "107374182671" -> "30064775236"  [ label = "DDG: "] 
+  "30064775239" -> "30064775236"  [ label = "DDG: key"] 
+  "30064775232" -> "30064775236"  [ label = "DDG: value"] 
+  "30064775353" -> "30064775236"  [ label = "DDG: node"] 
+  "30064775372" -> "30064775236"  [ label = "DDG: node"] 
+  "30064775234" -> "30064775236"  [ label = "DDG: computed"] 
+  "107374182671" -> "30064775237"  [ label = "DDG: "] 
+  "30064775239" -> "30064775237"  [ label = "DDG: key"] 
+  "30064775239" -> "30064775238"  [ label = "DDG: key"] 
+  "30064775230" -> "30064775239"  [ label = "DDG: key"] 
+  "107374182671" -> "30064775239"  [ label = "DDG: "] 
+}

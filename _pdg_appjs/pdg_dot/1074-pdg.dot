@@ -1,0 +1,36 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183474" [label = <METHOD, 31<BR/>getDefaultOptions> ]
+"124554052657" [label = <METHOD_RETURN, 31<BR/>{ dialect: __ecma.String; preserveComments: __ecma.Boolean; includeRange: __ecma.Boolean; }> ]
+"111669151882" [label = <PARAM, 31<BR/>this> ]
+"141733921546" [label = <RETURN, 32<BR/>return { dialect: 'sqlite', preserv...> ]
+"25769806764" [label = <BLOCK, 32<BR/>{ dialect: 'sqlite', preserveCommen...> ]
+"30064788427" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_4.dialect = &quot;sqlite&quot;> ]
+"30064788429" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_4.preserveComments = true> ]
+"30064788431" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_4.includeRange = true> ]
+"68719493973" [label = <IDENTIFIER, 32<BR/>_tmp_4<BR/>{ dialect: 'sqlite', preserveCommen...> ]
+  "141733921546" -> "124554052657"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151882" -> "124554052657"  [ label = "DDG: this"] 
+  "30064788427" -> "124554052657"  [ label = "DDG: _tmp_4.dialect"] 
+  "30064788427" -> "124554052657"  [ label = "DDG: _tmp_4.dialect = &quot;sqlite&quot;"] 
+  "30064788429" -> "124554052657"  [ label = "DDG: _tmp_4.preserveComments"] 
+  "30064788429" -> "124554052657"  [ label = "DDG: _tmp_4.preserveComments = true"] 
+  "30064788431" -> "124554052657"  [ label = "DDG: _tmp_4.includeRange"] 
+  "30064788431" -> "124554052657"  [ label = "DDG: _tmp_4.includeRange = true"] 
+  "107374183474" -> "111669151882"  [ label = "DDG: "] 
+  "25769806764" -> "141733921546"  [ label = "DDG: "] 
+  "25769806764" -> "141733921546"  [ label = "DDG: {
+      dialect: 'sqlite',
+      preserveComments: true,
+      includeRange: true,
+    }"] 
+  "107374183474" -> "141733921546"  [ label = "DDG: "] 
+  "30064788427" -> "25769806764"  [ label = "DDG: _tmp_4.dialect"] 
+  "30064788429" -> "25769806764"  [ label = "DDG: _tmp_4.preserveComments"] 
+  "30064788431" -> "25769806764"  [ label = "DDG: _tmp_4.includeRange"] 
+  "107374183474" -> "25769806764"  [ label = "DDG: "] 
+  "107374183474" -> "30064788427"  [ label = "DDG: "] 
+  "107374183474" -> "30064788429"  [ label = "DDG: "] 
+  "107374183474" -> "30064788431"  [ label = "DDG: "] 
+  "107374183474" -> "68719493973"  [ label = "DDG: "] 
+}

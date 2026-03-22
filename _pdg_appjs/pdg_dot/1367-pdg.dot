@@ -1,0 +1,17 @@
+digraph "clear" {  
+node [shape="rect"];  
+"107374183767" [label = <METHOD, 28<BR/>clear> ]
+"124554052950" [label = <METHOD_RETURN, 28<BR/>ANY> ]
+"111669152449" [label = <PARAM, 28<BR/>this> ]
+"111669152450" [label = <PARAM, 28<BR/>unsubscribers> ]
+"30064792005" [label = <forEach, 29<BR/>unsubscribers.forEach(call)> ]
+  "111669152449" -> "124554052950"  [ label = "DDG: this"] 
+  "30064792005" -> "124554052950"  [ label = "DDG: unsubscribers"] 
+  "30064792005" -> "124554052950"  [ label = "DDG: call"] 
+  "30064792005" -> "124554052950"  [ label = "DDG: unsubscribers.forEach(call)"] 
+  "107374183767" -> "111669152449"  [ label = "DDG: "] 
+  "107374183767" -> "111669152450"  [ label = "DDG: "] 
+  "111669152450" -> "30064792005"  [ label = "DDG: unsubscribers"] 
+  "107374183767" -> "30064792005"  [ label = "DDG: "] 
+  "30064792007" -> "30064792005"  [ label = "DDG: call"] 
+}

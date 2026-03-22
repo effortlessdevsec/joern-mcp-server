@@ -1,0 +1,171 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182610" [label = <METHOD, 1<BR/>:program> ]
+"124554051795" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150070" [label = <PARAM, 1<BR/>this> ]
+"30064774438" [label = <&lt;operator&gt;.assignment, 1<BR/>var PropTypes = require(&quot;prop-types&quot;)> ]
+"30064774439" [label = <&lt;operator&gt;.assignment, 2<BR/>var React = require(&quot;react&quot;)> ]
+"30064774440" [label = <&lt;operator&gt;.assignment, 3<BR/>var ForkButton = require(&quot;./ForkButton&quot;)> ]
+"30064774441" [label = <&lt;operator&gt;.assignment, 4<BR/>var NewButton = require(&quot;./NewButton&quot;)> ]
+"30064774442" [label = <&lt;operator&gt;.assignment, 5<BR/>var SaveButton = require(&quot;./SaveButton&quot;)> ]
+"30064774443" [label = <&lt;operator&gt;.assignment, 6<BR/>var ShareButton = require(&quot;./ShareButton&quot;)> ]
+"30064774444" [label = <&lt;operator&gt;.assignment, 7<BR/>var cx = require(&quot;../../utils/classnames.js&quot;)> ]
+"25769804307" [label = <BLOCK, 9<BR/>export default function SnippetButton(props) { ...> ]
+"30064774448" [label = <&lt;operator&gt;.assignment, 48<BR/>SnippetButton.propTypes = { canFork: PropType...> ]
+"30064774445" [label = <&lt;operator&gt;.assignment, 9<BR/>function SnippetButton = function SnippetButton...> ]
+"30064774446" [label = <&lt;operator&gt;.assignment, 9<BR/>exports[&quot;default&quot;] = SnippetButton> ]
+"68719480068" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;prop-types&quot;)> ]
+"30064774393" [label = <require, 1<BR/>require(&quot;prop-types&quot;)> ]
+"68719480071" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;react&quot;)> ]
+"30064774394" [label = <require, 2<BR/>require(&quot;react&quot;)> ]
+"68719480074" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;./ForkButton&quot;)> ]
+"30064774395" [label = <require, 3<BR/>require(&quot;./ForkButton&quot;)> ]
+"68719480077" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;./NewButton&quot;)> ]
+"30064774396" [label = <require, 4<BR/>require(&quot;./NewButton&quot;)> ]
+"68719480080" [label = <IDENTIFIER, 5<BR/>require<BR/>require(&quot;./SaveButton&quot;)> ]
+"30064774397" [label = <require, 5<BR/>require(&quot;./SaveButton&quot;)> ]
+"68719480083" [label = <IDENTIFIER, 6<BR/>require<BR/>require(&quot;./ShareButton&quot;)> ]
+"30064774398" [label = <require, 6<BR/>require(&quot;./ShareButton&quot;)> ]
+"68719480086" [label = <IDENTIFIER, 7<BR/>require<BR/>require(&quot;../../utils/classnames.js&quot;)> ]
+"30064774399" [label = <require, 7<BR/>require(&quot;../../utils/classnames.js&quot;)> ]
+"30064774450" [label = <&lt;operator&gt;.assignment, 49<BR/>_tmp_2.canFork = PropTypes.bool> ]
+"30064774453" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_2.canSave = PropTypes.bool> ]
+"30064774456" [label = <&lt;operator&gt;.assignment, 51<BR/>_tmp_2.forking = PropTypes.bool> ]
+"30064774459" [label = <&lt;operator&gt;.assignment, 52<BR/>_tmp_2.onFork = PropTypes.func> ]
+"30064774462" [label = <&lt;operator&gt;.assignment, 53<BR/>_tmp_2.onSave = PropTypes.func> ]
+"30064774465" [label = <&lt;operator&gt;.assignment, 54<BR/>_tmp_2.saving = PropTypes.bool> ]
+"68719480104" [label = <IDENTIFIER, 48<BR/>_tmp_2<BR/>{ canFork: PropTypes.bool, canSave: PropTyp...> ]
+  "30064774438" -> "124554051795"  [ label = "DDG: PropTypes"] 
+  "30064774438" -> "124554051795"  [ label = "DDG: require(&quot;prop-types&quot;)"] 
+  "30064774438" -> "124554051795"  [ label = "DDG: var PropTypes = require(&quot;prop-types&quot;)"] 
+  "30064774439" -> "124554051795"  [ label = "DDG: React"] 
+  "30064774439" -> "124554051795"  [ label = "DDG: require(&quot;react&quot;)"] 
+  "30064774439" -> "124554051795"  [ label = "DDG: var React = require(&quot;react&quot;)"] 
+  "30064774440" -> "124554051795"  [ label = "DDG: ForkButton"] 
+  "30064774440" -> "124554051795"  [ label = "DDG: require(&quot;./ForkButton&quot;)"] 
+  "30064774440" -> "124554051795"  [ label = "DDG: var ForkButton = require(&quot;./ForkButton&quot;)"] 
+  "30064774441" -> "124554051795"  [ label = "DDG: NewButton"] 
+  "30064774441" -> "124554051795"  [ label = "DDG: require(&quot;./NewButton&quot;)"] 
+  "30064774441" -> "124554051795"  [ label = "DDG: var NewButton = require(&quot;./NewButton&quot;)"] 
+  "30064774442" -> "124554051795"  [ label = "DDG: SaveButton"] 
+  "30064774442" -> "124554051795"  [ label = "DDG: require(&quot;./SaveButton&quot;)"] 
+  "30064774442" -> "124554051795"  [ label = "DDG: var SaveButton = require(&quot;./SaveButton&quot;)"] 
+  "30064774443" -> "124554051795"  [ label = "DDG: ShareButton"] 
+  "30064774443" -> "124554051795"  [ label = "DDG: require(&quot;./ShareButton&quot;)"] 
+  "30064774443" -> "124554051795"  [ label = "DDG: var ShareButton = require(&quot;./ShareButton&quot;)"] 
+  "30064774444" -> "124554051795"  [ label = "DDG: cx"] 
+  "30064774399" -> "124554051795"  [ label = "DDG: this"] 
+  "30064774444" -> "124554051795"  [ label = "DDG: require(&quot;../../utils/classnames.js&quot;)"] 
+  "30064774444" -> "124554051795"  [ label = "DDG: var cx = require(&quot;../../utils/classnames.js&quot;)"] 
+  "30064774445" -> "124554051795"  [ label = "DDG: function SnippetButton = function SnippetButton(props) {
+  const canForkAndNotSave = props.canFork &amp;&amp; !props.canSave;
+  const savingOrForking = props.saving || props.forking;
+
+  return (
+    &lt;div className=&quot;button menuButton&quot;&gt;
+      &lt;span&gt;
+        &lt;i className='fa fa-lg fa-file-code-o fa-fw' /&gt;
+        &amp;nbsp;Snippet
+      &lt;/span&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;NewButton {...props} /&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;SaveButton {...props} /&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;ForkButton {...props} /&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;ShareButton {...props}/&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;button
+        type=&quot;button&quot;
+        title={canForkAndNotSave ? 'Fork' : 'Save'}
+        style={{minWidth: 0}}
+        disabled={
+          savingOrForking || !(props.canSave || props.canFork)
+        }
+        onClick={canForkAndNotSave ? props.onFork : props.onSave}&gt;
+        &lt;i
+          className={cx({
+            fa: true,
+            'fa-spinner': savingOrForking,
+            'fa-pulse': savingOrForking,
+            'fa-floppy-o': !savingOrForking &amp;&amp; !canForkAndNotSave,
+         ..."] 
+  "30064774446" -> "124554051795"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064774446" -> "124554051795"  [ label = "DDG: SnippetButton"] 
+  "30064774446" -> "124554051795"  [ label = "DDG: exports[&quot;default&quot;] = SnippetButton"] 
+  "30064774448" -> "124554051795"  [ label = "DDG: SnippetButton.propTypes"] 
+  "30064774450" -> "124554051795"  [ label = "DDG: _tmp_2.canFork"] 
+  "30064774450" -> "124554051795"  [ label = "DDG: _tmp_2.canFork = PropTypes.bool"] 
+  "30064774453" -> "124554051795"  [ label = "DDG: _tmp_2.canSave"] 
+  "30064774453" -> "124554051795"  [ label = "DDG: _tmp_2.canSave = PropTypes.bool"] 
+  "30064774456" -> "124554051795"  [ label = "DDG: _tmp_2.forking"] 
+  "30064774456" -> "124554051795"  [ label = "DDG: _tmp_2.forking = PropTypes.bool"] 
+  "30064774459" -> "124554051795"  [ label = "DDG: _tmp_2.onFork"] 
+  "30064774459" -> "124554051795"  [ label = "DDG: _tmp_2.onFork = PropTypes.func"] 
+  "30064774462" -> "124554051795"  [ label = "DDG: _tmp_2.onSave"] 
+  "30064774462" -> "124554051795"  [ label = "DDG: PropTypes.func"] 
+  "30064774462" -> "124554051795"  [ label = "DDG: _tmp_2.onSave = PropTypes.func"] 
+  "30064774465" -> "124554051795"  [ label = "DDG: _tmp_2.saving"] 
+  "30064774465" -> "124554051795"  [ label = "DDG: PropTypes.bool"] 
+  "30064774465" -> "124554051795"  [ label = "DDG: _tmp_2.saving = PropTypes.bool"] 
+  "30064774448" -> "124554051795"  [ label = "DDG: SnippetButton.propTypes = {
+  canFork: PropTypes.bool,
+  canSave: PropTypes.bool,
+  forking: PropTypes.bool,
+  onFork: PropTypes.func,
+  onSave: PropTypes.func,
+  saving: PropTypes.bool,
+}"] 
+  "107374182610" -> "111669150070"  [ label = "DDG: "] 
+  "30064774393" -> "30064774438"  [ label = "DDG: this"] 
+  "30064774393" -> "30064774438"  [ label = "DDG: &quot;prop-types&quot;"] 
+  "30064774394" -> "30064774439"  [ label = "DDG: this"] 
+  "30064774394" -> "30064774439"  [ label = "DDG: &quot;react&quot;"] 
+  "30064774395" -> "30064774440"  [ label = "DDG: this"] 
+  "30064774395" -> "30064774440"  [ label = "DDG: &quot;./ForkButton&quot;"] 
+  "30064774396" -> "30064774441"  [ label = "DDG: this"] 
+  "30064774396" -> "30064774441"  [ label = "DDG: &quot;./NewButton&quot;"] 
+  "30064774397" -> "30064774442"  [ label = "DDG: this"] 
+  "30064774397" -> "30064774442"  [ label = "DDG: &quot;./SaveButton&quot;"] 
+  "30064774398" -> "30064774443"  [ label = "DDG: this"] 
+  "30064774398" -> "30064774443"  [ label = "DDG: &quot;./ShareButton&quot;"] 
+  "30064774399" -> "30064774444"  [ label = "DDG: this"] 
+  "30064774399" -> "30064774444"  [ label = "DDG: &quot;../../utils/classnames.js&quot;"] 
+  "107374182610" -> "25769804307"  [ label = "DDG: "] 
+  "30064774450" -> "30064774448"  [ label = "DDG: _tmp_2.canFork"] 
+  "30064774453" -> "30064774448"  [ label = "DDG: _tmp_2.canSave"] 
+  "30064774456" -> "30064774448"  [ label = "DDG: _tmp_2.forking"] 
+  "30064774459" -> "30064774448"  [ label = "DDG: _tmp_2.onFork"] 
+  "30064774462" -> "30064774448"  [ label = "DDG: _tmp_2.onSave"] 
+  "30064774465" -> "30064774448"  [ label = "DDG: _tmp_2.saving"] 
+  "107374182610" -> "30064774448"  [ label = "DDG: "] 
+  "107374182610" -> "30064774445"  [ label = "DDG: "] 
+  "30064774445" -> "30064774446"  [ label = "DDG: SnippetButton"] 
+  "107374182610" -> "30064774446"  [ label = "DDG: "] 
+  "107374182610" -> "68719480068"  [ label = "DDG: "] 
+  "111669150070" -> "30064774393"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774393"  [ label = "DDG: "] 
+  "107374182610" -> "68719480071"  [ label = "DDG: "] 
+  "30064774393" -> "30064774394"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774394"  [ label = "DDG: "] 
+  "107374182610" -> "68719480074"  [ label = "DDG: "] 
+  "30064774394" -> "30064774395"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774395"  [ label = "DDG: "] 
+  "107374182610" -> "68719480077"  [ label = "DDG: "] 
+  "30064774395" -> "30064774396"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774396"  [ label = "DDG: "] 
+  "107374182610" -> "68719480080"  [ label = "DDG: "] 
+  "30064774396" -> "30064774397"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774397"  [ label = "DDG: "] 
+  "107374182610" -> "68719480083"  [ label = "DDG: "] 
+  "30064774397" -> "30064774398"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774398"  [ label = "DDG: "] 
+  "107374182610" -> "68719480086"  [ label = "DDG: "] 
+  "30064774398" -> "30064774399"  [ label = "DDG: this"] 
+  "107374182610" -> "30064774399"  [ label = "DDG: "] 
+  "30064774438" -> "30064774450"  [ label = "DDG: PropTypes"] 
+  "30064774438" -> "30064774453"  [ label = "DDG: PropTypes"] 
+  "30064774438" -> "30064774456"  [ label = "DDG: PropTypes"] 
+  "30064774438" -> "30064774459"  [ label = "DDG: PropTypes"] 
+  "30064774438" -> "30064774462"  [ label = "DDG: PropTypes"] 
+  "30064774438" -> "30064774465"  [ label = "DDG: PropTypes"] 
+  "107374182610" -> "68719480104"  [ label = "DDG: "] 
+}

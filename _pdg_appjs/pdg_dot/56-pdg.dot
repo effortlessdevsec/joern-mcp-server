@@ -1,0 +1,45 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182456" [label = <METHOD, 1<BR/>:program> ]
+"124554051640" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669149823" [label = <PARAM, 1<BR/>this> ]
+"30064772142" [label = <&lt;operator&gt;.assignment, 1<BR/>module.exports = { plugins: [ require('au...> ]
+"30064772144" [label = <&lt;operator&gt;.assignment, 2<BR/>_tmp_0.plugins = [ require('autoprefixer') ]> ]
+"68719477851" [label = <IDENTIFIER, 1<BR/>_tmp_0<BR/>{ plugins: [ require('autoprefixer') ] }> ]
+"30064772146" [label = <&lt;operator&gt;.assignment, 2<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064772148" [label = <, 3<BR/>_tmp_1.push(require('autoprefixer'))> ]
+"68719477850" [label = <IDENTIFIER, 2<BR/>_tmp_1<BR/>[ require('autoprefixer') ]> ]
+"68719477848" [label = <IDENTIFIER, 3<BR/>require<BR/>require('autoprefixer')> ]
+"30064772150" [label = <require, 3<BR/>require('autoprefixer')> ]
+  "30064772142" -> "124554051640"  [ label = "DDG: module.exports"] 
+  "30064772144" -> "124554051640"  [ label = "DDG: _tmp_0.plugins"] 
+  "30064772146" -> "124554051640"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064772146" -> "124554051640"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064772148" -> "124554051640"  [ label = "DDG: _tmp_1"] 
+  "30064772150" -> "124554051640"  [ label = "DDG: this"] 
+  "30064772148" -> "124554051640"  [ label = "DDG: require('autoprefixer')"] 
+  "30064772148" -> "124554051640"  [ label = "DDG: _tmp_1.push(require('autoprefixer'))"] 
+  "30064772144" -> "124554051640"  [ label = "DDG: _tmp_0.plugins = [
+    require('autoprefixer')
+  ]"] 
+  "30064772142" -> "124554051640"  [ label = "DDG: module.exports = {
+  plugins: [
+    require('autoprefixer')
+  ]
+}"] 
+  "107374182456" -> "111669149823"  [ label = "DDG: "] 
+  "30064772144" -> "30064772142"  [ label = "DDG: _tmp_0.plugins"] 
+  "107374182456" -> "30064772142"  [ label = "DDG: "] 
+  "30064772148" -> "30064772144"  [ label = "DDG: _tmp_1"] 
+  "107374182456" -> "30064772144"  [ label = "DDG: "] 
+  "107374182456" -> "68719477851"  [ label = "DDG: "] 
+  "107374182456" -> "30064772146"  [ label = "DDG: "] 
+  "107374182456" -> "68719477850"  [ label = "DDG: "] 
+  "30064772146" -> "30064772148"  [ label = "DDG: _tmp_1"] 
+  "107374182456" -> "30064772148"  [ label = "DDG: "] 
+  "30064772150" -> "30064772148"  [ label = "DDG: this"] 
+  "30064772150" -> "30064772148"  [ label = "DDG: &quot;autoprefixer&quot;"] 
+  "107374182456" -> "68719477848"  [ label = "DDG: "] 
+  "111669149823" -> "30064772150"  [ label = "DDG: this"] 
+  "107374182456" -> "30064772150"  [ label = "DDG: "] 
+}

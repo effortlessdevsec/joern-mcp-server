@@ -1,0 +1,131 @@
+digraph "create" {  
+node [shape="rect"];  
+"107374183589" [label = <METHOD, 56<BR/>create> ]
+"124554052773" [label = <METHOD_RETURN, 56<BR/>ANY> ]
+"111669152107" [label = <PARAM, 56<BR/>this> ]
+"111669152108" [label = <PARAM, 56<BR/>data> ]
+"141733921639" [label = <RETURN, 57<BR/>return api( '/gist', { method: 'P...> ]
+"30064789937" [label = <then, 57<BR/>api( '/gist', { method: 'POST', ...> ]
+"30064789939" [label = <&lt;operator&gt;.assignment, 57<BR/>(_tmp_8 = api( '/gist', { method:...> ]
+"30064789940" [label = <then, 57<BR/>api( '/gist', { method: 'POST', ...> ]
+"30064789942" [label = <&lt;operator&gt;.assignment, 57<BR/>(_tmp_9 = api( '/gist', { method:...> ]
+"68719495500" [label = <IDENTIFIER, 57<BR/>api<BR/>api( '/gist', { method: 'POST', ...> ]
+"30064789943" [label = <api, 57<BR/>api( '/gist', { method: 'POST', ...> ]
+"30064789944" [label = <&lt;operator&gt;.assignment, 60<BR/>_tmp_10.method = &quot;POST&quot;> ]
+"30064789946" [label = <&lt;operator&gt;.assignment, 61<BR/>_tmp_10.headers = { 'Content-Type': 'ap...> ]
+"30064789950" [label = <&lt;operator&gt;.assignment, 64<BR/>_tmp_10.body = JSON.stringify(data)> ]
+"68719495508" [label = <IDENTIFIER, 59<BR/>_tmp_10<BR/>{ method: 'POST', headers: { ...> ]
+"30064789948" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_11.Content-Type = &quot;application/json&quot;> ]
+"68719495505" [label = <IDENTIFIER, 61<BR/>_tmp_11<BR/>{ 'Content-Type': 'application/json', ...> ]
+"30064789952" [label = <stringify, 64<BR/>JSON.stringify(data)> ]
+  "141733921639" -> "124554052773"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064789943" -> "124554052773"  [ label = "DDG: this"] 
+  "30064789944" -> "124554052773"  [ label = "DDG: _tmp_10.method"] 
+  "30064789944" -> "124554052773"  [ label = "DDG: _tmp_10.method = &quot;POST&quot;"] 
+  "30064789946" -> "124554052773"  [ label = "DDG: _tmp_10.headers"] 
+  "30064789948" -> "124554052773"  [ label = "DDG: _tmp_11.Content-Type"] 
+  "30064789948" -> "124554052773"  [ label = "DDG: _tmp_11.Content-Type = &quot;application/json&quot;"] 
+  "30064789946" -> "124554052773"  [ label = "DDG: _tmp_10.headers = {
+        'Content-Type': 'application/json',
+      }"] 
+  "30064789950" -> "124554052773"  [ label = "DDG: _tmp_10.body"] 
+  "30064789952" -> "124554052773"  [ label = "DDG: data"] 
+  "30064789950" -> "124554052773"  [ label = "DDG: JSON.stringify(data)"] 
+  "30064789950" -> "124554052773"  [ label = "DDG: _tmp_10.body = JSON.stringify(data)"] 
+  "30064789942" -> "124554052773"  [ label = "DDG: api(
+    '/gist',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )"] 
+  "30064789940" -> "124554052773"  [ label = "DDG: _tmp_9"] 
+  "30064789939" -> "124554052773"  [ label = "DDG: api(
+    '/gist',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Unable to create snippet.');
+  })"] 
+  "30064789937" -> "124554052773"  [ label = "DDG: _tmp_8"] 
+  "30064789937" -> "124554052773"  [ label = "DDG: api(
+    '/gist',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Unable to create snippet.');
+  })
+  .then(data =&gt; new Revision(data))"] 
+  "107374183589" -> "111669152107"  [ label = "DDG: "] 
+  "107374183589" -> "111669152108"  [ label = "DDG: "] 
+  "30064789937" -> "141733921639"  [ label = "DDG: api(
+    '/gist',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    },
+  )
+  .then(response =&gt; {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Unable to create snippet.');
+  })
+  .then(data =&gt; new Revision(data))"] 
+  "30064789939" -> "30064789937"  [ label = "DDG: _tmp_8"] 
+  "107374183589" -> "30064789937"  [ label = "DDG: "] 
+  "30064789940" -> "30064789939"  [ label = "DDG: _tmp_9"] 
+  "30064789940" -> "30064789939"  [ label = "DDG: &lt;lambda&gt;2"] 
+  "30064789942" -> "30064789940"  [ label = "DDG: _tmp_9"] 
+  "107374183589" -> "30064789940"  [ label = "DDG: "] 
+  "30064789943" -> "30064789942"  [ label = "DDG: this"] 
+  "30064789943" -> "30064789942"  [ label = "DDG: &quot;/gist&quot;"] 
+  "30064789943" -> "30064789942"  [ label = "DDG: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }"] 
+  "30064789943" -> "30064789942"  [ label = "DDG: "] 
+  "30064790091" -> "68719495500"  [ label = "DDG: api"] 
+  "107374183589" -> "68719495500"  [ label = "DDG: "] 
+  "111669152107" -> "30064789943"  [ label = "DDG: this"] 
+  "107374183589" -> "30064789943"  [ label = "DDG: "] 
+  "30064789944" -> "30064789943"  [ label = "DDG: _tmp_10.method"] 
+  "30064789946" -> "30064789943"  [ label = "DDG: _tmp_10.headers"] 
+  "30064789950" -> "30064789943"  [ label = "DDG: _tmp_10.body"] 
+  "107374183589" -> "30064789944"  [ label = "DDG: "] 
+  "30064789948" -> "30064789946"  [ label = "DDG: _tmp_11.Content-Type"] 
+  "107374183589" -> "30064789946"  [ label = "DDG: "] 
+  "30064789952" -> "30064789950"  [ label = "DDG: data"] 
+  "107374183589" -> "68719495508"  [ label = "DDG: "] 
+  "107374183589" -> "30064789948"  [ label = "DDG: "] 
+  "107374183589" -> "68719495505"  [ label = "DDG: "] 
+  "111669152108" -> "30064789952"  [ label = "DDG: data"] 
+  "107374183589" -> "30064789952"  [ label = "DDG: "] 
+}

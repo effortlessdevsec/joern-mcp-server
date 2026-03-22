@@ -1,0 +1,116 @@
+digraph "SaveButton" {  
+node [shape="rect"];  
+"107374182607" [label = <METHOD, 5<BR/>SaveButton> ]
+"124554051790" [label = <METHOD_RETURN, 5<BR/>ANY> ]
+"111669150062" [label = <PARAM, 5<BR/>this> ]
+"111669150063" [label = <PARAM, 5<BR/>{canSave, saving, forking, onSave}> ]
+"30064774329" [label = <&lt;operator&gt;.assignment, 5<BR/>canSave = param1_0.canSave> ]
+"30064774331" [label = <&lt;operator&gt;.assignment, 5<BR/>saving = param1_0.saving> ]
+"30064774333" [label = <&lt;operator&gt;.assignment, 5<BR/>forking = param1_0.forking> ]
+"30064774335" [label = <&lt;operator&gt;.assignment, 5<BR/>onSave = param1_0.onSave> ]
+"141733920905" [label = <RETURN, 6<BR/>return ( &lt;button type=&quot;button&quot; ...> ]
+"154618823315" [label = <TEMPLATE_DOM, 7<BR/>&lt;button type=&quot;button&quot; disabled={ ...> ]
+"90194313948" [label = <LITERAL, 8<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064774337" [label = <&lt;operator&gt;.logicalOr, 10<BR/>!canSave || saving || forking> ]
+"68719479978" [label = <IDENTIFIER, 12<BR/>onSave<BR/>{onSave}> ]
+"30064774340" [label = <cx, 14<BR/>cx({ fa: true, 'fa-spinner'...> ]
+"30064774338" [label = <&lt;operator&gt;.logicalOr, 10<BR/>!canSave || saving> ]
+"68719479979" [label = <IDENTIFIER, 14<BR/>cx<BR/>cx({ fa: true, 'fa-spinner'...> ]
+"30064774339" [label = <&lt;operator&gt;.logicalNot, 10<BR/>!canSave> ]
+"30064774341" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_0.fa = true> ]
+"30064774343" [label = <&lt;operator&gt;.assignment, 16<BR/>_tmp_0.fa-spinner = saving> ]
+"30064774345" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_0.fa-pulse = saving> ]
+"30064774347" [label = <&lt;operator&gt;.assignment, 18<BR/>_tmp_0.fa-floppy-o = !saving> ]
+"30064774350" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_0.fa-fw = true> ]
+"68719479989" [label = <IDENTIFIER, 14<BR/>_tmp_0<BR/>{ fa: true, 'fa-spinner': s...> ]
+"30064774349" [label = <&lt;operator&gt;.logicalNot, 18<BR/>!saving> ]
+  "141733920905" -> "124554051790"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150063" -> "124554051790"  [ label = "DDG: param1_0"] 
+  "30064774329" -> "124554051790"  [ label = "DDG: param1_0.canSave"] 
+  "30064774329" -> "124554051790"  [ label = "DDG: canSave = param1_0.canSave"] 
+  "30064774331" -> "124554051790"  [ label = "DDG: param1_0.saving"] 
+  "30064774331" -> "124554051790"  [ label = "DDG: saving = param1_0.saving"] 
+  "30064774333" -> "124554051790"  [ label = "DDG: param1_0.forking"] 
+  "30064774333" -> "124554051790"  [ label = "DDG: forking = param1_0.forking"] 
+  "30064774335" -> "124554051790"  [ label = "DDG: onSave"] 
+  "30064774335" -> "124554051790"  [ label = "DDG: param1_0.onSave"] 
+  "30064774335" -> "124554051790"  [ label = "DDG: onSave = param1_0.onSave"] 
+  "30064774339" -> "124554051790"  [ label = "DDG: canSave"] 
+  "30064774338" -> "124554051790"  [ label = "DDG: !canSave"] 
+  "30064774337" -> "124554051790"  [ label = "DDG: !canSave || saving"] 
+  "30064774337" -> "124554051790"  [ label = "DDG: forking"] 
+  "30064774337" -> "124554051790"  [ label = "DDG: !canSave || saving || forking"] 
+  "30064774340" -> "124554051790"  [ label = "DDG: this"] 
+  "30064774341" -> "124554051790"  [ label = "DDG: _tmp_0.fa"] 
+  "30064774341" -> "124554051790"  [ label = "DDG: _tmp_0.fa = true"] 
+  "30064774343" -> "124554051790"  [ label = "DDG: _tmp_0.fa-spinner"] 
+  "30064774343" -> "124554051790"  [ label = "DDG: _tmp_0.fa-spinner = saving"] 
+  "30064774345" -> "124554051790"  [ label = "DDG: _tmp_0.fa-pulse"] 
+  "30064774345" -> "124554051790"  [ label = "DDG: _tmp_0.fa-pulse = saving"] 
+  "30064774347" -> "124554051790"  [ label = "DDG: _tmp_0.fa-floppy-o"] 
+  "30064774349" -> "124554051790"  [ label = "DDG: saving"] 
+  "30064774347" -> "124554051790"  [ label = "DDG: !saving"] 
+  "30064774347" -> "124554051790"  [ label = "DDG: _tmp_0.fa-floppy-o = !saving"] 
+  "30064774350" -> "124554051790"  [ label = "DDG: _tmp_0.fa-fw"] 
+  "30064774350" -> "124554051790"  [ label = "DDG: _tmp_0.fa-fw = true"] 
+  "30064774340" -> "124554051790"  [ label = "DDG: cx({
+          fa: true,
+          'fa-spinner': saving,
+          'fa-pulse': saving,
+          'fa-floppy-o': !saving,
+          'fa-fw': true,
+        })"] 
+  "107374182607" -> "111669150062"  [ label = "DDG: "] 
+  "107374182607" -> "111669150063"  [ label = "DDG: "] 
+  "111669150063" -> "30064774329"  [ label = "DDG: param1_0"] 
+  "111669150063" -> "30064774331"  [ label = "DDG: param1_0"] 
+  "111669150063" -> "30064774333"  [ label = "DDG: param1_0"] 
+  "111669150063" -> "30064774335"  [ label = "DDG: param1_0"] 
+  "154618823315" -> "141733920905"  [ label = "DDG: &lt;button
+      type=&quot;button&quot;
+      disabled={
+        !canSave || saving || forking
+      }
+      onClick={onSave}&gt;
+      &lt;i
+        className={cx({
+          fa: true,
+          'fa-spinner': saving,
+          'fa-pulse': saving,
+          'fa-floppy-o': !saving,
+          'fa-fw': true,
+        })}
+      /&gt;&amp;nbsp;Save
+    &lt;/button&gt;"] 
+  "107374182607" -> "141733920905"  [ label = "DDG: "] 
+  "107374182607" -> "90194313948"  [ label = "DDG: "] 
+  "107374182607" -> "68719479978"  [ label = "DDG: "] 
+  "30064774338" -> "30064774337"  [ label = "DDG: !canSave"] 
+  "30064774338" -> "30064774337"  [ label = "DDG: saving"] 
+  "30064774333" -> "30064774337"  [ label = "DDG: forking"] 
+  "107374182607" -> "30064774337"  [ label = "DDG: "] 
+  "30064774339" -> "30064774338"  [ label = "DDG: canSave"] 
+  "30064774331" -> "30064774338"  [ label = "DDG: saving"] 
+  "107374182607" -> "30064774338"  [ label = "DDG: "] 
+  "30064774354" -> "68719479979"  [ label = "DDG: cx"] 
+  "107374182607" -> "68719479979"  [ label = "DDG: "] 
+  "111669150062" -> "30064774340"  [ label = "DDG: this"] 
+  "107374182607" -> "30064774340"  [ label = "DDG: "] 
+  "30064774341" -> "30064774340"  [ label = "DDG: _tmp_0.fa"] 
+  "30064774343" -> "30064774340"  [ label = "DDG: _tmp_0.fa-spinner"] 
+  "30064774345" -> "30064774340"  [ label = "DDG: _tmp_0.fa-pulse"] 
+  "30064774347" -> "30064774340"  [ label = "DDG: _tmp_0.fa-floppy-o"] 
+  "30064774350" -> "30064774340"  [ label = "DDG: _tmp_0.fa-fw"] 
+  "30064774329" -> "30064774339"  [ label = "DDG: canSave"] 
+  "107374182607" -> "30064774339"  [ label = "DDG: "] 
+  "107374182607" -> "30064774341"  [ label = "DDG: "] 
+  "30064774338" -> "30064774343"  [ label = "DDG: saving"] 
+  "107374182607" -> "30064774343"  [ label = "DDG: "] 
+  "107374182607" -> "30064774345"  [ label = "DDG: "] 
+  "30064774338" -> "30064774345"  [ label = "DDG: saving"] 
+  "30064774349" -> "30064774347"  [ label = "DDG: saving"] 
+  "107374182607" -> "30064774350"  [ label = "DDG: "] 
+  "107374182607" -> "68719479989"  [ label = "DDG: "] 
+  "107374182607" -> "30064774349"  [ label = "DDG: "] 
+  "30064774338" -> "30064774349"  [ label = "DDG: saving"] 
+}

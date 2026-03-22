@@ -1,0 +1,112 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374182881" [label = <METHOD, 7<BR/>parse> ]
+"124554052065" [label = <METHOD_RETURN, 7<BR/>astexplorer/website/src/parsers/html/angular-eslint.js::program:wrapParesr:&lt;lambda&gt;0:visit:&lt;returnValue&gt;> ]
+"111669150611" [label = <PARAM, 7<BR/>this> ]
+"111669150612" [label = <PARAM, 7<BR/>code> ]
+"111669150613" [label = <PARAM, 7<BR/>options> ]
+"25769805010" [label = <BLOCK, 8<BR/>const { ast, visitorKeys, ser...> ]
+"30064778480" [label = <&lt;operator&gt;.assignment, 15<BR/>const addLocation = node =&gt; { if (!node.s...> ]
+"30064778481" [label = <&lt;operator&gt;.assignment, 45<BR/>const visit = node =&gt; { const keys = visi...> ]
+"141733921122" [label = <RETURN, 60<BR/>return visit(ast)> ]
+"30064778472" [label = <&lt;operator&gt;.assignment, 8<BR/>_tmp_0 = parseForESLint(code, options)> ]
+"30064778474" [label = <&lt;operator&gt;.assignment, 9<BR/>ast = _tmp_0.ast> ]
+"30064778476" [label = <&lt;operator&gt;.assignment, 10<BR/>visitorKeys = _tmp_0.visitorKeys> ]
+"25769805011" [label = <BLOCK, 11<BR/>{ convertNodeSourceSpanToLoc }> ]
+"68719484251" [label = <IDENTIFIER, 8<BR/>_tmp_0<BR/>const { ast, visitorKeys, ser...> ]
+"30064778482" [label = <visit, 60<BR/>visit(ast)> ]
+"30064778478" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_1.convertNodeSourceSpanToLoc = convertNode...> ]
+"68719484250" [label = <IDENTIFIER, 11<BR/>_tmp_1<BR/>{ convertNodeSourceSpanToLoc }> ]
+"68719484254" [label = <IDENTIFIER, 60<BR/>visit<BR/>visit(ast)> ]
+"68719484240" [label = <IDENTIFIER, 12<BR/>parseForESLint<BR/>parseForESLint(code, options)> ]
+"30064778473" [label = <parseForESLint, 12<BR/>parseForESLint(code, options)> ]
+  "141733921122" -> "124554052065"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064778472" -> "124554052065"  [ label = "DDG: _tmp_0"] 
+  "30064778473" -> "124554052065"  [ label = "DDG: code"] 
+  "30064778473" -> "124554052065"  [ label = "DDG: options"] 
+  "30064778472" -> "124554052065"  [ label = "DDG: parseForESLint(code, options)"] 
+  "30064778472" -> "124554052065"  [ label = "DDG: _tmp_0 = parseForESLint(code, options)"] 
+  "30064778474" -> "124554052065"  [ label = "DDG: _tmp_0.ast"] 
+  "30064778474" -> "124554052065"  [ label = "DDG: ast = _tmp_0.ast"] 
+  "30064778476" -> "124554052065"  [ label = "DDG: visitorKeys"] 
+  "30064778476" -> "124554052065"  [ label = "DDG: _tmp_0.visitorKeys"] 
+  "30064778476" -> "124554052065"  [ label = "DDG: visitorKeys = _tmp_0.visitorKeys"] 
+  "30064778478" -> "124554052065"  [ label = "DDG: _tmp_1.convertNodeSourceSpanToLoc"] 
+  "30064778478" -> "124554052065"  [ label = "DDG: convertNodeSourceSpanToLoc"] 
+  "30064778478" -> "124554052065"  [ label = "DDG: _tmp_1.convertNodeSourceSpanToLoc = convertNodeSourceSpanToLoc"] 
+  "30064778480" -> "124554052065"  [ label = "DDG: addLocation"] 
+  "30064778480" -> "124554052065"  [ label = "DDG: const addLocation = node =&gt; {
+      if (!node.startSourceSpan || !node.endSourceSpan) {
+        if (!node.sourceSpan) return node;
+        const range = node.range || [
+          node.sourceSpan.start.offset,
+          node.sourceSpan.end.offset,
+        ];
+        const loc = node.loc || convertNodeSourceSpanToLoc(node.sourceSpan);
+        return {
+          ...node,
+          range,
+          loc,
+        };
+      } else {
+        const range = node.range || [
+          node.startSourceSpan.start.offset,
+          node.endSourceSpan.end.offset,
+        ];
+        const loc = node.loc || { 
+          start: convertNodeSourceSpanToLoc(node.startSourceSpan).start,
+          end: convertNodeSourceSpanToLoc(node.endSourceSpan).end,
+        };
+        return {
+          ...node,
+          range,
+          loc,
+        };
+      }
+    }"] 
+  "30064778481" -> "124554052065"  [ label = "DDG: visit"] 
+  "30064778481" -> "124554052065"  [ label = "DDG: const visit = node =&gt; {
+      const keys = visitorKeys[node.type] || [];
+      const newNode = keys.reduce((acc, key) =&gt; {
+        const child = node[key];
+        if (Array.isArray(child)) {
+          const children = child;
+          return { ...acc, [key]: children.map(visit) };
+        } else if (child != null) {
+          return { ...acc, [key]: visit(child) };
+        } else {
+          return acc;
+        }
+      }, node);
+      return addLocation(newNode);
+    }"] 
+  "30064778482" -> "124554052065"  [ label = "DDG: this"] 
+  "30064778482" -> "124554052065"  [ label = "DDG: ast"] 
+  "30064778482" -> "124554052065"  [ label = "DDG: visit(ast)"] 
+  "107374182881" -> "111669150611"  [ label = "DDG: "] 
+  "107374182881" -> "111669150612"  [ label = "DDG: "] 
+  "107374182881" -> "111669150613"  [ label = "DDG: "] 
+  "107374182881" -> "25769805010"  [ label = "DDG: "] 
+  "107374182881" -> "30064778480"  [ label = "DDG: "] 
+  "107374182881" -> "30064778481"  [ label = "DDG: "] 
+  "30064778482" -> "141733921122"  [ label = "DDG: visit(ast)"] 
+  "30064778473" -> "30064778472"  [ label = "DDG: this"] 
+  "30064778473" -> "30064778472"  [ label = "DDG: code"] 
+  "30064778473" -> "30064778472"  [ label = "DDG: options"] 
+  "30064778472" -> "30064778474"  [ label = "DDG: _tmp_0"] 
+  "30064778472" -> "30064778476"  [ label = "DDG: _tmp_0"] 
+  "107374182881" -> "25769805011"  [ label = "DDG: "] 
+  "107374182881" -> "68719484251"  [ label = "DDG: "] 
+  "107374182881" -> "30064778478"  [ label = "DDG: "] 
+  "107374182881" -> "68719484250"  [ label = "DDG: "] 
+  "107374182881" -> "68719484254"  [ label = "DDG: "] 
+  "30064778473" -> "30064778482"  [ label = "DDG: this"] 
+  "107374182881" -> "30064778482"  [ label = "DDG: "] 
+  "30064778474" -> "30064778482"  [ label = "DDG: ast"] 
+  "30064778483" -> "68719484240"  [ label = "DDG: parseForESLint"] 
+  "107374182881" -> "68719484240"  [ label = "DDG: "] 
+  "111669150611" -> "30064778473"  [ label = "DDG: this"] 
+  "107374182881" -> "30064778473"  [ label = "DDG: "] 
+  "111669150612" -> "30064778473"  [ label = "DDG: code"] 
+  "111669150613" -> "30064778473"  [ label = "DDG: options"] 
+}

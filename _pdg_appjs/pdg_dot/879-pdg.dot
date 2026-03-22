@@ -1,0 +1,79 @@
+digraph "formatResults" {  
+node [shape="rect"];  
+"107374183279" [label = <METHOD, 5<BR/>formatResults> ]
+"124554052462" [label = <METHOD_RETURN, 5<BR/>ANY> ]
+"111669151468" [label = <PARAM, 5<BR/>this> ]
+"111669151469" [label = <PARAM, 5<BR/>results> ]
+"111669151470" [label = <PARAM, 5<BR/>code> ]
+"141733921417" [label = <RETURN, 6<BR/>return results.length === 0 ? '// Lint rule...> ]
+"30064785546" [label = <&lt;operator&gt;.conditional, 6<BR/>results.length === 0 ? &quot;// Lint rule not fired....> ]
+"30064785547" [label = <&lt;operator&gt;.equals, 6<BR/>results.length === 0> ]
+"30064785549" [label = <trim, 8<BR/>results .map((result) =&gt; formatResult(r...> ]
+"30064785551" [label = <&lt;operator&gt;.assignment, 8<BR/>(_tmp_0 = results .map((result) =&gt; form...> ]
+"30064785552" [label = <join, 8<BR/>results .map((result) =&gt; formatResult(r...> ]
+"30064785554" [label = <&lt;operator&gt;.assignment, 8<BR/>(_tmp_1 = results .map((result) =&gt; form...> ]
+"30064785555" [label = <map, 8<BR/>results .map((result) =&gt; formatResult(r...> ]
+"30064785550" [label = <&lt;operator&gt;.fieldAccess, 8<BR/>(_tmp_0 = results .map((result) =&gt; form...> ]
+"55834580181" [label = <FIELD_IDENTIFIER, 11<BR/>trim> ]
+"30064785553" [label = <&lt;operator&gt;.fieldAccess, 8<BR/>(_tmp_1 = results .map((result) =&gt; form...> ]
+"55834580180" [label = <FIELD_IDENTIFIER, 10<BR/>join> ]
+"30064785556" [label = <&lt;operator&gt;.fieldAccess, 8<BR/>results.map> ]
+"120259084954" [label = <METHOD_REF, 9<BR/>&lt;lambda&gt;0<BR/>results .map((result) =&gt; formatResult(r...> ]
+"55834580179" [label = <FIELD_IDENTIFIER, 9<BR/>map> ]
+  "141733921417" -> "124554052462"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151468" -> "124554052462"  [ label = "DDG: this"] 
+  "111669151469" -> "124554052462"  [ label = "DDG: results"] 
+  "111669151470" -> "124554052462"  [ label = "DDG: code"] 
+  "30064785547" -> "124554052462"  [ label = "DDG: results.length"] 
+  "30064785546" -> "124554052462"  [ label = "DDG: results.length === 0"] 
+  "30064785555" -> "124554052462"  [ label = "DDG: results"] 
+  "30064785554" -> "124554052462"  [ label = "DDG: results
+        .map((result) =&gt; formatResult(result, code))"] 
+  "30064785552" -> "124554052462"  [ label = "DDG: _tmp_1"] 
+  "30064785551" -> "124554052462"  [ label = "DDG: results
+        .map((result) =&gt; formatResult(result, code))
+        .join('')"] 
+  "30064785549" -> "124554052462"  [ label = "DDG: _tmp_0"] 
+  "30064785546" -> "124554052462"  [ label = "DDG: results
+        .map((result) =&gt; formatResult(result, code))
+        .join('')
+        .trim()"] 
+  "30064785546" -> "124554052462"  [ label = "DDG: results.length === 0 ? &quot;// Lint rule not fired.&quot; : results
+        .map((result) =&gt; formatResult(result, code))
+        .join('')
+        .trim()"] 
+  "107374183279" -> "111669151468"  [ label = "DDG: "] 
+  "107374183279" -> "111669151469"  [ label = "DDG: "] 
+  "107374183279" -> "111669151470"  [ label = "DDG: "] 
+  "30064785546" -> "141733921417"  [ label = "DDG: results.length === 0 ? &quot;// Lint rule not fired.&quot; : results
+        .map((result) =&gt; formatResult(result, code))
+        .join('')
+        .trim()"] 
+  "107374183279" -> "30064785546"  [ label = "DDG: "] 
+  "30064785549" -> "30064785546"  [ label = "DDG: _tmp_0"] 
+  "111669151469" -> "30064785547"  [ label = "DDG: results"] 
+  "107374183279" -> "30064785547"  [ label = "DDG: "] 
+  "30064785551" -> "30064785549"  [ label = "DDG: _tmp_0"] 
+  "107374183279" -> "30064785549"  [ label = "DDG: "] 
+  "30064785552" -> "30064785551"  [ label = "DDG: _tmp_1"] 
+  "30064785552" -> "30064785551"  [ label = "DDG: &quot;&quot;"] 
+  "30064785554" -> "30064785552"  [ label = "DDG: _tmp_1"] 
+  "107374183279" -> "30064785552"  [ label = "DDG: "] 
+  "30064785555" -> "30064785554"  [ label = "DDG: results"] 
+  "30064785555" -> "30064785554"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "111669151469" -> "30064785555"  [ label = "DDG: results"] 
+  "30064785547" -> "30064785555"  [ label = "DDG: results.length"] 
+  "107374183279" -> "30064785555"  [ label = "DDG: "] 
+  "30064785547" -> "120259084954"  [ label = "CDG: "] 
+  "30064785547" -> "55834580180"  [ label = "CDG: "] 
+  "30064785547" -> "30064785550"  [ label = "CDG: "] 
+  "30064785547" -> "55834580179"  [ label = "CDG: "] 
+  "30064785547" -> "30064785549"  [ label = "CDG: "] 
+  "30064785547" -> "30064785552"  [ label = "CDG: "] 
+  "30064785547" -> "55834580181"  [ label = "CDG: "] 
+  "30064785547" -> "30064785551"  [ label = "CDG: "] 
+  "30064785547" -> "30064785554"  [ label = "CDG: "] 
+  "30064785547" -> "30064785553"  [ label = "CDG: "] 
+  "30064785547" -> "30064785556"  [ label = "CDG: "] 
+  "30064785547" -> "30064785555"  [ label = "CDG: "] 
+}

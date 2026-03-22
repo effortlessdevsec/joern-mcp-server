@@ -1,0 +1,50 @@
+digraph "componentDidMount" {  
+node [shape="rect"];  
+"107374182517" [label = <METHOD, 16<BR/>componentDidMount> ]
+"124554051703" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669149927" [label = <PARAM, 16<BR/>this> ]
+"30064773063" [label = <componentDidMount, 17<BR/>super.componentDidMount()> ]
+"30064773066" [label = <setOption, 19<BR/>this.codeMirror.setOption('extraKeys', { ...> ]
+"30064773076" [label = <_bindCMHandler, 25<BR/>this._bindCMHandler('cursorActivity', cm =&gt; { ...> ]
+"30064773070" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_11.Ctrl-Space = &lt;lambda&gt;4> ]
+"30064773072" [label = <&lt;operator&gt;.assignment, 21<BR/>_tmp_11.Ctrl-I = &lt;lambda&gt;5> ]
+"30064773074" [label = <&lt;operator&gt;.assignment, 22<BR/>_tmp_11.Ctrl-O = &lt;lambda&gt;6> ]
+"68719478743" [label = <IDENTIFIER, 19<BR/>_tmp_11<BR/>{ 'Ctrl-Space': cm =&gt; server &amp;&amp; server.co...> ]
+"30064773065" [label = <&lt;operator&gt;.assignment, 17<BR/>(_tmp_9 = super)> ]
+"30064773068" [label = <&lt;operator&gt;.assignment, 19<BR/>(_tmp_10 = this.codeMirror)> ]
+  "30064773063" -> "124554051703"  [ label = "DDG: _tmp_9"] 
+  "30064773063" -> "124554051703"  [ label = "DDG: super.componentDidMount()"] 
+  "30064773066" -> "124554051703"  [ label = "DDG: _tmp_10"] 
+  "30064773070" -> "124554051703"  [ label = "DDG: _tmp_11.Ctrl-Space"] 
+  "30064773070" -> "124554051703"  [ label = "DDG: _tmp_11.Ctrl-Space = &lt;lambda&gt;4"] 
+  "30064773072" -> "124554051703"  [ label = "DDG: _tmp_11.Ctrl-I"] 
+  "30064773072" -> "124554051703"  [ label = "DDG: _tmp_11.Ctrl-I = &lt;lambda&gt;5"] 
+  "30064773074" -> "124554051703"  [ label = "DDG: _tmp_11.Ctrl-O"] 
+  "30064773074" -> "124554051703"  [ label = "DDG: _tmp_11.Ctrl-O = &lt;lambda&gt;6"] 
+  "30064773066" -> "124554051703"  [ label = "DDG: this.codeMirror.setOption('extraKeys', {
+      'Ctrl-Space': cm =&gt; server &amp;&amp; server.complete(cm),
+      'Ctrl-I': cm =&gt; server &amp;&amp; server.showType(cm),
+      'Ctrl-O': cm =&gt; server &amp;&amp; server.showDocs(cm),
+    })"] 
+  "30064773076" -> "124554051703"  [ label = "DDG: this"] 
+  "30064773076" -> "124554051703"  [ label = "DDG: this._bindCMHandler('cursorActivity', cm =&gt; {
+      server &amp;&amp; server.updateArgHints(cm);
+    })"] 
+  "30064773065" -> "124554051703"  [ label = "DDG: super"] 
+  "107374182517" -> "111669149927"  [ label = "DDG: "] 
+  "30064773065" -> "30064773063"  [ label = "DDG: _tmp_9"] 
+  "107374182517" -> "30064773063"  [ label = "DDG: "] 
+  "30064773068" -> "30064773066"  [ label = "DDG: _tmp_10"] 
+  "107374182517" -> "30064773066"  [ label = "DDG: "] 
+  "30064773070" -> "30064773066"  [ label = "DDG: _tmp_11.Ctrl-Space"] 
+  "30064773072" -> "30064773066"  [ label = "DDG: _tmp_11.Ctrl-I"] 
+  "30064773074" -> "30064773066"  [ label = "DDG: _tmp_11.Ctrl-O"] 
+  "111669149927" -> "30064773076"  [ label = "DDG: this"] 
+  "107374182517" -> "30064773076"  [ label = "DDG: "] 
+  "107374182517" -> "30064773070"  [ label = "DDG: "] 
+  "107374182517" -> "30064773072"  [ label = "DDG: "] 
+  "107374182517" -> "30064773074"  [ label = "DDG: "] 
+  "107374182517" -> "68719478743"  [ label = "DDG: "] 
+  "107374182517" -> "30064773065"  [ label = "DDG: "] 
+  "111669149927" -> "30064773068"  [ label = "DDG: this"] 
+}

@@ -1,0 +1,21 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374182454" [label = <METHOD, 35<BR/>&lt;lambda&gt;1> ]
+"124554051637" [label = <METHOD_RETURN, 35<BR/>void> ]
+"111669149820" [label = <PARAM, 35<BR/>this> ]
+"30064772097" [label = <log, 36<BR/>console.log(`Server listening on port ${PORT}!`)> ]
+"30064772099" [label = <&lt;operator&gt;.formatString, 36<BR/>&lt;operator&gt;.formatString(&quot;Server listening on po...> ]
+  "111669149820" -> "124554051637"  [ label = "DDG: this"] 
+  "30064772097" -> "124554051637"  [ label = "DDG: console"] 
+  "30064772099" -> "124554051637"  [ label = "DDG: PORT"] 
+  "30064772097" -> "124554051637"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;Server listening on port &quot;, PORT, &quot;!&quot;)"] 
+  "30064772097" -> "124554051637"  [ label = "DDG: console.log(`Server listening on port ${PORT}!`)"] 
+  "107374182454" -> "111669149820"  [ label = "DDG: "] 
+  "107374182454" -> "30064772097"  [ label = "DDG: "] 
+  "30064772099" -> "30064772097"  [ label = "DDG: &quot;Server listening on port &quot;"] 
+  "30064772099" -> "30064772097"  [ label = "DDG: PORT"] 
+  "30064772099" -> "30064772097"  [ label = "DDG: &quot;!&quot;"] 
+  "107374182454" -> "30064772099"  [ label = "DDG: "] 
+  "30064772134" -> "30064772099"  [ label = "DDG: PORT"] 
+  "30064772138" -> "30064772099"  [ label = "DDG: PORT"] 
+}

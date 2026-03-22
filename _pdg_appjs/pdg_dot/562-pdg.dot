@@ -1,0 +1,34 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182962" [label = <METHOD, 31<BR/>loadParser> ]
+"124554052145" [label = <METHOD_RETURN, 31<BR/>void> ]
+"111669150793" [label = <PARAM, 31<BR/>this> ]
+"111669150794" [label = <PARAM, 31<BR/>callback> ]
+"30064779660" [label = <require, 32<BR/>require(['intl-messageformat-parser'], (all) =&gt;...> ]
+"68719485440" [label = <IDENTIFIER, 32<BR/>require<BR/>require(['intl-messageformat-parser'], (all) =&gt;...> ]
+"30064779661" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_7 = __ecma.Array.factory()> ]
+"30064779663" [label = <, 32<BR/>_tmp_7.push(&quot;intl-messageformat-parser&quot;)> ]
+"68719485445" [label = <IDENTIFIER, 32<BR/>_tmp_7<BR/>['intl-messageformat-parser']> ]
+  "111669150794" -> "124554052145"  [ label = "DDG: callback"] 
+  "30064779660" -> "124554052145"  [ label = "DDG: this"] 
+  "30064779661" -> "124554052145"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064779661" -> "124554052145"  [ label = "DDG: _tmp_7 = __ecma.Array.factory()"] 
+  "30064779663" -> "124554052145"  [ label = "DDG: _tmp_7"] 
+  "30064779663" -> "124554052145"  [ label = "DDG: _tmp_7.push(&quot;intl-messageformat-parser&quot;)"] 
+  "30064779660" -> "124554052145"  [ label = "DDG: require(['intl-messageformat-parser'], (all) =&gt; {
+      Object.keys(all.TYPE).forEach((k) =&gt; {
+        TYPES[k] = all.TYPE[k];
+      });
+      callback(all);
+    })"] 
+  "107374182962" -> "111669150793"  [ label = "DDG: "] 
+  "107374182962" -> "111669150794"  [ label = "DDG: "] 
+  "107374182962" -> "68719485440"  [ label = "DDG: "] 
+  "111669150793" -> "30064779660"  [ label = "DDG: this"] 
+  "107374182962" -> "30064779660"  [ label = "DDG: "] 
+  "30064779663" -> "30064779660"  [ label = "DDG: _tmp_7"] 
+  "107374182962" -> "30064779661"  [ label = "DDG: "] 
+  "107374182962" -> "68719485445"  [ label = "DDG: "] 
+  "30064779661" -> "30064779663"  [ label = "DDG: _tmp_7"] 
+  "107374182962" -> "30064779663"  [ label = "DDG: "] 
+}

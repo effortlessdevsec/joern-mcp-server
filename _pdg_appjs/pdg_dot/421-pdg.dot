@@ -1,0 +1,57 @@
+digraph "decoratePosition" {  
+node [shape="rect"];  
+"107374182821" [label = <METHOD, 33<BR/>decoratePosition> ]
+"124554052003" [label = <METHOD_RETURN, 33<BR/>void> ]
+"111669150481" [label = <PARAM, 33<BR/>this> ]
+"111669150482" [label = <PARAM, 33<BR/>node> ]
+"111669150483" [label = <PARAM, 33<BR/>end> ]
+"30064777594" [label = <&lt;operator&gt;.assignment, 34<BR/>node.loc = { start: node.token.position...> ]
+"30064777603" [label = <forEach, 38<BR/>node.children.forEach((child, i) =&gt; { c...> ]
+"30064777596" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_7.start = node.token.position || 0> ]
+"30064777601" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_7.end = end> ]
+"68719483347" [label = <IDENTIFIER, 34<BR/>_tmp_7<BR/>{ start: node.token.position || 0, ...> ]
+"30064777605" [label = <&lt;operator&gt;.assignment, 38<BR/>(_tmp_8 = node.children)> ]
+"30064777598" [label = <&lt;operator&gt;.logicalOr, 35<BR/>node.token.position || 0> ]
+  "111669150481" -> "124554052003"  [ label = "DDG: this"] 
+  "111669150482" -> "124554052003"  [ label = "DDG: node"] 
+  "30064777594" -> "124554052003"  [ label = "DDG: node.loc"] 
+  "30064777596" -> "124554052003"  [ label = "DDG: _tmp_7.start"] 
+  "30064777598" -> "124554052003"  [ label = "DDG: node.token.position"] 
+  "30064777596" -> "124554052003"  [ label = "DDG: node.token.position || 0"] 
+  "30064777596" -> "124554052003"  [ label = "DDG: _tmp_7.start = node.token.position || 0"] 
+  "30064777601" -> "124554052003"  [ label = "DDG: _tmp_7.end"] 
+  "30064777601" -> "124554052003"  [ label = "DDG: end"] 
+  "30064777601" -> "124554052003"  [ label = "DDG: _tmp_7.end = end"] 
+  "30064777594" -> "124554052003"  [ label = "DDG: node.loc = {
+        start: node.token.position || 0,
+        end,
+      }"] 
+  "30064777605" -> "124554052003"  [ label = "DDG: node.children"] 
+  "30064777603" -> "124554052003"  [ label = "DDG: _tmp_8"] 
+  "30064777603" -> "124554052003"  [ label = "DDG: node.children.forEach((child, i) =&gt; {
+        const nextSibling = node.children[i + 1];
+        decoratePosition(
+          child,
+          nextSibling &amp;&amp; nextSibling.token &amp;&amp; 'position' in nextSibling.token
+            ? nextSibling.token.position -
+                (nextSibling.token.preceding || [])
+                  .reduce((s, n) =&gt; s + (n.data || '').length, 0)
+            : end,
+        );
+      })"] 
+  "107374182821" -> "111669150481"  [ label = "DDG: "] 
+  "107374182821" -> "111669150482"  [ label = "DDG: "] 
+  "107374182821" -> "111669150483"  [ label = "DDG: "] 
+  "30064777596" -> "30064777594"  [ label = "DDG: _tmp_7.start"] 
+  "30064777601" -> "30064777594"  [ label = "DDG: _tmp_7.end"] 
+  "107374182821" -> "30064777594"  [ label = "DDG: "] 
+  "30064777605" -> "30064777603"  [ label = "DDG: _tmp_8"] 
+  "107374182821" -> "30064777603"  [ label = "DDG: "] 
+  "30064777598" -> "30064777596"  [ label = "DDG: node.token.position"] 
+  "30064777598" -> "30064777596"  [ label = "DDG: 0"] 
+  "111669150483" -> "30064777601"  [ label = "DDG: end"] 
+  "107374182821" -> "30064777601"  [ label = "DDG: "] 
+  "107374182821" -> "68719483347"  [ label = "DDG: "] 
+  "111669150482" -> "30064777605"  [ label = "DDG: node"] 
+  "107374182821" -> "30064777598"  [ label = "DDG: "] 
+}

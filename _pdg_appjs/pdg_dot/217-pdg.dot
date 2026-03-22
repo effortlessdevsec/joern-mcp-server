@@ -1,0 +1,180 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182617" [label = <METHOD, 29<BR/>render> ]
+"124554051801" [label = <METHOD_RETURN, 29<BR/>ANY> ]
+"111669150080" [label = <PARAM, 29<BR/>this> ]
+"30064774528" [label = <&lt;operator&gt;.assignment, 30<BR/>const transformers = this.props.category.transf...> ]
+"141733920910" [label = <RETURN, 33<BR/>return ( &lt;div className={cx({ but...> ]
+"154618823428" [label = <TEMPLATE_DOM, 34<BR/>&lt;div className={cx({ button: true, ...> ]
+"30064774529" [label = <filter, 30<BR/>this.props.category.transformers.filter( ...> ]
+"30064774569" [label = <&lt;operator&gt;.logicalAnd, 54<BR/>!!transformers.length &amp;&amp; &lt;ul&gt; {transf...> ]
+"30064774531" [label = <&lt;operator&gt;.assignment, 30<BR/>(_tmp_5 = this.props.category.transformers)> ]
+"30064774535" [label = <cx, 34<BR/>cx({ button: true, menuButton: ...> ]
+"90194313983" [label = <LITERAL, 40<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064774570" [label = <&lt;operator&gt;.logicalNot, 54<BR/>!!transformers.length> ]
+"68719480155" [label = <IDENTIFIER, 34<BR/>cx<BR/>cx({ button: true, menuButton: ...> ]
+"30064774548" [label = <&lt;operator&gt;.logicalNot, 42<BR/>!this.props.category.transformers.length> ]
+"30064774571" [label = <&lt;operator&gt;.logicalNot, 54<BR/>!transformers.length> ]
+"30064774573" [label = <map, 55<BR/>transformers.map(transformer =&gt; ( &lt;...> ]
+"30064774536" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_6.button = true> ]
+"30064774538" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_6.menuButton = true> ]
+"30064774540" [label = <&lt;operator&gt;.assignment, 37<BR/>_tmp_6.disabled = !this.props.category.transfor...> ]
+"68719480161" [label = <IDENTIFIER, 34<BR/>_tmp_6<BR/>{ button: true, menuButton: tru...> ]
+"30064774553" [label = <cx, 44<BR/>cx({ fa: true, 'fa-...> ]
+"68719480164" [label = <IDENTIFIER, 44<BR/>cx<BR/>cx({ fa: true, 'fa-...> ]
+"30064774542" [label = <&lt;operator&gt;.logicalNot, 37<BR/>!this.props.category.transformers.length> ]
+"30064774554" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_7.fa = true> ]
+"30064774556" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_7.fa-lg = true> ]
+"30064774558" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_7.fa-toggle-off = !this.props.showTransformer> ]
+"30064774563" [label = <&lt;operator&gt;.assignment, 48<BR/>_tmp_7.fa-toggle-on = this.props.showTransformer> ]
+"30064774567" [label = <&lt;operator&gt;.assignment, 49<BR/>_tmp_7.fa-fw = true> ]
+"68719480173" [label = <IDENTIFIER, 44<BR/>_tmp_7<BR/>{ fa: true, 'fa-lg'...> ]
+"30064774560" [label = <&lt;operator&gt;.logicalNot, 47<BR/>!this.props.showTransformer> ]
+"30064774574" [label = <&lt;operator&gt;.fieldAccess, 55<BR/>transformers.map> ]
+"120259084423" [label = <METHOD_REF, 55<BR/>&lt;lambda&gt;1<BR/>transformers.map(transformer =&gt; ( &lt;...> ]
+"55834576271" [label = <FIELD_IDENTIFIER, 55<BR/>map> ]
+  "141733920910" -> "124554051801"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064774528" -> "124554051801"  [ label = "DDG: transformers"] 
+  "30064774529" -> "124554051801"  [ label = "DDG: _tmp_5"] 
+  "30064774528" -> "124554051801"  [ label = "DDG: this.props.category.transformers.filter(
+      t =&gt; t.showInMenu !== false || t == this.props.transformer,
+    )"] 
+  "30064774528" -> "124554051801"  [ label = "DDG: const transformers = this.props.category.transformers.filter(
+      t =&gt; t.showInMenu !== false || t == this.props.transformer,
+    )"] 
+  "30064774536" -> "124554051801"  [ label = "DDG: _tmp_6.button"] 
+  "30064774536" -> "124554051801"  [ label = "DDG: _tmp_6.button = true"] 
+  "30064774538" -> "124554051801"  [ label = "DDG: _tmp_6.menuButton"] 
+  "30064774538" -> "124554051801"  [ label = "DDG: _tmp_6.menuButton = true"] 
+  "30064774540" -> "124554051801"  [ label = "DDG: _tmp_6.disabled"] 
+  "30064774540" -> "124554051801"  [ label = "DDG: _tmp_6.disabled = !this.props.category.transformers.length"] 
+  "30064774535" -> "124554051801"  [ label = "DDG: cx({
+        button: true,
+        menuButton: true,
+        disabled: !this.props.category.transformers.length,
+      })"] 
+  "30064774548" -> "124554051801"  [ label = "DDG: !this.props.category.transformers.length"] 
+  "30064774553" -> "124554051801"  [ label = "DDG: this"] 
+  "30064774554" -> "124554051801"  [ label = "DDG: _tmp_7.fa"] 
+  "30064774554" -> "124554051801"  [ label = "DDG: _tmp_7.fa = true"] 
+  "30064774556" -> "124554051801"  [ label = "DDG: _tmp_7.fa-lg"] 
+  "30064774556" -> "124554051801"  [ label = "DDG: _tmp_7.fa-lg = true"] 
+  "30064774558" -> "124554051801"  [ label = "DDG: _tmp_7.fa-toggle-off"] 
+  "30064774558" -> "124554051801"  [ label = "DDG: !this.props.showTransformer"] 
+  "30064774558" -> "124554051801"  [ label = "DDG: _tmp_7.fa-toggle-off = !this.props.showTransformer"] 
+  "30064774563" -> "124554051801"  [ label = "DDG: _tmp_7.fa-toggle-on"] 
+  "30064774563" -> "124554051801"  [ label = "DDG: _tmp_7.fa-toggle-on = this.props.showTransformer"] 
+  "30064774567" -> "124554051801"  [ label = "DDG: _tmp_7.fa-fw"] 
+  "30064774567" -> "124554051801"  [ label = "DDG: _tmp_7.fa-fw = true"] 
+  "30064774553" -> "124554051801"  [ label = "DDG: cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-toggle-off': !this.props.showTransformer,
+              'fa-toggle-on': this.props.showTransformer,
+              'fa-fw': true,
+            })"] 
+  "30064774571" -> "124554051801"  [ label = "DDG: transformers.length"] 
+  "30064774570" -> "124554051801"  [ label = "DDG: !transformers.length"] 
+  "30064774569" -> "124554051801"  [ label = "DDG: !!transformers.length"] 
+  "30064774573" -> "124554051801"  [ label = "DDG: transformers"] 
+  "30064774573" -> "124554051801"  [ label = "DDG: transformers.map(transformer =&gt; (
+            &lt;li
+              key={transformer.id}
+              className={cx({
+                selected: this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer,
+              })}
+              onClick={this._onClick}&gt;
+              &lt;button value={transformer.id} type=&quot;button&quot; &gt;
+                {transformer.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;
+          ))"] 
+  "30064774569" -> "124554051801"  [ label = "DDG: !!transformers.length &amp;&amp; &lt;ul&gt;
+          {transformers.map(transformer =&gt; (
+            &lt;li
+              key={transformer.id}
+              className={cx({
+                selected: this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer,
+              })}
+              onClick={this._onClick}&gt;
+              &lt;button value={transformer.id} type=&quot;button&quot; &gt;
+                {transformer.displayName}
+              &lt;/button&gt;
+            &lt;/li&gt;
+          ))}
+        &lt;/ul&gt;"] 
+  "107374182617" -> "111669150080"  [ label = "DDG: "] 
+  "30064774529" -> "30064774528"  [ label = "DDG: _tmp_5"] 
+  "30064774529" -> "30064774528"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "154618823428" -> "141733920910"  [ label = "DDG: &lt;div className={cx({
+        button: true,
+        menuButton: true,
+        disabled: !this.props.category.transformers.length,
+      })}&gt;
+        &lt;button
+          type=&quot;button&quot;
+          onClick={this._onToggle}
+          disabled={!this.props.category.transformers.length}&gt;
+          &lt;i
+            className={cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-toggle-off': !this.props.showTransformer,
+              'fa-toggle-on': this.props.showTransformer,
+              'fa-fw': true,
+            })}
+          /&gt;
+          &amp;nbsp;Transform
+        &lt;/button&gt;
+        {!!transformers.length &amp;&amp; &lt;ul&gt;
+          {transformers.map(transformer =&gt; (
+            &lt;li
+              key={transformer.id}
+              className={cx({
+                selected: this.props.showTransformer &amp;&amp;
+                  this.props.transformer === transformer,
+              })}
+              onClick={this._onClick}&gt;
+              &lt;button value={transformer.id} type=&quot;button&quot; &gt;
+        ..."] 
+  "107374182617" -> "141733920910"  [ label = "DDG: "] 
+  "30064774531" -> "30064774529"  [ label = "DDG: _tmp_5"] 
+  "107374182617" -> "30064774529"  [ label = "DDG: "] 
+  "30064774570" -> "30064774569"  [ label = "DDG: !transformers.length"] 
+  "107374182617" -> "90194313983"  [ label = "DDG: "] 
+  "30064774571" -> "30064774570"  [ label = "DDG: transformers.length"] 
+  "107374182617" -> "68719480155"  [ label = "DDG: "] 
+  "111669150080" -> "30064774535"  [ label = "DDG: this"] 
+  "107374182617" -> "30064774535"  [ label = "DDG: "] 
+  "30064774536" -> "30064774535"  [ label = "DDG: _tmp_6.button"] 
+  "30064774538" -> "30064774535"  [ label = "DDG: _tmp_6.menuButton"] 
+  "30064774540" -> "30064774535"  [ label = "DDG: _tmp_6.disabled"] 
+  "30064774528" -> "30064774571"  [ label = "DDG: transformers"] 
+  "107374182617" -> "30064774536"  [ label = "DDG: "] 
+  "107374182617" -> "30064774538"  [ label = "DDG: "] 
+  "30064774542" -> "30064774540"  [ label = "DDG: this.props.category.transformers.length"] 
+  "107374182617" -> "68719480161"  [ label = "DDG: "] 
+  "30064774528" -> "30064774573"  [ label = "DDG: transformers"] 
+  "30064774571" -> "30064774573"  [ label = "DDG: transformers.length"] 
+  "107374182617" -> "30064774573"  [ label = "DDG: "] 
+  "107374182617" -> "68719480164"  [ label = "DDG: "] 
+  "30064774535" -> "30064774553"  [ label = "DDG: this"] 
+  "107374182617" -> "30064774553"  [ label = "DDG: "] 
+  "30064774554" -> "30064774553"  [ label = "DDG: _tmp_7.fa"] 
+  "30064774556" -> "30064774553"  [ label = "DDG: _tmp_7.fa-lg"] 
+  "30064774558" -> "30064774553"  [ label = "DDG: _tmp_7.fa-toggle-off"] 
+  "30064774563" -> "30064774553"  [ label = "DDG: _tmp_7.fa-toggle-on"] 
+  "30064774567" -> "30064774553"  [ label = "DDG: _tmp_7.fa-fw"] 
+  "107374182617" -> "30064774554"  [ label = "DDG: "] 
+  "107374182617" -> "30064774556"  [ label = "DDG: "] 
+  "30064774560" -> "30064774558"  [ label = "DDG: this.props.showTransformer"] 
+  "30064774560" -> "30064774563"  [ label = "DDG: this.props.showTransformer"] 
+  "107374182617" -> "30064774567"  [ label = "DDG: "] 
+  "107374182617" -> "68719480173"  [ label = "DDG: "] 
+  "30064774570" -> "55834576271"  [ label = "CDG: "] 
+  "30064774570" -> "30064774574"  [ label = "CDG: "] 
+  "30064774570" -> "30064774573"  [ label = "CDG: "] 
+  "30064774570" -> "120259084423"  [ label = "CDG: "] 
+}

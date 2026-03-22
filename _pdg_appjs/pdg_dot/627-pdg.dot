@@ -1,0 +1,134 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183027" [label = <METHOD, 39<BR/>getDefaultOptions> ]
+"124554052210" [label = <METHOD_RETURN, 39<BR/>{ sourceType: __ecma.String; allowReserved: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; strictMode: __ecma.Boolean; tokens: __ecma.Boolean; features: { 'es7.asyncFunctions': __ecma.Boolean; 'es7.classProperties': __ecma.Boolean; 'es7.comprehensions': __ecma.Boolean; 'es7.decorators': __ecma.Boolean; 'es7.exportExtensions': __ecma.Boolean; 'es7.functionBind': __ecma.Boolean; 'es7.objectRestSpread': __ecma.Boolean; 'es7.trailingFunctionCommas': __ecma.Boolean; }; plugins: { jsx: __ecma.Boolean; flow: __ecma.Boolean; }; }> ]
+"111669150923" [label = <PARAM, 39<BR/>this> ]
+"141733921231" [label = <RETURN, 40<BR/>return { sourceType: 'module', allo...> ]
+"25769805439" [label = <BLOCK, 40<BR/>{ sourceType: 'module', allowReserv...> ]
+"30064780768" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_5.sourceType = &quot;module&quot;> ]
+"30064780770" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_5.allowReserved = false> ]
+"30064780772" [label = <&lt;operator&gt;.assignment, 43<BR/>_tmp_5.allowReturnOutsideFunction = false> ]
+"30064780774" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_5.strictMode = false> ]
+"30064780776" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_5.tokens = false> ]
+"30064780778" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_5.features = { 'es7.asyncFunctions...> ]
+"30064780796" [label = <&lt;operator&gt;.assignment, 58<BR/>_tmp_5.plugins = { jsx: true, flow: true }> ]
+"68719486553" [label = <IDENTIFIER, 40<BR/>_tmp_5<BR/>{ sourceType: 'module', allowReserv...> ]
+"30064780780" [label = <&lt;operator&gt;.assignment, 48<BR/>_tmp_6.es7.asyncFunctions = true> ]
+"30064780782" [label = <&lt;operator&gt;.assignment, 49<BR/>_tmp_6.es7.classProperties = true> ]
+"30064780784" [label = <&lt;operator&gt;.assignment, 50<BR/>_tmp_6.es7.comprehensions = true> ]
+"30064780786" [label = <&lt;operator&gt;.assignment, 51<BR/>_tmp_6.es7.decorators = true> ]
+"30064780788" [label = <&lt;operator&gt;.assignment, 52<BR/>_tmp_6.es7.exportExtensions = true> ]
+"30064780790" [label = <&lt;operator&gt;.assignment, 53<BR/>_tmp_6.es7.functionBind = true> ]
+"30064780792" [label = <&lt;operator&gt;.assignment, 54<BR/>_tmp_6.es7.objectRestSpread = true> ]
+"30064780794" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_6.es7.trailingFunctionCommas = true> ]
+"68719486548" [label = <IDENTIFIER, 47<BR/>_tmp_6<BR/>{ 'es7.asyncFunctions': true, '...> ]
+"30064780798" [label = <&lt;operator&gt;.assignment, 58<BR/>_tmp_7.jsx = true> ]
+"30064780800" [label = <&lt;operator&gt;.assignment, 58<BR/>_tmp_7.flow = true> ]
+"68719486552" [label = <IDENTIFIER, 58<BR/>_tmp_7<BR/>{ jsx: true, flow: true }> ]
+  "141733921231" -> "124554052210"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150923" -> "124554052210"  [ label = "DDG: this"] 
+  "30064780768" -> "124554052210"  [ label = "DDG: _tmp_5.sourceType"] 
+  "30064780768" -> "124554052210"  [ label = "DDG: _tmp_5.sourceType = &quot;module&quot;"] 
+  "30064780770" -> "124554052210"  [ label = "DDG: _tmp_5.allowReserved"] 
+  "30064780770" -> "124554052210"  [ label = "DDG: _tmp_5.allowReserved = false"] 
+  "30064780772" -> "124554052210"  [ label = "DDG: _tmp_5.allowReturnOutsideFunction"] 
+  "30064780772" -> "124554052210"  [ label = "DDG: _tmp_5.allowReturnOutsideFunction = false"] 
+  "30064780774" -> "124554052210"  [ label = "DDG: _tmp_5.strictMode"] 
+  "30064780774" -> "124554052210"  [ label = "DDG: _tmp_5.strictMode = false"] 
+  "30064780776" -> "124554052210"  [ label = "DDG: _tmp_5.tokens"] 
+  "30064780776" -> "124554052210"  [ label = "DDG: _tmp_5.tokens = false"] 
+  "30064780778" -> "124554052210"  [ label = "DDG: _tmp_5.features"] 
+  "30064780780" -> "124554052210"  [ label = "DDG: _tmp_6.es7.asyncFunctions"] 
+  "30064780780" -> "124554052210"  [ label = "DDG: _tmp_6.es7.asyncFunctions = true"] 
+  "30064780782" -> "124554052210"  [ label = "DDG: _tmp_6.es7.classProperties"] 
+  "30064780782" -> "124554052210"  [ label = "DDG: _tmp_6.es7.classProperties = true"] 
+  "30064780784" -> "124554052210"  [ label = "DDG: _tmp_6.es7.comprehensions"] 
+  "30064780784" -> "124554052210"  [ label = "DDG: _tmp_6.es7.comprehensions = true"] 
+  "30064780786" -> "124554052210"  [ label = "DDG: _tmp_6.es7.decorators"] 
+  "30064780786" -> "124554052210"  [ label = "DDG: _tmp_6.es7.decorators = true"] 
+  "30064780788" -> "124554052210"  [ label = "DDG: _tmp_6.es7.exportExtensions"] 
+  "30064780788" -> "124554052210"  [ label = "DDG: _tmp_6.es7.exportExtensions = true"] 
+  "30064780790" -> "124554052210"  [ label = "DDG: _tmp_6.es7.functionBind"] 
+  "30064780790" -> "124554052210"  [ label = "DDG: _tmp_6.es7.functionBind = true"] 
+  "30064780792" -> "124554052210"  [ label = "DDG: _tmp_6.es7.objectRestSpread"] 
+  "30064780792" -> "124554052210"  [ label = "DDG: _tmp_6.es7.objectRestSpread = true"] 
+  "30064780794" -> "124554052210"  [ label = "DDG: _tmp_6.es7.trailingFunctionCommas"] 
+  "30064780794" -> "124554052210"  [ label = "DDG: _tmp_6.es7.trailingFunctionCommas = true"] 
+  "30064780778" -> "124554052210"  [ label = "DDG: _tmp_5.features = {
+        'es7.asyncFunctions': true,
+        'es7.classProperties': true,
+        'es7.comprehensions': true,
+        'es7.decorators': true,
+        'es7.exportExtensions': true,
+        'es7.functionBind': true,
+        'es7.objectRestSpread': true,
+        'es7.trailingFunctionCommas': true,
+      }"] 
+  "30064780796" -> "124554052210"  [ label = "DDG: _tmp_5.plugins"] 
+  "30064780798" -> "124554052210"  [ label = "DDG: _tmp_7.jsx"] 
+  "30064780798" -> "124554052210"  [ label = "DDG: _tmp_7.jsx = true"] 
+  "30064780800" -> "124554052210"  [ label = "DDG: _tmp_7.flow"] 
+  "30064780800" -> "124554052210"  [ label = "DDG: _tmp_7.flow = true"] 
+  "30064780796" -> "124554052210"  [ label = "DDG: _tmp_5.plugins = { jsx: true, flow: true }"] 
+  "107374183027" -> "111669150923"  [ label = "DDG: "] 
+  "25769805439" -> "141733921231"  [ label = "DDG: "] 
+  "25769805439" -> "141733921231"  [ label = "DDG: {
+      sourceType: 'module',
+      allowReserved: false,
+      allowReturnOutsideFunction: false,
+      strictMode: false,
+      tokens: false,
+
+      features: {
+        'es7.asyncFunctions': true,
+        'es7.classProperties': true,
+        'es7.comprehensions': true,
+        'es7.decorators': true,
+        'es7.exportExtensions': true,
+        'es7.functionBind': true,
+        'es7.objectRestSpread': true,
+        'es7.trailingFunctionCommas': true,
+      },
+
+      plugins: { jsx: true, flow: true },
+    }"] 
+  "107374183027" -> "141733921231"  [ label = "DDG: "] 
+  "30064780768" -> "25769805439"  [ label = "DDG: _tmp_5.sourceType"] 
+  "30064780770" -> "25769805439"  [ label = "DDG: _tmp_5.allowReserved"] 
+  "30064780772" -> "25769805439"  [ label = "DDG: _tmp_5.allowReturnOutsideFunction"] 
+  "30064780774" -> "25769805439"  [ label = "DDG: _tmp_5.strictMode"] 
+  "30064780776" -> "25769805439"  [ label = "DDG: _tmp_5.tokens"] 
+  "30064780778" -> "25769805439"  [ label = "DDG: _tmp_5.features"] 
+  "30064780796" -> "25769805439"  [ label = "DDG: _tmp_5.plugins"] 
+  "107374183027" -> "25769805439"  [ label = "DDG: "] 
+  "107374183027" -> "30064780768"  [ label = "DDG: "] 
+  "107374183027" -> "30064780770"  [ label = "DDG: "] 
+  "107374183027" -> "30064780772"  [ label = "DDG: "] 
+  "107374183027" -> "30064780774"  [ label = "DDG: "] 
+  "107374183027" -> "30064780776"  [ label = "DDG: "] 
+  "30064780780" -> "30064780778"  [ label = "DDG: _tmp_6.es7.asyncFunctions"] 
+  "30064780782" -> "30064780778"  [ label = "DDG: _tmp_6.es7.classProperties"] 
+  "30064780784" -> "30064780778"  [ label = "DDG: _tmp_6.es7.comprehensions"] 
+  "30064780786" -> "30064780778"  [ label = "DDG: _tmp_6.es7.decorators"] 
+  "30064780788" -> "30064780778"  [ label = "DDG: _tmp_6.es7.exportExtensions"] 
+  "30064780790" -> "30064780778"  [ label = "DDG: _tmp_6.es7.functionBind"] 
+  "30064780792" -> "30064780778"  [ label = "DDG: _tmp_6.es7.objectRestSpread"] 
+  "30064780794" -> "30064780778"  [ label = "DDG: _tmp_6.es7.trailingFunctionCommas"] 
+  "107374183027" -> "30064780778"  [ label = "DDG: "] 
+  "30064780798" -> "30064780796"  [ label = "DDG: _tmp_7.jsx"] 
+  "30064780800" -> "30064780796"  [ label = "DDG: _tmp_7.flow"] 
+  "107374183027" -> "30064780796"  [ label = "DDG: "] 
+  "107374183027" -> "68719486553"  [ label = "DDG: "] 
+  "107374183027" -> "30064780780"  [ label = "DDG: "] 
+  "107374183027" -> "30064780782"  [ label = "DDG: "] 
+  "107374183027" -> "30064780784"  [ label = "DDG: "] 
+  "107374183027" -> "30064780786"  [ label = "DDG: "] 
+  "107374183027" -> "30064780788"  [ label = "DDG: "] 
+  "107374183027" -> "30064780790"  [ label = "DDG: "] 
+  "107374183027" -> "30064780792"  [ label = "DDG: "] 
+  "107374183027" -> "30064780794"  [ label = "DDG: "] 
+  "107374183027" -> "68719486548"  [ label = "DDG: "] 
+  "107374183027" -> "30064780798"  [ label = "DDG: "] 
+  "107374183027" -> "30064780800"  [ label = "DDG: "] 
+  "107374183027" -> "68719486552"  [ label = "DDG: "] 
+}

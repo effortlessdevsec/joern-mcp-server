@@ -1,0 +1,78 @@
+digraph "App" {  
+node [shape="rect"];  
+"107374182459" [label = <METHOD, 36<BR/>App> ]
+"124554051642" [label = <METHOD_RETURN, 36<BR/>Element> ]
+"111669149825" [label = <PARAM, 36<BR/>this> ]
+"111669149826" [label = <PARAM, 36<BR/>{showTransformer, hasError}> ]
+"30064772188" [label = <&lt;operator&gt;.assignment, 36<BR/>showTransformer = param1_0.showTransformer> ]
+"30064772190" [label = <&lt;operator&gt;.assignment, 36<BR/>hasError = param1_0.hasError> ]
+"141733920830" [label = <RETURN, 37<BR/>return ( &lt;&gt; &lt;ErrorMessageContainer /&gt;...> ]
+"154618822656" [label = <TEMPLATE_DOM, 38<BR/>&lt;&gt; &lt;ErrorMessageContainer /&gt; &lt;Paste...> ]
+"90194313492" [label = <LITERAL, 40<BR/>&quot;main&quot;<BR/>id=&quot;main&quot;> ]
+"30064772195" [label = <&lt;operator&gt;.conditional, 56<BR/>showTransformer ? &lt;TransformerContainer /&gt; : null> ]
+"30064772192" [label = <cx, 40<BR/>cx({hasError})> ]
+"90194313493" [label = <LITERAL, 47<BR/>&quot;splitpane-content&quot;<BR/>className=&quot;splitpane-content&quot;> ]
+"68719477858" [label = <IDENTIFIER, 40<BR/>cx<BR/>cx({hasError})> ]
+"90194313494" [label = <LITERAL, 48<BR/>true<BR/>{true}> ]
+"68719477863" [label = <IDENTIFIER, 49<BR/>resize<BR/>{resize}> ]
+"90194313495" [label = <LITERAL, 51<BR/>&quot;splitpane&quot;<BR/>className=&quot;splitpane&quot;> ]
+"30064772193" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_0.hasError = hasError> ]
+"68719477862" [label = <IDENTIFIER, 40<BR/>_tmp_0<BR/>{hasError}> ]
+"68719477864" [label = <IDENTIFIER, 52<BR/>resize<BR/>{resize}> ]
+  "141733920830" -> "124554051642"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149826" -> "124554051642"  [ label = "DDG: param1_0"] 
+  "30064772188" -> "124554051642"  [ label = "DDG: param1_0.showTransformer"] 
+  "30064772188" -> "124554051642"  [ label = "DDG: showTransformer = param1_0.showTransformer"] 
+  "30064772190" -> "124554051642"  [ label = "DDG: param1_0.hasError"] 
+  "30064772190" -> "124554051642"  [ label = "DDG: hasError = param1_0.hasError"] 
+  "30064772192" -> "124554051642"  [ label = "DDG: this"] 
+  "30064772193" -> "124554051642"  [ label = "DDG: _tmp_0.hasError"] 
+  "30064772193" -> "124554051642"  [ label = "DDG: hasError"] 
+  "30064772193" -> "124554051642"  [ label = "DDG: _tmp_0.hasError = hasError"] 
+  "30064772192" -> "124554051642"  [ label = "DDG: cx({hasError})"] 
+  "30064772195" -> "124554051642"  [ label = "DDG: showTransformer"] 
+  "30064772195" -> "124554051642"  [ label = "DDG: showTransformer ? &lt;TransformerContainer /&gt; : null"] 
+  "107374182459" -> "111669149825"  [ label = "DDG: "] 
+  "107374182459" -> "111669149826"  [ label = "DDG: "] 
+  "111669149826" -> "30064772188"  [ label = "DDG: param1_0"] 
+  "111669149826" -> "30064772190"  [ label = "DDG: param1_0"] 
+  "154618822656" -> "141733920830"  [ label = "DDG: &lt;&gt;
+      &lt;ErrorMessageContainer /&gt;
+      &lt;PasteDropTargetContainer id=&quot;main&quot; className={cx({hasError})}&gt;
+        &lt;LoadingIndicatorContainer /&gt;
+        &lt;SettingsDialogContainer /&gt;
+        &lt;ShareDialogContainer /&gt;
+        &lt;ToolbarContainer /&gt;
+        &lt;GistBanner /&gt;
+        &lt;SplitPane
+          className=&quot;splitpane-content&quot;
+          vertical={true}
+          onResize={resize}&gt;
+          &lt;SplitPane
+            className=&quot;splitpane&quot;
+            onResize={resize}&gt;
+            &lt;CodeEditorContainer /&gt;
+            &lt;ASTOutputContainer /&gt;
+          &lt;/SplitPane&gt;
+          {showTransformer ? &lt;TransformerContainer /&gt; : null}
+        &lt;/SplitPane&gt;
+      &lt;/PasteDropTargetContainer&gt;
+    &lt;/&gt;"] 
+  "107374182459" -> "141733920830"  [ label = "DDG: "] 
+  "107374182459" -> "90194313492"  [ label = "DDG: "] 
+  "107374182459" -> "30064772195"  [ label = "DDG: "] 
+  "107374182459" -> "90194313493"  [ label = "DDG: "] 
+  "30064772267" -> "68719477858"  [ label = "DDG: cx"] 
+  "107374182459" -> "68719477858"  [ label = "DDG: "] 
+  "111669149825" -> "30064772192"  [ label = "DDG: this"] 
+  "107374182459" -> "30064772192"  [ label = "DDG: "] 
+  "30064772193" -> "30064772192"  [ label = "DDG: _tmp_0.hasError"] 
+  "107374182459" -> "90194313494"  [ label = "DDG: "] 
+  "30064772268" -> "68719477863"  [ label = "DDG: resize"] 
+  "107374182459" -> "68719477863"  [ label = "DDG: "] 
+  "107374182459" -> "90194313495"  [ label = "DDG: "] 
+  "30064772190" -> "30064772193"  [ label = "DDG: hasError"] 
+  "107374182459" -> "30064772193"  [ label = "DDG: "] 
+  "107374182459" -> "68719477862"  [ label = "DDG: "] 
+  "107374182459" -> "68719477864"  [ label = "DDG: "] 
+}

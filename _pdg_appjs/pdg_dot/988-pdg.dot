@@ -1,0 +1,400 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374183388" [label = <METHOD, 1<BR/>&lt;lambda&gt;0> ]
+"124554052584" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669151736" [label = <PARAM, 1<BR/>this> ]
+"111669151737" [label = <PARAM, 1<BR/>CodeMirror> ]
+"30064787328" [label = <&lt;operator&gt;.assignment, 18<BR/>function set = function set(words) { let ob...> ]
+"30064787329" [label = <&lt;operator&gt;.assignment, 73<BR/>function tokenPolymorphicVar = function tokenPo...> ]
+"30064787330" [label = <&lt;operator&gt;.assignment, 94<BR/>function tokenString = function tokenString(str...> ]
+"30064787331" [label = <&lt;operator&gt;.assignment, 111<BR/>function tokenNestedComment = function tokenNes...> ]
+"30064787332" [label = <&lt;operator&gt;.assignment, 132<BR/>function tokenLongString = function tokenLongSt...> ]
+"30064787333" [label = <&lt;operator&gt;.assignment, 3<BR/>const keywords = ( 'and as assert begin cla...> ]
+"30064787341" [label = <&lt;operator&gt;.assignment, 10<BR/>const blockKeywords = 'try catch match with els...> ]
+"30064787345" [label = <&lt;operator&gt;.assignment, 13<BR/>const atoms = 'unit int char exn string int32 i...> ]
+"30064787349" [label = <&lt;operator&gt;.assignment, 16<BR/>const builtins = 'true false Error Ok None Some...> ]
+"30064787353" [label = <defineMIME, 24<BR/>CodeMirror.defineMIME('application/reason', { ...> ]
+"30064787383" [label = <registerHelper, 144<BR/>CodeMirror.registerHelper( 'hintWords', ...> ]
+"30064787390" [label = <defineMode, 150<BR/>CodeMirror.defineMode( 'reason', functi...> ]
+"30064787334" [label = <split, 3<BR/>( 'and as assert begin class constraint don...> ]
+"30064787342" [label = <split, 10<BR/>'try catch match with else for if switch while ...> ]
+"30064787346" [label = <split, 13<BR/>'unit int char exn string int32 int64 float boo...> ]
+"30064787350" [label = <split, 16<BR/>'true false Error Ok None Some'.split(' ')> ]
+"30064787355" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_6.name = &quot;clike&quot;> ]
+"30064787357" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_6.keywords = set(keywords)> ]
+"30064787360" [label = <&lt;operator&gt;.assignment, 27<BR/>_tmp_6.blockKeywords = set(blockKeywords)> ]
+"30064787363" [label = <&lt;operator&gt;.assignment, 28<BR/>_tmp_6.atoms = set(atoms)> ]
+"30064787366" [label = <&lt;operator&gt;.assignment, 29<BR/>_tmp_6.builtin = set(builtins)> ]
+"30064787369" [label = <&lt;operator&gt;.assignment, 31<BR/>_tmp_6.hooks = { '{': function(stream, st...> ]
+"68719492963" [label = <IDENTIFIER, 24<BR/>_tmp_6<BR/>{ name: 'clike', keywords: set(keywords...> ]
+"30064787385" [label = <concat, 147<BR/>keywords.concat(atoms).concat(builtins)> ]
+"30064787336" [label = <&lt;operator&gt;.assignment, 4<BR/>(_tmp_2 = 'and as assert begin class constraint...> ]
+"30064787344" [label = <&lt;operator&gt;.assignment, 10<BR/>(_tmp_3 = 'try catch match with else for if swi...> ]
+"30064787348" [label = <&lt;operator&gt;.assignment, 13<BR/>(_tmp_4 = 'unit int char exn string int32 int64...> ]
+"30064787352" [label = <&lt;operator&gt;.assignment, 16<BR/>(_tmp_5 = 'true false Error Ok None Some')> ]
+"68719492940" [label = <IDENTIFIER, 26<BR/>set<BR/>set(keywords)> ]
+"30064787359" [label = <set, 26<BR/>set(keywords)> ]
+"68719492944" [label = <IDENTIFIER, 27<BR/>set<BR/>set(blockKeywords)> ]
+"30064787362" [label = <set, 27<BR/>set(blockKeywords)> ]
+"68719492948" [label = <IDENTIFIER, 28<BR/>set<BR/>set(atoms)> ]
+"30064787365" [label = <set, 28<BR/>set(atoms)> ]
+"68719492952" [label = <IDENTIFIER, 29<BR/>set<BR/>set(builtins)> ]
+"30064787368" [label = <set, 29<BR/>set(builtins)> ]
+"30064787371" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_7.{ = &lt;lambda&gt;2> ]
+"30064787373" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_7.[ = &lt;lambda&gt;3> ]
+"30064787375" [label = <&lt;operator&gt;.assignment, 48<BR/>_tmp_7.| = &lt;lambda&gt;4> ]
+"30064787377" [label = <&lt;operator&gt;.assignment, 55<BR/>_tmp_7.&quot; = &lt;lambda&gt;5> ]
+"30064787379" [label = <&lt;operator&gt;.assignment, 60<BR/>_tmp_7. = &lt;lambda&gt;6> ]
+"30064787381" [label = <&lt;operator&gt;.assignment, 65<BR/>_tmp_7./ = &lt;lambda&gt;7> ]
+"68719492962" [label = <IDENTIFIER, 31<BR/>_tmp_7<BR/>{ '{': function(stream, state) { ...> ]
+"30064787387" [label = <&lt;operator&gt;.assignment, 147<BR/>(_tmp_8 = keywords.concat(atoms))> ]
+"30064787337" [label = <&lt;operator&gt;.addition, 4<BR/>'and as assert begin class constraint done down...> ]
+"30064787388" [label = <concat, 147<BR/>keywords.concat(atoms)> ]
+"30064787338" [label = <&lt;operator&gt;.addition, 4<BR/>'and as assert begin class constraint done down...> ]
+"30064787339" [label = <&lt;operator&gt;.addition, 4<BR/>'and as assert begin class constraint done down...> ]
+"30064787340" [label = <&lt;operator&gt;.addition, 4<BR/>'and as assert begin class constraint done down...> ]
+  "30064787328" -> "124554052584"  [ label = "DDG: set"] 
+  "30064787328" -> "124554052584"  [ label = "DDG: function set = function set(words) {
+    let obj = {};
+    for (let i = 0; i &lt; words.length; ++i) obj[words[i]] = true;
+    return obj;
+  }"] 
+  "30064787329" -> "124554052584"  [ label = "DDG: tokenPolymorphicVar"] 
+  "30064787329" -> "124554052584"  [ label = "DDG: function tokenPolymorphicVar = function tokenPolymorphicVar(stream, state) {
+    /* A char can't have more than 4 characters */
+    let count = 0;
+    let next; //eslint-disable-line no-unused-vars
+    while ((next = stream.next()) != null) {
+      // char
+      if (stream.eat(&quot;'&quot;) &amp;&amp; count &lt;= 4) {
+        state.tokenize = null;
+        return 'string';
+      }
+      // Polymorphic variable
+      if (!/\w/.test(stream.peek())) {
+        state.tokenize = null;
+        return 'variable-2';
+      }
+      count++;
+    }
+    state.tokenize = null;
+    return null;
+  }"] 
+  "30064787330" -> "124554052584"  [ label = "DDG: tokenString"] 
+  "30064787330" -> "124554052584"  [ label = "DDG: function tokenString = function tokenString(stream, state) {
+    let next,
+      end = false,
+      escaped = false;
+    while ((next = stream.next()) != null) {
+      if (next === '&quot;' &amp;&amp; !escaped) {
+        end = true;
+        break;
+      }
+      escaped = !escaped &amp;&amp; next === '\\';
+    }
+    if (end &amp;&amp; !escaped) {
+      state.tokenize = false;
+    }
+    return 'string';
+  }"] 
+  "30064787331" -> "124554052584"  [ label = "DDG: tokenNestedComment"] 
+  "30064787331" -> "124554052584"  [ label = "DDG: function tokenNestedComment = function tokenNestedComment(depth) {
+    return function(stream, state) {
+      let ch;
+      while ((ch = stream.next())) {
+        if (ch == '*' &amp;&amp; stream.eat('/')) {
+          if (depth == 1) {
+            state.tokenize = null;
+            break;
+          } else {
+            state.tokenize = tokenNestedComment(depth - 1);
+            return state.tokenize(stream, state);
+          }
+        } else if (ch == '/' &amp;&amp; stream.eat('*')) {
+          state.tokenize = tokenNestedComment(depth + 1);
+          return state.tokenize(stream, state);
+        }
+      }
+      return 'comment';
+    };
+  }"] 
+  "30064787332" -> "124554052584"  [ label = "DDG: tokenLongString"] 
+  "30064787332" -> "124554052584"  [ label = "DDG: function tokenLongString = function tokenLongString(stream, state) {
+    let prev, next;
+    while (state.longString &amp;&amp; (next = stream.next()) != null) {
+      if (prev === '|' &amp;&amp; next === '}') state.longString = false;
+      prev = next;
+    }
+    if (!state.longString) {
+      state.tokenize = false;
+    }
+    return 'string';
+  }"] 
+  "30064787339" -> "124554052584"  [ label = "DDG: 'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec '"] 
+  "30064787338" -> "124554052584"  [ label = "DDG: 'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec ' +
+    'object of open or pri rec then to type val virtual'"] 
+  "30064787337" -> "124554052584"  [ label = "DDG: 'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec ' +
+    'object of open or pri rec then to type val virtual' +
+    'try catch finally do else for if switch while import library export '"] 
+  "30064787336" -> "124554052584"  [ label = "DDG: 'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec ' +
+    'object of open or pri rec then to type val virtual' +
+    'try catch finally do else for if switch while import library export ' +
+    'part of show hide is as'"] 
+  "30064787334" -> "124554052584"  [ label = "DDG: _tmp_2"] 
+  "30064787333" -> "124554052584"  [ label = "DDG: (
+    'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec ' +
+    'object of open or pri rec then to type val virtual' +
+    'try catch finally do else for if switch while import library export ' +
+    'part of show hide is as'
+  ).split(' ')"] 
+  "30064787333" -> "124554052584"  [ label = "DDG: const keywords = (
+    'and as assert begin class constraint done downto exception external fun ' +
+    'esfun function functor include inherit initializer lazy let pub mutable new nonrec ' +
+    'object of open or pri rec then to type val virtual' +
+    'try catch finally do else for if switch while import library export ' +
+    'part of show hide is as'
+  ).split(' ')"] 
+  "30064787342" -> "124554052584"  [ label = "DDG: _tmp_3"] 
+  "30064787341" -> "124554052584"  [ label = "DDG: 'try catch match with else for if switch while do begin end in module sig struct'.split(
+    ' ',
+  )"] 
+  "30064787341" -> "124554052584"  [ label = "DDG: const blockKeywords = 'try catch match with else for if switch while do begin end in module sig struct'.split(
+    ' ',
+  )"] 
+  "30064787346" -> "124554052584"  [ label = "DDG: _tmp_4"] 
+  "30064787345" -> "124554052584"  [ label = "DDG: 'unit int char exn string int32 int64 float bool option mod land lor lxor lsl lsr asr'.split(
+    ' ',
+  )"] 
+  "30064787345" -> "124554052584"  [ label = "DDG: const atoms = 'unit int char exn string int32 int64 float bool option mod land lor lxor lsl lsr asr'.split(
+    ' ',
+  )"] 
+  "30064787350" -> "124554052584"  [ label = "DDG: _tmp_5"] 
+  "30064787349" -> "124554052584"  [ label = "DDG: 'true false Error Ok None Some'.split(' ')"] 
+  "30064787349" -> "124554052584"  [ label = "DDG: const builtins = 'true false Error Ok None Some'.split(' ')"] 
+  "30064787355" -> "124554052584"  [ label = "DDG: _tmp_6.name"] 
+  "30064787355" -> "124554052584"  [ label = "DDG: _tmp_6.name = &quot;clike&quot;"] 
+  "30064787357" -> "124554052584"  [ label = "DDG: _tmp_6.keywords"] 
+  "30064787357" -> "124554052584"  [ label = "DDG: set(keywords)"] 
+  "30064787357" -> "124554052584"  [ label = "DDG: _tmp_6.keywords = set(keywords)"] 
+  "30064787360" -> "124554052584"  [ label = "DDG: _tmp_6.blockKeywords"] 
+  "30064787362" -> "124554052584"  [ label = "DDG: blockKeywords"] 
+  "30064787360" -> "124554052584"  [ label = "DDG: set(blockKeywords)"] 
+  "30064787360" -> "124554052584"  [ label = "DDG: _tmp_6.blockKeywords = set(blockKeywords)"] 
+  "30064787363" -> "124554052584"  [ label = "DDG: _tmp_6.atoms"] 
+  "30064787363" -> "124554052584"  [ label = "DDG: set(atoms)"] 
+  "30064787363" -> "124554052584"  [ label = "DDG: _tmp_6.atoms = set(atoms)"] 
+  "30064787366" -> "124554052584"  [ label = "DDG: _tmp_6.builtin"] 
+  "30064787368" -> "124554052584"  [ label = "DDG: this"] 
+  "30064787366" -> "124554052584"  [ label = "DDG: set(builtins)"] 
+  "30064787366" -> "124554052584"  [ label = "DDG: _tmp_6.builtin = set(builtins)"] 
+  "30064787369" -> "124554052584"  [ label = "DDG: _tmp_6.hooks"] 
+  "30064787371" -> "124554052584"  [ label = "DDG: _tmp_7.{"] 
+  "30064787371" -> "124554052584"  [ label = "DDG: _tmp_7.{ = &lt;lambda&gt;2"] 
+  "30064787373" -> "124554052584"  [ label = "DDG: _tmp_7.["] 
+  "30064787373" -> "124554052584"  [ label = "DDG: _tmp_7.[ = &lt;lambda&gt;3"] 
+  "30064787375" -> "124554052584"  [ label = "DDG: _tmp_7.|"] 
+  "30064787375" -> "124554052584"  [ label = "DDG: _tmp_7.| = &lt;lambda&gt;4"] 
+  "30064787377" -> "124554052584"  [ label = "DDG: _tmp_7.&quot;"] 
+  "30064787377" -> "124554052584"  [ label = "DDG: _tmp_7.&quot; = &lt;lambda&gt;5"] 
+  "30064787379" -> "124554052584"  [ label = "DDG: _tmp_7."] 
+  "30064787379" -> "124554052584"  [ label = "DDG: _tmp_7. = &lt;lambda&gt;6"] 
+  "30064787381" -> "124554052584"  [ label = "DDG: _tmp_7./"] 
+  "30064787381" -> "124554052584"  [ label = "DDG: _tmp_7./ = &lt;lambda&gt;7"] 
+  "30064787369" -> "124554052584"  [ label = "DDG: _tmp_6.hooks = {
+      '{': function(stream, state) {
+        if (stream.eat('|')) {
+          state.longString = true;
+          state.tokenize = tokenLongString;
+          return state.tokenize(stream, state);
+        }
+      },
+
+      // array open [|
+      '[': function(stream, _state) {
+        if (stream.eat('|')) {
+          return 'operator';
+        }
+        return null;
+      },
+      // array close |]
+      '|': function(stream, _state) {
+        if (stream.eat(']')) {
+          return 'operator';
+        }
+        return 'operator';
+      },
+
+      '&quot;': function(stream, state) {
+        state.tokenize = tokenString;
+        return state.tokenize(stream, state);
+      },
+
+      &quot;'&quot;: function(stream, state) {
+        state.tokenize = tokenPolymorphicVar;
+        return state.tokenize(stream, state);
+      },
+
+      '/': function(stream, state) {
+        if (!stream.eat('*')) return false;
+        state.tokenize = tokenNestedComment(1);
+        return state.tokenize(stream, state);
+     ..."] 
+  "30064787353" -> "124554052584"  [ label = "DDG: CodeMirror.defineMIME('application/reason', {
+    name: 'clike',
+    keywords: set(keywords),
+    blockKeywords: set(blockKeywords),
+    atoms: set(atoms),
+    builtin: set(builtins),
+
+    hooks: {
+      '{': function(stream, state) {
+        if (stream.eat('|')) {
+          state.longString = true;
+          state.tokenize = tokenLongString;
+          return state.tokenize(stream, state);
+        }
+      },
+
+      // array open [|
+      '[': function(stream, _state) {
+        if (stream.eat('|')) {
+          return 'operator';
+        }
+        return null;
+      },
+      // array close |]
+      '|': function(stream, _state) {
+        if (stream.eat(']')) {
+          return 'operator';
+        }
+        return 'operator';
+      },
+
+      '&quot;': function(stream, state) {
+        state.tokenize = tokenString;
+        return state.tokenize(stream, state);
+      },
+
+      &quot;'&quot;: function(stream, state) {
+        state.tokenize = tokenPolymorphicVar;
+        return state.tokenize(stream, st..."] 
+  "30064787388" -> "124554052584"  [ label = "DDG: keywords"] 
+  "30064787388" -> "124554052584"  [ label = "DDG: atoms"] 
+  "30064787387" -> "124554052584"  [ label = "DDG: keywords.concat(atoms)"] 
+  "30064787385" -> "124554052584"  [ label = "DDG: _tmp_8"] 
+  "30064787385" -> "124554052584"  [ label = "DDG: builtins"] 
+  "30064787383" -> "124554052584"  [ label = "DDG: keywords.concat(atoms).concat(builtins)"] 
+  "30064787383" -> "124554052584"  [ label = "DDG: CodeMirror.registerHelper(
+    'hintWords',
+    'application/reason',
+    keywords.concat(atoms).concat(builtins),
+  )"] 
+  "30064787390" -> "124554052584"  [ label = "DDG: CodeMirror"] 
+  "30064787390" -> "124554052584"  [ label = "DDG: CodeMirror.defineMode(
+    'reason',
+    function(conf) {
+      return Object.assign(CodeMirror.getMode(conf, 'application/reason'), {
+        lineComment: undefined, // reason doesn't have line comments
+      });
+    },
+    'clike',
+  )"] 
+  "107374183388" -> "111669151736"  [ label = "DDG: "] 
+  "107374183388" -> "111669151737"  [ label = "DDG: "] 
+  "107374183388" -> "30064787328"  [ label = "DDG: "] 
+  "107374183388" -> "30064787329"  [ label = "DDG: "] 
+  "107374183388" -> "30064787330"  [ label = "DDG: "] 
+  "107374183388" -> "30064787331"  [ label = "DDG: "] 
+  "107374183388" -> "30064787332"  [ label = "DDG: "] 
+  "30064787334" -> "30064787333"  [ label = "DDG: _tmp_2"] 
+  "30064787334" -> "30064787333"  [ label = "DDG: &quot; &quot;"] 
+  "30064787342" -> "30064787341"  [ label = "DDG: _tmp_3"] 
+  "30064787342" -> "30064787341"  [ label = "DDG: &quot; &quot;"] 
+  "30064787346" -> "30064787345"  [ label = "DDG: _tmp_4"] 
+  "30064787346" -> "30064787345"  [ label = "DDG: &quot; &quot;"] 
+  "30064787350" -> "30064787349"  [ label = "DDG: _tmp_5"] 
+  "30064787350" -> "30064787349"  [ label = "DDG: &quot; &quot;"] 
+  "111669151737" -> "30064787353"  [ label = "DDG: CodeMirror"] 
+  "107374183388" -> "30064787353"  [ label = "DDG: "] 
+  "30064787355" -> "30064787353"  [ label = "DDG: _tmp_6.name"] 
+  "30064787357" -> "30064787353"  [ label = "DDG: _tmp_6.keywords"] 
+  "30064787360" -> "30064787353"  [ label = "DDG: _tmp_6.blockKeywords"] 
+  "30064787363" -> "30064787353"  [ label = "DDG: _tmp_6.atoms"] 
+  "30064787366" -> "30064787353"  [ label = "DDG: _tmp_6.builtin"] 
+  "30064787369" -> "30064787353"  [ label = "DDG: _tmp_6.hooks"] 
+  "30064787353" -> "30064787383"  [ label = "DDG: CodeMirror"] 
+  "107374183388" -> "30064787383"  [ label = "DDG: "] 
+  "30064787385" -> "30064787383"  [ label = "DDG: _tmp_8"] 
+  "30064787385" -> "30064787383"  [ label = "DDG: builtins"] 
+  "30064787383" -> "30064787390"  [ label = "DDG: CodeMirror"] 
+  "107374183388" -> "30064787390"  [ label = "DDG: "] 
+  "30064787336" -> "30064787334"  [ label = "DDG: _tmp_2"] 
+  "107374183388" -> "30064787334"  [ label = "DDG: "] 
+  "30064787344" -> "30064787342"  [ label = "DDG: _tmp_3"] 
+  "107374183388" -> "30064787342"  [ label = "DDG: "] 
+  "30064787348" -> "30064787346"  [ label = "DDG: _tmp_4"] 
+  "107374183388" -> "30064787346"  [ label = "DDG: "] 
+  "30064787352" -> "30064787350"  [ label = "DDG: _tmp_5"] 
+  "107374183388" -> "30064787350"  [ label = "DDG: "] 
+  "107374183388" -> "30064787355"  [ label = "DDG: "] 
+  "30064787359" -> "30064787357"  [ label = "DDG: this"] 
+  "30064787359" -> "30064787357"  [ label = "DDG: keywords"] 
+  "30064787362" -> "30064787360"  [ label = "DDG: this"] 
+  "30064787362" -> "30064787360"  [ label = "DDG: blockKeywords"] 
+  "30064787365" -> "30064787363"  [ label = "DDG: this"] 
+  "30064787365" -> "30064787363"  [ label = "DDG: atoms"] 
+  "30064787368" -> "30064787366"  [ label = "DDG: this"] 
+  "30064787368" -> "30064787366"  [ label = "DDG: builtins"] 
+  "30064787371" -> "30064787369"  [ label = "DDG: _tmp_7.{"] 
+  "30064787373" -> "30064787369"  [ label = "DDG: _tmp_7.["] 
+  "30064787375" -> "30064787369"  [ label = "DDG: _tmp_7.|"] 
+  "30064787377" -> "30064787369"  [ label = "DDG: _tmp_7.&quot;"] 
+  "30064787379" -> "30064787369"  [ label = "DDG: _tmp_7."] 
+  "30064787381" -> "30064787369"  [ label = "DDG: _tmp_7./"] 
+  "107374183388" -> "30064787369"  [ label = "DDG: "] 
+  "107374183388" -> "68719492963"  [ label = "DDG: "] 
+  "30064787387" -> "30064787385"  [ label = "DDG: _tmp_8"] 
+  "107374183388" -> "30064787385"  [ label = "DDG: "] 
+  "30064787368" -> "30064787385"  [ label = "DDG: builtins"] 
+  "107374183388" -> "30064787336"  [ label = "DDG: "] 
+  "107374183388" -> "30064787344"  [ label = "DDG: "] 
+  "107374183388" -> "30064787348"  [ label = "DDG: "] 
+  "107374183388" -> "30064787352"  [ label = "DDG: "] 
+  "107374183388" -> "68719492940"  [ label = "DDG: "] 
+  "111669151736" -> "30064787359"  [ label = "DDG: this"] 
+  "107374183388" -> "30064787359"  [ label = "DDG: "] 
+  "30064787333" -> "30064787359"  [ label = "DDG: keywords"] 
+  "107374183388" -> "68719492944"  [ label = "DDG: "] 
+  "30064787359" -> "30064787362"  [ label = "DDG: this"] 
+  "107374183388" -> "30064787362"  [ label = "DDG: "] 
+  "30064787341" -> "30064787362"  [ label = "DDG: blockKeywords"] 
+  "107374183388" -> "68719492948"  [ label = "DDG: "] 
+  "30064787362" -> "30064787365"  [ label = "DDG: this"] 
+  "107374183388" -> "30064787365"  [ label = "DDG: "] 
+  "30064787345" -> "30064787365"  [ label = "DDG: atoms"] 
+  "107374183388" -> "68719492952"  [ label = "DDG: "] 
+  "30064787365" -> "30064787368"  [ label = "DDG: this"] 
+  "107374183388" -> "30064787368"  [ label = "DDG: "] 
+  "30064787349" -> "30064787368"  [ label = "DDG: builtins"] 
+  "107374183388" -> "30064787371"  [ label = "DDG: "] 
+  "107374183388" -> "30064787373"  [ label = "DDG: "] 
+  "107374183388" -> "30064787375"  [ label = "DDG: "] 
+  "107374183388" -> "30064787377"  [ label = "DDG: "] 
+  "107374183388" -> "30064787379"  [ label = "DDG: "] 
+  "107374183388" -> "30064787381"  [ label = "DDG: "] 
+  "107374183388" -> "68719492962"  [ label = "DDG: "] 
+  "30064787388" -> "30064787387"  [ label = "DDG: keywords"] 
+  "30064787388" -> "30064787387"  [ label = "DDG: atoms"] 
+  "107374183388" -> "30064787337"  [ label = "DDG: "] 
+  "30064787359" -> "30064787388"  [ label = "DDG: keywords"] 
+  "107374183388" -> "30064787388"  [ label = "DDG: "] 
+  "30064787365" -> "30064787388"  [ label = "DDG: atoms"] 
+  "107374183388" -> "30064787338"  [ label = "DDG: "] 
+  "107374183388" -> "30064787339"  [ label = "DDG: "] 
+  "107374183388" -> "30064787340"  [ label = "DDG: "] 
+}

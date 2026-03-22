@@ -1,0 +1,36 @@
+digraph "functionFilter" {  
+node [shape="rect"];  
+"107374182759" [label = <METHOD, 209<BR/>functionFilter> ]
+"124554051942" [label = <METHOD_RETURN, 209<BR/>ANY> ]
+"111669150338" [label = <PARAM, 209<BR/>this> ]
+"141733921025" [label = <RETURN, 210<BR/>return { key: 'hideFunctions', label: '...> ]
+"25769804674" [label = <BLOCK, 210<BR/>{ key: 'hideFunctions', label: 'Hide me...> ]
+"30064776416" [label = <&lt;operator&gt;.assignment, 211<BR/>_tmp_33.key = &quot;hideFunctions&quot;> ]
+"30064776418" [label = <&lt;operator&gt;.assignment, 212<BR/>_tmp_33.label = &quot;Hide methods&quot;> ]
+"30064776420" [label = <&lt;operator&gt;.assignment, 213<BR/>_tmp_33.test = test> ]
+"68719482218" [label = <IDENTIFIER, 210<BR/>_tmp_33<BR/>{ key: 'hideFunctions', label: 'Hide me...> ]
+  "141733921025" -> "124554051942"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150338" -> "124554051942"  [ label = "DDG: this"] 
+  "30064776416" -> "124554051942"  [ label = "DDG: _tmp_33.key"] 
+  "30064776416" -> "124554051942"  [ label = "DDG: _tmp_33.key = &quot;hideFunctions&quot;"] 
+  "30064776418" -> "124554051942"  [ label = "DDG: _tmp_33.label"] 
+  "30064776418" -> "124554051942"  [ label = "DDG: _tmp_33.label = &quot;Hide methods&quot;"] 
+  "30064776420" -> "124554051942"  [ label = "DDG: _tmp_33.test"] 
+  "30064776420" -> "124554051942"  [ label = "DDG: _tmp_33.test = test"] 
+  "107374182759" -> "111669150338"  [ label = "DDG: "] 
+  "25769804674" -> "141733921025"  [ label = "DDG: "] 
+  "25769804674" -> "141733921025"  [ label = "DDG: {
+    key: 'hideFunctions',
+    label: 'Hide methods',
+    test(value) { return typeof value === 'function'; },
+  }"] 
+  "107374182759" -> "141733921025"  [ label = "DDG: "] 
+  "30064776416" -> "25769804674"  [ label = "DDG: _tmp_33.key"] 
+  "30064776418" -> "25769804674"  [ label = "DDG: _tmp_33.label"] 
+  "30064776420" -> "25769804674"  [ label = "DDG: _tmp_33.test"] 
+  "107374182759" -> "25769804674"  [ label = "DDG: "] 
+  "107374182759" -> "30064776416"  [ label = "DDG: "] 
+  "107374182759" -> "30064776418"  [ label = "DDG: "] 
+  "107374182759" -> "30064776420"  [ label = "DDG: "] 
+  "107374182759" -> "68719482218"  [ label = "DDG: "] 
+}

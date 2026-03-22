@@ -1,0 +1,91 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182502" [label = <METHOD, 5<BR/>render> ]
+"124554051685" [label = <METHOD_RETURN, 5<BR/>ANY> ]
+"111669149891" [label = <PARAM, 5<BR/>this> ]
+"141733920854" [label = <RETURN, 6<BR/>return this.props.error ? &lt;div className=...> ]
+"30064772855" [label = <&lt;operator&gt;.conditional, 6<BR/>this.props.error ? &lt;div className=&quot;cover&quot;&gt; ...> ]
+"90194313627" [label = <LITERAL, 7<BR/>&quot;cover&quot;<BR/>className=&quot;cover&quot;> ]
+"90194313628" [label = <LITERAL, 8<BR/>&quot;errorMessage&quot;<BR/>className=&quot;errorMessage&quot;> ]
+"90194313630" [label = <LITERAL, 11<BR/>&quot; &quot;<BR/>{' '}> ]
+"90194313629" [label = <LITERAL, 10<BR/>&quot;fa fa-exclamation-triangle&quot;<BR/>className=&quot;fa fa-exclamation-triangle&quot;> ]
+"25769804035" [label = <BLOCK, 15<BR/>{marginTop: 15}> ]
+"90194313632" [label = <LITERAL, 17<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064772861" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_0.marginTop = 15> ]
+"68719478544" [label = <IDENTIFIER, 15<BR/>_tmp_0<BR/>{marginTop: 15}> ]
+"30064772856" [label = <&lt;operator&gt;.fieldAccess, 6<BR/>this.props.error> ]
+"30064772858" [label = <&lt;operator&gt;.fieldAccess, 14<BR/>this.props.error.message> ]
+"30064772859" [label = <&lt;operator&gt;.fieldAccess, 14<BR/>this.props.error> ]
+"55834575540" [label = <FIELD_IDENTIFIER, 14<BR/>message> ]
+"30064772860" [label = <&lt;operator&gt;.fieldAccess, 14<BR/>this.props> ]
+"55834575539" [label = <FIELD_IDENTIFIER, 14<BR/>error> ]
+"55834575538" [label = <FIELD_IDENTIFIER, 14<BR/>props> ]
+"30064772863" [label = <&lt;operator&gt;.fieldAccess, 18<BR/>this.props.onWantToClose> ]
+"30064772862" [label = <&lt;operator&gt;.fieldAccess, 15<BR/>_tmp_0.marginTop> ]
+"30064772864" [label = <&lt;operator&gt;.fieldAccess, 18<BR/>this.props> ]
+"55834575543" [label = <FIELD_IDENTIFIER, 18<BR/>onWantToClose> ]
+"55834575541" [label = <FIELD_IDENTIFIER, 15<BR/>marginTop> ]
+"55834575542" [label = <FIELD_IDENTIFIER, 18<BR/>props> ]
+  "141733920854" -> "124554051685"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149891" -> "124554051685"  [ label = "DDG: this"] 
+  "30064772855" -> "124554051685"  [ label = "DDG: this.props.error"] 
+  "30064772861" -> "124554051685"  [ label = "DDG: _tmp_0.marginTop"] 
+  "30064772861" -> "124554051685"  [ label = "DDG: _tmp_0.marginTop = 15"] 
+  "30064772855" -> "124554051685"  [ label = "DDG: this.props.error ? &lt;div className=&quot;cover&quot;&gt;
+        &lt;div className=&quot;errorMessage&quot;&gt;
+          &lt;h3&gt;
+            &lt;i className=&quot;fa fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+            {' '}
+            Error
+          &lt;/h3&gt;
+          &lt;div&gt;{this.props.error.message}&lt;/div&gt;
+          &lt;div style={{marginTop: 15}}&gt;
+            &lt;button
+              type=&quot;button&quot;
+              onClick={this.props.onWantToClose}&gt;
+              OK
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt; : null"] 
+  "107374182502" -> "111669149891"  [ label = "DDG: "] 
+  "30064772855" -> "141733920854"  [ label = "DDG: this.props.error ? &lt;div className=&quot;cover&quot;&gt;
+        &lt;div className=&quot;errorMessage&quot;&gt;
+          &lt;h3&gt;
+            &lt;i className=&quot;fa fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+            {' '}
+            Error
+          &lt;/h3&gt;
+          &lt;div&gt;{this.props.error.message}&lt;/div&gt;
+          &lt;div style={{marginTop: 15}}&gt;
+            &lt;button
+              type=&quot;button&quot;
+              onClick={this.props.onWantToClose}&gt;
+              OK
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt; : null"] 
+  "107374182502" -> "30064772855"  [ label = "DDG: "] 
+  "107374182502" -> "90194313627"  [ label = "DDG: "] 
+  "107374182502" -> "90194313628"  [ label = "DDG: "] 
+  "107374182502" -> "90194313630"  [ label = "DDG: "] 
+  "107374182502" -> "90194313629"  [ label = "DDG: "] 
+  "107374182502" -> "25769804035"  [ label = "DDG: "] 
+  "107374182502" -> "90194313632"  [ label = "DDG: "] 
+  "107374182502" -> "30064772861"  [ label = "DDG: "] 
+  "107374182502" -> "68719478544"  [ label = "DDG: "] 
+  "30064772856" -> "55834575538"  [ label = "CDG: "] 
+  "30064772856" -> "55834575540"  [ label = "CDG: "] 
+  "30064772856" -> "55834575539"  [ label = "CDG: "] 
+  "30064772856" -> "55834575542"  [ label = "CDG: "] 
+  "30064772856" -> "55834575541"  [ label = "CDG: "] 
+  "30064772856" -> "55834575543"  [ label = "CDG: "] 
+  "30064772856" -> "30064772858"  [ label = "CDG: "] 
+  "30064772856" -> "30064772860"  [ label = "CDG: "] 
+  "30064772856" -> "30064772859"  [ label = "CDG: "] 
+  "30064772856" -> "30064772862"  [ label = "CDG: "] 
+  "30064772856" -> "30064772861"  [ label = "CDG: "] 
+  "30064772856" -> "30064772864"  [ label = "CDG: "] 
+  "30064772856" -> "30064772863"  [ label = "CDG: "] 
+}

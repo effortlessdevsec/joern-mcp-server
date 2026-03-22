@@ -1,0 +1,86 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182513" [label = <METHOD, 38<BR/>&lt;lambda&gt;0> ]
+"124554051696" [label = <METHOD_RETURN, 38<BR/>void> ]
+"111669149912" [label = <PARAM, 38<BR/>this> ]
+"111669149913" [label = <PARAM, 38<BR/>_1> ]
+"111669149914" [label = <PARAM, 38<BR/>_2> ]
+"111669149915" [label = <PARAM, 38<BR/>acorn> ]
+"30064773025" [label = <&lt;operator&gt;.assignment, 39<BR/>global.acorn = acorn> ]
+"30064773027" [label = <require, 40<BR/>require( [ 'tern', ...> ]
+"68719478689" [label = <IDENTIFIER, 40<BR/>require<BR/>require( [ 'tern', ...> ]
+"30064773028" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064773030" [label = <, 42<BR/>_tmp_1.push(&quot;tern&quot;)> ]
+"30064773032" [label = <, 43<BR/>_tmp_1.push(&quot;tern/plugin/doc_comment&quot;)> ]
+"30064773034" [label = <, 44<BR/>_tmp_1.push(&quot;tern/lib/infer&quot;)> ]
+"30064773036" [label = <, 45<BR/>_tmp_1.push(&quot;../defs/jscodeshift.json&quot;)> ]
+"30064773038" [label = <, 46<BR/>_tmp_1.push(&quot;tern/defs/ecmascript.json&quot;)> ]
+"68719478702" [label = <IDENTIFIER, 41<BR/>_tmp_1<BR/>[ 'tern', 'tern/plugin/doc_...> ]
+  "111669149913" -> "124554051696"  [ label = "DDG: _1"] 
+  "111669149914" -> "124554051696"  [ label = "DDG: _2"] 
+  "30064773025" -> "124554051696"  [ label = "DDG: global.acorn"] 
+  "30064773025" -> "124554051696"  [ label = "DDG: acorn"] 
+  "30064773025" -> "124554051696"  [ label = "DDG: global.acorn = acorn"] 
+  "30064773027" -> "124554051696"  [ label = "DDG: this"] 
+  "30064773028" -> "124554051696"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773028" -> "124554051696"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064773030" -> "124554051696"  [ label = "DDG: _tmp_1.push(&quot;tern&quot;)"] 
+  "30064773032" -> "124554051696"  [ label = "DDG: _tmp_1.push(&quot;tern/plugin/doc_comment&quot;)"] 
+  "30064773034" -> "124554051696"  [ label = "DDG: _tmp_1.push(&quot;tern/lib/infer&quot;)"] 
+  "30064773036" -> "124554051696"  [ label = "DDG: _tmp_1.push(&quot;../defs/jscodeshift.json&quot;)"] 
+  "30064773038" -> "124554051696"  [ label = "DDG: _tmp_1"] 
+  "30064773038" -> "124554051696"  [ label = "DDG: _tmp_1.push(&quot;tern/defs/ecmascript.json&quot;)"] 
+  "30064773027" -> "124554051696"  [ label = "DDG: require(
+        [
+          'tern',
+          'tern/plugin/doc_comment',
+          'tern/lib/infer',
+          '../defs/jscodeshift.json',
+          'tern/defs/ecmascript.json',
+        ],
+        (tern, _, infer, jscs_def, ecmascript) =&gt; {
+          global.tern = tern;
+          tern.registerPlugin('transformer', server =&gt; {
+            server.on('afterLoad', file =&gt; {
+              const fnVal = file.scope.props.transformer;
+              if (fnVal) {
+                const fnType = fnVal.getFunctionType();
+                const cx = infer.cx();
+                fnType.propagate(new infer.IsCallee(
+                  infer.cx().topScope,
+                  [
+                    cx.definitions.jscodeshift.file,
+                    cx.definitions.jscodeshift.apiObject,
+                  ],
+                  null,
+                  infer.ANull,
+                ));
+              }
+            });
+          });
+
+          server = new CodeMirror.TernServer({
+            defs: [jscs_def, e..."] 
+  "107374182513" -> "111669149912"  [ label = "DDG: "] 
+  "107374182513" -> "111669149913"  [ label = "DDG: "] 
+  "107374182513" -> "111669149914"  [ label = "DDG: "] 
+  "107374182513" -> "111669149915"  [ label = "DDG: "] 
+  "111669149915" -> "30064773025"  [ label = "DDG: acorn"] 
+  "107374182513" -> "30064773025"  [ label = "DDG: "] 
+  "107374182513" -> "68719478689"  [ label = "DDG: "] 
+  "111669149912" -> "30064773027"  [ label = "DDG: this"] 
+  "107374182513" -> "30064773027"  [ label = "DDG: "] 
+  "30064773038" -> "30064773027"  [ label = "DDG: _tmp_1"] 
+  "107374182513" -> "30064773028"  [ label = "DDG: "] 
+  "107374182513" -> "68719478702"  [ label = "DDG: "] 
+  "30064773028" -> "30064773030"  [ label = "DDG: _tmp_1"] 
+  "107374182513" -> "30064773030"  [ label = "DDG: "] 
+  "30064773030" -> "30064773032"  [ label = "DDG: _tmp_1"] 
+  "107374182513" -> "30064773032"  [ label = "DDG: "] 
+  "30064773032" -> "30064773034"  [ label = "DDG: _tmp_1"] 
+  "107374182513" -> "30064773034"  [ label = "DDG: "] 
+  "30064773034" -> "30064773036"  [ label = "DDG: _tmp_1"] 
+  "107374182513" -> "30064773036"  [ label = "DDG: "] 
+  "30064773036" -> "30064773038"  [ label = "DDG: _tmp_1"] 
+  "107374182513" -> "30064773038"  [ label = "DDG: "] 
+}

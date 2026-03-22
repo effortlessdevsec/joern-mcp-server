@@ -1,0 +1,33 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182568" [label = <METHOD, 19<BR/>render> ]
+"124554051751" [label = <METHOD_RETURN, 19<BR/>ANY> ]
+"111669150004" [label = <PARAM, 19<BR/>this> ]
+"141733920882" [label = <RETURN, 20<BR/>return ( this.props.isOpen ? &lt;di...> ]
+"30064773553" [label = <&lt;operator&gt;.conditional, 21<BR/>this.props.isOpen ? &lt;div className='settings-dr...> ]
+"90194313755" [label = <LITERAL, 22<BR/>&quot;settings-drawer__expanded&quot;<BR/>className='settings-drawer__expanded'> ]
+"90194313756" [label = <LITERAL, 27<BR/>&quot;settings-drawer__collapsed&quot;<BR/>className='settings-drawer__collapsed'> ]
+"30064773554" [label = <&lt;operator&gt;.fieldAccess, 21<BR/>this.props.isOpen> ]
+"30064773557" [label = <&lt;operator&gt;.fieldAccess, 27<BR/>this._expand> ]
+"30064773556" [label = <&lt;operator&gt;.fieldAccess, 24<BR/>this._collapse> ]
+"55834575829" [label = <FIELD_IDENTIFIER, 27<BR/>_expand> ]
+"55834575828" [label = <FIELD_IDENTIFIER, 24<BR/>_collapse> ]
+  "141733920882" -> "124554051751"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150004" -> "124554051751"  [ label = "DDG: this"] 
+  "30064773553" -> "124554051751"  [ label = "DDG: this.props.isOpen"] 
+  "30064773553" -> "124554051751"  [ label = "DDG: this.props.isOpen ? &lt;div className='settings-drawer__expanded'&gt;
+          &lt;h3&gt;Settings&lt;/h3&gt;
+          &lt;button onClick={this._collapse}&gt;Close&lt;/button&gt;
+        &lt;/div&gt; : &lt;div className='settings-drawer__collapsed' onClick={this._expand}&gt;&lt;/div&gt;"] 
+  "107374182568" -> "111669150004"  [ label = "DDG: "] 
+  "30064773553" -> "141733920882"  [ label = "DDG: this.props.isOpen ? &lt;div className='settings-drawer__expanded'&gt;
+          &lt;h3&gt;Settings&lt;/h3&gt;
+          &lt;button onClick={this._collapse}&gt;Close&lt;/button&gt;
+        &lt;/div&gt; : &lt;div className='settings-drawer__collapsed' onClick={this._expand}&gt;&lt;/div&gt;"] 
+  "107374182568" -> "90194313755"  [ label = "DDG: "] 
+  "107374182568" -> "90194313756"  [ label = "DDG: "] 
+  "30064773554" -> "30064773557"  [ label = "CDG: "] 
+  "30064773554" -> "55834575828"  [ label = "CDG: "] 
+  "30064773554" -> "55834575829"  [ label = "CDG: "] 
+  "30064773554" -> "30064773556"  [ label = "CDG: "] 
+}

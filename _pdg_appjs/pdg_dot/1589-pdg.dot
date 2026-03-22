@@ -1,0 +1,4 @@
+digraph "onWantToCollapse" {  
+node [shape="rect"];  
+
+}

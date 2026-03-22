@@ -1,0 +1,84 @@
+digraph "getShareInfo" {  
+node [shape="rect"];  
+"107374183609" [label = <METHOD, 176<BR/>getShareInfo> ]
+"124554052794" [label = <METHOD_RETURN, 176<BR/>ANY> ]
+"111669152142" [label = <PARAM, 176<BR/>this> ]
+"30064790081" [label = <&lt;operator&gt;.assignment, 177<BR/>const snippetID = this.getSnippetID()> ]
+"30064790084" [label = <&lt;operator&gt;.assignment, 178<BR/>const revisionID = this.getRevisionID()> ]
+"141733921659" [label = <RETURN, 179<BR/>return ( &lt;div className=&quot;shareInfo&quot;&gt; ...> ]
+"154618824190" [label = <TEMPLATE_DOM, 180<BR/>&lt;div className=&quot;shareInfo&quot;&gt; &lt;dl&gt; ...> ]
+"30064790082" [label = <getSnippetID, 177<BR/>this.getSnippetID()> ]
+"30064790085" [label = <getRevisionID, 178<BR/>this.getRevisionID()> ]
+"90194317366" [label = <LITERAL, 180<BR/>&quot;shareInfo&quot;<BR/>className=&quot;shareInfo&quot;> ]
+"90194317367" [label = <LITERAL, 185<BR/>true<BR/>{true}> ]
+"120259085194" [label = <METHOD_REF, 186<BR/>&lt;lambda&gt;9<BR/>{e =&gt; e.target.select()}> ]
+"30064790087" [label = <&lt;operator&gt;.formatString, 187<BR/>&lt;operator&gt;.formatString(&quot;https://astexplorer.ne...> ]
+"90194317371" [label = <LITERAL, 193<BR/>true<BR/>{true}> ]
+"120259085195" [label = <METHOD_REF, 194<BR/>&lt;lambda&gt;10<BR/>{e =&gt; e.target.select()}> ]
+"30064790088" [label = <&lt;operator&gt;.formatString, 195<BR/>&lt;operator&gt;.formatString(&quot;https://astexplorer.ne...> ]
+"90194317374" [label = <LITERAL, 201<BR/>true<BR/>{true}> ]
+"120259085196" [label = <METHOD_REF, 202<BR/>&lt;lambda&gt;11<BR/>{e =&gt; e.target.select()}> ]
+"30064790089" [label = <&lt;operator&gt;.formatString, 203<BR/>&lt;operator&gt;.formatString(&quot;https://gist.github.co...> ]
+  "141733921659" -> "124554052794"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064790081" -> "124554052794"  [ label = "DDG: this.getSnippetID()"] 
+  "30064790081" -> "124554052794"  [ label = "DDG: const snippetID = this.getSnippetID()"] 
+  "30064790085" -> "124554052794"  [ label = "DDG: this"] 
+  "30064790084" -> "124554052794"  [ label = "DDG: this.getRevisionID()"] 
+  "30064790084" -> "124554052794"  [ label = "DDG: const revisionID = this.getRevisionID()"] 
+  "30064790087" -> "124554052794"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;https://astexplorer.net/#/gist/&quot;, snippetID, &quot;/&quot;, revisionID, &quot;&quot;)"] 
+  "30064790088" -> "124554052794"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;https://astexplorer.net/#/gist/&quot;, snippetID, &quot;/latest&quot;)"] 
+  "30064790089" -> "124554052794"  [ label = "DDG: snippetID"] 
+  "30064790089" -> "124554052794"  [ label = "DDG: revisionID"] 
+  "30064790089" -> "124554052794"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;https://gist.github.com/&quot;, snippetID, &quot;/&quot;, revisionID, &quot;&quot;)"] 
+  "107374183609" -> "111669152142"  [ label = "DDG: "] 
+  "30064790082" -> "30064790081"  [ label = "DDG: this"] 
+  "30064790085" -> "30064790084"  [ label = "DDG: this"] 
+  "154618824190" -> "141733921659"  [ label = "DDG: &lt;div className=&quot;shareInfo&quot;&gt;
+        &lt;dl&gt;
+          &lt;dt&gt;Current Revision&lt;/dt&gt;
+          &lt;dd&gt;
+            &lt;input
+              readOnly={true}
+              onFocus={e =&gt; e.target.select()}
+              value={`https://astexplorer.net/#/gist/${snippetID}/${revisionID}`}
+            /&gt;
+          &lt;/dd&gt;
+          &lt;dt&gt;Latest Revision&lt;/dt&gt;
+          &lt;dd&gt;
+            &lt;input
+              readOnly={true}
+              onFocus={e =&gt; e.target.select()}
+              value={`https://astexplorer.net/#/gist/${snippetID}/latest`}
+            /&gt;
+          &lt;/dd&gt;
+          &lt;dt&gt;Gist&lt;/dt&gt;
+          &lt;dd&gt;
+            &lt;input
+              readOnly={true}
+              onFocus={e =&gt; e.target.select()}
+              value={`https://gist.github.com/${snippetID}/${revisionID}`}
+            /&gt;
+          &lt;/dd&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;"] 
+  "107374183609" -> "141733921659"  [ label = "DDG: "] 
+  "111669152142" -> "30064790082"  [ label = "DDG: this"] 
+  "107374183609" -> "30064790082"  [ label = "DDG: "] 
+  "30064790082" -> "30064790085"  [ label = "DDG: this"] 
+  "107374183609" -> "30064790085"  [ label = "DDG: "] 
+  "107374183609" -> "90194317366"  [ label = "DDG: "] 
+  "107374183609" -> "90194317367"  [ label = "DDG: "] 
+  "107374183609" -> "120259085194"  [ label = "DDG: "] 
+  "107374183609" -> "90194317371"  [ label = "DDG: "] 
+  "107374183609" -> "120259085195"  [ label = "DDG: "] 
+  "107374183609" -> "90194317374"  [ label = "DDG: "] 
+  "107374183609" -> "120259085196"  [ label = "DDG: "] 
+  "107374183609" -> "30064790087"  [ label = "DDG: "] 
+  "30064790081" -> "30064790087"  [ label = "DDG: snippetID"] 
+  "30064790084" -> "30064790087"  [ label = "DDG: revisionID"] 
+  "107374183609" -> "30064790088"  [ label = "DDG: "] 
+  "30064790087" -> "30064790088"  [ label = "DDG: snippetID"] 
+  "107374183609" -> "30064790089"  [ label = "DDG: "] 
+  "30064790088" -> "30064790089"  [ label = "DDG: snippetID"] 
+  "30064790087" -> "30064790089"  [ label = "DDG: revisionID"] 
+}

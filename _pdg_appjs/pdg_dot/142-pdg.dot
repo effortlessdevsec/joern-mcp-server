@@ -1,0 +1,31 @@
+digraph "&lt;init&gt;" {  
+node [shape="rect"];  
+"107374182542" [label = <METHOD, 21<BR/>&lt;init&gt;> ]
+"124554051725" [label = <METHOD_RETURN, 21<BR/>ANY> ]
+"111669149956" [label = <PARAM, 21<BR/>this> ]
+"111669149957" [label = <PARAM, 21<BR/>props> ]
+"30064773291" [label = <super, 22<BR/>super(props)> ]
+"30064773292" [label = <&lt;operator&gt;.assignment, 23<BR/>this.state = { dragging: false, }> ]
+"68719478955" [label = <IDENTIFIER, 22<BR/>super<BR/>super(props)> ]
+"30064773294" [label = <&lt;operator&gt;.assignment, 24<BR/>_tmp_6.dragging = false> ]
+"68719478960" [label = <IDENTIFIER, 23<BR/>_tmp_6<BR/>{ dragging: false, }> ]
+  "30064773291" -> "124554051725"  [ label = "DDG: this"] 
+  "30064773291" -> "124554051725"  [ label = "DDG: props"] 
+  "30064773291" -> "124554051725"  [ label = "DDG: super(props)"] 
+  "30064773292" -> "124554051725"  [ label = "DDG: this.state"] 
+  "30064773294" -> "124554051725"  [ label = "DDG: _tmp_6.dragging"] 
+  "30064773294" -> "124554051725"  [ label = "DDG: _tmp_6.dragging = false"] 
+  "30064773292" -> "124554051725"  [ label = "DDG: this.state = {
+      dragging: false,
+    }"] 
+  "107374182542" -> "111669149956"  [ label = "DDG: "] 
+  "107374182542" -> "111669149957"  [ label = "DDG: "] 
+  "30064773294" -> "30064773292"  [ label = "DDG: _tmp_6.dragging"] 
+  "107374182542" -> "30064773292"  [ label = "DDG: "] 
+  "107374182542" -> "68719478955"  [ label = "DDG: "] 
+  "111669149956" -> "30064773291"  [ label = "DDG: this"] 
+  "107374182542" -> "30064773291"  [ label = "DDG: "] 
+  "111669149957" -> "30064773291"  [ label = "DDG: props"] 
+  "107374182542" -> "30064773294"  [ label = "DDG: "] 
+  "107374182542" -> "68719478960"  [ label = "DDG: "] 
+}

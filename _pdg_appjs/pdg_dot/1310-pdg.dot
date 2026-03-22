@@ -1,0 +1,13 @@
+digraph "getFormattingState" {  
+node [shape="rect"];  
+"107374183710" [label = <METHOD, 14<BR/>getFormattingState> ]
+"124554052893" [label = <METHOD_RETURN, 14<BR/>ANY> ]
+"111669152327" [label = <PARAM, 14<BR/>this> ]
+"111669152328" [label = <PARAM, 14<BR/>state> ]
+"141733921799" [label = <RETURN, 15<BR/>return state.enableFormatting> ]
+  "141733921799" -> "124554052893"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152327" -> "124554052893"  [ label = "DDG: this"] 
+  "111669152328" -> "124554052893"  [ label = "DDG: state"] 
+  "107374183710" -> "111669152327"  [ label = "DDG: "] 
+  "107374183710" -> "111669152328"  [ label = "DDG: "] 
+}

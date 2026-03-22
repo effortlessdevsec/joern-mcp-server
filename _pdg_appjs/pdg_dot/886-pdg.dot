@@ -1,0 +1,56 @@
+digraph "formatResult" {  
+node [shape="rect"];  
+"107374183286" [label = <METHOD, 11<BR/>formatResult> ]
+"124554052469" [label = <METHOD_RETURN, 11<BR/>ANY> ]
+"111669151485" [label = <PARAM, 11<BR/>this> ]
+"111669151486" [label = <PARAM, 11<BR/>result> ]
+"30064785648" [label = <&lt;operator&gt;.assignment, 12<BR/>var pointer = '-'.repeat(result.column - 1) + '^'> ]
+"141733921422" [label = <RETURN, 13<BR/>return ` // ${result.message} (at ${result.line...> ]
+"30064785655" [label = <&lt;operator&gt;.formatString, 13<BR/>&lt;operator&gt;.formatString(&quot; // &quot;, result.message,...> ]
+"30064785649" [label = <&lt;operator&gt;.addition, 12<BR/>'-'.repeat(result.column - 1) + '^'> ]
+"30064785650" [label = <repeat, 12<BR/>'-'.repeat(result.column - 1)> ]
+"30064785653" [label = <&lt;operator&gt;.subtraction, 12<BR/>result.column - 1> ]
+"30064785652" [label = <&lt;operator&gt;.assignment, 12<BR/>(_tmp_2 = '-')> ]
+  "141733921422" -> "124554052469"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151485" -> "124554052469"  [ label = "DDG: this"] 
+  "111669151486" -> "124554052469"  [ label = "DDG: result"] 
+  "30064785650" -> "124554052469"  [ label = "DDG: _tmp_2"] 
+  "30064785650" -> "124554052469"  [ label = "DDG: result.column - 1"] 
+  "30064785649" -> "124554052469"  [ label = "DDG: '-'.repeat(result.column - 1)"] 
+  "30064785648" -> "124554052469"  [ label = "DDG: '-'.repeat(result.column - 1) + '^'"] 
+  "30064785648" -> "124554052469"  [ label = "DDG: var pointer = '-'.repeat(result.column - 1) + '^'"] 
+  "30064785655" -> "124554052469"  [ label = "DDG: result.message"] 
+  "30064785655" -> "124554052469"  [ label = "DDG: result.line"] 
+  "30064785655" -> "124554052469"  [ label = "DDG: result.column"] 
+  "30064785655" -> "124554052469"  [ label = "DDG: result.source"] 
+  "30064785655" -> "124554052469"  [ label = "DDG: pointer"] 
+  "30064785655" -> "124554052469"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;
+// &quot;, result.message, &quot; (at &quot;, result.line, &quot;:&quot;, result.column, &quot;)
+   &quot;, result.source, &quot;
+// &quot;, pointer, &quot;
+&quot;)"] 
+  "107374183286" -> "111669151485"  [ label = "DDG: "] 
+  "107374183286" -> "111669151486"  [ label = "DDG: "] 
+  "30064785650" -> "30064785648"  [ label = "DDG: _tmp_2"] 
+  "30064785650" -> "30064785648"  [ label = "DDG: result.column - 1"] 
+  "107374183286" -> "30064785648"  [ label = "DDG: "] 
+  "30064785655" -> "141733921422"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;
+// &quot;, result.message, &quot; (at &quot;, result.line, &quot;:&quot;, result.column, &quot;)
+   &quot;, result.source, &quot;
+// &quot;, pointer, &quot;
+&quot;)"] 
+  "30064785650" -> "30064785649"  [ label = "DDG: _tmp_2"] 
+  "30064785650" -> "30064785649"  [ label = "DDG: result.column - 1"] 
+  "107374183286" -> "30064785649"  [ label = "DDG: "] 
+  "107374183286" -> "30064785655"  [ label = "DDG: "] 
+  "111669151486" -> "30064785655"  [ label = "DDG: result"] 
+  "30064785653" -> "30064785655"  [ label = "DDG: result.column"] 
+  "30064785648" -> "30064785655"  [ label = "DDG: pointer"] 
+  "30064785652" -> "30064785650"  [ label = "DDG: _tmp_2"] 
+  "107374183286" -> "30064785650"  [ label = "DDG: "] 
+  "30064785653" -> "30064785650"  [ label = "DDG: result.column"] 
+  "30064785653" -> "30064785650"  [ label = "DDG: 1"] 
+  "111669151486" -> "30064785653"  [ label = "DDG: result"] 
+  "107374183286" -> "30064785653"  [ label = "DDG: "] 
+  "107374183286" -> "30064785652"  [ label = "DDG: "] 
+}

@@ -1,0 +1,11 @@
+digraph "getParserSettings" {  
+node [shape="rect"];  
+"107374183607" [label = <METHOD, 172<BR/>getParserSettings> ]
+"124554052790" [label = <METHOD_RETURN, 172<BR/>ANY> ]
+"111669152135" [label = <PARAM, 172<BR/>this> ]
+"141733921655" [label = <RETURN, 173<BR/>return this._config.settings[this._config.parse...> ]
+  "141733921655" -> "124554052790"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152135" -> "124554052790"  [ label = "DDG: this"] 
+  "107374183607" -> "111669152135"  [ label = "DDG: "] 
+  "107374183607" -> "141733921655"  [ label = "DDG: "] 
+}

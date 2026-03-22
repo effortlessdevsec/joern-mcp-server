@@ -1,0 +1,19 @@
+digraph "isArray" {  
+node [shape="rect"];  
+"107374182743" [label = <METHOD, 102<BR/>isArray> ]
+"124554051926" [label = <METHOD_RETURN, 102<BR/>__ecma.Boolean> ]
+"111669150306" [label = <PARAM, 102<BR/>this> ]
+"111669150307" [label = <PARAM, 102<BR/>node> ]
+"141733921007" [label = <RETURN, 103<BR/>return Array.isArray(node)> ]
+"30064776295" [label = <isArray, 103<BR/>Array.isArray(node)> ]
+  "141733921007" -> "124554051926"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150306" -> "124554051926"  [ label = "DDG: this"] 
+  "30064776295" -> "124554051926"  [ label = "DDG: Array"] 
+  "30064776295" -> "124554051926"  [ label = "DDG: node"] 
+  "30064776295" -> "124554051926"  [ label = "DDG: Array.isArray(node)"] 
+  "107374182743" -> "111669150306"  [ label = "DDG: "] 
+  "107374182743" -> "111669150307"  [ label = "DDG: "] 
+  "30064776295" -> "141733921007"  [ label = "DDG: Array.isArray(node)"] 
+  "107374182743" -> "30064776295"  [ label = "DDG: "] 
+  "111669150307" -> "30064776295"  [ label = "DDG: node"] 
+}

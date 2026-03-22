@@ -1,0 +1,29 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374183135" [label = <METHOD, 20<BR/>&lt;lambda&gt;0> ]
+"124554052318" [label = <METHOD_RETURN, 20<BR/>void> ]
+"111669151141" [label = <PARAM, 20<BR/>this> ]
+"111669151142" [label = <PARAM, 20<BR/>instance> ]
+"30064782952" [label = <then, 21<BR/>instance.default(wasm_bg).then(() =&gt; { ...> ]
+"30064782954" [label = <&lt;operator&gt;.assignment, 21<BR/>(_tmp_4 = instance.default(wasm_bg))> ]
+"30064782955" [label = <default, 21<BR/>instance.default(wasm_bg)> ]
+  "111669151141" -> "124554052318"  [ label = "DDG: this"] 
+  "30064782955" -> "124554052318"  [ label = "DDG: instance"] 
+  "30064782955" -> "124554052318"  [ label = "DDG: wasm_bg"] 
+  "30064782954" -> "124554052318"  [ label = "DDG: instance.default(wasm_bg)"] 
+  "30064782952" -> "124554052318"  [ label = "DDG: _tmp_4"] 
+  "30064782952" -> "124554052318"  [ label = "DDG: instance.default(wasm_bg).then(() =&gt; {
+        callback(instance)
+      })"] 
+  "107374183135" -> "111669151141"  [ label = "DDG: "] 
+  "107374183135" -> "111669151142"  [ label = "DDG: "] 
+  "30064782954" -> "30064782952"  [ label = "DDG: _tmp_4"] 
+  "111669151144" -> "30064782952"  [ label = "DDG: callback"] 
+  "107374183135" -> "30064782952"  [ label = "DDG: "] 
+  "30064782955" -> "30064782954"  [ label = "DDG: instance"] 
+  "30064782955" -> "30064782954"  [ label = "DDG: wasm_bg"] 
+  "111669151142" -> "30064782955"  [ label = "DDG: instance"] 
+  "111669151144" -> "30064782955"  [ label = "DDG: callback"] 
+  "107374183135" -> "30064782955"  [ label = "DDG: "] 
+  "30064783045" -> "30064782955"  [ label = "DDG: wasm_bg"] 
+}

@@ -1,0 +1,20 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182449" [label = <METHOD, 18<BR/>&lt;lambda&gt;0> ]
+"124554051632" [label = <METHOD_RETURN, 18<BR/>Map&lt;any, ANY&gt;> ]
+"111669149806" [label = <PARAM, 18<BR/>this> ]
+"111669149807" [label = <PARAM, 18<BR/>obj> ]
+"141733920824" [label = <RETURN, 18<BR/>m.set(obj._id, obj)> ]
+"30064771996" [label = <set, 18<BR/>m.set(obj._id, obj)> ]
+  "141733920824" -> "124554051632"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149806" -> "124554051632"  [ label = "DDG: this"] 
+  "30064771996" -> "124554051632"  [ label = "DDG: m"] 
+  "30064771996" -> "124554051632"  [ label = "DDG: obj._id"] 
+  "30064771996" -> "124554051632"  [ label = "DDG: obj"] 
+  "30064771996" -> "124554051632"  [ label = "DDG: m.set(obj._id, obj)"] 
+  "107374182449" -> "111669149806"  [ label = "DDG: "] 
+  "107374182449" -> "111669149807"  [ label = "DDG: "] 
+  "30064771996" -> "141733920824"  [ label = "DDG: m.set(obj._id, obj)"] 
+  "107374182449" -> "30064771996"  [ label = "DDG: "] 
+  "111669149807" -> "30064771996"  [ label = "DDG: obj"] 
+}

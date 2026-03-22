@@ -1,0 +1,38 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182918" [label = <METHOD, 65<BR/>loadParser> ]
+"124554052101" [label = <METHOD_RETURN, 65<BR/>void> ]
+"111669150694" [label = <PARAM, 65<BR/>this> ]
+"111669150695" [label = <PARAM, 65<BR/>callback> ]
+"30064779002" [label = <require, 66<BR/>require([ 'hyntax/lib-es5/tokenize', ...> ]
+"68719484764" [label = <IDENTIFIER, 66<BR/>require<BR/>require([ 'hyntax/lib-es5/tokenize', ...> ]
+"30064779003" [label = <&lt;operator&gt;.assignment, 66<BR/>_tmp_7 = __ecma.Array.factory()> ]
+"30064779005" [label = <, 67<BR/>_tmp_7.push(&quot;hyntax/lib-es5/tokenize&quot;)> ]
+"30064779007" [label = <, 68<BR/>_tmp_7.push(&quot;hyntax/lib-es5/construct-tree&quot;)> ]
+"68719484771" [label = <IDENTIFIER, 66<BR/>_tmp_7<BR/>[ 'hyntax/lib-es5/tokenize', 'hynta...> ]
+  "111669150695" -> "124554052101"  [ label = "DDG: callback"] 
+  "30064779002" -> "124554052101"  [ label = "DDG: this"] 
+  "30064779003" -> "124554052101"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064779003" -> "124554052101"  [ label = "DDG: _tmp_7 = __ecma.Array.factory()"] 
+  "30064779005" -> "124554052101"  [ label = "DDG: _tmp_7.push(&quot;hyntax/lib-es5/tokenize&quot;)"] 
+  "30064779007" -> "124554052101"  [ label = "DDG: _tmp_7"] 
+  "30064779007" -> "124554052101"  [ label = "DDG: _tmp_7.push(&quot;hyntax/lib-es5/construct-tree&quot;)"] 
+  "30064779002" -> "124554052101"  [ label = "DDG: require([
+      'hyntax/lib-es5/tokenize',
+      'hyntax/lib-es5/construct-tree',
+    ], (tokenize, constructTree) =&gt; {
+      callback({ tokenize, constructTree });
+    })"] 
+  "107374182918" -> "111669150694"  [ label = "DDG: "] 
+  "107374182918" -> "111669150695"  [ label = "DDG: "] 
+  "107374182918" -> "68719484764"  [ label = "DDG: "] 
+  "111669150694" -> "30064779002"  [ label = "DDG: this"] 
+  "107374182918" -> "30064779002"  [ label = "DDG: "] 
+  "30064779007" -> "30064779002"  [ label = "DDG: _tmp_7"] 
+  "107374182918" -> "30064779003"  [ label = "DDG: "] 
+  "107374182918" -> "68719484771"  [ label = "DDG: "] 
+  "30064779003" -> "30064779005"  [ label = "DDG: _tmp_7"] 
+  "107374182918" -> "30064779005"  [ label = "DDG: "] 
+  "30064779005" -> "30064779007"  [ label = "DDG: _tmp_7"] 
+  "107374182918" -> "30064779007"  [ label = "DDG: "] 
+}

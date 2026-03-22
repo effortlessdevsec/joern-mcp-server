@@ -1,0 +1,11 @@
+digraph "fetch" {  
+node [shape="rect"];  
+"107374183823" [label = <METHOD<BR/>fetch> ]
+"124554053007" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152545" [label = <PARAM<BR/>p1> ]
+"111669152546" [label = <PARAM<BR/>p2> ]
+  "111669152545" -> "124554053007"  [ label = "DDG: p1"] 
+  "111669152546" -> "124554053007"  [ label = "DDG: p2"] 
+  "107374183823" -> "111669152545"  [ label = "DDG: "] 
+  "107374183823" -> "111669152546"  [ label = "DDG: "] 
+}

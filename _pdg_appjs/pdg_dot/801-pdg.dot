@@ -1,0 +1,42 @@
+digraph "loadTransformer" {  
+node [shape="rect"];  
+"107374183201" [label = <METHOD, 14<BR/>loadTransformer> ]
+"124554052384" [label = <METHOD_RETURN, 14<BR/>void> ]
+"111669151300" [label = <PARAM, 14<BR/>this> ]
+"111669151301" [label = <PARAM, 14<BR/>callback> ]
+"30064784318" [label = <require, 15<BR/>require([ 'eslint8/lib/linter', 'es...> ]
+"68719489917" [label = <IDENTIFIER, 15<BR/>require<BR/>require([ 'eslint8/lib/linter', 'es...> ]
+"30064784319" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_1 = __ecma.Array.factory()> ]
+"30064784321" [label = <, 16<BR/>_tmp_1.push(&quot;eslint8/lib/linter&quot;)> ]
+"30064784323" [label = <, 17<BR/>_tmp_1.push(&quot;eslint8/lib/source-code&quot;)> ]
+"30064784325" [label = <, 18<BR/>_tmp_1.push(&quot;../../utils/eslint4Utils&quot;)> ]
+"68719489926" [label = <IDENTIFIER, 15<BR/>_tmp_1<BR/>[ 'eslint8/lib/linter', 'eslint8/li...> ]
+  "111669151301" -> "124554052384"  [ label = "DDG: callback"] 
+  "30064784318" -> "124554052384"  [ label = "DDG: this"] 
+  "30064784319" -> "124554052384"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064784319" -> "124554052384"  [ label = "DDG: _tmp_1 = __ecma.Array.factory()"] 
+  "30064784321" -> "124554052384"  [ label = "DDG: _tmp_1.push(&quot;eslint8/lib/linter&quot;)"] 
+  "30064784323" -> "124554052384"  [ label = "DDG: _tmp_1.push(&quot;eslint8/lib/source-code&quot;)"] 
+  "30064784325" -> "124554052384"  [ label = "DDG: _tmp_1"] 
+  "30064784325" -> "124554052384"  [ label = "DDG: _tmp_1.push(&quot;../../utils/eslint4Utils&quot;)"] 
+  "30064784318" -> "124554052384"  [ label = "DDG: require([
+      'eslint8/lib/linter',
+      'eslint8/lib/source-code',
+      '../../utils/eslint4Utils',
+    ], (Linter, sourceCode, utils) =&gt;
+      callback({ eslint: new Linter.Linter(), sourceCode, utils }))"] 
+  "107374183201" -> "111669151300"  [ label = "DDG: "] 
+  "107374183201" -> "111669151301"  [ label = "DDG: "] 
+  "107374183201" -> "68719489917"  [ label = "DDG: "] 
+  "111669151300" -> "30064784318"  [ label = "DDG: this"] 
+  "107374183201" -> "30064784318"  [ label = "DDG: "] 
+  "30064784325" -> "30064784318"  [ label = "DDG: _tmp_1"] 
+  "107374183201" -> "30064784319"  [ label = "DDG: "] 
+  "107374183201" -> "68719489926"  [ label = "DDG: "] 
+  "30064784319" -> "30064784321"  [ label = "DDG: _tmp_1"] 
+  "107374183201" -> "30064784321"  [ label = "DDG: "] 
+  "30064784321" -> "30064784323"  [ label = "DDG: _tmp_1"] 
+  "107374183201" -> "30064784323"  [ label = "DDG: "] 
+  "30064784323" -> "30064784325"  [ label = "DDG: _tmp_1"] 
+  "107374183201" -> "30064784325"  [ label = "DDG: "] 
+}

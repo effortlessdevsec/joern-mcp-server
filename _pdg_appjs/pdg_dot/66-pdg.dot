@@ -1,0 +1,249 @@
+digraph "ASTOutput" {  
+node [shape="rect"];  
+"107374182466" [label = <METHOD, 18<BR/>ASTOutput> ]
+"124554051651" [label = <METHOD_RETURN, 18<BR/>ANY> ]
+"111669149840" [label = <PARAM, 18<BR/>this> ]
+"111669149841" [label = <PARAM, 18<BR/>{parseResult={}, position=null}> ]
+"30064772342" [label = <&lt;operator&gt;.assignment, 18<BR/>parseResult = param1_0.parseResult> ]
+"30064772344" [label = <&lt;operator&gt;.assignment, 18<BR/>position = param1_0.position> ]
+"25769803949" [label = <BLOCK, 19<BR/>const [selectedOutput, setSelectedOutput] = use...> ]
+"25769803950" [label = <BLOCK, 20<BR/>const {ast=null} = parseResult> ]
+"30064772377" [label = <&lt;operator&gt;.assignment, 45<BR/>let buttons = visualizations.map( (cls, ind...> ]
+"141733920838" [label = <RETURN, 58<BR/>return ( &lt;div className=&quot;output highlight&quot;&gt;...> ]
+"30064772346" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_2 = useState(0)> ]
+"30064772348" [label = <&lt;operator&gt;.assignment, 19<BR/>selectedOutput = _tmp_2[0]> ]
+"30064772350" [label = <&lt;operator&gt;.assignment, 19<BR/>setSelectedOutput = _tmp_2[1]> ]
+"68719478095" [label = <IDENTIFIER, 19<BR/>_tmp_2<BR/>const [selectedOutput, setSelectedOutput] = use...> ]
+"30064772352" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_3 = parseResult> ]
+"30064772353" [label = <&lt;operator&gt;.assignment, 20<BR/>ast = _tmp_3.ast === void 0 ? null : _tmp_3.ast> ]
+"68719478101" [label = <IDENTIFIER, 20<BR/>_tmp_3<BR/>const {ast=null} = parseResult> ]
+"154618822749" [label = <TEMPLATE_DOM, 59<BR/>&lt;div className=&quot;output highlight&quot;&gt; &lt;div c...> ]
+"30064772360" [label = <&lt;operator&gt;.assignment, 24<BR/>output = &lt;div style={{ padding: 2...> ]
+"68719478109" [label = <IDENTIFIER, 32<BR/>ast<BR/>if (ast) { output = ( &lt;ErrorBoundary&gt;...> ]
+"30064772378" [label = <map, 45<BR/>visualizations.map( (cls, index) =&gt; &lt;...> ]
+"68719478089" [label = <IDENTIFIER, 19<BR/>useState<BR/>useState(0)> ]
+"30064772347" [label = <useState, 19<BR/>useState(0)> ]
+"30064772354" [label = <&lt;operator&gt;.conditional, 20<BR/>_tmp_3.ast === void 0 ? null : _tmp_3.ast> ]
+"30064772369" [label = <&lt;operator&gt;.assignment, 33<BR/>output = ( &lt;ErrorBoundary&gt; { ...> ]
+"68719478127" [label = <IDENTIFIER, 66<BR/>output<BR/>{output}> ]
+"30064772355" [label = <&lt;operator&gt;.equals, 20<BR/>_tmp_3.ast === void 0> ]
+"90194313552" [label = <LITERAL, 59<BR/>&quot;output highlight&quot;<BR/>className=&quot;output highlight&quot;> ]
+"68719478123" [label = <IDENTIFIER, 61<BR/>buttons<BR/>{buttons}> ]
+"90194313553" [label = <LITERAL, 60<BR/>&quot;toolbar&quot;<BR/>className=&quot;toolbar&quot;> ]
+"30064772380" [label = <formatTime, 63<BR/>formatTime(parseResult.time)> ]
+"30064772370" [label = <createElement, 36<BR/>React.createElement( visualizations...> ]
+"90194313554" [label = <LITERAL, 62<BR/>&quot;time&quot;<BR/>className=&quot;time&quot;> ]
+"68719478124" [label = <IDENTIFIER, 63<BR/>formatTime<BR/>formatTime(parseResult.time)> ]
+"25769803951" [label = <BLOCK, 25<BR/>{ padding: 20, whiteSpace: 'pre...> ]
+"30064772361" [label = <&lt;operator&gt;.assignment, 26<BR/>_tmp_4.padding = 20> ]
+"30064772363" [label = <&lt;operator&gt;.assignment, 27<BR/>_tmp_4.whiteSpace = &quot;pre-wrap&quot;> ]
+"30064772365" [label = <&lt;operator&gt;.assignment, 28<BR/>_tmp_4.fontFamily = &quot;monospace&quot;> ]
+"68719478107" [label = <IDENTIFIER, 25<BR/>_tmp_4<BR/>{ padding: 20, whiteSpace: 'pre...> ]
+"30064772373" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_5.parseResult = parseResult> ]
+"30064772375" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_5.position = position> ]
+"68719478119" [label = <IDENTIFIER, 38<BR/>_tmp_5<BR/>{parseResult, position}> ]
+"30064772359" [label = <&lt;operator&gt;.fieldAccess, 23<BR/>parseResult.error> ]
+"30064772358" [label = <&lt;operator&gt;.fieldAccess, 20<BR/>_tmp_3.ast> ]
+"55834575298" [label = <FIELD_IDENTIFIER, 20<BR/>ast> ]
+"30064772367" [label = <&lt;operator&gt;.fieldAccess, 30<BR/>parseResult.error.message> ]
+"30064772368" [label = <&lt;operator&gt;.fieldAccess, 30<BR/>parseResult.error> ]
+"55834575304" [label = <FIELD_IDENTIFIER, 30<BR/>message> ]
+"55834575303" [label = <FIELD_IDENTIFIER, 30<BR/>error> ]
+"30064772371" [label = <&lt;operator&gt;.fieldAccess, 36<BR/>React.createElement> ]
+"30064772372" [label = <&lt;operator&gt;.indexAccess, 37<BR/>visualizations[selectedOutput]> ]
+"55834575305" [label = <FIELD_IDENTIFIER, 36<BR/>createElement> ]
+"30064772362" [label = <&lt;operator&gt;.fieldAccess, 26<BR/>_tmp_4.padding> ]
+"30064772364" [label = <&lt;operator&gt;.fieldAccess, 27<BR/>_tmp_4.whiteSpace> ]
+"30064772366" [label = <&lt;operator&gt;.fieldAccess, 28<BR/>_tmp_4.fontFamily> ]
+"30064772374" [label = <&lt;operator&gt;.fieldAccess, 38<BR/>_tmp_5.parseResult> ]
+"30064772376" [label = <&lt;operator&gt;.fieldAccess, 38<BR/>_tmp_5.position> ]
+"55834575300" [label = <FIELD_IDENTIFIER, 26<BR/>padding> ]
+"55834575301" [label = <FIELD_IDENTIFIER, 27<BR/>whiteSpace> ]
+"55834575302" [label = <FIELD_IDENTIFIER, 28<BR/>fontFamily> ]
+"55834575306" [label = <FIELD_IDENTIFIER, 38<BR/>parseResult> ]
+"55834575307" [label = <FIELD_IDENTIFIER, 38<BR/>position> ]
+  "141733920838" -> "124554051651"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149841" -> "124554051651"  [ label = "DDG: param1_0"] 
+  "30064772342" -> "124554051651"  [ label = "DDG: param1_0.parseResult"] 
+  "30064772342" -> "124554051651"  [ label = "DDG: parseResult = param1_0.parseResult"] 
+  "30064772344" -> "124554051651"  [ label = "DDG: position"] 
+  "30064772344" -> "124554051651"  [ label = "DDG: param1_0.position"] 
+  "30064772344" -> "124554051651"  [ label = "DDG: position = param1_0.position"] 
+  "30064772346" -> "124554051651"  [ label = "DDG: _tmp_2"] 
+  "30064772346" -> "124554051651"  [ label = "DDG: useState(0)"] 
+  "30064772346" -> "124554051651"  [ label = "DDG: _tmp_2 = useState(0)"] 
+  "30064772348" -> "124554051651"  [ label = "DDG: selectedOutput"] 
+  "30064772348" -> "124554051651"  [ label = "DDG: _tmp_2[0]"] 
+  "30064772348" -> "124554051651"  [ label = "DDG: selectedOutput = _tmp_2[0]"] 
+  "30064772350" -> "124554051651"  [ label = "DDG: setSelectedOutput"] 
+  "30064772350" -> "124554051651"  [ label = "DDG: _tmp_2[1]"] 
+  "30064772350" -> "124554051651"  [ label = "DDG: setSelectedOutput = _tmp_2[1]"] 
+  "30064772352" -> "124554051651"  [ label = "DDG: _tmp_3"] 
+  "30064772352" -> "124554051651"  [ label = "DDG: parseResult"] 
+  "30064772352" -> "124554051651"  [ label = "DDG: _tmp_3 = parseResult"] 
+  "30064772353" -> "124554051651"  [ label = "DDG: ast"] 
+  "30064772355" -> "124554051651"  [ label = "DDG: void 0"] 
+  "30064772354" -> "124554051651"  [ label = "DDG: _tmp_3.ast === void 0"] 
+  "30064772354" -> "124554051651"  [ label = "DDG: _tmp_3.ast"] 
+  "30064772353" -> "124554051651"  [ label = "DDG: _tmp_3.ast === void 0 ? null : _tmp_3.ast"] 
+  "30064772353" -> "124554051651"  [ label = "DDG: ast = _tmp_3.ast === void 0 ? null : _tmp_3.ast"] 
+  "30064772369" -> "124554051651"  [ label = "DDG: output"] 
+  "30064772370" -> "124554051651"  [ label = "DDG: React"] 
+  "30064772370" -> "124554051651"  [ label = "DDG: visualizations[selectedOutput]"] 
+  "30064772373" -> "124554051651"  [ label = "DDG: _tmp_5.parseResult"] 
+  "30064772373" -> "124554051651"  [ label = "DDG: parseResult"] 
+  "30064772373" -> "124554051651"  [ label = "DDG: _tmp_5.parseResult = parseResult"] 
+  "30064772375" -> "124554051651"  [ label = "DDG: _tmp_5.position"] 
+  "30064772375" -> "124554051651"  [ label = "DDG: position"] 
+  "30064772375" -> "124554051651"  [ label = "DDG: _tmp_5.position = position"] 
+  "30064772370" -> "124554051651"  [ label = "DDG: React.createElement(
+            visualizations[selectedOutput],
+            {parseResult, position},
+          )"] 
+  "30064772369" -> "124554051651"  [ label = "DDG: output = (
+      &lt;ErrorBoundary&gt;
+        {
+          React.createElement(
+            visualizations[selectedOutput],
+            {parseResult, position},
+          )
+        }
+      &lt;/ErrorBoundary&gt;
+    )"] 
+  "30064772360" -> "124554051651"  [ label = "DDG: output"] 
+  "30064772361" -> "124554051651"  [ label = "DDG: _tmp_4.padding"] 
+  "30064772361" -> "124554051651"  [ label = "DDG: _tmp_4.padding = 20"] 
+  "30064772363" -> "124554051651"  [ label = "DDG: _tmp_4.whiteSpace"] 
+  "30064772363" -> "124554051651"  [ label = "DDG: _tmp_4.whiteSpace = &quot;pre-wrap&quot;"] 
+  "30064772365" -> "124554051651"  [ label = "DDG: _tmp_4.fontFamily"] 
+  "30064772365" -> "124554051651"  [ label = "DDG: _tmp_4.fontFamily = &quot;monospace&quot;"] 
+  "30064772360" -> "124554051651"  [ label = "DDG: output =
+      &lt;div style={{
+        padding: 20,
+        whiteSpace: 'pre-wrap',
+        fontFamily: 'monospace',
+      }}&gt;
+        {parseResult.error.message}
+      &lt;/div&gt;"] 
+  "30064772377" -> "124554051651"  [ label = "DDG: buttons"] 
+  "30064772378" -> "124554051651"  [ label = "DDG: visualizations"] 
+  "30064772377" -> "124554051651"  [ label = "DDG: visualizations.map(
+    (cls, index) =&gt;
+      &lt;button
+        key={index}
+        value={index}
+        onClick={event =&gt; setSelectedOutput(event.target.value)}
+        className={cx({
+          active: selectedOutput == index,
+        })}&gt;
+        {cls.name}
+      &lt;/button&gt;,
+  )"] 
+  "30064772377" -> "124554051651"  [ label = "DDG: let buttons = visualizations.map(
+    (cls, index) =&gt;
+      &lt;button
+        key={index}
+        value={index}
+        onClick={event =&gt; setSelectedOutput(event.target.value)}
+        className={cx({
+          active: selectedOutput == index,
+        })}&gt;
+        {cls.name}
+      &lt;/button&gt;,
+  )"] 
+  "30064772380" -> "124554051651"  [ label = "DDG: this"] 
+  "30064772380" -> "124554051651"  [ label = "DDG: parseResult.time"] 
+  "30064772380" -> "124554051651"  [ label = "DDG: formatTime(parseResult.time)"] 
+  "107374182466" -> "111669149840"  [ label = "DDG: "] 
+  "107374182466" -> "111669149841"  [ label = "DDG: "] 
+  "111669149841" -> "30064772342"  [ label = "DDG: param1_0"] 
+  "111669149841" -> "30064772344"  [ label = "DDG: param1_0"] 
+  "107374182466" -> "25769803949"  [ label = "DDG: "] 
+  "107374182466" -> "25769803950"  [ label = "DDG: "] 
+  "30064772378" -> "30064772377"  [ label = "DDG: visualizations"] 
+  "30064772378" -> "30064772377"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "154618822749" -> "141733920838"  [ label = "DDG: &lt;div className=&quot;output highlight&quot;&gt;
+      &lt;div className=&quot;toolbar&quot;&gt;
+        {buttons}
+        &lt;span className=&quot;time&quot;&gt;
+          {formatTime(parseResult.time)}
+        &lt;/span&gt;
+      &lt;/div&gt;
+    {output}
+    &lt;/div&gt;"] 
+  "107374182466" -> "141733920838"  [ label = "DDG: "] 
+  "30064772347" -> "30064772346"  [ label = "DDG: this"] 
+  "30064772347" -> "30064772346"  [ label = "DDG: 0"] 
+  "30064772346" -> "30064772348"  [ label = "DDG: _tmp_2"] 
+  "30064772346" -> "30064772350"  [ label = "DDG: _tmp_2"] 
+  "107374182466" -> "68719478095"  [ label = "DDG: "] 
+  "30064772342" -> "30064772352"  [ label = "DDG: parseResult"] 
+  "107374182466" -> "30064772352"  [ label = "DDG: "] 
+  "107374182466" -> "30064772353"  [ label = "DDG: "] 
+  "30064772352" -> "30064772353"  [ label = "DDG: _tmp_3"] 
+  "30064772355" -> "30064772353"  [ label = "DDG: _tmp_3.ast"] 
+  "107374182466" -> "68719478101"  [ label = "DDG: "] 
+  "107374182466" -> "68719478109"  [ label = "DDG: "] 
+  "30064772370" -> "30064772378"  [ label = "DDG: visualizations[selectedOutput]"] 
+  "107374182466" -> "30064772378"  [ label = "DDG: "] 
+  "30064772401" -> "68719478089"  [ label = "DDG: useState"] 
+  "107374182466" -> "68719478089"  [ label = "DDG: "] 
+  "111669149840" -> "30064772347"  [ label = "DDG: this"] 
+  "107374182466" -> "30064772347"  [ label = "DDG: "] 
+  "107374182466" -> "30064772354"  [ label = "DDG: "] 
+  "30064772352" -> "30064772354"  [ label = "DDG: _tmp_3"] 
+  "30064772355" -> "30064772354"  [ label = "DDG: _tmp_3.ast"] 
+  "107374182466" -> "68719478127"  [ label = "DDG: "] 
+  "30064772352" -> "30064772355"  [ label = "DDG: _tmp_3"] 
+  "107374182466" -> "30064772355"  [ label = "DDG: "] 
+  "107374182466" -> "90194313552"  [ label = "DDG: "] 
+  "107374182466" -> "68719478123"  [ label = "DDG: "] 
+  "107374182466" -> "90194313553"  [ label = "DDG: "] 
+  "107374182466" -> "90194313554"  [ label = "DDG: "] 
+  "30064772399" -> "68719478124"  [ label = "DDG: formatTime"] 
+  "107374182466" -> "68719478124"  [ label = "DDG: "] 
+  "30064772347" -> "30064772380"  [ label = "DDG: this"] 
+  "107374182466" -> "30064772380"  [ label = "DDG: "] 
+  "30064772342" -> "30064772380"  [ label = "DDG: parseResult"] 
+  "107374182466" -> "25769803951"  [ label = "DDG: "] 
+  "107374182466" -> "30064772370"  [ label = "DDG: "] 
+  "30064772373" -> "30064772370"  [ label = "DDG: _tmp_5.parseResult"] 
+  "30064772375" -> "30064772370"  [ label = "DDG: _tmp_5.position"] 
+  "107374182466" -> "30064772361"  [ label = "DDG: "] 
+  "107374182466" -> "30064772363"  [ label = "DDG: "] 
+  "107374182466" -> "30064772365"  [ label = "DDG: "] 
+  "107374182466" -> "68719478107"  [ label = "DDG: "] 
+  "107374182466" -> "30064772373"  [ label = "DDG: "] 
+  "30064772342" -> "30064772373"  [ label = "DDG: parseResult"] 
+  "30064772344" -> "30064772375"  [ label = "DDG: position"] 
+  "107374182466" -> "30064772375"  [ label = "DDG: "] 
+  "107374182466" -> "68719478119"  [ label = "DDG: "] 
+  "30064772359" -> "68719478109"  [ label = "CDG: "] 
+  "30064772359" -> "30064772360"  [ label = "CDG: "] 
+  "30064772359" -> "30064772362"  [ label = "CDG: "] 
+  "30064772359" -> "30064772361"  [ label = "CDG: "] 
+  "30064772359" -> "30064772364"  [ label = "CDG: "] 
+  "30064772359" -> "30064772363"  [ label = "CDG: "] 
+  "30064772359" -> "30064772366"  [ label = "CDG: "] 
+  "30064772359" -> "30064772365"  [ label = "CDG: "] 
+  "30064772359" -> "30064772368"  [ label = "CDG: "] 
+  "30064772359" -> "30064772367"  [ label = "CDG: "] 
+  "30064772359" -> "55834575300"  [ label = "CDG: "] 
+  "30064772359" -> "55834575302"  [ label = "CDG: "] 
+  "30064772359" -> "55834575301"  [ label = "CDG: "] 
+  "30064772359" -> "55834575304"  [ label = "CDG: "] 
+  "30064772359" -> "55834575303"  [ label = "CDG: "] 
+  "68719478109" -> "30064772374"  [ label = "CDG: "] 
+  "68719478109" -> "30064772373"  [ label = "CDG: "] 
+  "68719478109" -> "30064772376"  [ label = "CDG: "] 
+  "68719478109" -> "30064772375"  [ label = "CDG: "] 
+  "68719478109" -> "55834575307"  [ label = "CDG: "] 
+  "68719478109" -> "30064772370"  [ label = "CDG: "] 
+  "68719478109" -> "30064772369"  [ label = "CDG: "] 
+  "68719478109" -> "30064772372"  [ label = "CDG: "] 
+  "68719478109" -> "30064772371"  [ label = "CDG: "] 
+  "68719478109" -> "55834575306"  [ label = "CDG: "] 
+  "68719478109" -> "55834575305"  [ label = "CDG: "] 
+  "30064772355" -> "30064772358"  [ label = "CDG: "] 
+  "30064772355" -> "55834575298"  [ label = "CDG: "] 
+}

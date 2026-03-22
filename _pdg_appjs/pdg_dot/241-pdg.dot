@@ -1,0 +1,33 @@
+digraph "makeCheckbox" {  
+node [shape="rect"];  
+"107374182641" [label = <METHOD, 35<BR/>makeCheckbox> ]
+"124554051824" [label = <METHOD_RETURN, 35<BR/>ANY> ]
+"111669150116" [label = <PARAM, 35<BR/>this> ]
+"111669150117" [label = <PARAM, 35<BR/>name> ]
+"111669150118" [label = <PARAM, 35<BR/>settings> ]
+"111669150119" [label = <PARAM, 35<BR/>updateSettings> ]
+"141733920921" [label = <RETURN, 36<BR/>return ( &lt;input type=&quot;checkbox&quot; ...> ]
+"154618823560" [label = <TEMPLATE_DOM, 37<BR/>&lt;input type=&quot;checkbox&quot; name={name} ...> ]
+"90194314032" [label = <LITERAL, 38<BR/>&quot;checkbox&quot;<BR/>type=&quot;checkbox&quot;> ]
+"68719480419" [label = <IDENTIFIER, 39<BR/>name<BR/>{name}> ]
+"120259084431" [label = <METHOD_REF, 41<BR/>&lt;lambda&gt;0<BR/>{event =&gt; updateSettings(event.target)}> ]
+  "141733920921" -> "124554051824"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150116" -> "124554051824"  [ label = "DDG: this"] 
+  "111669150117" -> "124554051824"  [ label = "DDG: name"] 
+  "111669150118" -> "124554051824"  [ label = "DDG: settings"] 
+  "111669150119" -> "124554051824"  [ label = "DDG: updateSettings"] 
+  "107374182641" -> "111669150116"  [ label = "DDG: "] 
+  "107374182641" -> "111669150117"  [ label = "DDG: "] 
+  "107374182641" -> "111669150118"  [ label = "DDG: "] 
+  "107374182641" -> "111669150119"  [ label = "DDG: "] 
+  "154618823560" -> "141733920921"  [ label = "DDG: &lt;input
+      type=&quot;checkbox&quot;
+      name={name}
+      checked={settings[name]}
+      onChange={event =&gt; updateSettings(event.target)}
+    /&gt;"] 
+  "107374182641" -> "141733920921"  [ label = "DDG: "] 
+  "107374182641" -> "90194314032"  [ label = "DDG: "] 
+  "107374182641" -> "68719480419"  [ label = "DDG: "] 
+  "107374182641" -> "120259084431"  [ label = "DDG: "] 
+}

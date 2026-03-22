@@ -1,0 +1,76 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374183762" [label = <METHOD, 1<BR/>:program> ]
+"124554052951" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669152451" [label = <PARAM, 1<BR/>this> ]
+"30064792007" [label = <&lt;operator&gt;.assignment, 32<BR/>function call = function call(f) { return f(); }> ]
+"30064792008" [label = <&lt;operator&gt;.assignment, 1<BR/>const subscribers = {}> ]
+"25769807567" [label = <BLOCK, 3<BR/>export function subscribe(topic, handler) { l...> ]
+"25769807568" [label = <BLOCK, 15<BR/>export function publish(topic, data) { if (su...> ]
+"25769807569" [label = <BLOCK, 28<BR/>export function clear(unsubscribers) { unsubs...> ]
+"30064792009" [label = <&lt;operator&gt;.assignment, 3<BR/>function subscribe = function subscribe(topic, ...> ]
+"30064792010" [label = <&lt;operator&gt;.assignment, 3<BR/>exports.subscribe = subscribe> ]
+"30064792012" [label = <&lt;operator&gt;.assignment, 15<BR/>function publish = function publish(topic, data...> ]
+"30064792013" [label = <&lt;operator&gt;.assignment, 15<BR/>exports.publish = publish> ]
+"30064792015" [label = <&lt;operator&gt;.assignment, 28<BR/>function clear = function clear(unsubscribers) ...> ]
+"30064792016" [label = <&lt;operator&gt;.assignment, 28<BR/>exports.clear = clear> ]
+"68719497611" [label = <IDENTIFIER, 1<BR/>_tmp_0<BR/>{}> ]
+  "111669152451" -> "124554052951"  [ label = "DDG: this"] 
+  "30064792007" -> "124554052951"  [ label = "DDG: call"] 
+  "30064792007" -> "124554052951"  [ label = "DDG: function call = function call(f) {
+  return f();
+}"] 
+  "30064792008" -> "124554052951"  [ label = "DDG: subscribers"] 
+  "30064792008" -> "124554052951"  [ label = "DDG: const subscribers = {}"] 
+  "30064792009" -> "124554052951"  [ label = "DDG: function subscribe = function subscribe(topic, handler) {
+  let handlers = subscribers[topic];
+  if (!handlers) {
+    handlers = subscribers[topic] = [];
+  }
+  if (handlers.indexOf(handler) === -1) {
+    handlers.push(handler);
+  }
+
+  return () =&gt; handlers.splice(handlers.indexOf(handler), 1);
+}"] 
+  "30064792010" -> "124554052951"  [ label = "DDG: exports.subscribe"] 
+  "30064792010" -> "124554052951"  [ label = "DDG: subscribe"] 
+  "30064792010" -> "124554052951"  [ label = "DDG: exports.subscribe = subscribe"] 
+  "30064792012" -> "124554052951"  [ label = "DDG: function publish = function publish(topic, data) {
+  if (subscribers[topic]) {
+    setTimeout(function callSubscribers() {
+      if (subscribers[topic]) {
+        const handlers = subscribers[topic];
+        for (var i = 0; i &lt; handlers.length; i++) {
+          handlers[i](data);
+        }
+      }
+    }, 0);
+  }
+}"] 
+  "30064792013" -> "124554052951"  [ label = "DDG: exports.publish"] 
+  "30064792013" -> "124554052951"  [ label = "DDG: publish"] 
+  "30064792013" -> "124554052951"  [ label = "DDG: exports.publish = publish"] 
+  "30064792015" -> "124554052951"  [ label = "DDG: function clear = function clear(unsubscribers) {
+  unsubscribers.forEach(call);
+}"] 
+  "30064792016" -> "124554052951"  [ label = "DDG: exports.clear"] 
+  "30064792016" -> "124554052951"  [ label = "DDG: clear"] 
+  "30064792016" -> "124554052951"  [ label = "DDG: exports.clear = clear"] 
+  "107374183762" -> "111669152451"  [ label = "DDG: "] 
+  "107374183762" -> "30064792007"  [ label = "DDG: "] 
+  "107374183762" -> "30064792008"  [ label = "DDG: "] 
+  "107374183762" -> "25769807567"  [ label = "DDG: "] 
+  "107374183762" -> "25769807568"  [ label = "DDG: "] 
+  "107374183762" -> "25769807569"  [ label = "DDG: "] 
+  "107374183762" -> "30064792009"  [ label = "DDG: "] 
+  "30064792009" -> "30064792010"  [ label = "DDG: subscribe"] 
+  "107374183762" -> "30064792010"  [ label = "DDG: "] 
+  "107374183762" -> "30064792012"  [ label = "DDG: "] 
+  "30064792012" -> "30064792013"  [ label = "DDG: publish"] 
+  "107374183762" -> "30064792013"  [ label = "DDG: "] 
+  "107374183762" -> "30064792015"  [ label = "DDG: "] 
+  "30064792015" -> "30064792016"  [ label = "DDG: clear"] 
+  "107374183762" -> "30064792016"  [ label = "DDG: "] 
+  "107374183762" -> "68719497611"  [ label = "DDG: "] 
+}

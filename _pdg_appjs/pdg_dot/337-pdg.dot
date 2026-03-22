@@ -1,0 +1,23 @@
+digraph "getNodeName" {  
+node [shape="rect"];  
+"107374182737" [label = <METHOD, 22<BR/>getNodeName> ]
+"124554051920" [label = <METHOD_RETURN, 22<BR/>astexplorer/website/src/core/TreeAdapter.js::program:&lt;member&gt;(_adapterOptions):nodeToName:&lt;returnValue&gt;> ]
+"111669150288" [label = <PARAM, 22<BR/>this> ]
+"111669150289" [label = <PARAM, 22<BR/>node> ]
+"141733920991" [label = <RETURN, 23<BR/>return this._adapterOptions.nodeToName(node)> ]
+"30064776188" [label = <nodeToName, 23<BR/>this._adapterOptions.nodeToName(node)> ]
+"30064776190" [label = <&lt;operator&gt;.assignment, 23<BR/>(_tmp_5 = this._adapterOptions)> ]
+  "141733920991" -> "124554051920"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150288" -> "124554051920"  [ label = "DDG: this"] 
+  "30064776190" -> "124554051920"  [ label = "DDG: this._adapterOptions"] 
+  "30064776188" -> "124554051920"  [ label = "DDG: _tmp_5"] 
+  "30064776188" -> "124554051920"  [ label = "DDG: node"] 
+  "30064776188" -> "124554051920"  [ label = "DDG: this._adapterOptions.nodeToName(node)"] 
+  "107374182737" -> "111669150288"  [ label = "DDG: "] 
+  "107374182737" -> "111669150289"  [ label = "DDG: "] 
+  "30064776188" -> "141733920991"  [ label = "DDG: this._adapterOptions.nodeToName(node)"] 
+  "30064776190" -> "30064776188"  [ label = "DDG: _tmp_5"] 
+  "107374182737" -> "30064776188"  [ label = "DDG: "] 
+  "111669150289" -> "30064776188"  [ label = "DDG: node"] 
+  "111669150288" -> "30064776190"  [ label = "DDG: this"] 
+}

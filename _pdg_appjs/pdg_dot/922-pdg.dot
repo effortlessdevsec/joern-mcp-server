@@ -1,0 +1,48 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183322" [label = <METHOD, 59<BR/>getDefaultOptions> ]
+"124554052505" [label = <METHOD_RETURN, 59<BR/>{ 'remark-directive': __ecma.Boolean; 'remark-footnotes': __ecma.Boolean; 'remark-frontmatter': __ecma.Boolean; 'remark-gfm': __ecma.Boolean; 'remark-math': __ecma.Boolean; }> ]
+"111669151564" [label = <PARAM, 59<BR/>this> ]
+"141733921444" [label = <RETURN, 60<BR/>return { 'remark-directive': false, ...> ]
+"25769806331" [label = <BLOCK, 60<BR/>{ 'remark-directive': false, 'remar...> ]
+"30064786251" [label = <&lt;operator&gt;.assignment, 61<BR/>_tmp_12.remark-directive = false> ]
+"30064786253" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_12.remark-footnotes = false> ]
+"30064786255" [label = <&lt;operator&gt;.assignment, 63<BR/>_tmp_12.remark-frontmatter = false> ]
+"30064786257" [label = <&lt;operator&gt;.assignment, 64<BR/>_tmp_12.remark-gfm = false> ]
+"30064786259" [label = <&lt;operator&gt;.assignment, 65<BR/>_tmp_12.remark-math = false> ]
+"68719491837" [label = <IDENTIFIER, 60<BR/>_tmp_12<BR/>{ 'remark-directive': false, 'remar...> ]
+  "141733921444" -> "124554052505"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151564" -> "124554052505"  [ label = "DDG: this"] 
+  "30064786251" -> "124554052505"  [ label = "DDG: _tmp_12.remark-directive"] 
+  "30064786251" -> "124554052505"  [ label = "DDG: _tmp_12.remark-directive = false"] 
+  "30064786253" -> "124554052505"  [ label = "DDG: _tmp_12.remark-footnotes"] 
+  "30064786253" -> "124554052505"  [ label = "DDG: _tmp_12.remark-footnotes = false"] 
+  "30064786255" -> "124554052505"  [ label = "DDG: _tmp_12.remark-frontmatter"] 
+  "30064786255" -> "124554052505"  [ label = "DDG: _tmp_12.remark-frontmatter = false"] 
+  "30064786257" -> "124554052505"  [ label = "DDG: _tmp_12.remark-gfm"] 
+  "30064786257" -> "124554052505"  [ label = "DDG: _tmp_12.remark-gfm = false"] 
+  "30064786259" -> "124554052505"  [ label = "DDG: _tmp_12.remark-math"] 
+  "30064786259" -> "124554052505"  [ label = "DDG: _tmp_12.remark-math = false"] 
+  "107374183322" -> "111669151564"  [ label = "DDG: "] 
+  "25769806331" -> "141733921444"  [ label = "DDG: "] 
+  "25769806331" -> "141733921444"  [ label = "DDG: {
+      'remark-directive': false,
+      'remark-footnotes': false,
+      'remark-frontmatter': false,
+      'remark-gfm': false,
+      'remark-math': false,
+    }"] 
+  "107374183322" -> "141733921444"  [ label = "DDG: "] 
+  "30064786251" -> "25769806331"  [ label = "DDG: _tmp_12.remark-directive"] 
+  "30064786253" -> "25769806331"  [ label = "DDG: _tmp_12.remark-footnotes"] 
+  "30064786255" -> "25769806331"  [ label = "DDG: _tmp_12.remark-frontmatter"] 
+  "30064786257" -> "25769806331"  [ label = "DDG: _tmp_12.remark-gfm"] 
+  "30064786259" -> "25769806331"  [ label = "DDG: _tmp_12.remark-math"] 
+  "107374183322" -> "25769806331"  [ label = "DDG: "] 
+  "107374183322" -> "30064786251"  [ label = "DDG: "] 
+  "107374183322" -> "30064786253"  [ label = "DDG: "] 
+  "107374183322" -> "30064786255"  [ label = "DDG: "] 
+  "107374183322" -> "30064786257"  [ label = "DDG: "] 
+  "107374183322" -> "30064786259"  [ label = "DDG: "] 
+  "107374183322" -> "68719491837"  [ label = "DDG: "] 
+}

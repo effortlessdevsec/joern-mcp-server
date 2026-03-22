@@ -1,0 +1,23 @@
+digraph "UNSAFE_componentWillReceiveProps" {  
+node [shape="rect"];  
+"107374182621" [label = <METHOD, 16<BR/>UNSAFE_componentWillReceiveProps> ]
+"124554051804" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150084" [label = <PARAM, 16<BR/>this> ]
+"111669150085" [label = <PARAM, 16<BR/>nextProps> ]
+"30064774630" [label = <setState, 17<BR/>this.setState({parserSettings: nextProps.parser...> ]
+"30064774632" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_5.parserSettings = nextProps.parserSettings> ]
+"68719480233" [label = <IDENTIFIER, 17<BR/>_tmp_5<BR/>{parserSettings: nextProps.parserSettings}> ]
+  "111669150085" -> "124554051804"  [ label = "DDG: nextProps"] 
+  "30064774630" -> "124554051804"  [ label = "DDG: this"] 
+  "30064774632" -> "124554051804"  [ label = "DDG: _tmp_5.parserSettings"] 
+  "30064774632" -> "124554051804"  [ label = "DDG: nextProps.parserSettings"] 
+  "30064774632" -> "124554051804"  [ label = "DDG: _tmp_5.parserSettings = nextProps.parserSettings"] 
+  "30064774630" -> "124554051804"  [ label = "DDG: this.setState({parserSettings: nextProps.parserSettings})"] 
+  "107374182621" -> "111669150084"  [ label = "DDG: "] 
+  "107374182621" -> "111669150085"  [ label = "DDG: "] 
+  "111669150084" -> "30064774630"  [ label = "DDG: this"] 
+  "107374182621" -> "30064774630"  [ label = "DDG: "] 
+  "30064774632" -> "30064774630"  [ label = "DDG: _tmp_5.parserSettings"] 
+  "111669150085" -> "30064774632"  [ label = "DDG: nextProps"] 
+  "107374182621" -> "68719480233"  [ label = "DDG: "] 
+}

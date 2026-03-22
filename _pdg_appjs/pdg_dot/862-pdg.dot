@@ -1,0 +1,22 @@
+digraph "getNodeName" {  
+node [shape="rect"];  
+"107374183262" [label = <METHOD, 91<BR/>getNodeName> ]
+"124554052445" [label = <METHOD_RETURN, 91<BR/>__ecma.Object:&lt;operator&gt;.indexAccess:&lt;returnValue&gt;> ]
+"111669151433" [label = <PARAM, 91<BR/>this> ]
+"111669151434" [label = <PARAM, 91<BR/>node> ]
+"141733921399" [label = <RETURN, 93<BR/>return syntaxKind[node.kind]> ]
+"30064785232" [label = <&lt;operator&gt;.fieldAccess, 92<BR/>node.kind> ]
+"30064785233" [label = <&lt;operator&gt;.indexAccess, 93<BR/>syntaxKind[node.kind]> ]
+"30064785234" [label = <&lt;operator&gt;.fieldAccess, 93<BR/>node.kind> ]
+"55834580085" [label = <FIELD_IDENTIFIER, 93<BR/>kind> ]
+  "141733921399" -> "124554052445"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151433" -> "124554052445"  [ label = "DDG: this"] 
+  "111669151434" -> "124554052445"  [ label = "DDG: node"] 
+  "107374183262" -> "111669151433"  [ label = "DDG: "] 
+  "107374183262" -> "111669151434"  [ label = "DDG: "] 
+  "107374183262" -> "141733921399"  [ label = "DDG: "] 
+  "30064785232" -> "141733921399"  [ label = "CDG: "] 
+  "30064785232" -> "55834580085"  [ label = "CDG: "] 
+  "30064785232" -> "30064785234"  [ label = "CDG: "] 
+  "30064785232" -> "30064785233"  [ label = "CDG: "] 
+}

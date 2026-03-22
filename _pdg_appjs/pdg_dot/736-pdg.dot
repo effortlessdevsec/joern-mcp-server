@@ -1,0 +1,33 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183136" [label = <METHOD, 19<BR/>loadParser> ]
+"124554052319" [label = <METHOD_RETURN, 19<BR/>void> ]
+"111669151143" [label = <PARAM, 19<BR/>this> ]
+"111669151144" [label = <PARAM, 19<BR/>callback> ]
+"30064782957" [label = <require, 20<BR/>require(['@swc/wasm-web/wasm.js'], (instance) =...> ]
+"68719488597" [label = <IDENTIFIER, 20<BR/>require<BR/>require(['@swc/wasm-web/wasm.js'], (instance) =...> ]
+"30064782958" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064782960" [label = <, 20<BR/>_tmp_3.push(&quot;@swc/wasm-web/wasm.js&quot;)> ]
+"68719488602" [label = <IDENTIFIER, 20<BR/>_tmp_3<BR/>['@swc/wasm-web/wasm.js']> ]
+  "111669151144" -> "124554052319"  [ label = "DDG: callback"] 
+  "30064782957" -> "124554052319"  [ label = "DDG: this"] 
+  "30064782958" -> "124554052319"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064782958" -> "124554052319"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064782960" -> "124554052319"  [ label = "DDG: _tmp_3"] 
+  "30064782960" -> "124554052319"  [ label = "DDG: _tmp_3.push(&quot;@swc/wasm-web/wasm.js&quot;)"] 
+  "30064782957" -> "124554052319"  [ label = "DDG: require(['@swc/wasm-web/wasm.js'], (instance) =&gt; {
+      instance.default(wasm_bg).then(() =&gt; {
+        callback(instance)
+      });
+    })"] 
+  "107374183136" -> "111669151143"  [ label = "DDG: "] 
+  "107374183136" -> "111669151144"  [ label = "DDG: "] 
+  "107374183136" -> "68719488597"  [ label = "DDG: "] 
+  "111669151143" -> "30064782957"  [ label = "DDG: this"] 
+  "107374183136" -> "30064782957"  [ label = "DDG: "] 
+  "30064782960" -> "30064782957"  [ label = "DDG: _tmp_3"] 
+  "107374183136" -> "30064782958"  [ label = "DDG: "] 
+  "107374183136" -> "68719488602"  [ label = "DDG: "] 
+  "30064782958" -> "30064782960"  [ label = "DDG: _tmp_3"] 
+  "107374183136" -> "30064782960"  [ label = "DDG: "] 
+}

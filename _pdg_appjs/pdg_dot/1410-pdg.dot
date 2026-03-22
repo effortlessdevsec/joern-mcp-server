@@ -1,0 +1,8 @@
+digraph "getOwnPropertyNames" {  
+node [shape="rect"];  
+"107374183810" [label = <METHOD<BR/>getOwnPropertyNames> ]
+"124554052994" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152523" [label = <PARAM<BR/>p1> ]
+  "111669152523" -> "124554052994"  [ label = "DDG: p1"] 
+  "107374183810" -> "111669152523"  [ label = "DDG: "] 
+}

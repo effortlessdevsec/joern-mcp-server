@@ -1,0 +1,4 @@
+digraph "isForking" {  
+node [shape="rect"];  
+
+}

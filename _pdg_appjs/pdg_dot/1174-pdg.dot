@@ -1,0 +1,66 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183574" [label = <METHOD, 38<BR/>getDefaultOptions> ]
+"124554052757" [label = <METHOD_RETURN, 38<BR/>{ keepBlobsInJSON: __ecma.Boolean; keepCstNodes: __ecma.Boolean; keepNodeTypes: __ecma.Boolean; merge: __ecma.Boolean; mapAsMap: __ecma.Boolean; simpleKeys: __ecma.Boolean; maxAliasCount: __ecma.Number; prettyErrors: __ecma.Boolean; }> ]
+"111669152080" [label = <PARAM, 38<BR/>this> ]
+"141733921624" [label = <RETURN, 39<BR/>return { keepBlobsInJSON: true, kee...> ]
+"25769807045" [label = <BLOCK, 39<BR/>{ keepBlobsInJSON: true, keepCstNod...> ]
+"30064789784" [label = <&lt;operator&gt;.assignment, 40<BR/>_tmp_5.keepBlobsInJSON = true> ]
+"30064789786" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_5.keepCstNodes = false> ]
+"30064789788" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_5.keepNodeTypes = true> ]
+"30064789790" [label = <&lt;operator&gt;.assignment, 43<BR/>_tmp_5.merge = false> ]
+"30064789792" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_5.mapAsMap = false> ]
+"30064789794" [label = <&lt;operator&gt;.assignment, 45<BR/>_tmp_5.simpleKeys = false> ]
+"30064789796" [label = <&lt;operator&gt;.assignment, 46<BR/>_tmp_5.maxAliasCount = 100> ]
+"30064789798" [label = <&lt;operator&gt;.assignment, 47<BR/>_tmp_5.prettyErrors = true> ]
+"68719495367" [label = <IDENTIFIER, 39<BR/>_tmp_5<BR/>{ keepBlobsInJSON: true, keepCstNod...> ]
+  "141733921624" -> "124554052757"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152080" -> "124554052757"  [ label = "DDG: this"] 
+  "30064789784" -> "124554052757"  [ label = "DDG: _tmp_5.keepBlobsInJSON"] 
+  "30064789784" -> "124554052757"  [ label = "DDG: _tmp_5.keepBlobsInJSON = true"] 
+  "30064789786" -> "124554052757"  [ label = "DDG: _tmp_5.keepCstNodes"] 
+  "30064789786" -> "124554052757"  [ label = "DDG: _tmp_5.keepCstNodes = false"] 
+  "30064789788" -> "124554052757"  [ label = "DDG: _tmp_5.keepNodeTypes"] 
+  "30064789788" -> "124554052757"  [ label = "DDG: _tmp_5.keepNodeTypes = true"] 
+  "30064789790" -> "124554052757"  [ label = "DDG: _tmp_5.merge"] 
+  "30064789790" -> "124554052757"  [ label = "DDG: _tmp_5.merge = false"] 
+  "30064789792" -> "124554052757"  [ label = "DDG: _tmp_5.mapAsMap"] 
+  "30064789792" -> "124554052757"  [ label = "DDG: _tmp_5.mapAsMap = false"] 
+  "30064789794" -> "124554052757"  [ label = "DDG: _tmp_5.simpleKeys"] 
+  "30064789794" -> "124554052757"  [ label = "DDG: _tmp_5.simpleKeys = false"] 
+  "30064789796" -> "124554052757"  [ label = "DDG: _tmp_5.maxAliasCount"] 
+  "30064789796" -> "124554052757"  [ label = "DDG: _tmp_5.maxAliasCount = 100"] 
+  "30064789798" -> "124554052757"  [ label = "DDG: _tmp_5.prettyErrors"] 
+  "30064789798" -> "124554052757"  [ label = "DDG: _tmp_5.prettyErrors = true"] 
+  "107374183574" -> "111669152080"  [ label = "DDG: "] 
+  "25769807045" -> "141733921624"  [ label = "DDG: "] 
+  "25769807045" -> "141733921624"  [ label = "DDG: {
+      keepBlobsInJSON: true,
+      keepCstNodes: false,
+      keepNodeTypes: true,
+      merge: false,
+      mapAsMap: false,
+      simpleKeys: false,
+      maxAliasCount: 100,
+      prettyErrors: true,
+    }"] 
+  "107374183574" -> "141733921624"  [ label = "DDG: "] 
+  "30064789784" -> "25769807045"  [ label = "DDG: _tmp_5.keepBlobsInJSON"] 
+  "30064789786" -> "25769807045"  [ label = "DDG: _tmp_5.keepCstNodes"] 
+  "30064789788" -> "25769807045"  [ label = "DDG: _tmp_5.keepNodeTypes"] 
+  "30064789790" -> "25769807045"  [ label = "DDG: _tmp_5.merge"] 
+  "30064789792" -> "25769807045"  [ label = "DDG: _tmp_5.mapAsMap"] 
+  "30064789794" -> "25769807045"  [ label = "DDG: _tmp_5.simpleKeys"] 
+  "30064789796" -> "25769807045"  [ label = "DDG: _tmp_5.maxAliasCount"] 
+  "30064789798" -> "25769807045"  [ label = "DDG: _tmp_5.prettyErrors"] 
+  "107374183574" -> "25769807045"  [ label = "DDG: "] 
+  "107374183574" -> "30064789784"  [ label = "DDG: "] 
+  "107374183574" -> "30064789786"  [ label = "DDG: "] 
+  "107374183574" -> "30064789788"  [ label = "DDG: "] 
+  "107374183574" -> "30064789790"  [ label = "DDG: "] 
+  "107374183574" -> "30064789792"  [ label = "DDG: "] 
+  "107374183574" -> "30064789794"  [ label = "DDG: "] 
+  "107374183574" -> "30064789796"  [ label = "DDG: "] 
+  "107374183574" -> "30064789798"  [ label = "DDG: "] 
+  "107374183574" -> "68719495367"  [ label = "DDG: "] 
+}

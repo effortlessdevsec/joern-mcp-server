@@ -1,0 +1,115 @@
+digraph "fixSpan" {  
+node [shape="rect"];  
+"107374182890" [label = <METHOD, 85<BR/>fixSpan> ]
+"124554052078" [label = <METHOD_RETURN, 85<BR/>void> ]
+"111669150644" [label = <PARAM, 85<BR/>this> ]
+"111669150645" [label = <PARAM, 85<BR/>ast> ]
+"111669150646" [label = <PARAM, 85<BR/>code> ]
+"30064778638" [label = <&lt;operator&gt;.assignment, 88<BR/>function visitTarget = function visitTarget(val...> ]
+"30064778639" [label = <&lt;operator&gt;.assignment, 105<BR/>function getBaseStart = function getBaseStart(p...> ]
+"30064778640" [label = <&lt;operator&gt;.assignment, 86<BR/>const fixed = new Set()> ]
+"30064778644" [label = <&lt;operator&gt;.assignment, 87<BR/>const KEEP_VISIT = 1> ]
+"30064778645" [label = <visitTarget, 134<BR/>visitTarget( ast, value =&gt; getNodeCtor(...> ]
+"68719484444" [label = <IDENTIFIER, 134<BR/>visitTarget<BR/>visitTarget( ast, value =&gt; getNodeCtor(...> ]
+"30064778641" [label = <&lt;operator&gt;.assignment, 86<BR/>_tmp_3 = .alloc> ]
+"30064778643" [label = <&lt;operator&gt;.new, 86<BR/>new Set()> ]
+"68719484442" [label = <IDENTIFIER, 86<BR/>_tmp_3<BR/>new Set()> ]
+"68719484440" [label = <IDENTIFIER, 86<BR/>Set<BR/>new Set()> ]
+  "111669150646" -> "124554052078"  [ label = "DDG: code"] 
+  "30064778638" -> "124554052078"  [ label = "DDG: visitTarget"] 
+  "30064778638" -> "124554052078"  [ label = "DDG: function visitTarget = function visitTarget(value, isTarget, fn, parent) {
+    if (value !== null &amp;&amp; typeof value === 'object') {
+      if (isTarget(value)) {
+        if (fn(value, parent) !== KEEP_VISIT) {
+          return;
+        }
+      }
+      if (Array.isArray(value)) {
+        value.forEach(subValue =&gt; visitTarget(subValue, isTarget, fn, value));
+      } else {
+        for (const key in value) {
+          visitTarget(value[key], isTarget, fn, value);
+        }
+      }
+    }
+  }"] 
+  "30064778639" -> "124554052078"  [ label = "DDG: getBaseStart"] 
+  "30064778639" -> "124554052078"  [ label = "DDG: function getBaseStart = function getBaseStart(parent) {
+    const nodeName = getNodeCtor(parent);
+    switch (nodeName) {
+      case 'BoundAttribute':
+      case 'BoundEvent': {
+        let {offset} = parent.sourceSpan.start;
+        const isStructuralBinding = !/[[(]/.test(code[offset]);
+        if (isStructuralBinding) {
+          return offset;
+        }
+
+        const assignment = /[=:]/;
+        while (code[offset] &amp;&amp; !assignment.test(code[offset++]));
+
+        if (!code[offset]) {
+          console.warn('Unable to fix span values', parent);
+        }
+
+        if (code[offset] === &quot;'&quot; || code[offset] === '&quot;') offset++;
+
+        return offset;
+      }
+      case 'BoundText':
+        return parent.sourceSpan.start.offset;
+      default:
+        throw new Error(`Unexpected node ${nodeName}`);
+    }
+  }"] 
+  "30064778640" -> "124554052078"  [ label = "DDG: fixed"] 
+  "30064778641" -> "124554052078"  [ label = "DDG: .alloc"] 
+  "30064778641" -> "124554052078"  [ label = "DDG: _tmp_3 = .alloc"] 
+  "30064778643" -> "124554052078"  [ label = "DDG: _tmp_3"] 
+  "30064778643" -> "124554052078"  [ label = "DDG: new Set()"] 
+  "30064778640" -> "124554052078"  [ label = "DDG: const fixed = new Set()"] 
+  "30064778644" -> "124554052078"  [ label = "DDG: KEEP_VISIT"] 
+  "30064778644" -> "124554052078"  [ label = "DDG: const KEEP_VISIT = 1"] 
+  "30064778645" -> "124554052078"  [ label = "DDG: this"] 
+  "30064778645" -> "124554052078"  [ label = "DDG: ast"] 
+  "30064778645" -> "124554052078"  [ label = "DDG: visitTarget(
+    ast,
+    value =&gt; getNodeCtor(value) === 'ASTWithSource',
+    (node, parent) =&gt; {
+      const baseStart = getBaseStart(parent);
+      visitTarget(
+        node,
+        value =&gt; value.span,
+        node =&gt; {
+          if (!fixed.has(node)) {
+            node.span.start += baseStart;
+            node.span.end += baseStart;
+            fixed.add(node);
+          }
+
+          return KEEP_VISIT;
+        },
+      );
+    },
+  )"] 
+  "107374182890" -> "111669150644"  [ label = "DDG: "] 
+  "107374182890" -> "111669150645"  [ label = "DDG: "] 
+  "107374182890" -> "111669150646"  [ label = "DDG: "] 
+  "107374182890" -> "30064778638"  [ label = "DDG: "] 
+  "107374182890" -> "30064778639"  [ label = "DDG: "] 
+  "30064778643" -> "30064778640"  [ label = "DDG: new Set()"] 
+  "30064778643" -> "30064778640"  [ label = "DDG: _tmp_3"] 
+  "107374182890" -> "30064778640"  [ label = "DDG: "] 
+  "107374182890" -> "30064778644"  [ label = "DDG: "] 
+  "107374182890" -> "68719484444"  [ label = "DDG: "] 
+  "111669150644" -> "30064778645"  [ label = "DDG: this"] 
+  "107374182890" -> "30064778645"  [ label = "DDG: "] 
+  "111669150645" -> "30064778645"  [ label = "DDG: ast"] 
+  "107374182890" -> "30064778641"  [ label = "DDG: "] 
+  "107374182890" -> "68719484442"  [ label = "DDG: "] 
+  "68719484531" -> "68719484440"  [ label = "DDG: Set"] 
+  "68719484546" -> "68719484440"  [ label = "DDG: Set"] 
+  "107374182890" -> "68719484440"  [ label = "DDG: "] 
+  "30064778641" -> "30064778643"  [ label = "DDG: _tmp_3"] 
+  "107374182890" -> "30064778643"  [ label = "DDG: "] 
+}

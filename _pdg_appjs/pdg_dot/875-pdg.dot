@@ -1,0 +1,107 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374183275" [label = <METHOD, 6<BR/>opensByDefault> ]
+"124554052458" [label = <METHOD_RETURN, 6<BR/>__ecma.Boolean> ]
+"111669151459" [label = <PARAM, 6<BR/>this> ]
+"111669151460" [label = <PARAM, 6<BR/>node> ]
+"111669151461" [label = <PARAM, 6<BR/>key> ]
+"141733921413" [label = <RETURN, 7<BR/>return ( Boolean(node) &amp;&amp; node.type === '...> ]
+"30064785516" [label = <&lt;operator&gt;.logicalOr, 8<BR/>Boolean(node) &amp;&amp; node.type === 'Program' || ...> ]
+"30064785517" [label = <&lt;operator&gt;.logicalOr, 8<BR/>Boolean(node) &amp;&amp; node.type === 'Program' || ...> ]
+"30064785527" [label = <&lt;operator&gt;.equals, 12<BR/>key === 'expression'> ]
+"30064785518" [label = <&lt;operator&gt;.logicalOr, 8<BR/>Boolean(node) &amp;&amp; node.type === 'Program' || ...> ]
+"30064785526" [label = <&lt;operator&gt;.equals, 11<BR/>key === 'declarations'> ]
+"30064785519" [label = <&lt;operator&gt;.logicalOr, 8<BR/>Boolean(node) &amp;&amp; node.type === 'Program' || ...> ]
+"30064785525" [label = <&lt;operator&gt;.equals, 10<BR/>key === 'elements'> ]
+"30064785520" [label = <&lt;operator&gt;.logicalAnd, 8<BR/>Boolean(node) &amp;&amp; node.type === 'Program'> ]
+"30064785524" [label = <&lt;operator&gt;.equals, 9<BR/>key === 'body'> ]
+"30064785521" [label = <Boolean, 8<BR/>Boolean(node)> ]
+"30064785522" [label = <&lt;operator&gt;.equals, 8<BR/>node.type === 'Program'> ]
+"30064785523" [label = <&lt;operator&gt;.fieldAccess, 8<BR/>node.type> ]
+"55834580172" [label = <FIELD_IDENTIFIER, 8<BR/>type> ]
+  "141733921413" -> "124554052458"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151459" -> "124554052458"  [ label = "DDG: this"] 
+  "111669151461" -> "124554052458"  [ label = "DDG: key"] 
+  "30064785521" -> "124554052458"  [ label = "DDG: node"] 
+  "30064785520" -> "124554052458"  [ label = "DDG: Boolean(node)"] 
+  "30064785522" -> "124554052458"  [ label = "DDG: node.type"] 
+  "30064785520" -> "124554052458"  [ label = "DDG: node.type === 'Program'"] 
+  "30064785519" -> "124554052458"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program'"] 
+  "30064785524" -> "124554052458"  [ label = "DDG: key"] 
+  "30064785519" -> "124554052458"  [ label = "DDG: key === 'body'"] 
+  "30064785518" -> "124554052458"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body'"] 
+  "30064785525" -> "124554052458"  [ label = "DDG: key"] 
+  "30064785518" -> "124554052458"  [ label = "DDG: key === 'elements'"] 
+  "30064785517" -> "124554052458"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body' ||
+      key === 'elements'"] 
+  "30064785526" -> "124554052458"  [ label = "DDG: key"] 
+  "30064785517" -> "124554052458"  [ label = "DDG: key === 'declarations'"] 
+  "30064785516" -> "124554052458"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body' ||
+      key === 'elements' || // array literals
+      key === 'declarations'"] 
+  "30064785527" -> "124554052458"  [ label = "DDG: key"] 
+  "30064785516" -> "124554052458"  [ label = "DDG: key === 'expression'"] 
+  "30064785516" -> "124554052458"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body' ||
+      key === 'elements' || // array literals
+      key === 'declarations' || // variable declaration
+      key === 'expression'"] 
+  "107374183275" -> "111669151459"  [ label = "DDG: "] 
+  "107374183275" -> "111669151460"  [ label = "DDG: "] 
+  "107374183275" -> "111669151461"  [ label = "DDG: "] 
+  "30064785516" -> "141733921413"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body' ||
+      key === 'elements' || // array literals
+      key === 'declarations' || // variable declaration
+      key === 'expression'"] 
+  "30064785517" -> "30064785516"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body' ||
+      key === 'elements'"] 
+  "30064785517" -> "30064785516"  [ label = "DDG: key === 'declarations'"] 
+  "30064785527" -> "30064785516"  [ label = "DDG: key"] 
+  "30064785527" -> "30064785516"  [ label = "DDG: &quot;expression&quot;"] 
+  "30064785518" -> "30064785517"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program' ||
+      key === 'body'"] 
+  "30064785518" -> "30064785517"  [ label = "DDG: key === 'elements'"] 
+  "30064785526" -> "30064785517"  [ label = "DDG: key"] 
+  "30064785526" -> "30064785517"  [ label = "DDG: &quot;declarations&quot;"] 
+  "111669151461" -> "30064785527"  [ label = "DDG: key"] 
+  "30064785524" -> "30064785527"  [ label = "DDG: key"] 
+  "30064785525" -> "30064785527"  [ label = "DDG: key"] 
+  "30064785526" -> "30064785527"  [ label = "DDG: key"] 
+  "107374183275" -> "30064785527"  [ label = "DDG: "] 
+  "30064785519" -> "30064785518"  [ label = "DDG: Boolean(node) &amp;&amp; node.type === 'Program'"] 
+  "30064785519" -> "30064785518"  [ label = "DDG: key === 'body'"] 
+  "30064785525" -> "30064785518"  [ label = "DDG: key"] 
+  "30064785525" -> "30064785518"  [ label = "DDG: &quot;elements&quot;"] 
+  "111669151461" -> "30064785526"  [ label = "DDG: key"] 
+  "30064785524" -> "30064785526"  [ label = "DDG: key"] 
+  "30064785525" -> "30064785526"  [ label = "DDG: key"] 
+  "107374183275" -> "30064785526"  [ label = "DDG: "] 
+  "30064785520" -> "30064785519"  [ label = "DDG: Boolean(node)"] 
+  "30064785520" -> "30064785519"  [ label = "DDG: node.type === 'Program'"] 
+  "30064785524" -> "30064785519"  [ label = "DDG: key"] 
+  "30064785524" -> "30064785519"  [ label = "DDG: &quot;body&quot;"] 
+  "111669151461" -> "30064785525"  [ label = "DDG: key"] 
+  "30064785524" -> "30064785525"  [ label = "DDG: key"] 
+  "107374183275" -> "30064785525"  [ label = "DDG: "] 
+  "30064785521" -> "30064785520"  [ label = "DDG: node"] 
+  "30064785522" -> "30064785520"  [ label = "DDG: node.type"] 
+  "30064785522" -> "30064785520"  [ label = "DDG: &quot;Program&quot;"] 
+  "111669151461" -> "30064785524"  [ label = "DDG: key"] 
+  "107374183275" -> "30064785524"  [ label = "DDG: "] 
+  "111669151460" -> "30064785521"  [ label = "DDG: node"] 
+  "107374183275" -> "30064785521"  [ label = "DDG: "] 
+  "30064785521" -> "30064785522"  [ label = "DDG: node"] 
+  "107374183275" -> "30064785522"  [ label = "DDG: "] 
+  "30064785517" -> "30064785527"  [ label = "CDG: "] 
+  "30064785518" -> "30064785526"  [ label = "CDG: "] 
+  "30064785519" -> "30064785525"  [ label = "CDG: "] 
+  "30064785520" -> "30064785524"  [ label = "CDG: "] 
+  "30064785521" -> "55834580172"  [ label = "CDG: "] 
+  "30064785521" -> "30064785522"  [ label = "CDG: "] 
+  "30064785521" -> "30064785523"  [ label = "CDG: "] 
+}

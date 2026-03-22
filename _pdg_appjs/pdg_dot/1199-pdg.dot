@@ -1,0 +1,14 @@
+digraph "canSave" {  
+node [shape="rect"];  
+"107374183599" [label = <METHOD, 137<BR/>canSave> ]
+"124554052782" [label = <METHOD_RETURN, 137<BR/>__ecma.Boolean> ]
+"111669152127" [label = <PARAM, 137<BR/>this> ]
+"141733921647" [label = <RETURN, 138<BR/>return true> ]
+"90194317357" [label = <LITERAL, 138<BR/>true<BR/>return true> ]
+  "141733921647" -> "124554052782"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152127" -> "124554052782"  [ label = "DDG: this"] 
+  "107374183599" -> "111669152127"  [ label = "DDG: "] 
+  "90194317357" -> "141733921647"  [ label = "DDG: true"] 
+  "107374183599" -> "141733921647"  [ label = "DDG: "] 
+  "107374183599" -> "90194317357"  [ label = "DDG: "] 
+}

@@ -1,0 +1,14 @@
+digraph "defineProperty" {  
+node [shape="rect"];  
+"107374183773" [label = <METHOD<BR/>defineProperty> ]
+"124554052957" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152459" [label = <PARAM<BR/>p1> ]
+"111669152460" [label = <PARAM<BR/>p2> ]
+"111669152461" [label = <PARAM<BR/>p3> ]
+  "111669152459" -> "124554052957"  [ label = "DDG: p1"] 
+  "111669152460" -> "124554052957"  [ label = "DDG: p2"] 
+  "111669152461" -> "124554052957"  [ label = "DDG: p3"] 
+  "107374183773" -> "111669152459"  [ label = "DDG: "] 
+  "107374183773" -> "111669152460"  [ label = "DDG: "] 
+  "107374183773" -> "111669152461"  [ label = "DDG: "] 
+}

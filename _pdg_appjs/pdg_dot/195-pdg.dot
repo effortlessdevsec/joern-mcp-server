@@ -1,0 +1,103 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182595" [label = <METHOD, 8<BR/>render> ]
+"124554051778" [label = <METHOD_RETURN, 8<BR/>ANY> ]
+"111669150044" [label = <PARAM, 8<BR/>this> ]
+"141733920899" [label = <RETURN, 9<BR/>return ( &lt;div className={cx({ but...> ]
+"154618823198" [label = <TEMPLATE_DOM, 10<BR/>&lt;div className={cx({ button: true, ...> ]
+"30064774160" [label = <cx, 10<BR/>cx({ button: true, menuButton: ...> ]
+"90194313909" [label = <LITERAL, 15<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064774174" [label = <map, 26<BR/>keyMappings.map(keyMap =&gt; ( &lt;li ...> ]
+"68719479809" [label = <IDENTIFIER, 10<BR/>cx<BR/>cx({ button: true, menuButton: ...> ]
+"30064774161" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_1.button = true> ]
+"30064774163" [label = <&lt;operator&gt;.assignment, 12<BR/>_tmp_1.menuButton = true> ]
+"68719479813" [label = <IDENTIFIER, 10<BR/>_tmp_1<BR/>{ button: true, menuButton: tru...> ]
+"30064774165" [label = <cx, 17<BR/>cx({ fa: true, 'fa-...> ]
+"68719479814" [label = <IDENTIFIER, 17<BR/>cx<BR/>cx({ fa: true, 'fa-...> ]
+"30064774166" [label = <&lt;operator&gt;.assignment, 18<BR/>_tmp_2.fa = true> ]
+"30064774168" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_2.fa-lg = true> ]
+"30064774170" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_2.fa-keyboard-o = true> ]
+"68719479819" [label = <IDENTIFIER, 17<BR/>_tmp_2<BR/>{ fa: true, 'fa-lg'...> ]
+  "141733920899" -> "124554051778"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064774161" -> "124554051778"  [ label = "DDG: _tmp_1.button"] 
+  "30064774161" -> "124554051778"  [ label = "DDG: _tmp_1.button = true"] 
+  "30064774163" -> "124554051778"  [ label = "DDG: _tmp_1.menuButton"] 
+  "30064774163" -> "124554051778"  [ label = "DDG: _tmp_1.menuButton = true"] 
+  "30064774160" -> "124554051778"  [ label = "DDG: cx({
+        button: true,
+        menuButton: true,
+      })"] 
+  "30064774165" -> "124554051778"  [ label = "DDG: this"] 
+  "30064774166" -> "124554051778"  [ label = "DDG: _tmp_2.fa"] 
+  "30064774166" -> "124554051778"  [ label = "DDG: _tmp_2.fa = true"] 
+  "30064774168" -> "124554051778"  [ label = "DDG: _tmp_2.fa-lg"] 
+  "30064774168" -> "124554051778"  [ label = "DDG: _tmp_2.fa-lg = true"] 
+  "30064774170" -> "124554051778"  [ label = "DDG: _tmp_2.fa-keyboard-o"] 
+  "30064774170" -> "124554051778"  [ label = "DDG: _tmp_2.fa-keyboard-o = true"] 
+  "30064774165" -> "124554051778"  [ label = "DDG: cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-keyboard-o': true,
+            })"] 
+  "30064774174" -> "124554051778"  [ label = "DDG: keyMappings"] 
+  "30064774174" -> "124554051778"  [ label = "DDG: keyMappings.map(keyMap =&gt; (
+            &lt;li
+              key={keyMap}
+              disabled={this.props.keyMap === keyMap}
+              onClick={() =&gt; this.props.onKeyMapChange(keyMap)}&gt;
+              &lt;button type=&quot;button&quot; &gt;
+                {keyMap}
+              &lt;/button&gt;
+            &lt;/li&gt;
+          ))"] 
+  "107374182595" -> "111669150044"  [ label = "DDG: "] 
+  "154618823198" -> "141733920899"  [ label = "DDG: &lt;div className={cx({
+        button: true,
+        menuButton: true,
+      })}&gt;
+        &lt;button
+          type=&quot;button&quot;&gt;
+          &lt;i
+            className={cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-keyboard-o': true,
+            })}
+          /&gt;
+          &amp;nbsp;{this.props.keyMap}
+        &lt;/button&gt;
+        {&lt;ul&gt;
+          {keyMappings.map(keyMap =&gt; (
+            &lt;li
+              key={keyMap}
+              disabled={this.props.keyMap === keyMap}
+              onClick={() =&gt; this.props.onKeyMapChange(keyMap)}&gt;
+              &lt;button type=&quot;button&quot; &gt;
+                {keyMap}
+              &lt;/button&gt;
+            &lt;/li&gt;
+          ))}
+        &lt;/ul&gt;}
+      &lt;/div&gt;"] 
+  "107374182595" -> "141733920899"  [ label = "DDG: "] 
+  "107374182595" -> "90194313909"  [ label = "DDG: "] 
+  "107374182595" -> "68719479809"  [ label = "DDG: "] 
+  "111669150044" -> "30064774160"  [ label = "DDG: this"] 
+  "107374182595" -> "30064774160"  [ label = "DDG: "] 
+  "30064774161" -> "30064774160"  [ label = "DDG: _tmp_1.button"] 
+  "30064774163" -> "30064774160"  [ label = "DDG: _tmp_1.menuButton"] 
+  "107374182595" -> "30064774174"  [ label = "DDG: "] 
+  "107374182595" -> "30064774161"  [ label = "DDG: "] 
+  "107374182595" -> "30064774163"  [ label = "DDG: "] 
+  "107374182595" -> "68719479813"  [ label = "DDG: "] 
+  "107374182595" -> "68719479814"  [ label = "DDG: "] 
+  "30064774160" -> "30064774165"  [ label = "DDG: this"] 
+  "107374182595" -> "30064774165"  [ label = "DDG: "] 
+  "30064774166" -> "30064774165"  [ label = "DDG: _tmp_2.fa"] 
+  "30064774168" -> "30064774165"  [ label = "DDG: _tmp_2.fa-lg"] 
+  "30064774170" -> "30064774165"  [ label = "DDG: _tmp_2.fa-keyboard-o"] 
+  "107374182595" -> "30064774166"  [ label = "DDG: "] 
+  "107374182595" -> "30064774168"  [ label = "DDG: "] 
+  "107374182595" -> "30064774170"  [ label = "DDG: "] 
+  "107374182595" -> "68719479819"  [ label = "DDG: "] 
+}

@@ -1,0 +1,120 @@
+digraph "render" {  
+node [shape="rect"];  
+"107374182590" [label = <METHOD, 6<BR/>render> ]
+"124554051773" [label = <METHOD_RETURN, 6<BR/>ANY> ]
+"111669150038" [label = <PARAM, 6<BR/>this> ]
+"25769804258" [label = <BLOCK, 7<BR/>const { canFork, saving, forking, onFork } = th...> ]
+"141733920896" [label = <RETURN, 8<BR/>return ( &lt;button type=&quot;button&quot; ...> ]
+"30064774105" [label = <&lt;operator&gt;.assignment, 7<BR/>_tmp_0 = this.props> ]
+"30064774107" [label = <&lt;operator&gt;.assignment, 7<BR/>canFork = _tmp_0.canFork> ]
+"30064774109" [label = <&lt;operator&gt;.assignment, 7<BR/>saving = _tmp_0.saving> ]
+"30064774111" [label = <&lt;operator&gt;.assignment, 7<BR/>forking = _tmp_0.forking> ]
+"30064774113" [label = <&lt;operator&gt;.assignment, 7<BR/>onFork = _tmp_0.onFork> ]
+"68719479763" [label = <IDENTIFIER, 7<BR/>_tmp_0<BR/>const { canFork, saving, forking, onFork } = th...> ]
+"154618823166" [label = <TEMPLATE_DOM, 9<BR/>&lt;button type=&quot;button&quot; disabled=...> ]
+"90194313899" [label = <LITERAL, 10<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"30064774115" [label = <&lt;operator&gt;.logicalOr, 12<BR/>!canFork || saving || forking> ]
+"68719479767" [label = <IDENTIFIER, 14<BR/>onFork<BR/>{onFork}> ]
+"30064774118" [label = <cx, 16<BR/>cx({ fa: true, 'fa-spin...> ]
+"30064774116" [label = <&lt;operator&gt;.logicalOr, 12<BR/>!canFork || saving> ]
+"68719479768" [label = <IDENTIFIER, 16<BR/>cx<BR/>cx({ fa: true, 'fa-spin...> ]
+"30064774117" [label = <&lt;operator&gt;.logicalNot, 12<BR/>!canFork> ]
+"30064774119" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_1.fa = true> ]
+"30064774121" [label = <&lt;operator&gt;.assignment, 18<BR/>_tmp_1.fa-spinner = forking> ]
+"30064774123" [label = <&lt;operator&gt;.assignment, 19<BR/>_tmp_1.fa-pulse = forking> ]
+"30064774125" [label = <&lt;operator&gt;.assignment, 20<BR/>_tmp_1.fa-code-fork = !forking> ]
+"30064774128" [label = <&lt;operator&gt;.assignment, 21<BR/>_tmp_1.fa-fw = true> ]
+"68719479778" [label = <IDENTIFIER, 16<BR/>_tmp_1<BR/>{ fa: true, 'fa-spinner...> ]
+"30064774127" [label = <&lt;operator&gt;.logicalNot, 20<BR/>!forking> ]
+  "141733920896" -> "124554051773"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064774105" -> "124554051773"  [ label = "DDG: _tmp_0"] 
+  "30064774105" -> "124554051773"  [ label = "DDG: _tmp_0 = this.props"] 
+  "30064774107" -> "124554051773"  [ label = "DDG: _tmp_0.canFork"] 
+  "30064774107" -> "124554051773"  [ label = "DDG: canFork = _tmp_0.canFork"] 
+  "30064774109" -> "124554051773"  [ label = "DDG: _tmp_0.saving"] 
+  "30064774109" -> "124554051773"  [ label = "DDG: saving = _tmp_0.saving"] 
+  "30064774111" -> "124554051773"  [ label = "DDG: _tmp_0.forking"] 
+  "30064774111" -> "124554051773"  [ label = "DDG: forking = _tmp_0.forking"] 
+  "30064774113" -> "124554051773"  [ label = "DDG: onFork"] 
+  "30064774113" -> "124554051773"  [ label = "DDG: _tmp_0.onFork"] 
+  "30064774113" -> "124554051773"  [ label = "DDG: onFork = _tmp_0.onFork"] 
+  "30064774117" -> "124554051773"  [ label = "DDG: canFork"] 
+  "30064774116" -> "124554051773"  [ label = "DDG: !canFork"] 
+  "30064774116" -> "124554051773"  [ label = "DDG: saving"] 
+  "30064774115" -> "124554051773"  [ label = "DDG: !canFork || saving"] 
+  "30064774115" -> "124554051773"  [ label = "DDG: !canFork || saving || forking"] 
+  "30064774118" -> "124554051773"  [ label = "DDG: this"] 
+  "30064774119" -> "124554051773"  [ label = "DDG: _tmp_1.fa"] 
+  "30064774119" -> "124554051773"  [ label = "DDG: _tmp_1.fa = true"] 
+  "30064774121" -> "124554051773"  [ label = "DDG: _tmp_1.fa-spinner"] 
+  "30064774121" -> "124554051773"  [ label = "DDG: _tmp_1.fa-spinner = forking"] 
+  "30064774123" -> "124554051773"  [ label = "DDG: _tmp_1.fa-pulse"] 
+  "30064774123" -> "124554051773"  [ label = "DDG: _tmp_1.fa-pulse = forking"] 
+  "30064774125" -> "124554051773"  [ label = "DDG: _tmp_1.fa-code-fork"] 
+  "30064774127" -> "124554051773"  [ label = "DDG: forking"] 
+  "30064774125" -> "124554051773"  [ label = "DDG: !forking"] 
+  "30064774125" -> "124554051773"  [ label = "DDG: _tmp_1.fa-code-fork = !forking"] 
+  "30064774128" -> "124554051773"  [ label = "DDG: _tmp_1.fa-fw"] 
+  "30064774128" -> "124554051773"  [ label = "DDG: _tmp_1.fa-fw = true"] 
+  "30064774118" -> "124554051773"  [ label = "DDG: cx({
+            fa: true,
+            'fa-spinner': forking,
+            'fa-pulse': forking,
+            'fa-code-fork': !forking,
+            'fa-fw': true,
+          })"] 
+  "107374182590" -> "111669150038"  [ label = "DDG: "] 
+  "107374182590" -> "25769804258"  [ label = "DDG: "] 
+  "154618823166" -> "141733920896"  [ label = "DDG: &lt;button
+        type=&quot;button&quot;
+        disabled={
+          !canFork || saving || forking
+        }
+        onClick={onFork}&gt;
+        &lt;i
+          className={cx({
+            fa: true,
+            'fa-spinner': forking,
+            'fa-pulse': forking,
+            'fa-code-fork': !forking,
+            'fa-fw': true,
+          })}
+        /&gt;&amp;nbsp;Fork
+      &lt;/button&gt;"] 
+  "107374182590" -> "141733920896"  [ label = "DDG: "] 
+  "111669150038" -> "30064774105"  [ label = "DDG: this"] 
+  "30064774105" -> "30064774107"  [ label = "DDG: _tmp_0"] 
+  "30064774105" -> "30064774109"  [ label = "DDG: _tmp_0"] 
+  "30064774105" -> "30064774111"  [ label = "DDG: _tmp_0"] 
+  "30064774105" -> "30064774113"  [ label = "DDG: _tmp_0"] 
+  "107374182590" -> "68719479763"  [ label = "DDG: "] 
+  "107374182590" -> "90194313899"  [ label = "DDG: "] 
+  "107374182590" -> "68719479767"  [ label = "DDG: "] 
+  "30064774116" -> "30064774115"  [ label = "DDG: !canFork"] 
+  "30064774116" -> "30064774115"  [ label = "DDG: saving"] 
+  "30064774111" -> "30064774115"  [ label = "DDG: forking"] 
+  "107374182590" -> "30064774115"  [ label = "DDG: "] 
+  "30064774117" -> "30064774116"  [ label = "DDG: canFork"] 
+  "30064774109" -> "30064774116"  [ label = "DDG: saving"] 
+  "107374182590" -> "30064774116"  [ label = "DDG: "] 
+  "107374182590" -> "68719479768"  [ label = "DDG: "] 
+  "111669150038" -> "30064774118"  [ label = "DDG: this"] 
+  "107374182590" -> "30064774118"  [ label = "DDG: "] 
+  "30064774119" -> "30064774118"  [ label = "DDG: _tmp_1.fa"] 
+  "30064774121" -> "30064774118"  [ label = "DDG: _tmp_1.fa-spinner"] 
+  "30064774123" -> "30064774118"  [ label = "DDG: _tmp_1.fa-pulse"] 
+  "30064774125" -> "30064774118"  [ label = "DDG: _tmp_1.fa-code-fork"] 
+  "30064774128" -> "30064774118"  [ label = "DDG: _tmp_1.fa-fw"] 
+  "30064774107" -> "30064774117"  [ label = "DDG: canFork"] 
+  "107374182590" -> "30064774117"  [ label = "DDG: "] 
+  "107374182590" -> "30064774119"  [ label = "DDG: "] 
+  "30064774115" -> "30064774121"  [ label = "DDG: forking"] 
+  "107374182590" -> "30064774121"  [ label = "DDG: "] 
+  "107374182590" -> "30064774123"  [ label = "DDG: "] 
+  "30064774115" -> "30064774123"  [ label = "DDG: forking"] 
+  "30064774127" -> "30064774125"  [ label = "DDG: forking"] 
+  "107374182590" -> "30064774128"  [ label = "DDG: "] 
+  "107374182590" -> "68719479778"  [ label = "DDG: "] 
+  "107374182590" -> "30064774127"  [ label = "DDG: "] 
+  "30064774115" -> "30064774127"  [ label = "DDG: forking"] 
+}

@@ -1,0 +1,168 @@
+digraph "&lt;lambda&gt;2" {  
+node [shape="rect"];  
+"107374182973" [label = <METHOD, 25<BR/>&lt;lambda&gt;2> ]
+"124554052161" [label = <METHOD_RETURN, 25<BR/>astexplorer/website/src/parsers/index.js::program:localRequire:&lt;returnValue&gt;> ]
+"111669150824" [label = <PARAM, 25<BR/>this> ]
+"111669150825" [label = <PARAM, 25<BR/>[catName]> ]
+"30064779809" [label = <&lt;operator&gt;.assignment, 25<BR/>catName = param1_0.catName> ]
+"30064779811" [label = <&lt;operator&gt;.assignment, 26<BR/>let category = localRequire(`./${catName}/index...> ]
+"30064779814" [label = <&lt;operator&gt;.assignment, 28<BR/>categoryByID[category.id] = category> ]
+"30064779817" [label = <&lt;operator&gt;.assignment, 30<BR/>category.codeExample = interopRequire(localRequ...> ]
+"30064779822" [label = <&lt;operator&gt;.assignment, 32<BR/>let catFiles = files .filter(([curC...> ]
+"30064779828" [label = <&lt;operator&gt;.assignment, 37<BR/>category.parsers = catFiles .filter...> ]
+"30064779835" [label = <&lt;operator&gt;.assignment, 47<BR/>category.transformers = catFiles .f...> ]
+"141733921199" [label = <RETURN, 58<BR/>return category> ]
+"68719485623" [label = <IDENTIFIER, 58<BR/>category<BR/>return category> ]
+"68719485596" [label = <IDENTIFIER, 26<BR/>localRequire<BR/>localRequire(`./${catName}/index.js`)> ]
+"30064779812" [label = <localRequire, 26<BR/>localRequire(`./${catName}/index.js`)> ]
+"68719485603" [label = <IDENTIFIER, 30<BR/>interopRequire<BR/>interopRequire(localRequire(`./${catName}/codeE...> ]
+"30064779819" [label = <interopRequire, 30<BR/>interopRequire(localRequire(`./${catName}/codeE...> ]
+"30064779823" [label = <map, 33<BR/>files .filter(([curCatName]) =&gt; curCatNam...> ]
+"30064779830" [label = <map, 38<BR/>catFiles .filter(([parserName]) =&gt; !restr...> ]
+"30064779837" [label = <map, 48<BR/>catFiles .filter(([dirName, , fileName]) ...> ]
+"30064779813" [label = <&lt;operator&gt;.formatString, 26<BR/>&lt;operator&gt;.formatString(&quot;./&quot;, catName, &quot;/index....> ]
+"68719485605" [label = <IDENTIFIER, 30<BR/>localRequire<BR/>localRequire(`./${catName}/codeExample.txt`)> ]
+"30064779820" [label = <localRequire, 30<BR/>localRequire(`./${catName}/codeExample.txt`)> ]
+"30064779821" [label = <&lt;operator&gt;.formatString, 30<BR/>&lt;operator&gt;.formatString(&quot;./&quot;, catName, &quot;/codeEx...> ]
+"30064779825" [label = <&lt;operator&gt;.assignment, 33<BR/>(_tmp_8 = files .filter(([curCatName]) =&gt;...> ]
+"30064779832" [label = <&lt;operator&gt;.assignment, 38<BR/>(_tmp_9 = catFiles .filter(([parserName])...> ]
+"30064779839" [label = <&lt;operator&gt;.assignment, 48<BR/>(_tmp_10 = catFiles .filter(([dirName, , ...> ]
+"30064779826" [label = <filter, 33<BR/>files .filter(([curCatName]) =&gt; curCatNam...> ]
+"30064779833" [label = <filter, 38<BR/>catFiles .filter(([parserName]) =&gt; !restr...> ]
+"30064779840" [label = <filter, 48<BR/>catFiles .filter(([dirName, , fileName]) ...> ]
+  "141733921199" -> "124554052161"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150825" -> "124554052161"  [ label = "DDG: param1_0"] 
+  "30064779809" -> "124554052161"  [ label = "DDG: param1_0.catName"] 
+  "30064779809" -> "124554052161"  [ label = "DDG: catName = param1_0.catName"] 
+  "30064779812" -> "124554052161"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;./&quot;, catName, &quot;/index.js&quot;)"] 
+  "30064779811" -> "124554052161"  [ label = "DDG: localRequire(`./${catName}/index.js`)"] 
+  "30064779811" -> "124554052161"  [ label = "DDG: let category = localRequire(`./${catName}/index.js`)"] 
+  "30064779814" -> "124554052161"  [ label = "DDG: categoryByID[category.id]"] 
+  "30064779814" -> "124554052161"  [ label = "DDG: category"] 
+  "30064779814" -> "124554052161"  [ label = "DDG: categoryByID[category.id] = category"] 
+  "30064779817" -> "124554052161"  [ label = "DDG: category.codeExample"] 
+  "30064779819" -> "124554052161"  [ label = "DDG: this"] 
+  "30064779821" -> "124554052161"  [ label = "DDG: catName"] 
+  "30064779820" -> "124554052161"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;./&quot;, catName, &quot;/codeExample.txt&quot;)"] 
+  "30064779819" -> "124554052161"  [ label = "DDG: localRequire(`./${catName}/codeExample.txt`)"] 
+  "30064779817" -> "124554052161"  [ label = "DDG: interopRequire(localRequire(`./${catName}/codeExample.txt`))"] 
+  "30064779817" -> "124554052161"  [ label = "DDG: category.codeExample = interopRequire(localRequire(`./${catName}/codeExample.txt`))"] 
+  "30064779826" -> "124554052161"  [ label = "DDG: files"] 
+  "30064779825" -> "124554052161"  [ label = "DDG: files
+      .filter(([curCatName]) =&gt; curCatName === catName)"] 
+  "30064779823" -> "124554052161"  [ label = "DDG: _tmp_8"] 
+  "30064779822" -> "124554052161"  [ label = "DDG: files
+      .filter(([curCatName]) =&gt; curCatName === catName)
+      .map(name =&gt; name.slice(1))"] 
+  "30064779822" -> "124554052161"  [ label = "DDG: let catFiles =
+      files
+      .filter(([curCatName]) =&gt; curCatName === catName)
+      .map(name =&gt; name.slice(1))"] 
+  "30064779828" -> "124554052161"  [ label = "DDG: category.parsers"] 
+  "30064779832" -> "124554052161"  [ label = "DDG: catFiles
+      .filter(([parserName]) =&gt; !restrictedParserNames.has(parserName))"] 
+  "30064779830" -> "124554052161"  [ label = "DDG: _tmp_9"] 
+  "30064779828" -> "124554052161"  [ label = "DDG: catFiles
+      .filter(([parserName]) =&gt; !restrictedParserNames.has(parserName))
+      .map(([parserName]) =&gt; {
+        let parser = interopRequire(localRequire(`./${catName}/${parserName}`));
+        parserByID[parser.id] = parser;
+        parser.category = category;
+        return parser;
+      })"] 
+  "30064779828" -> "124554052161"  [ label = "DDG: category.parsers =
+      catFiles
+      .filter(([parserName]) =&gt; !restrictedParserNames.has(parserName))
+      .map(([parserName]) =&gt; {
+        let parser = interopRequire(localRequire(`./${catName}/${parserName}`));
+        parserByID[parser.id] = parser;
+        parser.category = category;
+        return parser;
+      })"] 
+  "30064779835" -> "124554052161"  [ label = "DDG: category.transformers"] 
+  "30064779840" -> "124554052161"  [ label = "DDG: catFiles"] 
+  "30064779839" -> "124554052161"  [ label = "DDG: catFiles
+      .filter(([dirName, , fileName]) =&gt; dirName === 'transformers' &amp;&amp; fileName === 'index.js')"] 
+  "30064779837" -> "124554052161"  [ label = "DDG: _tmp_10"] 
+  "30064779835" -> "124554052161"  [ label = "DDG: catFiles
+      .filter(([dirName, , fileName]) =&gt; dirName === 'transformers' &amp;&amp; fileName === 'index.js')
+      .map(([, transformerName]) =&gt; {
+        const transformerDir = `./${catName}/transformers/${transformerName}`;
+        const transformer = interopRequire(localRequire(`${transformerDir}/index.js`));
+        transformerByID[transformer.id] = transformer;
+        transformer.defaultTransform = interopRequire(localRequire(`${transformerDir}/codeExample.txt`));
+        return transformer;
+      })"] 
+  "30064779835" -> "124554052161"  [ label = "DDG: category.transformers =
+      catFiles
+      .filter(([dirName, , fileName]) =&gt; dirName === 'transformers' &amp;&amp; fileName === 'index.js')
+      .map(([, transformerName]) =&gt; {
+        const transformerDir = `./${catName}/transformers/${transformerName}`;
+        const transformer = interopRequire(localRequire(`${transformerDir}/index.js`));
+        transformerByID[transformer.id] = transformer;
+        transformer.defaultTransform = interopRequire(localRequire(`${transformerDir}/codeExample.txt`));
+        return transformer;
+      })"] 
+  "107374182973" -> "111669150824"  [ label = "DDG: "] 
+  "107374182973" -> "111669150825"  [ label = "DDG: "] 
+  "111669150825" -> "30064779809"  [ label = "DDG: param1_0"] 
+  "30064779812" -> "30064779811"  [ label = "DDG: this"] 
+  "30064779812" -> "30064779811"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;./&quot;, catName, &quot;/index.js&quot;)"] 
+  "30064779811" -> "30064779814"  [ label = "DDG: category"] 
+  "107374182973" -> "30064779814"  [ label = "DDG: "] 
+  "30064779819" -> "30064779817"  [ label = "DDG: this"] 
+  "30064779819" -> "30064779817"  [ label = "DDG: localRequire(`./${catName}/codeExample.txt`)"] 
+  "30064779823" -> "30064779822"  [ label = "DDG: _tmp_8"] 
+  "30064779823" -> "30064779822"  [ label = "DDG: &lt;lambda&gt;4"] 
+  "30064779830" -> "30064779828"  [ label = "DDG: _tmp_9"] 
+  "30064779830" -> "30064779828"  [ label = "DDG: &lt;lambda&gt;6"] 
+  "30064779837" -> "30064779835"  [ label = "DDG: _tmp_10"] 
+  "30064779837" -> "30064779835"  [ label = "DDG: &lt;lambda&gt;8"] 
+  "68719485623" -> "141733921199"  [ label = "DDG: category"] 
+  "30064779828" -> "68719485623"  [ label = "DDG: category.parsers"] 
+  "30064779817" -> "68719485623"  [ label = "DDG: category.codeExample"] 
+  "30064779835" -> "68719485623"  [ label = "DDG: category.transformers"] 
+  "107374182973" -> "68719485623"  [ label = "DDG: "] 
+  "30064779811" -> "68719485623"  [ label = "DDG: category"] 
+  "30064779858" -> "68719485596"  [ label = "DDG: localRequire"] 
+  "30064779865" -> "68719485596"  [ label = "DDG: localRequire"] 
+  "107374182973" -> "68719485596"  [ label = "DDG: "] 
+  "107374182969" -> "68719485596"  [ label = "DDG: "] 
+  "111669150824" -> "30064779812"  [ label = "DDG: this"] 
+  "107374182973" -> "30064779812"  [ label = "DDG: "] 
+  "30064779813" -> "30064779812"  [ label = "DDG: &quot;./&quot;"] 
+  "30064779813" -> "30064779812"  [ label = "DDG: catName"] 
+  "30064779813" -> "30064779812"  [ label = "DDG: &quot;/index.js&quot;"] 
+  "30064779857" -> "68719485603"  [ label = "DDG: interopRequire"] 
+  "107374182973" -> "68719485603"  [ label = "DDG: "] 
+  "30064779820" -> "30064779819"  [ label = "DDG: this"] 
+  "107374182973" -> "30064779819"  [ label = "DDG: "] 
+  "30064779820" -> "30064779819"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;./&quot;, catName, &quot;/codeExample.txt&quot;)"] 
+  "30064779825" -> "30064779823"  [ label = "DDG: _tmp_8"] 
+  "107374182973" -> "30064779823"  [ label = "DDG: "] 
+  "30064779832" -> "30064779830"  [ label = "DDG: _tmp_9"] 
+  "107374182973" -> "30064779830"  [ label = "DDG: "] 
+  "30064779839" -> "30064779837"  [ label = "DDG: _tmp_10"] 
+  "107374182973" -> "30064779837"  [ label = "DDG: "] 
+  "107374182973" -> "30064779813"  [ label = "DDG: "] 
+  "30064779809" -> "30064779813"  [ label = "DDG: catName"] 
+  "107374182973" -> "68719485605"  [ label = "DDG: "] 
+  "30064779812" -> "30064779820"  [ label = "DDG: this"] 
+  "107374182973" -> "30064779820"  [ label = "DDG: "] 
+  "30064779821" -> "30064779820"  [ label = "DDG: &quot;./&quot;"] 
+  "30064779821" -> "30064779820"  [ label = "DDG: catName"] 
+  "30064779821" -> "30064779820"  [ label = "DDG: &quot;/codeExample.txt&quot;"] 
+  "107374182973" -> "30064779821"  [ label = "DDG: "] 
+  "30064779813" -> "30064779821"  [ label = "DDG: catName"] 
+  "30064779826" -> "30064779825"  [ label = "DDG: files"] 
+  "30064779826" -> "30064779825"  [ label = "DDG: &lt;lambda&gt;3"] 
+  "30064779833" -> "30064779832"  [ label = "DDG: catFiles"] 
+  "30064779833" -> "30064779832"  [ label = "DDG: &lt;lambda&gt;5"] 
+  "30064779840" -> "30064779839"  [ label = "DDG: catFiles"] 
+  "30064779840" -> "30064779839"  [ label = "DDG: &lt;lambda&gt;7"] 
+  "107374182973" -> "30064779826"  [ label = "DDG: "] 
+  "30064779822" -> "30064779833"  [ label = "DDG: catFiles"] 
+  "107374182973" -> "30064779833"  [ label = "DDG: "] 
+  "30064779833" -> "30064779840"  [ label = "DDG: catFiles"] 
+  "107374182973" -> "30064779840"  [ label = "DDG: "] 
+}

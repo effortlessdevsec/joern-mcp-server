@@ -1,0 +1,26 @@
+digraph "values" {  
+node [shape="rect"];  
+"107374183037" [label = <METHOD, 53<BR/>values> ]
+"124554052220" [label = <METHOD_RETURN, 53<BR/>__ecma.Object> ]
+"111669150945" [label = <PARAM, 53<BR/>this> ]
+"111669150946" [label = <PARAM, 53<BR/>plugins> ]
+"141733921241" [label = <RETURN, 53<BR/>availablePlugins.reduce( (obj, name) =&gt;...> ]
+"30064780954" [label = <reduce, 53<BR/>availablePlugins.reduce( (obj, name) =&gt;...> ]
+"68719486699" [label = <IDENTIFIER, 55<BR/>_tmp_8<BR/>{}> ]
+  "141733921241" -> "124554052220"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150945" -> "124554052220"  [ label = "DDG: this"] 
+  "111669150946" -> "124554052220"  [ label = "DDG: plugins"] 
+  "30064780954" -> "124554052220"  [ label = "DDG: availablePlugins"] 
+  "30064780954" -> "124554052220"  [ label = "DDG: availablePlugins.reduce(
+        (obj, name) =&gt; ((obj[name] = plugins.indexOf(name) &gt; -1), obj),
+        {},
+      )"] 
+  "107374183037" -> "111669150945"  [ label = "DDG: "] 
+  "107374183037" -> "111669150946"  [ label = "DDG: "] 
+  "30064780954" -> "141733921241"  [ label = "DDG: availablePlugins.reduce(
+        (obj, name) =&gt; ((obj[name] = plugins.indexOf(name) &gt; -1), obj),
+        {},
+      )"] 
+  "107374183037" -> "30064780954"  [ label = "DDG: "] 
+  "107374183037" -> "68719486699"  [ label = "DDG: "] 
+}

@@ -1,0 +1,185 @@
+digraph "&lt;lambda&gt;4" {  
+node [shape="rect"];  
+"107374183592" [label = <METHOD, 82<BR/>&lt;lambda&gt;4> ]
+"124554052776" [label = <METHOD_RETURN, 82<BR/>Promise&lt;Revision&gt;> ]
+"111669152113" [label = <PARAM, 82<BR/>this> ]
+"111669152114" [label = <PARAM, 82<BR/>latestRevision> ]
+"141733921642" [label = <RETURN, 88<BR/>return api( `/gist/${revision.getSnippe...> ]
+"30064789963" [label = <&lt;operator&gt;.logicalAnd, 83<BR/>latestRevision.getTransformerID() &amp;&amp; !data.toolID> ]
+"30064789970" [label = <then, 88<BR/>api( `/gist/${revision.getSnippetID()}`...> ]
+"30064789968" [label = <&lt;operator&gt;.assignment, 86<BR/>data.transform = null> ]
+"30064789964" [label = <getTransformerID, 83<BR/>latestRevision.getTransformerID()> ]
+"30064789966" [label = <&lt;operator&gt;.logicalNot, 83<BR/>!data.toolID> ]
+"30064789972" [label = <&lt;operator&gt;.assignment, 88<BR/>(_tmp_15 = api( `/gist/${revision.getSn...> ]
+"30064789973" [label = <then, 88<BR/>api( `/gist/${revision.getSnippetID()}`...> ]
+"30064789975" [label = <&lt;operator&gt;.assignment, 88<BR/>(_tmp_16 = api( `/gist/${revision.getSn...> ]
+"68719495529" [label = <IDENTIFIER, 88<BR/>api<BR/>api( `/gist/${revision.getSnippetID()}`...> ]
+"30064789976" [label = <api, 88<BR/>api( `/gist/${revision.getSnippetID()}`...> ]
+"30064789977" [label = <&lt;operator&gt;.formatString, 89<BR/>&lt;operator&gt;.formatString(&quot;/gist/&quot;, revision.getS...> ]
+"30064789980" [label = <&lt;operator&gt;.assignment, 91<BR/>_tmp_17.method = &quot;PATCH&quot;> ]
+"30064789982" [label = <&lt;operator&gt;.assignment, 92<BR/>_tmp_17.headers = { 'Content-Type':...> ]
+"30064789986" [label = <&lt;operator&gt;.assignment, 95<BR/>_tmp_17.body = JSON.stringify(data)> ]
+"68719495539" [label = <IDENTIFIER, 90<BR/>_tmp_17<BR/>{ method: 'PATCH', headers:...> ]
+"30064789978" [label = <getSnippetID, 89<BR/>revision.getSnippetID()> ]
+"30064789984" [label = <&lt;operator&gt;.assignment, 93<BR/>_tmp_18.Content-Type = &quot;application/json&quot;> ]
+"68719495536" [label = <IDENTIFIER, 92<BR/>_tmp_18<BR/>{ 'Content-Type': 'application/json...> ]
+"30064789988" [label = <stringify, 95<BR/>JSON.stringify(data)> ]
+"30064789967" [label = <&lt;operator&gt;.fieldAccess, 83<BR/>data.toolID> ]
+"30064789969" [label = <&lt;operator&gt;.fieldAccess, 86<BR/>data.transform> ]
+"55834581615" [label = <FIELD_IDENTIFIER, 83<BR/>toolID> ]
+"55834581616" [label = <FIELD_IDENTIFIER, 86<BR/>transform> ]
+  "141733921642" -> "124554052776"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064789964" -> "124554052776"  [ label = "DDG: latestRevision"] 
+  "30064789963" -> "124554052776"  [ label = "DDG: latestRevision.getTransformerID()"] 
+  "30064789963" -> "124554052776"  [ label = "DDG: !data.toolID"] 
+  "30064789963" -> "124554052776"  [ label = "DDG: latestRevision.getTransformerID() &amp;&amp; !data.toolID"] 
+  "30064789968" -> "124554052776"  [ label = "DDG: data.transform = null"] 
+  "30064789976" -> "124554052776"  [ label = "DDG: this"] 
+  "30064789978" -> "124554052776"  [ label = "DDG: revision"] 
+  "30064789977" -> "124554052776"  [ label = "DDG: revision.getSnippetID()"] 
+  "30064789976" -> "124554052776"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/gist/&quot;, revision.getSnippetID(), &quot;&quot;)"] 
+  "30064789980" -> "124554052776"  [ label = "DDG: _tmp_17.method"] 
+  "30064789980" -> "124554052776"  [ label = "DDG: _tmp_17.method = &quot;PATCH&quot;"] 
+  "30064789982" -> "124554052776"  [ label = "DDG: _tmp_17.headers"] 
+  "30064789984" -> "124554052776"  [ label = "DDG: _tmp_18.Content-Type"] 
+  "30064789984" -> "124554052776"  [ label = "DDG: _tmp_18.Content-Type = &quot;application/json&quot;"] 
+  "30064789982" -> "124554052776"  [ label = "DDG: _tmp_17.headers = {
+            'Content-Type': 'application/json',
+          }"] 
+  "30064789986" -> "124554052776"  [ label = "DDG: _tmp_17.body"] 
+  "30064789988" -> "124554052776"  [ label = "DDG: data"] 
+  "30064789986" -> "124554052776"  [ label = "DDG: JSON.stringify(data)"] 
+  "30064789986" -> "124554052776"  [ label = "DDG: _tmp_17.body = JSON.stringify(data)"] 
+  "30064789975" -> "124554052776"  [ label = "DDG: api(
+        `/gist/${revision.getSnippetID()}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        },
+      )"] 
+  "30064789973" -> "124554052776"  [ label = "DDG: _tmp_16"] 
+  "30064789972" -> "124554052776"  [ label = "DDG: api(
+        `/gist/${revision.getSnippetID()}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        },
+      )
+      .then(response =&gt; {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Unable to update snippet.');
+      })"] 
+  "30064789970" -> "124554052776"  [ label = "DDG: _tmp_15"] 
+  "30064789970" -> "124554052776"  [ label = "DDG: api(
+        `/gist/${revision.getSnippetID()}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        },
+      )
+      .then(response =&gt; {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Unable to update snippet.');
+      })
+      .then(data =&gt; new Revision(data))"] 
+  "107374183592" -> "111669152113"  [ label = "DDG: "] 
+  "107374183592" -> "111669152114"  [ label = "DDG: "] 
+  "30064789970" -> "141733921642"  [ label = "DDG: api(
+        `/gist/${revision.getSnippetID()}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        },
+      )
+      .then(response =&gt; {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Unable to update snippet.');
+      })
+      .then(data =&gt; new Revision(data))"] 
+  "30064789964" -> "30064789963"  [ label = "DDG: latestRevision"] 
+  "30064789966" -> "30064789963"  [ label = "DDG: data.toolID"] 
+  "107374183592" -> "30064789968"  [ label = "DDG: "] 
+  "30064789972" -> "30064789970"  [ label = "DDG: _tmp_15"] 
+  "111669152116" -> "30064789970"  [ label = "DDG: revision"] 
+  "111669152117" -> "30064789970"  [ label = "DDG: data"] 
+  "107374183592" -> "30064789970"  [ label = "DDG: "] 
+  "111669152114" -> "30064789964"  [ label = "DDG: latestRevision"] 
+  "111669152116" -> "30064789964"  [ label = "DDG: revision"] 
+  "111669152117" -> "30064789964"  [ label = "DDG: data"] 
+  "107374183592" -> "30064789964"  [ label = "DDG: "] 
+  "30064789973" -> "30064789972"  [ label = "DDG: _tmp_16"] 
+  "30064789973" -> "30064789972"  [ label = "DDG: &lt;lambda&gt;5"] 
+  "30064789975" -> "30064789973"  [ label = "DDG: _tmp_16"] 
+  "111669152116" -> "30064789973"  [ label = "DDG: revision"] 
+  "111669152117" -> "30064789973"  [ label = "DDG: data"] 
+  "107374183592" -> "30064789973"  [ label = "DDG: "] 
+  "30064789976" -> "30064789975"  [ label = "DDG: this"] 
+  "30064789976" -> "30064789975"  [ label = "DDG: &lt;operator&gt;.formatString(&quot;/gist/&quot;, revision.getSnippetID(), &quot;&quot;)"] 
+  "30064789976" -> "30064789975"  [ label = "DDG: {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        }"] 
+  "30064789976" -> "30064789975"  [ label = "DDG: "] 
+  "30064790091" -> "68719495529"  [ label = "DDG: api"] 
+  "111669152116" -> "68719495529"  [ label = "DDG: revision"] 
+  "111669152117" -> "68719495529"  [ label = "DDG: data"] 
+  "107374183592" -> "68719495529"  [ label = "DDG: "] 
+  "111669152113" -> "30064789976"  [ label = "DDG: this"] 
+  "111669152116" -> "30064789976"  [ label = "DDG: revision"] 
+  "111669152117" -> "30064789976"  [ label = "DDG: data"] 
+  "107374183592" -> "30064789976"  [ label = "DDG: "] 
+  "30064789977" -> "30064789976"  [ label = "DDG: &quot;/gist/&quot;"] 
+  "30064789977" -> "30064789976"  [ label = "DDG: revision.getSnippetID()"] 
+  "30064789977" -> "30064789976"  [ label = "DDG: &quot;&quot;"] 
+  "30064789980" -> "30064789976"  [ label = "DDG: _tmp_17.method"] 
+  "30064789982" -> "30064789976"  [ label = "DDG: _tmp_17.headers"] 
+  "30064789986" -> "30064789976"  [ label = "DDG: _tmp_17.body"] 
+  "107374183592" -> "30064789977"  [ label = "DDG: "] 
+  "30064789978" -> "30064789977"  [ label = "DDG: revision"] 
+  "107374183592" -> "30064789980"  [ label = "DDG: "] 
+  "30064789984" -> "30064789982"  [ label = "DDG: _tmp_18.Content-Type"] 
+  "107374183592" -> "30064789982"  [ label = "DDG: "] 
+  "30064789988" -> "30064789986"  [ label = "DDG: data"] 
+  "111669152116" -> "68719495539"  [ label = "DDG: revision"] 
+  "111669152117" -> "68719495539"  [ label = "DDG: data"] 
+  "107374183592" -> "68719495539"  [ label = "DDG: "] 
+  "111669152116" -> "30064789978"  [ label = "DDG: revision"] 
+  "111669152117" -> "30064789978"  [ label = "DDG: data"] 
+  "107374183592" -> "30064789978"  [ label = "DDG: "] 
+  "107374183592" -> "30064789984"  [ label = "DDG: "] 
+  "111669152116" -> "68719495536"  [ label = "DDG: revision"] 
+  "111669152117" -> "68719495536"  [ label = "DDG: data"] 
+  "107374183592" -> "68719495536"  [ label = "DDG: "] 
+  "30064789966" -> "30064789988"  [ label = "DDG: data.toolID"] 
+  "30064789968" -> "30064789988"  [ label = "DDG: data.transform"] 
+  "111669152116" -> "30064789988"  [ label = "DDG: revision"] 
+  "111669152117" -> "30064789988"  [ label = "DDG: data"] 
+  "107374183592" -> "30064789988"  [ label = "DDG: "] 
+  "30064789963" -> "55834581616"  [ label = "CDG: "] 
+  "30064789963" -> "30064789968"  [ label = "CDG: "] 
+  "30064789963" -> "30064789969"  [ label = "CDG: "] 
+  "30064789964" -> "55834581615"  [ label = "CDG: "] 
+  "30064789964" -> "30064789966"  [ label = "CDG: "] 
+  "30064789964" -> "30064789967"  [ label = "CDG: "] 
+}

@@ -1,0 +1,4 @@
+digraph "removeLineClass" {  
+node [shape="rect"];  
+
+}

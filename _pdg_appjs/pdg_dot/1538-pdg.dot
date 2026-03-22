@@ -1,0 +1,4 @@
+digraph "onActivity" {  
+node [shape="rect"];  
+
+}

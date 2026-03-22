@@ -1,0 +1,29 @@
+digraph "pick" {  
+node [shape="rect"];  
+"107374183702" [label = <METHOD, 428<BR/>pick> ]
+"124554052885" [label = <METHOD_RETURN, 428<BR/>__ecma.Array:reduce:&lt;returnValue&gt;> ]
+"111669152309" [label = <PARAM, 428<BR/>this> ]
+"111669152310" [label = <PARAM, 428<BR/>obj> ]
+"111669152311" [label = <PARAM, 428<BR/>...properties> ]
+"141733921792" [label = <RETURN, 429<BR/>return properties.reduce( (result, prop) =&gt;...> ]
+"30064791255" [label = <reduce, 429<BR/>properties.reduce( (result, prop) =&gt; (resul...> ]
+"68719496784" [label = <IDENTIFIER, 431<BR/>_tmp_29<BR/>{}> ]
+  "141733921792" -> "124554052885"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152309" -> "124554052885"  [ label = "DDG: this"] 
+  "111669152310" -> "124554052885"  [ label = "DDG: obj"] 
+  "30064791255" -> "124554052885"  [ label = "DDG: properties"] 
+  "30064791255" -> "124554052885"  [ label = "DDG: properties.reduce(
+    (result, prop) =&gt; (result[prop] = obj[prop], result),
+    {},
+  )"] 
+  "107374183702" -> "111669152309"  [ label = "DDG: "] 
+  "107374183702" -> "111669152310"  [ label = "DDG: "] 
+  "107374183702" -> "111669152311"  [ label = "DDG: "] 
+  "30064791255" -> "141733921792"  [ label = "DDG: properties.reduce(
+    (result, prop) =&gt; (result[prop] = obj[prop], result),
+    {},
+  )"] 
+  "111669152311" -> "30064791255"  [ label = "DDG: properties"] 
+  "107374183702" -> "30064791255"  [ label = "DDG: "] 
+  "107374183702" -> "68719496784"  [ label = "DDG: "] 
+}

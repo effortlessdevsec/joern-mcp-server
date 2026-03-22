@@ -1,0 +1,80 @@
+digraph "PrettierButton" {  
+node [shape="rect"];  
+"107374182605" [label = <METHOD, 5<BR/>PrettierButton> ]
+"124554051788" [label = <METHOD_RETURN, 5<BR/>ANY> ]
+"111669150059" [label = <PARAM, 5<BR/>this> ]
+"111669150060" [label = <PARAM, 5<BR/>props> ]
+"141733920904" [label = <RETURN, 6<BR/>return (&lt;button type=&quot;button&quot; class...> ]
+"154618823296" [label = <TEMPLATE_DOM, 6<BR/>&lt;button type=&quot;button&quot; className=&quot;to...> ]
+"90194313938" [label = <LITERAL, 6<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+"90194313939" [label = <LITERAL, 7<BR/>&quot;toggleBtn&quot;<BR/>className=&quot;toggleBtn&quot;> ]
+"90194313943" [label = <LITERAL, 18<BR/>&quot;btnText&quot;<BR/>className=&quot;btnText&quot;> ]
+"30064774298" [label = <cx, 10<BR/>cx({ fa: true, 'fa-...> ]
+"68719479939" [label = <IDENTIFIER, 10<BR/>cx<BR/>cx({ fa: true, 'fa-...> ]
+"30064774299" [label = <&lt;operator&gt;.assignment, 11<BR/>_tmp_0.fa = true> ]
+"30064774301" [label = <&lt;operator&gt;.assignment, 12<BR/>_tmp_0.fa-lg = true> ]
+"30064774303" [label = <&lt;operator&gt;.assignment, 13<BR/>_tmp_0.fa-toggle-off = !props.enableFormatting> ]
+"30064774307" [label = <&lt;operator&gt;.assignment, 14<BR/>_tmp_0.fa-toggle-on = props.enableFormatting> ]
+"30064774310" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_0.fa-fw = true> ]
+"68719479948" [label = <IDENTIFIER, 10<BR/>_tmp_0<BR/>{ fa: true, 'fa-lg'...> ]
+"30064774305" [label = <&lt;operator&gt;.logicalNot, 13<BR/>!props.enableFormatting> ]
+  "141733920904" -> "124554051788"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150060" -> "124554051788"  [ label = "DDG: props"] 
+  "30064774298" -> "124554051788"  [ label = "DDG: this"] 
+  "30064774299" -> "124554051788"  [ label = "DDG: _tmp_0.fa"] 
+  "30064774299" -> "124554051788"  [ label = "DDG: _tmp_0.fa = true"] 
+  "30064774301" -> "124554051788"  [ label = "DDG: _tmp_0.fa-lg"] 
+  "30064774301" -> "124554051788"  [ label = "DDG: _tmp_0.fa-lg = true"] 
+  "30064774303" -> "124554051788"  [ label = "DDG: _tmp_0.fa-toggle-off"] 
+  "30064774303" -> "124554051788"  [ label = "DDG: !props.enableFormatting"] 
+  "30064774303" -> "124554051788"  [ label = "DDG: _tmp_0.fa-toggle-off = !props.enableFormatting"] 
+  "30064774307" -> "124554051788"  [ label = "DDG: _tmp_0.fa-toggle-on"] 
+  "30064774307" -> "124554051788"  [ label = "DDG: props.enableFormatting"] 
+  "30064774307" -> "124554051788"  [ label = "DDG: _tmp_0.fa-toggle-on = props.enableFormatting"] 
+  "30064774310" -> "124554051788"  [ label = "DDG: _tmp_0.fa-fw"] 
+  "30064774310" -> "124554051788"  [ label = "DDG: _tmp_0.fa-fw = true"] 
+  "30064774298" -> "124554051788"  [ label = "DDG: cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-toggle-off': !props.enableFormatting,
+              'fa-toggle-on': props.enableFormatting,
+              'fa-fw': true,
+            })"] 
+  "107374182605" -> "111669150059"  [ label = "DDG: "] 
+  "107374182605" -> "111669150060"  [ label = "DDG: "] 
+  "154618823296" -> "141733920904"  [ label = "DDG: &lt;button type=&quot;button&quot;
+            className=&quot;toggleBtn&quot;
+            onClick={props.toggleFormatting}&gt;
+          &lt;i
+            className={cx({
+              fa: true,
+              'fa-lg': true,
+              'fa-toggle-off': !props.enableFormatting,
+              'fa-toggle-on': props.enableFormatting,
+              'fa-fw': true,
+            })}
+          /&gt;
+          &lt;span className=&quot;btnText&quot;&gt;Prettier&lt;/span&gt;
+      &lt;/button&gt;"] 
+  "107374182605" -> "141733920904"  [ label = "DDG: "] 
+  "107374182605" -> "90194313938"  [ label = "DDG: "] 
+  "107374182605" -> "90194313939"  [ label = "DDG: "] 
+  "107374182605" -> "90194313943"  [ label = "DDG: "] 
+  "30064774314" -> "68719479939"  [ label = "DDG: cx"] 
+  "107374182605" -> "68719479939"  [ label = "DDG: "] 
+  "111669150059" -> "30064774298"  [ label = "DDG: this"] 
+  "107374182605" -> "30064774298"  [ label = "DDG: "] 
+  "30064774299" -> "30064774298"  [ label = "DDG: _tmp_0.fa"] 
+  "30064774301" -> "30064774298"  [ label = "DDG: _tmp_0.fa-lg"] 
+  "30064774303" -> "30064774298"  [ label = "DDG: _tmp_0.fa-toggle-off"] 
+  "30064774307" -> "30064774298"  [ label = "DDG: _tmp_0.fa-toggle-on"] 
+  "30064774310" -> "30064774298"  [ label = "DDG: _tmp_0.fa-fw"] 
+  "107374182605" -> "30064774299"  [ label = "DDG: "] 
+  "107374182605" -> "30064774301"  [ label = "DDG: "] 
+  "30064774305" -> "30064774303"  [ label = "DDG: props.enableFormatting"] 
+  "111669150060" -> "30064774307"  [ label = "DDG: props"] 
+  "30064774305" -> "30064774307"  [ label = "DDG: props.enableFormatting"] 
+  "107374182605" -> "30064774310"  [ label = "DDG: "] 
+  "107374182605" -> "68719479948"  [ label = "DDG: "] 
+  "111669150060" -> "30064774305"  [ label = "DDG: props"] 
+}

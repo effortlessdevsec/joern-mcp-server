@@ -1,0 +1,20 @@
+digraph "&lt;lambda&gt;1" {  
+node [shape="rect"];  
+"107374183553" [label = <METHOD, 26<BR/>&lt;lambda&gt;1> ]
+"124554052736" [label = <METHOD_RETURN, 26<BR/>void> ]
+"111669152037" [label = <PARAM, 26<BR/>this> ]
+"111669152038" [label = <PARAM, 26<BR/>parser> ]
+"30064789479" [label = <callback, 27<BR/>callback(parser)> ]
+"68719495059" [label = <IDENTIFIER, 27<BR/>callback<BR/>callback(parser)> ]
+  "30064789479" -> "124554052736"  [ label = "DDG: this"] 
+  "30064789479" -> "124554052736"  [ label = "DDG: parser"] 
+  "30064789479" -> "124554052736"  [ label = "DDG: callback(parser)"] 
+  "107374183553" -> "111669152037"  [ label = "DDG: "] 
+  "107374183553" -> "111669152038"  [ label = "DDG: "] 
+  "111669152040" -> "68719495059"  [ label = "DDG: callback"] 
+  "107374183553" -> "68719495059"  [ label = "DDG: "] 
+  "111669152037" -> "30064789479"  [ label = "DDG: this"] 
+  "111669152040" -> "30064789479"  [ label = "DDG: callback"] 
+  "107374183553" -> "30064789479"  [ label = "DDG: "] 
+  "111669152038" -> "30064789479"  [ label = "DDG: parser"] 
+}

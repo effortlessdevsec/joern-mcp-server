@@ -1,0 +1,16 @@
+digraph "_getSettingsConfiguration" {  
+node [shape="rect"];  
+"107374183149" [label = <METHOD, 70<BR/>_getSettingsConfiguration> ]
+"124554052332" [label = <METHOD_RETURN, 70<BR/>{ fields: (string | (string | __ecma.String[])[] | (string | __ecma.Number[])[])[]; }> ]
+"111669151170" [label = <PARAM, 70<BR/>this> ]
+"141733921324" [label = <RETURN, 71<BR/>return parserSettingsConfiguration> ]
+"68719488764" [label = <IDENTIFIER, 71<BR/>parserSettingsConfiguration<BR/>return parserSettingsConfiguration> ]
+  "141733921324" -> "124554052332"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151170" -> "124554052332"  [ label = "DDG: this"] 
+  "107374183149" -> "111669151170"  [ label = "DDG: "] 
+  "68719488764" -> "141733921324"  [ label = "DDG: parserSettingsConfiguration"] 
+  "107374183149" -> "141733921324"  [ label = "DDG: "] 
+  "30064783156" -> "68719488764"  [ label = "DDG: parserSettingsConfiguration"] 
+  "107374183149" -> "68719488764"  [ label = "DDG: "] 
+  "107374183143" -> "68719488764"  [ label = "DDG: "] 
+}

@@ -1,0 +1,28 @@
+digraph "&lt;lambda&gt;5" {  
+node [shape="rect"];  
+"107374183734" [label = <METHOD, 121<BR/>&lt;lambda&gt;5> ]
+"124554052917" [label = <METHOD_RETURN, 121<BR/>ANY> ]
+"111669152377" [label = <PARAM, 121<BR/>this> ]
+"111669152378" [label = <PARAM, 121<BR/>revision> ]
+"111669152379" [label = <PARAM, 121<BR/>dirty> ]
+"141733921823" [label = <RETURN, 122<BR/>!revision || // can always save if there is no ...> ]
+"30064791501" [label = <&lt;operator&gt;.logicalOr, 122<BR/>!revision || // can always save if there is no ...> ]
+"30064791502" [label = <&lt;operator&gt;.logicalNot, 122<BR/>!revision> ]
+  "141733921823" -> "124554052917"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152377" -> "124554052917"  [ label = "DDG: this"] 
+  "30064791502" -> "124554052917"  [ label = "DDG: revision"] 
+  "30064791501" -> "124554052917"  [ label = "DDG: !revision"] 
+  "30064791501" -> "124554052917"  [ label = "DDG: dirty"] 
+  "30064791501" -> "124554052917"  [ label = "DDG: !revision || // can always save if there is no revision
+    dirty"] 
+  "107374183734" -> "111669152377"  [ label = "DDG: "] 
+  "107374183734" -> "111669152378"  [ label = "DDG: "] 
+  "107374183734" -> "111669152379"  [ label = "DDG: "] 
+  "30064791501" -> "141733921823"  [ label = "DDG: !revision || // can always save if there is no revision
+    dirty"] 
+  "30064791502" -> "30064791501"  [ label = "DDG: revision"] 
+  "111669152379" -> "30064791501"  [ label = "DDG: dirty"] 
+  "107374183734" -> "30064791501"  [ label = "DDG: "] 
+  "111669152378" -> "30064791502"  [ label = "DDG: revision"] 
+  "107374183734" -> "30064791502"  [ label = "DDG: "] 
+}

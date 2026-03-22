@@ -1,0 +1,31 @@
+digraph "publish" {  
+node [shape="rect"];  
+"107374183766" [label = <METHOD, 15<BR/>publish> ]
+"124554052949" [label = <METHOD_RETURN, 15<BR/>ANY> ]
+"111669152446" [label = <PARAM, 15<BR/>this> ]
+"111669152447" [label = <PARAM, 15<BR/>topic> ]
+"111669152448" [label = <PARAM, 15<BR/>data> ]
+"30064792004" [label = <setTimeout, 17<BR/>setTimeout(function callSubscribers() { i...> ]
+"68719497604" [label = <IDENTIFIER, 17<BR/>setTimeout<BR/>setTimeout(function callSubscribers() { i...> ]
+"30064792003" [label = <&lt;operator&gt;.indexAccess, 16<BR/>subscribers[topic]> ]
+"120259085330" [label = <METHOD_REF, 17<BR/>callSubscribers<BR/>setTimeout(function callSubscribers() { i...> ]
+  "111669152447" -> "124554052949"  [ label = "DDG: topic"] 
+  "111669152448" -> "124554052949"  [ label = "DDG: data"] 
+  "30064792004" -> "124554052949"  [ label = "DDG: this"] 
+  "30064792004" -> "124554052949"  [ label = "DDG: setTimeout(function callSubscribers() {
+      if (subscribers[topic]) {
+        const handlers = subscribers[topic];
+        for (var i = 0; i &lt; handlers.length; i++) {
+          handlers[i](data);
+        }
+      }
+    }, 0)"] 
+  "107374183766" -> "111669152446"  [ label = "DDG: "] 
+  "107374183766" -> "111669152447"  [ label = "DDG: "] 
+  "107374183766" -> "111669152448"  [ label = "DDG: "] 
+  "107374183766" -> "68719497604"  [ label = "DDG: "] 
+  "111669152446" -> "30064792004"  [ label = "DDG: this"] 
+  "107374183766" -> "30064792004"  [ label = "DDG: "] 
+  "30064792003" -> "120259085330"  [ label = "CDG: "] 
+  "30064792003" -> "30064792004"  [ label = "CDG: "] 
+}

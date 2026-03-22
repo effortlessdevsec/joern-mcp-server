@@ -1,0 +1,16 @@
+digraph "_collapse" {  
+node [shape="rect"];  
+"107374182567" [label = <METHOD, 15<BR/>_collapse> ]
+"124554051750" [label = <METHOD_RETURN, 15<BR/>void> ]
+"111669150003" [label = <PARAM, 15<BR/>this> ]
+"30064773549" [label = <onWantToCollapse, 16<BR/>this.props.onWantToCollapse()> ]
+"30064773551" [label = <&lt;operator&gt;.assignment, 16<BR/>(_tmp_3 = this.props)> ]
+  "111669150003" -> "124554051750"  [ label = "DDG: this"] 
+  "30064773551" -> "124554051750"  [ label = "DDG: this.props"] 
+  "30064773549" -> "124554051750"  [ label = "DDG: _tmp_3"] 
+  "30064773549" -> "124554051750"  [ label = "DDG: this.props.onWantToCollapse()"] 
+  "107374182567" -> "111669150003"  [ label = "DDG: "] 
+  "30064773551" -> "30064773549"  [ label = "DDG: _tmp_3"] 
+  "107374182567" -> "30064773549"  [ label = "DDG: "] 
+  "111669150003" -> "30064773551"  [ label = "DDG: this"] 
+}

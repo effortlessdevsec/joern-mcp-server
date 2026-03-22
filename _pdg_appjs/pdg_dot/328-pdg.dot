@@ -1,0 +1,37 @@
+digraph "mapDispatchToProps" {  
+node [shape="rect"];  
+"107374182728" [label = <METHOD, 23<BR/>mapDispatchToProps> ]
+"124554051912" [label = <METHOD_RETURN, 23<BR/>{ onContentChange: ({ value, cursor }: { value: ANY; cursor: ANY; }) =&gt; ANY; toggleFormatting: () =&gt; ANY; }> ]
+"111669150272" [label = <PARAM, 23<BR/>this> ]
+"111669150273" [label = <PARAM, 23<BR/>dispatch> ]
+"141733920986" [label = <RETURN, 24<BR/>return { onContentChange: ({value, cursor})...> ]
+"25769804583" [label = <BLOCK, 24<BR/>{ onContentChange: ({value, cursor}) =&gt; { ...> ]
+"30064776126" [label = <&lt;operator&gt;.assignment, 25<BR/>_tmp_1.onContentChange = &lt;lambda&gt;0> ]
+"30064776128" [label = <&lt;operator&gt;.assignment, 28<BR/>_tmp_1.toggleFormatting = &lt;lambda&gt;1> ]
+"68719481922" [label = <IDENTIFIER, 24<BR/>_tmp_1<BR/>{ onContentChange: ({value, cursor}) =&gt; { ...> ]
+  "141733920986" -> "124554051912"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150272" -> "124554051912"  [ label = "DDG: this"] 
+  "111669150273" -> "124554051912"  [ label = "DDG: dispatch"] 
+  "30064776126" -> "124554051912"  [ label = "DDG: _tmp_1.onContentChange"] 
+  "30064776126" -> "124554051912"  [ label = "DDG: _tmp_1.onContentChange = &lt;lambda&gt;0"] 
+  "30064776128" -> "124554051912"  [ label = "DDG: _tmp_1.toggleFormatting"] 
+  "30064776128" -> "124554051912"  [ label = "DDG: _tmp_1.toggleFormatting = &lt;lambda&gt;1"] 
+  "107374182728" -> "111669150272"  [ label = "DDG: "] 
+  "107374182728" -> "111669150273"  [ label = "DDG: "] 
+  "25769804583" -> "141733920986"  [ label = "DDG: "] 
+  "25769804583" -> "141733920986"  [ label = "DDG: {
+    onContentChange: ({value, cursor}) =&gt; {
+      dispatch(setTransformState({code: value, cursor}));
+    },
+    toggleFormatting: () =&gt; {
+      dispatch(toggleFormatting());
+    },
+  }"] 
+  "107374182728" -> "141733920986"  [ label = "DDG: "] 
+  "30064776126" -> "25769804583"  [ label = "DDG: _tmp_1.onContentChange"] 
+  "30064776128" -> "25769804583"  [ label = "DDG: _tmp_1.toggleFormatting"] 
+  "107374182728" -> "25769804583"  [ label = "DDG: "] 
+  "107374182728" -> "30064776126"  [ label = "DDG: "] 
+  "107374182728" -> "30064776128"  [ label = "DDG: "] 
+  "107374182728" -> "68719481922"  [ label = "DDG: "] 
+}

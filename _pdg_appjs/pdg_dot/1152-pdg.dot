@@ -1,0 +1,19 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374183552" [label = <METHOD, 22<BR/>&lt;lambda&gt;0> ]
+"124554052734" [label = <METHOD_RETURN, 22<BR/>astexplorer/website/src/parsers/wat/wat-parser.js::program:getOffset:&lt;returnValue&gt;> ]
+"111669152033" [label = <PARAM, 22<BR/>this> ]
+"111669152034" [label = <PARAM, 22<BR/>pos> ]
+"141733921606" [label = <RETURN, 22<BR/>this.getOffset(pos)> ]
+"30064789463" [label = <getOffset, 22<BR/>this.getOffset(pos)> ]
+  "141733921606" -> "124554052734"  [ label = "DDG: &lt;RET&gt;"] 
+  "30064789463" -> "124554052734"  [ label = "DDG: this"] 
+  "30064789463" -> "124554052734"  [ label = "DDG: pos"] 
+  "30064789463" -> "124554052734"  [ label = "DDG: this.getOffset(pos)"] 
+  "107374183552" -> "111669152033"  [ label = "DDG: "] 
+  "107374183552" -> "111669152034"  [ label = "DDG: "] 
+  "30064789463" -> "141733921606"  [ label = "DDG: this.getOffset(pos)"] 
+  "111669152033" -> "30064789463"  [ label = "DDG: this"] 
+  "107374183552" -> "30064789463"  [ label = "DDG: "] 
+  "111669152034" -> "30064789463"  [ label = "DDG: pos"] 
+}

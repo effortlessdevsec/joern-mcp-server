@@ -1,0 +1,11 @@
+digraph "&lt;operator&gt;.assignment" {  
+node [shape="rect"];  
+"107374183789" [label = <METHOD<BR/>&lt;operator&gt;.assignment> ]
+"124554052973" [label = <METHOD_RETURN<BR/>ANY> ]
+"111669152484" [label = <PARAM<BR/>p1> ]
+"111669152485" [label = <PARAM<BR/>p2> ]
+  "111669152484" -> "124554052973"  [ label = "DDG: p1"] 
+  "111669152485" -> "124554052973"  [ label = "DDG: p2"] 
+  "107374183789" -> "111669152484"  [ label = "DDG: "] 
+  "107374183789" -> "111669152485"  [ label = "DDG: "] 
+}

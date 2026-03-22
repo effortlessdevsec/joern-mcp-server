@@ -1,0 +1,65 @@
+digraph "loadTern" {  
+node [shape="rect"];  
+"107374182514" [label = <METHOD, 31<BR/>loadTern> ]
+"124554051697" [label = <METHOD_RETURN, 31<BR/>void> ]
+"111669149916" [label = <PARAM, 31<BR/>this> ]
+"30064773040" [label = <require, 32<BR/>require( [ 'codemirror/addon/hint/sho...> ]
+"68719478703" [label = <IDENTIFIER, 32<BR/>require<BR/>require( [ 'codemirror/addon/hint/sho...> ]
+"30064773041" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_0 = __ecma.Array.factory()> ]
+"30064773043" [label = <, 34<BR/>_tmp_0.push(&quot;codemirror/addon/hint/show-hint&quot;)> ]
+"30064773045" [label = <, 35<BR/>_tmp_0.push(&quot;codemirror/addon/tern/tern&quot;)> ]
+"30064773047" [label = <, 36<BR/>_tmp_0.push(&quot;acorn&quot;)> ]
+"68719478712" [label = <IDENTIFIER, 33<BR/>_tmp_0<BR/>[ 'codemirror/addon/hint/show-hint', ...> ]
+  "30064773040" -> "124554051697"  [ label = "DDG: this"] 
+  "30064773041" -> "124554051697"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064773041" -> "124554051697"  [ label = "DDG: _tmp_0 = __ecma.Array.factory()"] 
+  "30064773043" -> "124554051697"  [ label = "DDG: _tmp_0.push(&quot;codemirror/addon/hint/show-hint&quot;)"] 
+  "30064773045" -> "124554051697"  [ label = "DDG: _tmp_0.push(&quot;codemirror/addon/tern/tern&quot;)"] 
+  "30064773047" -> "124554051697"  [ label = "DDG: _tmp_0"] 
+  "30064773047" -> "124554051697"  [ label = "DDG: _tmp_0.push(&quot;acorn&quot;)"] 
+  "30064773040" -> "124554051697"  [ label = "DDG: require(
+    [
+      'codemirror/addon/hint/show-hint',
+      'codemirror/addon/tern/tern',
+      'acorn',
+    ],
+    (_1, _2, acorn) =&gt; {
+      global.acorn = acorn;
+      require(
+        [
+          'tern',
+          'tern/plugin/doc_comment',
+          'tern/lib/infer',
+          '../defs/jscodeshift.json',
+          'tern/defs/ecmascript.json',
+        ],
+        (tern, _, infer, jscs_def, ecmascript) =&gt; {
+          global.tern = tern;
+          tern.registerPlugin('transformer', server =&gt; {
+            server.on('afterLoad', file =&gt; {
+              const fnVal = file.scope.props.transformer;
+              if (fnVal) {
+                const fnType = fnVal.getFunctionType();
+                const cx = infer.cx();
+                fnType.propagate(new infer.IsCallee(
+                  infer.cx().topScope,
+                  [
+                    cx.definitions.jscodeshift.file,
+                    cx.definitions.jscodeshift.apiObject,
+                  ],
+                  null,
+  ..."] 
+  "107374182514" -> "111669149916"  [ label = "DDG: "] 
+  "107374182514" -> "68719478703"  [ label = "DDG: "] 
+  "111669149916" -> "30064773040"  [ label = "DDG: this"] 
+  "107374182514" -> "30064773040"  [ label = "DDG: "] 
+  "30064773047" -> "30064773040"  [ label = "DDG: _tmp_0"] 
+  "107374182514" -> "30064773041"  [ label = "DDG: "] 
+  "107374182514" -> "68719478712"  [ label = "DDG: "] 
+  "30064773041" -> "30064773043"  [ label = "DDG: _tmp_0"] 
+  "107374182514" -> "30064773043"  [ label = "DDG: "] 
+  "30064773043" -> "30064773045"  [ label = "DDG: _tmp_0"] 
+  "107374182514" -> "30064773045"  [ label = "DDG: "] 
+  "30064773045" -> "30064773047"  [ label = "DDG: _tmp_0"] 
+  "107374182514" -> "30064773047"  [ label = "DDG: "] 
+}

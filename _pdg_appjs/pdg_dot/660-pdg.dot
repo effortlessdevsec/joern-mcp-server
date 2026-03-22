@@ -1,0 +1,31 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374183060" [label = <METHOD, 16<BR/>loadParser> ]
+"124554052243" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150990" [label = <PARAM, 16<BR/>this> ]
+"111669150991" [label = <PARAM, 16<BR/>callback> ]
+"30064781535" [label = <require, 17<BR/>require(['esformatter-parser'], (parser) =&gt; { ...> ]
+"68719487238" [label = <IDENTIFIER, 17<BR/>require<BR/>require(['esformatter-parser'], (parser) =&gt; { ...> ]
+"30064781536" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_3 = __ecma.Array.factory()> ]
+"30064781538" [label = <, 17<BR/>_tmp_3.push(&quot;esformatter-parser&quot;)> ]
+"68719487243" [label = <IDENTIFIER, 17<BR/>_tmp_3<BR/>['esformatter-parser']> ]
+  "111669150991" -> "124554052243"  [ label = "DDG: callback"] 
+  "30064781535" -> "124554052243"  [ label = "DDG: this"] 
+  "30064781536" -> "124554052243"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064781536" -> "124554052243"  [ label = "DDG: _tmp_3 = __ecma.Array.factory()"] 
+  "30064781538" -> "124554052243"  [ label = "DDG: _tmp_3"] 
+  "30064781538" -> "124554052243"  [ label = "DDG: _tmp_3.push(&quot;esformatter-parser&quot;)"] 
+  "30064781535" -> "124554052243"  [ label = "DDG: require(['esformatter-parser'], (parser) =&gt; {
+      callback(parser);
+    })"] 
+  "107374183060" -> "111669150990"  [ label = "DDG: "] 
+  "107374183060" -> "111669150991"  [ label = "DDG: "] 
+  "107374183060" -> "68719487238"  [ label = "DDG: "] 
+  "111669150990" -> "30064781535"  [ label = "DDG: this"] 
+  "107374183060" -> "30064781535"  [ label = "DDG: "] 
+  "30064781538" -> "30064781535"  [ label = "DDG: _tmp_3"] 
+  "107374183060" -> "30064781536"  [ label = "DDG: "] 
+  "107374183060" -> "68719487243"  [ label = "DDG: "] 
+  "30064781536" -> "30064781538"  [ label = "DDG: _tmp_3"] 
+  "107374183060" -> "30064781538"  [ label = "DDG: "] 
+}

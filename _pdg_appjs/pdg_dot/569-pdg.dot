@@ -1,0 +1,269 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182969" [label = <METHOD, 1<BR/>:program> ]
+"124554052168" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150837" [label = <PARAM, 1<BR/>this> ]
+"30064779857" [label = <&lt;operator&gt;.assignment, 3<BR/>function interopRequire = function interopRequi...> ]
+"30064779858" [label = <&lt;operator&gt;.assignment, 1<BR/>const localRequire = require.context('./', true...> ]
+"30064779861" [label = <&lt;operator&gt;.assignment, 7<BR/>const files = localRequire.keys() .map(name...> ]
+"30064779867" [label = <&lt;operator&gt;.assignment, 11<BR/>const categoryByID = {}> ]
+"30064779868" [label = <&lt;operator&gt;.assignment, 12<BR/>const parserByID = {}> ]
+"30064779869" [label = <&lt;operator&gt;.assignment, 13<BR/>const transformerByID = {}> ]
+"30064779870" [label = <&lt;operator&gt;.assignment, 15<BR/>const restrictedParserNames = new Set([ 'inde...> ]
+"25769805290" [label = <BLOCK, 22<BR/>export const categories = files .filter(nam...> ]
+"25769805291" [label = <BLOCK, 61<BR/>export function getDefaultCategory() { return...> ]
+"25769805292" [label = <BLOCK, 65<BR/>export function getDefaultParser(category = get...> ]
+"25769805293" [label = <BLOCK, 69<BR/>export function getCategoryByID(id) { return ...> ]
+"25769805294" [label = <BLOCK, 73<BR/>export function getParserByID(id) { return pa...> ]
+"25769805295" [label = <BLOCK, 77<BR/>export function getTransformerByID(id) { retu...> ]
+"30064779884" [label = <&lt;operator&gt;.assignment, 22<BR/>const categories = files .filter(name =&gt; na...> ]
+"30064779890" [label = <&lt;operator&gt;.assignment, 22<BR/>exports.categories = categories> ]
+"30064779892" [label = <&lt;operator&gt;.assignment, 61<BR/>function getDefaultCategory = function getDefau...> ]
+"30064779893" [label = <&lt;operator&gt;.assignment, 61<BR/>exports.getDefaultCategory = getDefaultCategory> ]
+"30064779895" [label = <&lt;operator&gt;.assignment, 65<BR/>function getDefaultParser = function getDefault...> ]
+"30064779896" [label = <&lt;operator&gt;.assignment, 65<BR/>exports.getDefaultParser = getDefaultParser> ]
+"30064779898" [label = <&lt;operator&gt;.assignment, 69<BR/>function getCategoryByID = function getCategory...> ]
+"30064779899" [label = <&lt;operator&gt;.assignment, 69<BR/>exports.getCategoryByID = getCategoryByID> ]
+"30064779901" [label = <&lt;operator&gt;.assignment, 73<BR/>function getParserByID = function getParserByID...> ]
+"30064779902" [label = <&lt;operator&gt;.assignment, 73<BR/>exports.getParserByID = getParserByID> ]
+"30064779904" [label = <&lt;operator&gt;.assignment, 77<BR/>function getTransformerByID = function getTrans...> ]
+"30064779905" [label = <&lt;operator&gt;.assignment, 77<BR/>exports.getTransformerByID = getTransformerByID> ]
+"30064779859" [label = <context, 1<BR/>require.context('./', true, /^\.\/(?!utils|tran...> ]
+"30064779862" [label = <map, 8<BR/>localRequire.keys() .map(name =&gt; name.split('...> ]
+"68719485650" [label = <IDENTIFIER, 11<BR/>_tmp_2<BR/>{}> ]
+"68719485652" [label = <IDENTIFIER, 12<BR/>_tmp_3<BR/>{}> ]
+"68719485654" [label = <IDENTIFIER, 13<BR/>_tmp_4<BR/>{}> ]
+"30064779871" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_5 = .alloc> ]
+"30064779873" [label = <&lt;operator&gt;.new, 15<BR/>new Set([ 'index.js', 'codeExample.txt', ...> ]
+"68719485669" [label = <IDENTIFIER, 15<BR/>_tmp_5<BR/>new Set([ 'index.js', 'codeExample.txt', ...> ]
+"68719485657" [label = <IDENTIFIER, 15<BR/>Set<BR/>new Set([ 'index.js', 'codeExample.txt', ...> ]
+"30064779885" [label = <map, 23<BR/>files .filter(name =&gt; name[1] === 'index.js')...> ]
+"30064779864" [label = <&lt;operator&gt;.assignment, 8<BR/>(_tmp_0 = localRequire.keys())> ]
+"30064779874" [label = <&lt;operator&gt;.assignment, 15<BR/>_tmp_6 = __ecma.Array.factory()> ]
+"30064779876" [label = <, 16<BR/>_tmp_6.push(&quot;index.js&quot;)> ]
+"30064779878" [label = <, 17<BR/>_tmp_6.push(&quot;codeExample.txt&quot;)> ]
+"30064779880" [label = <, 18<BR/>_tmp_6.push(&quot;transformers&quot;)> ]
+"30064779882" [label = <, 19<BR/>_tmp_6.push(&quot;utils&quot;)> ]
+"68719485668" [label = <IDENTIFIER, 15<BR/>_tmp_6<BR/>[ 'index.js', 'codeExample.txt', 'transfo...> ]
+"30064779865" [label = <keys, 8<BR/>localRequire.keys()> ]
+"30064779887" [label = <&lt;operator&gt;.assignment, 23<BR/>(_tmp_7 = files .filter(name =&gt; name[1] === '...> ]
+"30064779888" [label = <filter, 23<BR/>files .filter(name =&gt; name[1] === 'index.js')> ]
+  "111669150837" -> "124554052168"  [ label = "DDG: this"] 
+  "30064779857" -> "124554052168"  [ label = "DDG: interopRequire"] 
+  "30064779857" -> "124554052168"  [ label = "DDG: function interopRequire = function interopRequire(module) {
+  return module.__esModule ? module.default : module;
+}"] 
+  "30064779859" -> "124554052168"  [ label = "DDG: require"] 
+  "30064779858" -> "124554052168"  [ label = "DDG: require.context('./', true, /^\.\/(?!utils|transpilers)[^/]+\/(transformers\/([^/]+)\/)?(codeExample\.txt|[^/]+?\.js)$/)"] 
+  "30064779858" -> "124554052168"  [ label = "DDG: const localRequire = require.context('./', true, /^\.\/(?!utils|transpilers)[^/]+\/(transformers\/([^/]+)\/)?(codeExample\.txt|[^/]+?\.js)$/)"] 
+  "30064779865" -> "124554052168"  [ label = "DDG: localRequire"] 
+  "30064779864" -> "124554052168"  [ label = "DDG: localRequire.keys()"] 
+  "30064779862" -> "124554052168"  [ label = "DDG: _tmp_0"] 
+  "30064779861" -> "124554052168"  [ label = "DDG: localRequire.keys()
+  .map(name =&gt; name.split('/').slice(1))"] 
+  "30064779861" -> "124554052168"  [ label = "DDG: const files =
+  localRequire.keys()
+  .map(name =&gt; name.split('/').slice(1))"] 
+  "30064779867" -> "124554052168"  [ label = "DDG: categoryByID"] 
+  "30064779867" -> "124554052168"  [ label = "DDG: const categoryByID = {}"] 
+  "30064779868" -> "124554052168"  [ label = "DDG: parserByID"] 
+  "30064779868" -> "124554052168"  [ label = "DDG: const parserByID = {}"] 
+  "30064779869" -> "124554052168"  [ label = "DDG: transformerByID"] 
+  "30064779869" -> "124554052168"  [ label = "DDG: const transformerByID = {}"] 
+  "30064779870" -> "124554052168"  [ label = "DDG: restrictedParserNames"] 
+  "30064779871" -> "124554052168"  [ label = "DDG: .alloc"] 
+  "30064779871" -> "124554052168"  [ label = "DDG: _tmp_5 = .alloc"] 
+  "30064779873" -> "124554052168"  [ label = "DDG: _tmp_5"] 
+  "30064779874" -> "124554052168"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064779874" -> "124554052168"  [ label = "DDG: _tmp_6 = __ecma.Array.factory()"] 
+  "30064779876" -> "124554052168"  [ label = "DDG: _tmp_6.push(&quot;index.js&quot;)"] 
+  "30064779878" -> "124554052168"  [ label = "DDG: _tmp_6.push(&quot;codeExample.txt&quot;)"] 
+  "30064779880" -> "124554052168"  [ label = "DDG: _tmp_6.push(&quot;transformers&quot;)"] 
+  "30064779882" -> "124554052168"  [ label = "DDG: _tmp_6"] 
+  "30064779882" -> "124554052168"  [ label = "DDG: _tmp_6.push(&quot;utils&quot;)"] 
+  "30064779873" -> "124554052168"  [ label = "DDG: new Set([
+  'index.js',
+  'codeExample.txt',
+  'transformers',
+  'utils',
+])"] 
+  "30064779870" -> "124554052168"  [ label = "DDG: const restrictedParserNames = new Set([
+  'index.js',
+  'codeExample.txt',
+  'transformers',
+  'utils',
+])"] 
+  "30064779888" -> "124554052168"  [ label = "DDG: files"] 
+  "30064779887" -> "124554052168"  [ label = "DDG: files
+  .filter(name =&gt; name[1] === 'index.js')"] 
+  "30064779885" -> "124554052168"  [ label = "DDG: _tmp_7"] 
+  "30064779884" -> "124554052168"  [ label = "DDG: files
+  .filter(name =&gt; name[1] === 'index.js')
+  .map(([catName]) =&gt; {
+    let category = localRequire(`./${catName}/index.js`);
+
+    categoryByID[category.id] = category;
+
+    category.codeExample = interopRequire(localRequire(`./${catName}/codeExample.txt`))
+
+    let catFiles =
+      files
+      .filter(([curCatName]) =&gt; curCatName === catName)
+      .map(name =&gt; name.slice(1));
+
+    category.parsers =
+      catFiles
+      .filter(([parserName]) =&gt; !restrictedParserNames.has(parserName))
+      .map(([parserName]) =&gt; {
+        let parser = interopRequire(localRequire(`./${catName}/${parserName}`));
+        parserByID[parser.id] = parser;
+        parser.category = category;
+        return parser;
+      });
+
+    category.transformers =
+      catFiles
+      .filter(([dirName, , fileName]) =&gt; dirName === 'transformers' &amp;&amp; fileName === 'index.js')
+      .map(([, transformerName]) =&gt; {
+        const transformerDir = `./${catName}/transformers/${transformerName}`;
+        const transform..."] 
+  "30064779884" -> "124554052168"  [ label = "DDG: const categories =
+  files
+  .filter(name =&gt; name[1] === 'index.js')
+  .map(([catName]) =&gt; {
+    let category = localRequire(`./${catName}/index.js`);
+
+    categoryByID[category.id] = category;
+
+    category.codeExample = interopRequire(localRequire(`./${catName}/codeExample.txt`))
+
+    let catFiles =
+      files
+      .filter(([curCatName]) =&gt; curCatName === catName)
+      .map(name =&gt; name.slice(1));
+
+    category.parsers =
+      catFiles
+      .filter(([parserName]) =&gt; !restrictedParserNames.has(parserName))
+      .map(([parserName]) =&gt; {
+        let parser = interopRequire(localRequire(`./${catName}/${parserName}`));
+        parserByID[parser.id] = parser;
+        parser.category = category;
+        return parser;
+      });
+
+    category.transformers =
+      catFiles
+      .filter(([dirName, , fileName]) =&gt; dirName === 'transformers' &amp;&amp; fileName === 'index.js')
+      .map(([, transformerName]) =&gt; {
+        const transformerDir = `./${catName}/transformers/${transformerName}`;
+        ..."] 
+  "30064779890" -> "124554052168"  [ label = "DDG: exports.categories"] 
+  "30064779890" -> "124554052168"  [ label = "DDG: categories"] 
+  "30064779890" -> "124554052168"  [ label = "DDG: exports.categories = categories"] 
+  "30064779892" -> "124554052168"  [ label = "DDG: function getDefaultCategory = function getDefaultCategory() {
+  return categoryByID.javascript;
+}"] 
+  "30064779893" -> "124554052168"  [ label = "DDG: exports.getDefaultCategory"] 
+  "30064779893" -> "124554052168"  [ label = "DDG: getDefaultCategory"] 
+  "30064779893" -> "124554052168"  [ label = "DDG: exports.getDefaultCategory = getDefaultCategory"] 
+  "30064779895" -> "124554052168"  [ label = "DDG: function getDefaultParser = function getDefaultParser(category = getDefaultCategory()) {
+  return category.parsers.filter(p =&gt; p.showInMenu)[0];
+}"] 
+  "30064779896" -> "124554052168"  [ label = "DDG: exports.getDefaultParser"] 
+  "30064779896" -> "124554052168"  [ label = "DDG: getDefaultParser"] 
+  "30064779896" -> "124554052168"  [ label = "DDG: exports.getDefaultParser = getDefaultParser"] 
+  "30064779898" -> "124554052168"  [ label = "DDG: function getCategoryByID = function getCategoryByID(id) {
+  return categoryByID[id];
+}"] 
+  "30064779899" -> "124554052168"  [ label = "DDG: exports.getCategoryByID"] 
+  "30064779899" -> "124554052168"  [ label = "DDG: getCategoryByID"] 
+  "30064779899" -> "124554052168"  [ label = "DDG: exports.getCategoryByID = getCategoryByID"] 
+  "30064779901" -> "124554052168"  [ label = "DDG: function getParserByID = function getParserByID(id) {
+  return parserByID[id];
+}"] 
+  "30064779902" -> "124554052168"  [ label = "DDG: exports.getParserByID"] 
+  "30064779902" -> "124554052168"  [ label = "DDG: getParserByID"] 
+  "30064779902" -> "124554052168"  [ label = "DDG: exports.getParserByID = getParserByID"] 
+  "30064779904" -> "124554052168"  [ label = "DDG: function getTransformerByID = function getTransformerByID(id) {
+  return transformerByID[id];
+}"] 
+  "30064779905" -> "124554052168"  [ label = "DDG: exports.getTransformerByID"] 
+  "30064779905" -> "124554052168"  [ label = "DDG: getTransformerByID"] 
+  "30064779905" -> "124554052168"  [ label = "DDG: exports.getTransformerByID = getTransformerByID"] 
+  "107374182969" -> "111669150837"  [ label = "DDG: "] 
+  "107374182969" -> "30064779857"  [ label = "DDG: "] 
+  "30064779859" -> "30064779858"  [ label = "DDG: require"] 
+  "30064779859" -> "30064779858"  [ label = "DDG: &quot;./&quot;"] 
+  "30064779859" -> "30064779858"  [ label = "DDG: true"] 
+  "30064779859" -> "30064779858"  [ label = "DDG: /^\.\/(?!utils|transpilers)[^/]+\/(transformers\/([^/]+)\/)?(codeExample\.txt|[^/]+?\.js)$/"] 
+  "30064779862" -> "30064779861"  [ label = "DDG: _tmp_0"] 
+  "30064779862" -> "30064779861"  [ label = "DDG: &lt;lambda&gt;0"] 
+  "107374182969" -> "30064779867"  [ label = "DDG: "] 
+  "107374182969" -> "30064779868"  [ label = "DDG: "] 
+  "107374182969" -> "30064779869"  [ label = "DDG: "] 
+  "30064779873" -> "30064779870"  [ label = "DDG: new Set([
+  'index.js',
+  'codeExample.txt',
+  'transformers',
+  'utils',
+])"] 
+  "30064779873" -> "30064779870"  [ label = "DDG: _tmp_5"] 
+  "107374182969" -> "30064779870"  [ label = "DDG: "] 
+  "107374182969" -> "25769805290"  [ label = "DDG: "] 
+  "107374182969" -> "25769805291"  [ label = "DDG: "] 
+  "107374182969" -> "25769805292"  [ label = "DDG: "] 
+  "107374182969" -> "25769805293"  [ label = "DDG: "] 
+  "107374182969" -> "25769805294"  [ label = "DDG: "] 
+  "107374182969" -> "25769805295"  [ label = "DDG: "] 
+  "30064779885" -> "30064779884"  [ label = "DDG: _tmp_7"] 
+  "30064779885" -> "30064779884"  [ label = "DDG: &lt;lambda&gt;2"] 
+  "30064779884" -> "30064779890"  [ label = "DDG: categories"] 
+  "107374182969" -> "30064779890"  [ label = "DDG: "] 
+  "107374182969" -> "30064779892"  [ label = "DDG: "] 
+  "30064779892" -> "30064779893"  [ label = "DDG: getDefaultCategory"] 
+  "107374182969" -> "30064779893"  [ label = "DDG: "] 
+  "107374182969" -> "30064779895"  [ label = "DDG: "] 
+  "30064779895" -> "30064779896"  [ label = "DDG: getDefaultParser"] 
+  "107374182969" -> "30064779896"  [ label = "DDG: "] 
+  "107374182969" -> "30064779898"  [ label = "DDG: "] 
+  "30064779898" -> "30064779899"  [ label = "DDG: getCategoryByID"] 
+  "107374182969" -> "30064779899"  [ label = "DDG: "] 
+  "107374182969" -> "30064779901"  [ label = "DDG: "] 
+  "30064779901" -> "30064779902"  [ label = "DDG: getParserByID"] 
+  "107374182969" -> "30064779902"  [ label = "DDG: "] 
+  "107374182969" -> "30064779904"  [ label = "DDG: "] 
+  "30064779904" -> "30064779905"  [ label = "DDG: getTransformerByID"] 
+  "107374182969" -> "30064779905"  [ label = "DDG: "] 
+  "107374182969" -> "30064779859"  [ label = "DDG: "] 
+  "30064779864" -> "30064779862"  [ label = "DDG: _tmp_0"] 
+  "107374182969" -> "30064779862"  [ label = "DDG: "] 
+  "107374182969" -> "68719485650"  [ label = "DDG: "] 
+  "107374182969" -> "68719485652"  [ label = "DDG: "] 
+  "107374182969" -> "68719485654"  [ label = "DDG: "] 
+  "107374182969" -> "30064779871"  [ label = "DDG: "] 
+  "107374182969" -> "68719485669"  [ label = "DDG: "] 
+  "107374182969" -> "68719485657"  [ label = "DDG: "] 
+  "30064779871" -> "30064779873"  [ label = "DDG: _tmp_5"] 
+  "107374182969" -> "30064779873"  [ label = "DDG: "] 
+  "30064779882" -> "30064779873"  [ label = "DDG: _tmp_6"] 
+  "30064779887" -> "30064779885"  [ label = "DDG: _tmp_7"] 
+  "107374182969" -> "30064779885"  [ label = "DDG: "] 
+  "30064779865" -> "30064779864"  [ label = "DDG: localRequire"] 
+  "107374182969" -> "30064779874"  [ label = "DDG: "] 
+  "107374182969" -> "68719485668"  [ label = "DDG: "] 
+  "30064779858" -> "30064779865"  [ label = "DDG: localRequire"] 
+  "107374182969" -> "30064779865"  [ label = "DDG: "] 
+  "30064779874" -> "30064779876"  [ label = "DDG: _tmp_6"] 
+  "107374182969" -> "30064779876"  [ label = "DDG: "] 
+  "30064779876" -> "30064779878"  [ label = "DDG: _tmp_6"] 
+  "107374182969" -> "30064779878"  [ label = "DDG: "] 
+  "30064779878" -> "30064779880"  [ label = "DDG: _tmp_6"] 
+  "107374182969" -> "30064779880"  [ label = "DDG: "] 
+  "30064779880" -> "30064779882"  [ label = "DDG: _tmp_6"] 
+  "107374182969" -> "30064779882"  [ label = "DDG: "] 
+  "30064779888" -> "30064779887"  [ label = "DDG: files"] 
+  "30064779888" -> "30064779887"  [ label = "DDG: &lt;lambda&gt;1"] 
+  "30064779861" -> "30064779888"  [ label = "DDG: files"] 
+  "107374182969" -> "30064779888"  [ label = "DDG: "] 
+}

@@ -1,0 +1,14 @@
+digraph "&lt;lambda&gt;5" {  
+node [shape="rect"];  
+"107374183678" [label = <METHOD, 50<BR/>&lt;lambda&gt;5> ]
+"124554052861" [label = <METHOD_RETURN, 50<BR/>__ecma.Boolean> ]
+"111669152245" [label = <PARAM, 50<BR/>this> ]
+"141733921728" [label = <RETURN, 50<BR/>false> ]
+"90194317461" [label = <LITERAL, 50<BR/>false> ]
+  "141733921728" -> "124554052861"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152245" -> "124554052861"  [ label = "DDG: this"] 
+  "107374183678" -> "111669152245"  [ label = "DDG: "] 
+  "90194317461" -> "141733921728"  [ label = "DDG: false"] 
+  "107374183678" -> "141733921728"  [ label = "DDG: "] 
+  "107374183678" -> "90194317461"  [ label = "DDG: "] 
+}

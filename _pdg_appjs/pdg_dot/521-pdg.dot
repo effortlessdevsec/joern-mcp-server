@@ -1,0 +1,53 @@
+digraph "opensByDefault" {  
+node [shape="rect"];  
+"107374182921" [label = <METHOD, 105<BR/>opensByDefault> ]
+"124554052104" [label = <METHOD_RETURN, 105<BR/>__ecma.Boolean> ]
+"111669150701" [label = <PARAM, 105<BR/>this> ]
+"111669150702" [label = <PARAM, 105<BR/>node> ]
+"111669150703" [label = <PARAM, 105<BR/>key> ]
+"141733921158" [label = <RETURN, 106<BR/>return [ 'content', 'children', ...> ]
+"30064779041" [label = <includes, 106<BR/>[ 'content', 'children', 'val...> ]
+"30064779043" [label = <&lt;operator&gt;.assignment, 106<BR/>(_tmp_11 = [ 'content', 'children',...> ]
+"30064779044" [label = <&lt;operator&gt;.assignment, 106<BR/>_tmp_12 = __ecma.Array.factory()> ]
+"30064779046" [label = <, 107<BR/>_tmp_12.push(&quot;content&quot;)> ]
+"30064779048" [label = <, 108<BR/>_tmp_12.push(&quot;children&quot;)> ]
+"30064779050" [label = <, 109<BR/>_tmp_12.push(&quot;value&quot;)> ]
+"68719484825" [label = <IDENTIFIER, 106<BR/>_tmp_12<BR/>[ 'content', 'children', 'val...> ]
+  "141733921158" -> "124554052104"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150701" -> "124554052104"  [ label = "DDG: this"] 
+  "111669150702" -> "124554052104"  [ label = "DDG: node"] 
+  "30064779044" -> "124554052104"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064779044" -> "124554052104"  [ label = "DDG: _tmp_12 = __ecma.Array.factory()"] 
+  "30064779046" -> "124554052104"  [ label = "DDG: _tmp_12.push(&quot;content&quot;)"] 
+  "30064779048" -> "124554052104"  [ label = "DDG: _tmp_12.push(&quot;children&quot;)"] 
+  "30064779050" -> "124554052104"  [ label = "DDG: _tmp_12"] 
+  "30064779050" -> "124554052104"  [ label = "DDG: _tmp_12.push(&quot;value&quot;)"] 
+  "30064779041" -> "124554052104"  [ label = "DDG: _tmp_11"] 
+  "30064779041" -> "124554052104"  [ label = "DDG: key"] 
+  "30064779041" -> "124554052104"  [ label = "DDG: [
+      'content',
+      'children',
+      'value',
+    ].includes(key)"] 
+  "107374182921" -> "111669150701"  [ label = "DDG: "] 
+  "107374182921" -> "111669150702"  [ label = "DDG: "] 
+  "107374182921" -> "111669150703"  [ label = "DDG: "] 
+  "30064779041" -> "141733921158"  [ label = "DDG: [
+      'content',
+      'children',
+      'value',
+    ].includes(key)"] 
+  "30064779043" -> "30064779041"  [ label = "DDG: _tmp_11"] 
+  "107374182921" -> "30064779041"  [ label = "DDG: "] 
+  "111669150703" -> "30064779041"  [ label = "DDG: key"] 
+  "30064779050" -> "30064779043"  [ label = "DDG: _tmp_12"] 
+  "107374182921" -> "30064779043"  [ label = "DDG: "] 
+  "107374182921" -> "30064779044"  [ label = "DDG: "] 
+  "107374182921" -> "68719484825"  [ label = "DDG: "] 
+  "30064779044" -> "30064779046"  [ label = "DDG: _tmp_12"] 
+  "107374182921" -> "30064779046"  [ label = "DDG: "] 
+  "30064779046" -> "30064779048"  [ label = "DDG: _tmp_12"] 
+  "107374182921" -> "30064779048"  [ label = "DDG: "] 
+  "30064779048" -> "30064779050"  [ label = "DDG: _tmp_12"] 
+  "107374182921" -> "30064779050"  [ label = "DDG: "] 
+}

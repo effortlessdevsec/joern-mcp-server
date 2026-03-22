@@ -1,0 +1,96 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182704" [label = <METHOD, 1<BR/>:program> ]
+"124554051892" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150242" [label = <PARAM, 1<BR/>this> ]
+"30064775906" [label = <&lt;operator&gt;.assignment, 1<BR/>var connect = require(&quot;react-redux&quot;).connect> ]
+"25769804552" [label = <BLOCK, 2<BR/>import { expandSettingsDrawer, collapseSettings...> ]
+"30064775912" [label = <&lt;operator&gt;.assignment, 3<BR/>var showSettingsDrawer = require(&quot;../store/sele...> ]
+"30064775914" [label = <&lt;operator&gt;.assignment, 4<BR/>var SettingsDrawer = require(&quot;../components/Set...> ]
+"30064775915" [label = <&lt;operator&gt;.assignment, 6<BR/>function mapStateToProps = function mapStateToP...> ]
+"30064775916" [label = <&lt;operator&gt;.assignment, 12<BR/>function mapDispatchToProps = function mapDispa...> ]
+"25769804553" [label = <BLOCK, 19<BR/>export default connect( mapStateToProps, ma...> ]
+"30064775908" [label = <&lt;operator&gt;.assignment, 2<BR/>var expandSettingsDrawer = require(&quot;../store/ac...> ]
+"30064775910" [label = <&lt;operator&gt;.assignment, 2<BR/>var collapseSettingsDrawer = require(&quot;../store/...> ]
+"30064775917" [label = <connect( mapStateToProps, mapDispatchToProps, ), 19<BR/>connect( mapStateToProps, mapDispatchToProp...> ]
+"30064775919" [label = <&lt;operator&gt;.assignment, 19<BR/>exports[&quot;default&quot;] = connect> ]
+"68719481677" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;../components/SettingsDrawer&quot;)> ]
+"30064775894" [label = <require, 4<BR/>require(&quot;../components/SettingsDrawer&quot;)> ]
+"30064775918" [label = <connect, 19<BR/>connect( mapStateToProps, mapDispatchToProp...> ]
+"68719481665" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;react-redux&quot;)> ]
+"30064775890" [label = <require, 1<BR/>require(&quot;react-redux&quot;)> ]
+"68719481674" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../store/selectors&quot;)> ]
+"30064775893" [label = <require, 3<BR/>require(&quot;../store/selectors&quot;)> ]
+"68719481681" [label = <IDENTIFIER, 19<BR/>connect<BR/>connect( mapStateToProps, mapDispatchToProp...> ]
+"68719481668" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775891" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481671" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064775892" [label = <require, 2<BR/>require(&quot;../store/actions&quot;)> ]
+  "30064775906" -> "124554051892"  [ label = "DDG: var connect = require(&quot;react-redux&quot;).connect"] 
+  "30064775908" -> "124554051892"  [ label = "DDG: expandSettingsDrawer"] 
+  "30064775908" -> "124554051892"  [ label = "DDG: var expandSettingsDrawer = require(&quot;../store/actions&quot;).expandSettingsDrawer"] 
+  "30064775910" -> "124554051892"  [ label = "DDG: collapseSettingsDrawer"] 
+  "30064775910" -> "124554051892"  [ label = "DDG: var collapseSettingsDrawer = require(&quot;../store/actions&quot;).collapseSettingsDrawer"] 
+  "30064775912" -> "124554051892"  [ label = "DDG: showSettingsDrawer"] 
+  "30064775912" -> "124554051892"  [ label = "DDG: var showSettingsDrawer = require(&quot;../store/selectors&quot;).showSettingsDrawer"] 
+  "30064775914" -> "124554051892"  [ label = "DDG: require(&quot;../components/SettingsDrawer&quot;)"] 
+  "30064775914" -> "124554051892"  [ label = "DDG: var SettingsDrawer = require(&quot;../components/SettingsDrawer&quot;)"] 
+  "30064775915" -> "124554051892"  [ label = "DDG: function mapStateToProps = function mapStateToProps(state) {
+  return {
+    isOpen: showSettingsDrawer(state),
+  };
+}"] 
+  "30064775916" -> "124554051892"  [ label = "DDG: function mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    onWantToExpand: () =&gt; dispatch(expandSettingsDrawer()),
+    onWantToCollapse: () =&gt; dispatch(collapseSettingsDrawer()),
+  };
+}"] 
+  "30064775918" -> "124554051892"  [ label = "DDG: mapStateToProps"] 
+  "30064775918" -> "124554051892"  [ label = "DDG: mapDispatchToProps"] 
+  "30064775918" -> "124554051892"  [ label = "DDG: connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)"] 
+  "30064775917" -> "124554051892"  [ label = "DDG: this"] 
+  "30064775917" -> "124554051892"  [ label = "DDG: SettingsDrawer"] 
+  "30064775917" -> "124554051892"  [ label = "DDG: connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SettingsDrawer)"] 
+  "30064775919" -> "124554051892"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064775919" -> "124554051892"  [ label = "DDG: connect"] 
+  "30064775919" -> "124554051892"  [ label = "DDG: exports[&quot;default&quot;] = connect"] 
+  "107374182704" -> "111669150242"  [ label = "DDG: "] 
+  "107374182704" -> "25769804552"  [ label = "DDG: "] 
+  "30064775894" -> "30064775914"  [ label = "DDG: this"] 
+  "30064775894" -> "30064775914"  [ label = "DDG: &quot;../components/SettingsDrawer&quot;"] 
+  "107374182704" -> "30064775915"  [ label = "DDG: "] 
+  "107374182704" -> "30064775916"  [ label = "DDG: "] 
+  "107374182704" -> "25769804553"  [ label = "DDG: "] 
+  "30064775906" -> "30064775919"  [ label = "DDG: connect"] 
+  "107374182704" -> "30064775919"  [ label = "DDG: "] 
+  "107374182704" -> "68719481677"  [ label = "DDG: "] 
+  "30064775893" -> "30064775894"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775894"  [ label = "DDG: "] 
+  "30064775918" -> "30064775917"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775917"  [ label = "DDG: "] 
+  "30064775914" -> "30064775917"  [ label = "DDG: SettingsDrawer"] 
+  "107374182704" -> "68719481665"  [ label = "DDG: "] 
+  "111669150242" -> "30064775890"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775890"  [ label = "DDG: "] 
+  "107374182704" -> "68719481674"  [ label = "DDG: "] 
+  "30064775892" -> "30064775893"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775893"  [ label = "DDG: "] 
+  "107374182704" -> "68719481681"  [ label = "DDG: "] 
+  "30064775894" -> "30064775918"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775918"  [ label = "DDG: "] 
+  "30064775915" -> "30064775918"  [ label = "DDG: mapStateToProps"] 
+  "30064775916" -> "30064775918"  [ label = "DDG: mapDispatchToProps"] 
+  "107374182704" -> "68719481668"  [ label = "DDG: "] 
+  "30064775890" -> "30064775891"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775891"  [ label = "DDG: "] 
+  "107374182704" -> "68719481671"  [ label = "DDG: "] 
+  "30064775891" -> "30064775892"  [ label = "DDG: this"] 
+  "107374182704" -> "30064775892"  [ label = "DDG: "] 
+}

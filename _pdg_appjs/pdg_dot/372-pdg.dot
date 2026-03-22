@@ -1,0 +1,56 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374182772" [label = <METHOD, 19<BR/>parse> ]
+"124554051955" [label = <METHOD_RETURN, 19<BR/>ANY> ]
+"111669150365" [label = <PARAM, 19<BR/>this> ]
+"111669150366" [label = <PARAM, 19<BR/>csstree> ]
+"111669150367" [label = <PARAM, 19<BR/>code> ]
+"111669150368" [label = <PARAM, 19<BR/>options> ]
+"141733921034" [label = <RETURN, 20<BR/>return csstree.toPlainObject(csstree.parse(code...> ]
+"30064776643" [label = <toPlainObject, 20<BR/>csstree.toPlainObject(csstree.parse(code, { ...> ]
+"30064776645" [label = <parse, 20<BR/>csstree.parse(code, { positions: true, ...> ]
+"30064776647" [label = <&lt;operator&gt;.assignment, 21<BR/>_tmp_4.positions = true> ]
+"30064776649" [label = <&lt;operator&gt;.spread, 22<BR/>...options> ]
+"68719482447" [label = <IDENTIFIER, 20<BR/>_tmp_4<BR/>{ positions: true, ...options, }> ]
+  "141733921034" -> "124554051955"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150365" -> "124554051955"  [ label = "DDG: this"] 
+  "30064776643" -> "124554051955"  [ label = "DDG: csstree"] 
+  "30064776645" -> "124554051955"  [ label = "DDG: code"] 
+  "30064776647" -> "124554051955"  [ label = "DDG: _tmp_4.positions = true"] 
+  "30064776649" -> "124554051955"  [ label = "DDG: _tmp_4"] 
+  "30064776649" -> "124554051955"  [ label = "DDG: options"] 
+  "30064776649" -> "124554051955"  [ label = "DDG: ...options"] 
+  "30064776643" -> "124554051955"  [ label = "DDG: csstree.parse(code, {
+      positions: true,
+      ...options,
+    })"] 
+  "30064776643" -> "124554051955"  [ label = "DDG: csstree.toPlainObject(csstree.parse(code, {
+      positions: true,
+      ...options,
+    }))"] 
+  "107374182772" -> "111669150365"  [ label = "DDG: "] 
+  "107374182772" -> "111669150366"  [ label = "DDG: "] 
+  "107374182772" -> "111669150367"  [ label = "DDG: "] 
+  "107374182772" -> "111669150368"  [ label = "DDG: "] 
+  "30064776643" -> "141733921034"  [ label = "DDG: csstree.toPlainObject(csstree.parse(code, {
+      positions: true,
+      ...options,
+    }))"] 
+  "30064776645" -> "30064776643"  [ label = "DDG: csstree"] 
+  "107374182772" -> "30064776643"  [ label = "DDG: "] 
+  "30064776645" -> "30064776643"  [ label = "DDG: code"] 
+  "30064776645" -> "30064776643"  [ label = "DDG: {
+      positions: true,
+      ...options,
+    }"] 
+  "30064776645" -> "30064776643"  [ label = "DDG: "] 
+  "111669150366" -> "30064776645"  [ label = "DDG: csstree"] 
+  "107374182772" -> "30064776645"  [ label = "DDG: "] 
+  "111669150367" -> "30064776645"  [ label = "DDG: code"] 
+  "30064776649" -> "30064776645"  [ label = "DDG: _tmp_4"] 
+  "107374182772" -> "30064776647"  [ label = "DDG: "] 
+  "107374182772" -> "68719482447"  [ label = "DDG: "] 
+  "30064776647" -> "30064776649"  [ label = "DDG: _tmp_4.positions"] 
+  "107374182772" -> "30064776649"  [ label = "DDG: "] 
+  "111669150368" -> "30064776649"  [ label = "DDG: options"] 
+}

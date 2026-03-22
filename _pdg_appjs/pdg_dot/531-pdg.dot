@@ -1,0 +1,24 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374182931" [label = <METHOD, 60<BR/>getDefaultOptions> ]
+"124554052114" [label = <METHOD_RETURN, 60<BR/>{ treeAdapter: __ecma.String; }> ]
+"111669150725" [label = <PARAM, 60<BR/>this> ]
+"141733921166" [label = <RETURN, 61<BR/>return { treeAdapter: 'default', }> ]
+"25769805176" [label = <BLOCK, 61<BR/>{ treeAdapter: 'default', }> ]
+"30064779221" [label = <&lt;operator&gt;.assignment, 62<BR/>_tmp_12.treeAdapter = &quot;default&quot;> ]
+"68719484994" [label = <IDENTIFIER, 61<BR/>_tmp_12<BR/>{ treeAdapter: 'default', }> ]
+  "141733921166" -> "124554052114"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150725" -> "124554052114"  [ label = "DDG: this"] 
+  "30064779221" -> "124554052114"  [ label = "DDG: _tmp_12.treeAdapter"] 
+  "30064779221" -> "124554052114"  [ label = "DDG: _tmp_12.treeAdapter = &quot;default&quot;"] 
+  "107374182931" -> "111669150725"  [ label = "DDG: "] 
+  "25769805176" -> "141733921166"  [ label = "DDG: "] 
+  "25769805176" -> "141733921166"  [ label = "DDG: {
+      treeAdapter: 'default',
+    }"] 
+  "107374182931" -> "141733921166"  [ label = "DDG: "] 
+  "30064779221" -> "25769805176"  [ label = "DDG: _tmp_12.treeAdapter"] 
+  "107374182931" -> "25769805176"  [ label = "DDG: "] 
+  "107374182931" -> "30064779221"  [ label = "DDG: "] 
+  "107374182931" -> "68719484994"  [ label = "DDG: "] 
+}

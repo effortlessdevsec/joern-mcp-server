@@ -1,0 +1,108 @@
+digraph ":program" {  
+node [shape="rect"];  
+"107374182725" [label = <METHOD, 1<BR/>:program> ]
+"124554051913" [label = <METHOD_RETURN, 1<BR/>ANY> ]
+"111669150274" [label = <PARAM, 1<BR/>this> ]
+"30064776130" [label = <&lt;operator&gt;.assignment, 1<BR/>var connect = require(&quot;react-redux&quot;).connect> ]
+"30064776132" [label = <&lt;operator&gt;.assignment, 2<BR/>var Transformer = require(&quot;../components/Transf...> ]
+"25769804588" [label = <BLOCK, 3<BR/>import {setTransformState, toggleFormatting} fr...> ]
+"30064776137" [label = <&lt;operator&gt;.assignment, 4<BR/>var selectors = require(&quot;../store/selectors&quot;)> ]
+"30064776138" [label = <&lt;operator&gt;.assignment, 6<BR/>function mapStateToProps = function mapStateToP...> ]
+"30064776139" [label = <&lt;operator&gt;.assignment, 23<BR/>function mapDispatchToProps = function mapDispa...> ]
+"25769804589" [label = <BLOCK, 34<BR/>export default connect(mapStateToProps, mapDisp...> ]
+"30064776133" [label = <&lt;operator&gt;.assignment, 3<BR/>var setTransformState = require(&quot;../store/actio...> ]
+"30064776135" [label = <&lt;operator&gt;.assignment, 3<BR/>var toggleFormatting = require(&quot;../store/action...> ]
+"30064776140" [label = <connect(mapStateToProps, mapDispatchToProps), 34<BR/>connect(mapStateToProps, mapDispatchToProps)(Tr...> ]
+"30064776142" [label = <&lt;operator&gt;.assignment, 34<BR/>exports[&quot;default&quot;] = connect> ]
+"68719481927" [label = <IDENTIFIER, 2<BR/>require<BR/>require(&quot;../components/Transformer&quot;)> ]
+"30064776075" [label = <require, 2<BR/>require(&quot;../components/Transformer&quot;)> ]
+"68719481936" [label = <IDENTIFIER, 4<BR/>require<BR/>require(&quot;../store/selectors&quot;)> ]
+"30064776078" [label = <require, 4<BR/>require(&quot;../store/selectors&quot;)> ]
+"30064776141" [label = <connect, 34<BR/>connect(mapStateToProps, mapDispatchToProps)> ]
+"68719481924" [label = <IDENTIFIER, 1<BR/>require<BR/>require(&quot;react-redux&quot;)> ]
+"30064776074" [label = <require, 1<BR/>require(&quot;react-redux&quot;)> ]
+"68719481940" [label = <IDENTIFIER, 34<BR/>connect<BR/>connect(mapStateToProps, mapDispatchToProps)> ]
+"68719481930" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064776076" [label = <require, 3<BR/>require(&quot;../store/actions&quot;)> ]
+"68719481933" [label = <IDENTIFIER, 3<BR/>require<BR/>require(&quot;../store/actions&quot;)> ]
+"30064776077" [label = <require, 3<BR/>require(&quot;../store/actions&quot;)> ]
+  "30064776130" -> "124554051913"  [ label = "DDG: var connect = require(&quot;react-redux&quot;).connect"] 
+  "30064776132" -> "124554051913"  [ label = "DDG: require(&quot;../components/Transformer&quot;)"] 
+  "30064776132" -> "124554051913"  [ label = "DDG: var Transformer = require(&quot;../components/Transformer&quot;)"] 
+  "30064776133" -> "124554051913"  [ label = "DDG: setTransformState"] 
+  "30064776133" -> "124554051913"  [ label = "DDG: var setTransformState = require(&quot;../store/actions&quot;).setTransformState"] 
+  "30064776135" -> "124554051913"  [ label = "DDG: toggleFormatting"] 
+  "30064776135" -> "124554051913"  [ label = "DDG: var toggleFormatting = require(&quot;../store/actions&quot;).toggleFormatting"] 
+  "30064776137" -> "124554051913"  [ label = "DDG: selectors"] 
+  "30064776137" -> "124554051913"  [ label = "DDG: require(&quot;../store/selectors&quot;)"] 
+  "30064776137" -> "124554051913"  [ label = "DDG: var selectors = require(&quot;../store/selectors&quot;)"] 
+  "30064776138" -> "124554051913"  [ label = "DDG: function mapStateToProps = function mapStateToProps(state) {
+  return {
+    transformer: selectors.getTransformer(state),
+    // Either the transform example or the transform code from the current
+    // revision. This is what we compare against to determine whether something
+    // changed and we can save.
+    defaultTransformCode: selectors.getInitialTransformCode(state),
+    transformCode: selectors.getTransformCode(state),
+    mode:
+      selectors.getParser(state).category.editorMode ||
+      selectors.getParser(state).category.id,
+    enableFormatting: selectors.getFormattingState(state),
+    keyMap: selectors.getKeyMap(state),
+    transformResult: selectors.getTransformResult(state),
+  };
+}"] 
+  "30064776139" -> "124554051913"  [ label = "DDG: function mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    onContentChange: ({value, cursor}) =&gt; {
+      dispatch(setTransformState({code: value, cursor}));
+    },
+    toggleFormatting: () =&gt; {
+      dispatch(toggleFormatting());
+    },
+  };
+}"] 
+  "30064776141" -> "124554051913"  [ label = "DDG: mapStateToProps"] 
+  "30064776141" -> "124554051913"  [ label = "DDG: mapDispatchToProps"] 
+  "30064776141" -> "124554051913"  [ label = "DDG: connect(mapStateToProps, mapDispatchToProps)"] 
+  "30064776140" -> "124554051913"  [ label = "DDG: this"] 
+  "30064776140" -> "124554051913"  [ label = "DDG: Transformer"] 
+  "30064776140" -> "124554051913"  [ label = "DDG: connect(mapStateToProps, mapDispatchToProps)(Transformer)"] 
+  "30064776142" -> "124554051913"  [ label = "DDG: exports[&quot;default&quot;]"] 
+  "30064776142" -> "124554051913"  [ label = "DDG: connect"] 
+  "30064776142" -> "124554051913"  [ label = "DDG: exports[&quot;default&quot;] = connect"] 
+  "107374182725" -> "111669150274"  [ label = "DDG: "] 
+  "30064776075" -> "30064776132"  [ label = "DDG: this"] 
+  "30064776075" -> "30064776132"  [ label = "DDG: &quot;../components/Transformer&quot;"] 
+  "107374182725" -> "25769804588"  [ label = "DDG: "] 
+  "30064776078" -> "30064776137"  [ label = "DDG: this"] 
+  "30064776078" -> "30064776137"  [ label = "DDG: &quot;../store/selectors&quot;"] 
+  "107374182725" -> "30064776138"  [ label = "DDG: "] 
+  "107374182725" -> "30064776139"  [ label = "DDG: "] 
+  "107374182725" -> "25769804589"  [ label = "DDG: "] 
+  "30064776130" -> "30064776142"  [ label = "DDG: connect"] 
+  "107374182725" -> "30064776142"  [ label = "DDG: "] 
+  "107374182725" -> "68719481927"  [ label = "DDG: "] 
+  "30064776074" -> "30064776075"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776075"  [ label = "DDG: "] 
+  "107374182725" -> "68719481936"  [ label = "DDG: "] 
+  "30064776077" -> "30064776078"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776078"  [ label = "DDG: "] 
+  "30064776141" -> "30064776140"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776140"  [ label = "DDG: "] 
+  "30064776132" -> "30064776140"  [ label = "DDG: Transformer"] 
+  "107374182725" -> "68719481924"  [ label = "DDG: "] 
+  "111669150274" -> "30064776074"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776074"  [ label = "DDG: "] 
+  "107374182725" -> "68719481940"  [ label = "DDG: "] 
+  "30064776078" -> "30064776141"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776141"  [ label = "DDG: "] 
+  "30064776138" -> "30064776141"  [ label = "DDG: mapStateToProps"] 
+  "30064776139" -> "30064776141"  [ label = "DDG: mapDispatchToProps"] 
+  "107374182725" -> "68719481930"  [ label = "DDG: "] 
+  "30064776075" -> "30064776076"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776076"  [ label = "DDG: "] 
+  "107374182725" -> "68719481933"  [ label = "DDG: "] 
+  "30064776076" -> "30064776077"  [ label = "DDG: this"] 
+  "107374182725" -> "30064776077"  [ label = "DDG: "] 
+}

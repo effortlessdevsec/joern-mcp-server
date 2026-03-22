@@ -1,0 +1,26 @@
+digraph "makeFiles" {  
+node [shape="rect"];  
+"107374182438" [label = <METHOD, 9<BR/>makeFiles> ]
+"124554051622" [label = <METHOD_RETURN, 9<BR/>__ecma.Array:reduce:&lt;returnValue&gt;> ]
+"111669149779" [label = <PARAM, 9<BR/>this> ]
+"111669149780" [label = <PARAM, 9<BR/>files> ]
+"141733920819" [label = <RETURN, 10<BR/>return files.reduce( (obj, [filename, conte...> ]
+"30064771851" [label = <reduce, 10<BR/>files.reduce( (obj, [filename, content]) =&gt;...> ]
+"68719477558" [label = <IDENTIFIER, 12<BR/>_tmp_1<BR/>{}> ]
+  "141733920819" -> "124554051622"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669149779" -> "124554051622"  [ label = "DDG: this"] 
+  "30064771851" -> "124554051622"  [ label = "DDG: files"] 
+  "30064771851" -> "124554051622"  [ label = "DDG: files.reduce(
+    (obj, [filename, content]) =&gt; (obj[filename] = (content ? {content} : content), obj),
+    {}
+  )"] 
+  "107374182438" -> "111669149779"  [ label = "DDG: "] 
+  "107374182438" -> "111669149780"  [ label = "DDG: "] 
+  "30064771851" -> "141733920819"  [ label = "DDG: files.reduce(
+    (obj, [filename, content]) =&gt; (obj[filename] = (content ? {content} : content), obj),
+    {}
+  )"] 
+  "111669149780" -> "30064771851"  [ label = "DDG: files"] 
+  "107374182438" -> "30064771851"  [ label = "DDG: "] 
+  "107374182438" -> "68719477558"  [ label = "DDG: "] 
+}

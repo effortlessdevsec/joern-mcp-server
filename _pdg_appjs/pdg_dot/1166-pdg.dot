@@ -1,0 +1,14 @@
+digraph "getNodeName" {  
+node [shape="rect"];  
+"107374183566" [label = <METHOD, 25<BR/>getNodeName> ]
+"124554052749" [label = <METHOD_RETURN, 25<BR/>__ecma.Null:&lt;operator&gt;.indexAccess:&lt;returnValue&gt;> ]
+"111669152062" [label = <PARAM, 25<BR/>this> ]
+"111669152063" [label = <PARAM, 25<BR/>node> ]
+"141733921617" [label = <RETURN, 26<BR/>return Kind[node.kind]> ]
+  "141733921617" -> "124554052749"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669152062" -> "124554052749"  [ label = "DDG: this"] 
+  "111669152063" -> "124554052749"  [ label = "DDG: node"] 
+  "107374183566" -> "111669152062"  [ label = "DDG: "] 
+  "107374183566" -> "111669152063"  [ label = "DDG: "] 
+  "107374183566" -> "141733921617"  [ label = "DDG: "] 
+}

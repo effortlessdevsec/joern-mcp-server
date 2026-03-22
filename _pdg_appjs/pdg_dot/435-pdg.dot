@@ -1,0 +1,31 @@
+digraph "loadParser" {  
+node [shape="rect"];  
+"107374182835" [label = <METHOD, 16<BR/>loadParser> ]
+"124554052018" [label = <METHOD_RETURN, 16<BR/>void> ]
+"111669150511" [label = <PARAM, 16<BR/>this> ]
+"111669150512" [label = <PARAM, 16<BR/>callback> ]
+"30064777808" [label = <require, 17<BR/>require(['graphql/language'], ({ parse }) =&gt; { ...> ]
+"68719483557" [label = <IDENTIFIER, 17<BR/>require<BR/>require(['graphql/language'], ({ parse }) =&gt; { ...> ]
+"30064777809" [label = <&lt;operator&gt;.assignment, 17<BR/>_tmp_5 = __ecma.Array.factory()> ]
+"30064777811" [label = <, 17<BR/>_tmp_5.push(&quot;graphql/language&quot;)> ]
+"68719483562" [label = <IDENTIFIER, 17<BR/>_tmp_5<BR/>['graphql/language']> ]
+  "111669150512" -> "124554052018"  [ label = "DDG: callback"] 
+  "30064777808" -> "124554052018"  [ label = "DDG: this"] 
+  "30064777809" -> "124554052018"  [ label = "DDG: __ecma.Array.factory()"] 
+  "30064777809" -> "124554052018"  [ label = "DDG: _tmp_5 = __ecma.Array.factory()"] 
+  "30064777811" -> "124554052018"  [ label = "DDG: _tmp_5"] 
+  "30064777811" -> "124554052018"  [ label = "DDG: _tmp_5.push(&quot;graphql/language&quot;)"] 
+  "30064777808" -> "124554052018"  [ label = "DDG: require(['graphql/language'], ({ parse }) =&gt; {
+      callback({ parse });
+    })"] 
+  "107374182835" -> "111669150511"  [ label = "DDG: "] 
+  "107374182835" -> "111669150512"  [ label = "DDG: "] 
+  "107374182835" -> "68719483557"  [ label = "DDG: "] 
+  "111669150511" -> "30064777808"  [ label = "DDG: this"] 
+  "107374182835" -> "30064777808"  [ label = "DDG: "] 
+  "30064777811" -> "30064777808"  [ label = "DDG: _tmp_5"] 
+  "107374182835" -> "30064777809"  [ label = "DDG: "] 
+  "107374182835" -> "68719483562"  [ label = "DDG: "] 
+  "30064777809" -> "30064777811"  [ label = "DDG: _tmp_5"] 
+  "107374182835" -> "30064777811"  [ label = "DDG: "] 
+}

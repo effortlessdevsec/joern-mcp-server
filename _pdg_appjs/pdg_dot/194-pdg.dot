@@ -1,0 +1,36 @@
+digraph "&lt;lambda&gt;0" {  
+node [shape="rect"];  
+"107374182594" [label = <METHOD, 26<BR/>&lt;lambda&gt;0> ]
+"124554051777" [label = <METHOD_RETURN, 26<BR/>ANY> ]
+"111669150042" [label = <PARAM, 26<BR/>this> ]
+"111669150043" [label = <PARAM, 26<BR/>keyMap> ]
+"141733920898" [label = <RETURN, 27<BR/>&lt;li key={keyMap} di...> ]
+"154618823180" [label = <TEMPLATE_DOM, 27<BR/>&lt;li key={keyMap} di...> ]
+"68719479808" [label = <IDENTIFIER, 32<BR/>keyMap<BR/>{keyMap}> ]
+"68719479805" [label = <IDENTIFIER, 28<BR/>keyMap<BR/>{keyMap}> ]
+"30064774157" [label = <&lt;operator&gt;.equals, 29<BR/>this.props.keyMap === keyMap> ]
+"120259084411" [label = <METHOD_REF, 30<BR/>&lt;lambda&gt;1<BR/>{() =&gt; this.props.onKeyMapChange(keyMap)}> ]
+"90194313906" [label = <LITERAL, 31<BR/>&quot;button&quot;<BR/>type=&quot;button&quot;> ]
+  "141733920898" -> "124554051777"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669150042" -> "124554051777"  [ label = "DDG: this"] 
+  "30064774157" -> "124554051777"  [ label = "DDG: this.props.keyMap"] 
+  "30064774157" -> "124554051777"  [ label = "DDG: keyMap"] 
+  "30064774157" -> "124554051777"  [ label = "DDG: this.props.keyMap === keyMap"] 
+  "107374182594" -> "111669150042"  [ label = "DDG: "] 
+  "107374182594" -> "111669150043"  [ label = "DDG: "] 
+  "154618823180" -> "141733920898"  [ label = "DDG: &lt;li
+              key={keyMap}
+              disabled={this.props.keyMap === keyMap}
+              onClick={() =&gt; this.props.onKeyMapChange(keyMap)}&gt;
+              &lt;button type=&quot;button&quot; &gt;
+                {keyMap}
+              &lt;/button&gt;
+            &lt;/li&gt;"] 
+  "107374182594" -> "141733920898"  [ label = "DDG: "] 
+  "107374182594" -> "68719479808"  [ label = "DDG: "] 
+  "107374182594" -> "68719479805"  [ label = "DDG: "] 
+  "107374182594" -> "120259084411"  [ label = "DDG: "] 
+  "107374182594" -> "90194313906"  [ label = "DDG: "] 
+  "111669150043" -> "30064774157"  [ label = "DDG: keyMap"] 
+  "107374182594" -> "30064774157"  [ label = "DDG: "] 
+}

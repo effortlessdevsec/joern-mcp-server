@@ -1,0 +1,4 @@
+digraph "test" {  
+node [shape="rect"];  
+
+}

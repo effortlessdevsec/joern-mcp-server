@@ -1,0 +1,98 @@
+digraph "getDefaultOptions" {  
+node [shape="rect"];  
+"107374183067" [label = <METHOD, 30<BR/>getDefaultOptions> ]
+"124554052250" [label = <METHOD_RETURN, 30<BR/>{ range: __ecma.Boolean; loc: __ecma.Boolean; comment: __ecma.Boolean; attachComment: __ecma.Boolean; tokens: __ecma.Boolean; tolerant: __ecma.Boolean; ecmaVersion: __ecma.String; sourceType: __ecma.String; ecmaFeatures: { jsx: __ecma.Boolean; globalReturn: __ecma.Boolean; impliedStrict: __ecma.Boolean; }; }> ]
+"111669151006" [label = <PARAM, 30<BR/>this> ]
+"141733921268" [label = <RETURN, 31<BR/>return { range: true, loc: false, ...> ]
+"25769805581" [label = <BLOCK, 31<BR/>{ range: true, loc: false, co...> ]
+"30064781669" [label = <&lt;operator&gt;.assignment, 32<BR/>_tmp_5.range = true> ]
+"30064781671" [label = <&lt;operator&gt;.assignment, 33<BR/>_tmp_5.loc = false> ]
+"30064781673" [label = <&lt;operator&gt;.assignment, 34<BR/>_tmp_5.comment = false> ]
+"30064781675" [label = <&lt;operator&gt;.assignment, 35<BR/>_tmp_5.attachComment = false> ]
+"30064781677" [label = <&lt;operator&gt;.assignment, 36<BR/>_tmp_5.tokens = false> ]
+"30064781679" [label = <&lt;operator&gt;.assignment, 37<BR/>_tmp_5.tolerant = false> ]
+"30064781681" [label = <&lt;operator&gt;.assignment, 38<BR/>_tmp_5.ecmaVersion = &quot;latest&quot;> ]
+"30064781683" [label = <&lt;operator&gt;.assignment, 39<BR/>_tmp_5.sourceType = &quot;module&quot;> ]
+"30064781685" [label = <&lt;operator&gt;.assignment, 41<BR/>_tmp_5.ecmaFeatures = { jsx: true, ...> ]
+"68719487385" [label = <IDENTIFIER, 31<BR/>_tmp_5<BR/>{ range: true, loc: false, co...> ]
+"30064781687" [label = <&lt;operator&gt;.assignment, 42<BR/>_tmp_6.jsx = true> ]
+"30064781689" [label = <&lt;operator&gt;.assignment, 43<BR/>_tmp_6.globalReturn = true> ]
+"30064781691" [label = <&lt;operator&gt;.assignment, 44<BR/>_tmp_6.impliedStrict = false> ]
+"68719487384" [label = <IDENTIFIER, 41<BR/>_tmp_6<BR/>{ jsx: true, globalReturn: true...> ]
+  "141733921268" -> "124554052250"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151006" -> "124554052250"  [ label = "DDG: this"] 
+  "30064781669" -> "124554052250"  [ label = "DDG: _tmp_5.range"] 
+  "30064781669" -> "124554052250"  [ label = "DDG: _tmp_5.range = true"] 
+  "30064781671" -> "124554052250"  [ label = "DDG: _tmp_5.loc"] 
+  "30064781671" -> "124554052250"  [ label = "DDG: _tmp_5.loc = false"] 
+  "30064781673" -> "124554052250"  [ label = "DDG: _tmp_5.comment"] 
+  "30064781673" -> "124554052250"  [ label = "DDG: _tmp_5.comment = false"] 
+  "30064781675" -> "124554052250"  [ label = "DDG: _tmp_5.attachComment"] 
+  "30064781675" -> "124554052250"  [ label = "DDG: _tmp_5.attachComment = false"] 
+  "30064781677" -> "124554052250"  [ label = "DDG: _tmp_5.tokens"] 
+  "30064781677" -> "124554052250"  [ label = "DDG: _tmp_5.tokens = false"] 
+  "30064781679" -> "124554052250"  [ label = "DDG: _tmp_5.tolerant"] 
+  "30064781679" -> "124554052250"  [ label = "DDG: _tmp_5.tolerant = false"] 
+  "30064781681" -> "124554052250"  [ label = "DDG: _tmp_5.ecmaVersion"] 
+  "30064781681" -> "124554052250"  [ label = "DDG: _tmp_5.ecmaVersion = &quot;latest&quot;"] 
+  "30064781683" -> "124554052250"  [ label = "DDG: _tmp_5.sourceType"] 
+  "30064781683" -> "124554052250"  [ label = "DDG: _tmp_5.sourceType = &quot;module&quot;"] 
+  "30064781685" -> "124554052250"  [ label = "DDG: _tmp_5.ecmaFeatures"] 
+  "30064781687" -> "124554052250"  [ label = "DDG: _tmp_6.jsx"] 
+  "30064781687" -> "124554052250"  [ label = "DDG: _tmp_6.jsx = true"] 
+  "30064781689" -> "124554052250"  [ label = "DDG: _tmp_6.globalReturn"] 
+  "30064781689" -> "124554052250"  [ label = "DDG: _tmp_6.globalReturn = true"] 
+  "30064781691" -> "124554052250"  [ label = "DDG: _tmp_6.impliedStrict"] 
+  "30064781691" -> "124554052250"  [ label = "DDG: _tmp_6.impliedStrict = false"] 
+  "30064781685" -> "124554052250"  [ label = "DDG: _tmp_5.ecmaFeatures = {
+        jsx: true,
+        globalReturn: true,
+        impliedStrict: false,
+      }"] 
+  "107374183067" -> "111669151006"  [ label = "DDG: "] 
+  "25769805581" -> "141733921268"  [ label = "DDG: "] 
+  "25769805581" -> "141733921268"  [ label = "DDG: {
+      range: true,
+      loc: false,
+      comment: false,
+      attachComment: false,
+      tokens: false,
+      tolerant: false,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+
+      ecmaFeatures: {
+        jsx: true,
+        globalReturn: true,
+        impliedStrict: false,
+      },
+    }"] 
+  "107374183067" -> "141733921268"  [ label = "DDG: "] 
+  "30064781669" -> "25769805581"  [ label = "DDG: _tmp_5.range"] 
+  "30064781671" -> "25769805581"  [ label = "DDG: _tmp_5.loc"] 
+  "30064781673" -> "25769805581"  [ label = "DDG: _tmp_5.comment"] 
+  "30064781675" -> "25769805581"  [ label = "DDG: _tmp_5.attachComment"] 
+  "30064781677" -> "25769805581"  [ label = "DDG: _tmp_5.tokens"] 
+  "30064781679" -> "25769805581"  [ label = "DDG: _tmp_5.tolerant"] 
+  "30064781681" -> "25769805581"  [ label = "DDG: _tmp_5.ecmaVersion"] 
+  "30064781683" -> "25769805581"  [ label = "DDG: _tmp_5.sourceType"] 
+  "30064781685" -> "25769805581"  [ label = "DDG: _tmp_5.ecmaFeatures"] 
+  "107374183067" -> "25769805581"  [ label = "DDG: "] 
+  "107374183067" -> "30064781669"  [ label = "DDG: "] 
+  "107374183067" -> "30064781671"  [ label = "DDG: "] 
+  "107374183067" -> "30064781673"  [ label = "DDG: "] 
+  "107374183067" -> "30064781675"  [ label = "DDG: "] 
+  "107374183067" -> "30064781677"  [ label = "DDG: "] 
+  "107374183067" -> "30064781679"  [ label = "DDG: "] 
+  "107374183067" -> "30064781681"  [ label = "DDG: "] 
+  "107374183067" -> "30064781683"  [ label = "DDG: "] 
+  "30064781687" -> "30064781685"  [ label = "DDG: _tmp_6.jsx"] 
+  "30064781689" -> "30064781685"  [ label = "DDG: _tmp_6.globalReturn"] 
+  "30064781691" -> "30064781685"  [ label = "DDG: _tmp_6.impliedStrict"] 
+  "107374183067" -> "30064781685"  [ label = "DDG: "] 
+  "107374183067" -> "68719487385"  [ label = "DDG: "] 
+  "107374183067" -> "30064781687"  [ label = "DDG: "] 
+  "107374183067" -> "30064781689"  [ label = "DDG: "] 
+  "107374183067" -> "30064781691"  [ label = "DDG: "] 
+  "107374183067" -> "68719487384"  [ label = "DDG: "] 
+}

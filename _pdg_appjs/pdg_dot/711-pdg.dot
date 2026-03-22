@@ -1,0 +1,22 @@
+digraph "parse" {  
+node [shape="rect"];  
+"107374183111" [label = <METHOD, 57<BR/>parse> ]
+"124554052293" [label = <METHOD_RETURN, 57<BR/>{ id: __ecma.String; displayName: __ecma.String; version: ANY; homepage: ANY; locationProps: Set&lt;string&gt;; showInMenu: __ecma.Boolean; loadParser(callback: ANY): ANY; parse(babylon: ANY, code: ANY, options: __ecma.Array; getDefaultOptions(): { sourceType: __ecma.String; allowImportExportEverywhere: __ecma.Boolean; allowReturnOutsideFunction: __ecma.Boolean; tokens: __ecma.Boolean; plugins: __ecma.String[]; }; _getSettingsConfiguration(): { fields: (string | (string | __ecma.String[])[] | { key: __ecma.String; title: __ecma.String; fields: __ecma.String[]; settings: (settings: ANY) =&gt; ANY; values: (plugins: ANY) =&gt; __ecma.Object; })[]; }; opensByDefault(node: ANY, key: ANY): __ecma.Boolean; _ignoredProperties: Set&lt;any&gt;; typeProps: Set&lt;string&gt;; forEachProperty(node: ANY): Generator&lt;{ value: ANY; key: __ecma.String; computed: __ecma.Boolean; }, ANY, ANY&gt;; hasSettings(): __ecma.Boolean; _mergeDefaultOptions(currentOptions: ANY, defaultOptions: ANY): ANY; renderSettings(settings: ANY, onChange: ANY): ANY; }:parse:&lt;returnValue&gt;> ]
+"111669151091" [label = <PARAM, 57<BR/>this> ]
+"111669151092" [label = <PARAM, 57<BR/>code> ]
+"141733921294" [label = <RETURN, 58<BR/>return babylon6Parser.parse(parsers.babylon6, c...> ]
+"30064782501" [label = <parse, 58<BR/>babylon6Parser.parse(parsers.babylon6, code, ba...> ]
+  "141733921294" -> "124554052293"  [ label = "DDG: &lt;RET&gt;"] 
+  "111669151091" -> "124554052293"  [ label = "DDG: this"] 
+  "30064782501" -> "124554052293"  [ label = "DDG: babylon6Parser"] 
+  "30064782501" -> "124554052293"  [ label = "DDG: parsers.babylon6"] 
+  "30064782501" -> "124554052293"  [ label = "DDG: code"] 
+  "30064782501" -> "124554052293"  [ label = "DDG: babylon6Options"] 
+  "30064782501" -> "124554052293"  [ label = "DDG: babylon6Parser.parse(parsers.babylon6, code, babylon6Options)"] 
+  "107374183111" -> "111669151091"  [ label = "DDG: "] 
+  "107374183111" -> "111669151092"  [ label = "DDG: "] 
+  "30064782501" -> "141733921294"  [ label = "DDG: babylon6Parser.parse(parsers.babylon6, code, babylon6Options)"] 
+  "107374183111" -> "30064782501"  [ label = "DDG: "] 
+  "111669151092" -> "30064782501"  [ label = "DDG: code"] 
+  "30064782515" -> "30064782501"  [ label = "DDG: babylon6Options"] 
+}

@@ -1,4 +1,3 @@
-import { writeTempScript } from "./joern.js";
 import path from "path";
 
 function esc(s: string): string {
@@ -386,23 +385,35 @@ const JOERN_IMPORT_NAMES: Record<string, string> = {
   ghidra: "ghidra",
 };
 
-/** Generate script that imports code and runs dataflow */
+export type ScriptImportCodeOptions = {
+  /** When false, skip run.ossdataflow (faster; run it later if you need dataflow). Default true. */
+  runOssDataflow?: boolean;
+};
+
+/** Generate script that imports code (importCode.<lang>) and optionally runs OSS dataflow */
 export function scriptImportCode(
   inputPath: string,
   language: string,
-  outputFile: string
+  outputFile: string,
+  options: ScriptImportCodeOptions = {}
 ): string {
   const lang = JOERN_IMPORT_NAMES[language.toLowerCase()] || "java";
   const inputEsc = inputPath.replace(/\\/g, "\\\\");
   const outEsc = outputFile.replace(/\\/g, "\\\\");
-  return [
+  const runDf = options.runOssDataflow !== false;
+  const lines = [
     "@main def main() = {",
     `  importCode.${lang}("${inputEsc}")`,
-    "  run.ossdataflow",
+  ];
+  if (runDf) {
+    lines.push("  run.ossdataflow");
+  }
+  lines.push(
     "  val projPath = workspace.getActiveProject.map(_.path.toAbsolutePath.toString).getOrElse(\"\")",
     "  import java.nio.file.{Files, Paths}",
     `  Files.writeString(Paths.get("${outEsc}"), projPath)`,
     `  println("WROTE_IMPORT:" + "${outEsc}")`,
-    "}",
-  ].join("\n");
+    "}"
+  );
+  return lines.join("\n");
 }
